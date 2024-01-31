@@ -264,6 +264,9 @@
 		  border-bottom: 2px solid #ccc;
 		  background-color:#f8f8f8;
 		}*/
+		#scomparire {
+		  display: block;
+		}
 
 </style>
 </head>
@@ -273,7 +276,17 @@
 
 <!-- ############# one model ############# -->
 <div id="image-slider">
+
 	<h1>One-model plots</h1>
+	<p id="scomparire_no">If when starting there are some glitches and some images do not display correctly then give the page some time to load ❤️🫠<br>As there are more than 700 images behind the scenes, so it could require a deep, but totally legit, minute of setup.<br></p>
+	<script>
+	  // Funzione per far scomparire il testo dopo 3000 millisecondi (3 secondi)
+	  setTimeout(function() {
+	    var testoDaScomparire = document.getElementById('scomparire');
+	    testoDaScomparire.style.display = 'none';
+	  }, 30*1000); // k*1000 millisecondi = k secondi
+	</script>
+
 	<!-- Per i modelli senza covariate ho messo comunque i plot con le covariate (per ora quelle selezionate da Federica) che possono comunque essere utili per l'interpretazione magari.<br> Poi anziché la sezione dei four-plots potremmo fare quattro sezioni singole, una per modello, per anche spiegarli brevmente.<br><br> -->
 
 	<label for="model-select">Model </label>
