@@ -1,0 +1,254 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  href="/assets/favicon.svg"> <title>Attività</title> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto;" width=170  src="/assets/main img.jpg" alt="main img"/></a></h1> <p class=lead  style="line-height: 1.3;">Proprio qui. Con la corona d'alloro e tutto il resto.</p> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item active" href="/activity/">Activity</a> </nav> <p>&copy; Federico Angelo Mor</p> </div> </div> <div class="content container"> <div class=franklin-content > <h1 id="attività"><a href="#attività" class=header-anchor >Attività</a></h1> <div class=franklin-toc ><ol><li><a href="#julia_and_pluto_notebook">Julia and Pluto notebook</a><li><a href="#traffic_problem">Traffic Problem</a></ol></div> <h2 id=julia_and_pluto_notebook ><a href="#julia_and_pluto_notebook" class=header-anchor >Julia and Pluto notebook</a></h2> <p><a href="/assets/notebooks_int.html">here</a> Some work did in Julia and interactively displayed using Pluto and plotly.<br/></p> <h2 id=traffic_problem ><a href="#traffic_problem" class=header-anchor >Traffic Problem</a></h2> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> JuMP
+<span class=hljs-keyword >using</span> Ipopt
+<span class=hljs-keyword >using</span> Plots
+<span class=hljs-keyword >using</span> Random
+
+Random.seed!(<span class=hljs-number >42</span>)
+
+<span class=hljs-comment ># Example data for nodes (V), arcs (A), and demands (K)</span>
+n_nodes = <span class=hljs-number >5</span>
+V = <span class=hljs-number >1</span>:n_nodes  <span class=hljs-comment ># Nodes</span>
+A = [(i, j) <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:n_nodes <span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:n_nodes <span class=hljs-keyword >if</span> i != j]  <span class=hljs-comment ># Arcs</span>
+K = [(<span class=hljs-number >1</span>, <span class=hljs-number >4</span>), (<span class=hljs-number >2</span>, <span class=hljs-number >3</span>), (<span class=hljs-number >2</span>, <span class=hljs-number >4</span>), (<span class=hljs-number >2</span>, <span class=hljs-number >5</span>)]  <span class=hljs-comment ># Origin-destination pairs</span>
+d = <span class=hljs-number >100</span>*ones(length(K))  <span class=hljs-comment ># Demand for each origin-destination pair</span>
+
+<span class=hljs-comment ># Free flow travel time for each arc (FFTi) and congestions u_ij</span>
+FFTi = <span class=hljs-built_in >Dict</span>{<span class=hljs-built_in >Tuple</span>{<span class=hljs-built_in >Int</span>, <span class=hljs-built_in >Int</span>}, <span class=hljs-built_in >Float64</span>}()
+u = <span class=hljs-built_in >Dict</span>{<span class=hljs-built_in >Tuple</span>{<span class=hljs-built_in >Int</span>, <span class=hljs-built_in >Int</span>}, <span class=hljs-built_in >Float64</span>}()
+
+<span class=hljs-keyword >for</span> arc <span class=hljs-keyword >in</span> A
+    FFTi[arc] = rand(<span class=hljs-number >1</span>:<span class=hljs-number >10</span>)  <span class=hljs-comment ># Random travel time between 1 and 10</span>
+    u[arc] = rand(<span class=hljs-number >80</span>:<span class=hljs-number >120</span>)  <span class=hljs-comment ># Random congestion threshold between 80 and 120</span>
+<span class=hljs-keyword >end</span>
+
+<span class=hljs-comment ># Create the optimization model</span>
+model = Model(Ipopt.Optimizer)
+
+<span class=hljs-comment ># Define variables: x[k,i,j] for each demand pair (k) and arc (i,j)</span>
+<span class=hljs-meta >@variable</span>(model, x[<span class=hljs-number >1</span>:length(K), <span class=hljs-number >1</span>:length(A)] &gt;= <span class=hljs-number >0</span>)
+
+<span class=hljs-comment ># Objective: Minimize total travel time</span>
+<span class=hljs-meta >@objective</span>(model, Min, sum(FFTi[A[j]] * sum(x[k, j] <span class=hljs-keyword >for</span> k <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(K)) <span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A)))
+
+<span class=hljs-comment ># Flow conservation constraints</span>
+<span class=hljs-keyword >for</span> k <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(K)
+    s_k, t_k = K[k]
+    <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> V
+        <span class=hljs-keyword >if</span> i == s_k
+            <span class=hljs-meta >@constraint</span>(model, sum(x[k, j] <span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A) <span class=hljs-keyword >if</span> A[j][<span class=hljs-number >1</span>] == i) - sum(x[k, j] <span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A) <span class=hljs-keyword >if</span> A[j][<span class=hljs-number >2</span>] == i) == d[k])
+        <span class=hljs-keyword >elseif</span> i == t_k
+            <span class=hljs-meta >@constraint</span>(model, sum(x[k, j] <span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A) <span class=hljs-keyword >if</span> A[j][<span class=hljs-number >1</span>] == i) - sum(x[k, j] <span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A) <span class=hljs-keyword >if</span> A[j][<span class=hljs-number >2</span>] == i) == -d[k])
+        <span class=hljs-keyword >else</span>
+            <span class=hljs-meta >@constraint</span>(model, sum(x[k, j] <span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A) <span class=hljs-keyword >if</span> A[j][<span class=hljs-number >1</span>] == i) - sum(x[k, j] <span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A) <span class=hljs-keyword >if</span> A[j][<span class=hljs-number >2</span>] == i) == <span class=hljs-number >0</span>)
+        <span class=hljs-keyword >end</span>
+    <span class=hljs-keyword >end</span>
+<span class=hljs-keyword >end</span>
+
+<span class=hljs-comment ># Congestion threshold constraints</span>
+<span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A)
+    <span class=hljs-meta >@constraint</span>(model, sum(x[k, j] <span class=hljs-keyword >for</span> k <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(K)) &lt;= u[A[j]])
+<span class=hljs-keyword >end</span>
+
+<span class=hljs-comment ># Solve the model</span>
+optimize!(model)
+
+<span class=hljs-comment ># Extract results</span>
+x_opt = value.(x)
+
+<span class=hljs-comment ># Print results</span>
+<span class=hljs-keyword >for</span> k <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(K)
+    println(<span class=hljs-string >&quot;Traffic flow for demand pair <span class=hljs-subst >$(K[k])</span>:&quot;</span>)
+    <span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A)
+        println(<span class=hljs-string >&quot;Arc <span class=hljs-subst >$(A[j])</span>: <span class=hljs-subst >$(x_opt[k, j])</span> cars&quot;</span>)
+    <span class=hljs-keyword >end</span>
+<span class=hljs-keyword >end</span>
+
+
+
+<span class=hljs-comment ># Plot the traffic network with flows</span>
+theta = <span class=hljs-number >2</span> * <span class=hljs-literal >π</span> * (<span class=hljs-number >0</span>:n_nodes-<span class=hljs-number >1</span>) / n_nodes
+x_plot = <span class=hljs-number >1</span> * cos.(theta)
+y_plot = <span class=hljs-number >1</span> * sin.(theta)
+
+arc_plot = [(x_plot[i], x_plot[j], y_plot[i], y_plot[j]) <span class=hljs-keyword >for</span> (i, j) <span class=hljs-keyword >in</span> A]
+
+<span class=hljs-comment ># Generate a list of colors based on the number of demand pairs</span>
+colors = [RGB(rand(), rand(), rand()) <span class=hljs-keyword >for</span> _ <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(K)]
+
+<span class=hljs-comment ># Function to slightly shift points for better visualization</span>
+<span class=hljs-keyword >function</span> shift_points(x1, y1, x2, y2, shift_factor)
+    dx = x2 - x1
+    dy = y2 - y1
+    dist = sqrt(dx^<span class=hljs-number >2</span> + dy^<span class=hljs-number >2</span>)
+    shift_x = -dy / dist * shift_factor
+    shift_y = dx / dist * shift_factor
+    <span class=hljs-keyword >return</span> (x1 + shift_x, y1 + shift_y, x2 + shift_x, y2 + shift_y)
+<span class=hljs-keyword >end</span>
+
+plot()
+<span class=hljs-keyword >for</span> j <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(A)
+    x1, x2, y1, y2 = arc_plot[j]
+    <span class=hljs-keyword >for</span> k <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(K)
+        flow = x_opt[k, j]
+        <span class=hljs-keyword >if</span> flow &gt; <span class=hljs-number >0</span>
+            sx1, sy1, sx2, sy2 = shift_points(x1, y1, x2, y2, <span class=hljs-number >0.02</span> * k)
+            plot!([sx1, sx2], [sy1, sy2], arrow=:arrow, label=<span class=hljs-string >&quot;&quot;</span>,
+                color=colors[k], linewidth=<span class=hljs-number >2</span> + flow/<span class=hljs-number >50</span>, alpha=<span class=hljs-number >0.6</span>)
+            mid_x = (sx1 + sx2) / <span class=hljs-number >2</span> + <span class=hljs-number >0.05</span> * (k-<span class=hljs-number >1</span>)
+            mid_y = (sy1 + sy2) / <span class=hljs-number >2</span> + <span class=hljs-number >0.05</span> * (k-<span class=hljs-number >1</span>)
+            annotate!(mid_x, mid_y, text(<span class=hljs-string >&quot;<span class=hljs-subst >$(round(<span class=hljs-built_in >Int64</span>,flow)</span>)&quot;</span>, <span class=hljs-number >8</span>, colors[k]))
+        <span class=hljs-keyword >end</span>
+    <span class=hljs-keyword >end</span>
+<span class=hljs-keyword >end</span>
+
+scatter!(x_plot, y_plot, label=<span class=hljs-string >&quot;Nodes&quot;</span>, legend=:outertopleft)
+annotate!(x_plot, y_plot, string.(V))
+<span class=hljs-keyword >for</span> k <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(K)
+    label = <span class=hljs-string >&quot;Path <span class=hljs-subst >$(K[k][<span class=hljs-number >1</span>])</span>→<span class=hljs-subst >$(K[k][<span class=hljs-number >2</span>])</span>&quot;</span>
+    plot!([], [], color=colors[k], label=label)
+<span class=hljs-keyword >end</span>
+
+title!(<span class=hljs-string >&quot;Traffic Network with Flows&quot;</span>)
+savefig(<span class=hljs-string >&quot;traffic_network_plot.svg&quot;</span>)</code></pre> <img src="/assets/scripts/Optimization/traffic_problem.svg" alt=""> <pre><code class="plaintext hljs">This is Ipopt version 3.14.14, running with linear solver MUMPS 5.6.2.
+
+Number of nonzeros in equality constraint Jacobian...:      160
+Number of nonzeros in inequality constraint Jacobian.:       80
+Number of nonzeros in Lagrangian Hessian.............:        0
+
+Total number of variables............................:       80
+                     variables with only lower bounds:       80
+                variables with lower and upper bounds:        0
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:       20
+Total number of inequality constraints...............:       20
+        inequality constraints with only lower bounds:        0
+   inequality constraints with lower and upper bounds:        0
+        inequality constraints with only upper bounds:       20
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  3.9999960e+00 1.00e+02 7.00e+00  -1.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  4.1623134e+00 1.00e+02 7.00e+00  -1.0 5.03e+01    -  4.96e-04 4.96e-04h  1
+   2  2.0988917e+02 9.15e+01 9.43e+00  -1.0 1.00e+02    -  2.23e-04 8.43e-02h  1
+   3  5.0421487e+02 7.92e+01 6.43e+00  -1.0 9.28e+01    -  3.08e-01 1.34e-01h  1
+   4  1.9743373e+03 1.75e+01 7.49e+00  -1.0 7.93e+01    -  1.21e-02 7.79e-01h  1
+   5  1.9924851e+03 1.67e+01 7.04e+00  -1.0 2.70e+01    -  6.14e-02 4.59e-02h  1
+   6  2.0759046e+03 1.33e+01 7.24e+00  -1.0 2.78e+01    -  2.05e-02 2.03e-01h  1
+   7  2.1551123e+03 1.03e+01 7.24e+00  -1.0 3.57e+01    -  4.91e-02 2.30e-01h  1
+   8  2.1629523e+03 9.96e+00 2.80e+00  -1.0 3.03e+01    -  5.85e-01 2.97e-02h  1
+   9  2.1640031e+03 9.91e+00 3.09e+00  -1.0 9.93e+01    -  2.10e-02 4.79e-03h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  2.2568808e+03 6.01e+00 4.20e+00  -1.0 1.01e+02    -  1.71e-02 3.93e-01h  1
+  11  2.3867583e+03 2.02e+00 3.97e+00  -1.0 5.10e+01    -  1.20e-01 6.64e-01h  1
+  12  2.4369340e+03 7.93e-01 9.18e-01  -1.0 6.10e+00    -  7.83e-01 6.08e-01h  1
+  13  2.4696395e+03 1.21e-09 3.09e-01  -1.0 4.05e+00    -  5.24e-01 1.00e+00h  1
+  14  2.4696125e+03 3.22e-10 4.90e-03  -1.0 4.16e+00    -  9.87e-01 1.00e+00f  1
+  15  2.4643106e+03 1.12e-10 2.00e-07  -1.7 3.21e-01    -  1.00e+00 1.00e+00f  1
+  16  2.4630097e+03 1.03e-11 4.28e-06  -3.8 6.23e-02    -  1.00e+00 1.00e+00f  1
+  17  2.4630001e+03 2.84e-14 1.85e-11  -5.7 1.05e-02    -  1.00e+00 1.00e+00f  1
+  18  2.4630000e+03 1.42e-14 2.66e-14  -8.6 1.51e-03    -  1.00e+00 1.00e+00f  1
+
+Number of Iterations....: 18
+
+                                   (scaled)                 (unscaled)
+Objective...............:   2.4629999790753836e+03    2.4629999790753836e+03
+Dual infeasibility......:   2.6645352591003757e-14    2.6645352591003757e-14
+Constraint violation....:   1.4210854715202004e-14    1.4210854715202004e-14
+Variable bound violation:   9.8526023534162266e-09    9.8526023534162266e-09
+Complementarity.........:   3.4143293206596104e-09    3.4143293206596104e-09
+Overall NLP error.......:   3.4143293206596104e-09    3.4143293206596104e-09
+
+
+Number of objective function evaluations             = 19
+Number of objective gradient evaluations             = 19
+Number of equality constraint evaluations            = 19
+Number of inequality constraint evaluations          = 19
+Number of equality constraint Jacobian evaluations   = 1
+Number of inequality constraint Jacobian evaluations = 1
+Number of Lagrangian Hessian evaluations             = 1
+Total seconds in IPOPT                               = 0.127
+
+EXIT: Optimal Solution Found.
+Traffic flow for demand pair (1, 4):
+Arc (1, 2): -9.601356546038283e-9 cars
+Arc (1, 3): 92.47643753000027 cars
+Arc (1, 4): 7.5235624501182246 cars
+Arc (1, 5): -9.316426388986685e-9 cars
+Arc (2, 1): -9.561436481270206e-9 cars
+Arc (2, 3): -9.561468026331309e-9 cars
+Arc (2, 4): -9.561499133272613e-9 cars
+Arc (2, 5): -9.732848350946505e-9 cars
+Arc (3, 1): -9.686744695908158e-9 cars
+Arc (3, 2): -9.730131593776681e-9 cars
+Arc (3, 4): 92.4764375300594 cars
+Arc (3, 5): -9.316346437751246e-9 cars
+Arc (4, 1): -9.772193874171276e-9 cars
+Arc (4, 2): -9.77796850693838e-9 cars
+Arc (4, 3): -9.582390277004865e-9 cars
+Arc (4, 5): -9.673117072959855e-9 cars
+Arc (5, 1): -9.778905530634984e-9 cars
+Arc (5, 2): -9.307794774563945e-9 cars
+Arc (5, 3): -9.530246995771667e-9 cars
+Arc (5, 4): -9.421791503621782e-9 cars
+Traffic flow for demand pair (2, 3):
+Arc (1, 2): -9.79117794797899e-9 cars
+Arc (1, 3): 5.377680623644062 cars
+Arc (1, 4): -9.377354333081286e-9 cars
+Arc (1, 5): -9.559477081239826e-9 cars
+Arc (2, 1): 5.3776806239744355 cars
+Arc (2, 3): 94.62231935587425 cars
+Arc (2, 4): -9.377476152157397e-9 cars
+Arc (2, 5): -9.55948350011114e-9 cars
+Arc (3, 1): -9.686752772962351e-9 cars
+Arc (3, 2): -9.8329393754874e-9 cars
+Arc (3, 4): -9.377413457436419e-9 cars
+Arc (3, 5): -9.559459877592556e-9 cars
+Arc (4, 1): -9.64074929532512e-9 cars
+Arc (4, 2): -9.806875184153353e-9 cars
+Arc (4, 3): -8.731563333365968e-9 cars
+Arc (4, 5): -9.557561731019908e-9 cars
+Arc (5, 1): -9.730880705473795e-9 cars
+Arc (5, 2): -9.65727462672773e-9 cars
+Arc (5, 3): -9.243322477852872e-9 cars
+Arc (5, 4): -9.604504997477023e-9 cars
+Traffic flow for demand pair (2, 4):
+Arc (1, 2): -9.791178873804372e-9 cars
+Arc (1, 3): 3.6473018124638017 cars
+Arc (1, 4): 1.4764355467745653 cars
+Arc (1, 5): -9.466830753229746e-9 cars
+Arc (2, 1): 5.12373736919603 cars
+Arc (2, 3): 4.876261673416503 cars
+Arc (2, 4): 90.00000092767948 cars
+Arc (2, 5): -9.466834120783558e-9 cars
+Arc (3, 1): -9.686760740987151e-9 cars
+Arc (3, 2): -9.832942233243129e-9 cars
+Arc (3, 4): 8.523563495867206 cars
+Arc (3, 5): -9.466828623783199e-9 cars
+Arc (4, 1): -9.772205446756535e-9 cars
+Arc (4, 2): -9.852602353416227e-9 cars
+Arc (4, 3): -9.582400690064436e-9 cars
+Arc (4, 5): -9.711989795660493e-9 cars
+Arc (5, 1): -9.756707370737502e-9 cars
+Arc (5, 2): -9.698091474556506e-9 cars
+Arc (5, 3): -9.417228391729965e-9 cars
+Arc (5, 4): -9.240455983206998e-9 cars
+Traffic flow for demand pair (2, 5):
+Arc (1, 2): -9.791176488447175e-9 cars
+Arc (1, 3): 2.24159568777899 cars
+Arc (1, 4): -9.053374632408988e-9 cars
+Arc (1, 5): 8.256983373865827 cars
+Arc (2, 1): 10.498579072019963 cars
+Arc (2, 3): 6.501420039435408 cars
+Arc (2, 4): -9.05368793346882e-9 cars
+Arc (2, 5): 83.00000085834154 cars
+Arc (3, 1): -9.686763132930479e-9 cars
+Arc (3, 2): -9.832941386648018e-9 cars
+Arc (3, 4): -9.053607406597202e-9 cars
+Arc (3, 5): 8.743015736813563 cars
+Arc (4, 1): -9.69999124145424e-9 cars
+Arc (4, 2): -9.825407704444947e-9 cars
+Arc (4, 3): -9.252577299916775e-9 cars
+Arc (4, 5): -8.14733911577274e-9 cars
+Arc (5, 1): -9.8329414917129e-9 cars
+Arc (5, 2): -9.807242184644958e-9 cars
+Arc (5, 3): -9.721569762763768e-9 cars
+Arc (5, 4): -9.764645778231046e-9 cars</code></pre></p> <div class=page-foot > Last modified: June 08, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>
