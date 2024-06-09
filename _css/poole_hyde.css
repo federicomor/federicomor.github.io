@@ -334,7 +334,8 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 768px) {
   .content {
-    max-width: 45rem;
+    max-width: 900px; 
+/*    change this max width to regulate the widht of the code and text*/
     margin-left: 15rem;
     margin-right: 2rem;
   }

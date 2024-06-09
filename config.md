@@ -3,7 +3,8 @@ Add here global page variables to use throughout your website.
 -->
 +++
 author = "Federico Angelo Mor"
-mintoclevel = 3
+mintoclevel = 2
+maxtoclevel = 6
 hasplotly = false
 
 prepath = ""
