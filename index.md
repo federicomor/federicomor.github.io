@@ -1,5 +1,7 @@
-@def title = "Home"
-@def tags = ["syntax", "code"]
++++
+title = "Home"
+# tags = ["syntax", "code"]
++++
 
 
 # Home
