@@ -64,7 +64,6 @@ for k in 1:length(K)
 end
 
 
-
 # Plot the traffic network with flows
 theta = 2 * π * (0:n_nodes-1) / n_nodes
 x_plot = 1 * cos.(theta)
@@ -91,11 +90,12 @@ for j in 1:length(A)
     for k in 1:length(K)
         flow = x_opt[k, j]
         if flow > 0
-            sx1, sy1, sx2, sy2 = shift_points(x1, y1, x2, y2, 0.02 * k)
+            sx1, sy1, sx2, sy2 = shift_points(x1, y1, x2, y2, 0.04 * k)
             plot!([sx1, sx2], [sy1, sy2], arrow=:arrow, label="",
-                color=colors[k], linewidth=2 + flow/50, alpha=0.6)
-            mid_x = (sx1 + sx2) / 2 + 0.05 * (k-1)
-            mid_y = (sy1 + sy2) / 2 + 0.05 * (k-1)
+                color=colors[k], linewidth=2,# + flow/50,
+                alpha=0.6)
+            mid_x = (sx1 + sx2) / 2
+            mid_y = (sy1 + sy2) / 2
             annotate!(mid_x, mid_y, text("$(round(Int64,flow))", 8, colors[k]))
         end
     end
@@ -109,4 +109,4 @@ for k in 1:length(K)
 end
 
 title!("Traffic Network with Flows")
-savefig("traffic_network_plot.svg")
+savefig("traffic_problem.svg")

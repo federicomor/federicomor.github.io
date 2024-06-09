@@ -4,6 +4,7 @@ Add here global page variables to use throughout your website.
 +++
 author = "Federico Angelo Mor"
 mintoclevel = 3
+hasplotly = false
 
 prepath = ""
 
