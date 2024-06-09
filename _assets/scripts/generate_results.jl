@@ -19,9 +19,7 @@ function genplain(s::String)
 end
 
 # output
-
 genplain("Optimization/traffic_problem.jl")
 
 # plots
-
-include("script2.jl")
+# include("script2.jl")

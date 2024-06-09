@@ -1,7 +1,6 @@
 +++
 title = "Attività"
 hascode = true
-# tags = ["syntax", "code", "image"]
 +++
 
 # Attività
