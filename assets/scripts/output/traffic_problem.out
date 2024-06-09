@@ -54,7 +54,7 @@ Number of inequality constraint evaluations          = 19
 Number of equality constraint Jacobian evaluations   = 1
 Number of inequality constraint Jacobian evaluations = 1
 Number of Lagrangian Hessian evaluations             = 1
-Total seconds in IPOPT                               = 0.127
+Total seconds in IPOPT                               = 0.021
 
 EXIT: Optimal Solution Found.
 Traffic flow for demand pair (1, 4):

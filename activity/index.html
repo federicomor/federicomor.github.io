@@ -1,4 +1,4 @@
-<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  href="/assets/favicon.svg"> <title>Attività</title> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto;" width=170  src="/assets/main img.jpg" alt="main img"/></a></h1> <p class=lead  style="line-height: 1.3;">Proprio qui. Con la corona d'alloro e tutto il resto.</p> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item active" href="/activity/">Activity</a> </nav> <p>&copy; Federico Angelo Mor</p> </div> </div> <div class="content container"> <div class=franklin-content > <h1 id="attività"><a href="#attività" class=header-anchor >Attività</a></h1> <div class=franklin-toc ><ol><li><a href="#julia_and_pluto_notebook">Julia and Pluto notebook</a><li><a href="#traffic_problem">Traffic Problem</a></ol></div> <h2 id=julia_and_pluto_notebook ><a href="#julia_and_pluto_notebook" class=header-anchor >Julia and Pluto notebook</a></h2> <p><a href="/assets/notebooks_int.html">here</a> Some work did in Julia and interactively displayed using Pluto and plotly.<br/></p> <h2 id=traffic_problem ><a href="#traffic_problem" class=header-anchor >Traffic Problem</a></h2> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> JuMP
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  href="/assets/favicon.svg"> <title>Attività</title> <script src="/libs/plotly/plotly.min.js"></script> <script> // This function is used when calling `\fig{...}` See # Using \fig{...} below const PlotlyJS_json = async (div, url) => { response = await fetch(url); // get file fig = await response.json(); // convert it to json // Make the plot fit the screen responsively. See the documentation of plotly.js. https://plotly.com/javascript/responsive-fluid-layout/ if (typeof fig.config === 'undefined') { fig["config"]={} } delete fig.layout.width delete fig.layout.height fig["layout"]["autosize"] = true fig["config"]["autosizable"] = true fig["config"]["responsive"] = true // make it easier to scroll throught the website rather than being blocked by a figure. fig.config["scrollZoom"] = false // PlotlyJS.savefig by default add the some more attribute to make a static plot. // Disable them to make the website fancier. delete fig.config.staticPlot delete fig.config.displayModeBar delete fig.config.doubleClick delete fig.config.showTips Plotly.newPlot(div, fig); }; </script> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto;" width=170  src="/assets/main img.jpg" alt="main img"/></a></h1> <p class=lead  style="line-height: 1.3;">Proprio qui. Con la corona d'alloro e tutto il resto.</p> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item active" href="/activity/">Activity</a> </nav> </div> </div> <div class="content container"> <div class=franklin-content > <h1 id="attività"><a href="#attività" class=header-anchor >Attività</a></h1> <h2 id=julia_and_pluto_notebook ><a href="#julia_and_pluto_notebook" class=header-anchor >Julia and Pluto notebook</a></h2> <p><a href="/assets/notebooks_int.html">here</a> Some work did in Julia and interactively displayed using Pluto and plotly.<br/></p> <h2 id=traffic_problem ><a href="#traffic_problem" class=header-anchor >Traffic Problem</a></h2> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> JuMP
 <span class=hljs-keyword >using</span> Ipopt
 <span class=hljs-keyword >using</span> Plots
 <span class=hljs-keyword >using</span> Random
@@ -64,7 +64,6 @@ x_opt = value.(x)
 <span class=hljs-keyword >end</span>
 
 
-
 <span class=hljs-comment ># Plot the traffic network with flows</span>
 theta = <span class=hljs-number >2</span> * <span class=hljs-literal >π</span> * (<span class=hljs-number >0</span>:n_nodes-<span class=hljs-number >1</span>) / n_nodes
 x_plot = <span class=hljs-number >1</span> * cos.(theta)
@@ -91,11 +90,12 @@ plot()
     <span class=hljs-keyword >for</span> k <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(K)
         flow = x_opt[k, j]
         <span class=hljs-keyword >if</span> flow &gt; <span class=hljs-number >0</span>
-            sx1, sy1, sx2, sy2 = shift_points(x1, y1, x2, y2, <span class=hljs-number >0.02</span> * k)
+            sx1, sy1, sx2, sy2 = shift_points(x1, y1, x2, y2, <span class=hljs-number >0.04</span> * k)
             plot!([sx1, sx2], [sy1, sy2], arrow=:arrow, label=<span class=hljs-string >&quot;&quot;</span>,
-                color=colors[k], linewidth=<span class=hljs-number >2</span> + flow/<span class=hljs-number >50</span>, alpha=<span class=hljs-number >0.6</span>)
-            mid_x = (sx1 + sx2) / <span class=hljs-number >2</span> + <span class=hljs-number >0.05</span> * (k-<span class=hljs-number >1</span>)
-            mid_y = (sy1 + sy2) / <span class=hljs-number >2</span> + <span class=hljs-number >0.05</span> * (k-<span class=hljs-number >1</span>)
+                color=colors[k], linewidth=<span class=hljs-number >2</span>,<span class=hljs-comment ># + flow/50,</span>
+                alpha=<span class=hljs-number >0.6</span>)
+            mid_x = (sx1 + sx2) / <span class=hljs-number >2</span>
+            mid_y = (sy1 + sy2) / <span class=hljs-number >2</span>
             annotate!(mid_x, mid_y, text(<span class=hljs-string >&quot;<span class=hljs-subst >$(round(<span class=hljs-built_in >Int64</span>,flow)</span>)&quot;</span>, <span class=hljs-number >8</span>, colors[k]))
         <span class=hljs-keyword >end</span>
     <span class=hljs-keyword >end</span>
@@ -109,7 +109,7 @@ annotate!(x_plot, y_plot, string.(V))
 <span class=hljs-keyword >end</span>
 
 title!(<span class=hljs-string >&quot;Traffic Network with Flows&quot;</span>)
-savefig(<span class=hljs-string >&quot;traffic_network_plot.svg&quot;</span>)</code></pre> <img src="/assets/scripts/Optimization/traffic_problem.svg" alt=""> <pre><code class="plaintext hljs">This is Ipopt version 3.14.14, running with linear solver MUMPS 5.6.2.
+savefig(<span class=hljs-string >&quot;traffic_problem.svg&quot;</span>)</code></pre> <img src="/assets/scripts/Optimization/traffic_problem.svg" alt=""> <pre><code class="plaintext hljs">This is Ipopt version 3.14.14, running with linear solver MUMPS 5.6.2.
 
 Number of nonzeros in equality constraint Jacobian...:      160
 Number of nonzeros in inequality constraint Jacobian.:       80
@@ -165,7 +165,7 @@ Number of inequality constraint evaluations          = 19
 Number of equality constraint Jacobian evaluations   = 1
 Number of inequality constraint Jacobian evaluations = 1
 Number of Lagrangian Hessian evaluations             = 1
-Total seconds in IPOPT                               = 0.127
+Total seconds in IPOPT                               = 0.021
 
 EXIT: Optimal Solution Found.
 Traffic flow for demand pair (1, 4):
@@ -251,4 +251,4 @@ Arc (4, 5): -8.14733911577274e-9 cars
 Arc (5, 1): -9.8329414917129e-9 cars
 Arc (5, 2): -9.807242184644958e-9 cars
 Arc (5, 3): -9.721569762763768e-9 cars
-Arc (5, 4): -9.764645778231046e-9 cars</code></pre></p> <div class=page-foot > Last modified: June 08, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>
+Arc (5, 4): -9.764645778231046e-9 cars</code></pre></p> <div class=page-foot > Last modified: June 09, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>
