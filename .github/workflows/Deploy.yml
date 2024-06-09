@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - dev
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -12,24 +12,34 @@ jobs:
       with:
         persist-credentials: false
     - name: Install python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: 3.8
+        python-version: '3.8'
+    - run: pip install matplotlib
     - name: Install Julia
-      uses: julia-actions/setup-julia@latest
+      uses: julia-actions/setup-julia@v1
       with:
-        version: 1
+        version: '1'
     - run: julia -e '
             using Pkg;
             Pkg.add(Pkg.PackageSpec(name="NodeJS"));
             using NodeJS;
-            Pkg.activate("."); Pkg.instantiate();
+            run(`$(npm_cmd()) install lunr`);
+            run(`$(npm_cmd()) install cheerio`);
             Pkg.add(Pkg.PackageSpec(name="Franklin", rev="master"));
             using Franklin;
-            optimize(minify=false, prerender=false);'
+            cd("docs");
+            Pkg.activate("."); Pkg.instantiate();
+            serve(single=true, cleanup=false); lunr(); optimize(minify=false, prerender=false);
+            cd("../demos");
+            Pkg.activate("."); Pkg.instantiate();
+            optimize(minify=false, prerender=false);
+            dst = "../docs/__site/demos";
+            mkpath(dst);
+            foreach(p -> cp("__site/$p", "$dst/$p"), readdir("__site"));'
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: master
-        FOLDER: __site
+        BRANCH: gh-pages
+        FOLDER: docs/__site
