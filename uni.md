@@ -37,6 +37,13 @@ We had to detect defects into 3d printed objects, using control charts, the meth
     height="500px"
     width="100%"
 ></embed>
+
+<object data="/assets/Uni/qda_report.pdf" type="application/pdf" frameborder="0" width="100%" height="600px" style="padding: 20px;">
+    <embed src="/assets/Uni/qda_report.pdf#navpanes=0" width="100%" height="600px"/> 
+</object>
+
+<iframe src="/assets/Uni/qda_report.pdf#navpanes=0" width="100%" height="600px"> </iframe>
+
 ~~~
 
 ### Applied Statistic Project
