@@ -4,17 +4,62 @@ title = "Uni"
 
 
 # Uni
-### Progetti
-> [Bayesian Project visualization page](/assets/figures/visualize.html)
-Here there are all the relevant plots we produced to better develop our analysis and interpretation.\\
+\toc
 
---- 
+## Progetti
 
-### Appunti
-Eos iste ut atque velit excepturi. Optio pariatur omnis culpa ut sed. Dolorem et deleniti in ut fugit molestiae. Fugiat deleniti labore quis autem.
 
-Quia et sed dolores velit ut. Impedit repellendus unde modi ut sit. Qui et in maxime aut quod.
+### Bayesian Project
+[Here](/assets/figures/visualize.html) there are all the relevant plots we produced to better develop our analysis and interpretation. While here the pdf of the report.
 
-Consequatur quisquam voluptatum libero voluptate. Iure fugit et sit quia. Rem reiciendis voluptate est. Repellendus quia ut doloremque dolorem sapiente odit.
+~~~
+<embed
+    src="/assets/Uni/bayesian_report_polimi.pdf#navpanes=0"
+    type="application/pdf"
+    frameBorder="0"
+    scrolling="auto"
+    height="500px"
+    width="100%"
+></embed>
+~~~
 
-Consequatur odit consectetur autem quis maxime quas reprehenderit iusto. Omnis dolor vero nihil officiis. Voluptas esse non voluptatum. Itaque nobis ut impedit sequi fuga sed nobis placeat. Impedit ratione magni id eos.
+
+
+### Quality Data Analysis Project
+We had to detect defects into 3d printed objects, using control charts, the method we learnt at lectures. In the end our model detected 7 out of the 9 defected objects, on a total of 40 objects.
+
+~~~
+<embed
+    src="/assets/Uni/qda_report.pdf#navpanes=0"
+    type="application/pdf"
+    frameBorder="0"
+    scrolling="auto"
+    height="500px"
+    width="100%"
+></embed>
+~~~
+
+### Applied Statistic Project
+We had to develop a statistical analysis on a topic at our choice. We studied the PISA dataset, about the evaluations of students in european high school, to derive results about their wealth and well-being.
+
+~~~
+<embed
+    src="/assets/Uni/A0 poster Applied Statistics CYMK.pdf#navpanes=0"
+    type="application/pdf"
+    frameBorder="0"
+    scrolling="auto"
+    height="500px"
+    width="100%"
+></embed>
+~~~
+
+### Gioco del 15 - Generalizato
+Al primo anno, quarto laboratorio di informatica, dovevamo implementare il gioco del 15 in C, quello con la griglia 4 per 4, una casella vuota, e i numeri all'interno da riordinare. Però, già che c'ero, l'ho implementato in dimensione generica N per N, e quindi anzichè *gioco del 15* si è esteso in *gioco dell'(N^2-1)*.
+
+Importante notare che la board non può essere inizializzata con numeri in ordine casuale, altrimenti si potrebbe arrivare a configurazioni non risolvibili, per esmepio $\{1\,2\,3;\,4\,5\,6;\,8\,7\;\square \}$, dove l'8 e il 7 non possono essere invertiti. Perciò per inizializzarla, e per regolare la difficoltà del gioco, il codice parte da una board risolta e su quella applica per un po' di volte delle mosse casuali, per disordinare la sequenza preservandone la fattibiltà. 
+
+Il codice C originale è quello che segue (scritto al primo anno i primi mesi, quindi molto disordinato e poco efficiente), ma [qui](/assets/Uni/15_game.html) potete trovare una versione equivalente (e giocabile!) in html e javascript.
+
+\input{c}{/_assets/scripts/Uni/gioco_15.c}
+
+

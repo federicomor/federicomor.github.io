@@ -6,7 +6,7 @@ author = "Federico Angelo Mor"
 mintoclevel = 2
 maxtoclevel = 6
 hasplotly = false
-
+hascode = true
 prepath = ""
 
 # Add here files or directories that should be ignored by Franklin, otherwise

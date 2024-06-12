@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N^2-1 Puzzle Game</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  .controls {
+    margin-bottom: 20px;
+  }
+
+  label {
+    margin-right: 10px;
+  }
+
+  input[type="range"] {
+    margin-right: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  td {
+    border: 2px solid #ddd;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #fff;
+  }
+
+  td:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+  }
+
+  td:empty {
+    background-color: #e0e0e0;
+    cursor: default;
+  }
+
+  .status {
+    margin-top: 20px;
+  }
+
+  .status label {
+    margin-right: 10px;
+  }
+</style>
+
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<h1>\( N^2 \) Puzzle Game</h1> -->
+
+<!-- </head>
+<body>
+<h1>15 Puzzle Game</h1>
+ -->
+
+</head>
+<body>
+<h1>N^2-1 Puzzle Game</h1>
+
+<div class="controls">
+  <div>
+    <label for="sizeSlider">Size of the board:</label>
+    <input type="range" id="sizeSlider" min="3" max="13" step="1" value="4" oninput="updateSettings(); this.nextElementSibling.value = this.value"><output>4</output>
+  </div>
+  <div>
+    <label for="shuffleSlider">Board complexity:</label>
+    <input type="range" id="shuffleSlider" min="0" max="10000" value="10" step="10" oninput="updateSettings(); this.nextElementSibling.value = (this.value / this.max * 100).toFixed(2) + '%'"><output>10%</output>
+  </div>
+</div>
+<table id="gameBoard"></table>
+<div class="status">
+  <label for="moveCounter">Moves: </label>
+  <output id="moveCounter">0</output>
+</div>
+<script>
+  let N = document.getElementById('sizeSlider').value;
+  let shuffleIterations = document.getElementById('shuffleSlider').value;
+  let moves = 0; // Initialize moves counter
+
+  let gameBoard = [];
+  let emptyRow, emptyCol;
+
+  // Initialize the game board
+  function initializeBoard() {
+    let num = 1;
+    for (let i = 0; i < N; i++) {
+      gameBoard[i] = [];
+      for (let j = 0; j < N; j++) {
+        gameBoard[i][j] = num++;
+      }
+    }
+    emptyRow = N - 1;
+    emptyCol = N - 1;
+    gameBoard[N - 1][N - 1] = 0; // Empty cell
+  }
+
+  // Shuffle the game board
+  function shuffleBoard() {
+    for (let i = 0; i < shuffleIterations; i++) {
+      let randDirection = Math.floor(Math.random() * 4); // 0: up, 1: down, 2: left, 3: right
+      switch (randDirection) {
+        case 0:
+          if (emptyRow > 0) {
+            swap(emptyRow, emptyCol, emptyRow - 1, emptyCol);
+            emptyRow--;
+          }
+          break;
+        case 1:
+          if (emptyRow < N - 1) {
+            swap(emptyRow, emptyCol, emptyRow + 1, emptyCol);
+            emptyRow++;
+          }
+          break;
+        case 2:
+          if (emptyCol > 0) {
+            swap(emptyRow, emptyCol, emptyRow, emptyCol - 1);
+            emptyCol--;
+          }
+          break;
+        case 3:
+          if (emptyCol < N - 1) {
+            swap(emptyRow, emptyCol, emptyRow, emptyCol + 1);
+            emptyCol++;
+          }
+          break;
+      }
+    }
+    if (isSolved()) {
+      // alert("Congratulations! You solved the puzzle!");
+      shuffleBoard();
+    }
+  }
+
+  // Swap two cells
+  function swap(row1, col1, row2, col2) {
+    let temp = gameBoard[row1][col1];
+    gameBoard[row1][col1] = gameBoard[row2][col2];
+    gameBoard[row2][col2] = temp;
+  }
+
+  // Render the game board
+  function renderBoard() {
+    let table = document.getElementById("gameBoard");
+    table.innerHTML = "";
+    for (let i = 0; i < N; i++) {
+      let row = document.createElement("tr");
+      for (let j = 0; j < N; j++) {
+        let cell = document.createElement("td");
+        cell.textContent = gameBoard[i][j] === 0 ? "" : gameBoard[i][j];
+        cell.addEventListener("click", () => cellClick(i, j)); // Add click event listener
+        row.appendChild(cell);
+      }
+      table.appendChild(row);
+    }
+  }
+
+  // Handle cell click event
+  function cellClick(row, col) {
+    if (isValidMove(row, col) && !isSolved()) {
+      swap(row, col, emptyRow, emptyCol);
+      emptyRow = row;
+      emptyCol = col;
+      renderBoard();
+      moves++; // Increment moves counter
+      document.getElementById("moveCounter").textContent = moves; // Update moves display
+      if (isSolved()) {
+        alert("Congratulations! You solved the puzzle!\nRefresh the page or change the settings above to restart.");
+      }
+    }
+  }
+
+  // Check if a move is valid
+  function isValidMove(row, col) {
+    return (row === emptyRow && Math.abs(col - emptyCol) === 1) ||
+           (col === emptyCol && Math.abs(row - emptyRow) === 1);
+  }
+
+  // Check if the game is solved
+  function isSolved() {
+    let num = 1;
+    for (let i = 0; i < N; i++) {
+      for (let j = 0; j < N; j++) {
+        if (gameBoard[i][j] !== num && (i !== N - 1 || j !== N - 1)) {
+          return false;
+        }
+        num++;
+      }
+    }
+    return true;
+  }
+
+  // Update board size and shuffle iterations based on sliders
+  function updateSettings() {
+    N = parseInt(document.getElementById("sizeSlider").value);
+    shuffleIterations = parseInt(document.getElementById("shuffleSlider").value);
+    moves = 0; // Reset moves counter
+    document.getElementById("moveCounter").textContent = moves; // Reset moves display
+    initializeBoard();
+    shuffleBoard();
+    renderBoard();
+  }
+
+  // Start the game when the page is loaded
+  window.onload = () => {
+    initializeBoard();
+    shuffleBoard();
+    renderBoard();
+    document.getElementById("sizeSlider").addEventListener("input", updateSettings);
+    document.getElementById("shuffleSlider").addEventListener("input", updateSettings);
+  };
+</script>
+</body>
+</html>
