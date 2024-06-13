@@ -1,4 +1,129 @@
-<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  href="/assets/favicon.png"> <title>Attività</title> <script src="/libs/plotly/plotly.min.js"></script> <script> // This function is used when calling `\fig{...}` See # Using \fig{...} below const PlotlyJS_json = async (div, url) => { response = await fetch(url); // get file fig = await response.json(); // convert it to json // Make the plot fit the screen responsively. See the documentation of plotly.js. https://plotly.com/javascript/responsive-fluid-layout/ if (typeof fig.config === 'undefined') { fig["config"]={} } delete fig.layout.width delete fig.layout.height fig["layout"]["autosize"] = true fig["config"]["autosizable"] = true fig["config"]["responsive"] = true // make it easier to scroll throught the website rather than being blocked by a figure. fig.config["scrollZoom"] = false // PlotlyJS.savefig by default add the some more attribute to make a static plot. // Disable them to make the website fancier. delete fig.config.staticPlot delete fig.config.displayModeBar delete fig.config.doubleClick delete fig.config.showTips Plotly.newPlot(div, fig); }; </script> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto;" width=170  src="/assets/main img.jpg" alt="main img"/></a></h1> <p class=lead  style="line-height: 1.3;">Proprio qui. Con la corona d'alloro e tutto il resto.</p> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item active" href="/activity/">Activity</a> </nav> </div> </div> <div class="content container"> <div class=franklin-content > <h1 id="attività"><a href="#attività" class=header-anchor >Attività</a></h1> <div class=franklin-toc ><ol><li><a href="#esempi">Esempi</a><ol><li><a href="#julia_and_pluto_notebook">Julia and Pluto notebook</a><li><a href="#traffic_problem">Traffic Problem</a></ol></ol></div> <h2 id=esempi ><a href="#esempi" class=header-anchor >Esempi</a></h2> <h3 id=julia_and_pluto_notebook ><a href="#julia_and_pluto_notebook" class=header-anchor >Julia and Pluto notebook</a></h3> <p><a href="/assets/notebooks_int.html">here</a> Some work did in Julia and interactively displayed using Pluto and plotly.<br/></p> <h3 id=traffic_problem ><a href="#traffic_problem" class=header-anchor >Traffic Problem</a></h3> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> JuMP
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  href="/assets/favicon.png"> <title>Attività</title> <script src="/libs/plotly/plotly.min.js"></script> <script> // This function is used when calling `\fig{...}` See # Using \fig{...} below const PlotlyJS_json = async (div, url) => { response = await fetch(url); // get file fig = await response.json(); // convert it to json // Make the plot fit the screen responsively. See the documentation of plotly.js. https://plotly.com/javascript/responsive-fluid-layout/ if (typeof fig.config === 'undefined') { fig["config"]={} } delete fig.layout.width delete fig.layout.height fig["layout"]["autosize"] = true fig["config"]["autosizable"] = true fig["config"]["responsive"] = true // make it easier to scroll throught the website rather than being blocked by a figure. fig.config["scrollZoom"] = false // PlotlyJS.savefig by default add the some more attribute to make a static plot. // Disable them to make the website fancier. delete fig.config.staticPlot delete fig.config.displayModeBar delete fig.config.doubleClick delete fig.config.showTips Plotly.newPlot(div, fig); }; </script> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto;" width=170  src="/assets/main img.jpg" alt="main img"/></a></h1> <p class=lead  style="line-height: 1.3;">Proprio qui. Con la corona d'alloro e tutto il resto.</p> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item active" href="/activity/">Activity</a> </nav> </div> </div> <div class="content container"> <div class=franklin-content > <h1 id="attività"><a href="#attività" class=header-anchor >Attività</a></h1> <div class=franklin-toc ><ol><li><a href="#esempi">Esempi</a><ol><li><a href="#paradosso_dei_compleanni">Paradosso dei Compleanni</a><li><a href="#tennis_tie-break_probability">Tennis Tie-Break Probability</a><li><a href="#strategia_ottimale_per_appuntamenti">Strategia Ottimale per Appuntamenti</a><li><a href="#traffic_problem">Traffic Problem</a></ol></ol></div> <h2 id=esempi ><a href="#esempi" class=header-anchor >Esempi</a></h2> <h3 id=paradosso_dei_compleanni ><a href="#paradosso_dei_compleanni" class=header-anchor >Paradosso dei Compleanni</a></h3> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> Plots
+<span class=hljs-keyword >using</span> Base: basename <span class=hljs-comment ># for easy filenames save</span>
+
+plotly()
+PlotlyKaleido.start() <span class=hljs-comment ># needed for all savefig with plotly</span>
+
+p1(n) = <span class=hljs-number >1</span> - factorial(big(<span class=hljs-number >365</span>)) / (factorial(big(<span class=hljs-number >365</span>-n)) * big(<span class=hljs-number >365</span>)^n)
+p1_values = p1.(<span class=hljs-number >1</span>:<span class=hljs-number >365</span>)
+plot(p1_values,title=<span class=hljs-string >&quot;p1 values&quot;</span>)
+savefig(<span class=hljs-string >&quot;figs/<span class=hljs-subst >$(splitext(basename(<span class=hljs-meta >@__FILE__</span>)</span>)[1])_1.json&quot;</span>)
+
+p2(n) = <span class=hljs-number >1</span> - (big(<span class=hljs-number >364</span>/<span class=hljs-number >365</span>)^n)
+p2_values = p2.(<span class=hljs-number >1</span>:<span class=hljs-number >2000</span>)
+plot(p2_values,title=<span class=hljs-string >&quot;p2 values&quot;</span>)
+savefig(<span class=hljs-string >&quot;figs/<span class=hljs-subst >$(splitext(basename(<span class=hljs-meta >@__FILE__</span>)</span>)[1])_2.json&quot;</span>)</code></pre> <div id=fdpobz  style=""></div> <script> graphDiv = document.getElementById("fdpobz"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/figs/paradosso_compleanni_1.json'); </script> <div id=fdptak  style=""></div> <script> graphDiv = document.getElementById("fdptak"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/figs/paradosso_compleanni_2.json'); </script> </p> <h3 id=tennis_tie-break_probability ><a href="#tennis_tie-break_probability" class=header-anchor >Tennis Tie-Break Probability</a></h3> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> Plots
+<span class=hljs-keyword >using</span> Distributions 
+
+plotly()
+PlotlyKaleido.start() <span class=hljs-comment ># needed for all savefig with plotly</span>
+
+<span class=hljs-comment ># 1  2  3  4  5  6  7  8  9  10 11 12</span>
+<span class=hljs-comment ># A  B  B  A  A  B  B  A  A  B  B  A</span>
+<span class=hljs-keyword >function</span> ptiebreak(a::<span class=hljs-built_in >Float64</span>,b::<span class=hljs-built_in >Float64</span>)
+    p70 = (pdf(Binomial(<span class=hljs-number >3</span>,a),<span class=hljs-number >3</span>) * pdf(Binomial(<span class=hljs-number >3</span>,b),<span class=hljs-number >3</span>))*b 
+    <span class=hljs-comment ># batte B al 7mo turno</span>
+    p71 = sum([pdf(Binomial(<span class=hljs-number >3</span>,a),i) * pdf(Binomial(<span class=hljs-number >4</span>,b),<span class=hljs-number >6</span>-i) <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >2</span>:<span class=hljs-number >3</span>])*a 
+    <span class=hljs-comment ># batte A all&#x27;8vo turno</span>
+    p72 = sum([pdf(Binomial(<span class=hljs-number >4</span>,a),i) * pdf(Binomial(<span class=hljs-number >4</span>,b),<span class=hljs-number >6</span>-i) <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >2</span>:<span class=hljs-number >4</span>])*a 
+    <span class=hljs-comment ># batte A al 9no turno</span>
+    p73 = sum([pdf(Binomial(<span class=hljs-number >5</span>,a),i) * pdf(Binomial(<span class=hljs-number >4</span>,b),<span class=hljs-number >6</span>-i) <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >2</span>:<span class=hljs-number >5</span>])*b 
+    <span class=hljs-comment ># batte B al 10mo turno </span>
+    p74 = sum([pdf(Binomial(<span class=hljs-number >5</span>,a),i) * pdf(Binomial(<span class=hljs-number >5</span>,b),<span class=hljs-number >6</span>-i) <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:<span class=hljs-number >5</span>])*b 
+    <span class=hljs-comment ># batte B al 11mo turno</span>
+    p75 = sum([pdf(Binomial(<span class=hljs-number >5</span>,a),i) * pdf(Binomial(<span class=hljs-number >6</span>,b),<span class=hljs-number >6</span>-i) <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >0</span>:<span class=hljs-number >5</span>])*a
+    <span class=hljs-comment ># batte A al 12mo turno</span>
+    p66 = sum([pdf(Binomial(<span class=hljs-number >6</span>,a),i) * pdf(Binomial(<span class=hljs-number >6</span>,b),<span class=hljs-number >6</span>-i) <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >0</span>:<span class=hljs-number >6</span>])
+    pda66 = a*b/(<span class=hljs-number >1</span>-a-b+<span class=hljs-number >2</span>*a*b) 
+    
+    ptot = p70+p71+p72+p73+p74+p75+p66*pda66
+    <span class=hljs-meta >@assert</span> <span class=hljs-number >0</span>&lt;=ptot&lt;=<span class=hljs-number >1</span>
+    <span class=hljs-keyword >return</span> ptot
+<span class=hljs-keyword >end</span>
+
+aa = bb = range(<span class=hljs-number >0.01</span>,<span class=hljs-number >0.99</span>, length=<span class=hljs-number >40</span>)
+p = surface(aa, bb, ptiebreak,camera=(<span class=hljs-number >25</span>,<span class=hljs-number >20</span>))
+xlabel!(<span class=hljs-string >&quot;a values&quot;</span>)
+ylabel!(<span class=hljs-string >&quot;b values&quot;</span>)
+savefig(<span class=hljs-string >&quot;figs/tennis_surface.json&quot;</span>)
+
+contourf(aa, bb, ptiebreak)
+xlabel!(<span class=hljs-string >&quot;a values&quot;</span>)
+ylabel!(<span class=hljs-string >&quot;b values&quot;</span>)
+savefig(<span class=hljs-string >&quot;figs/tennis_contourf.json&quot;</span>)</code></pre> <div id=fdphox  style=""></div> <script> graphDiv = document.getElementById("fdphox"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/figs/tennis_surface.json'); </script> <div id=fdpfxi  style=""></div> <script> graphDiv = document.getElementById("fdpfxi"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/figs/tennis_contourf.json'); </script> </p> <h3 id=strategia_ottimale_per_appuntamenti ><a href="#strategia_ottimale_per_appuntamenti" class=header-anchor >Strategia Ottimale per Appuntamenti</a></h3> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> Random
+Random.seed!(<span class=hljs-number >42</span>)
+
+<span class=hljs-keyword >function</span> M_strategy_score(partners,M,verbose=<span class=hljs-number >0</span>)
+    <span class=hljs-meta >@assert</span> length(partners)&gt;=M+<span class=hljs-number >1</span>
+    
+    partners_not_discarded = partners[M+<span class=hljs-number >1</span>:<span class=hljs-keyword >end</span>]
+    best_score_of_discarded = maximum(partners[<span class=hljs-number >1</span>:M])
+    
+    available_scores = max.(partners_not_discarded .- best_score_of_discarded,<span class=hljs-number >0</span>)
+    
+    out = findfirst(u -&gt; u!=<span class=hljs-number >0</span>, available_scores)
+    chosen_index = isnothing(out) ? lastindex(partners_not_discarded) : out
+    score_out = partners_not_discarded[chosen_index]
+    found_soul_mate = score_out==length(partners)
+
+    <span class=hljs-keyword >if</span> verbose==<span class=hljs-number >1</span>
+        println(<span class=hljs-string >&quot;We discarded <span class=hljs-variable >$M</span> partners (from <span class=hljs-subst >$(length(partners)</span>) partners).&quot;</span>)
+        println(<span class=hljs-string >&quot;The best score there was <span class=hljs-variable >$best_score_of_discarded</span>.&quot;</span>)
+        printstyled(partners[<span class=hljs-number >1</span>:M]; color=:yellow)
+        printstyled(partners[M+<span class=hljs-number >1</span>:<span class=hljs-keyword >end</span>]; color=:green)
+        println(<span class=hljs-string >&quot;\nIn the end we selected partner #<span class=hljs-subst >$(chosen_index+M)</span> of score <span class=hljs-variable >$score_out</span>.&quot;</span>)
+        println(found_soul_mate==<span class=hljs-number >1</span> ? <span class=hljs-string >&quot;We&quot;</span> : <span class=hljs-string >&quot;We didnt have&quot;</span>, <span class=hljs-string >&quot; found our soulmate.\n&quot;</span>)
+    <span class=hljs-keyword >end</span>
+    
+    <span class=hljs-keyword >return</span> found_soul_mate
+<span class=hljs-keyword >end</span> 
+
+M = <span class=hljs-number >5</span>
+partners = shuffle(<span class=hljs-number >1</span>:<span class=hljs-number >20</span>)
+M_strategy_score(partners,M,<span class=hljs-number >1</span>)
+
+<span class=hljs-comment ># optimal strategy should be discarding M=N/ℯ partners</span>
+N = <span class=hljs-number >100</span>
+simulations = <span class=hljs-number >30_000</span>
+values_tested = [<span class=hljs-string >&quot;2&quot;</span>,<span class=hljs-string >&quot;ℯ&quot;</span>,<span class=hljs-string >&quot;3&quot;</span>,<span class=hljs-string >&quot;4&quot;</span>,<span class=hljs-string >&quot;5&quot;</span>,<span class=hljs-string >&quot;6&quot;</span>,<span class=hljs-string >&quot;7&quot;</span>]
+M_values = round.(<span class=hljs-built_in >Int64</span>,[N/<span class=hljs-number >2</span> N/<span class=hljs-literal >ℯ</span> N/<span class=hljs-number >3</span> N/<span class=hljs-number >4</span> N/<span class=hljs-number >5</span> N/<span class=hljs-number >6</span> N/<span class=hljs-number >7</span>])
+scores = zeros(length(M_values))
+
+<span class=hljs-keyword >for</span> sim <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:simulations
+    <span class=hljs-keyword >local</span> partners = shuffle(<span class=hljs-number >1</span>:N)
+    <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(M_values)
+        scores[i] += M_strategy_score(partners,M_values[i])
+    <span class=hljs-keyword >end</span>
+<span class=hljs-keyword >end</span>
+scores ./= simulations
+println(<span class=hljs-string >&quot;Testing on N = <span class=hljs-variable >$N</span>.&quot;</span>)
+<span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:length(M_values)
+    println(<span class=hljs-string >&quot;Using M = <span class=hljs-subst >$(M_values[i])</span> (that is N/<span class=hljs-subst >$(values_tested[i])</span>) we got score = <span class=hljs-subst >$(scores[i])</span>&quot;</span>)
+<span class=hljs-keyword >end</span>     
+    println(<span class=hljs-string >&quot;Where score is the probability of having found our soulmate.&quot;</span>)
+
+
+<span class=hljs-keyword >using</span> Plots
+plotly()
+PlotlyKaleido.start() <span class=hljs-comment ># needed for all savefig with plotly</span>
+
+plot(bar(scores),xticks=(<span class=hljs-number >1</span>:length(values_tested),<span class=hljs-string >&quot;N&quot;</span>.*<span class=hljs-string >&quot;/&quot;</span>.*values_tested))
+savefig(<span class=hljs-string >&quot;figs/date_strategy.json&quot;</span>)</code></pre> <div id=fdpmrn  style=""></div> <script> graphDiv = document.getElementById("fdpmrn"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/figs/date_strategy.json'); </script> <pre><code class="plaintext hljs">We discarded 5 partners (from 20 partners).
+The best score there was 19.
+[19, 10, 2, 1, 6][12, 9, 8, 11, 15, 7, 4, 17, 20, 16, 5, 3, 14, 18, 13]
+In the end we selected partner #14 of score 20.
+We found our soulmate.
+
+Testing on N = 100.
+Using M = 50 (that is N/2) we got score = 0.3525
+Using M = 37 (that is N/ℯ) we got score = 0.37606666666666666
+Using M = 33 (that is N/3) we got score = 0.37456666666666666
+Using M = 25 (that is N/4) we got score = 0.3532666666666667
+Using M = 20 (that is N/5) we got score = 0.3268333333333333
+Using M = 17 (that is N/6) we got score = 0.3065333333333333
+Using M = 14 (that is N/7) we got score = 0.28196666666666664
+Where score is the probability of having found our soulmate.
+</code></pre></p> <h3 id=traffic_problem ><a href="#traffic_problem" class=header-anchor >Traffic Problem</a></h3> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> JuMP
 <span class=hljs-keyword >using</span> Ipopt
 <span class=hljs-keyword >using</span> Plots
 <span class=hljs-keyword >using</span> Random
@@ -109,7 +234,7 @@ annotate!(x_plot, y_plot, string.(V))
 <span class=hljs-keyword >end</span>
 
 title!(<span class=hljs-string >&quot;Traffic Network with Flows&quot;</span>)
-savefig(<span class=hljs-string >&quot;traffic_problem.svg&quot;</span>)</code></pre> <img src="/assets/scripts/Optimization/traffic_problem.svg" alt=""> <pre><code class="plaintext hljs">This is Ipopt version 3.14.14, running with linear solver MUMPS 5.6.2.
+savefig(<span class=hljs-string >&quot;traffic_problem.svg&quot;</span>)</code></pre> <img src="/assets/scripts/Activity/traffic_problem.svg" alt=""> <pre><code class="plaintext hljs">This is Ipopt version 3.14.14, running with linear solver MUMPS 5.6.2.
 
 Number of nonzeros in equality constraint Jacobian...:      160
 Number of nonzeros in inequality constraint Jacobian.:       80
