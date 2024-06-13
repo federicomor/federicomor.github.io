@@ -56,4 +56,4 @@ plotly()
 PlotlyKaleido.start() # needed for all savefig with plotly
 
 plot(bar(scores),xticks=(1:length(values_tested),"N".*"/".*values_tested))
-savefig("figs/date_strategy.json")
+savefig("output/date_strategy.json")

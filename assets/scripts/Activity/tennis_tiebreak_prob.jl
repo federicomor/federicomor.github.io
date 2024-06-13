@@ -33,9 +33,9 @@ p = surface(aa, bb, ptiebreak,camera=(25,20))
 xlabel!("a values")
 ylabel!("b values")
 # savefig("$(splitext(basename(@__FILE__))[1]).json") # hide
-savefig("figs/tennis_surface.json")
+savefig("output/tennis_surface.json")
 
 contourf(aa, bb, ptiebreak)
 xlabel!("a values")
 ylabel!("b values")
-savefig("figs/tennis_contourf.json")
+savefig("output/tennis_contourf.json")
