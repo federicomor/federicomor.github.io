@@ -4,6 +4,7 @@ hascode = true
 hasplotly = true
 +++
 
+@def hasplotly = true
 
 # Attività
 \toc
@@ -12,6 +13,18 @@ hasplotly = true
 <!-- ### Julia and Pluto notebook
 [here](/assets/notebooks_int.html) Some work did in Julia and interactively displayed using Pluto and plotly.\\
  -->
+
+~~~
+<div id="tester" style="width:600px;height:350px;"></div>
+
+<script>
+    TESTER = document.getElementById('tester');
+    Plotly.newPlot( TESTER, [{
+    x: [1, 2, 3, 4, 5],
+    y: [1, 2, 4, 8, 16] }], {
+    margin: { t: 0 } } );
+</script>
+~~~
 
 ### Paradosso dei Compleanni
 \input{julia}{/_assets/scripts/Activity/paradosso_compleanni.jl} 
