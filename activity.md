@@ -17,15 +17,45 @@ hasplotly = true
 
 ### Paradosso dei Compleanni
 \input{julia}{/assets/scripts/Activity/paradosso_compleanni.jl} 
-\fig{/assets/scripts/Activity/output/paradosso_compleanni_1.json}
-\fig{/assets/scripts/Activity/output/paradosso_compleanni_2.json}
+<!-- \fig{/assets/scripts/Activity/output/paradosso_compleanni_1.json} -->
+<!-- \fig{/assets/scripts/Activity/output/paradosso_compleanni_2.json} -->
 
+~~~
+<div id="paradosso_compleanni_1" style=""></div>
+<script>
+graphDiv = document.getElementById("paradosso_compleanni_1");
+plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/paradosso_compleanni_1.json');
+</script>
+~~~
+
+~~~
+<div id="paradosso_compleanni_2" style=""></div>
+<script>
+graphDiv = document.getElementById("paradosso_compleanni_2");
+plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/paradosso_compleanni_2.json');
+</script>
+~~~
 
 ### Tennis Tie-Break Probability
 \input{julia}{/assets/scripts/Activity/tennis_tiebreak_prob.jl} 
-\fig{/assets/scripts/Activity/output/tennis_surface.json}
-\fig{/assets/scripts/Activity/output/tennis_contourf.json}
+<!-- \fig{/assets/scripts/Activity/output/tennis_surface.json} -->
+<!-- \fig{/assets/scripts/Activity/output/tennis_contourf.json} -->
 
+~~~
+<div id="tennis_surface" style=""></div>
+<script>
+graphDiv = document.getElementById("tennis_surface");
+plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/tennis_surface.json');
+</script>
+~~~
+
+~~~
+<div id="tennis_contourf" style=""></div>
+<script>
+graphDiv = document.getElementById("tennis_contourf");
+plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/tennis_contourf.json');
+</script>
+~~~
 
 ### Strategia Ottimale per Appuntamenti
 \input{julia}{/assets/scripts/Activity/date_strategy.jl} 

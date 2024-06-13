@@ -337,3 +337,21 @@ code {
   border-radius: 0 10px 10px 0;
   border-left: 5px solid #4c9cf1;
 }
+
+/*boh*/
+/*.js-plotly-plot .plotly .main-svg {
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    pointer-events: none;
+}
+.js-plotly-plot .plotly svg {
+    overflow: hidden;
+}
+
+.js-plotly-plot .plotly, .js-plotly-plot .plotly div {
+    direction: ltr;
+    font-family: "Open Sans", verdana, arial, sans-serif;
+    margin: 20px;
+    padding: 0px;
+}*/
