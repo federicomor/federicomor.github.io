@@ -296,6 +296,12 @@ html {
   line-height: 1.75;
 }
 
+.sidebar-nav-sub-item {
+  display: block;
+  line-height: 1.75;
+  font-size: 10px;
+}
+
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: underline;
@@ -339,4 +345,9 @@ a.sidebar-nav-item:focus {
     margin-left: 15rem;
     margin-right: 2rem;
   }
+}
+
+.nonumber .katex-display::after {
+  counter-increment: nothing;
+  content: "";
 }
