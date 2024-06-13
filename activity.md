@@ -9,12 +9,31 @@ hasplotly = true
 \toc
 
 ## Esempi
-### Julia and Pluto notebook
+<!-- ### Julia and Pluto notebook
 [here](/assets/notebooks_int.html) Some work did in Julia and interactively displayed using Pluto and plotly.\\
+ -->
+
+### Paradosso dei Compleanni
+\input{julia}{/_assets/scripts/Activity/paradosso_compleanni.jl} 
+\fig{/_assets/scripts/Activity/figs/paradosso_compleanni_1.json}
+\fig{/_assets/scripts/Activity/figs/paradosso_compleanni_2.json}
+
+
+### Tennis Tie-Break Probability
+\input{julia}{/_assets/scripts/Activity/tennis_tiebreak_prob.jl} 
+\fig{/_assets/scripts/Activity/figs/tennis_surface.json}
+\fig{/_assets/scripts/Activity/figs/tennis_contourf.json}
+
+
+### Strategia Ottimale per Appuntamenti
+\input{julia}{/_assets/scripts/Activity/date_strategy.jl} 
+\fig{/_assets/scripts/Activity/figs/date_strategy.json}
+\output{/_assets/scripts/date_strategy.jl}
+
 
 ### Traffic Problem
-\input{julia}{/_assets/scripts/Optimization/traffic_problem.jl} 
-\fig{/_assets/scripts/Optimization/traffic_problem.svg}
+\input{julia}{/_assets/scripts/Activity/traffic_problem.jl} 
+\fig{/_assets/scripts/Activity/traffic_problem.svg}
 \output{/_assets/scripts/traffic_problem.jl}
 
 <!-- ~~~
