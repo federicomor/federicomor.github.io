@@ -12,7 +12,7 @@ savefig(<span class=hljs-string >&quot;output/<span class=hljs-subst >$(splitext
 p2(n) = <span class=hljs-number >1</span> - (big(<span class=hljs-number >364</span>/<span class=hljs-number >365</span>)^n)
 p2_values = p2.(<span class=hljs-number >1</span>:<span class=hljs-number >2000</span>)
 plot(p2_values,title=<span class=hljs-string >&quot;p2 values&quot;</span>)
-savefig(<span class=hljs-string >&quot;output/<span class=hljs-subst >$(splitext(basename(<span class=hljs-meta >@__FILE__</span>)</span>)[1])_2.json&quot;</span>)</code></pre> </p> <div id=paradosso_compleanni_1  style=""></div> <script> graphDiv = document.getElementById("paradosso_compleanni_1"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/paradosso_compleanni_1.json'); </script> <div id=paradosso_compleanni_2  style=""></div> <script> graphDiv = document.getElementById("paradosso_compleanni_2"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/paradosso_compleanni_2.json'); </script> <h3 id=tennis_tie-break_probability ><a href="#tennis_tie-break_probability" class=header-anchor >Tennis Tie-Break Probability</a></h3> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> Plots
+savefig(<span class=hljs-string >&quot;output/<span class=hljs-subst >$(splitext(basename(<span class=hljs-meta >@__FILE__</span>)</span>)[1])_2.json&quot;</span>)</code></pre> <div id=fdpxzj  style=""></div> <script> graphDiv = document.getElementById("fdpxzj"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/paradosso_compleanni_1.json'); </script> <div id=fdpqwg  style=""></div> <script> graphDiv = document.getElementById("fdpqwg"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/paradosso_compleanni_2.json'); </script> <div id=fdpeqq  style=""></div> <script> graphDiv = document.getElementById("fdpeqq"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/activity/code/test_code.json'); </script> </p> <h3 id=tennis_tie-break_probability ><a href="#tennis_tie-break_probability" class=header-anchor >Tennis Tie-Break Probability</a></h3> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> Plots
 <span class=hljs-keyword >using</span> Distributions 
 
 plotly()
@@ -50,7 +50,7 @@ savefig(<span class=hljs-string >&quot;output/tennis_surface.json&quot;</span>)
 contourf(aa, bb, ptiebreak)
 xlabel!(<span class=hljs-string >&quot;a values&quot;</span>)
 ylabel!(<span class=hljs-string >&quot;b values&quot;</span>)
-savefig(<span class=hljs-string >&quot;output/tennis_contourf.json&quot;</span>)</code></pre> </p> <div id=tennis_surface  style=""></div> <script> graphDiv = document.getElementById("tennis_surface"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/tennis_surface.json'); </script> <div id=tennis_contourf  style=""></div> <script> graphDiv = document.getElementById("tennis_contourf"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/tennis_contourf.json'); </script> <h3 id=strategia_ottimale_per_appuntamenti ><a href="#strategia_ottimale_per_appuntamenti" class=header-anchor >Strategia Ottimale per Appuntamenti</a></h3> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> Random
+savefig(<span class=hljs-string >&quot;output/tennis_contourf.json&quot;</span>)</code></pre> <div id=fdplvr  style=""></div> <script> graphDiv = document.getElementById("fdplvr"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/tennis_surface.json'); </script> <div id=fdppge  style=""></div> <script> graphDiv = document.getElementById("fdppge"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/tennis_contourf.json'); </script> </p> <h3 id=strategia_ottimale_per_appuntamenti ><a href="#strategia_ottimale_per_appuntamenti" class=header-anchor >Strategia Ottimale per Appuntamenti</a></h3> <p><pre><code class="julia hljs"><span class=hljs-keyword >using</span> Random
 Random.seed!(<span class=hljs-number >42</span>)
 
 <span class=hljs-keyword >function</span> M_strategy_score(partners,M,verbose=<span class=hljs-number >0</span>)
@@ -108,7 +108,7 @@ plotly()
 PlotlyKaleido.start() <span class=hljs-comment ># needed for all savefig with plotly</span>
 
 plot(bar(scores),xticks=(<span class=hljs-number >1</span>:length(values_tested),<span class=hljs-string >&quot;N&quot;</span>.*<span class=hljs-string >&quot;/&quot;</span>.*values_tested))
-savefig(<span class=hljs-string >&quot;output/date_strategy.json&quot;</span>)</code></pre> <div id=fdpnsb  style=""></div> <script> graphDiv = document.getElementById("fdpnsb"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/date_strategy.json'); </script> <pre><code class="plaintext hljs">We discarded 5 partners (from 20 partners).
+savefig(<span class=hljs-string >&quot;output/date_strategy.json&quot;</span>)</code></pre> <div id=fdpiqm  style=""></div> <script> graphDiv = document.getElementById("fdpiqm"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/scripts/Activity/output/date_strategy.json'); </script> <pre><code class="plaintext hljs">We discarded 5 partners (from 20 partners).
 The best score there was 19.
 [19, 10, 2, 1, 6][12, 9, 8, 11, 15, 7, 4, 17, 20, 16, 5, 3, 14, 18, 13]
 In the end we selected partner #14 of score 20.
