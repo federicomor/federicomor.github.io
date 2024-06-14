@@ -109,4 +109,4 @@ for k in 1:length(K)
 end
 
 title!("Traffic Network with Flows")
-savefig("output/traffic_problem.svg")
+savefig("output/traffic_problem.svg") # hide

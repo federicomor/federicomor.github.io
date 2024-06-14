@@ -1,9 +1,8 @@
 using Plots
 using Distributions 
 # using Base: basename # hide
-
-plotly()
-PlotlyKaleido.start() # needed for all savefig with plotly
+plotly() #hide
+PlotlyKaleido.start() # needed for all savefig with plotly #hide
 
 # 1  2  3  4  5  6  7  8  9  10 11 12
 # A  B  B  A  A  B  B  A  A  B  B  A
@@ -33,9 +32,9 @@ p = surface(aa, bb, ptiebreak,camera=(25,20))
 xlabel!("a values")
 ylabel!("b values")
 # savefig("$(splitext(basename(@__FILE__))[1]).json") # hide
-savefig("output/tennis_surface.json")
+savefig("output/tennis_surface.json")#hide
 
 contourf(aa, bb, ptiebreak)
 xlabel!("a values")
 ylabel!("b values")
-savefig("output/tennis_contourf.json")
+savefig("output/tennis_contourf.json") #hide
