@@ -19,7 +19,8 @@ hasplotly = true
 \input{julia}{/assets/scripts/Activity/paradosso_compleanni.jl} 
 \fig{/assets/scripts/Activity/output/paradosso_compleanni_1.json}
 \fig{/assets/scripts/Activity/output/paradosso_compleanni_2.json}
-\fig{test_code}
+<!-- \fig{test_code} -->
+
 <!-- \fig{test_output} -->
 <!-- \fig{test_activity} -->
 

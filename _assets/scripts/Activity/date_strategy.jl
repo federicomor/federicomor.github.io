@@ -52,8 +52,9 @@ end
 
 
 using Plots
-plotly()
-PlotlyKaleido.start() # needed for all savefig with plotly
+plotly() # hide
+PlotlyKaleido.start() # hide
+# needed for all savefig with plotly # hide
 
 plot(bar(scores),xticks=(1:length(values_tested),"N".*"/".*values_tested))
-savefig("output/date_strategy.json")
+savefig("output/date_strategy.json") # hide
