@@ -9,10 +9,13 @@
   {{isdef title}} <title>{{fill title}}</title>  {{end}}
   
   {{if hasplotly}}
-  <script src="/libs/plotly/plotly.min.js"></script> 
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+  <!-- <script src="/libs/plotly/plotly.min.js"></script> -->
   <script>
     // This function is used when calling `\fig{...}` See # Using \fig{...} below
     const PlotlyJS_json = async (div, url) => {
+      console.log("url: ",url)
+      console.log("div: ",div)
       response = await fetch(url); // get file
       fig = await response.json(); // convert it to json
       // Make the plot fit the screen responsively. See the documentation of plotly.js. https://plotly.com/javascript/responsive-fluid-layout/
@@ -34,6 +37,14 @@
       delete fig.config.showTips
 
       Plotly.newPlot(div, fig);
+
+      // // Fetch JSON data from an external source
+      // fetch(url)
+      //   .then(response => response.json())
+      //   .then(plotData => {
+      //       Plotly.newPlot(div, plotData.data, plotData.layout);
+      //   })
+      //   .catch(error => console.error('Error fetching plot data:', error));
     };
   </script>
   {{end}}
