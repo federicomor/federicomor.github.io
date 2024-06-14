@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+  <script>
+    const PlotlyJS_json = async (div, url) => {
+      response = await fetch(url);
+      fig = await response.json();
+      Plotly.newPlot(div, fig);
+    };
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{if hasmath}} {{insert head_katex.html }}     {{end}}
@@ -8,7 +17,8 @@
   {{insert style.html}}
   {{isdef title}} <title>{{fill title}}</title>  {{end}}
 
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+
+<!--   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
   <script>
     const PlotlyJS_json = async (div, url) => {
       console.log("url: ",url);
@@ -28,28 +38,15 @@
       delete fig.config.showTips
       Plotly.newPlot(div, fig);
     };
-  </script>
+  </script> -->
 
 </head>
 <body>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
   <script>
     const PlotlyJS_json = async (div, url) => {
-      console.log("url: ",url);
-      console.log("div: ",div);
       response = await fetch(url);
       fig = await response.json();
-      if (typeof fig.config === 'undefined') { fig["config"]={} }
-      delete fig.layout.width
-      delete fig.layout.height
-      fig["layout"]["autosize"] = true
-      fig["config"]["autosizable"] = true
-      fig["config"]["responsive"] = true
-      fig.config["scrollZoom"] = false
-      delete fig.config.staticPlot
-      delete fig.config.displayModeBar
-      delete fig.config.doubleClick
-      delete fig.config.showTips
       Plotly.newPlot(div, fig);
     };
   </script>
