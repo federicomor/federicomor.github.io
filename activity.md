@@ -23,6 +23,7 @@ hasplotly = true
 <!-- \fig{test_output} -->
 <!-- \fig{test_activity} -->
 
+
 <!-- manually: -->
 <!-- ~~~
 <div id="paradosso_compleanni_1" style=""></div>

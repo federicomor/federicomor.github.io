@@ -17,8 +17,8 @@ ignore = ["node_modules/"]
 
 # RSS (the website_{title, descr, url} must be defined to get RSS)
 generate_rss = false
-website_title = "Federico Angelo Mor' site"
-website_descr = "Federico Angelo Mor' site"
+website_title = "Federico Angelo Mor site"
+website_descr = "Federico Angelo Mor site"
 website_url   = "https://federicomor.github.io/"
 +++
 

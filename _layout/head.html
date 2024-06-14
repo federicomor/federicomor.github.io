@@ -8,7 +8,7 @@
   {{insert style.html}}
   {{isdef title}} <title>{{fill title}}</title>  {{end}}
   
-  {{if hasplotly}}
+  <!-- {{if hasplotly}} -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
   <!-- <script src="/libs/plotly/plotly.min.js"></script> -->
   <script>
@@ -37,17 +37,9 @@
       delete fig.config.showTips
 
       Plotly.newPlot(div, fig);
-
-      // // Fetch JSON data from an external source
-      // fetch(url)
-      //   .then(response => response.json())
-      //   .then(plotData => {
-      //       Plotly.newPlot(div, plotData.data, plotData.layout);
-      //   })
-      //   .catch(error => console.error('Error fetching plot data:', error));
     };
   </script>
-  {{end}}
+  <!-- {{end}} -->
 
 </head>
 <body>
