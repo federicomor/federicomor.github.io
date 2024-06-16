@@ -1,16 +1,24 @@
-function hfun_bar(vname)
-  val = Meta.parse(vname[1])
-  return round(sqrt(val), digits=2)
+function hfun_youtube(param)
+  link=param[1]
+  return """
+  <iframe width="100%" height="315"
+    src="https://www.youtube.com/embed/$link">
+  </iframe>
+  """
 end
 
-function hfun_m1fill(vname)
-  var = vname[1]
-  return pagevar("index", var)
+function hfun_pdf(param)
+  path=param[1]
+  return """
+  <embed
+    src="$path#navpanes=0"
+    type="application/pdf"
+    frameBorder="0"
+    scrolling="auto"
+    height="500px"
+    width="100%"
+  ></embed>
+  """
 end
 
-function lx_baz(com, _)
-  # keep this first line
-  brace_content = Franklin.content(com.braces[1]) # input string
-  # do whatever you want here
-  return uppercase(brace_content)
-end
+
