@@ -14,10 +14,6 @@ title = "Uni"
 
 {{pdf /assets/Uni/bayesian_report_polimi.pdf }}
 
-~~~
-<object width="100%" height="500px" data="https://docs.google.com/gview?embedded=true&url=https://federicomor.github.io/uni/assets/Uni/bayesian_report_polimi.pdf"></object>
-~~~
-
 ### Quality Data Analysis Project
 We had to detect defects into 3d printed objects, using control charts, the method we learnt at lectures. In the end our model detected 7 out of the 9 defected objects, on a total of 40 objects.
 

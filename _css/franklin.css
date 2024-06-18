@@ -359,3 +359,7 @@ code {
 .spacer {
   height: 2rem; /* Adjust the height as needed */
 }
+
+iframe {
+  display: block;
+}
