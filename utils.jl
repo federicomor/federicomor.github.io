@@ -18,6 +18,10 @@ function hfun_pdf(param)
     height="500px"
     width="100%"
   ></embed>
+  <p style="font-size: 12px; color: grey; line-height: 1.2em">
+    <!-- If the PDF does not display correctly, <a href="$path" target="_blank">click here to view it</a>.-->
+    Se non compare nulla <a href="$path" target="_blank">clicca qui</a> per scaricare il pdf.
+  </p>
   """
 end
 
