@@ -6,9 +6,6 @@
     const PlotlyJS_json = async (div, url) => {
       response = await fetch(url);
       fig = await response.json();
-      // fig.layout.width = auto;
-      // var layout = {autosize: true};
-      // var config = {responsive: true};
       Plotly.newPlot(div, fig);
     };
   </script>
@@ -51,9 +48,6 @@
     const PlotlyJS_json = async (div, url) => {
       response = await fetch(url);
       fig = await response.json();
-      // fig.layout.width = auto;
-      // var layout = {autosize: true};
-      // var config = {responsive: true};
       Plotly.newPlot(div, fig);
     };
   </script>
