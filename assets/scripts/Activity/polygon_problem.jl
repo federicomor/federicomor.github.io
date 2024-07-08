@@ -2,8 +2,13 @@ using JuMP
 using Ipopt
 using Plots
 
+### esempio di applicazione:
+# massimizzare l'area delimitata da un recinto imponendo che questo possa 
+# essere chiuso in sottorecinti a piacere se necessario, usando staccionate unitarie
+# (ovvero la distanza tra ogni coppia di vertice deve essere ≤ 1)
+
 # Define the number of vertices
-n = 10  # You can change this to the desired number of vertices
+n = 5 # You can change this to the desired number of vertices
 
 # Create the optimization model
 model = Model(Ipopt.Optimizer)
@@ -39,13 +44,30 @@ y = r_opt .* sin.(phi_opt)
 x = vcat(x, x[1])
 y = vcat(y, y[1])
 
+println("Case n=$n")
 for i in 1:length(x)
     println("P_$i = (",round(x[i],digits=4), ", ", round(y[i],digits=4),")")
 end
 
 # Plot the resulting polygon
-plot(x, y, seriestype=:shape, label="Optimal Polygon", fillalpha=0.5)
+plot(x, y, seriestype=:shape, label="Optimal Polygon", fillalpha=0.3, aspect_ratio=:equal, legend=false)
 scatter!(x, y, label="Vertices")
-xlabel!("x")
-ylabel!("y")
 title!("Optimal Polygon with n=$n Vertices")
+
+# Function to generate points on a circle
+function circle_points(center_x, center_y, radius, num_points=100)
+    theta = range(0, 2*pi, length=num_points)
+    cx = center_x .+ radius .* cos.(theta)
+    cy = center_y .+ radius .* sin.(theta)
+    return cx, cy
+end
+# Plot a circle of radius 1 from each vertex
+for i in 1:n
+    circle_x, circle_y = circle_points(x[i], y[i], 1)
+    plot!(circle_x, circle_y, label=false, linestyle=:solid, color=:red, alpha=0.3)
+end
+
+xlims!(minimum(x)-0.2, maximum(x)+0.2)
+ylims!(minimum(y)-0.2, maximum(y)+0.2)
+
+savefig("output/traffic_$n.svg") # hide
