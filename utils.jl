@@ -16,7 +16,6 @@ function hfun_youtube(param)
 end
 
 
-
 function hfun_pdf(param)
 	path=param[1]
 	return """
@@ -36,5 +35,13 @@ function hfun_pdf(param)
 	</p>
 	"""
 end
+
+
+function hfun_gray(param)
+	text=param[1]
+	return """
+	<p style="font-size: 10px; color: grey; line-height: 0.2em">$text</p>
+	"""
+end	
 
 

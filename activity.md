@@ -50,3 +50,9 @@ dove le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori 
 \output{/assets/scripts/traffic_problem.jl}
 
 
+### Polygon Problem
+\input{julia}{/assets/scripts/Activity/polygon_problem.jl} 
+\fig{/assets/scripts/Activity/traffic_3.svg}
+\fig{/assets/scripts/Activity/traffic_5.svg}
+\fig{/assets/scripts/Activity/traffic_10.svg}
+

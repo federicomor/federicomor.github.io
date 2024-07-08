@@ -8,7 +8,6 @@ title = "Uni"
 
 ## Progetti
 
-
 ### Bayesian Project
 [Here](/assets/figures/visualize.html) there are all the relevant plots we produced to better develop our analysis and interpretation. The task was to cluster spatio-temporal data about air pollution in Lombardy, using bayesian models.
 
@@ -47,3 +46,18 @@ Il codice C originale è quello che segue (scritto al primo anno i primi mesi, q
 \input{c}{/_assets/scripts/Uni/gioco_15.c}
 
 
+ 
+<!-- ## Corsi e Appunti
+
+### Elettronica (triennale)
+
+Il formulario scritto per l'esame di Elettronica. Con vari easter egg all'interno.
+
+{{ pdf /assets/Uni/formulario_elettronica_intero.pdf }}
+
+### Stochastic Differential Equations (magistrale)
+Esame andato non troppo bene, ma malgrado questo il corso in sé era anche abbastanza interessante (se non fosse per la troppa teoria e dimostrazioni in cui era immerso. Praticamente abbiamo visto le equazioni differenziali stocastiche, in teoria il focus del corso, solo l'ultima settimana). All'esame era ammesso portarsi un foglio A4 con scritto quanto ognuno ritenesse utile, e come si può non congliere l'occasione di ottimizzare tutto quello spazio?
+
+{{ pdf /assets/Uni/foglio_sde.pdf}}
+
+Qualora poi l'attività di divulgazione matematica diventasse florida la prima idea di prodotto per il merchandising sarà senz'altro un telo mare con sopra stampato questo formulario.  -->
