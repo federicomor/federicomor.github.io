@@ -5,6 +5,7 @@ hasplotly = true
 +++
 
 # Attività
+L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio. Se non c'è ancora è perché devo ancora registrarlo :)
 \toc
 
 ## Esempi
@@ -43,6 +44,8 @@ dove le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori 
 \input{julia}{/assets/scripts/Activity/date_strategy.jl} 
 \fig{/assets/scripts/Activity/output/date_strategy.json}
 \output{/assets/scripts/date_strategy.jl}
+
+{{ desmos https://www.desmos.com/calculator/7xjua3xllw }}
 
 ### Traffic Problem
 \input{julia}{/assets/scripts/Activity/traffic_problem.jl} 

@@ -15,6 +15,13 @@ function hfun_youtube(param)
 	"""
 end
 
+function hfun_desmos(param)
+	lnk=param[1]
+	return """
+	<iframe src="$lnk" width="100%" style="aspect-ratio:16/9;"></iframe>
+	"""
+end
+
 
 function hfun_pdf(param)
 	path=param[1]
