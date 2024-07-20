@@ -15,6 +15,7 @@ function hfun_youtube(param)
 	"""
 end
 
+
 function hfun_desmos(param)
 	lnk=param[1]
 	return """
@@ -50,5 +51,3 @@ function hfun_gray(param)
 	<p style="font-size: 10px; color: grey; line-height: 0.2em">$text</p>
 	"""
 end	
-
-

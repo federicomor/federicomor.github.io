@@ -6,7 +6,29 @@ hasplotly = true
 
 # Attività
 L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio. Se non c'è ancora è perché devo ancora registrarlo :)
+
 \toc
+~~~
+  <div id="toc-container">
+  <div id="toc">
+~~~
+\toc
+~~~
+  </div>
+  </div>
+  <button id="toc-button">//</button>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const tocButton = document.getElementById('toc-button');
+  const tocContainer = document.getElementById('toc-container');
+  
+  tocButton.addEventListener('click', () => {
+    tocContainer.classList.toggle('visible');
+    });
+  });
+  </script>
+~~~
 
 ## Esempi
 
@@ -58,4 +80,3 @@ dove le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori 
 \fig{/assets/scripts/Activity/traffic_3.svg}
 \fig{/assets/scripts/Activity/traffic_5.svg}
 \fig{/assets/scripts/Activity/traffic_10.svg}
-
