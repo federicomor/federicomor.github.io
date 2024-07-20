@@ -5,25 +5,14 @@ title = "Uni"
 # Uni
 \toc
 ~~~
+<button id="toc-button">//</button>
   <div id="toc-container">
-  <div id="toc">
+    <div id="toc">
 ~~~
 \toc
-~~~
-  </div>
-  </div>
-  <button id="toc-button">//</button>
-  
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-  const tocButton = document.getElementById('toc-button');
-  const tocContainer = document.getElementById('toc-container');
-  
-  tocButton.addEventListener('click', () => {
-    tocContainer.classList.toggle('visible');
-    });
-  });
-  </script>
+~~~ 
+  </div>   
+</div>
 ~~~
 
 ## Progetti

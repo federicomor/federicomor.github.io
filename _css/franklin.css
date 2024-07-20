@@ -198,7 +198,18 @@ td {
 }
 
 #toc-container.visible {
-  right: 0; /* Visible when button clicked */
+  right: 0; 
+}
+
+#toc-button:hover {
+  background-color: #dec6e0;
+  transform: scale(1.05);
+}
+
+/* Make TOC visible when hovering over the button or the TOC */
+#toc-button:hover + #toc-container,
+#toc-container:hover {
+  right: 0;
 }
 
 #toc-button {
@@ -234,7 +245,6 @@ td {
 #toc a.active {
   font-weight: bold;
 }
-
 
 
 /* ==================================================================
