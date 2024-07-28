@@ -2,11 +2,6 @@ using JuMP
 using Ipopt
 using Plots
 
-### esempio di applicazione:
-# massimizzare l'area delimitata da un recinto imponendo che questo possa 
-# essere chiuso in sottorecinti a piacere se necessario, usando staccionate unitarie
-# (ovvero la distanza tra ogni coppia di vertice deve essere ≤ 1)
-
 # Define the number of vertices
 n = 5 # You can change this to the desired number of vertices
 
