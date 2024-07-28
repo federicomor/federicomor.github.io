@@ -40,17 +40,17 @@ dove le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori 
 ### Paradosso dei Compleanni
 {{ youtube https://youtu.be/u9nr7_sGnm4 }}
 
-Calcoliamo insieme queste due interessanti probabilità: 
 \nonumber{$$
 \begin{align*}
 \mathbb{P}(\text{in un gruppo di $n$ persone almeno due abbiano lo stesso compleanno}) &= 1-\frac{365!}{(365-n)!365^n}\\
 \mathbb{P}(\text{in un gruppo di $n$ persone almeno un'altra ha il tuo stesso compleanno}) &= 1-\left(\frac{364}{365}\right)^n
 \end{align*}
 $$}
+Questo problema è noto come "paradosso dei compleanni" perché per la prima probabilità si arriva al 50% già con solo 23 persone, che in effetti sembrano molte poche. Nel video è quindi spiegato come ricavare quei valori e anche come interpretarli, per capire perché quel risultato un po' controintuitivo abbia in realtà senso.
 
-Nel caso della prima si raggiuge davvero l'1 (ovvero la certezza che si realizzi l'evento) solo con 366 persone (per il principio della piccionaia, volendo essere precisi). Gli "uno" prima di lui presenti nel plot che ora segue sono quindi solo dovuti ad approssimazioni del grafico (che non riporta tutti i decimali) che diventano poi approssimazioni numeriche (in cui cioè i calcoli saturano la precisione disponibile per Julia) da 295 persone in poi.
+Sempre nel caso della prima probabilità si raggiuge davvero l'1 (ovvero la certezza che si realizzi l'evento) ovviamente solo con 366 persone (per il principio della piccionaia, volendo essere precisi, in modo che vengono forzate le date di due persone ad essere uguali). Gli "uno" prima di lui presenti nel plot che ora segue sono quindi solo dovuti ad approssimazioni del grafico (che non riporta tutti i decimali) che diventano poi approssimazioni numeriche (in cui cioè i calcoli saturano la precisione disponibile per Julia) da 295 persone in poi.
 
-Infatti i valori calcolati sarebbero:
+Infatti i valori precisi calcolati dal codice sarebbero:
 ```
 ⋮
 n=80: 0.9999143319493134946903219036781801337436248827650357978945842589451803561427634
@@ -76,6 +76,9 @@ n=295: 1.0
 
 ### Tennis Tie-Break Probability
 {{ youtube https://youtu.be/ra9LTkehYk4 }}
+
+Vediamo come calcolare la probabilità di vincere un tiebreak a tennis, quindi una super applicazione della matematica (statistica e probabilità) ad un problema reale.
+
 \input{julia}{/assets/scripts/Activity/tennis_tiebreak_prob.jl} 
 \fig{/assets/scripts/Activity/output/tennis_surface.json}
 \fig{/assets/scripts/Activity/output/tennis_contourf.json}
@@ -89,12 +92,17 @@ n=295: 1.0
 {{ desmos https://www.desmos.com/calculator/7xjua3xllw }}
 
 ### Traffic Problem
+Si consideri una rete di traffico descritta da un grafo $G = (V, A)$ i cui archi rappresentano le strade di una città e nodi rappresentano gli incroci. I cittadini si spostano ogni giorno da alcune origini verso alcune destinazioni. Sia $d_k$ la quantità di auto che lasciano punto $s_k \in V$ e si spostano verso la destinazione $t_k \in V$. Sia $\text{FFT}_{ij}$ (_free flow time_) il tempo di percorrenza della strada (arco) $(i, j)$ se la strada $(i, j)$ è vuota. Il tempo di viaggio su un arco aumenta però con il flusso crescente su quell'arco, come si osserva nelle autostrade ad agosto. Una soglia di congestione $u_{ij}$ viene quindi definita per ogni arco e non deve essere superata dal traffico lungo quella strada.\
+Modellare il problema di assegnazione del traffico alle strade in modo da ridurre al minimo il tempo totale di viaggio.
+
 \input{julia}{/assets/scripts/Activity/traffic_problem.jl} 
 \fig{/assets/scripts/Activity/traffic_problem.svg}
 \output{/assets/scripts/traffic_problem.jl}
 
 
 ### Polygon Problem
+Dato un numero intero positivo $n$, trovare il poligono con $n$ lati con diametro (ovvero la distanza massima tra due vertici) minore o uguale a 1, e di area massima. Applicazione reale: massimizzare l'area delimitata da un recinto imponendo che questo possa essere chiuso in sottorecinti a piacere se necessario, usando staccionate unitarie (ovvero la distanza tra ogni coppia di vertice deve essere ≤1).
+
 \input{julia}{/assets/scripts/Activity/polygon_problem.jl} 
 \fig{/assets/scripts/Activity/traffic_3.svg}
 \fig{/assets/scripts/Activity/traffic_5.svg}
