@@ -15,6 +15,15 @@ function hfun_youtube(param)
 	"""
 end
 
+function hfun_calcoli(param)
+	img=param[1]
+	return """
+	<div class="side-note">
+		<a href="$img" title="Handwritten computations">📋
+		<p class="small-text">Calcoli originali</p> </a>
+	</div>
+	"""
+end
 
 function hfun_desmos(param)
 	lnk=param[1]
