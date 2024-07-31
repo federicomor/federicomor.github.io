@@ -78,7 +78,7 @@ n=295: 1.0
 
 ### Tennis Tie-Break Probability 
 
-{{ calcoli /assets/img/tennis.jpg }}
+<!-- {{ calcoli /assets/img/tennis.jpg }} -->
 {{ youtube https://youtu.be/ra9LTkehYk4 }}
 
 Vediamo come calcolare la probabilità di vincere un tiebreak a tennis, quindi una super applicazione della matematica (statistica e probabilità) ad un problema reale.
