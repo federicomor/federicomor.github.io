@@ -29,25 +29,25 @@ Finché si lavora con quadrati o cubi è tutto molto easy, possiamo anche disegn
 {{ youtube https://youtu.be/NjdqSz4iva0 }}
 
 Queste sarebbero le conclusioni a cui si arriva: detto $N$ il numero di dimensioni in cui lavoriamo (quindi considerando un $N$-cubo), abbiamo che
-\nonumber{$$
+$$
 \begin{align*}
 \#\text{(vertici)} &= 2^{N}\\
 \#\text{(lati)} &= \dfrac{\#\text{(vertici)}\cdot N}{2}\\
 \#\text{(facce piane)} &= \dfrac{\#\text{(vertici)}\cdot \binom{N}{2}}{2^2}\\
 \#\text{(facce di dimensione $k$)} &= \dfrac{\#\text{(vertici)}\cdot \binom{N}{k}}{2^k} \quad k\in\{3,\ldots,N-1\}
 \end{align*}
-$$}
+$$
 dove le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori hanno senso in dimensioni maggiori. Per esempio uno può chiedersi da quante facce cubiche è formato un 7-cubo. Infine $\binom{N}{k}$ è il coefficiente binomiale di $N$ su $k$, quindi $\frac{N!}{k!(N-k)!}$.
 
 ### Paradosso dei Compleanni
 {{ youtube https://youtu.be/u9nr7_sGnm4 }}
 
-\nonumber{$$
+$$
 \begin{align*}
 \mathbb{P}(\text{in un gruppo di $n$ persone almeno due abbiano lo stesso compleanno}) &= 1-\frac{365!}{(365-n)!365^n}\\
 \mathbb{P}(\text{in un gruppo di $n$ persone almeno un'altra ha il tuo stesso compleanno}) &= 1-\left(\frac{364}{365}\right)^n
 \end{align*}
-$$}
+$$
 Questo problema è noto come "paradosso dei compleanni" perché per la prima probabilità si arriva al 50% già con solo 23 persone, che in effetti sembrano molte poche. Nel video è quindi spiegato come ricavare quei valori e anche come interpretarli, per capire perché quel risultato un po' controintuitivo abbia in realtà senso.
 
 Sempre nel caso della prima probabilità si raggiuge davvero l'1 (ovvero la certezza che si realizzi l'evento) ovviamente solo con 366 persone (per il principio della piccionaia, volendo essere precisi, in modo che vengono forzate le date di due persone ad essere uguali). Gli "uno" prima di lui presenti nel plot che ora segue sono quindi solo dovuti ad approssimazioni del grafico (che non riporta tutti i decimali) che diventano poi approssimazioni numeriche (in cui cioè i calcoli saturano la precisione disponibile per Julia) da 295 persone in poi.
@@ -114,6 +114,17 @@ Dato un numero intero positivo $n$, trovare il poligono con $n$ lati con diametr
 
 
 ### Modi per salire una scala
+In quanti modi si può salire una scala lunga $n$ gradini, potendone salire al massimo 2 scalini per volta? Chiamando $S(n)$ questo numero di modi in funzione di $n$, risulta che la soluzione è molto semplice:
+$$
+S(n) = S(n-1) + S(n-2)
+$$ 
+perché moralmente come primo passo dobbiamo sempre fare un passo lungo 1 o lungo 2, indipendentemente da quanto la scala sia alta, e da quei passi poi possiamo riciclare i calcoli già fatti prima per scale ora alte $n-1$ e $n-2$ rispettivamente.
+
+Mentre generalizzando il calcolo, supponendo cioè di avere un altro parametro $k$ che regola quanti scalini risuciamo a salire al massimo con un solo passo, la soluzione diventa$$
+S(n,k) = S(n-1) + S(n-2) + \ldots + S(n-k)
+$$
+I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ più bassi, in un modo un po' più complicata da capire (e poi convertire in codice). Per capirlo vi rimando al video (che probabilmente devo ancora registrare ovviamente).
+
 \input{julia}{/assets/scripts/Activity/salendo_le_scale.jl}
 \fig{/assets/scripts/Activity/output/scale.json}
 
