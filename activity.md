@@ -18,7 +18,7 @@ L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere a
   </div>   
 </div>
 ~~~
-
+{{ backtotop }}
 
 
 ## Esempi
@@ -111,3 +111,10 @@ Dato un numero intero positivo $n$, trovare il poligono con $n$ lati con diametr
 \fig{/assets/scripts/Activity/traffic_3.svg}
 \fig{/assets/scripts/Activity/traffic_5.svg}
 \fig{/assets/scripts/Activity/traffic_10.svg}
+
+
+### Modi per salire una scala
+\input{julia}{/assets/scripts/Activity/salendo_le_scale.jl}
+\fig{/assets/scripts/Activity/output/scale.json}
+
+
