@@ -5,7 +5,7 @@ hasplotly = true
 +++
 
 # Attività
-L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio (e indicato da un eventuale spunta nel titolo). Se non c'è è perché devo ancora registrarlo :)
+L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio. Se non c'è è perché devo ancora registrarlo :)
 
 \toc
 ~~~
@@ -23,7 +23,7 @@ L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere a
 
 ## Esempi
 
-### Ipercubi in N dimensioni ✓
+### Ipercubi in N dimensioni
 Finché si lavora con quadrati o cubi è tutto molto easy, possiamo anche disegnarli per studiarli e per capire, ad esempio, quanti vertici, lati e facce abbiano. Salendo di dimensione occorre invece arrivarci per vie traverse, e qui vediamo come ci si può arrivare sfruttando anche un po' di calcolo combinatorio.
 
 {{ youtube https://youtu.be/NjdqSz4iva0 }}
@@ -39,7 +39,7 @@ $$
 $$
 dove le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori hanno senso in dimensioni maggiori. Per esempio uno può chiedersi da quante facce cubiche è formato un 7-cubo. Infine $\binom{N}{k}$ è il coefficiente binomiale di $N$ su $k$, quindi $\frac{N!}{k!(N-k)!}$.
 
-### Paradosso dei compleanni ✓
+### Paradosso dei compleanni
 {{ youtube https://youtu.be/u9nr7_sGnm4 }}
 
 $$
@@ -76,7 +76,7 @@ n=295: 1.0
 
 
 
-### Tennis tie-break probability ✓
+### Tennis tie-break probability
 
 <!-- {{ calcoli /assets/img/tennis.jpg }} -->
 {{ youtube https://youtu.be/ra9LTkehYk4 }}
@@ -96,7 +96,7 @@ Vediamo come calcolare la probabilità di vincere un tiebreak a tennis, quindi u
 {{ desmos https://www.desmos.com/calculator/7xjua3xllw }}
 
 
-> Problema ispirato da [https://plus.maths.org/content/mathematical-dating]().
+> Problema ispirato da [https://plus.maths.org/content/mathematical-dating](https://plus.maths.org/content/mathematical-dating).
 
 ### Traffic problem
 Si consideri una rete di traffico descritta da un grafo $G = (V, A)$ i cui archi rappresentano le strade di una città e nodi rappresentano gli incroci. I cittadini si spostano ogni giorno da alcune origini verso alcune destinazioni. Sia $d_k$ la quantità di auto che lasciano punto $s_k \in V$ e si spostano verso la destinazione $t_k \in V$. Sia $\text{FFT}_{ij}$ (_free flow time_) il tempo di percorrenza della strada (arco) $(i, j)$ se la strada $(i, j)$ è vuota. Il tempo di viaggio su un arco aumenta però con il flusso crescente su quell'arco, come si osserva nelle autostrade ad agosto. Una soglia di congestione $u_{ij}$ viene quindi definita per ogni arco e non deve essere superata dal traffico lungo quella strada.\
@@ -131,7 +131,7 @@ I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ pi
 \input{julia}{/assets/scripts/Activity/salendo_le_scale.jl}
 \fig{/assets/scripts/Activity/output/scale.json}
 
-> Problema ispirato da [https://plus.maths.org/content/its-long-way-top]().
+> Problema ispirato da [https://plus.maths.org/content/its-long-way-top](https://plus.maths.org/content/its-long-way-top).
 
 
 ### Condivisione equa dati diversi contributi
@@ -146,4 +146,4 @@ _Chi ha ragione? E nel caso fosse giusta la versione di Beatrice, quale sarebbe 
 Il problema può essere esteso in forma generale avendo un picnic con $k$ amiche iniziali, in cui ognuna porta $n_1, \ldots, n_k$ porzioni di riso, che sono poi raggiunte da altre $m$ amiche che non hanno portato nulla, ma che alla fine devono pagare una certa somma alle altre amiche.
 
 
-> Problema ispirato da [https://plus.maths.org/content/sharing-cakes]().
+> Problema ispirato da [https://plus.maths.org/content/sharing-cakes](https://plus.maths.org/content/sharing-cakes).
