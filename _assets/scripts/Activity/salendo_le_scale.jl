@@ -3,7 +3,7 @@ plotly() #hide
 PlotlyKaleido.start() # needed for all savefig with plotly #hide
 
 function S(n,k)
-	# very inefficient actually with recursion
+	# actually very inefficient with recursion
 	n==0 && return 0
 	n==1 && return 1
 	if n<k 

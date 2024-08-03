@@ -18,22 +18,22 @@ title = "Uni"
 
 ## Progetti
 
-### Bayesian Project
+### Bayesian project
 [Here](/assets/figures/visualize.html) there are all the relevant plots we produced to better develop our analysis and interpretation. The task was to cluster spatio-temporal data about air pollution in Lombardy, using bayesian models.
 
 {{pdf /assets/Uni/bayesian_report_polimi.pdf }}
 
-### Quality Data Analysis Project
+### Quality data analysis project
 We had to detect defects into 3d printed objects, using control charts, the method we learnt at lectures. In the end our model detected 7 out of the 9 defected objects, on a total of 40 objects.
 
 {{pdf /assets/Uni/qda_report.pdf }}
 
-### Applied Statistic Project
+### Applied statistic project
 We had to develop a statistical analysis on a topic at our choice. We studied the PISA dataset, about the evaluations of students in european high school, to derive results about their wealth and well-being.
 
 {{pdf /assets/Uni/A0_poster_Applied_Statistics_CYMK.pdf }}
 
-### Gioco del 15 - Generalizato
+### Gioco del 15 - generalizato
 Al primo anno, quarto laboratorio di informatica, dovevamo implementare il gioco del 15 in C, quello con la griglia 4 per 4, una casella vuota, e i numeri all'interno da riordinare. Però, già che c'ero, l'ho implementato in dimensione generica N per N, e quindi anzichè *gioco del 15* si è esteso in *gioco dell'(N^2-1)*.
 
 Importante notare che la board non può essere inizializzata con numeri in ordine casuale, altrimenti si potrebbe arrivare a configurazioni non risolvibili, per esempio
@@ -57,7 +57,7 @@ Il codice C originale è quello che segue (scritto al primo anno i primi mesi, q
 
 
 
-### Assegnazione non conflittuale di squadre nei campi
+### Assegnazione non conflittuale di squadre ed arbitri
 Il nostro grest (campo estivo) dell'oratorio gestiva i bambini (elementari e medie) dividendoli in 8 squadre, definite da delle bandane colorate. Anche i ragazzi più grandi (delle superiori) erano distribuiti all'interno delle squadre, ma lavoravano come animatori. Quindi i bambini giocavano e partecipavano alle varie attività, mentre gli animatori in parte li accompagnavano ed in parte organizzavano proprio quelle varie attività. \
 Le squadre erano utili affinché ogni gioco e attività contribuisse ad una classifica generale, per quindi indurre i bambini a impegnarsi non senza una motivazione.
 

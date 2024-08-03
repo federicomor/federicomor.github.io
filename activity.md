@@ -5,7 +5,7 @@ hasplotly = true
 +++
 
 # Attività
-L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio. Se non c'è ancora è perché devo ancora registrarlo :)
+L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio (e indicato da un eventuale spunta nel titolo). Se non c'è è perché devo ancora registrarlo :)
 
 \toc
 ~~~
@@ -23,7 +23,7 @@ L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere a
 
 ## Esempi
 
-### Ipercubi in N Dimensioni
+### Ipercubi in N dimensioni ✓
 Finché si lavora con quadrati o cubi è tutto molto easy, possiamo anche disegnarli per studiarli e per capire, ad esempio, quanti vertici, lati e facce abbiano. Salendo di dimensione occorre invece arrivarci per vie traverse, e qui vediamo come ci si può arrivare sfruttando anche un po' di calcolo combinatorio.
 
 {{ youtube https://youtu.be/NjdqSz4iva0 }}
@@ -39,7 +39,7 @@ $$
 $$
 dove le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori hanno senso in dimensioni maggiori. Per esempio uno può chiedersi da quante facce cubiche è formato un 7-cubo. Infine $\binom{N}{k}$ è il coefficiente binomiale di $N$ su $k$, quindi $\frac{N!}{k!(N-k)!}$.
 
-### Paradosso dei Compleanni
+### Paradosso dei compleanni ✓
 {{ youtube https://youtu.be/u9nr7_sGnm4 }}
 
 $$
@@ -76,7 +76,7 @@ n=295: 1.0
 
 
 
-### Tennis Tie-Break Probability 
+### Tennis tie-break probability ✓
 
 <!-- {{ calcoli /assets/img/tennis.jpg }} -->
 {{ youtube https://youtu.be/ra9LTkehYk4 }}
@@ -88,14 +88,17 @@ Vediamo come calcolare la probabilità di vincere un tiebreak a tennis, quindi u
 \fig{/assets/scripts/Activity/output/tennis_contourf.json}
 
 
-### Strategia Ottimale per Appuntamenti
+### Strategia ottimale per appuntamenti
 \input{julia}{/assets/scripts/Activity/date_strategy.jl} 
 \fig{/assets/scripts/Activity/output/date_strategy.json}
 \output{/assets/scripts/date_strategy.jl}
 
 {{ desmos https://www.desmos.com/calculator/7xjua3xllw }}
 
-### Traffic Problem
+
+> Problema ispirato da [https://plus.maths.org/content/mathematical-dating]().
+
+### Traffic problem
 Si consideri una rete di traffico descritta da un grafo $G = (V, A)$ i cui archi rappresentano le strade di una città e nodi rappresentano gli incroci. I cittadini si spostano ogni giorno da alcune origini verso alcune destinazioni. Sia $d_k$ la quantità di auto che lasciano punto $s_k \in V$ e si spostano verso la destinazione $t_k \in V$. Sia $\text{FFT}_{ij}$ (_free flow time_) il tempo di percorrenza della strada (arco) $(i, j)$ se la strada $(i, j)$ è vuota. Il tempo di viaggio su un arco aumenta però con il flusso crescente su quell'arco, come si osserva nelle autostrade ad agosto. Una soglia di congestione $u_{ij}$ viene quindi definita per ogni arco e non deve essere superata dal traffico lungo quella strada.\
 Modellare il problema di assegnazione del traffico alle strade in modo da ridurre al minimo il tempo totale di viaggio.
 
@@ -104,7 +107,7 @@ Modellare il problema di assegnazione del traffico alle strade in modo da ridurr
 \output{/assets/scripts/traffic_problem.jl}
 
 
-### Polygon Problem
+### Polygon problem
 Dato un numero intero positivo $n$, trovare il poligono con $n$ lati con diametro (ovvero la distanza massima tra due vertici) minore o uguale a 1, e di area massima. Applicazione reale: massimizzare l'area delimitata da un recinto imponendo che questo possa essere chiuso in sottorecinti a piacere se necessario, usando staccionate unitarie (ovvero la distanza tra ogni coppia di vertice deve essere ≤1).
 
 \input{julia}{/assets/scripts/Activity/polygon_problem.jl} 
@@ -114,10 +117,10 @@ Dato un numero intero positivo $n$, trovare il poligono con $n$ lati con diametr
 
 
 ### Modi per salire una scala
-In quanti modi si può salire una scala lunga $n$ gradini, potendone salire al massimo 2 scalini per volta? Chiamando $S(n)$ questo numero di modi in funzione di $n$, risulta che la soluzione è molto semplice:
+In quanti modi si può salire una scala lunga $n$ gradini, potendo salire al massimo 2 scalini per volta? Chiamando $S(n)$ questo numero di modi in funzione di $n$, risulta che la soluzione è molto semplice:
 $$
 S(n) = S(n-1) + S(n-2)
-$$ 
+$$
 perché moralmente come primo passo dobbiamo sempre fare un passo lungo 1 o lungo 2, indipendentemente da quanto la scala sia alta, e da quei passi poi possiamo riciclare i calcoli già fatti prima per scale ora alte $n-1$ e $n-2$ rispettivamente.
 
 Mentre generalizzando il calcolo, supponendo cioè di avere un altro parametro $k$ che regola quanti scalini risuciamo a salire al massimo con un solo passo, la soluzione diventa$$
@@ -128,4 +131,19 @@ I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ pi
 \input{julia}{/assets/scripts/Activity/salendo_le_scale.jl}
 \fig{/assets/scripts/Activity/output/scale.json}
 
+> Problema ispirato da [https://plus.maths.org/content/its-long-way-top]().
 
+
+### Condivisione equa dati diversi contributi
+Due amiche, Astrid e Beatrice, hanno organizzato un picnic. Per pigrizia hanno però deciso di cucinare un'unica pietanza, il riso freddo, e si sono anche accordate che ognuna preparasse quante porzioni riuscisse e che poi le avrebbero condivise ed eventualmente sistemato i conti alla fine. 
+
+Astrid ha portato con sé 3 porzioni (ciotole) di riso freddo, mentre Beatrice 5. Sono sul punto di pranzare quando'ecco che appare anche Carla!, un'altra loro amica, che chiede di unirsi a loro per il picnic, pur non avendo portato niente, ma ovviamente promettendo di saldare il conto alla fine. Astrid e Beatrice accolgono quindi volentieri la nuova arrivata. A questo punto dividono l'intero ammontare di riso freddo in tre dosi uguali e iniziano il pranzo.
+
+"Gran bella mangiata!" riassume alla fine Carla, "ma... quanto vi devo? Vediamo: Astrid, tu avevi portato i 3/8 del riso, mentre Beatrice 5/8 quindi... devo dare 3€ ad Astrid e 5€ a Bea, giusto?". "No!" esclama Beatrice, lasciando le amiche un po' confuse. "Sei sicura?" chiede infatti Astrid, leggermente intimorita.
+
+_Chi ha ragione? E nel caso fosse giusta la versione di Beatrice, quale sarebbe la divisione più corretta?_ 
+
+Il problema può essere esteso in forma generale avendo un picnic con $k$ amiche iniziali, in cui ognuna porta $n_1, \ldots, n_k$ porzioni di riso, che sono poi raggiunte da altre $m$ amiche che non hanno portato nulla, ma che alla fine devono pagare una certa somma alle altre amiche.
+
+
+> Problema ispirato da [https://plus.maths.org/content/sharing-cakes]().
