@@ -269,7 +269,8 @@ td {
     position: fixed;
     bottom: 10px;
     right: 0px;
-    display: none; /* Hidden by default */
+/*    display: none;  */
+/* Hidden by default */
     background-color: #dec6e0;
     color: white;
     border: none;
