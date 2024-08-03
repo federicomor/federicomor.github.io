@@ -134,7 +134,7 @@ I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ pi
 > Problema ispirato da [https://plus.maths.org/content/its-long-way-top](https://plus.maths.org/content/its-long-way-top).
 
 
-### Condivisione equa dati diversi contributi
+### Condivisione equa di diversi contributi
 Due amiche, Astrid e Beatrice, hanno organizzato un picnic. Per pigrizia hanno però deciso di cucinare un'unica pietanza, il riso freddo, e si sono anche accordate che ognuna preparasse quante porzioni riuscisse e che poi le avrebbero condivise ed eventualmente sistemato i conti alla fine. 
 
 Astrid ha portato con sé 3 porzioni (ciotole) di riso freddo, mentre Beatrice 5. Sono sul punto di pranzare quando'ecco che appare anche Carla!, un'altra loro amica, che chiede di unirsi a loro per il picnic, pur non avendo portato niente, ma ovviamente promettendo di saldare il conto alla fine. Astrid e Beatrice accolgono quindi volentieri la nuova arrivata. A questo punto dividono l'intero ammontare di riso freddo in tre dosi uguali e iniziano il pranzo.
@@ -147,3 +147,26 @@ Il problema può essere esteso in forma generale avendo un picnic con $k$ amiche
 
 
 > Problema ispirato da [https://plus.maths.org/content/sharing-cakes](https://plus.maths.org/content/sharing-cakes).
+
+### Triello aleatorio
+Tre signori A, B e C, hanno fissato un duello a tre armi per risolvere una disputa. Erano amici da molto tempo (solo quest'ultima litigata ha irrimediabilmente rotto ogni rapporto), quindi tutti conoscono le caratteristiche di tutti: si sa che l'accuratezza (ovvero la probabilità di colpire il bersaglio) di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre.
+
+È stato fissato l'ordine di inizio: A, B, poi C. Ognuno, al proprio turno, deve sparare un colpo decidendo come vuole il suo bersaglio. Ovviamente se uno viene colpito muore e quindi non può eseguire il proprio turno di sparo. Il triello finisce quando un solo uomo rimane vivo.
+
+_Se voi foste il signor A, quale strategia utilizzereste?_
+
+\fig{/assets/img/duello_cut.png}
+
+
+### Testando la resistenza delle uova
+Immaginate di essere un allevatore che, incrociando varie razze di gallina, è riuscito ad ottenerne una che depone delle uova particolarmente forti. Volete quindi testare di preciso quanto siano resistenti queste uova, e per farlo decidete di lanciarle dai vari piani di un edificio di 100 piani. 
+
+Il vostro obiettivo è quindi di trovare il piano più alto da cui un uovo può cadere senza rompersi. Se aveste un solo uovo sapreste subito come fare: prima lanciate l'uovo dal primo piano, se non si rompe passate al secondo, poi al terzo, e così via. Ci vorrebbero, nel caso peggiore, 100 lanci per trovare la soluzione. 
+
+Ma ora supponiamo che voi abbiate 2 uova. _Quale strategia utilizzereste ora per trovare la risposta in modo da minimizzare il caso peggiore del numero di lanci da effettuare?_
+
+Supponete invece di avere infinite uova. _Come agireste in questo caso?_
+
+\fig{/assets/img/gallina2_cut.png}
+
+> Problema ispirato da [https://plus.maths.org/content/dropping-eggs](https://plus.maths.org/content/dropping-eggs).
