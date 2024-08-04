@@ -17,6 +17,31 @@
 }
 
 /* ==================================================================
+    BACK TO TOP BUTTON
+================================================================== */
+
+.backToTopBtn, .backToTopBtn-icon {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  padding: 0px 5px;
+  background-color: #dec6e0;;
+  color: white;
+  cursor: pointer;
+  border-radius: 0px;
+/*  transform: scale(1.25);*/
+}
+
+
+.backToTopBtn:hover, .backToTopBtn-icon:hover {
+  background-color: #dec6e0;
+}
+
+/* ==================================================================
     VARIABLES
 ================================================================== */
 
