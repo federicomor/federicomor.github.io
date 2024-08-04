@@ -172,5 +172,3 @@ Supponete infine di avere infinite uova. _Come agireste in questo caso?_
 
 > Problema ispirato da [https://plus.maths.org/content/dropping-eggs](https://plus.maths.org/content/dropping-eggs).
 
-
-{{ backtotop }}
