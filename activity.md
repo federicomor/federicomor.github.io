@@ -18,7 +18,6 @@ L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere a
   </div>   
 </div>
 ~~~
-{{ backtotop }}
 
 
 ## Esempi
@@ -99,7 +98,7 @@ Vediamo come calcolare la probabilità di vincere un tiebreak a tennis, quindi u
 > Problema ispirato da [https://plus.maths.org/content/mathematical-dating](https://plus.maths.org/content/mathematical-dating).
 
 ### Traffic problem
-Si consideri una rete di traffico descritta da un grafo $G = (V, A)$ i cui archi rappresentano le strade di una città e nodi rappresentano gli incroci. I cittadini si spostano ogni giorno da alcune origini verso alcune destinazioni. Sia $d_k$ la quantità di auto che lasciano punto $s_k \in V$ e si spostano verso la destinazione $t_k \in V$. Sia $\text{FFT}_{ij}$ (_free flow time_) il tempo di percorrenza della strada (arco) $(i, j)$ se la strada $(i, j)$ è vuota. Il tempo di viaggio su un arco aumenta però con il flusso crescente su quell'arco, come si osserva nelle autostrade ad agosto. Una soglia di congestione $u_{ij}$ viene quindi definita per ogni arco e non deve essere superata dal traffico lungo quella strada.\
+Si consideri una rete di traffico descritta da un grafo $G = (V, A)$ i cui archi rappresentano le strade di una città e nodi rappresentano gli incroci. I cittadini si spostano ogni giorno da alcune origini verso alcune destinazioni. Sia $d_k$ la quantità di auto che lasciano punto $s_k \in V$ e si spostano verso la destinazione $t_k \in V$. Sia $\text{FFT}_{ij}$ (_free flow time_) il tempo di percorrenza della strada (arco) $(i, j)$ se la strada $(i, j)$ è vuota. Il tempo di viaggio su un arco aumenta però naturalmente con il flusso crescente su quell'arco. Una soglia di congestione $u_{ij}$ viene quindi definita per ogni arco e non deve essere superata dal traffico lungo quella strada.\
 Modellare il problema di assegnazione del traffico alle strade in modo da ridurre al minimo il tempo totale di viaggio.
 
 \input{julia}{/assets/scripts/Activity/traffic_problem.jl} 
@@ -108,12 +107,14 @@ Modellare il problema di assegnazione del traffico alle strade in modo da ridurr
 
 
 ### Polygon problem
-Dato un numero intero positivo $n$, trovare il poligono con $n$ lati con diametro (ovvero la distanza massima tra due vertici) minore o uguale a 1, e di area massima. Applicazione reale: massimizzare l'area delimitata da un recinto imponendo che questo possa essere chiuso in sottorecinti a piacere se necessario, usando staccionate unitarie (ovvero la distanza tra ogni coppia di vertice deve essere ≤1).
+Dato un numero intero positivo $n$, trovare il poligono con $n$ lati con diametro (ovvero la distanza massima tra due vertici) minore o uguale a 1, e di area massima.
+
+Un suo esempio di applicazione reale sarebbe massimizzare l'area delimitata da un recinto, imponendo che questo possa essere chiuso in sottorecinti a piacere se necessario, usando staccionate unitarie (ovvero la distanza tra ogni coppia di vertice deve essere ≤1).
 
 \input{julia}{/assets/scripts/Activity/polygon_problem.jl} 
-\fig{/assets/scripts/Activity/traffic_3.svg}
-\fig{/assets/scripts/Activity/traffic_5.svg}
-\fig{/assets/scripts/Activity/traffic_10.svg}
+<!-- \fig{/assets/scripts/Activity/polygon_3.svg} -->
+<!-- \fig{/assets/scripts/Activity/polygon_5.svg} -->
+\fig{/assets/scripts/Activity/polygon_10.svg}
 
 
 ### Modi per salire una scala
@@ -137,21 +138,21 @@ I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ pi
 ### Condivisione equa di diversi contributi
 Due amiche, Astrid e Beatrice, hanno organizzato un picnic. Per pigrizia hanno però deciso di cucinare un'unica pietanza, il riso freddo, e si sono anche accordate che ognuna preparasse quante porzioni riuscisse e che poi le avrebbero condivise ed eventualmente sistemato i conti alla fine. 
 
-Astrid ha portato con sé 3 porzioni (ciotole) di riso freddo, mentre Beatrice 5. Sono sul punto di pranzare quando'ecco che appare anche Carla!, un'altra loro amica, che chiede di unirsi a loro per il picnic, pur non avendo portato niente, ma ovviamente promettendo di saldare il conto alla fine. Astrid e Beatrice accolgono quindi volentieri la nuova arrivata. A questo punto dividono l'intero ammontare di riso freddo in tre dosi uguali e iniziano il pranzo.
+Astrid ha portato con sé 3 porzioni (ciotoline) di riso freddo, mentre Beatrice 5. Sono sul punto di pranzare quando'ecco che appare anche Carla!, un'altra loro amica, che chiede di unirsi a loro per il picnic, pur non avendo portato niente, ma ovviamente promettendo di saldare il conto alla fine. Astrid e Beatrice accolgono quindi volentieri la nuova arrivata. A questo punto dividono l'intero ammontare di riso freddo in tre dosi uguali e iniziano il pranzo. Inoltre, le tre amiche sono molto affamate, e quindi ognuna finisce interamente la sua parte.
 
-"Gran bella mangiata!" riassume alla fine Carla, "ma... quanto vi devo? Vediamo: Astrid, tu avevi portato i 3/8 del riso, mentre Beatrice 5/8 quindi... devo dare 3€ ad Astrid e 5€ a Bea, giusto?". "No!" esclama Beatrice, lasciando le amiche un po' confuse. "Sei sicura?" chiede infatti Astrid, leggermente intimorita.
+"Gran bella mangiata!" riassume alla fine Carla, "ma... quanto vi devo? Vediamo: Astrid, tu avevi portato i 3/8 del riso, mentre Beatrice 5/8, quindi... dovrei dare 3€ ad Astrid e 5€ a Bea, giusto?". "No!" esclama Beatrice, lasciando le amiche un po' confuse. "Sei sicura?" chiede infatti Astrid, leggermente intimorita.
 
-_Chi ha ragione? E nel caso fosse giusta la versione di Beatrice, quale sarebbe la divisione più corretta?_ 
+_In effetti Beatrice ha ragione. Perché? E quale sarebbe la divisione più corretta?_ 
 
 Il problema può essere esteso in forma generale avendo un picnic con $k$ amiche iniziali, in cui ognuna porta $n_1, \ldots, n_k$ porzioni di riso, che sono poi raggiunte da altre $m$ amiche che non hanno portato nulla, ma che alla fine devono pagare una certa somma alle altre amiche.
 
-
 > Problema ispirato da [https://plus.maths.org/content/sharing-cakes](https://plus.maths.org/content/sharing-cakes).
 
-### Triello aleatorio
-Tre signori A, B e C, hanno fissato un duello a tre armi per risolvere una disputa. Erano amici da molto tempo (solo quest'ultima litigata ha irrimediabilmente rotto ogni rapporto), quindi tutti conoscono le caratteristiche di tutti: si sa che l'accuratezza (ovvero la probabilità di colpire il bersaglio) di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre.
 
-È stato fissato l'ordine di inizio: A, B, poi C. Ognuno, al proprio turno, deve sparare un colpo decidendo come vuole il suo bersaglio. Ovviamente se uno viene colpito muore e quindi non può eseguire il proprio turno di sparo. Il triello finisce quando un solo uomo rimane vivo.
+### Triello aleatorio
+Tre signori A, B e C hanno fissato un duello a tre armi (un triello quindi) per risolvere una disputa. Erano amici da molto tempo (solo quest'ultima litigata ha irrimediabilmente rotto ogni rapporto), quindi tutti conoscono le caratteristiche di tutti: si sa che l'accuratezza, ovvero la probabilità di colpire il bersaglio, di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre.
+
+È stato fissato l'ordine di inizio: A, B, poi C. Ognuno, al proprio turno, deve sparare un colpo decidendo come vuole il suo bersaglio, valutando per esempio quale sia la sua strategia ottimale per sopravvivere. Ovviamente se uno viene colpito muore, e quindi non può eseguire il proprio turno di sparo (ma naturalmente se uno è morto dover saltare un turno è l'ultimo dei suoi problemi). Il triello finisce quando un solo uomo rimane vivo.
 
 _Se voi foste il signor A, quale strategia utilizzereste?_
 
@@ -165,8 +166,11 @@ Il vostro obiettivo è quindi di trovare il piano più alto da cui un uovo può 
 
 Ma ora supponiamo che voi abbiate 2 uova. _Quale strategia utilizzereste ora per trovare la risposta in modo da minimizzare il caso peggiore del numero di lanci da effettuare?_
 
-Supponete invece di avere infinite uova. _Come agireste in questo caso?_
+Supponete infine di avere infinite uova. _Come agireste in questo caso?_
 
 \fig{/assets/img/gallina2_cut.png}
 
 > Problema ispirato da [https://plus.maths.org/content/dropping-eggs](https://plus.maths.org/content/dropping-eggs).
+
+
+{{ backtotop }}

@@ -14,7 +14,7 @@ title = "Uni"
   </div>   
 </div>
 ~~~
-{{ backtotop }}
+
 
 ## Progetti
 
@@ -85,3 +85,4 @@ Esame andato non troppo bene, ma malgrado questo il corso in sé era anche abbas
 
 Qualora poi l'attività di divulgazione matematica diventasse florida la prima idea di prodotto per il merchandising sarà senz'altro un telo mare con sopra stampato questo formulario.  -->
 
+{{ backtotop }}
