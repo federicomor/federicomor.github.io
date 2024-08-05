@@ -23,9 +23,9 @@ L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere a
 ## Esempi
 
 ### Ipercubi in N dimensioni
-Finché si lavora con quadrati o cubi è tutto molto easy, possiamo anche disegnarli per studiarli e per capire, ad esempio, quanti vertici, lati e facce abbiano. Salendo di dimensione occorre invece arrivarci per vie traverse, e qui vediamo come ci si può arrivare sfruttando anche un po' di calcolo combinatorio.
-
 {{ youtube https://youtu.be/NjdqSz4iva0 }}
+
+Finché si lavora con quadrati o cubi è tutto molto easy, possiamo anche disegnarli per studiarli e per capire, ad esempio, quanti vertici, lati e facce abbiano. Salendo di dimensione occorre invece arrivarci per vie traverse, e qui vediamo come ci si può arrivare sfruttando anche un po' di calcolo combinatorio.
 
 Queste sarebbero le conclusioni a cui si arriva: detto $N$ il numero di dimensioni in cui lavoriamo (quindi considerando un $N$-cubo), abbiamo che
 $$
@@ -171,4 +171,3 @@ Supponete infine di avere infinite uova. _Come agireste in questo caso?_
 \fig{/assets/img/gallina2_cut.png}
 
 > Problema ispirato da [https://plus.maths.org/content/dropping-eggs](https://plus.maths.org/content/dropping-eggs).
-

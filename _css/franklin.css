@@ -17,31 +17,6 @@
 }
 
 /* ==================================================================
-    BACK TO TOP BUTTON
-================================================================== */
-
-.backToTopBtn, .backToTopBtn-icon {
-  display: block;
-  position: fixed;
-  bottom: 10px;
-  right: 0px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  padding: 0px 5px;
-  background-color: #dec6e0;;
-  color: white;
-  cursor: pointer;
-  border-radius: 0px;
-/*  transform: scale(1.25);*/
-}
-
-
-.backToTopBtn:hover, .backToTopBtn-icon:hover {
-  background-color: #dec6e0;
-}
-
-/* ==================================================================
     VARIABLES
 ================================================================== */
 
@@ -258,7 +233,7 @@ td {
 
 #toc-button {
   position: fixed;
-  right: 0;
+  right: 0px;
   top: 10px;
   padding: 5px 15px;
   background-color: #dec6e0;
@@ -269,6 +244,7 @@ td {
 /*  border-radius: 5px;*/
 /*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
 }
+
 
 #toc {
   position: sticky;
@@ -290,7 +266,32 @@ td {
   font-weight: bold;
 }
 
+/* ==================================================================
+    BACK TO TOP BUTTON
+================================================================== */
 
+.backToTopBtn, .backToTopBtn-icon {
+  font-size: 15px;
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  padding: 0px 5px;
+  background-color: #dec6e0;;
+  color: white;
+  padding: 0px 8px;
+  cursor: pointer;
+  border-radius: 0px;
+/*  transform: scale(1.25);*/
+}
+
+
+.backToTopBtn:hover, .backToTopBtn-icon:hover {
+  background-color: #dec6e0;
+}
 
 /* ==================================================================
     GENERAL FORMATTING
