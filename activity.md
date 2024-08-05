@@ -124,7 +124,8 @@ S(n) = S(n-1) + S(n-2)
 $$
 perché moralmente come primo passo dobbiamo sempre fare un passo lungo 1 o lungo 2, indipendentemente da quanto la scala sia alta, e da quei passi poi possiamo riciclare i calcoli già fatti prima per scale ora alte $n-1$ e $n-2$ rispettivamente.
 
-Mentre generalizzando il calcolo, supponendo cioè di avere un altro parametro $k$ che regola quanti scalini risuciamo a salire al massimo con un solo passo, la soluzione diventa$$
+Mentre generalizzando il calcolo, supponendo cioè di avere un altro parametro $k$ che regola quanti scalini risuciamo a salire al massimo con un solo passo, la soluzione diventa
+$$
 S(n,k) = S(n-1) + S(n-2) + \ldots + S(n-k)
 $$
 I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ più bassi, in un modo un po' più complicata da capire (e poi convertire in codice). Per capirlo vi rimando al video (che probabilmente devo ancora registrare ovviamente).
@@ -138,16 +139,17 @@ I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ pi
 ### Condivisione equa di diversi contributi
 Due amiche, Astrid e Beatrice, hanno organizzato un picnic. Per pigrizia hanno però deciso di cucinare un'unica pietanza, il riso freddo, e si sono anche accordate che ognuna preparasse quante porzioni riuscisse e che poi le avrebbero condivise ed eventualmente sistemato i conti alla fine. 
 
-Astrid ha portato con sé 3 porzioni (ciotoline) di riso freddo, mentre Beatrice 5. Sono sul punto di pranzare quando'ecco che appare anche Carla!, un'altra loro amica, che chiede di unirsi a loro per il picnic, pur non avendo portato niente, ma ovviamente promettendo di saldare il conto alla fine. Astrid e Beatrice accolgono quindi volentieri la nuova arrivata. A questo punto dividono l'intero ammontare di riso freddo in tre dosi uguali e iniziano il pranzo. Inoltre, le tre amiche sono molto affamate, e quindi ognuna finisce interamente la sua parte.
+Astrid ha portato con sé 3 porzioni (ciotoline) di riso freddo, mentre Beatrice 5. Sono sul punto di pranzare quando'ecco che appare anche Carla!, un'altra loro amica, che chiede di unirsi a loro per il picnic, pur non avendo portato niente, ma ovviamente promettendo di saldare il conto alla fine. Astrid e Beatrice accolgono quindi volentieri la nuova arrivata. A questo punto dividono ogni porzione in tre parti uguali, dove supponiamo che ogni parte valga 1€[^1], e se le distribuiscono tra loro. Le tre amiche sono molto affamate, e quindi ognuna finisce interamente il riso che le è stato assegnato.
 
-"Gran bella mangiata!" riassume alla fine Carla, "ma... quanto vi devo? Vediamo: Astrid, tu avevi portato i 3/8 del riso, mentre Beatrice 5/8, quindi... dovrei dare 3€ ad Astrid e 5€ a Bea, giusto?". "No!" esclama Beatrice, lasciando le amiche un po' confuse. "Sei sicura?" chiede infatti Astrid, leggermente intimorita.
+"Gran bella mangiata!" riassume alla fine Carla, "ma... quanto vi devo? Vediamo: io ho mangiato 8 porzioncine, dalle vostre 3+5 porzioni originali, per quindi un costo di 8€. Di tutto il riso, tu Astrid ne avevi portato i 3/8, mentre Beatrice 5/8, quindi... dovrei dare 3€ ad Astrid e 5€ a Bea, giusto?". "Mi sembra giusto" conferma Astrid. "No invece!" esclama Beatrice, scioccata dall'incompetenza matematica delle sue amiche.
 
-_In effetti Beatrice ha ragione. Perché? E quale sarebbe la divisione più corretta?_ 
+In effetti Beatrice ha ragione. _Ma perché? E quale sarebbe la divisione più corretta?_ 
 
 Il problema può essere esteso in forma generale avendo un picnic con $k$ amiche iniziali, in cui ognuna porta $n_1, \ldots, n_k$ porzioni di riso, che sono poi raggiunte da altre $m$ amiche che non hanno portato nulla, ma che alla fine devono pagare una certa somma alle altre amiche.
 
 > Problema ispirato da [https://plus.maths.org/content/sharing-cakes](https://plus.maths.org/content/sharing-cakes).
 
+[^1]: Questa è solo una semplificazione. Si potrebbe fissare, in modo più verosimile, il costo della porzione inziale (intera), e non della sotto-porzione (divisa), ma questo complicherebbe solo i calcoli. Comunque una volta trovata la soluzione si può convertirla in valori "relativi" e quindi si può ripristinare il valore esatto in base al costo vero della porzione di partenza. 
 
 ### Triello aleatorio
 Tre signori A, B e C hanno fissato un duello a tre armi (un triello quindi) per risolvere una disputa. Erano amici da molto tempo (solo quest'ultima litigata ha irrimediabilmente rotto ogni rapporto), quindi tutti conoscono le caratteristiche di tutti: si sa che l'accuratezza, ovvero la probabilità di colpire il bersaglio, di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre.

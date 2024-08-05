@@ -327,6 +327,7 @@ td {
 .franklin-content table.fndef {
   margin: 0;
   margin-bottom: 10px;
+  line-height: 0.9em;
 }
 
 .franklin-content .fndef tr,
