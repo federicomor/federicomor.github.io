@@ -7,7 +7,7 @@ function S(n,k)
 	n==0 && return 0
 	n==1 && return 1
 	if n<k 
-		return S(n,k-1)
+		return S(n,n)
 	elseif n==k
 		return S(n,k-1)+1
 	else # n>k
