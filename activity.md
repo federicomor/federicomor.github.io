@@ -43,8 +43,8 @@ dove le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori 
 
 $$
 \begin{align*}
-\mathbb{P}(\text{in un gruppo di $n$ persone almeno due abbiano lo stesso compleanno}) &= 1-\frac{365!}{(365-n)!365^n}\\
-\mathbb{P}(\text{in un gruppo di $n$ persone almeno un'altra ha il tuo stesso compleanno}) &= 1-\left(\frac{364}{365}\right)^n
+\mathbb{P}(\text{in un gruppo di $n$ persone almeno due hanno lo stesso compleanno}) &= 1-\frac{365!}{(365-n)!365^n}\\
+\mathbb{P}(\text{in un gruppo di $n$ persone almeno un'altra ha \textit{il tuo} stesso compleanno}) &= 1-\left(\frac{364}{365}\right)^n
 \end{align*}
 $$
 Questo problema è noto come "paradosso dei compleanni" perché per la prima probabilità si arriva al 50% già con solo 23 persone, che in effetti sembrano molte poche. Nel video è quindi spiegato come ricavare quei valori e anche come interpretarli, per capire perché quel risultato un po' controintuitivo abbia in realtà senso.
@@ -67,7 +67,6 @@ n=294: 0.99999999999999999999999999999999999999999999999999999999999999999999999
 n=295: 1.0
 ⋮
 ```
-
 \input{julia}{/assets/scripts/Activity/paradosso_compleanni.jl} 
 \fig{/assets/scripts/Activity/output/paradosso_compleanni_1.json}
 \fig{/assets/scripts/Activity/output/paradosso_compleanni_2.json}
@@ -105,6 +104,7 @@ Modellare il problema di assegnazione del traffico alle strade in modo da ridurr
 \fig{/assets/scripts/Activity/traffic_problem.svg}
 \output{/assets/scripts/traffic_problem.jl}
 
+> Problema tratto dagli esercizi del corso di Optimization al polimi
 
 ### Polygon problem
 Dato un numero intero positivo $n$, trovare il poligono con $n$ lati con diametro (ovvero la distanza massima tra due vertici) minore o uguale a 1, e di area massima.
@@ -116,6 +116,7 @@ Un suo esempio di applicazione reale sarebbe massimizzare l'area delimitata da u
 <!-- \fig{/assets/scripts/Activity/polygon_5.svg} -->
 \fig{/assets/scripts/Activity/polygon_10.svg}
 
+> Problema tratto dagli esercizi del corso di Optimization al polimi
 
 ### Modi per salire una scala
 In quanti modi si può salire una scala lunga $n$ gradini, potendo salire al massimo 2 scalini per volta? Chiamando $S(n)$ questo numero di modi in funzione di $n$, risulta che la soluzione è molto semplice:
