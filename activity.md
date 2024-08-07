@@ -135,42 +135,45 @@ I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ pi
 \fig{/assets/scripts/Activity/output/scale.json}
 
 ~~~
+
 <label for="inputN">n:</label>
-<input type="number" id="inputN" min="1" required>
+<input type="number" id="inputN" min="1">
 <label for="inputK">k:</label>
-<input type="number" id="inputK" min="1" required>
+<input type="number" id="inputK" min="1">
 <button onclick="calculate()">Calcola</button>
 <div id="result"></div>
-
+    
 <script>
-    function S(n, k) {
-        let dp = Array.from({ length: n + 1 }, () => Array(k + 1).fill(0));
+function S(n, k) {
+    let dp = Array.from({ length: n + 1 }, () => Array(k + 1).fill(0));
+    for (let j = 1; j <= k; j++) {
+        dp[1][j] = 1;
+    }
+    for (let i = 2; i <= n; i++) {
         for (let j = 1; j <= k; j++) {
-            dp[1][j] = 1;
-        }
-        for (let i = 2; i <= n; i++) {
-            for (let j = 1; j <= k; j++) {
-                if (i < j) {
-                    dp[i][j] = dp[i][i];
-                } else if (i == j) {
-                    dp[i][j] = dp[i][j - 1] + 1;
-                } else {
-                    dp[i][j] = 0;
-                    for (let m = 1; m <= j; m++) {
-                        dp[i][j] += dp[i - m][j];
-                    }
+            if (i < j) {
+                dp[i][j] = dp[i][i];
+            } else if (i == j) {
+                dp[i][j] = dp[i][j - 1] + 1;
+            } else {
+                dp[i][j] = 0;
+                for (let m = 1; m <= j; m++) {
+                    dp[i][j] += dp[i - m][j];
                 }
             }
         }
-        return dp[n][k];
     }
-    function calculate() {
-        let n = parseInt(document.getElementById("inputN").value);
-        let k = parseInt(document.getElementById("inputK").value);
-        let result = S(n, k);
-        document.getElementById("result").innerText = `Risultato: ${result}`;
-    }
+    return dp[n][k];
+}
+
+function calculate() {
+    let n = parseInt(document.getElementById("inputN").value);
+    let k = parseInt(document.getElementById("inputK").value);
+    let result = S(n, k);
+    document.getElementById("result").innerText = `Risultato: ${result}`;
+}
 </script>
+
 ~~~
 
 
