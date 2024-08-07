@@ -119,6 +119,8 @@ Un suo esempio di applicazione reale sarebbe massimizzare l'area delimitata da u
 > Problema tratto dagli esercizi del corso di Optimization al polimi
 
 ### Modi per salire una scala
+{{ youtube https://www.youtube.com/watch?v=HWJOsKOcUJk }}
+
 In quanti modi si può salire una scala lunga $n$ gradini, potendo salire al massimo 2 scalini per volta? Chiamando $S(n)$ questo numero di modi in funzione di $n$, risulta che la soluzione è molto semplice:
 $$
 S(n) = S(n-1) + S(n-2)
@@ -133,7 +135,7 @@ I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ pi
 
 \input{julia}{/assets/scripts/Activity/salendo_le_scale.jl}
 \fig{/assets/scripts/Activity/output/scale.json}
-
+<!-- rimuovere i commenti dai codici javascript, sembrano non farli funzionare-->
 ~~~
 
 <label for="inputN">n:</label>
