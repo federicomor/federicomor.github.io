@@ -134,6 +134,49 @@ I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ pi
 \input{julia}{/assets/scripts/Activity/salendo_le_scale.jl}
 \fig{/assets/scripts/Activity/output/scale.json}
 
+~~~
+<script>
+    function S(n, k) {
+        // Create a 2D array to store subproblem results
+        let dp = Array.from({ length: n + 1 }, () => Array(k + 1).fill(0));
+        // Initialize the base cases
+        for (let j = 1; j <= k; j++) {
+            dp[1][j] = 1;
+        }
+        // Fill in the dp table
+        for (let i = 2; i <= n; i++) {
+            for (let j = 1; j <= k; j++) {
+                if (i < j) {
+                    dp[i][j] = dp[i][i];
+                } else if (i == j) {
+                    dp[i][j] = dp[i][j - 1] + 1;
+                } else {
+                    dp[i][j] = 0;
+                    for (let m = 1; m <= j; m++) {
+                        dp[i][j] += dp[i - m][j];
+                    }
+                }
+            }
+        }
+        return dp[n][k];
+    }
+    function calculate() {
+        let n = parseInt(document.getElementById("inputN").value);
+        let k = parseInt(document.getElementById("inputK").value);
+        let result = S(n, k);
+        document.getElementById("result").innerText = `S(${n},${k}) = ${result}`;
+    }
+</script>
+
+<label for="inputN">n:</label>
+<input type="number" id="inputN" min="0" required>
+<label for="inputK">k:</label>
+<input type="number" id="inputK" min="0" required>
+<button onclick="calculate()">Calcola</button>
+<div id="result"></div>
+~~~
+
+
 > Problema ispirato da [https://plus.maths.org/content/its-long-way-top](https://plus.maths.org/content/its-long-way-top).
 
 
