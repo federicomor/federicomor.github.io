@@ -95,11 +95,11 @@ Vediamo ora una delle domande più cruciali nella vita sentimentale: _quante per
 
 Perché è una buona strategia?[^1] Ovviamente non conviene scegliere la prima persona che incontriamo, per quanto possa sembrare promettente, perché qualcuno di meglio potrebbe apparire più tardi. D'altra parte, non vogliamo nemmeno essere troppo esigenti, perché una volta che rifiutiamo qualcuno molto probabilmente non vorrà tornare da noi qualora ci ripensassimo. Ma quindi perché il 37%? L'idea è solo di massimizzare le probabilità.
 
----
+\fig{/assets/img/date4_cut.jpeg}
 
 Più precisamente: supponiamo di volerci "sistemare" entro un certo periodo. Definiamo $N$ come il numero di partner che stimiamo di poter incontrare in questo periodo, e che quindi costituiscono i nostri candidati moglie/marito. Supponiamo di poter assegnare a ogni partner un punteggio da 1 a $N$ per definire il nostro grado di compatibilità. In questo gruppo ci sarà anche la nostra anima gemella, _quella giusta_, che chiamiamo $X$ e che avrà quindi il punteggio massimo. Vorremo ora definire una strategia che massimizzi la probabilità di trovarla.
 
-Dato $N$, quindi, vorremo capire come bilanciare il rischio tra "scegliere un partner iniziale magari non perfetto" e "scartare partner che invece col senno di poi valeva la pena scegliere", e quindi vorremo definire $M$ come la soglia di persone che delimita i gruppi _scarto_ vs _ci penso_. La nostra strategia, come sopra anticipato, consiste allora nell'incontrare - ma scartare - le prime $M$ persone, per poi scegliere, tra i partner degli appuntamenti successivi, la prima che è migliore della persona migliore incontrata nel gruppo scartato; o altrimenti l'ultima se non si presenta nessuna con questo requisito. Calcolando l'$M$ ottimale, in funzione di $N$, risulterà che 
+Dato $N$, quindi, vorremo capire come bilanciare il rischio tra "scegliere un partner iniziale magari non perfetto" e "scartare partner che invece col senno di poi valeva la pena scegliere"[^2], e quindi vorremo definire $M$ come la soglia di persone che delimita i gruppi _scarto_ vs _ci penso_. La nostra strategia, come sopra anticipato, consiste allora nell'incontrare - ma scartare - le prime $M$ persone, in modo solo da farci un'idea della qualità delle proposte, e poi scegliere, tra i partner degli appuntamenti successivi, la prima che è migliore della persona migliore incontrata nel gruppo scartato; o altrimenti l'ultima se non si presenta nessuna con questo requisito. Calcolando l'$M$ ottimale, in funzione di $N$, risulterà che 
 $$
 M = \frac{N}{e} \approx 0.37 \cdot N
 $$
@@ -107,14 +107,18 @@ ovvero $M$ deve essere circa il 37% di $N$.
 
 [^1]: "buona strategia" dal punto di vista del risolvere il problema in modo matematico, ma poi naturalmente nelle relazioni umane non ha troppo senso ragionare solo in questi termini razionali. Se per esempio il primo appuntamento ci colpisce non è che dobbiamo rifiutare quel partner solo perché la matematica dice di farlo.
 
+[^2]: questo perché il punteggio corretto da assegnare a ogni partner lo sapremo esattamente solo una volta fatti tutti gli appuntamenti. Durante il processo invece possiamo solo fare confronti del tipo "lei era peggiore di quella vista prima", "quest'altra era migliore di tutte le altre viste finora", ecc, ovvero confronti relativi.
+
 \input{julia}{/assets/scripts/Activity/date_strategy.jl} 
 \fig{/assets/scripts/Activity/output/date_strategy.json}
 \output{/assets/scripts/date_strategy.jl}
 
 {{ desmos https://www.desmos.com/calculator/7xjua3xllw }}
 
-
 > Problema ispirato da [https://plus.maths.org/content/mathematical-dating](https://plus.maths.org/content/mathematical-dating).
+
+
+
 
 ### Traffic problem
 Si consideri una rete di traffico descritta da un grafo $G = (V, A)$ i cui archi rappresentano le strade di una città e nodi rappresentano gli incroci. I cittadini si spostano ogni giorno da alcune origini verso alcune destinazioni. Sia $d_k$ la quantità di auto che lasciano punto $s_k \in V$ e si spostano verso la destinazione $t_k \in V$. Sia $\text{FFT}_{ij}$ (_free flow time_) il tempo di percorrenza della strada (arco) $(i, j)$ se la strada $(i, j)$ è vuota. Il tempo di viaggio su un arco aumenta però naturalmente con il flusso crescente su quell'arco. Una soglia di congestione $u_{ij}$ viene quindi definita per ogni arco e non deve essere superata dal traffico lungo quella strada.\
@@ -137,6 +141,9 @@ Un suo esempio di applicazione reale sarebbe massimizzare l'area delimitata da u
 \fig{/assets/scripts/Activity/polygon_10.svg}
 
 > Problema tratto dagli esercizi del corso di Optimization al polimi
+
+
+
 
 ### Modi per salire una scala
 {{ youtube https://www.youtube.com/watch?v=HWJOsKOcUJk }}
@@ -249,3 +256,6 @@ Tuttavia, nella fretta di preparare tutto per le feste, Babbo Natale (e i suoi e
 _Qual è la proabilità che nessun bambino riceva la lettera di risposta che era destinata a lui?_
 
 \fig{/assets/img/bnatale1_cut.jpg}
+
+<!-- https://it.wikipedia.org/wiki/Dismutazione_(matematica) -->
+<!-- https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle#In_probability -->
