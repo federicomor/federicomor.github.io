@@ -86,7 +86,27 @@ Vediamo come calcolare la probabilità di vincere un tiebreak a tennis, quindi u
 \fig{/assets/scripts/Activity/output/tennis_contourf.json}
 
 
+
 ### Strategia ottimale per appuntamenti
+
+Vediamo ora una delle domande più cruciali nella vita sentimentale: _quante persone dovremmo frequentare prima di scegliere quella con cui stabilizzarci per qualcosa di più serio?_
+
+È una domanda difficile, ma la matematica può aiutarci trovando una risposta: il 37%. In pratica, di tutte le persone con cui possibilmente potremmo fissare un appuntamento, dovremmo conoscere ma scartare a priori le prime 37%, dalla nostra "scelta definitiva", e poi continuare gli appuntamenti fino ad accasarci con la prima persona che incontriamo e che valutiamo migliore di quelle viste prima; o altrimenti aspettare l'ultima persona, se questa scelta migliore non si presenta.
+
+Perché è una buona strategia?[^1] Ovviamente non conviene scegliere la prima persona che incontriamo, per quanto possa sembrare promettente, perché qualcuno di meglio potrebbe apparire più tardi. D'altra parte, non vogliamo nemmeno essere troppo esigenti, perché una volta che rifiutiamo qualcuno molto probabilmente non vorrà tornare da noi qualora ci ripensassimo. Ma quindi perché il 37%? L'idea è solo di massimizzare le probabilità.
+
+---
+
+Più precisamente: supponiamo di volerci "sistemare" entro un certo periodo. Definiamo $N$ come il numero di partner che stimiamo di poter incontrare in questo periodo, e che quindi costituiscono i nostri candidati moglie/marito. Supponiamo di poter assegnare a ogni partner un punteggio da 1 a $N$ per definire il nostro grado di compatibilità. In questo gruppo ci sarà anche la nostra anima gemella, _quella giusta_, che chiamiamo $X$ e che avrà quindi il punteggio massimo. Vorremo ora definire una strategia che massimizzi la probabilità di trovarla.
+
+Dato $N$, quindi, vorremo capire come bilanciare il rischio tra "scegliere un partner iniziale magari non perfetto" e "scartare partner che invece col senno di poi valeva la pena scegliere", e quindi vorremo definire $M$ come la soglia di persone che delimita i gruppi _scarto_ vs _ci penso_. La nostra strategia, come sopra anticipato, consiste allora nell'incontrare - ma scartare - le prime $M$ persone, per poi scegliere, tra i partner degli appuntamenti successivi, la prima che è migliore della persona migliore incontrata nel gruppo scartato; o altrimenti l'ultima se non si presenta nessuna con questo requisito. Calcolando l'$M$ ottimale, in funzione di $N$, risulterà che 
+$$
+M = \frac{N}{e} \approx 0.37 \cdot N
+$$
+ovvero $M$ deve essere circa il 37% di $N$.
+
+[^1]: "buona strategia" dal punto di vista del risolvere il problema in modo matematico, ma poi naturalmente nelle relazioni umane non ha troppo senso ragionare solo in questi termini razionali. Se per esempio il primo appuntamento ci colpisce non è che dobbiamo rifiutare quel partner solo perché la matematica dice di farlo.
+
 \input{julia}{/assets/scripts/Activity/date_strategy.jl} 
 \fig{/assets/scripts/Activity/output/date_strategy.json}
 \output{/assets/scripts/date_strategy.jl}
@@ -178,7 +198,6 @@ function calculate() {
 
 ~~~
 
-
 > Problema ispirato da [https://plus.maths.org/content/its-long-way-top](https://plus.maths.org/content/its-long-way-top).
 
 
@@ -195,9 +214,10 @@ Il problema può essere esteso in forma generale avendo un picnic con $k$ amiche
 
 > Problema ispirato da [https://plus.maths.org/content/sharing-cakes](https://plus.maths.org/content/sharing-cakes).
 
-[^1]: Questa è solo una semplificazione. Si potrebbe fissare, in modo più verosimile, il costo della porzione inziale (intera), e non della sotto-porzione (divisa), ma questo complicherebbe solo i calcoli. Comunque una volta trovata la soluzione si può convertirla in valori "relativi" e quindi si può ripristinare il valore esatto in base al costo vero della porzione di partenza. 
+[^1]: questa è solo una semplificazione. Si potrebbe fissare, in modo più verosimile, il costo della porzione inziale (intera), e non della sotto-porzione (divisa), ma questo complicherebbe solo i calcoli. Comunque una volta trovata la soluzione si può convertirla in valori "relativi" e quindi si può ripristinare il valore esatto in base al costo vero della porzione di partenza. 
 
-### Triello aleatorio
+
+### Triello probabilistico
 Tre signori A, B e C hanno fissato un duello a tre armi (un triello quindi) per risolvere una disputa. Erano amici da molto tempo, solo quest'ultima litigata ha irrimediabilmente rotto ogni rapporto, quindi tutti conoscono le caratteristiche di tutti: si sa che l'accuratezza, ovvero la probabilità di colpire il bersaglio, di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre.
 
 È stato fissato l'ordine di inizio: A, B, poi C. Ognuno, al proprio turno, deve sparare un colpo decidendo come vuole il suo bersaglio, valutando per esempio quale sia la sua strategia ottimale per sopravvivere. Ovviamente se uno viene colpito muore, e quindi non può eseguire il proprio turno di sparo (ma naturalmente se uno è morto dover saltare un turno è l'ultimo dei suoi problemi). Il triello finisce quando un solo uomo rimane vivo.
@@ -219,3 +239,13 @@ Supponete infine di avere infinite uova. _Come agireste in questo caso?_
 \fig{/assets/img/gallina2_cut.png}
 
 > Problema ispirato da [https://plus.maths.org/content/dropping-eggs](https://plus.maths.org/content/dropping-eggs).
+
+
+### Babbo Natale e le dismutazioni
+Babbo Natale ha ricevuto $n$ letterine dai bambini di tutto il mondo, ciascuna con la lista di regali desiderati. Dopo aver letto attentamente tutte le letterine, e organizzato le spedizioni dei regali, Babbo Natale decide di rispondere personalmente a ciascun bambino, scrivendo un'altra lettera come risposta.
+
+Tuttavia, nella fretta di preparare tutto per le feste, Babbo Natale (e i suoi elfi responsabili della logistica) si confondono, e non sanno più quali erano le buste originali con le lettere dei bambini. Così, quando sono sul punto di inviare tutto, finiscono per mettere le lettere di risposta nelle varie buste in modo completamente casuale.
+
+_Qual è la proabilità che nessun bambino riceva la lettera di risposta che era destinata a lui?_
+
+\fig{/assets/img/bnatale1_cut.jpg}

@@ -475,3 +475,34 @@ code {
 iframe {
   display: block;
 }
+
+/* ==================================================================
+    HOME BANNER
+================================================================== */
+
+/* Banner Styling */
+.new-content-banner {
+    color: dec6e0;
+    border: 3px solid #dec6e0;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-content-banner a {
+    color: #dec6e0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-content-banner a:hover {
+    text-decoration: underline;
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+}

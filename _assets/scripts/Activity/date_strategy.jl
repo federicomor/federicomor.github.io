@@ -2,20 +2,20 @@ using Random
 Random.seed!(42)
 
 function M_strategy_score(partners,M,verbose=0)
-    @assert length(partners)>=M+1
-    
+    N = length(partners)
+    @assert N >= M+1
     partners_not_discarded = partners[M+1:end]
-    best_score_of_discarded = maximum(partners[1:M])
+    best_score_of_discarded = maximum(partners[1:M]) # il punteggio migliore tra le persone del gruppo iniziale
     
     available_scores = max.(partners_not_discarded .- best_score_of_discarded,0)
     
     out = findfirst(u -> u!=0, available_scores)
     chosen_index = isnothing(out) ? lastindex(partners_not_discarded) : out
     score_out = partners_not_discarded[chosen_index]
-    found_soul_mate = score_out==length(partners)
+    found_soul_mate = score_out==N # se score==N abbiamo trovato la nostra anima gemella
 
     if verbose==1
-        println("We discarded $M partners (from $(length(partners)) partners).")
+        println("We discarded $M partners (from $N partners).")
         println("The best score there was $best_score_of_discarded.")
         printstyled(partners[1:M]; color=:yellow)
         printstyled(partners[M+1:end]; color=:green)
@@ -23,7 +23,7 @@ function M_strategy_score(partners,M,verbose=0)
         println(found_soul_mate==1 ? "We" : "We didnt have", " found our soulmate.\n")
     end
     
-    return found_soul_mate
+    return found_soul_mate # return 0 or 1
 end 
 
 M = 5
@@ -50,11 +50,9 @@ for i in 1:length(M_values)
 end     
     println("Where score is the probability of having found our soulmate.")
 
-
 using Plots
 plotly() # hide
 PlotlyKaleido.start() # hide
 # needed for all savefig with plotly # hide
-
 plot(bar(scores),xticks=(1:length(values_tested),"N".*"/".*values_tested))
 savefig("output/date_strategy.json") # hide

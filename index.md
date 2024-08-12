@@ -2,6 +2,13 @@
 title = "Home"
 +++
 
+~~~
+<!-- <div class="new-content-banner"> -->
+    <!-- 🎉✨🎁🎇🎈🎫📣📢📡💡🔦📍📌⏰ -->
+    <!-- <a href=/activity/#modi_per_salire_una_scala>📌 New stuff!</a> -->
+<!-- </div> -->
+~~~
+
 ## In breve
 Ciao! sono Federico, un (quasi) Ingegnere Matematico (magistrale, al Politecnico di Milano), e un forse Divulgatore Matematico (vediamo come va). Qui nel sito, alle pagine [Activity](/activity/) e [Uni](/uni/), troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare su [Youtube](https://www.youtube.com/@divmat_yt) (molto consigliati, con tutto raccontato con calma e in dettaglio) ma anche su [Instagram](https://www.instagram.com/divmat_im) e [TikTok](https://tiktok.com/@divmat_tt) (in formato più breve). 
 
