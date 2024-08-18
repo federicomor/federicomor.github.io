@@ -73,17 +73,33 @@ La sua esecuzione si faceva tranquillamente sul foglio di carta che avevo per te
 
 
  
-<!-- ## Corsi e Appunti
+## Corsi e Appunti
 
-### Elettronica (triennale)
 
-Il formulario scritto per l'esame di Elettronica. Con vari easter egg all'interno.
+### Bayesian Statistics (magistrale, anno 2)
+Non carico i miei appunti presi sui quaderni ma le "rielaborazioni" che in genere faccio quando studio una materia, dove in pratica condenso insieme varie fonti per rendere gli appunti nella loro versione più chiara, ordinata e studiabile possibile.
 
-{{ pdf /assets/Uni/formulario_elettronica_intero.pdf }}
+{{ pdf /assets/Uni/Appunti_Bayesian.pdf}}
 
-### Stochastic Differential Equations (magistrale)
-Esame andato non troppo bene, ma malgrado questo il corso in sé era anche abbastanza interessante (se non fosse per la troppa teoria e dimostrazioni in cui era immerso. Praticamente abbiamo visto le equazioni differenziali stocastiche, in teoria il focus del corso, solo l'ultima settimana). All'esame era ammesso portarsi un foglio A4 con scritto quanto ognuno ritenesse utile, e come si può non congliere l'occasione di ottimizzare tutto quello spazio?
+### SDE (magistrale, anno 1)
+(ovvero Stochastic Differential Equations). Esame andato non troppo bene, ma malgrado questo il corso in sé era anche abbastanza interessante (se non fosse per la troppa teoria e dimostrazioni in cui era immerso: praticamente abbiamo visto le equazioni differenziali stocastiche, in teoria il focus del corso, solo l'ultima settimana). All'esame era ammesso portarsi un foglio A4 con scritto quanto ognuno ritenesse utile, e come si può non cogliere l'occasione di ottimizzare tutto quello spazio? Raccoglie nella prima facciata il classico formulario di Probabilità, mentre nella seconda c'è la parte dedicata invece alle nuove cose del calcolo stocastico. 
 
 {{ pdf /assets/Uni/foglio_sde.pdf}}
 
-Qualora poi l'attività di divulgazione matematica diventasse florida la prima idea di prodotto per il merchandising sarà senz'altro un telo mare con sopra stampato questo formulario.  -->
+Qualora poi l'attività di divulgazione matematica diventasse florida la prima idea di prodotto per il merchandising sarà senz'altro un telo mare con sopra stampato questo formulario. 
+
+### Elettronica (triennale, anno 3)
+
+Il formulario per l'esame di Elettronica. Con vari easter egg all'interno.
+
+{{ pdf /assets/Uni/formulario_elettronica_intero.pdf }}
+
+### EDP (triennale, anno 3)
+
+I miei appunti per il corso di Metodi Analitici e Numerici delle EDP (Equazioni Differenziali alle Derivate Parziali). Corso tostissimo, forse il più difficile che abbia affrontato nei vari anni. Ma gli appunti mi sono usciti benissimo, era nel periodo in cui mi sono accorto che scrivere a quadretti alternati era una mera forzatura e convenzione imposta dagli ordini inferiori di educazione scolastica, quindi qui ho iniziato la mia conversione alla scrittura su ogni quadretto (ma ovviamente mantenendo sempre l'ordine, ad esempio limitando a tre il numero di righe consecutive scrivibili prima di una riga vuota di spaziatura).
+
+La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto.
+
+{{ pdf /assets/Uni/appunti_compressi1.pdf }}
+
+
