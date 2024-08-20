@@ -100,6 +100,6 @@ I miei appunti per il corso di Metodi Analitici e Numerici delle EDP (Equazioni 
 
 La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto.
 
-{{ pdf /assets/Uni/appunti_compressi1.pdf }}
+{{ pdf /assets/Uni/Appunti_EDP.pdf }}
 
 
