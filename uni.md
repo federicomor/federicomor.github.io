@@ -71,7 +71,22 @@ In ogni campo, dove si sfidavano coppie di squadre, c'erano due arbitri, ovvero 
 La sua esecuzione si faceva tranquillamente sul foglio di carta che avevo per tenere traccia del gioco, ma [qui](/assets/Uni/campi_grest.html) c'è una versione interattiva che ne dimostra l'esecuzione. L'idea era di ricavare le disponibilità nei campi ("Disponibilità (debug table)" nella pagina linkata), e poi trovare un percorso di assegnazione che li coprisse tutti.
 
 
+### Quoridor
+[Quoridor](https://it.wikipedia.org/wiki/Quoridor) è un giochino che ho trovato molto interessante, ma purtroppo non ancora molto diffuso. La sua piacevolezza secondo me sta nell'essere un gioco dalle regole molto semplici, ma che si complica molto nella scelta delle strategie. Un po' tipo scacchi ma senza le troppe complicazioni dell'avere molti pezzi in gioco e del perdere quasi sempre se non ha un minimo studiato (per esempio le aperture). 
 
+L'idea è che ogni pedina deve arrivare dall'altro lato della scacchiera di gioco, e può posizionare lungo il cammino dei separatori, che possono o agevolare il suo percorso o ostacolare quello dell'avversario (oviamente lasciandogli sempre però una via per arrivare al suo obiettivo, ovvero l'avversario non può essere "intrappolato"). Quindi occorre valutare bene quando muoversi, quando posizionare invece un muro, e dove posizionarlo, se nel frattempo metterne altri che saranno utili a lungo termine per mosse future, ecc.
+
+Ebbene, io e il mio caro amico Ettore, anche lui abbastanza smanettone, ci siamo messi a crearlo con l'obiettivo poi di implementare magari anche delle AI (intelligenze artificiali) da sfidare. Per ora è un work in progress. Lui ha preferito scrivere il gioco in C++, mentre io in Julia naturalmente. Ma sembra una cosa complicata perché oltre a come muovere la pedina c'è anche la scelta di dove piazzare un muro, e in che orientamento, quindi ci sono molte varianti di decisioni a cui pensare. Quindi per ora c'è solo `rand_AI` che gioca mosse casuali, e `target_AI` che invece si muove verso il lato della vittoria nel modo più veloce possibile (quindi moralmente è un metodo greedy).
+
+\fig{/assets/Uni/quoridor.png}
+
+Per esempio, in questa posizione sarà sicuramente il giocatore 2 a vincere, perché si è creato moralmente un corridoio verso la vittoria, costringendo nel frattempo il giocatore 1 ad un giro più largo per arrivare invece alla sua vittoria (dato che sul lato destro ha la strada sbarrata). Da notare che carino anche il plot con la heatmap delle celle e della lunghezza del cammino minimo per arrivarci.
+
+\fig{/assets/Uni/quoridor_game.png}
+
+Il giocatore 1 ostacola strenuamente gli ultimi passi dell'avversario, ma alla fine non può fare altro che soccombere al suo destino.
+
+\fig{/assets/Uni/quoridor_end.png}
  
 ## Corsi e Appunti
 
@@ -82,7 +97,7 @@ Non carico i miei appunti presi sui quaderni ma le "rielaborazioni" che in gener
 {{ pdf /assets/Uni/Appunti_Bayesian.pdf}}
 
 ### SDE (magistrale, anno 1)
-(ovvero Stochastic Differential Equations). Esame andato non troppo bene, ma malgrado questo il corso in sé era anche abbastanza interessante (se non fosse per la troppa teoria e dimostrazioni in cui era immerso: praticamente abbiamo visto le equazioni differenziali stocastiche, in teoria il focus del corso, solo l'ultima settimana). All'esame era ammesso portarsi un foglio A4 con scritto quanto ognuno ritenesse utile, e come si può non cogliere l'occasione di ottimizzare tutto quello spazio? Raccoglie nella prima facciata il classico formulario di Probabilità, mentre nella seconda c'è la parte dedicata invece alle nuove cose del calcolo stocastico. 
+(ovvero Stochastic Differential Equations). Esame andato non troppo bene, ma malgrado questo il corso in sé era anche abbastanza interessante, se non fosse per la troppa teoria e dimostrazioni in cui era immerso: praticamente abbiamo visto le equazioni differenziali stocastiche, in teoria il focus del corso, solo l'ultima settimana. All'esame era ammesso portarsi un foglio A4 con scritto quanto ognuno ritenesse utile, e come si può non cogliere l'occasione di ottimizzare tutto quello spazio? Raccoglie nella prima facciata il classico formulario di Probabilità, mentre nella seconda c'è la parte dedicata invece alle nuove cose del calcolo stocastico. 
 
 {{ pdf /assets/Uni/foglio_sde.pdf}}
 

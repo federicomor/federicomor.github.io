@@ -251,9 +251,9 @@ Supponete infine di avere infinite uova. _Come agireste in questo caso?_
 ### Babbo Natale e le dismutazioni
 Babbo Natale ha ricevuto $n$ letterine dai bambini di tutto il mondo, ciascuna con la lista di regali desiderati. Dopo aver letto attentamente tutte le letterine, e organizzato le spedizioni dei regali, Babbo Natale decide di rispondere personalmente a ciascun bambino, scrivendo un'altra lettera come risposta.
 
-Tuttavia, nella fretta di preparare tutto per le feste, Babbo Natale (e i suoi elfi responsabili della logistica) si confondono, e non sanno più quali erano le buste originali con le lettere dei bambini. Così, quando sono sul punto di inviare tutto, finiscono per mettere le lettere di risposta nelle varie buste in modo completamente casuale.
+Tuttavia, nella fretta di preparare tutto per le feste, Babbo Natale e i suoi elfi responsabili della logistica si confondono, e non sanno più quali erano le buste originali con le lettere dei bambini. Così, quando sono sul punto di inviare tutto, finiscono per mettere le lettere di risposta nelle varie buste in modo completamente casuale.
 
-_Qual è la proabilità che nessun bambino riceva la lettera di risposta che era destinata a lui?_
+_Qual è la probabilità che nessun bambino riceva la lettera di risposta che era destinata a lui?_
 
 \fig{/assets/img/bnatale1_cut.jpg}
 
