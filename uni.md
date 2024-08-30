@@ -80,7 +80,7 @@ Ebbene, io e il mio caro amico Ettore, anche lui abbastanza smanettone, ci siamo
 
 \fig{/assets/Uni/quoridor.png}
 
-Per esempio, in questa posizione sarà sicuramente il giocatore 2 a vincere, perché si è creato moralmente un corridoio verso la vittoria, costringendo nel frattempo il giocatore 1 ad un giro più largo per arrivare invece alla sua vittoria (dato che sul lato destro ha la strada sbarrata). Da notare che carino anche il plot con la heatmap delle celle e della lunghezza del cammino minimo per arrivarci.
+Per esempio nella posizione che segue sarà sicuramente il giocatore 2 a vincere, perché si è creato moralmente un corridoio verso la vittoria, costringendo nel frattempo il giocatore 1 ad un giro più largo per arrivare invece alla sua vittoria (dato che sul lato destro ha la strada sbarrata). Da notare che carino anche il plot con la heatmap delle celle e della lunghezza del cammino minimo per arrivarci.
 
 \fig{/assets/Uni/quoridor_game.png}
 
@@ -113,8 +113,6 @@ Il formulario per l'esame di Elettronica. Con vari easter egg all'interno.
 
 I miei appunti per il corso di Metodi Analitici e Numerici delle EDP (Equazioni Differenziali alle Derivate Parziali). Corso tostissimo, forse il più difficile che abbia affrontato nei vari anni. Ma gli appunti mi sono usciti benissimo, era nel periodo in cui mi sono accorto che scrivere a quadretti alternati era una mera forzatura e convenzione imposta dagli ordini inferiori di educazione scolastica, quindi qui ho iniziato la mia conversione alla scrittura su ogni quadretto (ma ovviamente mantenendo sempre l'ordine, ad esempio limitando a tre il numero di righe consecutive scrivibili prima di una riga vuota di spaziatura).
 
-La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto.
-
 {{ pdf /assets/Uni/Appunti_EDP.pdf }}
 
-
+La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto.
