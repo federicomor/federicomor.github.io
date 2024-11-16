@@ -32,7 +32,7 @@ bb = range(0.01,0.99, step=0.01)
 p = surface(aa, bb, ptiebreak,camera=(25,20))
 xlabel!("a values")
 ylabel!("b values")
-# savefig("$(splitext(basename(@__FILE__))[1]).json") # hide
+savefig("$(splitext(basename(@__FILE__))[1]).json") # hide
 savefig("output/tennis_surface.json")#hide
 
 contourf(aa, bb, ptiebreak)
