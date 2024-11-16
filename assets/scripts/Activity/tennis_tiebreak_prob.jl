@@ -27,8 +27,8 @@ function ptiebreak(a::Float64,b::Float64)
     return ptot
 end
 
-aa = range(0.01,0.99, length=40)
-bb = range(0.01,0.99, length=40)
+aa = range(0.01,0.99, step=0.01)
+bb = range(0.01,0.99, step=0.01)
 p = surface(aa, bb, ptiebreak,camera=(25,20))
 xlabel!("a values")
 ylabel!("b values")
