@@ -36,20 +36,33 @@ $$
 \#\text{(facce di dimensione $k$)} &= \dfrac{\#\text{(vertici)}\cdot \binom{N}{k}}{2^k} \quad k\in\{3,\ldots,N-1\}
 \end{align*}
 $$
-dove le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori hanno senso in dimensioni maggiori. Per esempio uno può chiedersi da quante facce cubiche è formato un 7-cubo. Infine $\binom{N}{k}$ è il coefficiente binomiale di $N$ su $k$, quindi $\frac{N!}{k!(N-k)!}$.
+dove $\binom{N}{k}$ è il coefficiente binomiale di $N$ su $k$, quindi $\frac{N!}{k!(N-k)!}$. Le facce piane sono quelle classiche, mentre quelle di dimensioni maggiori hanno senso in dimensioni maggiori. Per esempio, uno può chiedersi da quante facce 5-cubiche è formato un 7-cubo, o domande ancora peggiori.
 
 ### Paradosso dei compleanni
 {{ youtube https://youtu.be/u9nr7_sGnm4 }}
 
-$$
+<!-- % $$
 \begin{align*}
 \mathbb{P}(\text{in un gruppo di $n$ persone almeno due hanno lo stesso compleanno}) &= 1-\frac{365!}{(365-n)!365^n}\\
 \mathbb{P}(\text{in un gruppo di $n$ persone almeno un'altra ha \textit{il tuo} stesso compleanno}) &= 1-\left(\frac{364}{365}\right)^n
 \end{align*}
 $$
+ -->
+ 
+$$
+\begin{align*}
+\mathbb{P}
+\begin{pmatrix}
+\text{in un gruppo di $n$ persone almeno }\\\text{due hanno lo stesso compleanno} 
+\end{pmatrix}&= 1-\frac{365!}{(365-n)!365^n}\\
+\mathbb{P}\begin{pmatrix}
+\text{in un gruppo di $n$ persone almeno}\\\text{un'altra ha \textit{il tuo} stesso compleanno}
+\end{pmatrix}&= 1-\left(\frac{364}{365}\right)^n
+\end{align*}
+$$
 Questo problema è noto come "paradosso dei compleanni" perché per la prima probabilità si arriva al 50% già con solo 23 persone, che in effetti sembrano molte poche. Nel video è quindi spiegato come ricavare quei valori e anche come interpretarli, per capire perché quel risultato un po' controintuitivo abbia in realtà senso.
 
-Sempre nel caso della prima probabilità si raggiuge davvero l'1 (ovvero la certezza che si realizzi l'evento) ovviamente solo con 366 persone (per il principio della piccionaia, volendo essere precisi, in modo che vengono forzate le date di due persone ad essere uguali). Gli "uno" prima di lui presenti nel plot che ora segue sono quindi solo dovuti ad approssimazioni del grafico (che non riporta tutti i decimali) che diventano poi approssimazioni numeriche (in cui cioè i calcoli saturano la precisione disponibile per Julia) da 295 persone in poi.
+Sempre nel caso della prima probabilità si raggiuge davvero l'1 (ovvero la certezza che si realizzi l'evento) ovviamente solo con 366 persone (per il principio della piccionaia, volendo essere precisi, in modo che vengono forzate le date di due persone ad essere uguali). Gli "uno" prima di lui presenti nel plot che ora segue sono quindi solo dovuti ad approssimazioni del grafico (che non riporta tutti i decimali) che diventano poi approssimazioni numeriche (in cui cioè i calcoli saturano la precisione disponibile per la rappresentazione dei numeri decimali in un computer) da 295 persone in poi.
 
 Infatti i valori precisi calcolati dal codice sarebbero:
 ```
@@ -99,7 +112,7 @@ Perché è una buona strategia?[^1] Ovviamente non conviene scegliere la prima p
 
 Più precisamente: supponiamo di volerci "sistemare" entro un certo periodo. Definiamo $N$ come il numero di partner che stimiamo di poter incontrare in questo periodo, e che quindi costituiscono i nostri candidati moglie/marito. Supponiamo di poter assegnare a ogni partner un punteggio da 1 a $N$ per definire il nostro grado di compatibilità[^2]. In questo gruppo ci sarà anche la nostra anima gemella, _quella giusta_, che chiamiamo $X$ e che avrà quindi il punteggio massimo. Vorremo ora definire una strategia che massimizzi la probabilità di trovarla.
 
-Dato $N$, quindi, vorremo capire come bilanciare il rischio tra "scegliere un partner iniziale magari non perfetto" e "scartare partner che invece col senno di poi valeva la pena scegliere", e quindi vorremo definire $M$ come la soglia di persone che delimita i gruppi _scarto_ vs _ci penso_. La nostra strategia, come sopra anticipato, consiste allora nell'incontrare - ma scartare - le prime $M$ persone, in modo solo da farci un'idea della qualità delle proposte, e poi scegliere, tra i partner degli appuntamenti successivi, la prima che è migliore della persona migliore incontrata nel gruppo scartato; o altrimenti l'ultima se non si presenta nessuna con questo requisito. Calcolando l'$M$ ottimale, in funzione di $N$, risulterà che 
+Dato $N$, quindi, vorremo capire come bilanciare il rischio tra "scegliere un partner iniziale magari non perfetto" e "scartare partner che invece col senno di poi valeva la pena scegliere", e quindi vorremo definire $M$ come la soglia di persone che delimita i gruppi _scarto_ vs _ci penso_. La nostra strategia, come sopra anticipato, consiste allora nell'incontrare -- ma scartare -- le prime $M$ persone, in modo solo da farci un'idea della qualità delle proposte, e poi scegliere, tra i partner degli appuntamenti successivi, la prima che è migliore della persona migliore incontrata nel gruppo scartato; o altrimenti l'ultima se non si presenta nessuna con questo requisito. Calcolando l'$M$ ottimale, in funzione di $N$, risulterà che 
 $$
 M = \frac{N}{e} \approx 0.37 \cdot N
 $$
@@ -158,7 +171,7 @@ Mentre generalizzando il calcolo, supponendo cioè di avere un altro parametro $
 $$
 S(n,k) = S(n-1) + S(n-2) + \ldots + S(n-k)
 $$
-I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ più bassi, in un modo un po' più complicata da capire (e poi convertire in codice). Per capirlo vi rimando al video (che probabilmente devo ancora registrare ovviamente).
+I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ più bassi, in un modo un po' più complicata da capire (e poi convertire in codice). Per capirlo vi rimando naturalmente al video.
 
 \input{julia}{/assets/scripts/Activity/salendo_le_scale.jl}
 \fig{/assets/scripts/Activity/output/scale.json}
@@ -211,9 +224,9 @@ function calculate() {
 ### Condivisione equa di diversi contributi
 Due amiche, Astrid e Beatrice, hanno organizzato un picnic. Per pigrizia hanno però deciso di cucinare un'unica pietanza, il riso freddo, e si sono anche accordate che ognuna preparasse quante porzioni riuscisse e che poi le avrebbero condivise ed eventualmente sistemato i conti alla fine. 
 
-Astrid ha portato con sé 3 porzioni (ciotoline) di riso freddo, mentre Beatrice 5. Sono sul punto di pranzare quando'ecco che appare anche Carla!, un'altra loro amica, che chiede di unirsi a loro per il picnic, pur non avendo portato niente, ma ovviamente promettendo di saldare il conto alla fine. Astrid e Beatrice accolgono quindi volentieri la nuova arrivata. A questo punto dividono ogni porzione in tre parti uguali, dove supponiamo che ogni parte valga 1€[^3], e se le distribuiscono tra loro. Le tre amiche sono molto affamate, e quindi ognuna finisce interamente il riso che le è stato assegnato.
+Astrid ha portato con sé 3 porzioni di riso freddo, mentre Beatrice 5. Sono sul punto di pranzare quando'ecco che appare anche Chiara!, un'altra loro amica, che chiede di unirsi a loro per il picnic, pur non avendo portato niente, ma ovviamente promettendo di saldare il conto alla fine. Astrid e Beatrice accolgono quindi volentieri la nuova arrivata. A questo punto, dividono ogni porzione in tre parti uguali (dove supponiamo che ogni parte valga 1€[^3]), generando quindi 9 porzioncine dalle tre porzioni originali di Astrid e 15 dalle cinque di Beatrice, e se le distribuiscono tra loro. Le tre amiche sono molto affamate, e quindi ognuna finisce interamente il riso che le è stato assegnato.
 
-"Gran bella mangiata!" riassume alla fine Carla, "ma... quanto vi devo? Vediamo: io ho mangiato 8 porzioncine, dalle vostre 3+5 porzioni originali, per quindi un costo di 8€. Di tutto il riso, tu Astrid ne avevi portato i 3/8, mentre Beatrice 5/8, quindi... dovrei dare 3€ ad Astrid e 5€ a Bea, giusto?". "Mi sembra giusto" conferma Astrid. "No invece!" esclama Beatrice, scioccata dall'incompetenza matematica delle sue amiche.
+"Gran bella mangiata!" riassume alla fine Chiara, "ma... quanto vi devo? Vediamo: io ho mangiato 8 porzioncine, dalle vostre 3+5 porzioni originali, per quindi un costo di 8€. Di tutto il riso, tu Astrid ne avevi portato i 3/8, mentre Beatrice 5/8, quindi... dovrei dare 3€ ad Astrid e 5€ a Bea, giusto?". "Mi sembra giusto" conferma Astrid. "No invece!" esclama Beatrice, scioccata dall'incompetenza matematica delle sue amiche.
 
 In effetti Beatrice ha ragione. _Ma perché? E quale sarebbe la divisione più corretta?_ 
 
@@ -225,9 +238,9 @@ Il problema può essere esteso in forma generale avendo un picnic con $k$ amiche
 
 
 ### Triello probabilistico
-Tre signori A, B e C hanno fissato un duello a tre armi (un triello quindi) per risolvere una disputa. Erano amici da molto tempo, solo quest'ultima litigata ha irrimediabilmente rotto ogni rapporto, quindi tutti conoscono le caratteristiche di tutti: si sa che l'accuratezza, ovvero la probabilità di colpire il bersaglio, di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre.
+Tre signori A, B e C hanno fissato un duello a tre armi -- un triello quindi -- per risolvere una disputa. Erano amici da molto tempo, solo quest'ultima lite ha irrimediabilmente rotto ogni rapporto, quindi tutti conoscono le caratteristiche di tutti: si sa che l'accuratezza, ovvero la probabilità di colpire il bersaglio, di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre.
 
-È stato fissato l'ordine di inizio: A, B, poi C. Ognuno, al proprio turno, deve sparare un colpo decidendo come vuole il suo bersaglio, valutando per esempio quale sia la sua strategia ottimale per sopravvivere. Ovviamente se uno viene colpito muore, e quindi non può eseguire il proprio turno di sparo (ma naturalmente se uno è morto dover saltare un turno è l'ultimo dei suoi problemi). Il triello finisce quando un solo uomo rimane vivo.
+È stato fissato l'ordine di inizio: A, B, poi C. Ognuno, al proprio turno, deve sparare un colpo decidendo come vuole il suo bersaglio, valutando per esempio quale sia la sua strategia ottimale per sopravvivere. Ovviamente, uno viene ucciso se colpito, e quindi non può eseguire il proprio turno di sparo. Il triello finisce quando un solo uomo rimane vivo.
 
 _Se voi foste il signor A, quale strategia utilizzereste?_
 
@@ -251,7 +264,9 @@ Supponete infine di avere infinite uova. _Come agireste in questo caso?_
 ### Babbo Natale e le dismutazioni
 Babbo Natale ha ricevuto $n$ letterine dai bambini di tutto il mondo, ciascuna con la lista di regali desiderati. Dopo aver letto attentamente tutte le letterine, e organizzato le spedizioni dei regali, Babbo Natale decide di rispondere personalmente a ciascun bambino, scrivendo un'altra lettera come risposta.
 
-Tuttavia, nella fretta di preparare tutto per le feste, Babbo Natale e i suoi elfi responsabili della logistica si confondono, e non sanno più quali erano le buste originali con le lettere dei bambini. Così, quando sono sul punto di inviare tutto, finiscono per mettere le lettere di risposta nelle varie buste in modo completamente casuale.
+<!-- e perdono traccia delle buste originali contenenti le lettere dei bambini, smarrendo così gli indirizzi esatti dei vari bambini.  -->
+<!-- e non sanno più quali erano le buste originali con le lettere dei bambini.  -->
+Tuttavia, nella fretta di preparare tutto per le feste, Babbo Natale e i suoi elfi responsabili della logistica si confondono e così, quando sono sul punto di spedire tutto, finiscono per mettere le lettere di risposta nelle varie buste in modo completamente casuale.
 
 _Qual è la probabilità che nessun bambino riceva la lettera di risposta che era destinata a lui?_
 
