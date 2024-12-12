@@ -88,7 +88,7 @@ Il giocatore 1 ostacola strenuamente gli ultimi passi dell'avversario, ma alla f
 
 \fig{/assets/Uni/quoridor_end.png}
  
-## Corsi e Appunti
+<!-- ## Corsi e Appunti
 
 
 ### Bayesian Statistics (magistrale, anno 2)
@@ -116,3 +116,4 @@ I miei appunti per il corso di Metodi Analitici e Numerici delle EDP (Equazioni 
 {{ pdf /assets/Uni/Appunti_EDP.pdf }}
 
 La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto.
+ -->
