@@ -5,7 +5,6 @@ hasplotly = true
 +++
 
 # Attività
-L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio. Se non c'è è perché devo ancora registrarlo :)
 
 \toc
 ~~~
@@ -19,8 +18,10 @@ L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere a
 </div>
 ~~~
 
+L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio. Se non c'è è perché devo ancora registrarlo :)
 
-## Esempi
+
+## Problemi
 
 ### Ipercubi in N dimensioni
 {{ youtube https://youtu.be/NjdqSz4iva0 }}

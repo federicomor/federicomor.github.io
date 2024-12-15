@@ -61,10 +61,10 @@ Il titolo completo è "The DRPM Strikes Back: More Flexibility for a Bayesian Sp
 
 \fig{/assets/Tesi/THE DRPM cut.png}
 
-Comunque, prima che vincesse questa scelta avevo in realtà anche altre alternative in mente (tra tonde la parola nel titolo originale):
-- sempre da Star Wars, "the revenge of the DRPM (Sith)"
-- dalla saga di James Bond, "on DRPM's (her majesty's) secret service" e anche "the DRPM (world) is not enough"
-- da un film random, "the model (man) who lived twice"
+Comunque, prima che vincesse questa scelta avevo in realtà anche altre alternative in mente (tra tonde la versione del titolo originale):
+- sempre da Star Wars, "the revenge of the DRPM" (the revenge of the Sith)
+- dalla saga di James Bond, "on DRPM's secret service" (on her majesty's secret service) e anche "the DRPM is not enough" (the world is not enough)
+- da un film random, "the model who lived twice" (the man who lived twice)
 
 
 

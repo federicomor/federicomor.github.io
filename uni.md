@@ -19,7 +19,7 @@ title = "Uni"
 ## Progetti
 
 ### Bayesian project
-[Here](/assets/figures/visualize.html) there are all the relevant plots we produced to better develop our analysis and interpretation. The task was to cluster spatio-temporal data about air pollution in Lombardy, using bayesian models.
+[Here](/assets/figures/visualize.html) there is a dashboard to display all the relevant plots that we produced to better develop our analysis and interpretation. The task was to cluster spatio-temporal data about air pollution in Lombardy, using bayesian models.
 
 {{pdf /assets/Uni/bayesian_report_polimi.pdf }}
 
@@ -87,10 +87,12 @@ Per esempio nella posizione che segue sarà sicuramente il giocatore 2 a vincere
 Il giocatore 1 ostacola strenuamente gli ultimi passi dell'avversario, ma alla fine non può fare altro che soccombere al suo destino.
 
 \fig{/assets/Uni/quoridor_end.png}
- 
+
+
 <!-- ## Corsi e Appunti
-
-
+Quando sistemerò bene i materiali popolerò anche questa sezione.
+ -->
+<!--
 ### Bayesian Statistics (magistrale, anno 2)
 Non carico i miei appunti presi sui quaderni ma le "rielaborazioni" che in genere faccio quando studio una materia, dove in pratica condenso insieme varie fonti per rendere gli appunti nella loro versione più chiara, ordinata e studiabile possibile.
 

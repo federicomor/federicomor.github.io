@@ -12,9 +12,10 @@ title = "Home"
 
 # Home
 
-Ciao! sono Federico, un (quasi) Ingegnere Matematico (magistrale, al Politecnico di Milano), e un forse Divulgatore Matematico (vediamo come va). Qui nel sito, alle pagine [Activity](/activity/) e [Uni](/uni/), troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare su [Youtube](https://www.youtube.com/@divmat_yt). 
+Ciao! sono Federico, un Ingegnere Matematico (magistrale, al Politecnico di Milano), e qui online un Divulgatore Matematico (o perlomeno vediamo come va). In questo sito, alle pagine [Activity](/activity/) e [Uni](/uni/), troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare comodamente su [Youtube](https://www.youtube.com/@fede_plus). 
 
-Ad oggi, la tesi e la ricerca del lavoro mi stanno togliendo tempo e spazio a questo "hobby", ma quando la situazione si ristabilizzerà dovrei ritornare, anche magari con contenuti non solo di matematica ma di università in generale, della mia esperienza, consigli, ecc.
+Ad oggi, la tesi e la ricerca del lavoro mi stanno togliendo tempo e spazio a questo "hobby", ma quando la situazione si ristabilizzerà dovrei e vorrei ritornare, magari anche con contenuti non solo di matematica ma di università in generale, della mia esperienza, consigli, ecc.
+
 
 <!-- (molto consigliati, con tutto raccontato con calma e in dettaglio) ma anche su Instagram (no, lì non più per ora) e [TikTok](https://tiktok.com/@divmat_tt) (anche qui).  -->
 
