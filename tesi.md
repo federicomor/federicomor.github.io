@@ -29,7 +29,7 @@ Evidenziati qui in corsivo:
 - tutte le varie epigrafi tratte dai libri di Dostoevskij. La loro inclusione è anche interessante perché non è che scritta la tesi ho voluto mettere delle frasi come decorazione andando a ricercarle nei libri, ma proprio durante lo svolgimento della tesi (quindi da aprile 2024) mentre leggevo i suoi libri mi segnavo le frasi per le quali dicevo "questa starebbe proprio bene in questa parte della tesi!" 🧐
 
 
-### Approfondimento sulle epigrafi
+### Le epigrafi
 > **Chapter 1: Description of the model**\
 > “Come on, gentlemen, why shouldn’t we get rid of all this calm reasonableness with one good kick, just so as to send all these logarithms to the devil and be able to live our own lives at our own sweet will?”\
 > — Fëdor Dostoevskij, Notes from the Underground
@@ -38,7 +38,7 @@ Questa perché nell'implementare l'algoritmo del modello si deve ricorrere a lav
 > **Chapter 2: Implementation and optimizations**\
 > “You see, I’ve brought you my Nellie,” I said, going in.\
 > — Fëdor Dostoevskij, Humiliated and Insulted
-Questa è proprio 😚 \*chef's kiss\*, perfetta, perché nel libro c'è il protagonista che incontra, poi moralmente adotta, accudisce, e accompagna con sé, la giovane e tenera Nellie, creando quindi un perfetto parallelismo di me e Julia. Infatti, traducendola, risulterebbe «"Ecco, ti ho portato la mia Nelli", dissi, entrando», che è stato un po' come me che entravo nell'ufficio della prof per dirle "Ecco prof, questa è Julia, in cui vorrei implementare l'algoritmo MCMC del modello".
+Questa è proprio 😚 \*chef's kiss\*, perfetta, perché nel libro c'è il protagonista che incontra, poi moralmente adotta, accudisce, e accompagna con sé, la giovane e tenera Nellie, creando quindi un perfetto parallelismo tra me e Julia. Infatti, traducendola, risulterebbe "Ecco, ti ho portato la mia Nelli", dissi, entrando, che è stato un po' come me che entravo nell'ufficio della prof per dirle "Ecco prof, questa è Julia, in cui vorrei implementare l'algoritmo MCMC del modello".
 
 > **Chapter 4: Conclusion**\
 > And what in human reckoning seems still afar off, may by the Divine ordinance be close at hand, on the eve of its appearance. And so be it, so be it!\
@@ -54,7 +54,7 @@ Verso la fine della tesi ho iniziato I Fratelli Karamazov, e volevo assolutament
 > “Ecco il mio ponte d’approdo per molti lunghi anni, il mio angoletto, nel quale faccio il mio ingresso con una sensazione così diffidente, così morbosa... Ma chi lo sa? Forse, quando tra molti anni mi toccherà abbandonarlo, magari potrei anche rimpiangerlo!”\
 > — Fëdor Dostoevskij, Memorie da una casa di morti
 
-Questa molto simpatica, era bella per la parte finale del "Forse, quando tra molti anni mi toccherà abbandonarlo, magari potrei anche rimpiangerlo", ma soprattutto divertente perché in realtà nel libro Dostoevskij stava parlando della prigione (tecnicamente, colonia penale) in cui era rinchiuso! Quindi commovente se uno non sa il vero riferimento dietro, ma altrimenti molto ironica se viene colto il parallelismo tra politecnico e prigione.
+Questa molto simpatica, era bella per la parte finale del "Forse, quando tra molti anni mi toccherà abbandonarlo, magari potrei anche rimpiangerlo", ma soprattutto divertente perché in realtà nel libro Dostoevskij stava parlando della prigione (tecnicamente, colonia penale) in cui era rinchiuso. Quindi commovente se uno non sa il vero riferimento dietro, ma altrimenti molto ironica se viene colto il parallelismo tra politecnico e prigione.
 
 ### Il titolo
 Il titolo completo è "The DRPM Strikes Back: More Flexibility for a Bayesian Spatio-Temporal Clustering Model". La seconda parte è quella seria, la prima è invece chiaramente ispirata al film di Star Wars "The Empire Strikes Back", che per quanto divertente è comunque sensata, motivata. Infatti il lavoro di tesi è consistito nel prendere questo modello, il DRPM, che esisteva già, creato da altri autori qualche anno fa, e migliorarlo, generalizzarlo. Quindi in effetti "il modello ha colpito ancora", la sua vita non è finita con l'articolo dei primi autori, ma ha proseguito una seconda volta col mio lavoro.
@@ -69,7 +69,15 @@ Comunque, prima che vincesse questa scelta avevo in realtà anche altre alternat
 
 
 ### L'argomento
-presto scriverò questa parte
+Nel 2022, Garritt Page ed altri autori hanno creato un modello bayesiano, [il DRPM](https://arxiv.org/abs/1912.11542) (Dependent Random Partition Model), che fa clustering di dati spazio-temporali. Quindi, come contesto, abbiamo $n$ soggetti, ovvero le unità che misurano un qualche variabile target, disposte nello spazio, e che vogliamo clusterizzare in ogni istante temporale $t=1,\ldots,T$.
+
+Fin qui non è nulla di sorprendente, esistevano già altri modelli in grado di farlo; tuttavia ciò caratterizza il DRPM è la modellazione diretta delle dipendenze temporali nella sequenza di cluster, ovvero come la partizione (cioè la configurazione dei cluster) al tempo $t$ influenza quella al tempo $t+1$. In questo modo, i cluster vengono generati tenendo conto dell'informazione spaziale ma anche di quella temporale, producendo alla fine una evoluzione dei cluster molto più _smooth_, più gentile, e di conseguenza più interpretabile. Altri modelli, al contrario, non tengono conto della dimensione temporale nel produrre i cluster, generando quindi ogni partizione in modo indipendente, scollegato tra loro.
+
+Il mio lavoro di tesi è consistito nel prendere questo modello e migliorarlo, o generalizzarlo, usando un termine meno forte. Per farlo, ho agito su vari aspetti:
+1. Inserire anche le covariate dentro al processo di generazione (cioè nella prior, in termini più bayesiani) delle partizioni, in modo da produrre cluster tenendo conto dell'informazione spaziale e temporale, come già faceva il modello, ma con in più anche l'informazione portata dalle covariate. Questo può essere utile perché se per esempio la variabile target da clusterizzare è il PM10, un inquinante dell'aria, allora variabili ambientali come intensità del vento, direazione del vento, quantità di piogge, traffico, ecc (le covariate appunto) sono molto utili per produrre cluster più precisi. 
+2. Cambiare leggermente la formulazione del modello, scegliendo altre leggi per le varianze, che garantissero maggiore precisione nel campionamento dei vari parametri, e introducendo anche un termine di regressione nella likelihood del modello, in modo anche qui da fornire maggiore flessibilità nell'inserire, volendo, l'informazione delle covariate.
+3. Permettere al modello di accettare dati mancanti. La versione originale infatti lavorava solo su dataset completi, ma in scenari reali spesso alcuni dati possono venire a mancare, per esempio per via di guasti o malfunzionamenti nelle unità di misurazione. Quindi ho derivato una regola di aggiornamento per permettere al modello di campionare anche quei dati mancanti.
+4. Sviluppare una nuova implementazione del modello. Quella originale era infatti scritta in C ed era un po' lentina; quindi per implementare il nuovo algoritmo di campionamento del modello, una volta integrate le mie modifiche, ho scelto Julia. Scrivendolo in Julia siamo in effetti arrivati ad una versione molto più veloce, con picchi di speedup pari anche a 2x (ovvero il mio modello ci mette la metà del tempo ad essere eseguito). 
 
 ## Le slides
 
@@ -83,6 +91,6 @@ Carico anche le slide usate per la presentazione, dato che non se ne trovano mol
 {{ pdf /assets/Tesi/2024_12_Mor_Slides.pdf }}
 
 
-## Il dietro le quinte
+<!-- ## Il dietro le quinte
 presto scriverò questa parte
-
+ -->
