@@ -33,7 +33,7 @@ Evidenziati qui in corsivo:
 > **Chapter 1: Description of the model**\
 > “Come on, gentlemen, why shouldn’t we get rid of all this calm reasonableness with one good kick, just so as to send all these logarithms to the devil and be able to live our own lives at our own sweet will?”\
 > — Fëdor Dostoevskij, Notes from the Underground
-Questa perché nell'implementare l'algoritmo del modello si deve ricorrere a lavorare coi logaritmi (la log-likelihood), e quindi questa era proprio in tema. Inoltre sembra che inviti un po' ad ignorare tutto questo lavoro di razionalismo, ovvero abbandonare più o meno tutto il lavoro di indagine scientifica, e vivere un po' di più secondo la propria dolce volontà, staccandosi da mentalità e contesti troppo teorici, modellistici, ecc. È ovviamente un'idea forte da inserire nella tesi, ma mi piaceva la parte dei logaritmi, quindi sul pensiero di fondo ci ho un po' sorvolato.
+Questa perché nell'implementare l'algoritmo del modello si deve ricorrere a lavorare coi logaritmi (la log-likelihood), e quindi questa era proprio in tema. Inoltre sembra che inviti un po' ad ignorare, ad abbanare tutto questo lavoro di razionalismo, di indagine scientifica, e vivere un po' di più secondo la propria dolce volontà, staccandosi quindi da mentalità e contesti troppo teorici, modellistici, ecc. È ovviamente un'idea forte da inserire in una tesi, ma mi piaceva la parte dei logaritmi, quindi sul pensiero di fondo ci ho un po' sorvolato.
 
 > **Chapter 2: Implementation and optimizations**\
 > “You see, I’ve brought you my Nellie,” I said, going in.\
@@ -43,7 +43,7 @@ Questa è proprio 😚 \*chef's kiss\*, perfetta, perché nel libro c'è il prot
 > **Chapter 4: Conclusion**\
 > And what in human reckoning seems still afar off, may by the Divine ordinance be close at hand, on the eve of its appearance. And so be it, so be it!\
 > — Fëdor Dostoevskij, Brothers Karamazov
-Verso la fine della tesi ho iniziato I Fratelli Karamazov, e volevo assolutamente inserirne una frase. Alla fine ho scelto questa perché mi sembrava molto bella e collegata all'idea del capitolo delle Conclusioni, portando un po' un'idea di sollievo, di fiducia. Infatti, traducendola, dice che per quanto qualcosa possa sembrare lontana nelle visioni dell'uomo (nel mio caso, la fine della tesi, il conseguimento della laurea, ecc), agli occhi di Dio questo traguardo potrebbe invece già essere vicino, sulla soglia del manifestarsi. E così sia, cosi sia!
+Verso la fine della tesi ho iniziato I Fratelli Karamazov, e volevo assolutamente inserirne una frase. Alla fine ho scelto questa perché mi sembrava molto bella e collegata all'idea del capitolo delle Conclusioni, portando un po' un'idea di sollievo, di fiducia. Infatti, traducendola, dice che per quanto qualche cosa possa sembrare lontana nelle visioni dell'uomo (nel mio caso, la fine della tesi, il conseguimento della laurea, ecc), agli occhi di Dio questo traguardo potrebbe invece già essere vicino, sulla soglia del manifestarsi. E così sia, cosi sia!
 
 
 > **Acknowledgements**\
@@ -54,7 +54,13 @@ Verso la fine della tesi ho iniziato I Fratelli Karamazov, e volevo assolutament
 > “Ecco il mio ponte d’approdo per molti lunghi anni, il mio angoletto, nel quale faccio il mio ingresso con una sensazione così diffidente, così morbosa... Ma chi lo sa? Forse, quando tra molti anni mi toccherà abbandonarlo, magari potrei anche rimpiangerlo!”\
 > — Fëdor Dostoevskij, Memorie da una casa di morti
 
-Questa molto simpatica, era bella per la parte finale del "Forse, quando tra molti anni mi toccherà abbandonarlo, magari potrei anche rimpiangerlo", ma soprattutto divertente perché in realtà nel libro Dostoevskij stava parlando della prigione (tecnicamente, colonia penale) in cui era rinchiuso. Quindi commovente se uno non sa il vero riferimento dietro, ma altrimenti molto ironica se viene colto il parallelismo tra politecnico e prigione.
+Questa molto simpatica, era bella per la parte finale del "Forse, quando tra molti anni mi toccherà abbandonarlo, magari potrei anche rimpiangerlo", ma soprattutto anche molto divertente perché in realtà nel libro Dostoevskij stava parlando della prigione (tecnicamente, colonia penale) in cui era rinchiuso. Quindi quasi commovente se uno non sa il vero riferimento dietro, ma altrimenti molto ironica se viene colto il parallelismo tra politecnico e prigione.
+
+---
+
+Un'altra piccola questione interessante era quella di come indicare nome dell'autore in queste epigrafi. Dopotutto infatti l'autore è russo, quindi il suo "vero" nome sarebbe Фёдор Достоевский, quindi poi le varie lingue convertono questi strani simboli e suoni nei modi a loro più vicini. In italiano, ad esempio, diventa Fëdor Dostoevskij, che è il modo in cui ho scelto di scriverlo nelle varie epigrafi. Tuttavia, essendo scritte in inglese, come il resto della tesi, una scelta sensata sarebbe anche stata quella di scrivere il suo nome secondo la "notazione" inglese, ovvero Fyodor Dostoevsky. A livello di suoni sono entrambe versioni equivalenti, perché la _ë_ dell'italiano viene convertita in _yo_, che è precisamente il modo in cui si legge _ë_, così come il suono finale _ij_ viene reso con _y_. Alla fine ho scelto di usare quella italiana perché a me più familiare e per non creare troppa confusione quando per esempio nei ringraziamenti, in cui c'è l'epigrafe in entrambe le lingue, si sarebbe notato un cambio di scrittura del nome, che sarebbe risultato un po' strano.
+
+
 
 ### Il titolo
 Il titolo completo è "The DRPM Strikes Back: More Flexibility for a Bayesian Spatio-Temporal Clustering Model". La seconda parte è quella seria, la prima è invece chiaramente ispirata al film di Star Wars "The Empire Strikes Back", che per quanto divertente è comunque sensata, motivata. Infatti il lavoro di tesi è consistito nel prendere questo modello, il DRPM, che esisteva già, creato da altri autori qualche anno fa, e migliorarlo, generalizzarlo. Quindi in effetti "il modello ha colpito ancora", la sua vita non è finita con l'articolo dei primi autori, ma ha proseguito una seconda volta col mio lavoro.
