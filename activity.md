@@ -282,26 +282,27 @@ Dato un numero $n$ qualunque, sottraetegli 1 se è dispari, mentre dividetelo pe
 
 Per capire meglio il problema prendiamo come riferimento gli esempietti che seguono, oppure sperimentate col box interattivo (sempre qui sotto).
 ```julia
-2 -> 1 # steps=1
-3 -> 2 -> 1 # steps=2
-4 -> 2 -> 1 # steps=2
-5 -> 4 -> 2 -> 1 # steps=3
-10 -> 5 -> 4 -> 2 -> 1 # steps=4
-20 -> 10 -> 5 -> 4 -> 2 -> 1 # steps=5
-30 -> 15 -> 14 -> 7 -> 6 -> 3 -> 2 -> 1 # steps=7
+2 → 1 # steps=1
+3 → 2 → 1 # steps=2
+4 → 2 → 1 # steps=2
+5 → 4 → 2 → 1 # steps=3
+10 → 5 → 4 → 2 → 1 # steps=4
+20 → 10 → 5 → 4 → 2 → 1 # steps=5
+30 → 15 → 14 → 7 → 6 → 3 → 2 → 1 # steps=7
 ```
 ~~~
-    <style>
+<!--     <style>
         #output, #numberInput {
             white-space: pre-wrap;
             font-family: monospace;
             margin-top: 10px;
         }
-    </style>
+    </style> -->
   <label for="numberInput">Scegli tu n:</label>
     <input type="number" id="numberInput" min="1">
     <button onclick="showSteps()">calcola passi</button>
-    <div id="output"></div>
+    <div id="outputSteps"></div>
+    <div id="outputTot"></div>
     <br>
 
     <script>
@@ -328,8 +329,9 @@ Per capire meglio il problema prendiamo come riferimento gli esempietti che segu
                 result += `→ ${n} `;
             }
 
-            result += `\nPassi totali: ${steps}`;
-            document.getElementById("output").textContent = result;
+            resultTot = `\nPassi totali: ${steps}`;
+            document.getElementById("outputSteps").textContent = result;
+            document.getElementById("outputTot").textContent = resultTot;
         }
     </script>
 ~~~
