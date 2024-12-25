@@ -162,17 +162,17 @@ Un suo esempio di applicazione reale sarebbe massimizzare l'area delimitata da u
 ### Modi per salire una scala
 {{ youtube https://www.youtube.com/watch?v=HWJOsKOcUJk }}
 
-In quanti modi si può salire una scala lunga $n$ gradini, potendo salire al massimo 2 scalini per volta? Chiamando $S(n)$ questo numero di modi in funzione di $n$, risulta che la soluzione è molto semplice:
+In quanti modi si può salire una scala lunga $n$ gradini, potendo salire al massimo 2 scalini per volta? Chiamando $S(n)$ questo numero di modi in funzione di $n$, risulta che la soluzione è data da
 $$
 S(n) = S(n-1) + S(n-2)
 $$
-perché moralmente come primo passo dobbiamo sempre fare un passo lungo 1 o lungo 2, indipendentemente da quanto la scala sia alta, e da quei passi poi possiamo riciclare i calcoli già fatti prima per scale ora alte $n-1$ e $n-2$ rispettivamente.
+perché moralmente come primo passo dobbiamo sempre fare un passo lungo 1 o lungo 2, indipendentemente da quanto la scala sia alta, e da quei passi poi possiamo osservare di fronte a noi una scala alta $n-1$ ed $n-2$ scalini, rispettivamente, e quindi riciclare i calcoli già fatti prima per le altre scale.
 
 Mentre generalizzando il calcolo, supponendo cioè di avere un altro parametro $k$ che regola quanti scalini risuciamo a salire al massimo con un solo passo, la soluzione diventa
 $$
-S(n,k) = S(n-1) + S(n-2) + \ldots + S(n-k)
+S(n) = S(n-1) + S(n-2) + \ldots + S(n-k)
 $$
-I numeri iniziali si devono trovare a mano o usando formule di $S(n)$ per $k$ più bassi, in un modo un po' più complicata da capire (e poi convertire in codice). Per capirlo vi rimando naturalmente al video.
+dove però ora i vari valori $S(n-i)$ si devono trovare in modi a volte meno ovvi. Per capire tutto, insieme ad una semplice idea per convertire il calcolo in codice eseguibile da un computer vi rimando naturalmente al video.
 
 \input{julia}{/assets/scripts/Activity/salendo_le_scale.jl}
 \fig{/assets/scripts/Activity/output/scale.json}
@@ -275,3 +275,64 @@ _Qual è la probabilità che nessun bambino riceva la lettera di risposta che er
 
 <!-- https://it.wikipedia.org/wiki/Dismutazione_(matematica) -->
 <!-- https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle#In_probability -->
+
+
+### In cammino verso l'unità
+Dato un numero $n$ qualunque, sottraetegli 1 se è dispari, mentre dividetelo per 2 se è pari. _Quanti passi sono necessari per arrivare a 1?_
+
+Per capire meglio il problema prendiamo come riferimento gli esempietti che seguono, oppure sperimentate col box interattivo (sempre qui sotto).
+```julia
+2 -> 1 # steps=1
+3 -> 2 -> 1 # steps=2
+4 -> 2 -> 1 # steps=2
+5 -> 4 -> 2 -> 1 # steps=3
+10 -> 5 -> 4 -> 2 -> 1 # steps=4
+20 -> 10 -> 5 -> 4 -> 2 -> 1 # steps=5
+30 -> 15 -> 14 -> 7 -> 6 -> 3 -> 2 -> 1 # steps=7
+```
+~~~
+    <style>
+        #output, #numberInput {
+            white-space: pre-wrap;
+            font-family: monospace;
+            margin-top: 10px;
+        }
+    </style>
+  <label for="numberInput">Scegli tu n:</label>
+    <input type="number" id="numberInput" min="1">
+    <button onclick="showSteps()">calcola passi</button>
+    <div id="output"></div>
+    <br>
+
+    <script>
+        function showSteps() {
+            // Get input value
+            const inputBox = document.getElementById("numberInput");
+            let n = parseInt(inputBox.value);
+
+            if (isNaN(n) || n < 1) {
+                document.getElementById("output").textContent = "Inserisci un numero :)";
+                return;
+            }
+
+            let steps = 0;
+            let result = `${n} `;
+
+            while (n > 1) {
+                if (n % 2 === 0) {
+                    n = n / 2; // Divide by 2 if even
+                } else {
+                    n = n - 1; // Subtract 1 if odd
+                }
+                steps++;
+                result += `→ ${n} `;
+            }
+
+            result += `\nPassi totali: ${steps}`;
+            document.getElementById("output").textContent = result;
+        }
+    </script>
+~~~
+
+Esiste una "formula" generale che dia il numero di passi necessari? Nel senso, simulare questi passaggi (-1 o /2) può diventare dispendioso per numeri molto alti: vorremo quindi trovare un modo che, dato un numero $n$, ci dia una risposta più immediata, senza cioè effettuare questa procedura.
+
