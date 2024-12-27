@@ -12,7 +12,8 @@ title = "Home"
 
 # Home
 
-Ciao! sono Federico, un Ingegnere Matematico (magistrale, al Politecnico di Milano), e qui online un Divulgatore Matematico (o perlomeno vediamo come va). In questo sito, alle pagine [Activity](/activity/) e [Uni](/uni/), troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare comodamente su [Youtube](https://www.youtube.com/@fede_plus). 
+Ciao! sono Federico, un Ingegnere Matematico (magistrale, al Politecnico di Milano), e qui online un Divulgatore Matematico (o perlomeno vediamo come va). In questo sito <!-- alle pagine [Activity](/activity/) e [Uni](/uni/),  -->
+troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare comodamente su [Youtube](https://www.youtube.com/@fede_plus) (e forse in futuro anche su Instagram).
 
 Ad oggi, prima la tesi e poi il lavoro mi stanno togliendo tempo e spazio a questo "hobby", ma quando la situazione si ristabilizzerà dovrei e vorrei ritornare, magari anche con contenuti non solo di matematica ma di università in generale, della mia esperienza, consigli, ecc.
 

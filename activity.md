@@ -6,6 +6,10 @@ hasplotly = true
 
 # Attività
 
+L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio. Se non c'è è perché devo ancora registrarlo :)
+
+Presto inoltre ristrutturerò la pagina, il suo layout, in modo che ogni problema abbia la sua pagina dedicata, per poi scriverci meglio tutto all'interno.
+
 \toc
 ~~~
 <button id="toc-button">//</button>
@@ -18,7 +22,6 @@ hasplotly = true
 </div>
 ~~~
 
-L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio. Se non c'è è perché devo ancora registrarlo :)
 
 
 ## Problemi
@@ -390,51 +393,42 @@ Per capire meglio il problema prendete come riferimento gli esempietti che seguo
 30 → 15 → 14 → 7 → 6 → 3 → 2 → 1 # steps=7
 ```
 ~~~
-<!--     <style>
-        #output, #numberInput {
-            white-space: pre-wrap;
-            font-family: monospace;
-            margin-top: 10px;
+
+<label for="numberInput">Scegli tu n:</label>
+<input type="number" id="numberInput" min="1">
+<button onclick="showSteps()">calcola passi</button>
+<div id="outputSteps"></div>
+<br>
+
+<script>
+function showSteps() {
+    // Get input value
+    let n = parseInt(document.getElementById("numberInput").value);
+
+    if (isNaN(n) || n < 1) {
+        document.getElementById("outputSteps").innerText = "Inserisci un numero :)";
+        return;
+    }
+
+    let steps = 0;
+    let result = `${n} `;
+
+    while (n > 1) {
+        if (n % 2 === 0) {
+            n = n / 2; // Divide by 2 if even
+        } else {
+            n = n - 1; // Subtract 1 if odd
         }
-    </style> -->
-  <label for="numberInput">Scegli tu n:</label>
-    <input type="number" id="numberInput" min="1">
-    <button onclick="showSteps()">calcola passi</button>
-    <div id="outputSteps"></div>
-    <!-- <div id="outputTot"></div> -->
-    <br>
+        steps++;
+        result += `→ ${n} `;
+    }
 
-    <script>
-        function showSteps() {
-            // Get input value
-            const inputBox = document.getElementById("numberInput");
-            let n = parseInt(inputBox.value);
+    result += `\nPassi totali: ${steps}`;
+    document.getElementById("outputSteps").innerText =`${result}`;
+}
+</script>
 
-            if (isNaN(n) || n < 1) {
-                document.getElementById("outputSteps").innerText = "Inserisci un numero :)";
-                return;
-            }
-
-            let steps = 0;
-            let result = `${n} `;
-
-            while (n > 1) {
-                if (n % 2 === 0) {
-                    n = n / 2; // Divide by 2 if even
-                } else {
-                    n = n - 1; // Subtract 1 if odd
-                }
-                steps++;
-                result += `→ ${n} `;
-            }
-
-            <!-- resultTot = `\nPassi totali: ${steps}`; -->
-            result  += `\nPassi totali: ${steps}`;
-            document.getElementById("outputSteps").innerText = result;
-            <!-- document.getElementById("outputTot").innerText = resultTot; -->
-        }
-    </script>
 ~~~
 
-Esiste una "formula" generale che dia il numero di passi necessari? Nel senso, simulare questi passaggi (-1 o /2) può diventare dispendioso per numeri molto alti: vorremo quindi trovare un modo che, dato un numero $n$, ci dia una risposta più immediata, senza cioè effettuare questa procedura.
+Tuttavia, simulare questi passaggi (sottrarre 1 o dividere per 2) può diventare dispendioso per numeri molto alti: vorremo quindi trovare un modo che, dato un numero $n$, ci dia una risposta più immediata per il numero di passi necessari per arrivare a 1. Esiste quindi una "formula" generale che calcoli direttamente la soluzione in funzione di $n$?
 
