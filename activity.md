@@ -84,9 +84,9 @@ n=294: 0.99999999999999999999999999999999999999999999999999999999999999999999999
 n=295: 1.0
 ⋮
 ```
-\input{julia}{/assets/scripts/Activity/paradosso_compleanni.jl} 
-\fig{/assets/scripts/Activity/output/paradosso_compleanni_1.json}
-\fig{/assets/scripts/Activity/output/paradosso_compleanni_2.json}
+\input{julia}{/assets/scripts/paradosso_compleanni.jl} 
+\fig{/assets/scripts/output/paradosso_compleanni_1.json}
+\fig{/assets/scripts/output/paradosso_compleanni_2.json}
 
 
 
@@ -98,9 +98,9 @@ n=295: 1.0
 
 Vediamo come calcolare la probabilità di vincere un tiebreak a tennis, quindi una super applicazione della matematica (statistica e probabilità) ad un problema reale.
 
-\input{julia}{/assets/scripts/Activity/tennis_tiebreak_prob.jl} 
-\fig{/assets/scripts/Activity/output/tennis_surface.json}
-\fig{/assets/scripts/Activity/output/tennis_contourf.json}
+\input{julia}{/assets/scripts/tennis_tiebreak_prob.jl} 
+\fig{/assets/scripts/output/tennis_surface.json}
+\fig{/assets/scripts/output/tennis_contourf.json}
 
 
 
@@ -126,8 +126,8 @@ ovvero $M$ deve essere circa il 37% di $N$.
 
 [^2]: l'assegnazione corretta di questi punteggi esiste ma è a noi ignota, ovviamente, perché il punteggio da assegnare a ogni partner lo sapremo esattamente solo una volta fatti tutti gli appuntamenti. Solo una volta conosciuti tutti potremmo allora dire "lei era la migliore" (punteggio $N$), "quest'altra la seconda migliore" (punteggio $N-1$), ecc. Durante il percorso invece possiamo solo fare confronti del tipo "lei era peggiore di quella vista prima", "quest'altra era migliore di tutte le altre viste finora", ecc, ovvero confronti relativi. 
 
-\input{julia}{/assets/scripts/Activity/date_strategy.jl} 
-\fig{/assets/scripts/Activity/output/date_strategy.json}
+\input{julia}{/assets/scripts/date_strategy.jl} 
+\fig{/assets/scripts/output/date_strategy.json}
 \output{/assets/scripts/date_strategy.jl}
 
 {{ desmos https://www.desmos.com/calculator/7xjua3xllw }}
@@ -141,8 +141,8 @@ ovvero $M$ deve essere circa il 37% di $N$.
 Si consideri una rete di traffico descritta da un grafo $G = (V, A)$ i cui archi rappresentano le strade di una città e nodi rappresentano gli incroci. I cittadini si spostano ogni giorno da alcune origini verso alcune destinazioni. Sia $d_k$ la quantità di auto che lasciano punto $s_k \in V$ e si spostano verso la destinazione $t_k \in V$. Sia $\text{FFT}_{ij}$ (_free flow time_) il tempo di percorrenza della strada (arco) $(i, j)$ se la strada $(i, j)$ è vuota. Il tempo di viaggio su un arco aumenta però naturalmente con il flusso crescente su quell'arco. Una soglia di congestione $u_{ij}$ viene quindi definita per ogni arco e non deve essere superata dal traffico lungo quella strada.\
 Modellare il problema di assegnazione del traffico alle strade in modo da ridurre al minimo il tempo totale di viaggio.
 
-\input{julia}{/assets/scripts/Activity/traffic_problem.jl} 
-\fig{/assets/scripts/Activity/traffic_problem.svg}
+\input{julia}{/assets/scripts/traffic_problem.jl} 
+\fig{/assets/scripts/traffic_problem.svg}
 \output{/assets/scripts/traffic_problem.jl}
 
 > Problema tratto dagli esercizi del corso di Optimization al polimi
@@ -152,10 +152,10 @@ Dato un numero intero positivo $n$, trovare il poligono con $n$ lati con diametr
 
 Un suo esempio di applicazione reale sarebbe massimizzare l'area delimitata da un recinto, imponendo che questo possa essere chiuso in sottorecinti a piacere se necessario, usando staccionate unitarie (ovvero la distanza tra ogni coppia di vertice deve essere ≤1).
 
-\input{julia}{/assets/scripts/Activity/polygon_problem.jl} 
-<!-- \fig{/assets/scripts/Activity/polygon_3.svg} -->
-<!-- \fig{/assets/scripts/Activity/polygon_5.svg} -->
-\fig{/assets/scripts/Activity/polygon_10.svg}
+\input{julia}{/assets/scripts/polygon_problem.jl} 
+<!-- \fig{/assets/scripts/polygon_3.svg} -->
+<!-- \fig{/assets/scripts/polygon_5.svg} -->
+\fig{/assets/scripts/polygon_10.svg}
 
 > Problema tratto dagli esercizi del corso di Optimization al polimi
 
@@ -177,8 +177,8 @@ S(n) = S(n-1) + S(n-2) + \ldots + S(n-k)
 $$
 dove però ora i vari valori $S(n-i)$ si devono trovare in modi a volte meno ovvi. Per capire tutto, insieme ad una semplice idea per convertire il calcolo in codice eseguibile da un computer vi rimando naturalmente al video.
 
-\input{julia}{/assets/scripts/Activity/salendo_le_scale.jl}
-\fig{/assets/scripts/Activity/output/scale.json}
+\input{julia}{/assets/scripts/salendo_le_scale.jl}
+\fig{/assets/scripts/output/scale.json}
 <!-- rimuovere i commenti dai codici javascript, sembrano non farli funzionare-->
 ~~~
 
@@ -360,8 +360,8 @@ jump size = 1 , 🏯=59 , 🥚=0 , 🪜=8
 ```
 
 
-<!-- \input{julia}{/assets/scripts/Activity/dropping_eggs.jl} -->
-\fig{/assets/scripts/Activity/output/dropping_eggs_all.json}
+<!-- \input{julia}{/assets/scripts/dropping_eggs.jl} -->
+\fig{/assets/scripts/output/dropping_eggs_all.json}
 
 
 ### Babbo Natale e le dismutazioni
@@ -392,8 +392,9 @@ Per capire meglio il problema prendete come riferimento gli esempietti che seguo
 20 → 10 → 5 → 4 → 2 → 1 # steps=5
 30 → 15 → 14 → 7 → 6 → 3 → 2 → 1 # steps=7
 ```
-~~~
 
+~~~
+<body>
 <label for="numberInput">Scegli tu n:</label>
 <input type="number" id="numberInput" min="1">
 <button onclick="showSteps()">calcola passi</button>
@@ -427,7 +428,7 @@ function showSteps() {
     document.getElementById("outputSteps").innerText =`${result}`;
 }
 </script>
-
+</body>
 ~~~
 
 Tuttavia, simulare questi passaggi (sottrarre 1 o dividere per 2) può diventare dispendioso per numeri molto alti: vorremo quindi trovare un modo che, dato un numero $n$, ci dia una risposta più immediata per il numero di passi necessari per arrivare a 1. Esiste quindi una "formula" generale che calcoli direttamente la soluzione in funzione di $n$?

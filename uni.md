@@ -19,24 +19,31 @@ title = "Uni"
 ## Progetti
 
 ### Bayesian project
-[Here](/assets/figures/visualize.html) there is a dashboard to display all the relevant plots that we produced to better develop our analysis and interpretation. The task was to cluster spatio-temporal data about air pollution in Lombardy, using bayesian models.
+✨[Here](/assets/figures/visualize.html)✨ there is a dashboard to display all the relevant plots that we produced to better develop our analysis and interpretation. The task was to cluster spatio-temporal data about air pollution in Lombardy, using Bayesian models.
+
+✨[Qui](/assets/figures/visualize.html)✨ c'è la dashboard che abbiamo creato per mostrare tutti i plot rilevanti che abbiamo prodotto nella nostra analisi e che meglio permettono di interpretarne i risultati. L'obiettivo del progetto era di clusterizzare dati spazio-temporali riguardo all'inquinamento dell'aria in Lombardia, usando modelli bayesiani.
 
 {{pdf /assets/Uni/bayesian_report_polimi.pdf }}
 
 ### Quality data analysis project
-We had to detect defects into 3d printed objects, using control charts, the method we learnt at lectures. In the end our model detected 7 out of the 9 defected objects, on a total of 40 objects.
+In this projoect we had to detect defects into 3d printed objects, using control charts, the method we learnt at lectures. We also had a big part of image analysis to develop the meaningful variables to then monitor in order to detect defects. In the end our model detected 7 out of the 9 defected objects, on a total of 40 objects.
+
+In questo progetto abbiamo dovuto rilevare difetti in oggetti stampati in 3d, utilizzando grafici di controllo, ovvero il metodo imparato a lezione. Una considerevole parte del progetto è stata anche quella di analisi delle immagini, per estrarre le variabili più rilevanti da monitorare per rilevare i difetti. Alla fine, il nostro modello ha rilevato 7 tra i 9 oggetti che presentavano difetti, da un campione totale di 40 oggetti. 
 
 {{pdf /assets/Uni/qda_report.pdf }}
 
 ### Applied statistic project
-We had to develop a statistical analysis on a topic at our choice. We studied the PISA dataset, about the evaluations of students in european high school, to derive results about their wealth and well-being.
+In this project we had to develop a statistical analysis on a topic at our choice. We studied the PISA dataset, which contains measurements about students in european high school, with the goal of inferring results about their wealth and well-being.
+
+In questo progetto abbiamo sviluppato un'analisi statistica su un tema a nostra scelta. Abbiamo studiato il PISA dataset, che comprende dati riguardo agli studenti delle scuole medie in Europa, con l'obiettivo di indagare il loro benessere fisico e psicologico.
 
 {{pdf /assets/Uni/A0_poster_Applied_Statistics_CYMK.pdf }}
 
-### Gioco del 15 - generalizato
-Al primo anno, quarto laboratorio di informatica, dovevamo implementare il gioco del 15 in C, quello con la griglia 4 per 4, una casella vuota, e i numeri all'interno da riordinare. Però, già che c'ero, l'ho implementato in dimensione generica N per N, e quindi anzichè *gioco del 15* si è esteso in *gioco dell'(N^2-1)*.
+### Gioco del 15 generalizato
+Al primo anno, quarto laboratorio di informatica, dovevamo implementare il gioco del 15 in C, quello con la griglia 4 per 4, una casella vuota, e i numeri all'interno da riordinare. Però, già che c'ero, l'ho implementato in dimensione generica N per N, e quindi anzichè "gioco del 15" si è esteso in "gioco dell'$(N^2-1)$", di cui segue il codice. Tale codice è scritto in C quando ero al primo anno e ai primi mesi, quindi è molto disordinato e poco efficiente, ma ✨[qui](/assets/Uni/15_game.html)✨ potete trovare una versione equivalente (e giocabile!) in html e javascript.
 
-Importante notare che la board non può essere inizializzata con numeri in ordine casuale, altrimenti si potrebbe arrivare a configurazioni non risolvibili, per esempio
+
+Importante notare che la board non può essere inizializzata con numeri in ordine casuale, altrimenti si potrebbe arrivare a configurazioni non risolvibili, per esempio questa
 \nonumber{$$
 \begin{bmatrix}
 1 & 2 & 3\\
@@ -46,27 +53,26 @@ Importante notare che la board non può essere inizializzata con numeri in ordin
 \end{bmatrix}
 $$}
 <!-- $\{1\,2\,3;\,4\,5\,6;\,8\,7\;\square \}$,  -->
-dove l'8 e il 7 non possono essere invertiti. Perciò per inizializzarla, e per regolare la difficoltà del gioco, il codice parte da una board risolta e su quella applica per un po' di volte delle mosse casuali, per disordinare la sequenza preservando la possibilità di risolvere il gioco.
+dove l'8 e il 7 non possono essere invertiti. Perciò, per inizializzarla, e per regolare la difficoltà del gioco, il codice parte da una board risolta e su quella applica per un po' di volte delle mosse casuali, per disordinare la sequenza di numeri preservando la possibilità di risolvere il gioco.
 <!-- "risoluzionabilità". -->
 <!-- "risolutibilezza".  -->
 <!-- "fattibiltà".  -->
 
-Il codice C originale è quello che segue (scritto al primo anno i primi mesi, quindi molto disordinato e poco efficiente), ma [qui](/assets/Uni/15_game.html) potete trovare una versione equivalente (e giocabile!) in html e javascript.
 
-\input{c}{/_assets/scripts/Uni/gioco_15.c}
+\input{c}{/_assets/scripts/gioco_15.c}
 
 
 
 ### Assegnazione non conflittuale di squadre ed arbitri
-Il nostro grest (campo estivo) dell'oratorio gestiva i bambini, delle elementari e medie, dividendoli in 8 squadre, definite da delle bandane colorate. Anche i ragazzi più grandi, delle superiori, erano distribuiti all'interno delle squadre, ma lavoravano come animatori. Quindi i bambini giocavano e partecipavano alle varie attività, mentre gli animatori in parte li accompagnavano ed in parte organizzavano proprio quelle varie attività. \
-Le squadre erano utili affinché ogni gioco e attività contribuisse ad una classifica generale, per quindi indurre i bambini a impegnarsi e divertirsi con una vera e coinvolgente motivazione.
+Il nostro grest, o campo estivo, dell'oratorio gestiva i bambini delle elementari e medie dividendoli in 8 squadre, definite da delle bandane colorate. Anche i ragazzi più grandi, delle superiori, erano distribuiti all'interno delle squadre, ma lavoravano come animatori. Quindi i bambini giocavano e partecipavano alle varie attività, mentre gli animatori in parte li accompagnavano ed in parte organizzavano proprio quelle varie attività. 
+<!-- Ovviamente le squadre erano utili affinché ogni gioco e attività contribuisse ad una classifica generale, per quindi indurre i bambini a impegnarsi e divertirsi con una vera e coinvolgente motivazione. -->
 
 Nella mia lunga carriera da animatore ho scalato le dure gerarchie di potere fino a diventare Referente, cioè moralmente capo degli arbitri. Il mio lavoro, insieme ai miei compagni, era quindi di organizzare i giochi da fare ogni giorno (come pallabollata, bandierina, ecc, o inventarne di nuovi), definire materialmente i campi, cioè proprio tracciarli in qualche modo per terra, assegnare arbitri ed accompagnatori, decidere quali squadre far scontrare in ogni turno, ecc. \
 E qui nasceva un interessante problema.
 
 \fig{/assets/img/giolab_cut2.jpg}
 
-In ogni campo, dove si sfidavano coppie di squadre, c'erano due arbitri, ovvero due animatori, per supervisionare lo svolgimento del gioco in quel campo. Gli animatori però appartenevano anch'essi a delle squadre, e quindi sarebbe stato ingiusto (per la squadra avversaria) far giocare per esempio la squadra rossa in un campo in cui c'era un arbitro dei rossi. Le coppie di squadre da far scontrare in una partita le calcolavo in base all'andamento dei vari round, e in quanto referente era poi mio dovere cercare di organizzare queste assegnazioni ai campi opportuni, in modo da evitare conflitti sulle decisioni arbitrali. In questo modo ho quindi pensato ad un piccolo algoritmo che risolvesse il problema.
+In ogni campo, dove si sfidavano coppie di squadre, c'erano due arbitri, ovvero due animatori, per supervisionare lo svolgimento del gioco in quel campo. Gli animatori però appartenevano anch'essi a delle squadre, e quindi sarebbe stato ingiusto far giocare, per esempio, la squadra rossa in un campo in cui c'era un arbitro dei rossi. Le coppie di squadre da far scontrare in una partita le calcolavo in base alla classifica generale e all'andamento dei vari round, e in quanto referente era poi mio dovere cercare di organizzare queste assegnazioni ai campi opportuni, in modo da evitare conflitti sulle decisioni arbitrali. In questo modo ho quindi pensato ad un piccolo algoritmo che risolvesse il problema.
 
 La sua esecuzione si faceva tranquillamente sul foglio di carta che avevo per tenere traccia del gioco, ma [qui](/assets/Uni/campi_grest.html) c'è una versione interattiva che ne dimostra l'esecuzione. L'idea era di ricavare le disponibilità nei campi ("Disponibilità (debug table)" nella pagina linkata), e poi trovare un percorso di assegnazione che li coprisse tutti.
 
@@ -89,15 +95,23 @@ Il giocatore 1 ostacola strenuamente gli ultimi passi dell'avversario, ma alla f
 \fig{/assets/Uni/quoridor_end.png}
 
 
-<!-- ## Corsi e Appunti
-Quando sistemerò bene i materiali popolerò anche questa sezione.
- -->
-<!--
-### Bayesian Statistics (magistrale, anno 2)
-Non carico i miei appunti presi sui quaderni ma le "rielaborazioni" che in genere faccio quando studio una materia, dove in pratica condenso insieme varie fonti per rendere gli appunti nella loro versione più chiara, ordinata e studiabile possibile.
+## Corsi e Appunti
+Quando sistemerò (o anche solo scansionerò) tutti i miei appunti popolerò meglio anche questa sezione. 
 
+A seconda dei casi, e dei corsi, non carico qui i miei appunti effettivi, quelli presi sui quaderni durante le lezioni, ma piuttosto le loro "rielaborazioni" che in genere faccio quando studio una materia. Moralmente queste rielaborazioni condensano insieme varie fonti: gli appunti effettivi visti a lezione, metodi ed esempi visti ad esercitazione, qualcosa tratto da libri o trovato online, ecc; il tutto per arrivare a una forma nella versione più chiara, ordinata e studiabile possibile.\
+Se carico invece gli appunti effettivi dei quaderni è perché o per quel corso non ho avuto voglia di riordinare e integrare il materiale, o semplicemente perché per i miei gusti di studio erano già usciti perfettamente nel formato quaderno (per esempio quelli del corso di ARF).
+
+
+#### BS - Bayesian Statistics
 {{ pdf /assets/Uni/Appunti_Bayesian.pdf}}
 
+### OPT - Optimization
+<!-- {{ pdf /assets/Uni/Opt_slides.pdf}} -->
+{{ pdf /assets/Uni/Opt_riassunti.pdf }}
+{{ pdf /assets/Uni/Discrete_Opt.pdf }}
+{{ pdf /assets/Uni/Nonlinear_Opt.pdf }}
+
+<!-- 
 ### SDE (magistrale, anno 1)
 (ovvero Stochastic Differential Equations). Esame andato non troppo bene, ma malgrado questo il corso in sé era anche abbastanza interessante, se non fosse per la troppa teoria e dimostrazioni in cui era immerso: praticamente abbiamo visto le equazioni differenziali stocastiche, in teoria il focus del corso, solo l'ultima settimana. All'esame era ammesso portarsi un foglio A4 con scritto quanto ognuno ritenesse utile, e come si può non cogliere l'occasione di ottimizzare tutto quello spazio? Raccoglie nella prima facciata il classico formulario di Probabilità, mentre nella seconda c'è la parte dedicata invece alle nuove cose del calcolo stocastico. 
 
@@ -117,5 +131,5 @@ I miei appunti per il corso di Metodi Analitici e Numerici delle EDP (Equazioni 
 
 {{ pdf /assets/Uni/Appunti_EDP.pdf }}
 
-La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto.
- -->
+La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto. -->
+ 
