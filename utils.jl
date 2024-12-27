@@ -1,3 +1,28 @@
+"""
+Display a Plotly plot given an exported JSON `String`.
+
+```
+using PlotlyJS
+fdplotly(json(plot([1, 2]))
+```
+"""
+function fdplotly(json::String; id="fdp"*Random.randstring('a':'z', 3),
+	 			  style="width:600px;height:350px")::Nothing
+    println("""
+		~~~
+		<div id="$id" style="$style"></div>
+
+		<script>
+			var fig = $json;
+			CONTAINER = document.getElementById('$id');
+			Plotly.newPlot(CONTAINER, fig.data, fig.layout)
+		</script>
+		~~~
+		""")
+    return nothing
+end
+
+
 function hfun_youtube(param)
 	if occursin("youtu.be",param[1])
 		link = "https://www.youtube.com/embed/" * split(param[1],"/")[end]
