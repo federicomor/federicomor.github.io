@@ -18,7 +18,7 @@ function foundable(solution::Vector, verbose=false)
 end
 
 
-function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool)
+function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool; decrement=true)
 	solution = 2 .* ones(Int,100)
 	eggs = length(divs_strat)
 	steps = 0
@@ -59,7 +59,7 @@ function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool)
 			solution[1:current_floor] .= 0
 			steps += 1
 			if verbose print_summary(eggs,current_floor,steps,jump_size,solution); end
-			if eggs>1 jump_size -= 1 end
+			if (eggs>1 || jump_size>1) && decrement jump_size -= 1 end
 			# @show interval_focus
 			previous_floor = current_floor
 			current_floor += jump_size
@@ -71,17 +71,52 @@ function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool)
 	return steps
 end
 
+
+stratk([25,1],99,true,decrement=false)
+stratk([18,7,1],58,true)
+
+stratk([14,1],41,true,decrement=false)
+stratk([14,1],41,true,decrement=true)
+
+stratk([18,7,1],58,true,decrement=false)
+stratk([18,7,1],58,true,decrement=true)
+
+
 ############# 2 eggs #############
+begin
 worst_case = 0
 strat_vector = [14,1]
+decrement = false
 for critical_floor in 1:100
-	worst_case = max(worst_case,stratk(strat_vector,critical_floor,false))
-	# @show critical_floor, stratk(strat_vector,critical_floor,false)
+	current_case = stratk(strat_vector,critical_floor,false,decrement=decrement)
+	worst_case = max(worst_case,current_case)
+	@show critical_floor,current_case
 end
 println("With $(length(strat_vector)) eggs, using vector $strat_vector as strategy, we need $worst_case steps in the worst case.")
+end
 
-stratk([14,1],58,true)
-stratk([18,7,1],58,true)
+for i in 14:20
+	decrement = true
+	strat_vector=[i,1]
+	worst_case = 0
+	avg_case = 0
+	best_case = 0
+	for critical_floor in 1:100
+		current_case = stratk(strat_vector,critical_floor,false,decrement=decrement)
+		if !isnan(current_case)
+			worst_case = max(worst_case,current_case)
+			avg_case += current_case
+			best_case = min(worst_case,current_case)
+		end
+	end
+	avg_case /= 100
+	println("""
+		With $(length(strat_vector)) eggs, using vector $strat_vector as strategy and decrement=$decrement, we need
+		- $worst_case steps in the worst case
+		- $avg_case steps in the average case
+		- $best_case steps in the best case
+		""")
+end
 
 
 ############# 3 eggs #############
@@ -248,3 +283,83 @@ for critical_floor in 1:100
 	current_case = stratk(strat_vector, critical_floor, false)
 	@show critical_floor, current_case
 end
+
+
+
+############# FOUR EGGS
+X = Float64[]
+Y = Float64[]
+Z = Float64[]
+Z_worst = Float64[]
+Z_avg = Float64[]
+Z_best = Float64[]
+
+# Compute worst, avg, and best cases for each strategy in strat_vectors
+for i in 20:40
+	println(i)
+	for j in 6:15
+		for k in 2:5
+			strat_vector=[i,j,k,1]
+			worst_case = 0
+			avg_case = 0
+			best_case = 0
+			
+			# Calculate the cases for each critical floor
+			for critical_floor in 1:100
+				current_case = stratk(strat_vector, critical_floor, false)
+				worst_case = max(worst_case, current_case)
+				avg_case += current_case
+				best_case = min(worst_case, current_case)
+			end
+			avg_case /= 100
+			
+			# Append the results for the plot
+			push!(X, strat_vector[1]) 
+			push!(Y, strat_vector[2])
+			push!(Z, strat_vector[3])
+			push!(Z_worst, worst_case) 
+			push!(Z_avg, avg_case)
+			push!(Z_best, best_case) 
+		end
+	end
+end
+
+
+function linear_map(vec, a, b, c, d)
+    # Linear mapping formula: y = (x - a) * (d - c) / (b - a) + c
+    return (vec .- a) .* (d - c) ./ (b - a) .+ c
+end
+
+Z_best_scaled = linear_map(Z_best, extrema(filter(!isnan,Z_best))..., (reverse(extrema(filter(!isnan,Z_best)))./3)...)
+Z_worst_scaled = linear_map(Z_worst, extrema(filter(!isnan,Z_worst))..., (reverse(extrema(filter(!isnan,Z_worst)))./3)...)
+Z_avg_scaled = linear_map(Z_avg, extrema(filter(!isnan,Z_avg))..., (reverse(extrema(filter(!isnan,Z_avg)))./3)...)
+
+best_indexes = @. !isnan(Z_best)
+worst_indexes = @. !isnan(Z_worst)
+avg_indexes = @. !isnan(Z_avg)
+
+p1 = scatter3d(
+	X[best_indexes],
+	Y[best_indexes],
+	Z[best_indexes],
+	msize=Z_best_scaled[best_indexes],
+	color=:green,label="Z_best")
+
+p2 = scatter3d(
+	X[worst_indexes],
+	Y[worst_indexes],
+	Z[worst_indexes],
+	msize=Z_worst_scaled[worst_indexes],
+	color=:red,label="Z_worst")
+
+p3 = scatter3d(
+	X[avg_indexes],
+	Y[avg_indexes],
+	Z[avg_indexes],
+	msize=Z_avg_scaled[avg_indexes],
+	color=:blue,label="Z_avg")
+
+
+fig = plot(p1, p2, p3, layout = (1, 3), legend = false)
+fig2 = plot(fig)#legend=:top)
+savefig(fig2,"_assets/scripts/Activity/output/dropping_eggs_all.json")
