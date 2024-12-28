@@ -1,4 +1,32 @@
 /* ==================================================================
+    ECC
+================================================================== */
+
+
+/* ==================================================================
+    SOLUTION
+================================================================== */
+.solution {
+  filter: blur(8px); /* Blurry by default */
+  cursor: pointer; /* Indicate interactivity */
+  transition: filter 0.5s ease; /* Smooth blur transition */
+/*  margin: 15px 0;*/
+  background-color: #ffffff;
+/*  padding: 20px;*/
+/*  border-radius: 8px;*/
+/*  border: 1px solid #ddd;*/
+  outline: none; /* Remove focus outline */
+}
+
+/* Remove blur when element is focused */
+.solution:focus {
+  filter: none; /* Remove blur on focus */
+  outline: none; /* Optional: Remove focus outline */
+  cursor: default; /* Change cursor to indicate it's no longer interactive */
+}
+
+
+/* ==================================================================
     CARDS
 ================================================================== */
 .card-container {
@@ -33,15 +61,27 @@
 }
 
 .card-image {
-  width: 100%; height: auto;
+  width: 100%; /* Maintain responsiveness */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Crop and maintain aspect ratio */
+  object-position: center; /* Center the image */
+  display: block; /* Remove inline spacing for better alignment */
 }
+
 .card-title {
   margin: 0 0 0.5rem;
   font-size: 1.25rem;
 }
 .card-text {
   margin: 0 0 1rem;
-  font-size: 0.875rem;
+/*  font-size: 0.875rem;*/
+}
+.card-content {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+  margin: 12px 0;
+  text-align: left; /* or center, based on your design */
 }
 .card-link{
   display: block; text-decoration: none; color: inherit;

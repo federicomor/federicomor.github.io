@@ -1,23 +1,41 @@
 +++
-title = "Vignette Test"
+title = "Attività"
+hascode = true
+hasplotly = true
 +++
 
-# Vignette Test
+# Attività
+L'idea è che ad ogni articoletto di "divulgazione matematica" dovrebbe essere associato un video che lo racconta/analizza/risolve in dettaglio. Se non c'è è perché devo ancora registrarlo :)
+
+~~~ 
+  <!-- <div class="solution-container"> -->
+    <div class="solution" tabindex="0">
+      <p>
+        This is the solution content. Click on it to reveal the text!
+      </p>
+    </div>
+  <!-- </div> -->
+~~~ 
+
+
+
 
 ~~~ 
 <div class="card-container">
-  <!-- Card 1 -->
   <div class="card">
-  <a href="/uni/" style="display: block; text-decoration: none; color: inherit;">
-      <h5 class="card-title" href="/uni/">Another Card</h5>
-      <p class="card-content">
-        This is a wider card with supporting text below as a natural lead-in to additional content.
+  <a href="/activity/dropping_eggs" style="display: block; text-decoration: none; color: inherit;">
+      <h5 class="card-title">Dropping Eggs</h5>
+      <p class="card-text">
+~~~ 
+Avete una gallina che depone delle uova particolarmente forti e volete testare la loro resistenza lanciandole da un edificio di 100 piani, con l'obiettivo di trovare il piano più alto da cui un uovo può cadere senza rompersi.\
+Che strategia utilizzereste, se aveste solo due uova, per minimizzare il caso peggiore di lanci da effettuare? E se aveste $k$ uova?
+~~~ 
       </p>
-    <img class="card-image" src="https://via.placeholder.com/286x180" alt="Card Image">
+    <img class="card-image" src="/assets/img/gallina2.png" alt="Card Image">
     </a>
   </div>
-
-  <!-- Card 2 -->
+~~~ 
+~~~ 
   <div class="card">
       <h5 class="card-title">Another Card</h5>
       <p class="card-content">

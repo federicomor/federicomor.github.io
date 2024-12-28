@@ -394,26 +394,21 @@ Per capire meglio il problema prendete come riferimento gli esempietti che seguo
 ```
 
 ~~~
-<body>
+
 <label for="numberInput">Scegli tu n:</label>
 <input type="number" id="numberInput" min="1">
-<button onclick="showSteps()">calcola passi</button>
+<button onclick="showSteps()">calcola</button>
 <div id="outputSteps"></div>
 <br>
 
 <script>
-function showSteps() {
-    // Get input value
-    let n = parseInt(document.getElementById("numberInput").value);
-
+function steps(n) {
     if (isNaN(n) || n < 1) {
         document.getElementById("outputSteps").innerText = "Inserisci un numero :)";
         return;
     }
-
     let steps = 0;
     let result = `${n} `;
-
     while (n > 1) {
         if (n % 2 === 0) {
             n = n / 2; // Divide by 2 if even
@@ -423,12 +418,16 @@ function showSteps() {
         steps++;
         result += `→ ${n} `;
     }
-
     result += `\nPassi totali: ${steps}`;
-    document.getElementById("outputSteps").innerText =`${result}`;
+    return result;
+}
+function showSteps() {
+    let n = parseInt(document.getElementById("numberInput").value);
+    let result = steps(n);
+    document.getElementById("outputSteps").innerText = `${result}`; 
 }
 </script>
-</body>
+
 ~~~
 
 Tuttavia, simulare questi passaggi (sottrarre 1 o dividere per 2) può diventare dispendioso per numeri molto alti: vorremo quindi trovare un modo che, dato un numero $n$, ci dia una risposta più immediata per il numero di passi necessari per arrivare a 1. Esiste quindi una "formula" generale che calcoli direttamente la soluzione in funzione di $n$?

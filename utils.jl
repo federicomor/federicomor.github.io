@@ -1,6 +1,5 @@
 """
 Display a Plotly plot given an exported JSON `String`.
-
 ```
 using PlotlyJS
 fdplotly(json(plot([1, 2]))
@@ -21,7 +20,6 @@ function fdplotly(json::String; id="fdp"*Random.randstring('a':'z', 3),
 		""")
     return nothing
 end
-
 
 function hfun_youtube(param)
 	if occursin("youtu.be",param[1])
@@ -57,7 +55,6 @@ function hfun_desmos(param)
 	"""
 end
 
-
 function hfun_pdf(param)
 	path=param[1]
 	return """
@@ -78,6 +75,9 @@ function hfun_pdf(param)
 	"""
 end
 
+function hfun_qmark()
+	return """❓"""
+end
 
 function hfun_gray(param)
 	text=param[1]
