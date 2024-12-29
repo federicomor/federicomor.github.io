@@ -24,3 +24,20 @@ website_url   = "https://federicomor.github.io/"
 <!-- Add here global latex commands to use throughout your pages. -->
 \newcommand{\R}{\mathbb R}
 \newcommand{\scal}[1]{\langle #1 \rangle}
+
+\newcommand{\card}[4]{
+~~~ 
+  <div class="card">
+  <a href="!#1" style="display: block; text-decoration: none; color: inherit;">
+      <h5 class="card-title">!#2</h5>
+      <p class="card-text">
+~~~
+<!-- ## #2 -->
+#3
+~~~
+      </p>
+    <img class="card-image" src="!#4" alt="Card Image">
+    </a>
+  </div>
+~~~ 
+}

@@ -74,7 +74,8 @@
 }
 .card-text {
   margin: 0 0 1rem;
-/*  font-size: 0.875rem;*/
+  font-size: 0.875rem;
+  line-height: 20px;
 }
 .card-content {
   font-size: 1em;
@@ -189,7 +190,7 @@ html {
   /* Avoid clickable elements being too close together. */
   margin: 0.6rem 0;
 /*  font-size: 80%;*/
-  line-height: 0.9em;
+  line-height: 1em;
 }
 
 .franklin-content {
@@ -362,7 +363,9 @@ td {
 /* ==================================================================
     BACK TO TOP BUTTON
 ================================================================== */
-
+html {
+  scroll-behavior: smooth;
+}
 .backToTopBtn, .backToTopBtn-icon {
   font-size: 15px;
   display: block;

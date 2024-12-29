@@ -75,10 +75,6 @@ function hfun_pdf(param)
 	"""
 end
 
-function hfun_qmark()
-	return """❓"""
-end
-
 function hfun_gray(param)
 	text=param[1]
 	return """
