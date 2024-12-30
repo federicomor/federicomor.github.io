@@ -18,6 +18,11 @@ Per capire meglio il problema prendete come riferimento gli esempietti che seguo
 30 → 15 → 14 → 7 → 6 → 3 → 2 → 1 # steps=7
 ```
 ~~~
+<label for="numberInput">Scegli tu n:</label>
+<input type="number" id="numberInput" min="1">
+<button onclick="showSteps()">calcola</button>
+<div id="outputSteps"></div>
+
 <script>
 function steps(n) {
     if (isNaN(n) || n < 1) {
@@ -35,7 +40,7 @@ function steps(n) {
         steps++;
         result += `→ ${n} `;
     }
-    result += `\nPassi totali: ${steps}`;
+    result += ` (passi totali: ${steps})`;
     return result;
 }
 function showSteps() {
@@ -44,16 +49,16 @@ function showSteps() {
     document.getElementById("outputSteps").innerText = `${result}`; 
 }
 </script>
+~~~
 
-<label for="numberInput">Scegli tu n:</label>
-<input type="number" id="numberInput" min="1">
-<button onclick="showSteps()">calcola</button>
-<div id="outputSteps"></div>
+~~~
 <br>
 ~~~
 
-Tuttavia, simulare questi passaggi (sottrarre 1 o dividere per 2) può diventare dispendioso per numeri molto alti: vorremo quindi trovare un modo che, dato un numero $n$, ci dia una risposta più immediata per il numero di passi necessari per arrivare a 1. Esiste quindi una "formula" generale che calcoli direttamente la soluzione in funzione di $n$?
+Tuttavia, simulare questi passaggi (sottrarre 1 o dividere per 2) può diventare dispendioso per numeri molto alti: vorremo quindi trovare un modo che, dato un numero $n$, ci dia una risposta più immediata per il numero di passi necessari per arrivare a 1. Esiste quindi una "formula" generale, in funzione di $n$, che calcoli direttamente la soluzione?
 
 
 ### Soluzione
 
+
+{{ addcomments }}

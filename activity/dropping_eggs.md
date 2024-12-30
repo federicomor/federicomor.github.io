@@ -21,7 +21,7 @@ Supponete infine di avere $k$ uova. Quale strategia utilizzereste, in questo cas
 <div class="solution" tabindex="0"><p>
 ~~~  -->
 
-Chiamiamo "piano critico" il massimo piano da cui l'uovo può essere lanciato senza che si rompa. Il nostro obiettivo, meglio precisarlo, è trovare la strategia che individui questo piano critico minimizzando il _numero massimo di lanci_ da effettuare _nel caso peggiore_. 
+Chiamiamo "piano critico" il massimo piano da cui l'uovo può essere lanciato senza che si rompa. Il nostro obiettivo è trovare la strategia che individui questo piano critico minimizzando il _numero massimo di lanci_ da effettuare _nel caso peggiore_. 
 <!-- Quindi ci interessa un metodo che sia robusto, ovvero che anche nel caso peggiore, in cui il piano critico si trovi ad un piano tale che con la mia strategia lo raggiungo dopo tante mosse) -->
 
 Con due uova, un'idea semplice ed immediata sarebbe la seguente
@@ -29,7 +29,7 @@ Con due uova, un'idea semplice ed immediata sarebbe la seguente
 
 Questo garantirebbe un numero massimo di lanci da effettuare, nel caso peggiore, pari a 28 (si pensi al caso in cui il piano critico sia il 99, che costringerebbe a testare $25 \to 50 \to 75 \to 100 \to 76 \to 77 \to \ldots \to 98 \to 99$).
 
-Questo metodo è quindi ancora lontano dall'essere ottimale; tuttavia suggerisce l'intuizione corretta: avendo più uova, possiamo permetterci di partire con dei test saltando diversi piani, ovvero investire il primo uovo per test più rischiosi (in quanto lanciandolo da piani più alti c'è rischio che si rompa) ma che riducano lo spazio di ricerca su cui poi impiegare il secondo uovo. 
+Questo metodo è ancora un po' lontano dall'essere ottimale; tuttavia suggerisce l'intuizione corretta: avendo più uova, possiamo permetterci di partire con dei test saltando diversi piani, ovvero investire il primo uovo per test più rischiosi (in quanto lanciandolo da piani più alti c'è rischio che si rompa) ma che poi riducano lo spazio di ricerca su cui impiegare il secondo uovo. 
 
 Quando abbiamo un solo uovo, infatti, siamo costretti a testare ogni piano uno per volta, ottenendo così uno spazio di ricerca $[1,100]$. Quando invece abbiamo due uova, possiamo usare il primo per testare un piano ogni $n$. Seguendo l'idea di sopra, con $n=25$, riusciamo infatti a spezzettare lo spazio di ricerca su sottoinsiemi più piccoli, ovvero $[1,25]$, $[26,50]$, $[51,75]$ e $[76,100]$. In questo modo otteniamo che il numero massimo di lanci da effettuare nel caso peggiore è pari a 28, che è già un bell'incremento rispetto al 100 del caso con un solo uovo! Ma possiamo fare di meglio scegliendo un diverso $n$, rispetto al 25 deciso a intuito, e rifinendo anche la strategia degli incrementi in modo più opportuno? In effetti sì.
 
@@ -37,7 +37,7 @@ Quando abbiamo un solo uovo, infatti, siamo costretti a testare ogni piano uno p
 
 ---
 
-La funzione che segue (che è stata complicatuccia da scrivere) simula l'esecuzione del lancio di $k$ uova, usando un _jump\_size_ diverso in funzione del numero di uova rimaste. Per esempio, `strat_vector = [14,1]` corrisponde al caso in cui abbiamo 2 uova, e finché ne abbiamo due saltiamo di 14, poi 13, poi 12 piani, mentre quando ci rimane un solo uovo allora facciamo passi alti sempre 1. Mentre `strat_vector = [18,7,1]` corrisponde alla simulazione in cui abbiamo 3 uova, e se ne finché ne abbiamo tre effettuiamo salti alti 18, poi 17, 16, ecc; quando ne abbbiamo due salti alti 7, poi 6, 5, ecc; e infine quando ne abbbiamo solo uno salti alti 1.
+La funzione che segue simula l'esecuzione del lancio di $k$ uova, usando un _jump\_size_ diverso in funzione del numero di uova rimaste. Per esempio, `strat_vector = [14,1]` corrisponde al caso in cui abbiamo 2 uova, e finché ne abbiamo due saltiamo di 14 piani, poi 13, 12, ecc (se anche il parametro `decrement` è impostato su `true`, altrimenti l'ampiezza dei salti resta invariata, ovvero saltiamo di 14 piani, poi ancora 14, 14, ecc), mentre quando ci rimane un solo uovo allora facciamo passi alti sempre 1. Mentre `strat_vector = [18,7,1]` corrisponde alla simulazione in cui abbiamo 3 uova, e se ne finché ne abbiamo tre effettuiamo salti alti 18, poi 17, 16, ecc; quando ne abbbiamo due salti alti 7, poi 6, 5, ecc (sempre nel caso `decrement=true`); e infine quando ne abbbiamo solo uno passiamo a salti alti 1.
 
 ```julia
 function the_egg_breaks(testing_floor, critical_floor)
@@ -168,3 +168,5 @@ jump size = 1 , 🏯=59 , 🥚=0 , 🪜=8
 <!-- ~~~ 
 </p></div>
 ~~~  -->
+
+{{ addcomments }}

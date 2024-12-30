@@ -4,29 +4,6 @@
 
 
 /* ==================================================================
-    SOLUTION
-================================================================== */
-.solution {
-  filter: blur(8px); /* Blurry by default */
-  cursor: pointer; /* Indicate interactivity */
-  transition: filter 0.5s ease; /* Smooth blur transition */
-/*  margin: 15px 0;*/
-  background-color: #ffffff;
-/*  padding: 20px;*/
-/*  border-radius: 8px;*/
-/*  border: 1px solid #ddd;*/
-  outline: none; /* Remove focus outline */
-}
-
-/* Remove blur when element is focused */
-.solution:focus {
-  filter: none; /* Remove blur on focus */
-  outline: none; /* Optional: Remove focus outline */
-  cursor: default; /* Change cursor to indicate it's no longer interactive */
-}
-
-
-/* ==================================================================
     CARDS
 ================================================================== */
 .card-container {

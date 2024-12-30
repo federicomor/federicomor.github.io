@@ -82,17 +82,19 @@ La sua esecuzione si faceva tranquillamente sul foglio di carta che avevo per te
 
 L'idea è che ogni giocatore ha una pedina che deve arrivare dall'altro lato della scacchiera di gioco, e può posizionare lungo il cammino dei separatori, dei muri, che possono o agevolare il suo percorso o ostacolare quello dell'avversario (oviamente lasciandogli sempre però una via per arrivare al suo obiettivo, ovvero l'avversario non può essere "intrappolato"). Quindi occorre valutare bene quando muoversi, quando posizionare invece un muro, e dove posizionarlo, se nel frattempo metterne altri che saranno utili a lungo termine per mosse future, ecc.
 
-Ebbene, io e il mio caro amico Ettore, anche lui abbastanza smanettone, ci siamo messi a crearlo con l'obiettivo poi di implementare magari anche delle AI (intelligenze artificiali) da sfidare. Per ora è un work in progress. Lui ha preferito scrivere il gioco in C++ mentre io in Julia, naturalmente. Le regole sono state implementate, quindi il gioco è giocabile, ma implementare delle AI sembra molto complicato perché oltre a scegliere come muovere la pedina c'è anche la scelta di dove piazzare un muro, e in che orientamento, quindi ci sono molte varianti di decisioni a cui pensare. Quindi per ora c'è solo `rand_AI` che gioca mosse casuali, e `target_AI` che invece si muove verso il lato della vittoria nel modo più veloce possibile (quindi moralmente è un metodo greedy).
+Ebbene, io e il mio caro amico Ettore, anche lui abbastanza smanettone, ci siamo messi a crearlo con l'obiettivo poi di implementare magari anche delle AI (intelligenze artificiali) da sfidare. Per ora è un work in progress, e [qui](https://github.com/ettoremodina/Quoridor-competition) trovate tutto il codice. Lui ha preferito scrivere il gioco in C++ mentre io in Julia, naturalmente. Le regole sono state implementate, quindi il gioco è giocabile, ma implementare delle AI sembra molto complicato perché oltre a scegliere come muovere la pedina c'è anche la scelta di dove piazzare un muro, e in che orientamento, quindi ci sono molte varianti di decisioni a cui pensare. Quindi per ora c'è solo `rand_AI` che gioca mosse casuali, e `target_AI` che invece si muove verso il lato della vittoria nel modo più veloce possibile (quindi moralmente è un metodo greedy).
 
-\fig{/assets/Uni/quoridor.png}
+<!-- \fig{/assets/Uni/quoridor.png} -->
 
-Per esempio nella posizione che segue sarà sicuramente il giocatore 2 a vincere, perché si è creato moralmente un corridoio verso la vittoria, costringendo nel frattempo il giocatore 1 ad un giro più largo per arrivare invece alla sua vittoria (dato che sul lato destro ha la strada sbarrata). Da notare che carino anche il plot con la heatmap delle celle e della lunghezza del cammino minimo per arrivarci.
+<!-- Per esempio nella posizione che segue sarà sicuramente il giocatore 2 a vincere, perché si è creato moralmente un corridoio verso la vittoria, costringendo nel frattempo il giocatore 1 ad un giro più largo per arrivare invece alla sua vittoria (dato che sul lato destro ha la strada sbarrata). Da notare che carino anche il plot con la heatmap delle celle e della lunghezza del cammino minimo per arrivarci. -->
+
+Questo è un piccolo esempio di come appare il gioco nella mia versione in Julia, c'è la scacchiera di gioco, in cui ci si muove con i tasti intorno ad S (per esempio W vuol dire andare verso nord, C verso sud-est, ecc), con indicate le coordinate delle righe e colonne per scegliere dove piazzare i muri. Sotto c'è una piccola heatmap della distanza di un giocatore dalla riga di vittoria, che servirà presumibilmente per sviluppare le varie AI.
 
 \fig{/assets/Uni/quoridor_game.png}
 
-Il giocatore 1 ostacola strenuamente gli ultimi passi dell'avversario, ma alla fine non può fare altro che soccombere al suo destino.
+<!-- Il giocatore 1 ostacola strenuamente gli ultimi passi dell'avversario, ma alla fine non può fare altro che soccombere al suo destino. -->
 
-\fig{/assets/Uni/quoridor_end.png}
+<!-- \fig{/assets/Uni/quoridor_end.png} -->
 
 
 ## Corsi e Appunti
@@ -133,3 +135,5 @@ I miei appunti per il corso di Metodi Analitici e Numerici delle EDP (Equazioni 
 
 La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto. -->
  
+
+{{ addcomments }}

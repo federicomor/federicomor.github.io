@@ -6,8 +6,8 @@ fdplotly(json(plot([1, 2]))
 ```
 """
 function fdplotly(json::String; id="fdp"*Random.randstring('a':'z', 3),
-	 			  style="width:600px;height:350px")::Nothing
-    println("""
+				  style="width:600px;height:350px")::Nothing
+	println("""
 		~~~
 		<div id="$id" style="$style"></div>
 
@@ -18,7 +18,28 @@ function fdplotly(json::String; id="fdp"*Random.randstring('a':'z', 3),
 		</script>
 		~~~
 		""")
-    return nothing
+	return nothing
+end
+
+function hfun_addcomments()
+	return """
+		<script src="https://giscus.app/client.js"
+				data-repo="federicomor/federicomor.github.io"
+				data-repo-id="R_kgDOLBdBYA"
+				data-category="Announcements"
+				data-category-id="DIC_kwDOLBdBYM4Clm0M"
+				data-mapping="url"
+				data-strict="0"
+				data-reactions-enabled="1"
+				data-emit-metadata="0"
+				data-input-position="bottom"
+				data-theme="preferred_color_scheme"
+				data-lang="it"
+				data-loading="lazy"
+				crossorigin="anonymous"
+				async>
+		</script>
+		"""
 end
 
 function hfun_youtube(param)
@@ -72,6 +93,12 @@ function hfun_pdf(param)
 		Link diretto al pdf <a href="$path" target="_blank">qui</a>.
 		Direct link to pdf <a href="$path" target="_blank">here</a>.
 	</p>
+	"""
+end
+
+function hfun_blur(param)
+text=param[1]
+	return """<span style="filter: blur(8px); cursor: pointer; transition: filter 0.5s ease; background-color: #ffffff; outline: none;" onclick="this.style.filter='none'; this.style.cursor='default';">$text</span>
 	"""
 end
 

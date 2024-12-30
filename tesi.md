@@ -21,7 +21,7 @@ Ecco qui il mio caro file della tesi, seguito da una sua breve analisi.
 
 {{ pdf /assets/Tesi/2024_12_Mor_Thesis.pdf }}
 
-### Easter eggs
+### Gli easter eggs
 Evidenziati qui in corsivo:
 - pag 7 (vii sul pdf) la traduzione di "a brand-new implementation..." dall'abstract, diventata nel sommario, cioè l'abstract in italiano, "una nuova, _fiammante_ implementazione..." 🥵
 - pag 51 (35 sul pdf) quando giustifico la rimozione della macro `@fastmath` (che prende un'espressione matematica e la converte in un'altra forma a volte meno precisa ma più veloce) sia perché non aveva molto impatto sulle performance sia _to address concerns from pure mathematicians_ 🤭
@@ -100,3 +100,5 @@ Carico anche le slide usate per la presentazione, dato che non se ne trovano mol
 <!-- ## Il dietro le quinte
 presto scriverò questa parte
  -->
+
+{{ addcomments }}
