@@ -28,41 +28,6 @@ dove però ora i vari valori $S(n-i)$ si devono trovare in modi a volte meno ovv
 \fig{/assets/scripts/output/scale.json}
 <!-- rimuovere i commenti dai codici javascript, sembrano non farli funzionare-->
 
-La scrittura della funzione in forma ricorsiva è utile, didattica, perché rispecchia la soluzione matematica che abbiamo trovato. Tuttavia, per una implementazione più efficiente c'è un altro modo, che al posto della ricorsione usa una tecnica un po' più avanzata (memoization) appartenente al mondo del "dynamic programming". L'idea è infatti che usando la ricorsione molti calcoli vengono ripetuti; in quest'altra versione invece i calcoli vengono salvati e riutilizzati.
-
-```julia
-
-function S_fast(n, k, memo=Dict{Tuple{Int, Int}, Int}())
-	# casi base, come prima
-	n==0 && return 0
-	n==1 && return 1
-
-	# se il risultato è stato già calcolato, ritornalo
-	if haskey(memo, (n, k))
-		return memo[(n, k)]
-	end
-	# altrimenti calcolalo...
-	result = if n < k
-		S(n, n, memo)
-	elseif n == k
-		S(n, k - 1, memo) + 1
-	else
-		sum(S(n - i, k, memo) for i in 1:k)
-	end
-	# ... e salvalo in memo
-	memo[(n, k)] = result
-	return result
-end
-```
-```julia-repl
-julia> @time S(32,5)
- 19.574231 seconds
-1333610936
-
-julia> @time S_fast(32,5)
-  0.000019 seconds (58 allocations: 4.156 KiB)
-1333610936
-```
 ~~~
 
 <label for="inputN">n:</label>
@@ -105,6 +70,45 @@ function calculate() {
 
 ~~~
 
+~~~
+<br>
+~~~
+
+La scrittura della funzione in forma ricorsiva è utile, didattica, perché rispecchia la soluzione matematica che abbiamo trovato. Tuttavia, per una implementazione più efficiente c'è un altro modo, che al posto della ricorsione usa una tecnica un po' più avanzata (memoization) appartenente al mondo del "dynamic programming". L'idea è infatti che usando la ricorsione molti calcoli vengono ripetuti; in quest'altra versione invece i calcoli vengono salvati e riutilizzati.
+
+```julia
+
+function S_fast(n, k, memo=Dict{Tuple{Int, Int}, Int}())
+	# casi base, come prima
+	n==0 && return 0
+	n==1 && return 1
+
+	# se il risultato è stato già calcolato, ritornalo
+	if haskey(memo, (n, k))
+		return memo[(n, k)]
+	end
+	# altrimenti calcolalo...
+	result = if n < k
+		S(n, n, memo)
+	elseif n == k
+		S(n, k - 1, memo) + 1
+	else
+		sum(S(n - i, k, memo) for i in 1:k)
+	end
+	# ... e salvalo in memo
+	memo[(n, k)] = result
+	return result
+end
+```
+```julia-repl
+julia> @time S(32,5)
+ 19.574231 seconds
+1333610936
+
+julia> @time S_fast(32,5)
+  0.000019 seconds (58 allocations: 4.156 KiB)
+1333610936
+```
 
 
 {{ addcomments }}

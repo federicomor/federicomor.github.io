@@ -7,8 +7,8 @@ hasplotly = true
 
 # Attività
 
-Ecco la raccolta di contenuti di divulgazione matematica! \
-All'interno di ogni card che segue c'è una breve descrizione del problema, ma cliccandoci sopra si aprirà la pagina dedicata, con una presentazione del problema più dettagliata, la sua soluzione, e il video in cui racconto tutto. Se non c'è il video è perché devo ancora registrarlo, mentre se proprio non c'è la soluzione è perché ho impostato l'articolo, un po' come un promemoria per me, ma devo ancora finire di scriverlo.
+Ecco la raccolta di contenuti di divulgazione matematica! 🤩\
+All'interno di ogni card che segue c'è una breve descrizione del problema, ma cliccandoci sopra si aprirà la pagina dedicata, con una presentazione del problema più dettagliata, la sua soluzione, e il video in cui racconto tutto. Se non c'è il video è perché devo ancora registrarlo 😊 mentre se proprio non c'è la soluzione è perché ho impostato l'articolo, un po' come un promemoria per me, ma devo ancora finire di scriverlo.
 
 ~~~ 
 <div class="card-container">
@@ -17,7 +17,7 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
     /activity/dropping_eggs}{
         Dropping Eggs}{
             Avete una gallina che depone delle uova particolarmente forti e volete testare la loro resistenza lanciandole da un edificio di 100 piani, con l'obiettivo di trovare il piano più alto da cui un uovo può cadere senza rompersi.\
-            _Che strategia utilizzereste, se aveste solo due uova, per minimizzare il caso peggiore di lanci da effettuare? E se aveste $k$ uova?_}{
+            _Che strategia utilizzereste, se aveste solo due uova, per minimizzare il caso peggiore del numero di lanci da effettuare? E se aveste $k$ uova?_}{
                 /assets/img/gallina2.png}
 \card{
     /activity/babbo_natale_dismutazioni}{
@@ -40,8 +40,8 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
 \card{
     /activity/ipercubi}{
         Ipercubi in \(N\) dimensioni}{
-            Se vuoi contare quanti vertici, lati, e facce abbiamo quadrati o cubi (quindi in 2d o 3d) basta farne un disegno ed osservarli.\
-            _Ma come si calcolano queste caratteristiche geometriche degli (iper)cubi quando ci ambientiamo in dimensioni $N$ generiche?_}{
+            Se vogliamo contare quanti vertici, lati, e facce abbiamo quadrati o cubi (quindi in 2 o 3 dimensioni) basta farne un disegno ed osservarli.\
+            _Ma come si calcolano queste caratteristiche geometriche quando ci ambientiamo in dimensioni $N$ generiche?_}{
                 /assets/img/ipercubi.png}
 \card{
     /activity/probabilità_compleanni}{
@@ -53,24 +53,24 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
     /activity/tennis_tie_break}{
         Tennis tie-break probability}{
             Ci troviamo in una partita di tennis con i due giocatori (A e B) arrivati a 6-6. Durante il match siamo riusciti a stimare due parametri $a$ e $b$ che descrivono le probabilità, per il giocatore A, di vincere un punto quando lui è al servizio o quando B è al servizio, rispettivamente. Sta cominciando il tie-break, e inizierà il giocatore A a servire.\
-            _Dato questo contesto e questi dati, qual è la probabilità che il giocatore A vinca il tie-break?_}{
+            _Dato questo contesto e questi dati, qual è la probabilità che il giocatore A vinca il tie-break (in funzione di $a$ e $b$)?_}{
                 /assets/img/tennis.png}
 \card{
     /activity/strategia_appuntamenti}{
         Strategia ottimale per appuntamenti}{
-            Stimiamo di poter incontrare $M$ possibili partner. Se ne troviamo una che ci piace e ci stabilizziamo con lei, rischiamo di perderci partner futuri migliori. D'altro canto, se ne scartiamo una promettente sperando nelle altre, molto probabilmente non vorrà più tornare da noi nel caso ci ripensassimo. Quindi ci chiediamo:\
+            Stimiamo di poter incontrare $N$ possibili partner. Se ne troviamo una che ci piace e ci stabilizziamo con lei, rischiamo di perderci partner future migliori. D'altro canto, se ne scartiamo una promettente, sperando nelle altre, molto probabilmente non vorrà più tornare da noi nel caso ci ripensassimo. Quindi ci chiediamo:\
             _Quante persone dovremmo frequentare (in percentuale) prima di scegliere quella con cui stabilizzarci per qualcosa di più serio?_}{
                 /assets/img/date1.jpg}
 \card{
     /activity/condivisione_equa_picnic}{
         Condivisione equa di diversi contributi}{
-            Astrid e Beatrice organizzano un picnic portando 3 e 5 porzioni di riso freddo ciascuna. Quando sono sul punto di mangiare ecco che appare Chiara, che arriva senza cibo ma promette di pagare quanto deve. Così le otto porzioni iniziali vengono divise equamente tra le tre amiche. Chiara, ripensando alle porzioni iniziali, pensa di pagare il costo della sua porzione dividendola in 3/8 ad Astrid e 5/8 a Beatrice. Beatrice però si accorge che questa divisione non è precisa.\
+            Astrid e Beatrice hanno organizzato un picnic portando 3 e 5 porzioni di riso freddo, rispettivamente. Quando sono sul punto di mangiare appare anche Chiara, che viene accolta al picnic. Lei non ha portato cibo, ma promette di pagare quanto deve. Così le otto porzioni iniziali vengono divise equamente tra le tre amiche. Chiara, ripensando alle porzioni iniziali, pensa di pagare il costo della sua porzione destinandone 3/8 ad Astrid e 5/8 a Beatrice. Beatrice però si accorge che questa divisione non è precisa.\
             _Come andrebbe calcolata correttamente?_}{
                 /assets/img/picnic3.png}
 \card{
     /activity/triello_statistico}{
         Triello statistico}{
-            Tre signori A, B e C hanno fissato un duello a tre armi: sappiamo che l'accuratezza, ovvero la probabilità di colpire il bersaglio, di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre. L'ordine di inizio è A, B, poi C. Ognuno, al proprio turno, deve sparare un colpo decidendo come vuole il suo bersaglio, valutando quale sia la sua strategia ottimale per sopravvivere. Il triello finisce quando un solo uomo rimane vivo.\
+            Tre signori A, B e C hanno fissato un duello a tre armi. Sappiamo che l'accuratezza, ovvero la probabilità di colpire il bersaglio, di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre. L'ordine di inizio è A, B, poi C. Ognuno, al proprio turno, deve sparare un colpo decidendo come vuole il suo bersaglio, valutando quale sia la sua strategia ottimale per sopravvivere. Il triello finisce quando un solo uomo rimane vivo.\
             _Se voi foste il signor A, quale strategia utilizzereste?_}{
                 /assets/img/duello3.png}
 <!-- \card{

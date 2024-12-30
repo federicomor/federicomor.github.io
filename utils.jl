@@ -35,7 +35,7 @@ function hfun_addcomments()
 				data-input-position="bottom"
 				data-theme="preferred_color_scheme"
 				data-lang="it"
-				data-loading="lazy"
+				// data-loading="lazy"
 				crossorigin="anonymous"
 				async>
 		</script>

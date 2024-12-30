@@ -23,6 +23,9 @@ website_url   = "https://federicomor.github.io/"
 
 <!-- Add here global latex commands to use throughout your pages. -->
 \newcommand{\R}{\mathbb R}
+\newcommand{\Pr}{\mathbb P}
+\newcommand{\p}{\mathbb P}
+\newcommand{\prob}{\mathbb P}
 \newcommand{\scal}[1]{\langle #1 \rangle}
 
 \newcommand{\card}[4]{
@@ -33,7 +36,7 @@ website_url   = "https://federicomor.github.io/"
       <p class="card-text">
 ~~~ #3 ~~~
       </p>
-    <img class="card-image" src="!#4" alt="Card Image">
+    <img class="card-image" src="!#4" alt="Card Image"> 
     </a>
   </div>
 ~~~ 

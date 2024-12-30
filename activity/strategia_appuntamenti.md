@@ -9,7 +9,7 @@ hasplotly = true
 
 Vediamo ora una delle domande più cruciali nella vita sentimentale: _quante persone dovremmo frequentare prima di scegliere quella con cui stabilizzarci per qualcosa di più serio?_
 
-È una domanda difficile, ma la matematica può aiutarci trovando una risposta: il {{ blur 37%}}. In pratica, di tutte le persone con cui possibilmente potremmo fissare un appuntamento, dovremmo conoscere ma scartare a priori le prime {{ blur 37%}}, dalla nostra "scelta definitiva", e poi continuare gli appuntamenti fino ad accasarci con la prima persona che incontriamo e che valutiamo migliore di quelle viste prima; o altrimenti aspettare l'ultima persona, se questa scelta migliore non si presenta.
+È una domanda difficile, ma la matematica può aiutarci trovando una risposta: il {{ blur 37%}}. In pratica, di tutte le persone con cui possibilmente potremmo fissare un appuntamento, dovremmo conoscere ma scartare a priori le prime {{ blur 37%}}, dalla nostra "scelta definitiva", e poi continuare gli appuntamenti fino ad accasarci con la prima persona che incontriamo e che valutiamo migliore di quelle viste prima (o altrimenti aspettare l'ultima persona, se questa scelta migliore non si presenta).
 
 Perché è una buona strategia?[^1] Ovviamente non conviene scegliere la prima persona che incontriamo, per quanto possa sembrare promettente, perché qualcuno di meglio potrebbe apparire più tardi. D'altra parte, non vogliamo nemmeno essere troppo esigenti, perché una volta che rifiutiamo qualcuno molto probabilmente non vorrà tornare da noi qualora ci ripensassimo. Ma quindi perché il {{ blur 37%}}? L'idea è solo di massimizzare le probabilità.
 
@@ -17,7 +17,7 @@ Perché è una buona strategia?[^1] Ovviamente non conviene scegliere la prima p
 
 Più precisamente: supponiamo di volerci "sistemare" entro un certo periodo. Definiamo $N$ come il numero di partner che stimiamo di poter incontrare in questo periodo, e che quindi costituiscono i nostri candidati moglie/marito. Supponiamo di poter assegnare a ogni partner un punteggio da 1 a $N$ per definire il nostro grado di compatibilità[^2]. In questo gruppo ci sarà anche la nostra anima gemella, _quella giusta_, che chiamiamo $X$ e che avrà quindi il punteggio massimo. Vorremo ora definire una strategia che massimizzi la probabilità di trovarla.
 
-Dato $N$, quindi, vorremo capire come bilanciare il rischio tra "scegliere un partner iniziale magari non perfetto" e "scartare partner che invece col senno di poi valeva la pena scegliere", e quindi vorremo definire $M$ come la soglia di persone che delimita i gruppi _scarto_ vs _ci penso_. La nostra strategia, come sopra anticipato, consiste allora nell'incontrare -- ma scartare -- le prime $M$ persone, in modo solo da farci un'idea della qualità delle proposte, e poi scegliere, tra i partner degli appuntamenti successivi, la prima che è migliore della persona migliore incontrata nel gruppo scartato; o altrimenti l'ultima se non si presenta nessuna con questo requisito.
+Dato $N$, quindi, vorremo capire come bilanciare il rischio tra "scegliere un partner iniziale magari non perfetto" e "scartare partner che invece col senno di poi valeva la pena scegliere", e quindi vorremo definire $M$ come la soglia di persone che delimita i gruppi _scarto a priori_ vs _ci penso seriamente_. La nostra strategia, come sopra anticipato, consiste allora nell'incontrare -- ma scartare -- le prime $M$ persone, in modo solo da farci un'idea della qualità delle proposte, e poi scegliere, tra i partner degli appuntamenti successivi, la prima che è migliore della persona migliore incontrata nel gruppo scartato; o altrimenti l'ultima se non si presenta nessuna con questo requisito.
 
 > Problema ispirato da [https://plus.maths.org/content/mathematical-dating](https://plus.maths.org/content/mathematical-dating).
 
@@ -27,7 +27,7 @@ Dato $N$, quindi, vorremo capire come bilanciare il rischio tra "scegliere un pa
 
 
 ### Soluzione
-Ho cercato di mantenere un discorso secondo me simpatico, ordinato, e chiaro, ma senza spoilerare la soluzione. Nel calcolo finale comunque invece la si trova, ma ora vediamo come arrivarci con i calcoli.
+Stavolta ho impostato l'articoletto come una vera storiella di divulgazione, non come domanda e risposta. Nel farlo ho cercato quindi di mantenere un discorso secondo me simpatico, ordinato, e chiaro, ma senza comunque spoilerare la soluzione. Per chi è solo interessato al risultato, basta quindi cliccare sulle parti sfocate di sopra, altrimenti continuate qui per la soluzione completa, con tutti i calcoli per arrivare al risultato finale.
 
 ---
 
