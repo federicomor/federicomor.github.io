@@ -3,73 +3,103 @@
 
 <url>
     <loc>https://federicomor.github.io/template/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://federicomor.github.io/activity/probabilit%C3%A0_compleanni/index.html</loc>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://federicomor.github.io/activity/condivisione_equa_picnic/index.html</loc>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/activity/dropping_eggs/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://federicomor.github.io/activity/strategia_appuntamenti/index.html</loc>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://federicomor.github.io/old_activity/index.html</loc>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/uni/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/activity/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/activity/babbo_natale_dismutazioni/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/activity/ipercubi/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/activity/modi_per_salire_una_scala/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/cv/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/tesi/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://federicomor.github.io/vignette/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <loc>https://federicomor.github.io/activity/tennis_tie_break/index.html</loc>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://federicomor.github.io/activity/sequenza_verso_uno/index.html</loc>
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://federicomor.github.io/activity/triello_statistico/index.html</loc>
+    <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
