@@ -9,15 +9,28 @@ Dato un numero $n$ qualunque, sottraetegli 1 se è dispari, mentre dividetelo pe
 
 Per capire meglio il problema prendete come riferimento gli esempietti che seguono, oppure sperimentate col box interattivo (sempre qui sotto).
 ```julia
-2 → 1 # steps=1
-3 → 2 → 1 # steps=2
-4 → 2 → 1 # steps=2
-5 → 4 → 2 → 1 # steps=3
-10 → 5 → 4 → 2 → 1 # steps=4
-20 → 10 → 5 → 4 → 2 → 1 # steps=5
-30 → 15 → 14 → 7 → 6 → 3 → 2 → 1 # steps=7
-```
+function show_steps_v2(n::Integer)
+    steps = 0
+    while n>1
+        if n%2 == 0
+           n = n÷2
+        else
+           n = n-1
+        end
+        steps += 1
+        print("→ $n ")
+    end
+    print("(steps=$steps)")
+end
 
+2 → 1 (steps=1)
+3 → 2 → 1 (steps=2)
+4 → 2 → 1 (steps=2)
+5 → 4 → 2 → 1 (steps=3)
+10 → 5 → 4 → 2 → 1 (steps=4)
+20 → 10 → 5 → 4 → 2 → 1 (steps=5)
+30 → 15 → 14 → 7 → 6 → 3 → 2 → 1 (steps=7)
+```
 
 ~~~
 </body>
