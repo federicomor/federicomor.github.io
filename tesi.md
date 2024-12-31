@@ -19,7 +19,7 @@ title = "Tesi"
 ## La tesi
 Ecco qui il mio caro file della tesi, seguito da una sua breve analisi.
 
-{{ pdf /assets/Tesi/2024_12_Mor_Thesis.pdf }}
+{{ pdf /assets/tesi/2024_12_Mor_Thesis.pdf }}
 
 ### Gli easter eggs
 Evidenziati qui in corsivo:
@@ -65,7 +65,7 @@ Un'altra piccola questione interessante era quella di come indicare nome dell'au
 ### Il titolo
 Il titolo completo è "The DRPM Strikes Back: More Flexibility for a Bayesian Spatio-Temporal Clustering Model". La seconda parte è quella seria, la prima è invece chiaramente ispirata al film di Star Wars "The Empire Strikes Back", che per quanto divertente è comunque sensata, motivata. Infatti il lavoro di tesi è consistito nel prendere questo modello, il DRPM, che esisteva già, creato da altri autori qualche anno fa, e migliorarlo, generalizzarlo. Quindi in effetti "il modello ha colpito ancora", la sua vita non è finita con l'articolo dei primi autori, ma ha proseguito una seconda volta col mio lavoro.
 
-\fig{/assets/Tesi/THE DRPM cut.png}
+\fig{/assets/tesi/THE DRPM cut.png}
 
 Comunque, prima che vincesse questa scelta avevo in realtà anche altre alternative in mente (tra tonde la versione del titolo originale):
 - sempre da Star Wars, "the revenge of the DRPM" (the revenge of the Sith)
@@ -94,7 +94,7 @@ Carico anche le slide usate per la presentazione, dato che non se ne trovano mol
 5. due slide finali riassuntive per indicare i punti forti del vostro lavoro e i punti deboli o eventuali idee di sviluppo future
 4. le reference (la bibliografia) principale, ovvero la lista dei riferimenti più rilevanti
 
-{{ pdf /assets/Tesi/2024_12_Mor_Slides.pdf }}
+{{ pdf /assets/tesi/2024_12_Mor_Slides.pdf }}
 
 
 <!-- ## Il dietro le quinte

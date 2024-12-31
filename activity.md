@@ -64,7 +64,7 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
 \card{
     /activity/condivisione_equa_picnic}{
         Condivisione equa di diversi contributi}{
-            Astrid e Beatrice hanno organizzato un picnic portando 3 e 5 porzioni di riso freddo, rispettivamente. Quando sono sul punto di mangiare appare anche Chiara, che viene accolta al picnic. Lei non ha portato cibo, ma promette di pagare quanto deve. Così le otto porzioni iniziali vengono divise equamente tra le tre amiche. Chiara, ripensando alle porzioni iniziali, pensa di pagare il costo della sua porzione destinandone 3/8 ad Astrid e 5/8 a Beatrice. Beatrice però si accorge che questa divisione non è precisa.\
+            Astrid e Beatrice hanno organizzato un picnic portando 3 e 5 porzioni di riso freddo, rispettivamente. Quando sono sul punto di mangiare appare anche Chiara, che viene accolta al picnic. Lei non ha portato cibo, ma promette di pagare dopo quanto deve; e così le otto porzioni iniziali vengono divise equamente tra le tre amiche. Chiara, ripensando alle porzioni iniziali, pensa di pagare il costo della sua porzione destinandone 3/8 ad Astrid e 5/8 a Beatrice. Beatrice però si accorge che questa divisione non è precisa.\
             _Come andrebbe calcolata correttamente?_}{
                 /assets/img/picnic3.png}
 \card{
