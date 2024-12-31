@@ -9,7 +9,7 @@ Dato un numero $n$ qualunque, sottraetegli 1 se è dispari, mentre dividetelo pe
 
 Per capire meglio il problema prendete come riferimento gli esempietti che seguono, oppure sperimentate col box interattivo (sempre qui sotto).
 ```julia
-function show_steps_v2(n::Integer)
+function show_steps(n::Integer)
     steps = 0
     while n>1
         if n%2 == 0
@@ -32,7 +32,7 @@ end
 30 → 15 → 14 → 7 → 6 → 3 → 2 → 1 (steps=7)
 ```
 
-~~~
+<!-- ~~~
 </body>
 <body>
 
@@ -72,7 +72,7 @@ function calculate() {
 
 ~~~
 <br>
-~~~
+~~~ -->
 
 Tuttavia, simulare questi passaggi (sottrarre 1 o dividere per 2) può diventare dispendioso per numeri molto alti: vorremo quindi trovare un modo che, dato un numero $n$, ci dia una risposta più immediata per il numero di passi necessari per arrivare a 1. Esiste quindi una "formula" generale, in funzione di $n$, che calcoli direttamente la soluzione?
 
