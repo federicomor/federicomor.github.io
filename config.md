@@ -36,7 +36,7 @@ website_url   = "https://federicomor.github.io/"
       <p class="card-text">
 ~~~ #3 ~~~
       </p>
-    <img class="card-image" src="!#4" alt="Card Image"> 
+    <img class="card-image" src="!#4" alt="Card Image">
     </a>
   </div>
 ~~~ 

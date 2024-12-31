@@ -21,53 +21,13 @@ Per capire meglio il problema prendete come riferimento gli esempietti che seguo
 
 <label for="inputN">n:</label>
 <input type="number" id="inputN" min="1">
-<label for="inputK">k:</label>
-<input type="number" id="inputK" min="1">
+<!-- <label for="inputK">k:</label> -->
+<!-- <input type="number" id="inputK" min="1"> -->
 <button onclick="calculate()">Calcola</button>
 <div id="result"></div>
     
 <script>
 function S(n, k) {
-    let dp = Array.from({ length: n + 1 }, () => Array(k + 1).fill(0));
-    for (let j = 1; j <= k; j++) {
-        dp[1][j] = 1;
-    }
-    for (let i = 2; i <= n; i++) {
-        for (let j = 1; j <= k; j++) {
-            if (i < j) {
-                dp[i][j] = dp[i][i];
-            } else if (i == j) {
-                dp[i][j] = dp[i][j - 1] + 1;
-            } else {
-                dp[i][j] = 0;
-                for (let m = 1; m <= j; m++) {
-                    dp[i][j] += dp[i - m][j];
-                }
-            }
-        }
-    }
-    return dp[n][k];
-}
-
-function calculate() {
-    let n = parseInt(document.getElementById("inputN").value);
-    let k = parseInt(document.getElementById("inputK").value);
-    let result = S(n, k);
-    document.getElementById("result").innerText = `Risultato: ${result}`;
-}
-</script>
-
-~~~
-
-~~~
-
-<label for="numberInput">Scegli tu n:</label>
-<input type="number" id="numberInput" min="1">
-<button onclick="showSteps()">calcola</button>
-<div id="outputSteps"></div>
-
-<script>
-function steps(n) {
     if (isNaN(n) || n < 1) {
         return;
     }
@@ -85,10 +45,12 @@ function steps(n) {
     result += ` (passi totali: ${steps})`;
     return result;
 }
-function showSteps() {
-    let n = parseInt(document.getElementById("numberInput").value);
-    let result = steps(n);
-    document.getElementById("outputSteps").innerText = `${result}`; 
+
+function calculate() {
+    let n = parseInt(document.getElementById("inputN").value);
+    // let k = parseInt(document.getElementById("inputK").value);
+    let result = S(n);
+    document.getElementById("result").innerText = `${result}`;
 }
 </script>
 
