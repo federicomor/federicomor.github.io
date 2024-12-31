@@ -18,16 +18,9 @@ Per capire meglio il problema prendete come riferimento gli esempietti che seguo
 30 → 15 → 14 → 7 → 6 → 3 → 2 → 1 # steps=7
 ```
 ~~~
-
-<label for="inputN">n:</label>
-<input type="number" id="inputN" min="1">
-<!-- <label for="inputK">k:</label> -->
-<!-- <input type="number" id="inputK" min="1"> -->
-<button onclick="calculate()">Calcola</button>
-<div id="result"></div>
     
-<script>
-function S(n, k) {
+<script type="text/javascript">
+function S(n) {
     if (isNaN(n) || n < 1) {
         return;
     }
@@ -54,7 +47,18 @@ function calculate() {
 }
 </script>
 
+<body>
+<label for="inputN">n:</label>
+<input type="number" id="inputN" min="1">
+<!-- <label for="inputK">k:</label> -->
+<!-- <input type="number" id="inputK" min="1"> -->
+<button onclick="calculate()">Calcola</button>
+<div id="result"></div>
+</body>
+
 ~~~
+
+
 
 ~~~
 <br>
