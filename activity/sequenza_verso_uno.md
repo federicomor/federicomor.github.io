@@ -7,7 +7,7 @@ hasplotly = true
 ### In cammino verso l'unità
 Dato un numero $n$ qualunque, sottraetegli 1 se è dispari, mentre dividetelo per 2 se è pari. Quanti passi sono necessari per arrivare a 1?
 
-Per capire meglio il problema prendete come riferimento gli esempietti che seguono, oppure sperimentate col box interattivo (sempre qui sotto).
+Per capire meglio il problema prendete come riferimento gli esempietti che seguono.
 ```julia
 function show_steps(n::Integer)
     steps = 0
