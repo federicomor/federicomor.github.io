@@ -17,48 +17,45 @@ Per capire meglio il problema prendete come riferimento gli esempietti che seguo
 20 → 10 → 5 → 4 → 2 → 1 # steps=5
 30 → 15 → 14 → 7 → 6 → 3 → 2 → 1 # steps=7
 ```
+
+
 ~~~
+<p></p>
+~~~
+
+~~~
+
+<label for="inputN">n:</label>
+<input type="number" id="inputN" min="1">
+<button onclick="calculate()">Calcola</button>
+<div id="result"></div>
     
-<script type="text/javascript">
+<script>
 function S(n) {
-    if (isNaN(n) || n < 1) {
-        return;
-    }
     let steps = 0;
-    let result = `${n} `;
+    let res = `${n} `;
     while (n > 1) {
+        console.log(res);
         if (n % 2 === 0) {
             n = n / 2; // Divide by 2 if even
         } else {
             n = n - 1; // Subtract 1 if odd
         }
         steps++;
-        result += `-> ${n} `;
+        res += `→ ${n} `;
     }
-    result += ` (passi totali: ${steps})`;
-    return result;
+    res += ` (passi totali: ${steps})`;
+    return res;
 }
 
 function calculate() {
     let n = parseInt(document.getElementById("inputN").value);
-    // let k = parseInt(document.getElementById("inputK").value);
     let result = S(n);
     document.getElementById("result").innerText = `${result}`;
 }
 </script>
 
-<body>
-<label for="inputN">n:</label>
-<input type="number" id="inputN" min="1">
-<!-- <label for="inputK">k:</label> -->
-<!-- <input type="number" id="inputK" min="1"> -->
-<button onclick="calculate()">Calcola</button>
-<div id="result"></div>
-</body>
-
 ~~~
-
-
 
 ~~~
 <br>
