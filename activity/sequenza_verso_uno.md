@@ -20,10 +20,8 @@ Per capire meglio il problema prendete come riferimento gli esempietti che seguo
 
 
 ~~~
-<p></p>
-~~~
-
-~~~
+</body>
+<body>
 
 <label for="inputN">n:</label>
 <input type="number" id="inputN" min="1">
@@ -54,6 +52,8 @@ function calculate() {
     document.getElementById("result").innerText = `${result}`;
 }
 </script>
+</body>
+<body>
 
 ~~~
 
