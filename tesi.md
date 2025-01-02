@@ -65,7 +65,7 @@ Un'altra piccola questione interessante era quella di come indicare nome dell'au
 ### Il titolo
 Il titolo completo è "The DRPM Strikes Back: More Flexibility for a Bayesian Spatio-Temporal Clustering Model". La seconda parte è quella seria, la prima è invece chiaramente ispirata al film di Star Wars "The Empire Strikes Back", che per quanto divertente è comunque sensata, motivata. Infatti il lavoro di tesi è consistito nel prendere questo modello, il DRPM, che esisteva già, creato da altri autori qualche anno fa, e migliorarlo, generalizzarlo. Quindi in effetti "il modello ha colpito ancora", la sua vita non è finita con l'articolo dei primi autori, ma ha proseguito una seconda volta col mio lavoro.
 
-\fig{/assets/tesi/THE DRPM cut.png}
+\fig{/assets/tesi/THE DRPM.png}
 
 Comunque, prima che vincesse questa scelta avevo in realtà anche altre alternative in mente (tra tonde la versione del titolo originale):
 - sempre da Star Wars, "the revenge of the DRPM" (the revenge of the Sith)
