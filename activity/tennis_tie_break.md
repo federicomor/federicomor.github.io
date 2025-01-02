@@ -51,7 +51,7 @@ Il grafico che segue mostra la probabilità di vittoria per il giocatore A, indi
 \fig{/assets/scripts/output/tennis_surface.json}
 \fig{/assets/scripts/output/tennis_contourf.json}
 
-Notiamo anche come il tie-break, in cui il primo a servire fa solo un servizio e poi dal primo punto in poi ci si alterna due servizi a testa (quindi la sequenza di battute sarebbe ABBAABBAA...), ha questa apparentemente strana regola che in realtà funziona benissimo. Infatti il tie-break in questo modo è equo: chiunque cominci al servizio non ha un vantaggio a priori. Questo lo si vede anche dai calcoli (naturalmente 😉), in cui leggendo il calcolo dalla prospettiva di B, simulando quindi che sia lui a servire per primo e quindi invertendo i parametri $a$, e $b$, otterremo le stesse probabilità di vittoria.
+Notiamo anche come il tie-break, in cui il primo a servire fa solo un servizio e poi dal primo punto in poi ci si alterna due servizi a testa (quindi la sequenza di battute sarebbe ABBAABBAA...), ha questa apparentemente strana regola che in realtà funziona benissimo. Infatti il tie-break in questo modo è equo: chiunque cominci al servizio non ha un vantaggio a priori. Questo lo si vede anche dai calcoli (naturalmente 😉), in cui leggendo il calcolo sempre nella prospettiva di A, ma nel caso in cui fosse B il primo a servire (e quindi dovremmo invertire i parametri $a$, e $b$), otterremo comunque le stesse probabilità di vittoria.
 
 Usando i numeri decimali classici (i Float64) sembra che escano valori diversi; ma in realtà sono solo dovuti ad approssimazioni numeriche: passando ad una rappresentazione più precisa (i BigFloat) tutto torna.
 ```julia-repl
@@ -68,7 +68,7 @@ julia> ptiebreak(BigFloat(0.70),BigFloat(0.60))
 0.8881752145777777236370136878239485198844074151971728203443474502251501326155067
 ```
 
-A questo punto magari vi chiederete: ma perché allora in informatica non si usano sempre i BigFloat o comunque queste rappresentazioni più precise? La risposta è sia perché ok sono più precise ma molto più dispensiose, in termini di memoria e tempo di esecuzione,
+A questo punto magari vi chiederete: ma perché allora in informatica non si usano sempre i BigFloat o comunque queste rappresentazioni più precise? La risposta è sia perché ok sono più precise ma sono anche molto più dispensiose, in termini di memoria e tempo di esecuzione,
 ```julia-repl
 julia> @time ptiebreak(BigFloat(0.60),BigFloat(0.70))
   0.012136 seconds (15.61 k allocations: 573.875 KiB)
@@ -78,7 +78,7 @@ julia> @time ptiebreak(0.60,0.70)
   0.000018 seconds (6 allocations: 576 bytes)
 0.8881752145777776
 ```
-e sia perché la precisione base in genere è sufficiente, non ci sono infatti molti scenari in cui i calcoli effettuati da un computer devono avere un così alto livello di precisione.
+e sia perché la precisione base in genere è sufficiente. Non sono infatti molti gli scenari in cui i calcoli effettuati da un computer devono avere un così alto livello di precisione.
 
 {{ addcomments }}
 
