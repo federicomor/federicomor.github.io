@@ -98,20 +98,33 @@ Questo è un piccolo esempio di come appare il gioco nella mia versione in Julia
 
 
 ## Corsi e Appunti
-Quando sistemerò (o anche solo scansionerò) tutti i miei appunti popolerò meglio anche questa sezione. 
+Quando sistemerò (o anche solo scansionerò) tutti i miei appunti popolerò meglio anche questa sezione.
 
-A seconda dei casi, e dei corsi, non carico qui i miei appunti effettivi, quelli presi sui quaderni durante le lezioni, ma piuttosto le loro "rielaborazioni" che in genere faccio quando studio una materia. Moralmente queste rielaborazioni condensano insieme varie fonti: gli appunti effettivi visti a lezione, metodi ed esempi visti ad esercitazione, qualcosa tratto da libri o trovato online, ecc; il tutto per arrivare a una forma nella versione più chiara, ordinata e studiabile possibile.\
-Se carico invece gli appunti effettivi dei quaderni è perché o per quel corso non ho avuto voglia di riordinare e integrare il materiale, o semplicemente perché per i miei gusti di studio erano già usciti perfettamente nel formato quaderno (per esempio quelli del corso di ARF).
+A seconda dei casi, e dei corsi, non carico qui i miei appunti effettivi, quelli presi sui quaderni durante le lezioni, ma piuttosto le loro "rielaborazioni" che in genere faccio quando studio una materia. Moralmente queste rielaborazioni condensano insieme varie fonti: gli appunti effettivi presi a lezione, metodi ed esempi visti ad esercitazione, qualcosa tratto da libri o trovato online, ecc; il tutto per arrivare a una forma nella versione più chiara, ordinata e studiabile possibile.\
+Se carico invece gli appunti effettivi dei quaderni è perché o per quel corso non ho avuto voglia di riordinare e integrare il materiale, o semplicemente perché tali appunti, per i miei gusti di studio, erano già usciti perfettamente nel formato quaderno (per esempio quelli del corso di ARF).
 
 
-#### BS - Bayesian Statistics
+#### BS - Bayesian Statistics (magistrale)
 {{ pdf /assets/uni/Appunti_Bayesian.pdf}}
 
-### OPT - Optimization
+#### OPT - Optimization (magistrale)
 <!-- {{ pdf /assets/uni/Opt_slides.pdf}} -->
 {{ pdf /assets/uni/Opt_riassunti.pdf }}
 {{ pdf /assets/uni/Discrete_Opt.pdf }}
 {{ pdf /assets/uni/Nonlinear_Opt.pdf }}
+
+#### Analisi 3 (triennale)
+{{ pdf /assets/uni/Appunti_Analisi3.pdf }}
+
+
+#### EDP - Equazioni Differenziali alle Derivate Parziali (triennale)
+
+Ecco i miei appunti per il corso di Metodi Analitici e Numerici delle EDP. Corso tostissimo, ma gli appunti mi sono usciti davvero molto bene: era il periodo in cui mi sono accorto che scrivere a quadretti alternati era una mera forzatura e convenzione imposta dagli ordini inferiori di educazione scolastica, e quindi qui ho iniziato la mia conversione alla scrittura su ogni quadretto (ma ovviamente mantenendo sempre l'ordine, ad esempio limitando a tre il numero di righe consecutive scrivibili prima di una riga vuota di spaziatura). 
+<!-- La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto. -->
+
+{{ pdf /assets/uni/Appunti_EDP.pdf }}
+
+<!-- In realtà per EDP avevo fatto anche dei "riassunti" di questi appunti, e dato che il mio metodo di studio è abbastanza visuale li avevo scritti su fogli da disegno del liceo (quindi formato a2 credo)! -->
 
 <!-- 
 ### SDE (magistrale, anno 1)
@@ -125,15 +138,9 @@ Qualora poi l'attività di divulgazione matematica diventasse florida la prima i
 
 Il formulario per l'esame di Elettronica. Con vari easter egg all'interno.
 
-{{ pdf /assets/uni/formulario_elettronica_intero.pdf }}
+{{ pdf /assets/uni/formulario_elettronica_intero.pdf }} -->
 
-### EDP (triennale, anno 3)
+## Il mio metodo di studio
 
-I miei appunti per il corso di Metodi Analitici e Numerici delle EDP (Equazioni Differenziali alle Derivate Parziali). Corso tostissimo, forse il più difficile che abbia affrontato nei vari anni. Ma gli appunti mi sono usciti benissimo, era nel periodo in cui mi sono accorto che scrivere a quadretti alternati era una mera forzatura e convenzione imposta dagli ordini inferiori di educazione scolastica, quindi qui ho iniziato la mia conversione alla scrittura su ogni quadretto (ma ovviamente mantenendo sempre l'ordine, ad esempio limitando a tre il numero di righe consecutive scrivibili prima di una riga vuota di spaziatura).
-
-{{ pdf /assets/uni/Appunti_EDP.pdf }}
-
-La vera chiccca sono anche tutti i commenti in matita, che appunto commentano gli appunti "seri" scritti in penna e permettono di comprendere meglio tutto. -->
- 
 
 {{ addcomments }}

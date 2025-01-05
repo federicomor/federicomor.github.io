@@ -9,8 +9,8 @@ Immaginate di essere un allevatore che, incrociando varie razze di gallina, è r
 
 Se aveste un solo uovo sapreste subito come fare: lanciate l'uovo dal primo piano, se non si rompe passate al secondo, se non si rompe ancora passate al terzo, poi al quarto, e così via, fino a incontrare il primo piano in cui si rompe (o non incontrarne nessuno nel caso in cui anche al 100esimo piano l'uovo non si rompa). Ci vorrebbero, nel caso peggiore, 100 lanci per trovare la soluzione. 
 
-Ma ora supponiamo che voi abbiate 2 uova. Quale strategia utilizzereste ora per trovare la risposta in modo da minimizzare il caso peggiore del numero di lanci da effettuare?
-Supponete infine di avere $k$ uova. Quale strategia utilizzereste, in questo caso (sempre per minimizzare il caso peggiore del numero di lanci da effettuare)?
+Ma ora supponiamo che voi abbiate 2 uova. Quale strategia utilizzereste ora per trovare la risposta in modo da minimizzare il caso peggiore del numero di lanci da effettuare?\
+Supponete infine di avere $k$ uova. Quale strategia utilizzereste, in questo caso? (sempre per minimizzare il caso peggiore del numero di lanci da effettuare)
 
 \fig{/assets/img/gallina2_cut.png}
 
@@ -41,24 +41,29 @@ La funzione che segue simula l'esecuzione del lancio di $k$ uova, usando un _jum
 
 ```julia
 function the_egg_breaks(testing_floor, critical_floor)
-    return testing_floor>critical_floor
+  return testing_floor>critical_floor
 end
 
-function print_summary(eggs::Integer, floor::Integer, steps::Integer, jump_size::Integer, solution)
-    println("jump size = $(rpad(jump_size,2)), ",
-            "🏯=$(rpad(string(floor),3)), ",
-            "🥚=$(rpad(string(eggs),2)), ",
-            "🪜=$(rpad(string(steps),2))")
+function print_summary(eggs::Integer,floor::Integer,steps::Integer,jump_size::Integer,solution)
+  println("jump size = $(rpad(jump_size,2)), ",
+      "🏯=$(rpad(string(floor),3)), ",
+      "🥚=$(rpad(string(eggs),2)), ",
+      "🪜=$(rpad(string(steps),2))")
 end
 
 function foundable(solution::Vector, verbose=false)
-    if verbose println(join(map(string, solution))); end
-    # 2 was the default value
-    # 1 is for floors where the egg breaks
-    # 0 is for floors where the egg does not break
-    return occursin("01",join(map(string, solution))) || 
-           join(map(string, solution)) == repeat('0',100)
+  # if verbose println(join(map(string, solution))); end
+  # 2 was the default value
+  # 1 is for floors where the egg breaks
+  # 0 is for floors where the egg does not break
+  return occursin("01",join(map(string, solution))) || join(map(string, solution)) == repeat('0',100)
+  # all'inizio solution era un vettore di soli 2: 22222...22222
+  # lanciando le uova identifichiamo le zone in cui si rompe (1) o resta integro (0)
+  # quindi il piano critico si può individueare se
+  # - incontriamo un pezzo "01" nella stringa solution (prima parte del return); o
+  # - se da nessun piano l'uovo cadendo si rompe (seconda parte del return)
 end
+
 
 function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool; decrement=true)
   solution = 2 .* ones(Int,100)
@@ -71,7 +76,7 @@ function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool; decr
 
   while !foundable(solution,verbose) && steps<=100
     interval_focus = findlast(x->x=='2',join(map(string, solution))) - 
-                     findfirst(x->x=='2',join(map(string, solution))) + 1
+             findfirst(x->x=='2',join(map(string, solution))) + 1
     eggs<1 && return NaN
     jump_size<1 && return NaN
     current_floor<1 && return NaN
@@ -85,24 +90,30 @@ function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool; decr
     current_floor=min(current_floor,max_index)
   
     if the_egg_breaks(current_floor, critical_floor)
+      # se l'uovo si è rotto aggiorniamo solution segnandoci che si romperebbe da lì in poi,
       eggs -= 1
       steps += 1
       solution[current_floor:end] .= 1
       if verbose print_summary(eggs,current_floor,steps,jump_size,solution); end
+      # torniamo all'ultimo "checkpoint",
       current_floor = previous_floor +1
+      # e aggiorniamo il jump_size
       jump_size = eggs>=1 ? strats[eggs] : 1
     else
+      # se l'uovo non si è rotto aggiorniamo solution segnandoci che non si rompe fino a lì,
       solution[1:current_floor] .= 0
       steps += 1
       if verbose print_summary(eggs,current_floor,steps,jump_size,solution); end
+      # aggiorniamo jump_size, se necessario,
       if (eggs>1 || jump_size>1) && decrement jump_size -= 1 end
+      # salviamo il piano corrente,
       previous_floor = current_floor
+      # e passiamo al prossimo piano da testare
       current_floor += jump_size
     end
   end
   return steps
 end
-
 ```
 ```julia-repl
 # with two eggs

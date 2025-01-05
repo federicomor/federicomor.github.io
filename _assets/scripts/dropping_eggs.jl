@@ -15,6 +15,11 @@ function foundable(solution::Vector, verbose=false)
 	# 1 is for floors where the egg breaks
 	# 0 is for floors where the egg does not break
 	return occursin("01",join(map(string, solution))) || join(map(string, solution)) == repeat('0',100)
+	# all'inizio solution era un vettore di soli 2: 22222...22222
+	# lanciando le uova identifichiamo le zone in cui si rompe (1) o resta integro (0)
+	# quindi il piano critico si può individueare se
+	# - incontriamo un pezzo "01" nella stringa solution (prima parte del return); o
+	# - se da nessun piano l'uovo cadendo si rompe (seconda parte del return)
 end
 
 
@@ -28,13 +33,8 @@ function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool; decr
 	jump_size = strats[eggs]
 
 	while !foundable(solution,verbose) && steps<=100
-		# if eggs>1
-			interval_focus = findlast(x->x=='2',join(map(string, solution))) - 
-							 findfirst(x->x=='2',join(map(string, solution))) + 1
-			# @show interval_focus+1
-			# @assert jump_size*(jump_size+1) / 2 >= interval_focus "Provide a larger strategy step for the case with $eggs eggs"
-			# jump_size*(jump_size+1) / 2 < interval_focus && return NaN
-		# end
+		interval_focus = findlast(x->x=='2',join(map(string, solution))) - 
+						 findfirst(x->x=='2',join(map(string, solution))) + 1
 		eggs<1 && return NaN
 		jump_size<1 && return NaN
 		current_floor<1 && return NaN
@@ -48,24 +48,26 @@ function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool; decr
 		current_floor=min(current_floor,max_index)
 	
 		if the_egg_breaks(current_floor, critical_floor)
+			# se l'uovo si è rotto aggiorniamo solution segnandoci che si romperebbe da lì in poi,
 			eggs -= 1
 			steps += 1
 			solution[current_floor:end] .= 1
 			if verbose print_summary(eggs,current_floor,steps,jump_size,solution); end
-			# current_floor = current_floor - jump_size +1
+			# torniamo all'ultimo "checkpoint",
 			current_floor = previous_floor +1
+			# e aggiorniamo il jump_size
 			jump_size = eggs>=1 ? strats[eggs] : 1
 		else
+			# se l'uovo non si è rotto aggiorniamo solution segnandoci che non si rompe fino a lì,
 			solution[1:current_floor] .= 0
 			steps += 1
 			if verbose print_summary(eggs,current_floor,steps,jump_size,solution); end
+			# aggiorniamo jump_size, se necessario,
 			if (eggs>1 || jump_size>1) && decrement jump_size -= 1 end
-			# @show interval_focus
+			# salviamo il piano corrente,
 			previous_floor = current_floor
+			# e passiamo al prossimo piano da testare
 			current_floor += jump_size
-			# TODO (maybe): fix the useless long jump if few slots remain
-			# eg. why do +7 if we are in [95,100]
-			# current_floor += min(jump_size,Int64(floor(interval_focus/2)))
 		end
 	end
 	return steps

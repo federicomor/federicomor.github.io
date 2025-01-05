@@ -28,7 +28,7 @@ website_url   = "https://federicomor.github.io/"
 \newcommand{\prob}{\mathbb P}
 \newcommand{\scal}[1]{\langle #1 \rangle}
 
-\newcommand{\card}[4]{
+\newcommand{\card}[5]{
 ~~~ 
   <div class="card">
   <a href="!#1" style="display: block; text-decoration: none; color: inherit;">
@@ -37,6 +37,7 @@ website_url   = "https://federicomor.github.io/"
 ~~~ #3 ~~~
       </p>
     <img class="card-image" src="!#4" alt="Card Image">
+    <small class="card-note">#5</small>
     </a>
   </div>
 ~~~ 
