@@ -91,7 +91,7 @@ Ancora in costruzione.
         <div class="legend-item"><div class="legend-color approxximate"></div> approxximate: trovata una soluzione che approssima quella esatta</div>
         <div class="legend-item"><div class="legend-color blank"></div> blank: ancora da affrontare</div>
         <div class="legend-item"><div class="legend-color solved"></div> solved: risolto, con soluzione commentata</div>
-        <div class="legend-item"><div class="legend-color video"></div> video: risolto, e c'è anche il video</div>
+        <div class="legend-item"><div class="legend-color video"></div> video: risolto, commentato, e c'è anche il video</div>
     </div>
     <br>
     <br>

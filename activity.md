@@ -19,7 +19,10 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             <!-- "Write code, do math, make friends" :)\ -->
             Una raccolta di storiche challenge da risolvere per metodi matematici (scervellandosi in vari modi) o informatici (scrivendo dell'opportuno codice). Sono più di 900 problemi quindi ci sarà molto materiale con cui cimentarsi.}{
                 /assets/img/peuler2.jpg}{}
-
+~~~ 
+</div> <!-- card container -->
+<div class="card-container">
+~~~ 
 \card{
     /activity/dropping_eggs}{
         Dropping Eggs}{
