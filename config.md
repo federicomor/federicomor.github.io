@@ -28,6 +28,7 @@ website_url   = "https://federicomor.github.io/"
 \newcommand{\prob}{\mathbb P}
 \newcommand{\scal}[1]{\langle #1 \rangle}
 
+
 \newcommand{\card}[5]{
 ~~~ 
   <div class="card">

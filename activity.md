@@ -14,6 +14,13 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
 <div class="card-container">
 ~~~
 \card{
+    /activity/project_euler}{
+        Problemi del progetto Eulero}{
+            <!-- "Write code, do math, make friends" :)\ -->
+            Una raccolta di storiche challenge da risolvere per metodi matematici (scervellandosi in vari modi) o informatici (scrivendo dell'opportuno codice). Sono più di 900 problemi quindi ci sarà molto materiale con cui cimentarsi.}{
+                /assets/img/peuler2.jpg}{}
+
+\card{
     /activity/dropping_eggs}{
         Dropping Eggs}{
             Avete una gallina che depone delle uova particolarmente forti e volete testare la loro resistenza lanciandole da un edificio di 100 piani, con l'obiettivo di trovare il piano più alto da cui un uovo può cadere senza rompersi.\
@@ -58,8 +65,8 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
 \card{
     /activity/strategia_appuntamenti}{
         Strategia ottimale per appuntamenti}{
-            Stimiamo di poter incontrare $N$ possibili partner. Se ne troviamo una che ci piace e ci stabilizziamo con lei, rischiamo di perderci partner future migliori. D'altro canto, se ne scartiamo una promettente, sperando nelle altre, molto probabilmente non vorrà più tornare da noi nel caso ci ripensassimo. Quindi ci chiediamo:\
-            _Quante persone dovremmo frequentare (in percentuale) prima di scegliere quella con cui stabilizzarci per qualcosa di più serio?_}{
+            Stimiamo di poter incontrare $N$ possibili partner. Se ne troviamo una che ci piace e ci stabilizziamo con lei, rischiamo di perderci partner future migliori. D'altro canto, se ne scartiamo una promettente, sperando nelle altre, molto probabilmente non vorrà più tornare da noi nel caso ci ripensassimo.
+            _Quindi, quante persone dovremmo frequentare (in percentuale) prima di scegliere quella con cui stabilizzarci per qualcosa di più serio?_}{
                 /assets/img/date1.jpg}{molto bello ma per ora solo impostato}
 \card{
     /activity/condivisione_equa_picnic}{

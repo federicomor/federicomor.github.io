@@ -205,10 +205,10 @@ th {
   border: 1px solid #e5e5e5;
 }
 
-tbody tr:nth-child(odd) td,
+/*tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
-}
+}*/
 
 /*
  *  __                  __
@@ -259,6 +259,7 @@ html {
   padding: 2rem 1rem;
   color: rgba(255, 255, 255, 0.5);
   background-color: #202020;
+  z-index: 1000;
 }
 
 @media (min-width: 768px) {
