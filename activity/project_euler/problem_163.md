@@ -1,0 +1,43 @@
++++
+title = "Cross-hatched Triangles"
+hascode = true
+hasplotly = true
++++
+
+~~~
+<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<a href="/activity/project_euler/problem_162/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
+<a href="/activity/project_euler/problem_164/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
+</p>
+~~~
+
+~~~
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
+<script src="https://projecteuler.net/js/mathjax_config.js"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<div id="content">
+
+<div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
+<h2>Cross-hatched Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th October 2007, 02:00 am; Solved by 2053;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=163">Problem 163</a></h3></div>
+<div class="problem_content" role="problem">
+<p>Consider an equilateral triangle in which straight lines are drawn from each vertex to the middle of the opposite side, such as in the <i>size $1$</i> triangle in the sketch below.</p>
+<div class="center"><img src="https://projecteuler.net/resources/images/0163.gif?1678992055" class="dark_img" alt=""></div>
+<p>Sixteen triangles of either different shape or size or orientation or location can now be observed in that triangle. Using <i>size $1$</i> triangles as building blocks, larger triangles can be formed, such as the <i>size $2$</i> triangle in the above sketch. One-hundred and four triangles of either different shape or size or orientation or location can now be observed in that <i>size $2$</i> triangle.</p>
+<p>It can be observed that the <i>size $2$</i> triangle contains $4$ <i>size $1$</i> triangle building blocks. A <i>size $3$</i> triangle would contain $9$ <i>size $1$</i> triangle building blocks and a <i>size $n$</i> triangle would thus contain $n^2$ <i>size $1$</i> triangle building blocks.</p>
+<p>If we denote $T(n)$ as the number of triangles present in a triangle of <i>size $n$</i>, then</p>
+\begin{align}
+T(1) &amp;= 16\\
+T(2) &amp;= 104
+\end{align}
+<p>Find $T(36)$.</p>
+
+</div><br>
+<br>
+</div> <!--end_content-->
+~~~
+## Soluzione

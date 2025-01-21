@@ -80,21 +80,21 @@ h2 {
 h3, h4 {
    font-family: var(--font-monospace);
 }
-a {
+/*a {
    font-weight: 600;
    text-decoration: none;
    color: var(--color-text-link);
    cursor: pointer !important;
 
-}
-a:hover {
+}*/
+/*a:hover {
    color: var(--color-text-link-hover);
    text-decoration: underline;
 }
 a.no_hover {
    color: var(--color-text-link);
    text-decoration: none;
-}
+}*/
 
 input::file-selector-button {
    font-weight: bold;
@@ -207,10 +207,10 @@ nav a {
    color: var(--color-text-default);
    text-decoration: none;
 }
-nav a:hover {
+/*nav a:hover {
    text-decoration: none;
    color: var(--color-text-default);
-}
+}*/
 nav li {
    width: 100%;
 }
@@ -462,6 +462,7 @@ nav #highlight {
    border: solid 1px var(--color-border-default);
    box-shadow: 5px 5px 5px var(--color-border-default);
    padding:10px;
+   margin-bottom: -50px;
 }
 .problem_content img {
    max-width: 100%;

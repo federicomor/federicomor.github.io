@@ -1,0 +1,40 @@
++++
+title = "Steady Squares"
+hascode = true
+hasplotly = true
++++
+
+~~~
+<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<a href="/activity/project_euler/problem_283/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
+<a href="/activity/project_euler/problem_285/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
+</p>
+~~~
+
+~~~
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
+<script src="https://projecteuler.net/js/mathjax_config.js"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<div id="content">
+
+<div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
+<h2>Steady Squares</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th March 2010, 01:00 am; Solved by 1384;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=284">Problem 284</a></h3></div>
+<div class="problem_content" role="problem">
+<p>The 3-digit number 376 in the decimal numbering system is an example of numbers with the special property that its square ends with the same digits: 376<sup>2</sup> = 141376. Let's call a number with this property a steady square.</p>
+
+<p>Steady squares can also be observed in other numbering systems. In the base 14 numbering system, the 3-digit number c37 is also a steady square: c37<sup>2</sup> = aa0c37, and the sum of its digits is c+3+7=18 in the same numbering system. The letters a, b, c and d are used for the 10, 11, 12 and 13 digits respectively, in a manner similar to the hexadecimal numbering system.</p>
+
+<p>For 1 ≤ n ≤ 9, the sum of the digits of all the n-digit steady squares in the base 14 numbering system is 2d8 (582 decimal). Steady squares with leading 0's are not allowed.</p>
+
+<p>Find the sum of the digits of all the n-digit steady squares in the base 14 numbering system for<br />
+1 ≤ n ≤ 10000 (decimal) and give your answer in the base 14 system using lower case letters where necessary.</p>
+</div><br>
+<br>
+</div> <!--end_content-->
+~~~
+## Soluzione

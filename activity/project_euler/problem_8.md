@@ -5,18 +5,27 @@ hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -40px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
-<a href="/activity/project_euler/problem_7/" style="color: black; text-decoration: none;">← </a>
+<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<a href="/activity/project_euler/problem_7/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
-<a href="/activity/project_euler/problem_9/" style="color: black; text-decoration: none;">→ </a>
+<a href="/activity/project_euler/problem_9/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </p>
 ~~~
 
-## (P8) Largest Product in a Series
-
-
-The four adjacent digits in the $1000$-digit number that have the greatest product are $9 \times 9 \times 8 \times 9 = 5832$.
 ~~~
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
+<script src="https://projecteuler.net/js/mathjax_config.js"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<div id="content">
+
+<div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
+<h2>Largest Product in a Series</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 11th January 2002, 06:00 pm; Solved by 375069;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=8">Problem 8</a></h3></div>
+<div class="problem_content" role="problem">
+<p>The four adjacent digits in the $1000$-digit number that have the greatest product are $9 \times 9 \times 8 \times 9 = 5832$.</p>
 <p class="monospace center">
 73167176531330624919225119674426574742355349194934<br>
 96983520312774506326239578318016984801869478851843<br>
@@ -38,9 +47,9 @@ The four adjacent digits in the $1000$-digit number that have the greatest produ
 84580156166097919133875499200524063689912560717606<br>
 05886116467109405077541002256983155200055935729725<br>
 71636269561882670428252483600823257530420752963450<br></p>
+<p>Find the thirteen adjacent digits in the $1000$-digit number that have the greatest product. What is the value of this product?</p>
+</div><br>
+<br>
+</div> <!--end_content-->
 ~~~
-Find the thirteen adjacent digits in the $1000$-digit number that have the greatest product. What is the value of this product?
-
->[Problema 8 su Project Euler](https://projecteuler.net/problem=8)
-
 ## Soluzione

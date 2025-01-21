@@ -1,0 +1,38 @@
++++
+title = "Balanced Numbers"
+hascode = true
+hasplotly = true
++++
+
+~~~
+<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<a href="/activity/project_euler/problem_216/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
+<a href="/activity/project_euler/problem_218/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
+</p>
+~~~
+
+~~~
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
+<script src="https://projecteuler.net/js/mathjax_config.js"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<div id="content">
+
+<div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
+<h2>Balanced Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 14th November 2008, 09:00 pm; Solved by 1672;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=217">Problem 217</a></h3></div>
+<div class="problem_content" role="problem">
+<p>
+A positive integer with $k$ (decimal) digits is called balanced if its first $\lceil k/2 \rceil$ digits sum to the same value as its last $\lceil k/2 \rceil$ digits, where $\lceil x \rceil$, pronounced <i>ceiling</i> of $x$, is the smallest integer $\ge x$, thus $\lceil \pi \rceil = 4$ and $\lceil 5 \rceil = 5$.</p>
+<p>So, for example, all palindromes are balanced, as is $13722$.</p>
+<p>Let $T(n)$ be the sum of all balanced numbers less than $10^n$. <br>
+Thus: $T(1) = 45$, $T(2) = 540$ and $T(5) = 334795890$.</p>
+<p>Find $T(47) \bmod 3^{15}$.</p>
+</div><br>
+<br>
+</div> <!--end_content-->
+~~~
+## Soluzione

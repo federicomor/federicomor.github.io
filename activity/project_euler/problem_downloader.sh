@@ -61,9 +61,11 @@ do
         ############# TOP DIRECTIONS LINKS #############
         echo "~~~" >> $output_file
         echo "<p style=\"margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;\">" >> $output_file
-        echo "<a href=\"/activity/project_euler/problem_$(($problem_number-1))/\" style=\"color: black; text-decoration: none;\">← </a>" >> $output_file
+        # echo "<a href=\"/activity/project_euler/problem_$(($problem_number-1))/\" style=\"color: black; text-decoration: none;\">← </a>" >> $output_file
+        echo "<a href=\"/activity/project_euler/problem_$(($problem_number-1))/\" style=\"color: black; text-decoration: none;\"><i class=\"fa-solid fa-arrow-left\"></i></a>" >> $output_file
         echo "<a href=\"/activity/project_euler\" style=\"color: black; text-decoration: none;\">🏠 </a>" >> $output_file
-        echo "<a href=\"/activity/project_euler/problem_$(($problem_number+1))/\" style=\"color: black; text-decoration: none;\">→ </a>" >> $output_file
+        # echo "<a href=\"/activity/project_euler/problem_$(($problem_number+1))/\" style=\"color: black; text-decoration: none;\">→ </a>" >> $output_file
+        echo "<a href=\"/activity/project_euler/problem_$(($problem_number+1))/\" style=\"color: black; text-decoration: none;\"><i class=\"fa-solid fa-arrow-right\"></i></a>" >> $output_file
         echo "</p>" >> $output_file
         echo "~~~" >> $output_file
         echo "" >> $output_file

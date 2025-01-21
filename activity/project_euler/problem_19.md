@@ -5,18 +5,28 @@ hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -40px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
-<a href="/activity/project_euler/problem_18/" style="color: black; text-decoration: none;">← </a>
+<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<a href="/activity/project_euler/problem_18/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
-<a href="/activity/project_euler/problem_20/" style="color: black; text-decoration: none;">→ </a>
+<a href="/activity/project_euler/problem_20/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </p>
 ~~~
 
-## (P19) Counting Sundays
+~~~
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
+<script src="https://projecteuler.net/js/mathjax_config.js"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<div id="content">
 
+<div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
+<h2>Counting Sundays</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 14th June 2002, 06:00 pm; Solved by 145090;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=19">Problem 19</a></h3></div>
+<div class="problem_content" role="problem">
 
-
-You are given the following information, but you may prefer to do some research for yourself.
+<p>You are given the following information, but you may prefer to do some research for yourself.</p>
 <ul><li>1 Jan 1900 was a Monday.</li>
 <li>Thirty days has September,<br />
 April, June and November.<br />
@@ -25,9 +35,10 @@ Saving February alone,<br />
 Which has twenty-eight, rain or shine.<br />
 And on leap years, twenty-nine.</li>
 <li>A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.</li>
-</ul>How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
+</ul><p>How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?</p>
 
-
->[Problema 19 su Project Euler](https://projecteuler.net/problem=19)
-
+</div><br>
+<br>
+</div> <!--end_content-->
+~~~
 ## Soluzione

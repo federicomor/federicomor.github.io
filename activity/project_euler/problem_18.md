@@ -5,26 +5,25 @@ hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -40px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
-<a href="/activity/project_euler/problem_17/" style="color: black; text-decoration: none;">← </a>
+<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<a href="/activity/project_euler/problem_17/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
-<a href="/activity/project_euler/problem_19/" style="color: black; text-decoration: none;">→ </a>
+<a href="/activity/project_euler/problem_19/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </p>
 ~~~
 
-## (P18) Maximum Path Sum I
-
 ~~~
-<link rel="stylesheet" type="text/css" href="https://projecteuler.net/themes/style_main.1735430422.css">
-<link rel="stylesheet" type="text/css" href="https://projecteuler.net/themes/style_default.1627113674.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
 <script src="https://projecteuler.net/js/mathjax_config.js"></script>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
 <script id="MathJax-script" async
-   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-
 <div id="content">
-<h2>Maximum Path Sum I</h2>Published on Friday, 31st May 2002, 06:00 pm; Solved by 156251; Difficulty rating: 5%</span></span></div><div id="problem_info"><h3>Problem 18</h3></div>
+
+<div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
+<h2>Maximum Path Sum I</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 31st May 2002, 06:00 pm; Solved by 156269;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=18">Problem 18</a></h3></div>
 <div class="problem_content" role="problem">
 <p>By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is $23$.</p>
 <p class="monospace center"><span class="red"><b>3</b></span><br><span class="red"><b>7</b></span> 4<br>
@@ -47,13 +46,9 @@ hasplotly = true
 91 71 52 38 17 14 91 43 58 50 27 29 48<br>
 63 66 04 68 89 53 67 30 73 16 69 87 40 31<br>
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23</p>
-<p class="note"><b>NOTE:</b> As there are only $16384$ routes, it is possible to solve this problem by trying every route. However, <a href="problem=67">Problem 67</a>, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)</p>
+<p class="note"><b>NOTE:</b> As there are only $16384$ routes, it is possible to solve this problem by trying every route. However, <a href="https://projecteuler.net/problem=67">Problem 67</a>, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)</p>
 </div><br>
 <br>
 </div> <!--end_content-->
 ~~~
-
-
->[Problema 18 su Project Euler](https://projecteuler.net/problem=18)
-
 ## Soluzione
