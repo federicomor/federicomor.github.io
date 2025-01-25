@@ -1,15 +1,18 @@
 +++
-title = "Cube Digit Pairs"
+title = "P90"
 hascode = true
 hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
 <a href="/activity/project_euler/problem_89/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_91/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
-</p>
+</div>
 ~~~
 
 ~~~
@@ -23,7 +26,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Cube Digit Pairs</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 4th March 2005, 06:00 pm; Solved by 12763;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=90">Problem 90</a></h3></div>
+<h2>Cube Digit Pairs</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 4th March 2005, 06:00 pm; Solved by 12771;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=90">Problem 90</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Each of the six faces on a cube has a different digit ($0$ to $9$) written on it; the same is done to a second cube. By placing the two cubes side-by-side in different positions we can form a variety of $2$-digit numbers.</p>
 
@@ -51,3 +54,5 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </div> <!--end_content-->
 ~~~
 ## Soluzione
+
+{{ addcomments }}

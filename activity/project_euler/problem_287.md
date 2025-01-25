@@ -1,15 +1,18 @@
 +++
-title = "Quadtree Encoding (a Simple Compression Algorithm)"
+title = "P287"
 hascode = true
 hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
 <a href="/activity/project_euler/problem_286/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_288/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
-</p>
+</div>
 ~~~
 
 ~~~
@@ -23,7 +26,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Quadtree Encoding (a Simple Compression Algorithm)</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th April 2010, 09:00 am; Solved by 1590;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=287">Problem 287</a></h3></div>
+<h2>Quadtree Encoding (a Simple Compression Algorithm)</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th April 2010, 09:00 am; Solved by 1591;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=287">Problem 287</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The quadtree encoding allows us to describe a $2^N \times 2^N$  black and white image as a sequence of bits (0 and 1). Those sequences are to be read from left to right like this:
 </p><ul><li>the first bit deals with the complete $2^N \times 2^N$ region;</li>
@@ -48,3 +51,5 @@ the next bits contains the description of the top left, top right, bottom left a
 </div> <!--end_content-->
 ~~~
 ## Soluzione
+
+{{ addcomments }}

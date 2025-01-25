@@ -1,15 +1,18 @@
 +++
-title = "Obtuse Angled Triangles"
+title = "P210"
 hascode = true
 hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
 <a href="/activity/project_euler/problem_209/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_211/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
-</p>
+</div>
 ~~~
 
 ~~~
@@ -23,7 +26,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Obtuse Angled Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 26th September 2008, 10:00 pm; Solved by 1881;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=210">Problem 210</a></h3></div>
+<h2>Obtuse Angled Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 26th September 2008, 10:00 pm; Solved by 1882;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=210">Problem 210</a></h3></div>
 <div class="problem_content" role="problem">
 Consider the set $S(r)$ of points $(x,y)$ with integer coordinates satisfying $|x| + |y| \le r$.<br>
 Let $O$ be the point $(0,0)$ and $C$ the point $(r/4,r/4)$. <br>
@@ -40,3 +43,5 @@ What is $N(1\,000\,000\,000)$?
 </div> <!--end_content-->
 ~~~
 ## Soluzione
+
+{{ addcomments }}

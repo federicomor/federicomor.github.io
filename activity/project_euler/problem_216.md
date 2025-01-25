@@ -1,15 +1,18 @@
 +++
-title = "The Primality of 2n^2 - 1"
+title = "P216"
 hascode = true
 hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
 <a href="/activity/project_euler/problem_215/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_217/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
-</p>
+</div>
 ~~~
 
 ~~~
@@ -23,7 +26,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>The Primality of 2n^2 - 1</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 7th November 2008, 05:00 pm; Solved by 4543;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=216">Problem 216</a></h3></div>
+<h2>The Primality of $2n^2 - 1$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 7th November 2008, 05:00 pm; Solved by 4546;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=216">Problem 216</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider numbers $t(n)$ of the form $t(n) = 2n^2 - 1$ with $n \gt 1$.<br>
 The first such numbers are $7, 17, 31, 49, 71, 97, 127$ and $161$.<br>
@@ -36,3 +39,5 @@ For $n \le 10000$ there are $2202$ numbers $t(n)$ that are prime.</p>
 </div> <!--end_content-->
 ~~~
 ## Soluzione
+
+{{ addcomments }}

@@ -1,15 +1,18 @@
 +++
-title = "Lenticular Holes"
+title = "P295"
 hascode = true
 hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
 <a href="/activity/project_euler/problem_294/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_296/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
-</p>
+</div>
 ~~~
 
 ~~~
@@ -23,7 +26,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Lenticular Holes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th June 2010, 01:00 pm; Solved by 505;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=295">Problem 295</a></h3></div>
+<h2>Lenticular Holes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th June 2010, 01:00 pm; Solved by 506;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=295">Problem 295</a></h3></div>
 <div class="problem_content" role="problem">
 <p>We call the convex area enclosed by two circles a <dfn>lenticular hole</dfn> if:
 </p><ul><li>The centres of both circles are on lattice points.</li>
@@ -54,3 +57,5 @@ Find $L(100\,000)$.
 </div> <!--end_content-->
 ~~~
 ## Soluzione
+
+{{ addcomments }}

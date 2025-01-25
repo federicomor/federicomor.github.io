@@ -1,15 +1,18 @@
 +++
-title = "Base-10 Diophantine Reciprocal"
+title = "P157"
 hascode = true
 hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
 <a href="/activity/project_euler/problem_156/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_158/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
-</p>
+</div>
 ~~~
 
 ~~~
@@ -23,7 +26,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Base-10 Diophantine Reciprocal</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 1st June 2007, 06:00 pm; Solved by 3036;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=157">Problem 157</a></h3></div>
+<h2>Base-10 Diophantine Reciprocal</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 1st June 2007, 06:00 pm; Solved by 3038;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=157">Problem 157</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the diophantine equation $\frac 1 a + \frac 1 b = \frac p {10^n}$ with $a, b, p, n$ positive integers and $a \le b$.<br>
 For $n=1$ this equation has $20$ solutions that are listed below:
@@ -40,3 +43,5 @@ For $n=1$ this equation has $20$ solutions that are listed below:
 </div> <!--end_content-->
 ~~~
 ## Soluzione
+
+{{ addcomments }}

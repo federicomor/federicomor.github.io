@@ -1,0 +1,48 @@
++++
+title = "P517"
+hascode = true
+hasplotly = true
++++
+
+~~~
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
+<a href="/activity/project_euler/problem_516/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
+<a href="/activity/project_euler/problem_518/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
+</div>
+~~~
+
+~~~
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
+<script src="https://projecteuler.net/js/mathjax_config.js"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<div id="content">
+
+<div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
+<h2>A Real Recursion</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd May 2015, 01:00 pm; Solved by 498;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=517">Problem 517</a></h3></div>
+<div class="problem_content" role="problem">
+<p>
+For every real number $a \gt 1$ is given the sequence $g_a$ by:<br>
+$g_{a}(x)=1$ for $x \lt a$<br>
+$g_{a}(x)=g_{a}(x-1)+g_a(x-a)$ for $x \ge a$<br>
+
+$G(n)=g_{\sqrt {n} }(n)$<br>
+$G(90)=7564511$.</p>
+<p>
+Find $\sum G(p)$ for $p$ prime and $10000000 \lt p \lt 10010000$<br>
+Give your answer modulo $1000000007$.
+</p>
+</div><br>
+<br>
+</div> <!--end_content-->
+~~~
+## Soluzione
+
+{{ addcomments }}

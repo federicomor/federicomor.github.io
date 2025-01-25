@@ -1,0 +1,47 @@
++++
+title = "P397"
+hascode = true
+hasplotly = true
++++
+
+~~~
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
+<a href="/activity/project_euler/problem_396/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
+<a href="/activity/project_euler/problem_398/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
+</div>
+~~~
+
+~~~
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
+<script src="https://projecteuler.net/js/mathjax_config.js"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<div id="content">
+
+<div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
+<h2>Triangle on Parabola</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th October 2012, 05:00 am; Solved by 297;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=397">Problem 397</a></h3></div>
+<div class="problem_content" role="problem">
+<p>
+On the parabola $y = x^2/k$, three points $A(a, a^2/k)$, $B(b, b^2/k)$ and $C(c, c^2/k)$ are chosen.
+</p>
+<p>
+Let $F(K, X)$ be the number of the integer quadruplets $(k, a, b, c)$ such that at least one angle of the triangle $ABC$ is $45$-degree, with $1 \le k \le K$ and $-X \le a \lt b \lt c \le X$.
+</p>
+<p>
+For example, $F(1, 10) = 41$ and $F(10, 100) = 12492$.<br>
+Find $F(10^6, 10^9)$.
+</p>
+</div><br>
+<br>
+</div> <!--end_content-->
+~~~
+## Soluzione
+
+{{ addcomments }}

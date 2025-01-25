@@ -21,6 +21,7 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
                 /assets/img/peuler2.jpg}{}
 ~~~ 
 </div> <!-- card container -->
+<br>
 <div class="card-container">
 ~~~ 
 \card{

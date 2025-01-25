@@ -1,15 +1,18 @@
 +++
-title = "Coloured Configurations"
+title = "P194"
 hascode = true
 hasplotly = true
 +++
 
 ~~~
-<p style="margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;">
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
 <a href="/activity/project_euler/problem_193/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_195/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
-</p>
+</div>
 ~~~
 
 ~~~
@@ -23,7 +26,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Coloured Configurations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th May 2008, 10:00 am; Solved by 1587;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=194">Problem 194</a></h3></div>
+<h2>Coloured Configurations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th May 2008, 10:00 am; Solved by 1592;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=194">Problem 194</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider graphs built with the units $A$: <img src="https://projecteuler.net/resources/images/0194_GraphA.png?1678992052" style="vertical-align:middle;" class="dark_img" alt="">
 and $B$: <img src="https://projecteuler.net/resources/images/0194_GraphB.png?1678992052" style="vertical-align:middle;" class="dark_img" alt="">, where the units are glued along
@@ -41,3 +44,5 @@ For example, $N(1,0,3) = 24$, $N(0,2,4) = 92928$ and $N(2,2,3) = 20736$.</p>
 </div> <!--end_content-->
 ~~~
 ## Soluzione
+
+{{ addcomments }}

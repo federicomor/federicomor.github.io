@@ -1,0 +1,63 @@
++++
+title = "P302"
+hascode = true
+hasplotly = true
++++
+
+~~~
+<div class="navigation_symbols">
+<form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
+<input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
+</form>
+<a href="/activity/project_euler/problem_301/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
+<a href="/activity/project_euler/problem_303/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
+</div>
+~~~
+
+~~~
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
+<link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
+<script src="https://projecteuler.net/js/mathjax_config.js"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<div id="content">
+
+<div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
+<h2>Strong Achilles Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 18th September 2010, 07:00 pm; Solved by 827;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=302">Problem 302</a></h3></div>
+<div class="problem_content" role="problem">
+<p>
+A positive integer $n$ is <strong>powerful</strong> if $p^2$ is a divisor of $n$ for every prime factor $p$ in $n$.
+</p>
+<p>
+A positive integer $n$ is a <strong>perfect power</strong> if $n$ can be expressed as a power of another positive integer.
+</p>
+<p>
+A positive integer $n$ is an <strong>Achilles number</strong> if $n$ is powerful but not a perfect power. For example, $864$ and $1800$ are Achilles numbers: $864 = 2^5 \cdot 3^3$ and $1800 = 2^3 \cdot 3^2 \cdot 5^2$.
+</p>
+<p>
+We shall call a positive integer $S$ a <dfn>Strong Achilles number</dfn> if both $S$ and $\phi(S)$ are Achilles numbers.<sup>1</sup><br>
+For example, $864$ is a Strong Achilles number: $\phi(864) = 288 = 2^5 \cdot 3^2$. However, $1800$ isn't a Strong Achilles number because: $\phi(1800) = 480 = 2^5 \cdot 3^1 \cdot 5^1$.
+</p>
+<p>There are $7$ Strong Achilles numbers below $10^4$ and $656$ below $10^8$.
+</p>
+<p>
+How many Strong Achilles numbers are there below $10^{18}$?
+</p>
+<p>
+<sup>1</sup> $\phi$ denotes <strong>Euler's totient function</strong>.
+</p>
+
+
+
+
+
+</div><br>
+<br>
+</div> <!--end_content-->
+~~~
+## Soluzione
+
+{{ addcomments }}

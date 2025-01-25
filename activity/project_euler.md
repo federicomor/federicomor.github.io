@@ -40,7 +40,7 @@ Ancora in costruzione.
    table.data th, table.data td  { border: 1px solid #333333; padding: 0.1em 0.5em; }
 
    td.note {         background-color: #90005D; color: #DDFFDD; padding: 0 0.2em; }
-   td.approxximate { background-color: #EA99C0; color: #DDFFDD; padding: 0 0.2em; }
+   td.approx { background-color: #EA99C0; color: #DDFFDD; padding: 0 0.2em; }
    td.blank {        background-color: #F9F9F9; color: #333333; padding: 0 0.2em; }
    td.solved {       background-color: #94C96E; color: #DDFFDD; padding: 0 0.2em; font-weight: bold; }
    td.video {        background-color: #315D00; color: #DDFFDD; padding: 0 0.2em; font-weight: bold; }
@@ -80,18 +80,18 @@ Ancora in costruzione.
     }
 
    .note {         background-color: #90005D; color: #DDFFDD; padding: 0 0.2em; }
-   .approxximate { background-color: #EA99C0; color: #DDFFDD; padding: 0 0.2em; }
+   .approx { background-color: #EA99C0; color: #DDFFDD; padding: 0 0.2em; }
    .blank {        background-color: #F9F9F9; color: #333333; padding: 0 0.2em; }
    .solved {       background-color: #94C96E; color: #DDFFDD; padding: 0 0.2em; font-weight: bold; }
    .video {        background-color: #315D00; color: #DDFFDD; padding: 0 0.2em; font-weight: bold; }
 
     </style>
 	<div class="legend">
-        <div class="legend-item"><div class="legend-color note"></div> note: qualcosa di particolare da segnalare</div>
-        <div class="legend-item"><div class="legend-color approxximate"></div> approxximate: trovata una soluzione che approssima quella esatta</div>
-        <div class="legend-item"><div class="legend-color blank"></div> blank: ancora da affrontare</div>
-        <div class="legend-item"><div class="legend-color solved"></div> solved: risolto, con soluzione commentata</div>
-        <div class="legend-item"><div class="legend-color video"></div> video: risolto, commentato, e c'è anche il video</div>
+        <div class="legend-item"><div class="legend-color note"></div> (tag note) qualcosa di particolare da segnalare</div>
+        <div class="legend-item"><div class="legend-color approx"></div> (tag approx) trovata una soluzione che approssima quella esatta</div>
+        <div class="legend-item"><div class="legend-color blank"></div> (tag blank) ancora da affrontare</div>
+        <div class="legend-item"><div class="legend-color solved"></div> (tag solved) risolto, con soluzione commentata</div>
+        <div class="legend-item"><div class="legend-color video"></div> (tag video) risolto, commentato, e c'è anche il video</div>
     </div>
     <br>
     <br>
@@ -1122,82 +1122,82 @@ Ancora in costruzione.
 <td class="blank"><a href="/activity/project_euler/problem_926">926</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_927">927</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_928">928</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_929">929</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_930">930</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_931">931</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_932">932</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_933">933</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_934">934</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_935">935</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_936">936</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_937">937</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_938">938</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_939">939</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_940">940</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_941">941</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_942">942</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_943">943</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_944">944</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_945">945</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_946">946</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_947">947</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_948">948</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_949">949</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_950">950</a></td>
+<!-- <td class="blank"><a href="/activity/project_euler/problem_929">929</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_930">930</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_931">931</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_932">932</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_933">933</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_934">934</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_935">935</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_936">936</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_937">937</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_938">938</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_939">939</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_940">940</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_941">941</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_942">942</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_943">943</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_944">944</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_945">945</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_946">946</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_947">947</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_948">948</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_949">949</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_950">950</a></td> -->
 </tr>
 <tr>
-<td class="blank"><a href="/activity/project_euler/problem_951">951</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_952">952</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_953">953</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_954">954</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_955">955</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_956">956</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_957">957</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_958">958</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_959">959</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_960">960</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_961">961</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_962">962</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_963">963</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_964">964</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_965">965</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_966">966</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_967">967</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_968">968</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_969">969</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_970">970</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_971">971</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_972">972</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_973">973</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_974">974</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_975">975</a></td>
+<!-- <td class="blank"><a href="/activity/project_euler/problem_951">951</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_952">952</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_953">953</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_954">954</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_955">955</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_956">956</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_957">957</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_958">958</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_959">959</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_960">960</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_961">961</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_962">962</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_963">963</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_964">964</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_965">965</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_966">966</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_967">967</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_968">968</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_969">969</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_970">970</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_971">971</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_972">972</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_973">973</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_974">974</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_975">975</a></td> -->
 </tr>
 <tr>
-<td class="blank"><a href="/activity/project_euler/problem_976">976</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_977">977</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_978">978</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_979">979</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_980">980</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_981">981</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_982">982</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_983">983</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_984">984</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_985">985</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_986">986</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_987">987</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_988">988</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_989">989</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_990">990</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_991">991</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_992">992</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_993">993</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_994">994</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_995">995</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_996">996</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_997">997</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_998">998</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_999">999</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_1000">1000</a></td>
+<!-- <td class="blank"><a href="/activity/project_euler/problem_976">976</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_977">977</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_978">978</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_979">979</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_980">980</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_981">981</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_982">982</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_983">983</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_984">984</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_985">985</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_986">986</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_987">987</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_988">988</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_989">989</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_990">990</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_991">991</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_992">992</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_993">993</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_994">994</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_995">995</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_996">996</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_997">997</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_998">998</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_999">999</a></td> -->
+<!-- <td class="blank"><a href="/activity/project_euler/problem_1000">1000</a></td> -->
 </tr>
 <tr>
 </table>
