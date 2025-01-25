@@ -33,40 +33,48 @@ do
     # change info image to emoji
     problem_content=$(echo "$problem_content" | sed 's/<img src="https:\/\/projecteuler.net\/images\/icons\/info.png" class="icon">/ℹ️/g')
 
+    # adjust {{ and }}
+    problem_content=$(echo "$problem_content" | sed 's/{{/{ {/g' | sed 's/}}/} }/g')
+    problem_content=$(echo "$problem_content" | sed 's/{{/{ {/g' | sed 's/}}/} }/g')
 
-    
-    # Extract the problem content between <div class="problem_content" role="problem"> and </div><br>
-    problem=$(echo "$page_content" | sed -n '/<div class="problem_content" role="problem">/,/<\/div><br>/p')
-    
-    # Modify image src to use the full URL
-    clean_problem_with_images=$(echo "$problem" | sed 's#src="resources/images/#src="https://projecteuler.net/resources/images/#g')
-    # Clean up unwanted tags (<p>, <br>, <div>, etc.)
-    clean_problem=$(echo "$clean_problem_with_images" | sed 's/<p>//g' | sed 's/<\/p>//g' | sed 's/<br>//g' | sed 's/<div>//g' | sed 's/<\/div>//g' | sed 's/<div class="problem_content" role="problem">//g' | sed 's/alt="">/alt=""\n~~~/g' | sed 's/<div class=/~~~\n<div class=/g' )
-    
+
     # Extract the title (inside the <h2> tag)
     title=$(echo "$page_content" | sed -n 's/.*<h2>\(.*\)<\/h2>.*/\1/p')
 
     # Save to a file in Markdown format
     output_file="$output_dir/problem_$problem_number.md"
-    if [[ -n "$title" && -n "$clean_problem" ]]; then
+    if [[ -n "$title" && -n "$problem_content" ]]; then
 
         ############# FRANKLIN STUFF #############
         echo "+++" > "$output_file"
-        echo "title = \"$title\"" >> "$output_file"
+        # echo "title = \"$title\"" >> "$output_file"
+        echo "title = \"P$problem_number\"" >> "$output_file"
         echo "hascode = true" >> "$output_file"
         echo "hasplotly = true" >> "$output_file"
         echo "+++" >> "$output_file"
         echo "" >> "$output_file"
 
+        # fix titles with dollars
+        # if [[ $title == *'$'* ]]; then
+        #   echo "Problem $problem_number contains a \$ symbol in the title. Fix it!"
+        # fi
+
         ############# TOP DIRECTIONS LINKS #############
         echo "~~~" >> $output_file
-        echo "<p style=\"margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;\">" >> $output_file
+        # echo "<p style=\"margin-bottom: -85px; color: black; text-decoration: none; font-size: 20px; text-align: right;\">" >> $output_file
+        echo "<div class=\"navigation_symbols\">" >> $output_file
+
+        # input form for quick link
+        echo "<form action=\"\" method=\"get\" onsubmit=\"location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;\" style=\"display:inline;\">" >> $output_file
+        echo "<input title=\"go to problem\" type=\"\" placeholder=\" \" required style=\"margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;\">" >> $output_file
+        echo "</form>" >> $output_file
+
         # echo "<a href=\"/activity/project_euler/problem_$(($problem_number-1))/\" style=\"color: black; text-decoration: none;\">← </a>" >> $output_file
         echo "<a href=\"/activity/project_euler/problem_$(($problem_number-1))/\" style=\"color: black; text-decoration: none;\"><i class=\"fa-solid fa-arrow-left\"></i></a>" >> $output_file
         echo "<a href=\"/activity/project_euler\" style=\"color: black; text-decoration: none;\">🏠 </a>" >> $output_file
         # echo "<a href=\"/activity/project_euler/problem_$(($problem_number+1))/\" style=\"color: black; text-decoration: none;\">→ </a>" >> $output_file
         echo "<a href=\"/activity/project_euler/problem_$(($problem_number+1))/\" style=\"color: black; text-decoration: none;\"><i class=\"fa-solid fa-arrow-right\"></i></a>" >> $output_file
-        echo "</p>" >> $output_file
+        echo "</div>" >> $output_file
         echo "~~~" >> $output_file
         echo "" >> $output_file
 
@@ -99,7 +107,11 @@ do
         ############# SOLUZIONE #############
         echo "## Soluzione" >> "$output_file"
 
-        echo "Saved Problem $problem_number to $output_file."
+        ############# COMMENTS #############
+        echo "" >> "$output_file"
+        echo "{{ addcomments }}" >> "$output_file"
+
+        echo "Saved Problem $problem_number to $output_file"
     else
         echo "Failed to extract content for Problem $problem_number."
     fi
