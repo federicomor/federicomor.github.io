@@ -4,6 +4,34 @@
 
 
 /* ==================================================================
+    UPDATE BOX
+================================================================== */
+.update-box {
+/*    background-color: #fec6e0;*/
+    background-color: #e0f7fa;
+/*    border-left: 5px solid #ae96b0;*/
+    border-left: 5px solid #00796b;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.update-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.update-content {
+    font-size: 1em;
+    color: #004d40;
+    line-height: 20px;
+}
+
+
+/* ==================================================================
     CARDS
 ================================================================== */
 .card-container {
@@ -365,7 +393,7 @@ html {
   border: none;
   outline: none;
   padding: 0px 5px;
-  background-color: #dec6e0;;
+  background-color: #dec6e0;
   color: white;
   padding: 0px 8px;
   cursor: pointer;

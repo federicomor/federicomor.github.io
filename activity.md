@@ -69,7 +69,7 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
 \card{
     /activity/strategia_appuntamenti}{
         Strategia ottimale per appuntamenti}{
-            Stimiamo di poter incontrare $N$ possibili partner. Se ne troviamo una che ci piace e ci stabilizziamo con lei, rischiamo di perderci partner future migliori. D'altro canto, se ne scartiamo una promettente, sperando nelle altre, molto probabilmente non vorrà più tornare da noi nel caso ci ripensassimo.
+            Stimiamo di poter incontrare $N$ possibili partner. Se ne troviamo una che ci piace e ci stabilizziamo con lei, rischiamo di perderci partner future migliori. D'altro canto, se ne scartiamo una promettente, sperando nelle altre, molto probabilmente non vorrà più tornare da noi nel caso ci ripensassimo.\
             _Quindi, quante persone dovremmo frequentare (in percentuale) prima di scegliere quella con cui stabilizzarci per qualcosa di più serio?_}{
                 /assets/img/date1.jpg}{molto bello ma per ora solo impostato}
 \card{
@@ -88,20 +88,14 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
     /activity/motori_e_barca}{
         Di quanti motori dotare una barca}{
             Una barca è in grado di navigare quando almeno la metà dei motori risulta funzionante. Supponiamo che ogni motore si possa guastare con probabilità $p$ in modo indipendente dagli altri.\
-            _Per quali valori di $p$ un traghetto con quattro motori ha maggior probabilità di navigare di un traghetto con due motori?_}{
+            _Per quali valori di $p$ una barca con quattro motori ha maggior probabilità di navigare di una barca con due motori?_}{
                 /assets/img/barcap.png}{impostato}
 \card{
     /activity/passeggiata_pericolosa}{
         Una passeggiata pericolosa}{
             Un uomo ubriaco si trova ad un passo da un precipizio. Essendo ubriaco, cammina in modo casuale, compiendo un passo o in avanti o all'indietro. Ad ogni passo, la probabilità che vada in avanti è 1/3, mentre che vada indietro è 2/3.\
-            _Qual è la proabilità che l'uomo non cada nel precipizio?_}{
+            _Qual è la probabilità che l'uomo si salvi (ovvero non cada nel precipizio)?_}{
                 /assets/img/drunk_cliff.png}{impostato}
-\card{
-    /activity/numerazione_treni}{
-        Numerazione dei treni}{
-            Supponiamo che trenord numeri i suoi treni da 1 a $N$. Un giorno vedete passare un treno numerato 60. _Quanti treni stimate che abbia trenord?_\
-            Un altro giorno vedete invece passare cinque treni, tra i quali il numero massimo che si è presentato era 70. _Ora quanti treni stimate che abbia trenord?_}{
-                /assets/img/treni2.png}{impostato}
 \card{
     /activity/sfide_sbrigative}{
         Sfide sbrigative}{
@@ -114,16 +108,18 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             Alice e Bob giocano al seguente gioco. Davanti a loro c'è una pila di $n$ carte: i giocatori si alternano, con Alice che inizia per prima, e ogni giocatore al suo turno rimuove dalla pila 1 carta oppure 4 carte. Vince il giocatore che rimuove l'ultima carta (ovvero perde chi si trova di fronte, al suo turno, zero carte).\
             _Per quanti $n\leq 2025$ esiste una strategia che garantisca a Bob di vincere indipendentemente da cosa faccia Alice?_}{
                 /assets/img/cards.png}{impostato}
-<!-- \card{
-    /activity/sfide_sbrigative}{
-        Costruire il ponte sullo stretto?}{
-            Il ponte sullo stretto costerebbe circa 14 miliardi di euro.}{
-                /assets/img/cards.png} -->
-<!-- \card{
-    link}{
-        titolo}{
-            testo}{
-                img} -->
+\card{
+    /activity/numerazione_treni}{
+        Numerazione dei treni}{
+            Supponiamo che trenord numeri i suoi treni da 1 a $N$. Un giorno vedete passare un treno numerato 60. _Quanti treni stimate che abbia trenord?_\
+            Un altro giorno vedete invece passare cinque treni, tra i quali il numero massimo che si è presentato era 70. _Ora quanti treni stimate che abbia trenord?_}{
+                /assets/img/treni2.png}{impostato}
+\card{
+    https://surveyheart.com/form/679f5660ea7bdb6850cacadc }{
+        Suggerisci un'idea!}{
+             Hai in mente qualche problema, challenge, o esempio che credi sia interessante da analizzare da un punto di vista matematico? Fammi sapere!}{
+                /assets/img/form2.png}{}
+
 
 ~~~ 
 </div> <!-- card container -->

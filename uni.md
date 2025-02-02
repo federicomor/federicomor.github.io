@@ -140,7 +140,7 @@ Il formulario per l'esame di Elettronica. Con vari easter egg all'interno.
 
 {{ pdf /assets/uni/formulario_elettronica_intero.pdf }} -->
 
-## Il mio metodo di studio
+<!-- ## Il mio metodo di studio -->
 
 
 {{ addcomments }}

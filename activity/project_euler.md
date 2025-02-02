@@ -19,8 +19,8 @@ println("</table>") -->
 
 
 ## Progetto Eulero
-Ancora in costruzione.
-<!-- _Clicca su un problema per aprire la sua pagina dedicata_ -->
+<!-- Ancora in costruzione. -->
+_Clicca su un problema per aprire la sua pagina dedicata_
 ~~~
 <style>
    table.code    { empty-cells: show; counter-reset: line; width: 100%; margin: 0; padding: 0; }
@@ -91,21 +91,21 @@ Ancora in costruzione.
         <div class="legend-item"><div class="legend-color approx"></div> (tag approx) trovata una soluzione che approssima quella esatta</div>
         <div class="legend-item"><div class="legend-color blank"></div> (tag blank) ancora da affrontare</div>
         <div class="legend-item"><div class="legend-color solved"></div> (tag solved) risolto, con soluzione commentata</div>
-        <div class="legend-item"><div class="legend-color video"></div> (tag video) risolto, commentato, e c'è anche il video</div>
+        <div class="legend-item"><div class="legend-color video"></div> (tag video) risolto, commentato, e c'è/ci sarà il video</div>
     </div>
     <br>
     <br>
+    <!-- <div style="margin: 34px 0;"></div> -->
 
-    <i>Clicca su un problema per aprire la sua pagina dedicata</i>
+<!-- <i>Clicca su un problema per aprire la sua pagina dedicata</i> -->
+<!-- <br> -->
 
-
-<br>
-    <table class="progress">
+<table class="progress">
 <tr>
-<td class="blank"><a href="/activity/project_euler/problem_1">1</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_2">2</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_3">3</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_4">4</a></td>
+<td class="video"><a href="/activity/project_euler/problem_1">1</a></td>
+<td class="video"><a href="/activity/project_euler/problem_2">2</a></td>
+<td class="video"><a href="/activity/project_euler/problem_3">3</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_4">4</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_5">5</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_6">6</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_7">7</a></td>

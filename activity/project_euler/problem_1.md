@@ -9,7 +9,7 @@ hasplotly = true
 <form action="" method="get" onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;">
 <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
 </form>
-<a href="/activity/project_euler/problem_0/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<!-- <a href="/activity/project_euler/problem_0/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a> -->
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_2/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </div>
@@ -34,6 +34,32 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <br>
 </div> <!--end_content-->
 ~~~
+
 ## Soluzione
+
+Formalmente, vorremo trovare
+$$
+S = \sum_{\substack{n \in [1,1000) \\ n \equiv 0 \text{ mod } (3,5)}} n = 3+5+6+9+10+12+\ldots + 999
+$$
+Quindi l'idea è che possiamo raccogliere tutti i fattori di 3 e 5, ottenendo $3(1+2+\ldots+h)$ e $5(1+2+\ldots+k)$, con $h$ ($=333$) e $k$ ($=199$) i limiti opportuni per ottenere un loro multiplo ma senza sforare 1000. In questo modo però staremmo contando due volte i multipli di 3 _e_ 5, come 15, 30, 45, ecc; quindi occorre correggere sottraendo per i multipli di 15, anche lui fino al suo limite opportuno (che per lui corrisponde a 66, dato che $15\cdot66 = 990$). Dopodiché si può calcolare $S$ applicando sui vari contributi la formuletta 
+$$
+\sum_{i=1}^n i = \frac{n(n+1)}{2}
+$$
+
+Un approccio invece "informatico" consisterebbe nel seguente programmino:
+```julia
+# one-liner
+sum([i for i in 1:999 if (i%3==0 || i%5==0)])
+
+# forma estesa
+S = 0
+for i in 1:999
+	if i%3 == 0 || i%5 == 0
+		S += i
+	end
+end
+@show S
+```
+
 
 {{ addcomments }}

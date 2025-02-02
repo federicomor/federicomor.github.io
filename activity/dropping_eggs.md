@@ -115,6 +115,7 @@ function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool; decr
   return steps
 end
 ```
+<!-- aggiungere magari istogrammi per confrontare caso decrement true/false -->
 ```julia-repl
 # with two eggs
 julia> stratk([14,1],41,true,decrement=false)

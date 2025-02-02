@@ -3,11 +3,30 @@ title = "Home"
 +++
 
 ~~~
-<!-- <div class="new-content-banner"> -->
-<!-- 🎉✨🎁🎇🎈🎫📣📢📡💡🔦📍📌⏰ -->
-<!-- <a href=/activity/#modi_per_salire_una_scala>📌 New stuff!</a> -->
-<!-- </div> -->
+<!-- <div class="new-content-banner">  -->
+<!-- 🎉✨🎁🎇🎈🎫📣📢📡💡🔦📍📌⏰  -->
+<!-- <div style="font-size: 30px; margin-bottom:10px;">📌 Ultimi aggiornamenti 📌</div> -->
+<!-- 📌 Ultimi aggiornamenti 📌\ -->
+<!-- Risolti un po' di problemi del progetto Eulero
+</div>  -->
 ~~~
+
+<!-- > \style{font-size:23px;}{📌 Ultimi aggiornamenti 📌}\
+> 
+> - Risolti un po' di problemi del progetto Eulero
+> - Risolti un po' di problemi del progetto Eulero\
+> ma la  -->
+
+<!-- ~~~
+<div class="update-box">
+    <div class="update-title">📌 Ultimi aggiornamenti 📌</div>
+    <div class="update-content">
+~~~ 
+Risolti un po' di problemi del progetto Eulero
+~~~
+    </div>
+</div>
+~~~ -->
 
 
 # Home
@@ -16,6 +35,10 @@ Ciao! sono Federico, un Ingegnere Matematico (magistrale, al Politecnico di Mila
 troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare comodamente su [Youtube](https://www.youtube.com/@fede_plus) (e forse in futuro anche su Instagram).
 
 Ad oggi, prima la tesi e poi il lavoro mi stanno togliendo tempo e spazio a questo "hobby", ma quando la situazione si ristabilizzerà dovrei e vorrei ritornare, magari anche con contenuti non solo di matematica ma di università in generale, della mia esperienza, consigli, ecc.
+
+
+<!-- ## 📌 Ultimi aggiornamenti
+- iniziata la serie dei problemi del progetto eulero: [/activity/project_euler/](/activity/project_euler/) -->
 
 
 <!-- (molto consigliati, con tutto raccontato con calma e in dettaglio) ma anche su Instagram (no, lì non più per ora) e [TikTok](https://tiktok.com/@divmat_tt) (anche qui).  -->
