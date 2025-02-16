@@ -16,7 +16,7 @@ hasmath = true
 ~~~
 
 ## The thesis
-In 2022, Garritt Page and other authors created a Bayesian model, [the DRPM](https://arxiv.org/abs/1912.11542) (Dependent Random Partition Model), for clustering spatio-temporal data. That is, we have $n$ subjects, or units, that measure some target variable and that are placed somewhere in space, and want to cluster them at each time point $t=1, ldots,T$; thus creating a sequence of clusters configurations.
+In 2022, Garritt Page and other authors created a Bayesian model, [the DRPM](https://arxiv.org/abs/1912.11542) (Dependent Random Partition Model), for clustering spatio-temporal data. That is, we have $n$ subjects, or units, that measure some target variable and that are placed somewhere in space, and want to cluster them at each time point $t=1, \ldots,T$; thus creating a sequence of clusters configurations.
 
 So far it's nothing new, there were already other models that could do this. However, what characterizes DRPM is the _direct_ modelling of time dependencies in the clusters sequence, i.e. how the partition at time $t$ is influenced by the one at time $t-1$. In this way, clusters are generated taking into account both spatial and temporal information, ultimately producing a much smoother, gentler and therefore more interpretable evolution of the clusters. Other models, on the contrary, do not take into account the time dimension, thus generating each partition independently and disconnected from each other.
 
