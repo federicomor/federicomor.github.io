@@ -109,15 +109,15 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             Un altro giorno vedete invece passare cinque treni, tra i quali il numero massimo che si è presentato era 70. _Ora quanti treni stimate che abbia trenord?_}{
                 /assets/img/treni2.png}{impostato}
 \card{
-    /activity/project_euler}{
-        Problemi del progetto Eulero}{
-            Una raccolta di storiche challenge da risolvere per metodi matematici (scervellandosi in vari modi) o informatici (scrivendo dell'opportuno codice). Sono più di 900 problemi quindi ci sarà molto materiale con cui cimentarsi.}{
-                /assets/img/peuler2.jpg}{}
-\card{
     https://surveyheart.com/form/679f5660ea7bdb6850cacadc }{
         Suggerisci un'idea!}{
              Hai in mente qualche problema, challenge, o esempio che credi sia interessante da analizzare da un punto di vista matematico? Fammi sapere!}{
                 /assets/img/form2.png}{}
+<!-- \card{
+    /activity/project_euler}{
+        Problemi del progetto Eulero}{
+            Una raccolta di storiche challenge da risolvere per metodi matematici (scervellandosi in vari modi) o informatici (scrivendo dell'opportuno codice). Sono più di 900 problemi quindi ci sarà molto materiale con cui cimentarsi.}{
+                /assets/img/peuler2.jpg}{} -->
 ~~~ 
 </div> <!-- card container -->
 ~~~ 

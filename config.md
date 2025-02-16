@@ -28,6 +28,37 @@ website_url   = "https://federicomor.github.io/"
 \newcommand{\prob}{\mathbb P}
 \newcommand{\scal}[1]{\langle #1 \rangle}
 
+\newcommand{\en}[5]{
+~~~ 
+<p style="font-size: #1px;"><img src="https://flagcdn.com/gb.svg" style="
+  width: #2%; // 5%
+  display: inline; 
+  float: left;
+  align: center;
+  margin-right: #3px; // 15px 
+  margin-bottom: #4px;" // 0px
+   alt="english"/> 
+~~~ #5 ~~~ 
+</p>
+<div style="clear: both;"> </div>
+~~~ 
+}
+\newcommand{\it}[5]{
+~~~ 
+<p style="font-size: #1px;"><img src="https://flagcdn.com/it.svg" style="
+  width: #2%; // 5%
+  display: inline; 
+  float: left;
+  align: center;
+  margin-right: #3px; // 15px 
+  margin-bottom: #4px;" // 0px
+   alt="italian"/> 
+~~~ #5 ~~~ 
+</p>
+<div style="clear: both;"> </div>
+~~~ 
+}
+
 
 \newcommand{\card}[5]{
 ~~~ 
