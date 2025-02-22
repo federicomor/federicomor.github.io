@@ -90,9 +90,9 @@ All the statitical work was conducted in R, while the bot development in Julia.
 
 In this projcet we had to develop a solution through a neural network to solve two challenges:
 1. detecting if a plant is healthy or unhealthy based of pictures of their leaves
-2. developing a tool for time series prediction
+2. developing a tool for time series forecasting
 
-Personally, I don't really like this approach of neural networks, I prefer more theoretical profound and valid approaches, as the more statistical ones described above, rahter than just letting a network learn and "hope for the best" by tuning its structure and parameters. Nonetheless, it has been an interesting project.
+Personally, I don't really enjoyed this approach of neural networks; I prefer more theoretical validated methods, as the more statistical ones employed in the other projects, rather than just letting a network learn and "hope for the best" by tuning its structure and parameters. Nonetheless, it has been an interesting project.
 
 Here, all the work was conducted using Python.
 
@@ -102,8 +102,7 @@ Here, all the work was conducted using Python.
 
 ## Generalized 15 puzzle
 
-In the first year, at the fourth computer lab of the "Informatica A" course (morally, the first computer science class), we had to implement the game of 15 in C, the one with the 4 by 4 grid, an empty cell, and the numbers inside to be reordered. But, while I was there, taking the opportunity of having more fun, I implemented the game in its generic dimension, $N$ by $N$. In this way, the "15 game" became extended into the "$(N 2-1)$ game". 
-
+In the first year, at the fourth computer lab of the "Informatica A" course (morally, the first computer science class), we had to implement the game of 15 in C, the one with the 4 by 4 grid, an empty cell, and the numbers inside to be reordered. But, while I was there, taking the opportunity of having more fun, I implemented the game in its generic dimension, $N$ by $N$. In this way, the "15 game" became extended into the "$(N^{2}-1)$ game".\
 The original code was written in C, but [here](/assets/uni/15_game.html) you can find an equivalent (and playable!) version which uses html and javascript.
 
 It is worth to note that the inital board cannot be simply initialized with random numbers, otherwise one could get unsolvable configurations as this one
@@ -171,6 +170,6 @@ border: solid 1px;
 margin-bottom: -10px;"> 
 </a>
 <p style="font-size: 14px; color: grey; line-height: 1.2em; font-style: italic;">
-    representation of what the script should do
+    representation of what the script does
   </p>
 ~~~ 

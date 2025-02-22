@@ -24,12 +24,16 @@ All'interno di ogni card che segue troverete una breve descrizione del contenuto
     /uni/tesi}{
         Tesi}{
             Il racconto dettagliato della mia tesi, da leggere anche solo per gli easter egg 😊}{
-                /uni/mdeg2.jpg}{}
+                /uni/laurea_blur.png}{}
+                <!-- /uni/mdeg2.jpg}{} -->
 \card{
     /uni/appunti}{
         Corsi e appunti}{
             La raccolta, per ora ancora molto incompleta, dei miei materiali sui vari corsi 📚}{
-                /uni/quaderni.jpg}{}
+                /uni/libri_blur.png}{}
+                <!-- /uni/quaderni.jpg}{} -->
 ~~~ 
 </div> <!-- card container -->
 ~~~ 
+
+
