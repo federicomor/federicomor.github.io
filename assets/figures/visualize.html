@@ -298,7 +298,7 @@
 			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 		}
 /*		h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }*/
-		h1 { color: #333333; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 10px; }
+/*		h1 { color: #333333; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 10px; }*/
 /*		h1 { color: #333333; font-family: 'Bitter', serif; font-size: 50px; font-weight: normal; line-height: 54px; margin: 0 0 20px; }*/
 
 		/*Rouge Script
@@ -307,7 +307,7 @@
 		Satisfy
 		Courgette
 		Merienda*/
-/*		h1 { color: #CEF0D4; font-family: 'Merienda', cursive; font-size: 60px; font-weight: normal; line-height: 48px; margin: 0 0 30px; text-align: center; text-shadow: 1px 1px 2px #082b34; }*/
+		h1 { color: #CEF0D4; font-family: 'Merienda', cursive; font-size: 60px; font-weight: normal; line-height: 48px; margin: 0 0 30px; text-align: center; text-shadow: 1px 1px 2px #082b34; }
 /*		h1 { color: #1a50aa; font-family: 'Rouge Script', cursive; font-size: 60px; font-weight: normal; line-height: 48px; margin: 0 0 30px; text-align: center; text-shadow: 1px 1px 2px #082b34; }*/
 
 /*		h1 { font-family: 'Enriqueta', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 40px; font-weight: bold; }*/
@@ -342,14 +342,39 @@
 <div id="image-slider">
 
 	<h1>One-model plots</h1>
-	<!-- <p id="scomparire_no">If when starting there are some glitches and some images do not display correctly just give the page some time to load ❤️🫠<br>As there are a lot of images behind the scenes, so it could require a deep, but totally legit, minute of setup.<br></p> -->
-	<script>
-	  // Funzione per far scomparire il testo dopo 3000 millisecondi (3 secondi)
-	  setTimeout(function() {
-	    var testoDaScomparire = document.getElementById('scomparire');
-	    testoDaScomparire.style.display = 'none';
-	  }, 30*1000); // k*1000 millisecondi = k secondi
-	</script>
+<p id="scomparire">
+  If when starting there are some glitches and some images do not display correctly, just give the page some time to load ❤️🫠<br>
+  As there are a lot of images behind the scenes, so it could require a deep, but totally legit, minute of setup 
+  <span id="orologio">🕛</span>
+</p>
+
+<style>
+  #scomparire {
+    transition: opacity 6s ease-out;
+  }
+</style>
+
+<script>
+  // Array di emoji dell'orologio
+  const orologi = ["🕛","🕐","🕑","🕒","🕓"];
+  let index = 0;
+
+  // Funzione per far cambiare l'emoji ogni 500ms
+  setInterval(() => {
+    document.getElementById("orologio").textContent = orologi[index];
+    index = (index + 1) % orologi.length;
+  }, 500);
+
+  // Effetto dissolvenza e scomparsa dopo 30 secondi
+  setTimeout(function() {
+    var testoDaScomparire = document.getElementById('scomparire');
+    testoDaScomparire.style.opacity = '0';
+
+    setTimeout(function() {
+      testoDaScomparire.style.display = 'none';
+    }, 6*1000);
+  }, 60*1000);
+</script>
 
 	<!-- Per i modelli senza covariate ho messo comunque i plot con le covariate (per ora quelle selezionate da Federica) che possono comunque essere utili per l'interpretazione magari.<br> Poi anziché la sezione dei four-plots potremmo fare quattro sezioni singole, una per modello, per anche spiegarli brevmente.<br><br> -->
 
