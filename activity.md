@@ -109,6 +109,12 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             Un altro giorno vedete invece passare cinque treni, tra i quali il numero massimo che si è presentato era 70. _Ora quanti treni stimate che abbia trenord?_}{
                 /assets/img/treni2.png}{impostato}
 \card{
+    /activity/probabilità_figli}{
+        Probabilità e figli maschi}{
+            Una famiglia ha due figli. \
+			Qual è la probabilità che siano entrambi maschi, se non disponiamo di alcuna informazione aggiuntiva? e se invece sapessimo che _il maggiore è un maschio?_ o che _almeno uno è un maschio?_ o che _almeno uno è un maschio nato di martedi?_}{
+                /assets/img/figli_1.jpg}{impostato}
+\card{
     https://surveyheart.com/form/679f5660ea7bdb6850cacadc }{
         Suggerisci un'idea!}{
              Hai in mente qualche problema, challenge, o esempio che credi sia interessante da analizzare da un punto di vista matematico? Fammi sapere!}{

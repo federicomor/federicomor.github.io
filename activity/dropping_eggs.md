@@ -16,7 +16,7 @@ Supponete infine di avere $k$ uova. Quale strategia utilizzereste, in questo cas
 
 > Problema ispirato da [https://plus.maths.org/content/dropping-eggs](https://plus.maths.org/content/dropping-eggs).
 
-## Soluzione
+## Soluzione intuitiva
 <!-- ~~~ 
 <div class="solution" tabindex="0"><p>
 ~~~  -->
@@ -24,16 +24,16 @@ Supponete infine di avere $k$ uova. Quale strategia utilizzereste, in questo cas
 Chiamiamo "piano critico" il massimo piano da cui l'uovo può essere lanciato senza che si rompa. Il nostro obiettivo è trovare la strategia che individui questo piano critico minimizzando il _numero massimo di lanci_ da effettuare _nel caso peggiore_. 
 <!-- Quindi ci interessa un metodo che sia robusto, ovvero che anche nel caso peggiore, in cui il piano critico si trovi ad un piano tale che con la mia strategia lo raggiungo dopo tante mosse) -->
 
-Con due uova, un'idea semplice ed immediata sarebbe la seguente
+Con due uova, un'idea semplice ed immediata (derivata dal metodi di ricerca binaria, più o meno) sarebbe la seguente
 > Lancio il primo uovo dal piano 25: se si rompe allora riparto col secondo uovo dal piano 1 a salire, se non si rompe passo al piano 50. Se lanciando dal 50 si rompe, allora riparto col secondo uovo dal piano 26 a salire; se non si rompe passo al piano 75. Se lanciando dal 75 si rompe, allora riparto col secondo uovo dal piano 51 a salire, altrimenti dal piano 76 a salire.
 
 Questo garantirebbe un numero massimo di lanci da effettuare, nel caso peggiore, pari a 28 (si pensi al caso in cui il piano critico sia il 99, che costringerebbe a testare $25 \to 50 \to 75 \to 100 \to 76 \to 77 \to \ldots \to 98 \to 99$).
 
-Questo metodo è ancora un po' lontano dall'essere ottimale; tuttavia suggerisce l'intuizione corretta: avendo più uova, possiamo permetterci di partire con dei test saltando diversi piani, ovvero investire il primo uovo per test più rischiosi (in quanto lanciandolo da piani più alti c'è rischio che si rompa) ma che poi riducano lo spazio di ricerca su cui impiegare il secondo uovo. 
+Questo metodo è quindi ancora un po' lontano dall'essere ottimale, in quanto - spoiler -, la soluzione ottimale riesce a trovare il piano critico con al più 14 lanci; tuttavia suggerisce l'intuizione corretta: avendo più uova, possiamo permetterci di partire con dei test saltando diversi piani, investendo il primo uovo per effettuare test più rischiosi (in quanto lanciandolo da piani più alti c'è maggiore rischio che si rompa) ma che poi riducano lo spazio di ricerca su cui impiegare il secondo uovo. 
 
-Quando abbiamo un solo uovo, infatti, siamo costretti a testare ogni piano uno per volta, ottenendo così uno spazio di ricerca $[1,100]$. Quando invece abbiamo due uova, possiamo usare il primo per testare un piano ogni $n$. Seguendo l'idea di sopra, con $n=25$, riusciamo infatti a spezzettare lo spazio di ricerca su sottoinsiemi più piccoli, ovvero $[1,25]$, $[26,50]$, $[51,75]$ e $[76,100]$. In questo modo otteniamo che il numero massimo di lanci da effettuare nel caso peggiore è pari a 28, che è già un bell'incremento rispetto al 100 del caso con un solo uovo! Ma possiamo fare di meglio scegliendo un diverso $n$, rispetto al 25 deciso a intuito, e rifinendo anche la strategia degli incrementi in modo più opportuno? In effetti sì.
+Quando abbiamo un solo uovo, infatti, siamo costretti a testare ogni piano uno per volta, ottenendo così uno spazio di ricerca $[1,100]$. Quando invece abbiamo due uova, possiamo usare il primo per testare un piano ogni $n$. Seguendo l'idea di sopra, con $n=25$, riusciremmo quindi a spezzettare lo spazio di ricerca su due sottoinsiemi più piccoli, ovvero $[1,25]$, $[26,50]$, $[51,75]$ e $[76,100]$. In questo modo otteniamo che il numero massimo di lanci da effettuare nel caso peggiore è pari a 28, che è già un bell'incremento rispetto al 100 del caso con un solo uovo! Ma possiamo fare di meglio scegliendo un diverso $n$, rispetto al 25 deciso a intuito, e rifinendo anche la strategia degli incrementi in modo più opportuno? In effetti sì.
 
-
+(devo ancora finire tutto :/)
 
 ---
 
@@ -173,9 +173,10 @@ jump size = 1 , 🏯=59 , 🥚=0 , 🪜=8
 8
 ```
 
-
 <!-- \input{julia}{/assets/scripts/dropping_eggs.jl} -->
 \fig{/assets/scripts/output/dropping_eggs_all.json}
+
+## Soluzione matematica
 
 <!-- ~~~ 
 </p></div>

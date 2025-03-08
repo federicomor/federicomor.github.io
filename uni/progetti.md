@@ -18,7 +18,7 @@ hasmath = true
 
 # Progetti
 Ecco una presentazione dei progetti svolti durante gli anni dell'università (tranne uno per ora, quello sull'ottimizzazione dell'assegnazione dei campi del grest, che forse andrebbe spostato nella sezione [Attività](/activity)). \
-Per una loro esposzione più elegante magari passate anche dalla pagina [Portfolio](/portfolio).
+Per una loro esposzione più elegante magari passate anche dalla pagina [Portfolio](/portfolio/).
 
 
 
