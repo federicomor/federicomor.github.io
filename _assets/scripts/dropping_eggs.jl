@@ -83,6 +83,85 @@ stratk([14,1],41,true,decrement=true)
 stratk([18,7,1],58,true,decrement=false)
 stratk([18,7,1],58,true,decrement=true)
 
+############# 2 eggs hists #############
+function test_all(STRAT,DEC)
+	max_steps = 0
+	for i in 1:100
+		max_steps = max(max_steps, stratk(STRAT,i,false,decrement=DEC))
+	end
+	return max_steps
+end
+function test_all_verbose(STRAT,DEC)
+	max_steps = 0
+	for i in 1:100
+		@show i, stratk(STRAT,i,false,decrement=DEC)
+		max_steps = max(max_steps, stratk(STRAT,i,false,decrement=DEC))
+	end
+	return max_steps
+end
+test_all_verbose([37,8,1],true)
+
+
+
+using Plots
+using JSON
+plotlyjs()
+
+X = Float64[]
+Z_worst = zeros(20)
+Z_avg = zeros(20)
+Z_best = zeros(20)
+
+for i in 6:20
+	strat_vector=[i,1]
+	worst_case = 0
+	avg_case = 0
+	best_case = 0
+	
+	# Calculate the cases for each critical floor
+	for critical_floor in 1:100
+		current_case = stratk(strat_vector, critical_floor, false)
+		worst_case = max(worst_case, current_case)
+		avg_case += current_case
+		best_case = min(worst_case, current_case)
+	end
+	avg_case /= 100
+	
+	# Append the results for the plot
+	push!(X, strat_vector[1])
+	Z_worst[i] = worst_case
+	Z_avg[i] = avg_case
+	Z_best[i] = best_case
+end
+
+# p_best = surface(x=14:18,y=6:10,z=Z_best[14:18,6:10])
+# p_worst = surface(x=14:18,y=6:10,z=Z_worst[14:18,6:10])
+# p_avg = surface(x=14:18,y=6:10,z=Z_avg[14:18,6:10])
+# plot([p_best,p_worst,p_avg])
+
+x=6:20
+plot(bar(Z_worst),xticks=(x,x))
+plot(bar(Z_avg),xticks=(x,x))
+plot(bar(Z_best),xticks=(x,x))
+
+
+p1 = surface(x,y,(x,y)->Z_avg[x,y],color=:blue,
+colorbar = false,alpha=0.5,
+label="avg",legend=true)
+surface!(p1,x,y, (x,y)->Z_best[x,y],color=:green,
+colorbar = false,alpha=0.5,
+label="best")
+surface!(p1,x,y, (x,y)->Z_worst[x,y],color=:red,
+colorbar = false,alpha=0.5,
+label="worst")
+xlabel!(p1,"x")
+ylabel!(p1,"y")
+
+savefig(p1,"_assets/scripts/Activity/output/dropping_eggs_surface.json")
+
+
+
+
 
 ############# 2 eggs #############
 begin

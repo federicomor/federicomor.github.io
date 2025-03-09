@@ -20,6 +20,25 @@ Quando sistemerò (o anche solo scansionerò) tutti i miei appunti popolerò meg
 Comunque, a seconda dei casi, e dei corsi, non carico qui i miei appunti effettivi, quelli presi sui quaderni durante le lezioni, ma piuttosto le loro "rielaborazioni" che in genere faccio quando studio una materia. Moralmente queste rielaborazioni condensano insieme varie fonti: gli appunti effettivi presi a lezione, metodi ed esempi visti ad esercitazione, qualcosa tratto da libri o trovato online, ecc; il tutto per arrivare a una forma nella versione più chiara, ordinata e studiabile possibile.\
 Se carico invece gli appunti effettivi dei quaderni è perché o per quel corso non ho avuto voglia di riordinare e integrare il materiale, o semplicemente perché tali appunti, per i miei gusti di studio, erano già usciti perfettamente nel formato quaderno (per esempio quelli del corso di ARF).
 
+<!-- ~~~
+<style>
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+    <details>
+        <summary>Load PDF 1</summary>
+        <iframe src="/assets/uni/Appunti_Bayesian.pdf"></iframe>
+    </details>
+
+    <details>
+        <summary>Load PDF 2</summary>
+        <iframe src="/assets/uni/Appunti_Bayesian.pdf"></iframe>
+    </details>
+~~~ -->
+
 ## BS - Bayesian Statistics (magistrale)
 {{ pdf /assets/uni/Appunti_Bayesian.pdf}}
 
