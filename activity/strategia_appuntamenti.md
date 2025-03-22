@@ -5,7 +5,7 @@ hasplotly = true
 +++
 
 
-### Strategia ottimale per appuntamenti
+## Strategia ottimale per appuntamenti
 
 Vediamo ora una delle domande più cruciali nella vita sentimentale: _quante persone dovremmo frequentare prima di scegliere quella con cui stabilizzarci per qualcosa di più serio?_
 
@@ -26,7 +26,7 @@ Dato $N$, quindi, vorremo capire come bilanciare il rischio tra "scegliere un pa
 [^2]: l'assegnazione corretta di questi punteggi esiste ma è a noi ignota, ovviamente, perché il punteggio da assegnare a ogni partner lo sapremo esattamente solo una volta fatti tutti gli appuntamenti. Solo una volta conosciuti tutti potremmo allora dire "lei era la migliore" (punteggio $N$), "quest'altra la seconda migliore" (punteggio $N-1$), ecc. Durante il percorso invece possiamo solo fare confronti del tipo "lei era peggiore di quella vista prima", "quest'altra era migliore di tutte le altre viste finora", ecc, ovvero confronti relativi. 
 
 
-### Soluzione
+## Soluzione
 Stavolta ho impostato l'articoletto come una vera storiella di divulgazione, non come domanda e risposta. Nel farlo ho cercato quindi di mantenere un discorso secondo me simpatico, ordinato, e chiaro, ma senza comunque spoilerare la soluzione. Per chi è solo interessato al risultato, basta quindi cliccare sulle parti sfocate di sopra, altrimenti continuate qui per la soluzione completa, con tutti i calcoli per arrivare al risultato finale.
 
 ---

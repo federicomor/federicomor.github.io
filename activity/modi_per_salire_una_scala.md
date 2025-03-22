@@ -4,14 +4,15 @@ hascode = true
 hasplotly = true
 +++
 
-### Modi per salire una scala
+## Modi per salire una scala
+In quanti modi si può salire una scala lunga $n$ gradini, potendo salire al massimo 2 scalini per volta? E salendone al massimo $k$ per volta?
+
 {{ youtube https://www.youtube.com/watch?v=HWJOsKOcUJk }}
 
-In quanti modi si può salire una scala lunga $n$ gradini, potendo salire al massimo 2 scalini per volta? E salendone al massimo $k$ per volta?
 
 > Problema ispirato da [https://plus.maths.org/content/its-long-way-top](https://plus.maths.org/content/its-long-way-top).
 
-### Soluzione
+## Soluzione
 Partiamo dal caso in cui possiamo fare al massimo due scalini per volta. Chiamando $S(n)$ questo numero di modi in funzione di $n$, risulta che la soluzione è data da
 $$
 S(n) = S(n-1) + S(n-2)
@@ -22,9 +23,12 @@ Mentre generalizzando il calcolo, supponendo cioè di avere un altro parametro $
 $$
 S(n) = S(n-1) + S(n-2) + \ldots + S(n-k)
 $$
-dove però ora i vari valori $S(n-i)$ si devono trovare in modi a volte meno ovvi. Per capire tutto, insieme ad una semplice idea per convertire il calcolo in codice eseguibile da un computer vi rimando naturalmente al video.
+dove però ora i vari valori $S(n-i)$ si devono trovare in modi a volte meno ovvi. Per capire tutto, insieme ad una semplice idea per convertire il calcolo in codice eseguibile da un computer, vi rimando naturalmente al video.
 
 \input{julia}{/assets/scripts/salendo_le_scale.jl}
+<!-- @@caption
+Comportamento di $S(n,k)$ al variare di alcuni $n$ e $k$
+@@ -->
 \fig{/assets/scripts/output/scale.json}
 <!-- rimuovere i commenti dai codici javascript, sembrano non farli funzionare-->
 
@@ -74,10 +78,13 @@ function calculate() {
 <br>
 ~~~
 
-La scrittura della funzione in forma ricorsiva è utile, didattica, perché rispecchia la soluzione matematica che abbiamo trovato. Tuttavia, per una implementazione più efficiente c'è un altro modo, che al posto della ricorsione usa una tecnica un po' più avanzata (memoization) appartenente al mondo del "dynamic programming". L'idea è infatti che usando la ricorsione molti calcoli vengono ripetuti; in quest'altra versione invece i calcoli vengono salvati e riutilizzati.
+<!-- Facciamo un piccolo esempio pratico: la torre di Pisa ha 294 scalini. Una persona normale riesce a salire al massimo tre scalini alla volta (forse anche quattro in realtà, ma teniamo il caso normale come riferimento). Con queste premesse, ci sarebbero $3.965\cdot 10^{77}$ modi per salire la torre di Pisa. Per far capire quanto è grande questo numero, supponiamo che tutti i circa 90 mila cittadini di Pisa salgano la loro amata torre di Pisa ogni mezz'ora (diamogli un po' di tempo poverini), di ogni giorno, di ogni anno della loro vita (una vita ben spesa per questa nobile causa matematica), ognuno ogni volta con un modo diverso di percorrerre quelle scale. Bene, se anche avessero eseguito questo procedimento sin dalla nascita dell'universo (assumendo quindi che all'epoca del big bang esistessero già dei pisani che stavano vagabondando sfiniti su per una torre storta), beh, ad oggi avrebbero coperto neanche lontanamente l'1% di tutti quei modi possibili. -->
+
+<!-- --- -->
+
+La scrittura della funzione in forma ricorsiva è utile, didattica, perché rispecchia la soluzione matematica che abbiamo trovato. Tuttavia, per una implementazione più efficiente c'è un altro modo che al posto della ricorsione utilizza una tecnica un po' più avanzata, la memoization, appartenente al mondo del "dynamic programming". L'idea è infatti che usando la ricorsione molti calcoli vengono ripetuti; in quest'altra versione invece i calcoli vengono salvati e riutilizzati.
 
 ```julia
-
 function S_fast(n, k, memo=Dict{Tuple{Int, Int}, Int}())
 	# casi base, come prima
 	n==0 && return 0
@@ -100,6 +107,7 @@ function S_fast(n, k, memo=Dict{Tuple{Int, Int}, Int}())
 	return result
 end
 ```
+Questa nuova versione produce infatti un notevole miglioramento delle performance:
 ```julia-repl
 julia> @time S(32,5)
  19.574231 seconds

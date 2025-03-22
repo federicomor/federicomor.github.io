@@ -4,14 +4,15 @@ hascode = true
 hasplotly = true
 +++
 
-### Ipercubi in $N$ dimensioni
-{{ youtube https://youtu.be/NjdqSz4iva0 }}
+## Ipercubi in $N$ dimensioni
 
 Come si calcolano le caratteristiche geometriche, ovvero vertici, lati, e facce, degli (iper)cubi in dimensioni $N$ generiche? 
 
-Infatti, finché lavoriamo con quadrati (quindi in 2d) o cubi (in 3d) è tutto molto tranquillo: basta disegnarli e osservarli e per capire quanti vertici, lati, e facce abbiano. Invece, salendo di dimensione non possiamo più disegnarli (o quantomeno farlo in un modo intuibile e comprensibile), e quindi occorre arrivarci per vie traverse, impiegando anche un po' di calcolo combinatorio.
+{{ youtube https://youtu.be/NjdqSz4iva0 }}
 
-### Soluzione
+Infatti, finché lavoriamo con quadrati (quindi in 2d) o cubi (in 3d) è tutto molto tranquillo: basta disegnarli e osservarli e per capire quanti vertici, lati, e facce abbiano. Invece salendo di dimensione non possiamo più disegnarli, o quantomeno farlo in un modo intuibile e comprensibile, e quindi occorre arrivarci per vie traverse, sfruttando anche un po' di calcolo combinatorio.
+
+## Soluzione
 Per i vertici basta sfruttare l'idea che salendo di dimensioni il vecchio cubo viene traslato lungo il nuovo asse, e quindi i suoi vertici raddoppiano (pensate a come si ottenga un cubo traslando un quadrato lungo l'asse $z$). E quindi studiando un po' il pattern si ricava che
 $$
 \#\text{(vertici)} = 2^{N}

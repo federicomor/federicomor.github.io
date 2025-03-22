@@ -13,11 +13,6 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
 ~~~ 
 <div class="card-container">
 ~~~
-<!-- \card{
-    /activity/project_euler}{
-        Problemi del progetto Eulero}{
-            Una raccolta di storiche challenge da risolvere per metodi matematici (scervellandosi in vari modi) o informatici (scrivendo dell'opportuno codice). Sono più di 900 problemi quindi ci sarà molto materiale con cui cimentarsi.}{
-                /assets/img/peuler2.jpg}{} -->
 \card{
     /activity/dropping_eggs}{
         Dropping Eggs}{
@@ -25,29 +20,17 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             _Che strategia utilizzereste, se aveste solo due uova, per minimizzare il caso peggiore del numero di lanci da effettuare? E se aveste $k$ uova?_}{
                 /assets/img/gallina2.png}{quasi finito :)}
 \card{
-    /activity/babbo_natale_dismutazioni}{
-        Babbo Natale e le dismutazioni}{
-            Babbo Natale ha ricevuto $n$ letterine dai bambini di tutto mondo, e quest'anno ha deciso di rispondere personalmente a ciascuno di loro. Tuttavia, nella confusione delle feste, Babbo Natale finisce per mettere le lettere di risposta nelle varie buste in modo completamente casuale.\
-            _Qual è la probabilità che nessun bambino riceva la lettera di risposta che era destinata a lui?_}{
-                /assets/img/bnatale1_cut.jpg}{devo finirlo}
-\card{
-    /activity/sequenza_verso_uno}{
-        In cammino verso l'unità}{
-            Dato un numero $n$ qualunque, sottraetegli 1 se è dispari, mentre dividetelo per 2 se è pari.\
-            _Quanti passi sono necessari per arrivare a 1? (trovare una formula generale in funzione di $n$)_}{
-                /assets/img/cammino_verso_uno.png}{impostato}
+    /activity/ipercubi}{
+        Ipercubi in \(N\) dimensioni}{
+            Se vogliamo contare quanti vertici, lati, e facce abbiamo quadrati o cubi (quindi in 2 o 3 dimensioni) basta farne un disegno ed osservarli.\
+            _Ma come si calcolano queste caratteristiche geometriche quando ci ambientiamo in dimensioni $N$ generiche?_}{
+                /assets/img/ipercubi.png}{tutto perfetto}
 \card{
     /activity/modi_per_salire_una_scala}{
         Modi per salire una scala}{
             Considerate una scala alta $n$ scalini.\
             _In quanti modi potete salirla facendo passi alti al massimo 2 scalini? e con passi alti al massimo $k$ scalini?_}{
                 /assets/img/scale.png}{finito, c'è pure il video}
-\card{
-    /activity/ipercubi}{
-        Ipercubi in \(N\) dimensioni}{
-            Se vogliamo contare quanti vertici, lati, e facce abbiamo quadrati o cubi (quindi in 2 o 3 dimensioni) basta farne un disegno ed osservarli.\
-            _Ma come si calcolano queste caratteristiche geometriche quando ci ambientiamo in dimensioni $N$ generiche?_}{
-                /assets/img/ipercubi.png}{tutto perfetto}
 \card{
     /activity/probabilità_compleanni}{
         Paradosso dei compleanni}{
@@ -60,6 +43,35 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             Ci troviamo in una partita di tennis con i due giocatori (A e B) arrivati a 6-6. Durante il match siamo riusciti a stimare due parametri $a$ e $b$ che descrivono le probabilità, per il giocatore A, di vincere un punto quando lui è al servizio o quando B è al servizio, rispettivamente. Sta cominciando il tie-break, e inizierà il giocatore A a servire.\
             _Dato questo contesto e questi dati, qual è la probabilità che il giocatore A vinca il tie-break (in funzione di $a$ e $b$)?_}{
                 /assets/img/tennis.png}{perfetto e super interessante}
+\card{
+    https://surveyheart.com/form/679f5660ea7bdb6850cacadc }{
+        Suggerisci un'idea!}{
+             Hai in mente qualche problema, challenge, o esempio che credi sia interessante da analizzare da un punto di vista matematico? Fammi sapere!}{
+                /assets/img/form2.png}{}
+~~~
+</div> 
+~~~
+## Work in progress
+~~~
+<div class="card-container">
+~~~
+\card{
+    /activity/project_euler}{
+        Problemi del progetto Eulero}{
+            Una raccolta di storiche challenge da risolvere per metodi matematici (scervellandosi in vari modi) o informatici (scrivendo dell'opportuno codice). Sono più di 900 problemi quindi ci sarà molto materiale con cui cimentarsi.}{
+                /assets/img/peuler3.png}{}
+\card{
+    /activity/babbo_natale_dismutazioni}{
+        Babbo Natale e le dismutazioni}{
+            Babbo Natale ha ricevuto $n$ letterine dai bambini di tutto mondo, e quest'anno ha deciso di rispondere personalmente a ciascuno di loro. Tuttavia, nella confusione delle feste, Babbo Natale finisce per mettere le lettere di risposta nelle varie buste in modo completamente casuale.\
+            _Qual è la probabilità che nessun bambino riceva la lettera di risposta che era destinata a lui?_}{
+                /assets/img/bnatale1_cut.jpg}{devo finirlo}
+\card{
+    /activity/sequenza_verso_uno}{
+        In cammino verso l'unità}{
+            Dato un numero $n$ qualunque, sottraetegli 1 se è dispari, mentre dividetelo per 2 se è pari.\
+            _Quanti passi sono necessari per arrivare a 1? (trovare una formula generale in funzione di $n$)_}{
+                /assets/img/cammino_verso_uno.png}{impostato}
 \card{
     /activity/strategia_appuntamenti}{
         Strategia ottimale per appuntamenti}{
@@ -114,11 +126,6 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             Una famiglia ha due figli. \
 			Qual è la probabilità che siano entrambi maschi, se non disponiamo di alcuna informazione aggiuntiva? e se invece sapessimo che _il maggiore è un maschio?_ o che _almeno uno è un maschio?_ o che _almeno uno è un maschio nato di martedi?_}{
                 /assets/img/figli_1.jpg}{impostato}
-\card{
-    https://surveyheart.com/form/679f5660ea7bdb6850cacadc }{
-        Suggerisci un'idea!}{
-             Hai in mente qualche problema, challenge, o esempio che credi sia interessante da analizzare da un punto di vista matematico? Fammi sapere!}{
-                /assets/img/form2.png}{}
 <!-- \card{
     /activity/project_euler}{
         Problemi del progetto Eulero}{

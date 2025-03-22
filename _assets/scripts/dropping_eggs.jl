@@ -86,10 +86,12 @@ stratk([18,7,1],58,true,decrement=true)
 ############# 2 eggs hists #############
 function test_all(STRAT,DEC)
 	max_steps = 0
+	results = zeros(100)
 	for i in 1:100
-		max_steps = max(max_steps, stratk(STRAT,i,false,decrement=DEC))
+		results[i] = stratk(STRAT,i,false,decrement=DEC)
+		max_steps = max(max_steps, results[i])
 	end
-	return max_steps
+	return results, max_steps
 end
 function test_all_verbose(STRAT,DEC)
 	max_steps = 0
@@ -101,6 +103,13 @@ function test_all_verbose(STRAT,DEC)
 end
 test_all_verbose([37,8,1],true)
 
+res_dec_false, _ = test_all([20,1],false)
+res_dec_true, _ = test_all([20,1],true)
+
+p1 = bar(collect(1:100),test_all([14,1],false),label="dec=false",legend_position=:topleft)
+bar!(p1,collect(1:100),test_all([14,1],true),label="dec=true",alpha=1)
+title!("jump_size=14")
+savefig(p1,"_assets/scripts/output/eggs_hist.json")
 
 
 using Plots

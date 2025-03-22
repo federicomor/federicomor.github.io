@@ -4,7 +4,7 @@ hascode = true
 hasplotly = true
 +++
 
-### In cammino verso l'unità
+## In cammino verso l'unità
 Dato un numero $n$ qualunque, sottraetegli 1 se è dispari, mentre dividetelo per 2 se è pari. Quanti passi sono necessari per arrivare a 1?
 
 Per capire meglio il problema prendete come riferimento gli esempietti che seguono.
@@ -77,7 +77,7 @@ function calculate() {
 Simulare tutti questi passaggi (sottrarre 1 o dividere per 2) può diventare dispendioso per numeri molto alti: vorremo quindi trovare un modo che, dato un numero $n$, ci dia una risposta più immediata riguardo al numero di passi necessari per arrivare a 1. Esiste quindi una "formula" generale, in funzione di $n$, che calcoli direttamente la soluzione?
 
 
-### Soluzione
+## Soluzione
 
 
 {{ addcomments }}

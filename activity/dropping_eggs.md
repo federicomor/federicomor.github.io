@@ -26,11 +26,12 @@ Chiamiamo "piano critico" il massimo piano da cui l'uovo può essere lanciato se
 
 Se avessimo un solo uovo, saremmo forzati a testare un piano per volta partendo dal primo, come descritto nel testo. In questo modo, alla peggio ci metteremo 100 lanci per trovare il piano critico (il caso peggiore è infatti se il piano critico è proprio il piano 100).
 
-Invece, con due uova, l'intuizione suggerisce che possiamo permetterci di partire con dei test da piani più alti, investendo il primo uovo in test più rischiosi (in quanto lanciandolo da piani più alti c'è maggiore rischio che l'uovo si rompa) ma che poi riducano lo spazio di ricerca su cui impiegare il secondo uovo. Nel caso di rottura nei primi test ritorneremo al caso di un solo uovo e saremo costretti a testare un piano per volta, ma con questa strategia ci saremo garantiti una finestra di ricerca molto più ristretta.
+Invece, con due uova, l'idea è che possiamo permetterci di partire lanciando il primo uovo da piani più alti, investendolo cioè in test più rischiosi in quanto c'è maggiore rischio che si rompi, ma che poi riducano lo spazio di ricerca su cui impiegare il secondo uovo. Nel caso di rottura del primo uovo, infatti, ritorneremo al caso di un solo uovo e saremo nuovamente costretti a testare un piano per volta, ma impiegando questa strategia ci saremo garantiti una finestra di ricerca ora molto più ristretta rispetto all'originale $[0,100]$. Il punto è: da quanto in alto far saltare il primo uovo? e se non si rompe, di quanto salire per i lanci successivi?
 
-Per esempio, supponiamo di partire lanciando il primo uovo dal piano 20, e se non si rompe passare al 40, poi al 60, all'80, e infine al 100. In questo modo, se l'uovo si rompe utilizziamo il secondo sull'ultima finestra identificata come rilevante (per esempio se non si rompe al 20 ma si rompe al 40, cercheremo tra i piani 21 e 39), e alla peggio ci metteremo 19 lanci. Con questo metodo, il caso peggiore sarebbe quello in cui il piano critico è il 99, che comporterebbe 5 lanci col primo uovo (20,40,60,80,100) e 19 col secondo uovo (dall'81 al 99). 
+Per esempio, consideriamo la strategia di partire lanciando il primo uovo dal piano 20, con incrementi successivi, in caso di integrità, di 20 piani (ovvero, se non si rompe passare al 40, poi al 60, all'80, e infine al 100). In questo modo, se l'uovo si rompesse al primo lancio impiegheremo il secondo sulla finestra di piani identificata come rilevante, ovvero $[0,19]$, in quanto di sicuro lì apparterrà il piano critico. Se si rompesse invece al secondo lancio, dal piano 40, ci concentreremo sulla nuova finestra $[21,39]$, e così via. Con questo metodo, il caso peggiore sarebbe quello in cui il piano critico è il 99 (o anche il 100), che comporterebbe 5 lanci col primo uovo (20, 40, 60, 80, 100) e 19 col secondo uovo (dall'81 al 99). 
 
-```julia
+Segue un esempio di esecuzione della strategia appena descritta:
+```julia-repl
 julia> stratk([20,1],99,true,decrement=false)
 jump size = 20, 🏯=20 , 🥚=2 , 🪜=1
 jump size = 20, 🏯=40 , 🥚=2 , 🪜=2
@@ -57,10 +58,10 @@ jump size = 1 , 🏯=97 , 🥚=1 , 🪜=22
 jump size = 1 , 🏯=98 , 🥚=1 , 🪜=23
 jump size = 1 , 🏯=99 , 🥚=1 , 🪜=24
 ```
+Questa strada sembra in effetti sensata, ma per arrivare a quella ottimale occorre eseguire un ultimo passettino. Notiamo infatti che, col metodo appena descritto nell'esempio, la finestra di ricerca per il secondo uovo rimane fissa, costantemente ampia 19 piani. Tuttavia, ogni volta che il primo uovo non si rompe, stiamo di fatto sprecando dei lanci, che si andranno ad aggiungere al conteggio totale dei lanci effettuati. Perciò qui arriva l'ideona: se anziché saltare di un numero fisso di piani (di 20 in 20), saltassimo con salti decrescenti (di 20, poi 19, poi 18, ecc)? In questo modo, più test effettuiamo col primo uovo, più la finestra di ricerca si restringe col secondo uovo man mano che saliamo, compensando l'aver investito per più lanci il primo uovo. 
 
-A questo punto possiamo eseguire l'ultimo step logico per arrivare alla soluzione ottimale. Notiamo infatti che con questo metodo la finestra di ricerca per il secondo uovo rimane fissa, pari a 19 nell'esempio precedente. Tuttavia, ogni volta che il primo uovo non si rompe staremmo sprecando dei lanci, che si aggiungerebbero al conteggio dei lanci da effettuare nelle singole finestre. Perciò, ideona: se anziché saltare di un numero fisso di piani, tipo di 20 in 20, saltassimo con salti decrescenti, tipo di 20, poi 19, poi 18, ecc? in questo modo, più test effettuiamo col primo uovo, più la finestra di ricerca si restringe man mano che saliamo, e questo compensa l'aver investito più lanci inizialmente. 
-
-```julia
+Notiamo infatti già un bell'effetto impostando, nella funzione precedente, il parametro `decrement` su `true` in modo da scalare di uno l'ampiezza dei salti effettuati col primo uovo: 
+```julia-repl
 julia> stratk([20,1],99,true,decrement=true)
 jump size = 20, 🏯=20 , 🥚=2 , 🪜=1
 jump size = 19, 🏯=39 , 🥚=2 , 🪜=2
@@ -79,7 +80,10 @@ jump size = 1 , 🏯=98 , 🥚=1 , 🪜=14
 jump size = 1 , 🏯=99 , 🥚=1 , 🪜=15
 ```
 
-Con un salto, seppur decrescente, ampio 20, ci metteremmo comunque alla peggio 20 lanci. Magari possiamo fare di meglio, scegliendo un salto diverso da 20? In effetti sì. Per trovarlo, pensiamo che più saliamo, più vogliamo restringere la nostra finestra di ricerca, per compensare tutti i lanci effettuati per arrivarci, senza tuttavia stringerla troppo in quanto vogliamo assicurarci di esplorare l'intero spazio dei piani da 1 a 100. Un salto ampio 20 era in effetti eccessivo, perché decrementandolo con 19, 18, ecc, riusciremmo ad esplorare $20+19+18+\ldots+2+1=210$ piani, che sono fin troppi per il nostro edificio. L'$n$ ottimale sarà quindi il più basso valore tale che comunque 
+Con questa strategia (salto iniziale ampio 20 e decrementi di 1 ogni volta che si sale) ci metteremmo alla peggio 20 lanci. Magari possiamo fare di meglio, scegliendo un salto diverso da 20? In effetti sì.\
+Per trovare questo valore di salto ottimale, basta pensare che più saliamo, più vogliamo restringere la nostra finestra di ricerca, in modo da compensare tutti i lanci effettuati per arrivarci, ma comunque dobbiamo garantirci di esplorare l'intero spazio dei piani da 1 a 100, in quanto il piano critico potrebbe ovviamente essere anche uno degli ultimi.
+
+Un salto ampio 20 era in effetti eccessivo, perché decrementandolo con 19, 18, ecc, riusciremmo ad esplorare un numero di piani pari a $20+19+18+\ldots+2+1=210$, che sono in effetti fin troppi per il nostro edificio di 100 piani. Il calcolo mostra quindi che se l'edificio avesse 210 piani, 20 sarebbe stato il valore ottimale in quel caso. Con 100 piani, invece, il salto ottimale $n$ sarà quindi il più basso valore tale per cui 
 $$
 n+(n-1)+(n-2)+\ldots+2+1 \geq 100
 $$
@@ -87,14 +91,19 @@ ovvero
 $$
 \frac{n(n+1)}{2} \geq 100 \implies n=14
 $$
-ed alla peggio ci metterà 14 lanci. Infatti
-- lanciamo dal piano 14: se si rompe, controlliamo col secondo uovo i tredici piani dall'1 al 13 (alla peggio ci avremmo messo $1+13=14$ lanci); se non si rompe,
-- lanciamo dal piano $14+13=27$: se si rompe, controlliamo col secondo uovo i dodici piani dal 15 al 26 (alla peggio ci avremmo messo $2+12=14$ lanci); se non si rompe,
-- lanciamo dal piano $14+13+12=39$: se si rompe, controlliamo col secondo uovo gli undici piani dal 28 al 38 (alla peggio ci avremmo messo $3+11=14$ lanci); se non si rompe,
-- $\vdots$
-- lanciamo dal piano $14+13+\ldots+5=95$: se si rompe, controlliamo col secondo uovo i quattro piani dal 91 al 95 (alla peggio ci avremmo messo 10+4=14 lanci); se non si rompe, ecc.
+Perciò con salti decrementati a partire da 14, e un edificio di 100 piani, alla peggio ci metteremo 14 lanci, e questa è la strategia ottimale.
 
-Questa idea di fare passi decrescenti si può naturalmente estendere ai casi con più uova, ma se per due uova era la soluzione ottimale, non è detto che lo sia nel caso di tre o più uova. Infatti, si può trovare un metodo migliore e più rigoroso, che consente di affrontare il problema dato un numero arbitrario di piani e di uova. Per questa soluzione matematica vi rinvio quindi qui sotto, dopo la digressione informatica legata a questo metodo "intuitivo".
+Giusto per ricapitolare l'idea del compensare i lanci, questo sarebbe lo schemino di esecuzione da seguire.
+- Lanciamo il primo uovo dal piano 14: se si rompe, controlliamo col secondo uovo i tredici piani dall'1 al 13 (alla peggio ci avremmo messo $1+13=\bf{14}$ lanci); se non si rompe,
+- lanciamo il primo uovo dal piano $14+13=27$: se si rompe, controlliamo col secondo uovo i dodici piani dal 15 al 26 (alla peggio ci avremmo messo $2+12=\bf{14}$ lanci); se non si rompe,
+- lanciamo il primo uovo dal piano $14+13+12=39$: se si rompe, controlliamo col secondo uovo gli undici piani dal 28 al 38 (alla peggio ci avremmo messo $3+11=\bf{14}$ lanci); se non si rompe,
+- ecc
+
+<!-- Questo effetto di compensazione si vede ben anche dal grafico che segue: -->
+\fig{/assets/scripts/output/eggs_hist.json}
+
+Questa idea di fare passi decrescenti si può naturalmente estendere ai casi con più uova, ma se per due uova era la soluzione ottimale, non è detto che lo rimanga nel caso di tre o più uova. Infatti, si può trovare un metodo migliore, per vie più rigorose, che consente di risolvere _sempre_ il problema in maniera ottimale anche considerando un numero arbitrario di piani $N$ e di uova $k$. A tal proposito, per questa soluzione matematica vi rinvio al paragrafo quindi [qui](#soluzione_matematica) sotto, subito dopo la digressione informatica legata a questo metodo "intuitivo".
+
 
 ---
 
@@ -177,9 +186,7 @@ function stratk(divs_strat::Vector, critical_floor::Integer, verbose::Bool; decr
 end
 ```
 <!-- aggiungere magari istogrammi per confrontare caso decrement true/false -->
-@@caption
-Esempi di alcune esecuzioni.
-@@
+Ecco degli esempi di alcune esecuzioni
 ```julia-repl
 julia> stratk([14,1],58,true,decrement=true) 
 jump size = 14, 🏯=14 , 🥚=2 , 🪜=1 # with 2 eggs
@@ -209,9 +216,8 @@ jump size = 5 , 🏯=63 , 🥚=1 , 🪜=7
 jump size = 1 , 🏯=59 , 🥚=0 , 🪜=8
 8
 ```
-@@caption
-Grafici dei casi migliori, peggiori, e medi di esecuzione delle varie strategie (nella forma $[x,y,1]$) con tre uova.
-@@
+e dei grafici riguardo ai casi migliori, peggiori, e medi di esecuzione delle varie strategie,  nella forma $[x,y,1]$ seguendo la convenzione introdotta dalla funzione precedente, con quindi tre uova.
+
 <!-- \input{julia}{/assets/scripts/dropping_eggs.jl} -->
 \fig{/assets/scripts/output/dropping_eggs_all.json}
 
