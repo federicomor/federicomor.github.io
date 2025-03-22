@@ -191,7 +191,7 @@ This is a project that probably dates back to high school years, where inspired 
     </label>
 </div>
 
-<textarea id="inputText" oninput="processText();" style="width: 60%; text-transform: lowercase;">Wow that's fun!</textarea><br>
+<textarea id="inputText" oninput="processText();" style="width: 60%; text-transform: lowercase;">wow that's fun!</textarea><br>
 <pre id="output"></pre>
 
 <script>
