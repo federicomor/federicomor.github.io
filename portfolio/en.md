@@ -178,7 +178,7 @@ margin-bottom: -10px;">
 
 
 ## Writing with chemistry
-This is a project that probably dates back to high school years where, inspired by the periodic table hang on the wall of the classroom, I tried to build words and phrases using the elements from the periodic table as letters. With this in mind, I implemented this idea with some C code, available [here](https://github.com/federicomor/writing-with-chemistry), which is also proposed here through a conversion to javascript.
+This is a project that probably dates back to high school years where, inspired by the periodic table hang on the wall of the classroom, I tried to build words and phrases using the elements from the periodic table as letters. I implemented this idea with some C code, available [here](https://github.com/federicomor/writing-with-chemistry), which is also proposed here through a conversion to javascript.
 
 ~~~ 
 <!-- Switch to select between English and Italian -->
