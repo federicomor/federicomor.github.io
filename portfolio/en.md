@@ -178,7 +178,7 @@ margin-bottom: -10px;">
 
 
 ## Writing with chemistry
-This is a project that probably dates back to high school years, where inspired by the periodic table hang on the wall I wanted to build words and phrases using as letters the elements from the periodic table. With this in mind, I implemented this idea with some C code, available [here](https://github.com/federicomor/writing-with-chemistry), which is also available [at this page](/assets/uni/wwc.html) if you want to play with it.
+This is a project that probably dates back to high school years where, inspired by the periodic table hang on the wall of the classroom, I tried to build words and phrases using the elements from the periodic table as letters. With this in mind, I implemented this idea with some C code, available [here](https://github.com/federicomor/writing-with-chemistry), which is also proposed here through a conversion to javascript.
 
 ~~~ 
 <!-- Switch to select between English and Italian -->
@@ -192,7 +192,8 @@ This is a project that probably dates back to high school years, where inspired 
 </div>
 
 <textarea id="inputText" oninput="processText();" style="width: 60%; text-transform: lowercase;">wow that's fun!</textarea><br>
-<pre id="output"></pre>
+<!-- "proprio carino" in italian -->
+<pre id="output" style="color: #515151; font-size: 11pt; line-height: 13pt;"></pre>
 
 <script>
 // Class for chemical elements
@@ -238,7 +239,8 @@ async function loadElements() {
 
 // Parse the input text and match it against the elements
 function processText() {
-    const str = document.getElementById("inputText").value.trim();
+	// const str = document.getElementById("inputText").value.trim();
+	const str = document.getElementById("inputText").value.toLowerCase().trim();
     const output = document.getElementById("output");
     output.innerHTML = "";
 

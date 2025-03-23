@@ -2,6 +2,7 @@
 title = "P51"
 hascode = true
 hasplotly = true
+showall = true
 +++
 
 ~~~
@@ -10,6 +11,19 @@ hasplotly = true
 <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
 </form>
 <a href="/activity/project_euler/problem_50/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a>
+<script>
+  function getRandomProblem() {
+    fetch('/activity/project_euler/data.txt') 
+      .then(response => response.text())
+      .then(data => {
+        const maxProblems = parseInt(data.trim(), 10);
+        const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1;
+        window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/';
+      })
+      .catch(err => console.error('Error fetching max problems:', err));
+  }
+</script>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_52/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </div>
@@ -26,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Prime Digit Replacements</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 29th August 2003, 06:00 pm; Solved by 37869;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=51">Problem 51</a></h3></div>
+<h2>Prime Digit Replacements</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 29th August 2003, 06:00 pm; Solved by 38103;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=51">Problem 51</a></h3></div>
 <div class="problem_content" role="problem">
 <p>By replacing the 1<sup>st</sup> digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.</p>
 <p>By replacing the 3<sup>rd</sup> and 4<sup>th</sup> digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.</p>
@@ -37,5 +51,6 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </div> <!--end_content-->
 ~~~
 ## Soluzione
+\literate{/_literate/pe_51.jl}
 
 {{ addcomments }}

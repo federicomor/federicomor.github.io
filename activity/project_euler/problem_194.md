@@ -16,8 +16,11 @@ hasplotly = true
 ~~~
 
 ~~~
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 <link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
 <link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
+<link rel="stylesheet" type="text/css" href="themes/style_default.1737760786.css">
 <script src="https://projecteuler.net/js/mathjax_config.js"></script>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script>
 <script id="MathJax-script" async
