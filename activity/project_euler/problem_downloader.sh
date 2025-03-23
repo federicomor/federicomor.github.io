@@ -51,6 +51,7 @@ do
         echo "title = \"P$problem_number\"" >> "$output_file"
         echo "hascode = true" >> "$output_file"
         echo "hasplotly = true" >> "$output_file"
+        echo "showall = true" >> "$output_file" # for literate stuff
         echo "+++" >> "$output_file"
         echo "" >> "$output_file"
 
@@ -71,6 +72,21 @@ do
 
         # echo "<a href=\"/activity/project_euler/problem_$(($problem_number-1))/\" style=\"color: black; text-decoration: none;\">← </a>" >> $output_file
         echo "<a href=\"/activity/project_euler/problem_$(($problem_number-1))/\" style=\"color: black; text-decoration: none;\"><i class=\"fa-solid fa-arrow-left\"></i></a>" >> $output_file
+
+echo '<a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a>' >> $output_file
+echo '<script>' >> $output_file
+echo '  function getRandomProblem() {' >> $output_file
+echo "    fetch('/activity/project_euler/data.txt') " >> $output_file
+echo '      .then(response => response.text())' >> $output_file
+echo '      .then(data => {' >> $output_file
+echo '        const maxProblems = parseInt(data.trim(), 10);' >> $output_file
+echo '        const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1;' >> $output_file
+echo "        window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/';" >> $output_file
+echo '      })' >> $output_file
+echo "      .catch(err => console.error('Error fetching max problems:', err));" >> $output_file
+echo '  }' >> $output_file
+echo '</script>' >> $output_file
+
         echo "<a href=\"/activity/project_euler\" style=\"color: black; text-decoration: none;\">🏠 </a>" >> $output_file
         # echo "<a href=\"/activity/project_euler/problem_$(($problem_number+1))/\" style=\"color: black; text-decoration: none;\">→ </a>" >> $output_file
         echo "<a href=\"/activity/project_euler/problem_$(($problem_number+1))/\" style=\"color: black; text-decoration: none;\"><i class=\"fa-solid fa-arrow-right\"></i></a>" >> $output_file
@@ -106,6 +122,7 @@ do
 
         ############# SOLUZIONE #############
         echo "## Soluzione" >> "$output_file"
+        echo "\literate{/_literate/pe_$problem_number.jl}" >> "$output_file"
 
         ############# COMMENTS #############
         echo "" >> "$output_file"
