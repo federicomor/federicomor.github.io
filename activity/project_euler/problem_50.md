@@ -52,6 +52,6 @@ $$41 = 2 + 3 + 5 + 7 + 11 + 13.$$
 </div> <!--end_content-->
 ~~~
 ## Soluzione
-\literate{/_literate/pe_50.jl}
+
 
 {{ addcomments }}

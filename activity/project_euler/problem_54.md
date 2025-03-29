@@ -71,6 +71,5 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </div> <!--end_content-->
 ~~~
 ## Soluzione
-\literate{/_literate/pe_54.jl}
 
 {{ addcomments }}

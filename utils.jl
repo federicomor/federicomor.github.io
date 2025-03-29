@@ -21,7 +21,9 @@ function fdplotly(json::String; id="fdp"*Random.randstring('a':'z', 3),
 	return nothing
 end
 
-
+macro OUTPUT()
+    return isdefined(Main, :Franklin) ? Franklin.OUT_PATH[] : "/tmp/"
+end
 
 function hfun_addcomments()
 	return """
