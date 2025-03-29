@@ -1,0 +1,211 @@
+# This file was generated, do not modify it.
+
+using Random, LinearAlgebra
+using DataStructures
+using IterativeSolvers
+using Plots, GraphRecipes
+Random.seed!(29032025);
+
+######### SIMULATED EXECUTION #########
+# n bowls, m balls
+function simulate_F(n::Int, m::Int; num_trials::Int=10000, verbose=false)
+    total_moves = 0
+	if verbose num_trials = 1 end
+
+    for _ in 1:num_trials
+        # random initial distribution of balls
+        balls = rand(1:n, m) # array of size m, each element in 1:n
+        # so that each ball i is assigned to the bowl given by balls[i]
+        moves = 0
+
+        while length(unique(balls)) > 1 # stop when all balls are in the same bowl
+        # and they will be in the same bowl when all the indexes of balls vector will be equal
+            ball_idx = rand(1:m) # pick a ball at random
+            direction = rand([-1, 1]) # pick a direction (-1 for counterclockwise, 1 for clockwise)
+			if verbose println("Balls are in bowls: $balls (selected ball: $ball_idx, will move by: $direction)") end
+            balls[ball_idx] = mod1(balls[ball_idx] + direction, n) # move the ball
+            # this changes the bowl attribution of ball ball_idx, using mod1 as for the circular structure
+            moves += 1
+        end
+		total_moves += moves
+		if verbose
+			println("Balls are in bowls: $balls")
+			println("Total moves: $total_moves")
+		end
+    end
+    return total_moves / num_trials  # estimate of F(n, m)
+end
+
+simulate_F(2, 3, num_trials = 10_000) # soluzione esatta: 9/4 = 2.25
+
+simulate_F(2, 3, verbose=true)
+
+# generate all possible states of where balls can be located in the bowls
+function get_all_states(m::Int, n::Int; verbose=false)
+	if m == 1
+		return [[n]]
+	end
+	ret = []
+	for i in 0:n
+		if verbose @show i end
+		tmp = get_all_states(m - 1, n - i, verbose=false)
+		for t in tmp
+			if verbose println("\tt=$t") end
+			push!(t, i)
+			push!(ret, t)
+		end
+	end
+	return ret
+end
+get_all_states(3,2,verbose=true)
+
+# reduce states to their minimal representation, ie accounting for simmetries
+function min_state(best::Vector; verbose=false)
+    tmp = copy(best)
+    rtmp = reverse(copy(best))
+	if verbose @show tmp,rtmp,best end
+    for i in 1:length(best)
+        tmp = circshift(tmp, 1)
+        if tmp < best
+            best = copy(tmp)
+        end
+        rtmp = circshift(rtmp, 1)
+        if rtmp < best
+            best = copy(rtmp)
+        end
+		if verbose @show tmp,rtmp,best end
+    end
+    return best
+end
+min_state([1,2,0,0,1],verbose=true)'
+
+# compute initial probabilities for the states
+function get_states(bowls::Int, balls::Int; verbose=false)
+	allStates = get_all_states(bowls, balls)
+	multiStates = OrderedDict{Vector{Real},Int}()
+	states = Vector{Vector{Int64}}()
+	for s in allStates
+		min_s = min_state(s)
+		multiStates[min_s] = get(multiStates, min_s, 0) + 1
+		if !(min_s in states)
+			push!(states, min_s)
+		end
+		if verbose @show multiStates end
+	end
+	prob = factorial(balls) / (bowls ^ balls)
+	if verbose
+		@show states
+		@show prob
+	end
+	init_probs = Float64[]
+	for x in states
+		if verbose print(x) end
+		p = multiStates[x] * prob
+		for y in x
+			p *= 1 / factorial(y)
+		end
+		if verbose print(" -> p: $p") end
+		push!(init_probs, p)
+		if verbose println() end
+	end
+	return states, init_probs
+end
+states, probs = get_states(5,2,verbose=true);
+
+# check if a state is absorbing
+function is_absorbing(state::Vector)
+	return sum(state .== 0) == length(state)-1
+end
+
+states, probs = get_states(4,2)
+for st in states
+	println(st, " -> is_absorbing? ", is_absorbing(st))
+end
+
+begin
+	bowls = 4
+	balls = 3
+	println("Working with $bowls bowls and $balls balls.")
+	println("All states and minimal representations:")
+	for v in get_all_states(bowls,balls)
+		println(v," => ", min_state(v))
+	end
+	println("Initial probabilities:")
+	states, init_probs = get_states(bowls, balls,verbose=false)
+	for i in 1:length(states)
+		println(states[i], " => ", init_probs[i])
+	end
+end
+
+######### ACTUAL SOLVER #########
+#= Steps:
+1. enumerate the states, maybe divide between transient and recurrent/absorbing
+2. build the transition matrix by counting the possible moves from each state, and then normalizing
+3. solve the system for the absorbing time
+4. print the answer
+=#
+
+nbowls = 4; nballs = 5
+# definiamo gli stati e le probabilità iniziali
+states, p₀ = get_states(nbowls, nballs)
+# salviamo l'indice di ogni stato, per accederci con 1, 2, ecc nella matrice P
+states_dict = Dict(state => i for (i, state) in enumerate(states))
+nstates = length(states)
+
+# definiamo e popoliamo P
+P = zeros(nstates, nstates)
+for st in states
+	if !is_absorbing(st)
+		for i in 1:nbowls
+			if st[i] > 0
+				# where can the current ball move?
+
+				# can move with direction -1
+				st_new_m1 = copy(st)
+				st_new_m1[i] -= 1; st_new_m1[mod1(i-1,nbowls)] +=1 # move by -1
+				st_new_m1 = min_state(st_new_m1) # retrieve minimal configuration
+				# or with direction 1
+				st_new_p1 = copy(st)
+				st_new_p1[i] -= 1; st_new_p1[mod1(i+1,nbowls)] +=1 # move by +1
+				st_new_p1 = min_state(st_new_p1) # retrieve minimal configuration
+
+				# update P matrix entries
+				P[states_dict[st],states_dict[st_new_m1]] += st[i]
+				P[states_dict[st],states_dict[st_new_p1]] += st[i]
+			end
+		end
+	else
+		P[states_dict[st],states_dict[st]] = 1
+	end
+end
+# normalize the matrix by dividing each value by the sum of its row values
+P
+
+for i in 1:size(P)[1]
+	P[i,:] = P[i,:]/sum(P[i,:])
+end
+P
+
+# https://docs.juliaplots.org/stable/generated/graph_attributes/#graph_attributes
+graphplot(P,
+	names=join.(states),
+	nodesize = 0.2,
+	curvature_scalar=0.1,
+	node_shape=:circle,
+	# edge_label = P,
+	edgelabel_offset = 0,
+	fontsize = 4,
+	self_edge_size = 0.12,
+	method=:circular,
+	axis_buffer=0.2)
+savefig(joinpath(@OUTPUT, "mc_graph_.svg")); # hide
+
+# https://en.wikipedia.org/wiki/Absorbing_Markov_chain
+
+Q = P[2:end,2:end]
+# k = (I(nstates-1)-Q)\ones(nstates-1) # metodo classico
+k = bicgstabl(I(nstates-1)-Q, ones(nstates-1))
+
+slz = dot(k,p₀[2:end])
+
+6875/24

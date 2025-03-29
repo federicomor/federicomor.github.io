@@ -122,7 +122,7 @@ echo '</script>' >> $output_file
 
         ############# SOLUZIONE #############
         echo "## Soluzione" >> "$output_file"
-        echo "\literate{/_literate/pe_$problem_number.jl}" >> "$output_file"
+        # echo "\literate{/_literate/pe_$problem_number.jl}" >> "$output_file"
 
         ############# COMMENTS #############
         echo "" >> "$output_file"
