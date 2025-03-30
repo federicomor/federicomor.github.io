@@ -5,7 +5,7 @@ function F(nbowls, nballs; verbose=false, plot_graph=false)
 	states_dict = Dict(state => i for (i, state) in enumerate(states))
 	nstates = length(states)
 	P = spzeros(nstates, nstates)
-	if verbose println("Assembling transition matrix P") end
+	if verbose println("Assembling transition matrix") end
 	for st in states
 		if !is_absorbing(st)
 			for i in 1:nbowls
@@ -31,6 +31,15 @@ function F(nbowls, nballs; verbose=false, plot_graph=false)
 	# normalize the matrix by dividing each value by the sum of its row values
 	for i in 1:size(P)[1]
 		P[i,:] = P[i,:]/sum(P[i,:])
+	end
+	if verbose
+		println("Let's have a view of the sparsity of P")
+		# with pure text output:
+		# show(stdout,"text/plain",P)
+		# SparseArrays._show_with_braille_patterns(stdout, P)
+		# with a real plot:
+		spy(P)
+		savefig(joinpath(@OUTPUT, "P_sparsity.svg")); # hide
 	end
 	if plot_graph
 		println("Plotting MC graph")
@@ -59,17 +68,4 @@ function F(nbowls, nballs; verbose=false, plot_graph=false)
 	if verbose println("done!") end
 	return slz
 end
-
-function G(N,M)
-	S = 0
-	for n in 2:N, m in 2:M
-		println("(n,m)=($n,$m)")
-		@time S += F(n,m)
-		println("")
-	end
-	println("done!")
-	return S
-end
-
-# G(12,12) risolve il problema
-G(4,4); # giusto un esempio
+F(12,6,verbose=true,plot_graph=false)

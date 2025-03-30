@@ -1,5 +1,4 @@
 # This file was generated, do not modify it. # hide
-######### SIMULATED EXECUTION #########
 # n bowls, m balls
 function simulate_F(n::Int, m::Int; num_trials::Int=10000, verbose=false)
     total_moves = 0
