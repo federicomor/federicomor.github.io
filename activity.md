@@ -18,31 +18,31 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
         Dropping Eggs}{
             Avete una gallina che depone delle uova particolarmente forti e volete testare la loro resistenza lanciandole da un edificio di 100 piani, con l'obiettivo di trovare il piano più alto da cui un uovo può cadere senza rompersi.\
             _Che strategia utilizzereste, se aveste solo due uova, per minimizzare il caso peggiore del numero di lanci da effettuare? E se aveste $k$ uova?_}{
-                /assets/img/gallina2.png}{quasi finito :)}
-\card{
-    /activity/ipercubi}{
-        Ipercubi in \(N\) dimensioni}{
-            Se vogliamo contare quanti vertici, lati, e facce abbiamo quadrati o cubi (quindi in 2 o 3 dimensioni) basta farne un disegno ed osservarli.\
-            _Ma come si calcolano queste caratteristiche geometriche quando ci ambientiamo in dimensioni $N$ generiche?_}{
-                /assets/img/ipercubi.png}{tutto perfetto}
-\card{
-    /activity/modi_per_salire_una_scala}{
-        Modi per salire una scala}{
-            Considerate una scala alta $n$ scalini.\
-            _In quanti modi potete salirla facendo passi alti al massimo 2 scalini? e con passi alti al massimo $k$ scalini?_}{
-                /assets/img/scale.png}{finito, c'è pure il video}
-\card{
-    /activity/probabilità_compleanni}{
-        Paradosso dei compleanni}{
-            Considerate un gruppo di $n$ persone.\
-            _Qual è la probabilità che ce ne siamo almeno due che abbiano lo stesso compleanno? E la probabilità che ce ne sia almeno una che abbia il vostro stesso compleanno?_}{
-                /assets/img/compleanni.png}{anche lui finito al 100%}
+                /assets/img/gallina2.png}{}
 \card{
     /activity/tennis_tie_break}{
         Tennis tie-break probability}{
             Ci troviamo in una partita di tennis con i due giocatori (A e B) arrivati a 6-6. Durante il match siamo riusciti a stimare due parametri $a$ e $b$ che descrivono le probabilità, per il giocatore A, di vincere un punto quando lui è al servizio o quando B è al servizio, rispettivamente. Sta cominciando il tie-break, e inizierà il giocatore A a servire.\
             _Dato questo contesto e questi dati, qual è la probabilità che il giocatore A vinca il tie-break (in funzione di $a$ e $b$)?_}{
-                /assets/img/tennis.png}{perfetto e super interessante}
+                /assets/img/tennis.png}{}
+\card{
+    /activity/ipercubi}{
+        Ipercubi in \(N\) dimensioni}{
+            Se vogliamo contare quanti vertici, lati, e facce abbiamo quadrati o cubi (quindi in 2 o 3 dimensioni) basta farne un disegno ed osservarli.\
+            _Ma come si calcolano queste caratteristiche geometriche quando ci ambientiamo in dimensioni $N$ generiche?_}{
+                /assets/img/ipercubi.png}{}
+\card{
+    /activity/probabilità_compleanni}{
+        Paradosso dei compleanni}{
+            Considerate un gruppo di $n$ persone.\
+            _Qual è la probabilità che ce ne siamo almeno due che abbiano lo stesso compleanno? E la probabilità che ce ne sia almeno una che abbia il vostro stesso compleanno?_}{
+                /assets/img/compleanni.png}{}
+\card{
+    /activity/modi_per_salire_una_scala}{
+        Modi per salire una scala}{
+            Considerate una scala alta $n$ scalini.\
+            _In quanti modi potete salirla facendo passi alti al massimo 2 scalini? e con passi alti al massimo $k$ scalini?_}{
+                /assets/img/scale.png}{}
 \card{
     /activity/project_euler}{
         Problemi del progetto Eulero}{

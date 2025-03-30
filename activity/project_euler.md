@@ -106,9 +106,9 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 <table class="progress">
 <tr>
 <td class="solved"><a href="/activity/project_euler/problem_1">1</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_2">2</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_3">3</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_4">4</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_2">2</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_3">3</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_4">4</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_5">5</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_6">6</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_7">7</a></td>
