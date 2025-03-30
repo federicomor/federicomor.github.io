@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Combinatoric Selections</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 26th September 2003, 06:00 pm; Solved by 64202;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=53">Problem 53</a></h3></div>
+<h2>Combinatoric Selections</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 26th September 2003, 06:00 pm; Solved by 64242;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=53">Problem 53</a></h3></div>
 <div class="problem_content" role="problem">
 <p>There are exactly ten ways of selecting three from five, 12345:</p>
 <p class="center">123, 124, 125, 134, 135, 145, 234, 235, 245, and 345</p>

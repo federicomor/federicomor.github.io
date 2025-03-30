@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Lychrel Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 24th October 2003, 06:00 pm; Solved by 58728;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=55">Problem 55</a></h3></div>
+<h2>Lychrel Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 24th October 2003, 06:00 pm; Solved by 58760;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=55">Problem 55</a></h3></div>
 <div class="problem_content" role="problem">
 <p>If we take $47$, reverse and add, $47 + 74 = 121$, which is palindromic.</p>
 <p>Not all numbers produce palindromes so quickly. For example,</p>

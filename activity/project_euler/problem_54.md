@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Poker Hands</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 10th October 2003, 06:00 pm; Solved by 39936;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=54">Problem 54</a></h3></div>
+<h2>Poker Hands</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 10th October 2003, 06:00 pm; Solved by 39963;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=54">Problem 54</a></h3></div>
 <div class="problem_content" role="problem">
 <p>In the card game poker, a hand consists of five cards and are ranked, from lowest to highest, in the following way:</p>
 <ul><li><b>High Card</b>: Highest value card.</li>

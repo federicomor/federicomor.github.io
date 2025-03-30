@@ -2,6 +2,7 @@
 title = "P96"
 hascode = true
 hasplotly = true
+showall = true
 +++
 
 ~~~
@@ -10,6 +11,19 @@ hasplotly = true
 <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
 </form>
 <a href="/activity/project_euler/problem_95/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a>
+<script>
+  function getRandomProblem() {
+    fetch('/activity/project_euler/data.txt') 
+      .then(response => response.text())
+      .then(data => {
+        const maxProblems = parseInt(data.trim(), 10);
+        const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1;
+        window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/';
+      })
+      .catch(err => console.error('Error fetching max problems:', err));
+  }
+</script>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_97/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </div>
@@ -26,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Su Doku</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 27th May 2005, 06:00 pm; Solved by 19040;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=96">Problem 96</a></h3></div>
+<h2>Su Doku</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 27th May 2005, 06:00 pm; Solved by 19159;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=96">Problem 96</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Su Doku (Japanese meaning <i>number place</i>) is the name given to a popular puzzle concept. Its origin is unclear, but credit must be attributed to Leonhard Euler who invented a similar, and much more difficult, puzzle idea called Latin Squares. The objective of Su Doku puzzles, however, is to replace the blanks (or zeros) in a 9 by 9 grid in such that each row, column, and 3 by 3 box contains each of the digits 1 to 9. Below is an example of a typical starting puzzle grid and its solution grid.</p>
 <div class="center">

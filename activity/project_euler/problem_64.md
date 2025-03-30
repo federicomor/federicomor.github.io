@@ -2,6 +2,7 @@
 title = "P64"
 hascode = true
 hasplotly = true
+showall = true
 +++
 
 ~~~
@@ -10,6 +11,19 @@ hasplotly = true
 <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
 </form>
 <a href="/activity/project_euler/problem_63/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a>
+<script>
+  function getRandomProblem() {
+    fetch('/activity/project_euler/data.txt') 
+      .then(response => response.text())
+      .then(data => {
+        const maxProblems = parseInt(data.trim(), 10);
+        const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1;
+        window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/';
+      })
+      .catch(err => console.error('Error fetching max problems:', err));
+  }
+</script>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_65/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </div>
@@ -26,18 +40,18 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Odd Period Square Roots</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 27th February 2004, 06:00 pm; Solved by 24623;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=64">Problem 64</a></h3></div>
+<h2>Odd Period Square Roots</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 27th February 2004, 06:00 pm; Solved by 24788;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=64">Problem 64</a></h3></div>
 <div class="problem_content" role="problem">
 <p>All square roots are periodic when written as continued fractions and can be written in the form:</p>
 
-$\displaystyle \quad \quad \sqrt{N}=a_0+\frac 1 {a_1+\frac 1 {a_2+ \frac 1 {a3+ \dots}}}$
+$\displaystyle \quad \quad \sqrt{N}=a_0+\frac 1 {a_1+\frac 1 {a_2+ \frac 1 {a_3+ \dots} } }$
 
 <p>For example, let us consider $\sqrt{23}:$</p>
-$\quad \quad \sqrt{23}=4+\sqrt{23}-4=4+\frac 1 {\frac 1 {\sqrt{23}-4}}=4+\frac 1  {1+\frac{\sqrt{23}-3}7}$
+$\quad \quad \sqrt{23}=4+\sqrt{23}-4=4+\frac 1 {\frac 1 {\sqrt{23}-4} }=4+\frac 1  {1+\frac{\sqrt{23}-3}7}$
 
 <p>If we continue we would get the following expansion:</p>
 
-$\displaystyle \quad \quad \sqrt{23}=4+\frac 1 {1+\frac 1 {3+ \frac 1 {1+\frac 1 {8+ \dots}}}}$
+$\displaystyle \quad \quad \sqrt{23}=4+\frac 1 {1+\frac 1 {3+ \frac 1 {1+\frac 1 {8+ \dots} } } }$
 
 <p>The process can be summarised as follows:</p>
 <p>

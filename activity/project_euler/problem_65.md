@@ -2,6 +2,7 @@
 title = "P65"
 hascode = true
 hasplotly = true
+showall = true
 +++
 
 ~~~
@@ -10,6 +11,19 @@ hasplotly = true
 <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
 </form>
 <a href="/activity/project_euler/problem_64/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a>
+<script>
+  function getRandomProblem() {
+    fetch('/activity/project_euler/data.txt') 
+      .then(response => response.text())
+      .then(data => {
+        const maxProblems = parseInt(data.trim(), 10);
+        const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1;
+        window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/';
+      })
+      .catch(err => console.error('Error fetching max problems:', err));
+  }
+</script>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_66/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </div>
@@ -26,17 +40,17 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Convergents of $e$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 12th March 2004, 06:00 pm; Solved by 32939;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=65">Problem 65</a></h3></div>
+<h2>Convergents of $e$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 12th March 2004, 06:00 pm; Solved by 33111;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=65">Problem 65</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The square root of $2$ can be written as an infinite continued fraction.</p>
-<p>$\sqrt{2} = 1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2 + ...}}}}$</p>
+<p>$\sqrt{2} = 1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2 + ...} } } }$</p>
 <p>The infinite continued fraction can be written, $\sqrt{2} = [1; (2)]$, $(2)$ indicates that $2$ repeats <i>ad infinitum</i>. In a similar way, $\sqrt{23} = [4; (1, 3, 1, 8)]$.</p>
 <p>It turns out that the sequence of partial values of continued fractions for square roots provide the best rational approximations. Let us consider the convergents for $\sqrt{2}$.</p>
 <p>$\begin{align}
 &amp;1 + \dfrac{1}{2} = \dfrac{3}{2} \\
-&amp;1 + \dfrac{1}{2 + \dfrac{1}{2}} = \dfrac{7}{5}\\
-&amp;1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2}}} = \dfrac{17}{12}\\
-&amp;1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2}}}} = \dfrac{41}{29}
+&amp;1 + \dfrac{1}{2 + \dfrac{1}{2} } = \dfrac{7}{5}\\
+&amp;1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2} } } = \dfrac{17}{12}\\
+&amp;1 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2 + \dfrac{1}{2} } } } = \dfrac{41}{29}
 \end{align}$</p>
 <p>Hence the sequence of the first ten convergents for $\sqrt{2}$ are:</p>
 <p>$1, \dfrac{3}{2}, \dfrac{7}{5}, \dfrac{17}{12}, \dfrac{41}{29}, \dfrac{99}{70}, \dfrac{239}{169}, \dfrac{577}{408}, \dfrac{1393}{985}, \dfrac{3363}{2378}, ...$</p>

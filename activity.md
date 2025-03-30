@@ -44,6 +44,11 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             _Dato questo contesto e questi dati, qual è la probabilità che il giocatore A vinca il tie-break (in funzione di $a$ e $b$)?_}{
                 /assets/img/tennis.png}{perfetto e super interessante}
 \card{
+    /activity/project_euler}{
+        Problemi del progetto Eulero}{
+            Una raccolta di storiche challenge da risolvere per metodi matematici (scervellandosi in vari modi) o informatici (scrivendo dell'opportuno codice). Sono più di 900 problemi quindi ci sarà molto materiale con cui cimentarsi.}{
+                /assets/img/peuler3.png}{}
+\card{
     https://surveyheart.com/form/679f5660ea7bdb6850cacadc }{
         Suggerisci un'idea!}{
              Hai in mente qualche problema, challenge, o esempio che credi sia interessante da analizzare da un punto di vista matematico? Fammi sapere!}{
@@ -55,11 +60,6 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
 ~~~
 <div class="card-container">
 ~~~
-\card{
-    /activity/project_euler}{
-        Problemi del progetto Eulero}{
-            Una raccolta di storiche challenge da risolvere per metodi matematici (scervellandosi in vari modi) o informatici (scrivendo dell'opportuno codice). Sono più di 900 problemi quindi ci sarà molto materiale con cui cimentarsi.}{
-                /assets/img/peuler3.png}{}
 \card{
     /activity/babbo_natale_dismutazioni}{
         Babbo Natale e le dismutazioni}{

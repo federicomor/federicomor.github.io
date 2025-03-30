@@ -2,6 +2,7 @@
 title = "P57"
 hascode = true
 hasplotly = true
+showall = true
 +++
 
 ~~~
@@ -10,6 +11,19 @@ hasplotly = true
 <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
 </form>
 <a href="/activity/project_euler/problem_56/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a>
+<script>
+  function getRandomProblem() {
+    fetch('/activity/project_euler/data.txt') 
+      .then(response => response.text())
+      .then(data => {
+        const maxProblems = parseInt(data.trim(), 10);
+        const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1;
+        window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/';
+      })
+      .catch(err => console.error('Error fetching max problems:', err));
+  }
+</script>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_58/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </div>
@@ -26,15 +40,15 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Square Root Convergents</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 21st November 2003, 06:00 pm; Solved by 45646;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=57">Problem 57</a></h3></div>
+<h2>Square Root Convergents</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 21st November 2003, 06:00 pm; Solved by 45893;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=57">Problem 57</a></h3></div>
 <div class="problem_content" role="problem">
 <p>It is possible to show that the square root of two can be expressed as an infinite continued fraction.</p>
-<p class="center">$\sqrt 2 =1+ \frac 1 {2+ \frac 1 {2 +\frac 1 {2+ \dots}}}$</p>
+<p class="center">$\sqrt 2 =1+ \frac 1 {2+ \frac 1 {2 +\frac 1 {2+ \dots} } }$</p>
 <p>By expanding this for the first four iterations, we get:</p>
 <p>$1 + \frac 1 2 = \frac  32 = 1.5$<br>
 $1 + \frac 1 {2 + \frac 1 2} = \frac 7 5 = 1.4$<br>
-$1 + \frac 1 {2 + \frac 1 {2+\frac 1 2}} = \frac {17}{12} = 1.41666 \dots$<br>
-$1 + \frac 1 {2 + \frac 1 {2+\frac 1 {2+\frac 1 2}}} = \frac {41}{29} = 1.41379 \dots$<br></p>
+$1 + \frac 1 {2 + \frac 1 {2+\frac 1 2} } = \frac {17}{12} = 1.41666 \dots$<br>
+$1 + \frac 1 {2 + \frac 1 {2+\frac 1 {2+\frac 1 2} } } = \frac {41}{29} = 1.41379 \dots$<br></p>
 <p>The next three expansions are $\frac {99}{70}$, $\frac {239}{169}$, and $\frac {577}{408}$, but the eighth expansion, $\frac {1393}{985}$, is the first example where the number of digits in the numerator exceeds the number of digits in the denominator.</p>
 <p>In the first one-thousand expansions, how many fractions contain a numerator with more digits than the denominator?</p>
 
