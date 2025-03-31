@@ -1,10 +1,10 @@
-# Partiamo caricando tutti gli strumentopoli miseteriosi necessari alla soluzione.
+# Partiamo caricando tutti gli strumentopoli misteriosi necessari alla soluzione.
 using Random, LinearAlgebra
 using SparseArrays
 using DataStructures
 using IterativeSolvers
 using Plots, GraphRecipes
-Random.seed!(29032025);
+Random.seed!(31032025);
 
 # Per iniziare ad ambientarci nel contesto del problema (ovvero con il meccanismo di spostamento delle palline nelle ciotole, la condizione di terminazione del gioco, ecc) possiamo implementare una semplice simulazione del gioco stesso, osservando quali possibili scenari possono verificarsi.
 ## n bowls, m balls
@@ -36,7 +36,7 @@ function simulate_F(n::Int, m::Int; num_trials::Int=10000, verbose=false)
     return total_moves / num_trials  # estimate of F(n, m)
 end
 # Con cui possiamo o simulare il problema per ottenere una stima più o meno accurata:
-simulate_F(2, 3, num_trials = 2000) # soluzione esatta: 9/4 = 2.25
+simulate_F(2, 3, num_trials = 20_000) # soluzione esatta: 9/4 = 2.25
 #-
 # o altrimenti vedere in concreto cosa accade in un'esempio di esecuzione:
 simulate_F(2, 3, verbose=true)
@@ -44,13 +44,15 @@ simulate_F(2, 3, verbose=true)
 
 # Ma ovviamente questo non ci basta: vogliamo risolvere il problema in modo esatto. Per farlo, l'idea è di affidarci alle _catene di Markov_. Le catene di Markov hanno infatti come principale scopo nella vita quello di poter modellare un contesto stocastico e dinamico, che è precisamente quello che abbiamo qui: palline disposte inizialmente in modo casuale (da cui lo "stocastico"), che si muovono (da cui il "dinamico") nelle ciotole sempre seguendo mosse casuali.
 
-# Una catena di Markov è caratterizzata da due elementi: lo spazio degli stati $S$, ovvero le configurazioni che può assumere il sistema che stiamo modellando, e la matrice di transizione $P$, le cui componenti $p_{ij}$ descrivono la probabilità che da un certo stato $i$ ci spostiamo in un certo stato $j$.
+# Una catena di Markov è caratterizzata da due elementi: lo spazio degli stati $S$, ovvero le configurazioni che può assumere il sistema che stiamo modellando, e la matrice di transizione $P$, le cui componenti $p_{ij}$ descrivono la probabilità che da un certo stato $i$ ci spostiamo in un certo stato $j$. Una volta definiti questi due elementi, la variabile $X_n$ descriverà in quale  stato $s\in S$ ci troveremo all'istante di tempo $n\in\mathbb{N}_0$. Per esempio $X_0$ è lo stato da cui partiamo, poi al tempo 1 ci sposteremo in un qualche stato $X_1$, poi $X_2$, e così via.
 
 # ### Stati
 # In questo problema, una scelta interessante consiste già nel capire come modellare gli stati. Esistono infatti diversi possibili approcci:
 # 1. assegnare a ogni pallina un'etichetta corrispondente alla ciotola in cui è contenuta
 # 2. assegnare ad ogni ciotola il numero di palline che contiene, pensando alle ciotole come disposte in una fila (quindi esiste la "prima" ciotola, la "seconda" ciotola, ecc) ma mantenendo ovviamente la configurazione originale del cerchio permettendo che dalla ciotola uno possiamo "andare a sinistra" ed entrare nell'ultima ciotola, e viceversa
 # 3. assegnare ad ogni ciotola il numero di palline che contiene, pensando alle ciotole come effettivamente disposte nel cerchio che prevede il testo, quindi accorpando in base alle simmetrie circolari le configurazioni derivate dal metodo del punto 2
+
+# Consideriamo un piccolo esempio con lo stato in cui ci sono 4 ciotole e 2 palline, disposte in modo alternato nelle ciotole. Col primo metodo, questa configurazione sarebbe descritto da quattro possibili stati: $13$, $24$, $31$, $42$. Col secondo metodo, avremmo $0101$ oppure $1010$, mentre solo col terzo metodo possiamo apprezzare la simmetria del problema e avere un unico stato, mettiamo $0101$, che rappresenti univocamente la situazione.  
 
 # Avendo $n$ ciotole ed $m$ palline, ogni caso prevederebbe una diversa numerosità dello spazio degli stati:
 # 1. con la prima formulazione, avremmo che ogni pallina può andare in ciascuna ciotola. Quindi: $n$ opzioni per ciascuna delle $m$ palline, da cui $n^m$ stati
@@ -63,7 +65,7 @@ simulate_F(2, 3, verbose=true)
 # [^2]: Se avete letto il "!" come fattoriale tranquilli, non siete i soli, ormai quando anche nelle storie di instagram vedo scritto _"buon compleanno! +20!"_ lo leggo come se una persona stesse compiendo "20 fattoriale" anni.
 
 # ### Probabilità iniziali
-# Una volta definito come modellare gli stati, il prossimo passo consiste nel calcolare le probabilità che la configurazione iniziale delle palline nelle ciotole sia esattamente un certo stato piuttosto che un altro. Questo servirà perché per trovare il tempo medio necessario ad entrare nella classe ricorrente, ovvero trovare la soluzione del problema, dovremmo espandere[^3] il calcolo su tutti i possibili stati da cui possiamo partire. Ovvero, moralmente dobbiamo pesare i contributi portati da ciascuno stato per la probabilità di partire in effetti da quello stato: 
+# Una volta definito come modellare gli stati, il prossimo passo consiste nel calcolare le probabilità che la configurazione iniziale delle palline nelle ciotole sia esattamente un certo stato piuttosto che un altro. Questo servirà perché per trovare il tempo medio necessario ad entrare nella classe ricorrente $R$, quella in cui tutte le palline sono riunite nella stessa ciotola e quindi il gioco termina, dovremmo espandere[^3] il calcolo su tutti i possibili stati da cui possiamo partire. Ovvero, moralmente dobbiamo pesare i contributi portati da ciascuno stato per la probabilità di partire in effetti da quello stato: 
 # $$ \mathbb{E}(\text{#passi per entrare in $R$}) =  \sum_{i \in S} \mathbb{E}(\text{#passi per entrare in $R$ partendo da $i$}) \cdot \mathbb{P}(\text{partiamo da $i$})$$
 
 # Intuitivamente ha senso: se da uno stato magari ci mettiamo pochi passi per entrare nella classe ricorrente $R$, ma quella configurazione iniziale è molto rara da ottenere, allora è giusto che il suo contributo venga scalato rispetto agli altri.
@@ -181,24 +183,17 @@ end
 #-
 
 # ### Assembliamo la soluzione
-# Finalmente arriviamo alla fase finale della soluzione
-
-######### ACTUAL SOLVER #########
-#= Steps:
-1. enumerate the states, maybe divide between transient and recurrent/absorbing
-2. build the transition matrix by counting the possible moves from each state, and then normalizing
-3. solve the system for the absorbing time
-4. print the answer
-=#
+# Ora che abbiamo introdotto alcuni degli elementi fondamentali per modellare il problema possiamo proseguire verso il sistema lineare che ci condurrà effettivamente alla soluzione. Dopo aver definito alcune variabili di supporto e di contesto,
 
 nbowls = 4; nballs = 5
 ## definiamo gli stati e le probabilità iniziali
 states, p₀ = get_states(nbowls, nballs) 
 ## salviamo l'indice di ogni stato, per accederci con 1, 2, ecc nella matrice P
 states_dict = Dict(state => i for (i, state) in enumerate(states))
-nstates = length(states)
+nstates = length(states);
 
-## definiamo e popoliamo P
+# occorre costruire la matrice $P$. Per farlo, l'idea è che possiamo iterare sugli stati e guardare in quali altri stati possiamo arrivare seguendo i possibili modi in cui le palline possono spostarsi.
+
 P = zeros(nstates, nstates)
 for st in states
 	if !is_absorbing(st)
@@ -225,14 +220,14 @@ for st in states
 	end
 end
 ## normalize the matrix by dividing each value by the sum of its row values
-P
+Int.(P)
 #-
 for i in 1:size(P)[1]
 	P[i,:] = P[i,:]/sum(P[i,:]) 
 end
 P
 #-
-
+# Diventa anche molto bello plottare il grafo che mostra le possibili transizioni tra gli stati della catena di Markov, dove giustamente osserviamo che esiste un solo stato assorbente (l'unico ad avere come unica freccia una freccia verso sé stesso).
 ## https://docs.juliaplots.org/stable/generated/graph_attributes/#graph_attributes
 graphplot(P, 
 	names=join.(states),
@@ -250,21 +245,22 @@ savefig(joinpath(@OUTPUT, "mc_graph_.svg")); # hide
 # \fig{mc_graph_.svg}
 
 #-
-## https://en.wikipedia.org/wiki/Absorbing_Markov_chain
-# La struttura di $P$ è $P = [I \,\,O; R\,\, Q]$ dove
+# Una volta creata $P$, dobbiamo capire come usarla per risolvere il problema. Possiamo intanto osservare la struttura di $P$ (o in generale di una qualunque matrice di transizione per una catena di Markov che presenta stati assorbenti). La struttura di $P$ è infatti $$ P =\begin{pmatrix} I & O\\ R &  Q\end{pmatrix}$$
+# dove
 # - $I$ è la matrice identità, corrispondente alle transizioni degli stati assorbenti verso sé stessi
-# - $O$ è una matrice piena di zeri perché dagli stati assorbenti non si può spostarsi a quelli transienti
+# - $O$ è una matrice piena di zeri, perché dagli stati assorbenti non ci si può spostare a quelli transienti
 # - $Q$ è la matrice che descrive come da uno stato transiente ci si può spostare in un altro transiente
 # - $R$ è la matrice che descrive come da uno stato transiente ci si può spostare in uno assorbente
+# Noto solo ora che non ho mai chiarito cosa si intende precisamente con stati assorbenti o transienti. Forse perché supponevo che dal nome fosse tutto sommato intuibile, ma in effetti un po' di teoria anche qui non guasta. Parliamo di stati ricorrenti quando la catena di Markov ci passerà di sicuro un numero infinito di volte, da cui il nome ricorrenti: continuiamo a visitarli, ne siamo proprio affezionati. Uno stato è invece transiente se non è ricorrente, cioè se quindi,  nel lungo termine, smetteremo di visitarlo. Uno stato assorbente è la massima espressione di uno stato ricorrente in quanto, una volta entrati in uno stato assorbente, non possiamo più abbandonarlo, ne veniamo infatti "assorbiti". 
 
-# Con la logica di questo codice, ovvero con questa rappresentazione minimale degli stati, esisterà un solo stato assorbente, e si troverà in posizione 1. Di conseguenza, gli indici `2:end` definiranno la matrice Q.
+# Tornando alla struttura di $P$, con la logica del nostro codice esisterà un solo stato assorbente, e si troverà sempre in posizione 1. Di conseguenza, gli indici `2:end` definiranno la matrice $Q$. 
 
-# Questa matrice Q serve per risolvere il sistema dei "mean hitting time". L'obiettivo è infatti di trovare $k_i^R=\mathbb{E}_i(H_R)$, ovvero il tempo (o equivalentemente, il numero di passi) medio necessario per entrare nella classe $R$ degli stati ricorrenti, partendo da un qualunque stato $i$. Si può ricavare che
+# Questa matrice $Q$ serve, e siamo quasi arrivati alla fine, per risolvere il sistema dei "mean hitting time". L'obiettivo era infatti di trovare $k_i^R=\mathbb{E}_i(H_R)$, ovvero il tempo (o equivalentemente, il numero di passi) medio necessario per entrare nella classe $R$ degli stati ricorrenti, partendo da un qualunque stato $i$. Nel nostro caso, in realtà, la classe $R$ è formata dall'unico stato assorbente, e quindi ricorrente, in cui le palline sono tutte riunite assieme nella stessa ciotola (in simboli, la configurazione $00\ldots 00m$). Si può ricavare che
 # $$ \begin{cases} k_i^R = 0 & i\in R\\ k_i^R = 1+\sum_{j\notin R}p_{ij}k_j^R & i\notin R \end{cases} $$
 
-# Trascurando gli stati ricorrenti che non danno contributo (essendo che per loro $k_i^R=0$) possiamo considerare la sola seconda equazione e vederla in forma vettoriale ${\bf{k}} = {\bf{1}} + Q\bf{k}$, da cui si ricava il sistema $(I-Q)\bf{k} = \bf{1}$. 
-# Questo possiamo risolverlo in modo classico in julia con l'operatore backslash `\ `, altrimenti usando metodi più sofisticati dal pacchetto `IterativeSolvers`.
+# Trascurando, in generale, gli stati ricorrenti (nel nostro caso, di nuovo, sarebbe trascurare un solo stato) che non danno contributo, essendo che per loro $k_i^R=0$, possiamo considerare la sola seconda equazione e vederla in forma vettoriale ${\bf{k}} = {\bf{1}} + Q\bf{k}$, da cui si ricava il sistema $(I-Q)\bf{k} = \bf{1}$, che possiamo risolvere in julia in modo classico con l'operatore backslash `\ `, altrimenti usando metodi più sofisticati dal pacchetto `IterativeSolvers`.
 
+## https://en.wikipedia.org/wiki/Absorbing_Markov_chain
 Q = P[2:end,2:end]
 if size(Q)[1] > 1 # c'è davvero un sistema da risolvere
 	k = (I(nstates-1)-Q)\ones(nstates-1) # metodo classico
@@ -274,8 +270,8 @@ else
 end
 
 
-# e una volta trovato $\bf{k}$ possiamo combinarlo con il vettore $\bf{p_0}$ delle probabilità iniziali per trovare la soluzione finale. Data la formulazione del problema, infatti, possiamo dire che 
-# $$\mathbb{E}(\text{#passi per entrare in $R$}) = \sum_i k_i^R \cdot \mathbb{P}(\text{partire da $i$})={\bf{k}}^T{\bf{p_0}}$$
+# Una volta trovato $\bf{k}$ possiamo combinarlo con il vettore $\bf{p_0}$ delle probabilità iniziali per trovare la soluzione finale. Data la formulazione del problema, infatti, possiamo dire che 
+# $$\mathbb{E}(\text{#passi per entrare in $R$}) = \sum_{i\in S} k_i^R \cdot \mathbb{P}(\text{partire da $i$})={\bf{k}}^T{\bf{p_0}}$$ da cui ricaviamo
 
 slz = dot(k,p₀[2:end])
 
@@ -284,7 +280,8 @@ slz = dot(k,p₀[2:end])
 
 
 # ### Tutto insieme
-# Riuniamo qui all'interno di un'unica funzione ordinata tutti i passaggi sopra esposti. Possiamo anche effettuare qualche piccola ottimizzazione, per esempio definendo la matrice $P$ come sparsa, grazie alle strutture importate con `SparseArrays`, in modo da potenzialmente diminuire il consumo di memoria, dato che in effetti la matrice $P$ di transizione sarà spesso vuota: da uno stato difficilmente andremo in moltissimi altri stati (forse qui sul web non si vedrà bene l'output della sparsità di P)
+# Infine, riuniamo qui all'interno di un'unica funzione ordinata tutti i passaggi finora esposti. Possiamo anche effettuare qualche piccola ottimizzazione, per esempio definendo la matrice $P$ come sparsa, grazie alle strutture importate con `SparseArrays`, in modo da potenzialmente diminuire il consumo di memoria, dato che in effetti la matrice $P$ di transizione sarà spesso vuota, essendo che non tutti gli stati conducono a tutti gli stati.
+
 function F(nbowls, nballs; verbose=false, plot_graph=false)
 	if verbose println("Deriving states and initial probabilities") end
 	states, p₀ = get_states(nbowls, nballs) 
@@ -357,6 +354,7 @@ end
 F(12,6,verbose=true,plot_graph=false)
 #- 
 # \fig{P_sparsity.svg}
+
 function G(N,M)
 	S = 0
 	for n in 2:N, m in 2:M
@@ -372,4 +370,4 @@ end
 G(4,4); # giusto un esempio
 
 #-
-@time F(10,10) # altro esempio di quanto ci mette il codice con n ed m alti
+@time F(10,10) # altro esempio di quanto ci mette il codice con n ed m altini
