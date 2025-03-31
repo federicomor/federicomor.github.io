@@ -5,7 +5,7 @@ using SparseArrays
 using DataStructures
 using IterativeSolvers
 using Plots, GraphRecipes
-Random.seed!(29032025);
+Random.seed!(31032025);
 
 # n bowls, m balls
 function simulate_F(n::Int, m::Int; num_trials::Int=10000, verbose=false)
@@ -36,7 +36,7 @@ function simulate_F(n::Int, m::Int; num_trials::Int=10000, verbose=false)
     return total_moves / num_trials  # estimate of F(n, m)
 end
 
-simulate_F(2, 3, num_trials = 2000) # soluzione esatta: 9/4 = 2.25
+simulate_F(2, 3, num_trials = 20_000) # soluzione esatta: 9/4 = 2.25
 
 simulate_F(2, 3, verbose=true)
 
@@ -137,22 +137,13 @@ begin
 	end
 end
 
-######### ACTUAL SOLVER #########
-#= Steps:
-1. enumerate the states, maybe divide between transient and recurrent/absorbing
-2. build the transition matrix by counting the possible moves from each state, and then normalizing
-3. solve the system for the absorbing time
-4. print the answer
-=#
-
 nbowls = 4; nballs = 5
 # definiamo gli stati e le probabilità iniziali
 states, p₀ = get_states(nbowls, nballs)
 # salviamo l'indice di ogni stato, per accederci con 1, 2, ecc nella matrice P
 states_dict = Dict(state => i for (i, state) in enumerate(states))
-nstates = length(states)
+nstates = length(states);
 
-# definiamo e popoliamo P
 P = zeros(nstates, nstates)
 for st in states
 	if !is_absorbing(st)
@@ -179,7 +170,7 @@ for st in states
 	end
 end
 # normalize the matrix by dividing each value by the sum of its row values
-P
+Int.(P)
 
 for i in 1:size(P)[1]
 	P[i,:] = P[i,:]/sum(P[i,:])
@@ -201,7 +192,6 @@ graphplot(P,
 savefig(joinpath(@OUTPUT, "mc_graph_.svg")); # hide
 
 # https://en.wikipedia.org/wiki/Absorbing_Markov_chain
-
 Q = P[2:end,2:end]
 if size(Q)[1] > 1 # c'è davvero un sistema da risolvere
 	k = (I(nstates-1)-Q)\ones(nstates-1) # metodo classico
@@ -299,4 +289,4 @@ end
 # G(12,12) risolve il problema
 G(4,4); # giusto un esempio
 
-@time F(10,10) # altro esempio di quanto ci mette il codice con n ed m alti
+@time F(10,10) # altro esempio di quanto ci mette il codice con n ed m altini
