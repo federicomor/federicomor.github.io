@@ -21,8 +21,9 @@ for st in states
 			end
 		end
 	else
+		# if state is absorbing can only go to itself
 		P[states_dict[st],states_dict[st]] = 1
 	end
 end
 # normalize the matrix by dividing each value by the sum of its row values
-Int.(P)
+Int.(P) ## prima

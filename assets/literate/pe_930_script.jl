@@ -166,16 +166,17 @@ for st in states
 			end
 		end
 	else
+		# if state is absorbing can only go to itself
 		P[states_dict[st],states_dict[st]] = 1
 	end
 end
 # normalize the matrix by dividing each value by the sum of its row values
-Int.(P)
+Int.(P) ## prima
 
 for i in 1:size(P)[1]
 	P[i,:] = P[i,:]/sum(P[i,:])
 end
-P
+P ## dopo
 
 # https://docs.juliaplots.org/stable/generated/graph_attributes/#graph_attributes
 graphplot(P,
@@ -288,5 +289,3 @@ end
 
 # G(12,12) risolve il problema
 G(4,4); # giusto un esempio
-
-@time F(10,10) # altro esempio di quanto ci mette il codice con n ed m altini
