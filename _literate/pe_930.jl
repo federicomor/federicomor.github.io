@@ -42,46 +42,46 @@ simulate_F(2, 3, num_trials = 20_000) # soluzione esatta: 9/4 = 2.25
 simulate_F(2, 3, verbose=true)
 #-
 
-# Ma ovviamente questo non ci basta: vogliamo risolvere il problema in modo esatto. Per farlo, l'idea è di affidarci alle _catene di Markov_. Le catene di Markov hanno infatti come principale scopo nella vita quello di poter modellare un contesto stocastico e dinamico, che è precisamente quello che abbiamo qui: palline disposte inizialmente in modo casuale (da cui lo "stocastico"), che si muovono (da cui il "dinamico") nelle ciotole sempre seguendo mosse casuali.
+# Ma ovviamente questo non ci basta: vogliamo risolvere il problema in modo esatto. Per farlo, l'idea è di affidarci alle _catene di Markov_. Le catene di Markov hanno infatti come principale scopo nella vita quello di poter modellare un contesto stocastico e dinamico, che è precisamente quello che abbiamo qui: palline, disposte inizialmente in modo casuale, che si muovono nelle ciotole seguendo in modo aleatorio.
 
-# Una catena di Markov è caratterizzata da due elementi: lo spazio degli stati $S$, ovvero le configurazioni che può assumere il sistema che stiamo modellando, e la matrice di transizione $P$, le cui componenti $p_{ij}$ descrivono la probabilità che da un certo stato $i$ ci spostiamo in un certo stato $j$. Una volta definiti questi due elementi, la variabile $X_n$ descriverà in quale  stato $s\in S$ ci troveremo all'istante di tempo $n\in\mathbb{N}_0$. Per esempio $X_0$ è lo stato da cui partiamo, poi al tempo 1 ci sposteremo in un qualche stato $X_1$, poi $X_2$, e così via.
+# Per caratterizzare una catena di Markov servono due elementi: lo spazio degli stati $S$, ovvero le configurazioni che può assumere il sistema che stiamo modellando, e la matrice di transizione $P$, le cui componenti $p_{ij}$ descrivono la probabilità che da un certo stato $i$ ci spostiamo in un altro stato $j$. L'idea dello "spostarsi tra i vari stati" deriva dal fatto che alla catena di Markov associamo anche una variabile aleatoria $X_n$ che descrive in quale stato $i\in S$ ci troveremo all'istante di tempo $n\in\mathbb{N}_0$. Per esempio: $X_0$ è lo stato da cui partiamo, poi al tempo 1 ci sposteremo in un qualche altro stato $X_1$, poi $X_2$, e così via.
 
 # ### Stati
 # In questo problema, una scelta interessante consiste già nel capire come modellare gli stati. Esistono infatti diversi possibili approcci:
 # 1. assegnare a ogni pallina un'etichetta corrispondente alla ciotola in cui è contenuta
-# 2. assegnare ad ogni ciotola il numero di palline che contiene, pensando alle ciotole come disposte in una fila (quindi esiste la "prima" ciotola, la "seconda" ciotola, ecc) ma mantenendo ovviamente la configurazione originale del cerchio permettendo che dalla ciotola uno possiamo "andare a sinistra" ed entrare nell'ultima ciotola, e viceversa
+# 2. assegnare ad ogni ciotola il numero di palline che contiene, pensando alle ciotole come disposte in una fila (quindi esiste la "prima" ciotola, la "seconda" ciotola, ecc) ma mantenendo ovviamente la configurazione circolare del problema assumendo che dalla prima ciotola possiamo "andare a sinistra" ed andare nell'ultima ciotola, e viceversa
 # 3. assegnare ad ogni ciotola il numero di palline che contiene, pensando alle ciotole come effettivamente disposte nel cerchio che prevede il testo, quindi accorpando in base alle simmetrie circolari le configurazioni derivate dal metodo del punto 2
 
-# Consideriamo un piccolo esempio con lo stato in cui ci sono 4 ciotole e 2 palline, disposte in modo alternato nelle ciotole. Col primo metodo, questa configurazione sarebbe descritto da quattro possibili stati: $13$, $24$, $31$, $42$. Col secondo metodo, avremmo $0101$ oppure $1010$, mentre solo col terzo metodo possiamo apprezzare la simmetria del problema e avere un unico stato, mettiamo $0101$, che rappresenti univocamente la situazione.  
+# Per capire meglio, consideriamo lo scenario in cui ci sono 4 ciotole e 2 palline disposte in modo alternato nelle ciotole. Col primo metodo, questa configurazione verrebbe descritta da quattro stati: $13$, $24$, $31$, $42$; dove $ij$ starebbe quindi ad indicare la prima pallina nella ciotola numero $i$ e la seconda pallina nella ciotola numero $j$. Col secondo metodo, invece, avremmo gli stati $0101$ oppure $1010$, mentre solo col terzo metodo possiamo cogliere la simmetria del problema e avere un unico stato, diciamo $0101$, che rappresenta univocamente la situazione. Infatti, gli stati $0101$ e $1010$ diventano ora equivalenti, in quest'ultima formulazione, in quanto uno può essere ottenuto "facendo scorrere con circolarità" l'altro. 
 
-# Avendo $n$ ciotole ed $m$ palline, ogni caso prevederebbe una diversa numerosità dello spazio degli stati:
-# 1. con la prima formulazione, avremmo che ogni pallina può andare in ciascuna ciotola. Quindi: $n$ opzioni per ciascuna delle $m$ palline, da cui $n^m$ stati
-# 2. con la seconda formulazione, avremmo che ogni ciotola, disposta in fila, può accogliere da zero a $m$ palline. Pensando di rappresentare ogni pallina come, beh, una pallina "∘", ed ogni ciotola come una barra "|", segue che gli stati totali sono i modi in cui possiamo anagrammare la stringa formata da $m$ palline e $n-1$ ciotole (meno uno perché fissiamo una certa ciotola essere la prima lettera della stringa), supponendo che le palline alla destra di una barra corrispondano a quelle che tale ciotola contiene[^1]. Per esempio, la stringa "∘∘||∘" corrisponde ad uno scenario con 3 palline e 3 ciotole, dove nella prima ci stanno due palline, nella seconda zero, e nella terza una. Quindi, in questo caso, il numero di stati è pari a $$\frac{(m+n-1)!}{m!(n-1)!}={ m+n-1 \choose m}$$ 
-# 3. con la terza formulazione, più complicata perché contiamo come una sola configurazione, per via delle simmetrie, configurazioni precedentemente diverse, il numero degli stati diminuisce ulteriormente. Per sapere di quanto diminuisce... beh, di certo esisterà una formula che, come nei casi precedenti, conti elegantemente gli stati in funzione di $n$ ed $m$. Tuttavia ricavarla è molto meno immediato, quindi non ci ho badato troppo: la mia natura ingegneristica ha preso il sopravvento e ho beatamente proseguito col resto del problema senza soffermarmi troppo su questo calcolo
+# Ad ogni modo, con $n$ ciotole ed $m$ palline ciascuno di questi metodi prevederebbe una diversa numerosità dello spazio degli stati:
+# 1. con la prima formulazione, avremmo che ogni pallina può andare in ciascuna ciotola. Quindi: $n$ opzioni per $m$ palline, da cui $n^m$ stati
+# 2. con la seconda formulazione, avremmo che ogni ciotola, disposta in fila, può accogliere da zero a $m$ palline. Pensando di rappresentare ogni pallina come, beh, una pallina "∘" ed ogni ciotola come una barra "|" segue che gli stati totali sono i modi in cui possiamo anagrammare la stringa formata da $m$ palline e $n-1$ ciotole (il meno uno è perché fissiamo una certa ciotola essere la prima lettera della stringa), supponendo che le palline alla destra di una barra corrispondano a quelle che tale ciotola contiene[^1]. Per esempio, la stringa "∘∘||∘" corrisponde ad uno scenario con 3 palline e 3 ciotole, dove la prima contiene due palline, la seconda zero, e la terza una. Con questo metodo, si ricava che il numero di stati è pari, in generale, a $$\frac{(m+n-1)!}{m!(n-1)!}={ m+n-1 \choose m}$$ 
+# 3. con la terza formulazione, più complicata perché contiamo come una sola configurazione, per via delle simmetrie, configurazioni precedentemente diverse, il numero degli stati diminuisce ulteriormente. Per sapere di quanto diminuisce... beh, di certo esisterà una formula che, come nei casi precedenti, conti elegantemente gli stati in funzione di $n$ ed $m$. Tuttavia stavolta ricavarla è molto meno immediato, quindi non ci ho badato troppo: la mia natura ingegneristica ha preso il sopravvento e contento di aver raggiunto il caso ottimale ho beatamente proseguito col resto del problema senza stare ad indagare troppo questo calcolo
 
-# Il punto è infatti che all'aumentare del numero di ciotole e palline, il terzo metodo permette di limitare la numerosità degli stati, mantenendo quindi il problema più agilmente risolvibile per un computer. Per esempio, con 12 ciotole e 6 palline, il primo metodo prevederebbe $12^6=2985984$ stati, il secondo ${17 \choose 6}=12376$, il terzo 561. E siccome in seguito vedremo che ci sarà da risolvere un sistema, meglio lavorare con sistemi da 561 variabili rispetto che 2985984![^2]
+# Il punto è infatti che all'aumentare del numero di ciotole e palline, il terzo metodo permette di limitare la numerosità degli stati, mantenendo quindi il problema più agilmente risolvibile per un computer. Per esempio, con 12 ciotole e 6 palline, il primo metodo prevederebbe $12^6=2985984$ stati, il secondo ${17 \choose 6}=12376$, il terzo 561. E siccome in seguito vedremo che ci sarà da risolvere un sistema, meglio lavorare con sistemi da 561 variabili rispetto che 2985984![^2]. La formulazione del secondo metodo è comunque utile a livello umano per raccontare cosa succede, quindi la riprenderò comunque, a volte, nel discorso.
 
 # [^1]: Per la cronaca, è il "classico" problema delle stelline e sbarrette.
-# [^2]: Se avete letto il "!" come fattoriale tranquilli, non siete i soli, ormai quando anche nelle storie di instagram vedo scritto _"buon compleanno! +20!"_ lo leggo come se una persona stesse compiendo "20 fattoriale" anni.
+# [^2]: Se avete letto il "!" come fattoriale tranquilli, non siete i soli, ormai quando anche in giro leggo _"buon compleanno! +20!"_ lo interpreto istintivamente come un "20 fattoriale".
 
 # ### Probabilità iniziali
-# Una volta definito come modellare gli stati, il prossimo passo consiste nel calcolare le probabilità che la configurazione iniziale delle palline nelle ciotole sia esattamente un certo stato piuttosto che un altro. Questo servirà perché per trovare il tempo medio necessario ad entrare nella classe ricorrente $R$, quella in cui tutte le palline sono riunite nella stessa ciotola e quindi il gioco termina, dovremmo espandere[^3] il calcolo su tutti i possibili stati da cui possiamo partire. Ovvero, moralmente dobbiamo pesare i contributi portati da ciascuno stato per la probabilità di partire in effetti da quello stato: 
+# Una volta definito come modellare gli stati, il prossimo passo consiste nel calcolare le probabilità che la configurazione iniziale delle palline nelle ciotole sia esattamente un certo stato piuttosto che un altro. Questo servirà perché per trovare il tempo medio necessario ad entrare nella classe ricorrente $R$, quella in cui tutte le palline sono riunite nella stessa ciotola e quindi il gioco terminerà, dovremmo espandere[^3] il calcolo su tutti i possibili stati da cui possiamo partire. Moralmente dobbiamo cioè pesare i contributi portati da ciascuno stato per la probabilità di partire proprio da quello stato: 
 # $$ \mathbb{E}(\text{#passi per entrare in $R$}) =  \sum_{i \in S} \mathbb{E}(\text{#passi per entrare in $R$ partendo da $i$}) \cdot \mathbb{P}(\text{partiamo da $i$})$$
 
 # Intuitivamente ha senso: se da uno stato magari ci mettiamo pochi passi per entrare nella classe ricorrente $R$, ma quella configurazione iniziale è molto rara da ottenere, allora è giusto che il suo contributo venga scalato rispetto agli altri.
 
 # Comunque, tornando al discorso, per calcolare queste probabilità serve invocare la distribuzione Multinomiale, dove diciamo che ${\bf{X}}=(X_1,\ldots,X_n) \sim \text{Mult}(m,(p_1,\ldots,p_n))$ se ${\bf{X}}$ modella lo scenario in cui, ripetendo un certo esperimento aleatorio per $m$ volte, sono risultate $X_i$ occorrenze di ciascun evento $i$, il quale aveva probabilità $p_i$ di verificarsi[^4]. 
 
-# Questa fa precisamente al caso nostro: come $m$ esperimenti aleatori abbiamo le assegnazioni di ciascuna delle $m$ palline a una qualunque delle $n$ ciotole scelta in modo casuale e con equiprobabilità. Quindi il vettore $\bf{p}$ delle probabilità sarà un vettore lungo $n$ e di componenti tutte uguali a $\frac{1}{n}$. La probabilità di ottenere una certa configurazione $\bf{X}=\bf{x}$ sarà quindi data dalla densità Multinomiale: $$p_{\bf{X}}({\bf x}) = \mathbb{P}({\bf X}={\bf x}) = \frac{m!}{x_1!\cdots x_n!}\prod_{i=1}^n p_i^{x_i}$$
+# Questa distribuzione fa precisamente al caso nostro: come $m$ esperimenti aleatori abbiamo le assegnazioni di ciascuna delle $m$ palline a una qualunque delle $n$ ciotole, scelta in modo casuale e con equiprobabilità. Quindi tutte le $p_i$ per $i=1,\ldots,n$ saranno uguali a $\frac{1}{n}$. La probabilità di ottenere una certa configurazione $\bf{X}=\bf{x}$ sarà quindi data dalla densità Multinomiale: $$p_{\bf{X}}({\bf x}) = \mathbb{P}({\bf X}={\bf x}) = \frac{m!}{x_1!\cdots x_n!}\prod_{i=1}^n p_i^{x_i}$$
 
-# Questa probabilità va però poi aggiustata contando per le simmetrie. Nel nostro caso, infatti, uno stato del tipo $00k0$ sarebbe equivalente a $k000$, $0k00$, e $000k$, dato che sono tutti simmetrici rispetto alla disposizione circolare delle ciotole. L'aggiustamento consiste quindi nel moltiplicare quella probabilità "base" per il numero di occorrenze che tale configurazione presenta. 
-# Per esempio, con $n=4$ ciotole e $m=2$ palline, consideriamo lo stato $0002$. Questo può manifestarsi in 4 possibili casi (come appena spiegato, sciogliendo la simmetria circolare), quindi la probabilità di ottenere tala configurazione è pari a $$p(0002) = 4\cdot\frac{2!}{0!0!0!2!} \left(\frac{1}{4}\right)^0\left(\frac{1}{4}\right)^0\left(\frac{1}{4}\right)^0 \left(\frac{1}{4}\right)^2 = \frac{1}{4}$$
+# Questa probabilità va però poi aggiustata contando per le simmetrie. Nel nostro caso, infatti, uno stato del tipo $00k0$ (rappresentato con la seconda formulazione) sarebbe equivalente a $k000$, $0k00$, e $000k$, dato che sono tutti simmetrici rispetto alla disposizione circolare delle ciotole. L'aggiustamento consiste quindi nel moltiplicare quella probabilità "base" per il numero di occorrenze che tale configurazione presenta. 
+# Consideriamo ad esempio lo stato $0002$, dove abbiamo $n=4$ ciotole e $m=2$ palline. Questo stato può manifestarsi in 4 possibili casi (come appena spiegato, sciogliendo la simmetria circolare), quindi la probabilità di ottenere tala configurazione è pari a $$p(0002) = 4\cdot\frac{2!}{0!0!0!2!} \left(\frac{1}{4}\right)^0\left(\frac{1}{4}\right)^0\left(\frac{1}{4}\right)^0 \left(\frac{1}{4}\right)^2 = \frac{1}{4}$$
 
 # [^3]: Tecnicamente, si può dire anche esplodere o disintegrare! molto più divertenti.
-# [^4]: Come vincoli, abbiamo da chiedere che $\sum p_i=1$ (qualcosa deve sempre verificarsi) e $\sum X_i = m$ (le occorrenze di ciascun evento ammontano al totale di esperimenti condotti).
+# [^4]: Come vincoli, abbiamo da chiedere che $\sum p_i=1$ (qualcosa deve sempre verificarsi) e $\sum X_i = m$ (le occorrenze di ciascun evento devono ammontare al totale di esperimenti condotti).
 
 # ### Finalmente un po' di codice
-# Le funzioni qui di seguito si occupano quindi di generare gli stati per la catena di Markov, di cui ne propongo alcuni esempietti di esecuzione con l'opzione `verbose` attiva, in modo da facilitarne la comprensione. 
+# Le funzioni qui di seguito si occupano di generare le variabili finora introdotte. Di ogni funzione propongo anche alcuni esempietti di esecuzione, con l'opzione `verbose` attiva, in modo da facilitarne la comprensione. 
 
 ## generate all possible states of where balls can be located in the bowls
 function get_all_states(m::Int, n::Int; verbose=false)
@@ -183,7 +183,7 @@ end
 #-
 
 # ### Assembliamo la soluzione
-# Ora che abbiamo introdotto alcuni degli elementi fondamentali per modellare il problema possiamo proseguire verso il sistema lineare che ci condurrà effettivamente alla soluzione. Dopo aver definito alcune variabili di supporto e di contesto,
+# Ora che disponiamo di alcuni degli elementi fondamentali per modellare il problema, possiamo audacemente proseguire verso il sistema lineare che ci condurrà effettivamente alla sua soluzione. Dopo aver definito alcune variabili di supporto e di contesto, tra cui in particolare gli stati e il vettore delle probabilità iniziali,
 
 nbowls = 4; nballs = 5
 ## definiamo gli stati e le probabilità iniziali
@@ -192,7 +192,7 @@ states, p₀ = get_states(nbowls, nballs)
 states_dict = Dict(state => i for (i, state) in enumerate(states))
 nstates = length(states);
 
-# occorre costruire la matrice $P$. Per farlo, l'idea è che possiamo iterare sugli stati e guardare in quali altri stati possiamo arrivare seguendo i possibili modi in cui le palline possono spostarsi.
+# occorre ora costruire la matrice $P$. Per farlo, l'idea è che possiamo iterare sugli stati e guardare in quali altri stati possiamo arrivare seguendo i possibili modi in cui le palline possono spostarsi.
 
 P = zeros(nstates, nstates)
 for st in states
@@ -216,16 +216,17 @@ for st in states
 			end
 		end
 	else
+		## if state is absorbing can only go to itself
 		P[states_dict[st],states_dict[st]] = 1
 	end
 end
 ## normalize the matrix by dividing each value by the sum of its row values
-Int.(P)
+Int.(P) ## prima 
 #-
 for i in 1:size(P)[1]
 	P[i,:] = P[i,:]/sum(P[i,:]) 
 end
-P
+P ## dopo
 #-
 # Diventa anche molto bello plottare il grafo che mostra le possibili transizioni tra gli stati della catena di Markov, dove giustamente osserviamo che esiste un solo stato assorbente (l'unico ad avere come unica freccia una freccia verso sé stesso).
 ## https://docs.juliaplots.org/stable/generated/graph_attributes/#graph_attributes
@@ -368,6 +369,3 @@ end
 
 ## G(12,12) risolve il problema
 G(4,4); # giusto un esempio
-
-#-
-@time F(10,10) # altro esempio di quanto ci mette il codice con n ed m altini

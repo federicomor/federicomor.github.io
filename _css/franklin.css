@@ -538,7 +538,7 @@ body { counter-reset: eqnum; }
  tab-size: 4;
 } 
 
-.franklin-content .franklin-content code.language-julia{ 
+.franklin-content code.language-julia, code.language-julia.hljs { 
  background-color: rgba(27,31,35,0.05); 
  /* padding: 0.1em 0.2em;  */
  border-radius: 2px; 
