@@ -69,7 +69,7 @@ xs(3) # hide
 # ### Soluzione effettiva
 # L'idea è che stiamo affrontando un problema di ottimizzazione per una funzione multivariata $f({\bf x}) : \R^n\to \R$, soggetta al vincolo $g({\bf x})=0$, dove anche $g({\bf x}): \R^n\to \R$: un contesto che sembra proprio chiamare in causa i moltiplicatori di Lagrange! Quando ci ho pensato non volevo crederci, e soprattutto non volevo rimestare nel torbido per recuperare i miei appunti di Analisi 2. Tuttavia, a malincuore, ho dovuto farlo, e in effetti con quelli si arriva tranquillamente (e anche molto velocemente) alla soluzione.
 
-# I moltiplicatori di Lagrange permettono infatti di convertire un problema di ottimizzazione (inteso come ricerca di punti di massimo/minimo) di una funzione soggetta a un vincolo[^1] in un altro problema di ottimizzazione, stavolta _libero_, quindi non soggetto a vincoli, al costo però di aggiungere una variabile $\lambda$. Questa funzione sarebbe $$\mathcal{L}({\bf x},\lambda) = f({\bf x}) + \lambda g({\bf x})$$ 
+# I moltiplicatori di Lagrange permettono infatti di convertire un problema di ottimizzazione (inteso come ricerca di punti di massimo/minimo) di una funzione $f$ soggetta a un vincolo[^1] $g$ in un altro problema di ottimizzazione, stavolta _libero_, quindi non soggetto a vincoli, di un'altra funzione $\mathcal{L}$, al costo di aggiungere una variabile $\lambda$. Questa nuova funzione sarebbe $$\mathcal{L}({\bf x},\lambda) = f({\bf x}) + \lambda g({\bf x})$$ 
 # i cui punti di massimo/minimo sono molto facili da individuare: basta infatti porre la "derivata uguale a zero", che in questo contesto multivariato si traduce nel chiedere che il gradiente della funzione sia uguale a zero, ovvero $\nabla \mathcal{L}({\bf x},\lambda) = {\bf 0}$. Questa richiesta, vista la definizione di $\mathcal{L}$, equivale in realtà a $$\label{system}\begin{cases}\nabla f({\bf x}) = -\lambda g({\bf x}) \\ g({\bf x}) = 0\end{cases}$$
 
 # [^1]: Questo metodo permette anche di gestire più vincoli ovviamente, e in tal caso si introdurrebbe una nuova variabile per vincolo, ma per non appesantire la spiegazione mi sono concentrato sul caso del problema dove c'è un vincolo solo.
@@ -85,6 +85,7 @@ Int(sum(floor(Pm(i)) for i in 2:15)) # hide
 Int.(sum([floor(prod([(2i/(m+1))^i for i in 1:m])) for m in 2:15]))
 
 # Questi sarebbero i valori di $x_i$ generati per ogni caso:
+xs(m) = [(2i/(m+1)) for i in 1:m]
 for i in 2:15
 	println("$i => ", round.(xs(i),digits=2))
 end
