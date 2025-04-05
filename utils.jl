@@ -24,7 +24,7 @@ end
 macro OUTPUT()
     return isdefined(Main, :Franklin) ? Franklin.OUT_PATH[] : "/tmp/"
 end
-function my_save_fig(name)
+function my_savefig(name)
 	savefig(joinpath(@OUTPUT, name))
 end
 

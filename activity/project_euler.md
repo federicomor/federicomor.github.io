@@ -94,7 +94,7 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 	<div class="legend">
         <div class="legend-item"><div class="legend-color blank"></div> (tag blank) ancora da affrontare</div>
         <div class="legend-item"><div class="legend-color solved"></div> (tag solved) risolto, commentato, e forse c'è/ci sarà il video</div>
-		<div class="legend-item"><div class="legend-color wow"></div> (tag wow) solved e problema super interessante!</div>
+		<div class="legend-item"><div class="legend-color wow"></div> (tag wow) risolto e problema super interessante!</div>
     </div>
     <br>
     <!-- <br> -->
@@ -105,10 +105,10 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 
 <table class="progress">
 <tr>
-<td class="solved"><a href="/activity/project_euler/problem_1">1</a></td>
-<td class="solved"><a href="/activity/project_euler/problem_2">2</a></td>
-<td class="solved"><a href="/activity/project_euler/problem_3">3</a></td>
-<td class="solved"><a href="/activity/project_euler/problem_4">4</a></td>
+<td class="blank"><a href="/activity/project_euler/problem_1">1</a></td>
+<td class="blank"><a href="/activity/project_euler/problem_2">2</a></td>
+<td class="blank"><a href="/activity/project_euler/problem_3">3</a></td>
+<td class="blank"><a href="/activity/project_euler/problem_4">4</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_5">5</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_6">6</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_7">7</a></td>
@@ -310,7 +310,7 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 <td class="blank"><a href="/activity/project_euler/problem_187">187</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_188">188</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_189">189</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_190">190</a></td>
+<td class="wow"><a href="/activity/project_euler/problem_190">190</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_191">191</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_192">192</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_193">193</a></td>

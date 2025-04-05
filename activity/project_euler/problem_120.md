@@ -2,6 +2,7 @@
 title = "P120"
 hascode = true
 hasplotly = true
+showall = true
 +++
 
 ~~~
@@ -10,6 +11,19 @@ hasplotly = true
 <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
 </form>
 <a href="/activity/project_euler/problem_119/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a>
+<script>
+  function getRandomProblem() {
+    fetch('/activity/project_euler/data.txt') 
+      .then(response => response.text())
+      .then(data => {
+        const maxProblems = parseInt(data.trim(), 10);
+        const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1;
+        window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/';
+      })
+      .catch(err => console.error('Error fetching max problems:', err));
+  }
+</script>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_121/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </div>
@@ -26,11 +40,11 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Square Remainders</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 21st April 2006, 06:00 pm; Solved by 15130;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=120">Problem 120</a></h3></div>
+<h2>Square Remainders</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 21st April 2006, 06:00 pm; Solved by 15235;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=120">Problem 120</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $r$ be the remainder when $(a - 1)^n + (a + 1)^n$ is divided by $a^2$.</p>
-<p>For example, if $a = 7$ and $n = 3$, then $r = 42$: $6^3 + 8^3 = 728 \equiv 42 \mod 49$. And as $n$ varies, so too will $r$, but for $a = 7$ it turns out that $r_{\mathrm{max}} = 42$.</p>
-<p>For $3 \le a \le 1000$, find $\sum r_{\mathrm{max}}$.</p>
+<p>For example, if $a = 7$ and $n = 3$, then $r = 42$: $6^3 + 8^3 = 728 \equiv 42 \mod 49$. And as $n$ varies, so too will $r$, but for $a = 7$ it turns out that $r_{\mathrm{max} } = 42$.</p>
+<p>For $3 \le a \le 1000$, find $\sum r_{\mathrm{max} }$.</p>
 
 </div><br>
 <br>

@@ -2,6 +2,7 @@
 title = "P907"
 hascode = true
 hasplotly = true
+showall = true
 +++
 
 ~~~
@@ -10,6 +11,19 @@ hasplotly = true
 <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
 </form>
 <a href="/activity/project_euler/problem_906/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a>
+<script>
+  function getRandomProblem() {
+    fetch('/activity/project_euler/data.txt') 
+      .then(response => response.text())
+      .then(data => {
+        const maxProblems = parseInt(data.trim(), 10);
+        const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1;
+        window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/';
+      })
+      .catch(err => console.error('Error fetching max problems:', err));
+  }
+</script>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_908/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </div>
@@ -26,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Stacking Cups</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th September 2024, 11:00 pm; Solved by 240;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=907">Problem 907</a></h3></div>
+<h2>Stacking Cups</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th September 2024, 11:00 pm; Solved by 257;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=907">Problem 907</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 An infant's toy consists of $n$ cups, labelled $C_1,\dots,C_n$ in increasing order of size.
@@ -46,7 +60,9 @@ The cups may be stacked in various combinations and orientations to form towers.
 <li>Rim-to-rim: $C_{k+2}$ or $C_{k-2}$ may sit, up-side-down, on top of a right-way-up $C_k$, with their tops fitting together snugly.<br>
 <img src="https://projecteuler.net/resources/images/0907_rim_to_rim.png?1723769283" alt="0907_rim_to_rim.png" height="198">
 </li>
-</ul>
+<li>For the purposes of this problem, it is <b>not</b> permitted to stack <b>both</b> $C_{k+2}$ and $C_{k-2}$ rim-to-rim on top of $C_k$, despite the schematic diagrams appearing to allow it:<br>
+<img src="https://projecteuler.net/resources/images/0907_rim_to_rim_counter_example.png?1740699245" alt="0907_rim_to_rim_counter_example.png" height="267"><br>
+</li></ul>
 <p>
 Define $S(n)$ to be the number of ways to build a single tower using all $n$ cups according to the above rules.<br>
 You are given $S(4)=12$, $S(8)=58$, and $S(20)=5560$.

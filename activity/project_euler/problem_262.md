@@ -2,6 +2,7 @@
 title = "P262"
 hascode = true
 hasplotly = true
+showall = true
 +++
 
 ~~~
@@ -10,6 +11,19 @@ hasplotly = true
 <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;">
 </form>
 <a href="/activity/project_euler/problem_261/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+<a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a>
+<script>
+  function getRandomProblem() {
+    fetch('/activity/project_euler/data.txt') 
+      .then(response => response.text())
+      .then(data => {
+        const maxProblems = parseInt(data.trim(), 10);
+        const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1;
+        window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/';
+      })
+      .catch(err => console.error('Error fetching max problems:', err));
+  }
+</script>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
 <a href="/activity/project_euler/problem_263/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
 </div>
@@ -26,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Mountain Range</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 30th October 2009, 09:00 pm; Solved by 804;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=262">Problem 262</a></h3></div>
+<h2>Mountain Range</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 30th October 2009, 09:00 pm; Solved by 815;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=262">Problem 262</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The following equation represents the <i>continuous</i> topography of a mountainous region, giving the <strong class="tooltip">elevation<span class="tooltiptext">height above sea level</span></strong> $h$ at any point $(x, y)$:
 $$h = \left(5000 - \frac{x^2 + y^2 + xy}{200} + \frac{25(x + y)}2\right) \cdot e^{-\left|\frac{x^2 + y^2}{1000000} - \frac{3(x + y)}{2000} + \frac 7 {10}\right|}.$$
@@ -36,8 +50,8 @@ $$h = \left(5000 - \frac{x^2 + y^2 + xy}{200} + \frac{25(x + y)}2\right) \cdot e
 
 <p>Because of the intervening mountains, it first rises straight up to a point $A^\prime$, having elevation $f$. Then, while remaining at the same elevation $f$, it flies around any obstacles until it arrives at a point $B^\prime$ directly above $B$.</p>
 
-<p>First, determine $f_{\mathrm{min}}$ which is the minimum constant elevation allowing such a trip from $A$ to $B$, while remaining in the specified area.<br>
-Then, find the length of the shortest path between $A^\prime$ and $B^\prime$, while flying at that constant elevation $f_{\mathrm{min}}$.</p>
+<p>First, determine $f_{\mathrm{min} }$ which is the minimum constant elevation allowing such a trip from $A$ to $B$, while remaining in the specified area.<br>
+Then, find the length of the shortest path between $A^\prime$ and $B^\prime$, while flying at that constant elevation $f_{\mathrm{min} }$.</p>
 
 <p>Give that length as your answer, rounded to three decimal places.</p>
 
