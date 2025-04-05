@@ -196,7 +196,7 @@ savefig(joinpath(@OUTPUT, "mc_graph_.svg")); # hide
 Q = P[2:end,2:end]
 if size(Q)[1] > 1 # c'è davvero un sistema da risolvere
 	k = (I(nstates-1)-Q)\ones(nstates-1) # metodo classico
-	# k = bicgstabl(I(nstates-1)-Q, ones(nstates-1)) # biconjugate gradient method
+	# k = bicgstabl(I(nstates-1)-Q, ones(nstates-1)) # biconjugate gradient method, per esempio
 else
 	k = [1/(I(nstates-1)-Q)[1]]
 end
@@ -265,7 +265,6 @@ function F(nbowls, nballs; verbose=false, plot_graph=false)
 	Q = P[2:end,2:end]
 	if verbose println("Solving the linear system") end
 	if size(Q)[1] > 1
-		# k = bicgstabl(I(nstates-1)-Q, ones(nstates-1))
 		k = (I(nstates-1)-Q)\ones(nstates-1)
 	else
 		k = [1/(I(nstates-1)-Q)[1]]
@@ -287,5 +286,6 @@ function G(N,M)
 	return S
 end
 
-# G(12,12) risolve il problema
-G(4,4); # giusto un esempio
+G(4,5) # giusto un esempio
+
+6277/12 # la soluzione esatta per G(4,5)

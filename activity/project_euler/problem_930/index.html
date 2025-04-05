@@ -31,14 +31,14 @@ function simulate_F&#40;n::Int, m::Int; num_trials::Int&#61;10000, verbose&#61;f
     end
     return total_moves / num_trials  # estimate of F&#40;n, m&#41;
 end</code></pre><pre><code class="plaintext code-output">simulate_F (generic function with 1 method)</code></pre>
-<p>Con cui possiamo o simulare il problema per ottenere una stima più o meno accurata:</p>
+<p>Con questa fuzione possiamo o simulare il problema per ottenere una stima più o meno accurata della soluzione:</p>
 <pre><code class=language-julia >simulate_F&#40;2, 3, num_trials &#61; 20_000&#41; # soluzione esatta: 9/4 &#61; 2.25</code></pre><pre><code class="plaintext code-output">2.2518</code></pre>
 <p>o altrimenti vedere in concreto cosa accade in un&#39;esempio di esecuzione:</p>
 <pre><code class=language-julia >simulate_F&#40;2, 3, verbose&#61;true&#41;</code></pre><pre><code class="plaintext code-output">Balls are in bowls: [2, 1, 2] (selected ball: 2, will move by: -1)
 Balls are in bowls: [2, 2, 2]
 Total moves: 1
 1.0</code></pre>
-<p>Ma ovviamente questo non ci basta: vogliamo risolvere il problema in modo esatto. Per farlo, l&#39;idea è di affidarci alle <em>catene di Markov</em>. Le catene di Markov hanno infatti come principale scopo nella vita quello di poter modellare un contesto stocastico e dinamico, che è precisamente quello che abbiamo qui: palline, disposte inizialmente in modo casuale, che si muovono nelle ciotole seguendo in modo aleatorio.</p>
+<p>Ma ovviamente questo non ci basta: vogliamo risolvere il problema in modo &#40;matematicamente&#41; esatto. Per farlo, l&#39;idea è di affidarci alle <em>catene di Markov</em>. Le catene di Markov hanno infatti come principale scopo nella vita quello di poter modellare un contesto stocastico e dinamico, che è precisamente quello che abbiamo qui: palline, disposte inizialmente in modo casuale, che si muovono nelle ciotole seguendo mosse casuali.</p>
 <p>Per caratterizzare una catena di Markov servono due elementi: lo spazio degli stati \(S\), ovvero le configurazioni che può assumere il sistema che stiamo modellando, e la matrice di transizione \(P\), le cui componenti \(p_{ij}\) descrivono la probabilità che da un certo stato \(i\) ci spostiamo in un altro stato \(j\). L&#39;idea dello &quot;spostarsi tra i vari stati&quot; deriva dal fatto che alla catena di Markov associamo anche una variabile aleatoria \(X_n\) che descrive in quale stato \(i\in S\) ci troveremo all&#39;istante di tempo \(n\in\mathbb{N}_0\). Per esempio: \(X_0\) è lo stato da cui partiamo, poi al tempo 1 ci sposteremo in un qualche altro stato \(X_1\), poi \(X_2\), e così via.</p>
 <h3 id=stati ><a href="#stati" class=header-anchor >Stati</a></h3>
 <p>In questo problema, una scelta interessante consiste già nel capire come modellare gli stati. Esistono infatti diversi possibili approcci:</p>
@@ -50,17 +50,17 @@ Total moves: 1
 <li><p>assegnare ad ogni ciotola il numero di palline che contiene, pensando alle ciotole come effettivamente disposte nel cerchio che prevede il testo, quindi accorpando in base alle simmetrie circolari le configurazioni derivate dal metodo del punto 2</p>
 
 </ol>
-<p>Per capire meglio, consideriamo lo scenario in cui ci sono 4 ciotole e 2 palline disposte in modo alternato nelle ciotole. Col primo metodo, questa configurazione verrebbe descritta da quattro stati: \(13\), \(24\), \(31\), \(42\); dove \(ij\) starebbe quindi ad indicare la prima pallina nella ciotola numero \(i\) e la seconda pallina nella ciotola numero \(j\). Col secondo metodo, invece, avremmo gli stati \(0101\) oppure \(1010\), mentre solo col terzo metodo possiamo cogliere la simmetria del problema e avere un unico stato, diciamo \(0101\), che rappresenta univocamente la situazione. Infatti, gli stati \(0101\) e \(1010\) diventano ora equivalenti, in quest&#39;ultima formulazione, in quanto uno può essere ottenuto &quot;facendo scorrere con circolarità&quot; l&#39;altro.</p>
-<p>Ad ogni modo, con \(n\) ciotole ed \(m\) palline ciascuno di questi metodi prevederebbe una diversa numerosità dello spazio degli stati:</p>
+<p>Per capire meglio, consideriamo lo scenario in cui ci sono 4 ciotole e 2 palline disposte in modo alternato nelle ciotole. Col primo metodo, questa configurazione verrebbe descritta da quattro stati: \(13\), \(24\), \(31\), \(42\); dove \(ij\) starebbe quindi ad indicare la prima pallina nella ciotola numero \(i\) e la seconda pallina nella ciotola numero \(j\). Col secondo metodo, invece, avremmo gli stati \(0101\) oppure \(1010\), mentre solo col terzo metodo saremo in grado di apprezzare la simmetria del problema e avere un unico stato, diciamo \(0101\), che rappresenti perfettamente la situazione. Infatti, gli stati \(0101\) e \(1010\) diventano ora equivalenti, in quest&#39;ultima formulazione, in quanto uno può essere ottenuto &quot;facendo scorrere con circolarità&quot; l&#39;altro, moralmente.</p>
+<p>Ad ogni modo, con \(n\) ciotole ed \(m\) palline, ciascuno di questi metodi prevederebbe una diversa numerosità dello spazio degli stati:</p>
 <ol>
-<li><p>con la prima formulazione, avremmo che ogni pallina può andare in ciascuna ciotola. Quindi: \(n\) opzioni per \(m\) palline, da cui \(n^m\) stati</p>
+<li><p>con la prima formulazione avremmo che ogni pallina può andare in ciascuna ciotola. Quindi: \(n\) opzioni per \(m\) palline, da cui \(n^m\) stati</p>
 
-<li><p>con la seconda formulazione, avremmo che ogni ciotola, disposta in fila, può accogliere da zero a \(m\) palline. Pensando di rappresentare ogni pallina come, beh, una pallina &quot;∘&quot; ed ogni ciotola come una barra &quot;|&quot; segue che gli stati totali sono i modi in cui possiamo anagrammare la stringa formata da \(m\) palline e \(n-1\) ciotole &#40;il meno uno è perché fissiamo una certa ciotola essere la prima lettera della stringa&#41;, supponendo che le palline alla destra di una barra corrispondano a quelle che tale ciotola contiene<sup id="fnref:1"><a href="#fndef:1" class=fnref >[1]</a></sup>. Per esempio, la stringa &quot;∘∘||∘&quot; corrisponde ad uno scenario con 3 palline e 3 ciotole, dove la prima contiene due palline, la seconda zero, e la terza una. Con questo metodo, si ricava che il numero di stati è pari, in generale, a </p>
+<li><p>con la seconda formulazione avremmo che ogni ciotola, disposta in fila, può accogliere da zero a \(m\) palline. Pensando di rappresentare ogni pallina come, beh, una pallina &quot;∘&quot; ed ogni ciotola come una barra &quot;|&quot; segue che gli stati totali sono i modi in cui possiamo anagrammare la stringa formata da \(m\) palline e \(n-1\) ciotole &#40;il meno uno è perché fissiamo una certa ciotola essere la prima lettera della stringa&#41;<sup id="fnref:1"><a href="#fndef:1" class=fnref >[1]</a></sup>, supponendo che le palline alla destra di una barra corrispondano a quelle che tale ciotola contiene. Per esempio, la stringa &quot;∘∘||∘&quot; corrisponde ad uno scenario con 3 palline e 3 ciotole, dove la prima contiene due palline, la seconda zero, e la terza una. Con questo metodo, si ricava che il numero di stati è pari, in generale, a </p>
 
 </ol>
 \[\frac{(m+n-1)!}{m!(n-1)!}={ m+n-1 \choose m}\]
 <ol start=3 >
-<li><p>con la terza formulazione, più complicata perché contiamo come una sola configurazione, per via delle simmetrie, configurazioni precedentemente diverse, il numero degli stati diminuisce ulteriormente. Per sapere di quanto diminuisce... beh, di certo esisterà una formula che, come nei casi precedenti, conti elegantemente gli stati in funzione di \(n\) ed \(m\). Tuttavia stavolta ricavarla è molto meno immediato, quindi non ci ho badato troppo: la mia natura ingegneristica ha preso il sopravvento e contento di aver raggiunto il caso ottimale ho beatamente proseguito col resto del problema senza stare ad indagare troppo questo calcolo</p>
+<li><p>con la terza formulazione più complicata perché contiamo come una sola configurazione, per via delle simmetrie, configurazioni precedentemente diverse, il numero degli stati diminuisce ulteriormente. Per sapere di quanto diminuisce... beh, di certo esisterà una formula che, come nei casi precedenti, conti elegantemente gli stati in funzione di \(n\) ed \(m\). Tuttavia stavolta ricavarla è molto meno immediato, quindi non ci ho badato troppo: la mia natura ingegneristica ha preso il sopravvento e, contento di aver raggiunto il caso ottimale, ho beatamente proseguito col resto del problema senza stare ad indagare troppo questo calcolo</p>
 
 </ol>
 <p>Il punto è infatti che all&#39;aumentare del numero di ciotole e palline, il terzo metodo permette di limitare la numerosità degli stati, mantenendo quindi il problema più agilmente risolvibile per un computer. Per esempio, con 12 ciotole e 6 palline, il primo metodo prevederebbe \(12^6=2985984\) stati, il secondo \({17 \choose 6}=12376\), il terzo 561. E siccome in seguito vedremo che ci sarà da risolvere un sistema, meglio lavorare con sistemi da 561 variabili rispetto che 2985984&#33;<sup id="fnref:2"><a href="#fndef:2" class=fnref >[2]</a></sup>. La formulazione del secondo metodo è comunque utile a livello umano per raccontare cosa succede, quindi la riprenderò comunque, a volte, nel discorso.</p>
@@ -363,7 +363,7 @@ graphplot&#40;P,
 Q &#61; P&#91;2:end,2:end&#93;
 if size&#40;Q&#41;&#91;1&#93; &gt; 1 # c&#39;è davvero un sistema da risolvere
 	k &#61; &#40;I&#40;nstates-1&#41;-Q&#41;\ones&#40;nstates-1&#41; # metodo classico
-	# k &#61; bicgstabl&#40;I&#40;nstates-1&#41;-Q, ones&#40;nstates-1&#41;&#41; # biconjugate gradient method
+	# k &#61; bicgstabl&#40;I&#40;nstates-1&#41;-Q, ones&#40;nstates-1&#41;&#41; # biconjugate gradient method, per esempio
 else
 	k &#61; &#91;1/&#40;I&#40;nstates-1&#41;-Q&#41;&#91;1&#93;&#93;
 end</code></pre><pre><code class="plaintext code-output">9-element Vector{Float64}:
@@ -442,7 +442,6 @@ end</code></pre><pre><code class="plaintext code-output">9-element Vector{Float6
 	Q &#61; P&#91;2:end,2:end&#93;
 	if verbose println&#40;&quot;Solving the linear system&quot;&#41; end
 	if size&#40;Q&#41;&#91;1&#93; &gt; 1
-		# k &#61; bicgstabl&#40;I&#40;nstates-1&#41;-Q, ones&#40;nstates-1&#41;&#41;
 		k &#61; &#40;I&#40;nstates-1&#41;-Q&#41;\ones&#40;nstates-1&#41;
 	else
 		k &#61; &#91;1/&#40;I&#40;nstates-1&#41;-Q&#41;&#91;1&#93;&#93;
@@ -469,36 +468,45 @@ done!
 	return S
 end
 
-# G&#40;12,12&#41; risolve il problema
-G&#40;4,4&#41;; # giusto un esempio</code></pre><pre><code class="plaintext code-output">(n,m)=(2,2)
-  0.000074 seconds (244 allocations: 10.453 KiB)
+G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-output">(n,m)=(2,2)
+  0.000075 seconds (244 allocations: 10.453 KiB)
 
 (n,m)=(2,3)
-  0.000051 seconds (273 allocations: 11.531 KiB)
+  0.000033 seconds (273 allocations: 11.531 KiB)
 
 (n,m)=(2,4)
-  0.000051 seconds (478 allocations: 34.625 KiB)
+  0.000053 seconds (478 allocations: 34.625 KiB)
+
+(n,m)=(2,5)
+  0.000026 seconds (505 allocations: 35.641 KiB)
 
 (n,m)=(3,2)
-  0.000023 seconds (383 allocations: 15.688 KiB)
+  0.000017 seconds (383 allocations: 15.688 KiB)
 
 (n,m)=(3,3)
-  0.000032 seconds (770 allocations: 45.953 KiB)
+  0.000030 seconds (770 allocations: 45.953 KiB)
 
 (n,m)=(3,4)
-  0.000048 seconds (1.04 k allocations: 58.336 KiB)
+  0.000047 seconds (1.04 k allocations: 58.336 KiB)
+
+(n,m)=(3,5)
+  0.000085 seconds (1.39 k allocations: 74.461 KiB)
 
 (n,m)=(4,2)
-  0.000076 seconds (816 allocations: 51.422 KiB)
+  0.000041 seconds (816 allocations: 51.422 KiB)
 
 (n,m)=(4,3)
-  0.000065 seconds (1.39 k allocations: 79.086 KiB)
+  0.000058 seconds (1.39 k allocations: 79.086 KiB)
 
 (n,m)=(4,4)
-  0.000114 seconds (2.66 k allocations: 145.102 KiB)
+  0.000112 seconds (2.66 k allocations: 145.102 KiB)
+
+(n,m)=(4,5)
+  0.000192 seconds (3.83 k allocations: 210.320 KiB)
 
 done!
-</code></pre>
+523.083333333338</code></pre>
+<pre><code class=language-julia >6277/12 # la soluzione esatta per G&#40;4,5&#41;</code></pre><pre><code class="plaintext code-output">523.0833333333334</code></pre>
 
 <script src="https://giscus.app/client.js"
 		data-repo="federicomor/federicomor.github.io"
@@ -518,7 +526,7 @@ done!
 
 <div class=page-foot >
     
-    Last modified: April 01, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: April 05, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div>
     </div>  

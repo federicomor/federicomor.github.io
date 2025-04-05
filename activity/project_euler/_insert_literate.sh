@@ -21,10 +21,12 @@ do
     page_content=$(cat "problem_$problem_number.md")
 
 	# part to add the literate code for the problem
-	page_content=$(echo "$page_content" | sed 's/{{ addcomments }}/\\literate{\/_literate\/pe_$(($problem_number)).jl}\n{{ addcomments }}/g'
+	page_content=$(echo "$page_content" | sed "s|{{ addcomments }}|\\\\literate{/_literate/pe_$(($problem_number)).jl}\n{{ addcomments }}|g")
+
 
     output_file="problem_$problem_number.md"
     echo "$page_content" > "$output_file"
+	# echo "$page_content" 
 
     # echo "" >> "$output_file"
     # echo "{{ addcomments }}" >> "$output_file"

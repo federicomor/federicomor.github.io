@@ -59,7 +59,6 @@ function F(nbowls, nballs; verbose=false, plot_graph=false)
 	Q = P[2:end,2:end]
 	if verbose println("Solving the linear system") end
 	if size(Q)[1] > 1
-		# k = bicgstabl(I(nstates-1)-Q, ones(nstates-1))
 		k = (I(nstates-1)-Q)\ones(nstates-1)
 	else
 		k = [1/(I(nstates-1)-Q)[1]]

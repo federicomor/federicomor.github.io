@@ -10,5 +10,4 @@ function G(N,M)
 	return S
 end
 
-# G(12,12) risolve il problema
-G(4,4); # giusto un esempio
+G(4,5) # giusto un esempio
