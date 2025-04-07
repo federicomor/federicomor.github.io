@@ -57,6 +57,7 @@ Pm(m) = prod([(2i/(m+1))^i for i in 1:m]) # hide
 Int(sum(floor(Pm(i)) for i in 2:15)) # hide
 Int.(sum([floor(prod([(2i/(m+1))^i for i in 1:m])) for m in 2:15]))
 
+xs(m) = [(2i/(m+1)) for i in 1:m]
 for i in 2:15
 	println("$i => ", round.(xs(i),digits=2))
 end
