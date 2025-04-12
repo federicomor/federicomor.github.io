@@ -4,6 +4,7 @@ using SparseArrays
 using DataStructures
 using IterativeSolvers
 using Plots, GraphRecipes
+gr() # hide
 Random.seed!(31032025);
 
 # Per iniziare ad ambientarci nel contesto del problema (ovvero con il meccanismo di spostamento delle palline nelle ciotole, la condizione di terminazione del gioco, ecc) possiamo implementare una semplice simulazione del gioco stesso, osservando quali possibili scenari possono verificarsi.
@@ -35,11 +36,12 @@ function simulate_F(n::Int, m::Int; num_trials::Int=10000, verbose=false)
     end
     return total_moves / num_trials  # estimate of F(n, m)
 end
-# Con questa fuzione possiamo o simulare il problema per ottenere una stima più o meno accurata della soluzione:
+# Con questa funzione possiamo o simulare il problema per ottenere una stima più o meno accurata della soluzione:
 simulate_F(2, 3, num_trials = 20_000) # soluzione esatta: 9/4 = 2.25
 #-
 # o altrimenti vedere in concreto cosa accade in un'esempio di esecuzione:
-simulate_F(2, 3, verbose=true)
+Random.seed!(1) # hide
+simulate_F(4, 3, verbose=true)
 #-
 
 # Ma ovviamente questo non ci basta: vogliamo risolvere il problema in modo (matematicamente) esatto. Per farlo, l'idea è di affidarci alle _catene di Markov_. Le catene di Markov hanno infatti come principale scopo nella vita quello di poter modellare un contesto stocastico e dinamico, che è precisamente quello che abbiamo qui: palline, disposte inizialmente in modo casuale, che si muovono nelle ciotole seguendo mosse casuali.
@@ -134,7 +136,11 @@ function get_states(bowls::Int, balls::Int; verbose=false)
 		if !(min_s in states)
 			push!(states, min_s)
 		end
-		if verbose @show multiStates end
+	end
+	if verbose
+		for (key, val) in multiStates
+			println("stato: ", key, " => # ocorrenze: ", val)
+		end
 	end
 	prob = factorial(balls) / (bowls ^ balls)
 	if verbose 
@@ -154,7 +160,7 @@ function get_states(bowls::Int, balls::Int; verbose=false)
 	end
 	return states, init_probs
 end
-states, probs = get_states(5,2,verbose=true);
+states, probs = get_states(5,3,verbose=true);
 #-
 ## check if a state is absorbing
 function is_absorbing(state::Vector)
@@ -242,9 +248,9 @@ graphplot(P,
 	self_edge_size = 0.12,
 	method=:circular,
 	axis_buffer=0.2)
-savefig(joinpath(@OUTPUT, "mc_graph_.svg")); # hide
+savefig(joinpath(@OUTPUT, "mc_graph_real.svg")); # hide
 
-# \fig{mc_graph_.svg}
+# \fig{mc_graph_real.svg}
 
 #-
 # Una volta creata $P$, dobbiamo capire come usarla per risolvere il problema. Possiamo intanto osservare la struttura di $P$ (o in generale di una qualunque matrice di transizione per una catena di Markov che presenta stati assorbenti). La struttura di $P$ è infatti $$ P =\begin{pmatrix} I & O\\ R &  Q\end{pmatrix}$$

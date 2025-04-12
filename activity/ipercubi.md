@@ -36,4 +36,8 @@ $$
 $$
 dove $\binom{N}{k}=\frac{N!}{k!(N-k)!}$ è il coefficiente binomiale di $N$ su $k$, che indica in quanti modi possiamo scegliere $k$ elementi distinti da un gruppo di $N$ elementi.
 
+\input{julia}{/assets/scripts/ipercubi.jl}
+
+\fig{/assets/scripts/output/ipercubi.json}
+
 {{ addcomments }}

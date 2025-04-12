@@ -58,13 +58,16 @@ da cui possiamo quindi ricavare $\prob(\text{vincere dal pareggio})$. Assembland
 
 Notiamo anche come le apparentemente strane regole del tie-break, in cui il primo giocatore effettua solo un servizio e da lì in poi ci si alterna due servizi a testa (quindi la sequenza di battute sarebbe A|BB|AA|BB|AA|...) hanno in realtà ha perfettamente senso. Infatti, il tie-break in questo modo è _equo_: chiunque cominci al servizio non ha alcun vantaggio a priori. Questo lo si vede anche dalla matematica (naturalmente 😉), in cui leggendo il calcolo sempre nella prospettiva di A, ma nel caso in cui fosse B il primo a servire (possiamo modellare questo scenario invertendo i parametri $a$ e $b$), otterremo comunque le stesse probabilità di vittoria.
 
-Usando i numeri decimali classici (i Float64) sembra che escano valori diversi; ma in realtà sono solo dovuti ad approssimazioni numeriche: passando ad una rappresentazione più precisa (i BigFloat) tutto torna.
+Usando i numeri decimali classici (i Float64) sembra che escano valori leggermente diversi; ma in realtà sono solo dovuti ad approssimazioni numeriche: passando ad una rappresentazione più precisa (i BigFloat) tutto dovrebbe tornare.
 ```julia-repl
 julia> ptiebreak(0.60,0.70)
 0.8881752145777776
 
 julia> ptiebreak(0.70,0.60)
 0.8881752145777777
+
+julia> 1-ptiebreak(0.4,0.3) # altro controllo, cambiando prospettiva su B
+0.8881752145777779
 
 julia> ptiebreak(BigFloat(0.60),BigFloat(0.70))
 0.8881752145777777236370136878239485198844074151971728203443474502251501326155067
