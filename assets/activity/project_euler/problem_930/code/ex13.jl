@@ -11,4 +11,4 @@ graphplot(P,
 	self_edge_size = 0.12,
 	method=:circular,
 	axis_buffer=0.2)
-savefig(joinpath(@OUTPUT, "mc_graph_.svg")); # hide
+savefig(joinpath(@OUTPUT, "mc_graph_real.svg")); # hide

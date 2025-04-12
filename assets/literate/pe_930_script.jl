@@ -5,6 +5,7 @@ using SparseArrays
 using DataStructures
 using IterativeSolvers
 using Plots, GraphRecipes
+gr() # hide
 Random.seed!(31032025);
 
 # n bowls, m balls
@@ -38,7 +39,8 @@ end
 
 simulate_F(2, 3, num_trials = 20_000) # soluzione esatta: 9/4 = 2.25
 
-simulate_F(2, 3, verbose=true)
+Random.seed!(1) # hide
+simulate_F(4, 3, verbose=true)
 
 # generate all possible states of where balls can be located in the bowls
 function get_all_states(m::Int, n::Int; verbose=false)
@@ -90,7 +92,11 @@ function get_states(bowls::Int, balls::Int; verbose=false)
 		if !(min_s in states)
 			push!(states, min_s)
 		end
-		if verbose @show multiStates end
+	end
+	if verbose
+		for (key, val) in multiStates
+			println("stato: ", key, " => # ocorrenze: ", val)
+		end
 	end
 	prob = factorial(balls) / (bowls ^ balls)
 	if verbose
@@ -110,7 +116,7 @@ function get_states(bowls::Int, balls::Int; verbose=false)
 	end
 	return states, init_probs
 end
-states, probs = get_states(5,2,verbose=true);
+states, probs = get_states(5,3,verbose=true);
 
 # check if a state is absorbing
 function is_absorbing(state::Vector)
@@ -190,7 +196,7 @@ graphplot(P,
 	self_edge_size = 0.12,
 	method=:circular,
 	axis_buffer=0.2)
-savefig(joinpath(@OUTPUT, "mc_graph_.svg")); # hide
+savefig(joinpath(@OUTPUT, "mc_graph_real.svg")); # hide
 
 # https://en.wikipedia.org/wiki/Absorbing_Markov_chain
 Q = P[2:end,2:end]

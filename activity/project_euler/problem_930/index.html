@@ -31,13 +31,22 @@ function simulate_F&#40;n::Int, m::Int; num_trials::Int&#61;10000, verbose&#61;f
     end
     return total_moves / num_trials  # estimate of F&#40;n, m&#41;
 end</code></pre><pre><code class="plaintext code-output">simulate_F (generic function with 1 method)</code></pre>
-<p>Con questa fuzione possiamo o simulare il problema per ottenere una stima più o meno accurata della soluzione:</p>
+<p>Con questa funzione possiamo o simulare il problema per ottenere una stima più o meno accurata della soluzione:</p>
 <pre><code class=language-julia >simulate_F&#40;2, 3, num_trials &#61; 20_000&#41; # soluzione esatta: 9/4 &#61; 2.25</code></pre><pre><code class="plaintext code-output">2.2518</code></pre>
 <p>o altrimenti vedere in concreto cosa accade in un&#39;esempio di esecuzione:</p>
-<pre><code class=language-julia >simulate_F&#40;2, 3, verbose&#61;true&#41;</code></pre><pre><code class="plaintext code-output">Balls are in bowls: [2, 1, 2] (selected ball: 2, will move by: -1)
-Balls are in bowls: [2, 2, 2]
-Total moves: 1
-1.0</code></pre>
+<pre><code class=language-julia >simulate_F&#40;4, 3, verbose&#61;true&#41;</code></pre><pre><code class="plaintext code-output">Balls are in bowls: [1, 2, 3] (selected ball: 2, will move by: 1)
+Balls are in bowls: [1, 3, 3] (selected ball: 1, will move by: 1)
+Balls are in bowls: [2, 3, 3] (selected ball: 3, will move by: 1)
+Balls are in bowls: [2, 3, 4] (selected ball: 1, will move by: 1)
+Balls are in bowls: [3, 3, 4] (selected ball: 2, will move by: -1)
+Balls are in bowls: [3, 2, 4] (selected ball: 1, will move by: 1)
+Balls are in bowls: [4, 2, 4] (selected ball: 2, will move by: -1)
+Balls are in bowls: [4, 1, 4] (selected ball: 1, will move by: -1)
+Balls are in bowls: [3, 1, 4] (selected ball: 1, will move by: 1)
+Balls are in bowls: [4, 1, 4] (selected ball: 2, will move by: -1)
+Balls are in bowls: [4, 4, 4]
+Total moves: 10
+10.0</code></pre>
 <p>Ma ovviamente questo non ci basta: vogliamo risolvere il problema in modo &#40;matematicamente&#41; esatto. Per farlo, l&#39;idea è di affidarci alle <em>catene di Markov</em>. Le catene di Markov hanno infatti come principale scopo nella vita quello di poter modellare un contesto stocastico e dinamico, che è precisamente quello che abbiamo qui: palline, disposte inizialmente in modo casuale, che si muovono nelle ciotole seguendo mosse casuali.</p>
 <p>Per caratterizzare una catena di Markov servono due elementi: lo spazio degli stati \(S\), ovvero le configurazioni che può assumere il sistema che stiamo modellando, e la matrice di transizione \(P\), le cui componenti \(p_{ij}\) descrivono la probabilità che da un certo stato \(i\) ci spostiamo in un altro stato \(j\). L&#39;idea dello &quot;spostarsi tra i vari stati&quot; deriva dal fatto che alla catena di Markov associamo anche una variabile aleatoria \(X_n\) che descrive in quale stato \(i\in S\) ci troveremo all&#39;istante di tempo \(n\in\mathbb{N}_0\). Per esempio: \(X_0\) è lo stato da cui partiamo, poi al tempo 1 ci sposteremo in un qualche altro stato \(X_1\), poi \(X_2\), e così via.</p>
 <h3 id=stati ><a href="#stati" class=header-anchor >Stati</a></h3>
@@ -171,7 +180,11 @@ function get_states&#40;bowls::Int, balls::Int; verbose&#61;false&#41;
 		if &#33;&#40;min_s in states&#41;
 			push&#33;&#40;states, min_s&#41;
 		end
-		if verbose @show multiStates end
+	end
+	if verbose
+		for &#40;key, val&#41; in multiStates
+			println&#40;&quot;stato: &quot;, key, &quot; &#61;&gt; # ocorrenze: &quot;, val&#41;
+		end
 	end
 	prob &#61; factorial&#40;balls&#41; / &#40;bowls ^ balls&#41;
 	if verbose
@@ -191,26 +204,18 @@ function get_states&#40;bowls::Int, balls::Int; verbose&#61;false&#41;
 	end
 	return states, init_probs
 end
-states, probs &#61; get_states&#40;5,2,verbose&#61;true&#41;;</code></pre><pre><code class="plaintext code-output">multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 1)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 1, [0, 0, 0, 1, 1] => 1)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 2, [0, 0, 0, 1, 1] => 1)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 2, [0, 0, 0, 1, 1] => 1, [0, 0, 1, 0, 1] => 1)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 2, [0, 0, 0, 1, 1] => 2, [0, 0, 1, 0, 1] => 1)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 3, [0, 0, 0, 1, 1] => 2, [0, 0, 1, 0, 1] => 1)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 3, [0, 0, 0, 1, 1] => 2, [0, 0, 1, 0, 1] => 2)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 3, [0, 0, 0, 1, 1] => 2, [0, 0, 1, 0, 1] => 3)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 3, [0, 0, 0, 1, 1] => 3, [0, 0, 1, 0, 1] => 3)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 4, [0, 0, 0, 1, 1] => 3, [0, 0, 1, 0, 1] => 3)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 4, [0, 0, 0, 1, 1] => 4, [0, 0, 1, 0, 1] => 3)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 4, [0, 0, 0, 1, 1] => 4, [0, 0, 1, 0, 1] => 4)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 4, [0, 0, 0, 1, 1] => 4, [0, 0, 1, 0, 1] => 5)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 4, [0, 0, 0, 1, 1] => 5, [0, 0, 1, 0, 1] => 5)
-multiStates = OrderedCollections.OrderedDict{Vector{Real}, Int64}([0, 0, 0, 0, 2] => 5, [0, 0, 0, 1, 1] => 5, [0, 0, 1, 0, 1] => 5)
-states = [[0, 0, 0, 0, 2], [0, 0, 0, 1, 1], [0, 0, 1, 0, 1]]
-prob = 0.08
-[0, 0, 0, 0, 2] -> p: 0.2
-[0, 0, 0, 1, 1] -> p: 0.4
-[0, 0, 1, 0, 1] -> p: 0.4
+states, probs &#61; get_states&#40;5,3,verbose&#61;true&#41;;</code></pre><pre><code class="plaintext code-output">stato: Real[0, 0, 0, 0, 3] => # ocorrenze: 5
+stato: Real[0, 0, 0, 1, 2] => # ocorrenze: 10
+stato: Real[0, 0, 1, 0, 2] => # ocorrenze: 10
+stato: Real[0, 0, 1, 1, 1] => # ocorrenze: 5
+stato: Real[0, 1, 0, 1, 1] => # ocorrenze: 5
+states = [[0, 0, 0, 0, 3], [0, 0, 0, 1, 2], [0, 0, 1, 0, 2], [0, 0, 1, 1, 1], [0, 1, 0, 1, 1]]
+prob = 0.048
+[0, 0, 0, 0, 3] -> p: 0.039999999999999994
+[0, 0, 0, 1, 2] -> p: 0.24
+[0, 0, 1, 0, 2] -> p: 0.24
+[0, 0, 1, 1, 1] -> p: 0.24
+[0, 1, 0, 1, 1] -> p: 0.24
 </code></pre>
 <pre><code class=language-julia ># check if a state is absorbing
 function is_absorbing&#40;state::Vector&#41;
@@ -340,7 +345,7 @@ graphplot&#40;P,
 	self_edge_size &#61; 0.12,
 	method&#61;:circular,
 	axis_buffer&#61;0.2&#41;</code></pre>
-<img src="/assets/activity/project_euler/problem_930/code/output/mc_graph_.svg" alt="">
+<img src="/assets/activity/project_euler/problem_930/code/output/mc_graph_real.svg" alt="">
 <p>Una volta creata \(P\), dobbiamo capire come usarla per risolvere il problema. Possiamo intanto osservare la struttura di \(P\) &#40;o in generale di una qualunque matrice di transizione per una catena di Markov che presenta stati assorbenti&#41;. La struttura di \(P\) è infatti </p>
 \[ P =\begin{pmatrix} I & O\\ R &  Q\end{pmatrix}\]
 <p>dove</p>
@@ -469,13 +474,13 @@ done!
 end
 
 G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-output">(n,m)=(2,2)
-  0.000101 seconds (244 allocations: 10.453 KiB)
+  0.000070 seconds (244 allocations: 10.453 KiB)
 
 (n,m)=(2,3)
-  0.000062 seconds (273 allocations: 11.531 KiB)
+  0.000035 seconds (273 allocations: 11.531 KiB)
 
 (n,m)=(2,4)
-  0.000050 seconds (478 allocations: 34.625 KiB)
+  0.000052 seconds (478 allocations: 34.625 KiB)
 
 (n,m)=(2,5)
   0.000025 seconds (505 allocations: 35.641 KiB)
@@ -484,25 +489,25 @@ G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-
   0.000018 seconds (383 allocations: 15.688 KiB)
 
 (n,m)=(3,3)
-  0.000032 seconds (770 allocations: 45.953 KiB)
+  0.000031 seconds (770 allocations: 45.953 KiB)
 
 (n,m)=(3,4)
   0.000047 seconds (1.04 k allocations: 58.336 KiB)
 
 (n,m)=(3,5)
-  0.000095 seconds (1.39 k allocations: 74.461 KiB)
+  0.000091 seconds (1.39 k allocations: 74.461 KiB)
 
 (n,m)=(4,2)
-  0.000043 seconds (816 allocations: 51.422 KiB)
+  0.000042 seconds (816 allocations: 51.422 KiB)
 
 (n,m)=(4,3)
-  0.000060 seconds (1.39 k allocations: 79.086 KiB)
+  0.000063 seconds (1.39 k allocations: 79.086 KiB)
 
 (n,m)=(4,4)
-  0.000133 seconds (2.66 k allocations: 145.102 KiB)
+  0.000112 seconds (2.66 k allocations: 145.102 KiB)
 
 (n,m)=(4,5)
-  0.000169 seconds (3.83 k allocations: 210.320 KiB)
+  0.000190 seconds (3.83 k allocations: 210.320 KiB)
 
 done!
 523.083333333338</code></pre>
@@ -526,7 +531,7 @@ done!
 
 <div class=page-foot >
     
-    Last modified: April 07, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: April 12, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div>
     </div>  

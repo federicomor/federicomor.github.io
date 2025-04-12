@@ -2,7 +2,7 @@
 
 using Plots
 using JSON
-plotlyjs()
+plotlyjs() # hide
 xs(m) = [(2i/(m+1)) for i in 1:m]; #hide
 
 nout = 100

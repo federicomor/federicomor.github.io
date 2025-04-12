@@ -1,2 +1,3 @@
 # This file was generated, do not modify it. # hide
-simulate_F(2, 3, verbose=true)
+Random.seed!(1) # hide
+simulate_F(4, 3, verbose=true)

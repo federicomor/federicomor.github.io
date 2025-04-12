@@ -10,7 +10,11 @@ function get_states(bowls::Int, balls::Int; verbose=false)
 		if !(min_s in states)
 			push!(states, min_s)
 		end
-		if verbose @show multiStates end
+	end
+	if verbose
+		for (key, val) in multiStates
+			println("stato: ", key, " => # ocorrenze: ", val)
+		end
 	end
 	prob = factorial(balls) / (bowls ^ balls)
 	if verbose
@@ -30,4 +34,4 @@ function get_states(bowls::Int, balls::Int; verbose=false)
 	end
 	return states, init_probs
 end
-states, probs = get_states(5,2,verbose=true);
+states, probs = get_states(5,3,verbose=true);

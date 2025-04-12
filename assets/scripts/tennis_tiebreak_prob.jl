@@ -6,7 +6,7 @@ PlotlyKaleido.start() # needed for all savefig with plotly #hide
 
 # 1  2  3  4  5  6  7  8  9  10 11 12
 # A  B  B  A  A  B  B  A  A  B  B  A
-function ptiebreak(a::Float64,b::Float64)
+function ptiebreak(a::Real,b::Real)
     p70 = (pdf(Binomial(3,a),3) * pdf(Binomial(3,b),3))*b 
     # batte B al 7mo turno
     p71 = sum([pdf(Binomial(3,a),i) * pdf(Binomial(4,b),6-i) for i in 2:3])*a 
