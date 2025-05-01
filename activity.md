@@ -44,6 +44,12 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             _In quanti modi potete salirla facendo passi alti al massimo 2 scalini? e con passi alti al massimo $k$ scalini?_}{
                 /assets/img/scale.png}{}
 \card{
+    /activity/motori_e_barca}{
+        Di quanti motori dotare una barca}{
+            Una barca è in grado di navigare quando almeno la metà dei motori risulta funzionante. Supponiamo che ogni motore si possa guastare con probabilità $p$ in modo indipendente dagli altri.\
+            _Per quali valori di $p$ una barca con quattro motori ha maggior probabilità di navigare di una barca con due motori?_}{
+                /assets/img/barcap.png}{}
+\card{
     /activity/project_euler}{
         Problemi del progetto Eulero}{
             Una raccolta di storiche challenge da risolvere per metodi matematici (scervellandosi in vari modi) o informatici (scrivendo dell'opportuno codice). Sono più di 900 problemi quindi ci sarà molto materiale con cui cimentarsi.}{
@@ -90,12 +96,6 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             Tre signori A, B e C hanno fissato un duello a tre armi. Sappiamo che l'accuratezza, ovvero la probabilità di colpire il bersaglio, di A è 0.3, di C è 0.5, mentre B è infallibile, lo centra sempre. L'ordine di inizio è A, B, poi C. Ognuno, al proprio turno, deve sparare un colpo decidendo come vuole il suo bersaglio, valutando quale sia la sua strategia ottimale per sopravvivere. Il triello finisce quando un solo uomo rimane vivo.\
             _Se voi foste il signor A, quale strategia utilizzereste?_}{
                 /assets/img/duello3.png}{impostato}
-\card{
-    /activity/motori_e_barca}{
-        Di quanti motori dotare una barca}{
-            Una barca è in grado di navigare quando almeno la metà dei motori risulta funzionante. Supponiamo che ogni motore si possa guastare con probabilità $p$ in modo indipendente dagli altri.\
-            _Per quali valori di $p$ una barca con quattro motori ha maggior probabilità di navigare di una barca con due motori?_}{
-                /assets/img/barcap.png}{impostato}
 \card{
     /activity/passeggiata_pericolosa}{
         Una passeggiata pericolosa}{
