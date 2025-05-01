@@ -15,6 +15,9 @@ hasmath = true
 </div>
 ~~~
 
+## This website
+Here I am collecting, among other stuff, some mathematical problems that I found interesting and worthy of some articles or short stories, which can be read in the [Activity](/activity/) page. For example, one of the most recent and fascinating which I analyzed was computing the expected time required for some balls randomly moving around a circle of bowls to gather together in a single bowl ([here](/activity/project_euler/problem_930/)).
+
 ## The thesis
 In 2022, Garritt Page and other authors created a Bayesian model, [the DRPM](https://arxiv.org/abs/1912.11542) (Dependent Random Partition Model), for clustering spatio-temporal data. That is, we have $n$ subjects, or units, that measure some target variable and that are placed somewhere in space, and want to cluster them at each time point $t=1, \ldots,T$; thus creating a sequence of clusters configurations.
 
