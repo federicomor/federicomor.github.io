@@ -43,14 +43,15 @@ Random.seed!(1) # hide
 simulate_F(4, 3, verbose=true)
 
 # generate all possible states of where balls can be located in the bowls
-function get_all_states(m::Int, n::Int; verbose=false)
-	if m == 1
-		return [[n]]
+function get_all_states(n::Int, m::Int; verbose=false)
+	if n == 1
+		return [[m]]
 	end
 	ret = []
-	for i in 0:n
+	for i in 0:m # loop balls' assignments from 0 to m
 		if verbose @show i end
-		tmp = get_all_states(m - 1, n - i, verbose=false)
+		# fill the n-1 left spots with the remaining m-i balls
+		tmp = get_all_states(n-1, m-i, verbose=false)
 		for t in tmp
 			if verbose println("\tt=$t") end
 			push!(t, i)

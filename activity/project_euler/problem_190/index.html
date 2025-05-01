@@ -10,7 +10,7 @@ vals = zeros(nout)
 plot(x1s,vals,label=<span class=hljs-string >&quot;&quot;</span>)
 max_idx = argmax(vals)
 x1_max = x1s[max_idx]
-vline!([x1_max],label=<span class=hljs-string >&quot;&quot;</span>)</code></pre> <div id=fdphbe  style=""></div> <script> graphDiv = document.getElementById("fdphbe"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/activity/project_euler/problem_190/code/output/m2_plot.json'); </script> <pre><code class="julia hljs">println(<span class=hljs-string >&quot;Max value (<span class=hljs-subst >$(maximum(vals)</span>)) reached at index <span class=hljs-variable >$max_idx</span>, ie for&quot;</span>)
+vline!([x1_max],label=<span class=hljs-string >&quot;&quot;</span>)</code></pre> <div id=fdposj  style=""></div> <script> graphDiv = document.getElementById("fdposj"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/activity/project_euler/problem_190/code/output/m2_plot.json'); </script> <pre><code class="julia hljs">println(<span class=hljs-string >&quot;Max value (<span class=hljs-subst >$(maximum(vals)</span>)) reached at index <span class=hljs-variable >$max_idx</span>, ie for&quot;</span>)
 println(<span class=hljs-string >&quot;x1 = &quot;</span>, x1_max)
 println(<span class=hljs-string >&quot;x2 = &quot;</span>, <span class=hljs-number >2</span>-x1_max)</code></pre><pre><code class="plaintext hljs">Max value (1.1851851851851853) reached at index 34, ie for
 x1 = 0.6666666666666666
@@ -35,7 +35,7 @@ max_idx = argmax(vals)
 x1_max = x1s[max_idx[<span class=hljs-number >1</span>]]
 x2_max = x1s[max_idx[<span class=hljs-number >2</span>]]
 plot3d(x1s,x2s,vals&#x27;,st=:surface, label=<span class=hljs-string >&quot;&quot;</span>)
-plot3d!(repeat([x1_max],<span class=hljs-number >2</span>),repeat([x2_max],<span class=hljs-number >2</span>),[<span class=hljs-number >0</span>,maximum(vals)+<span class=hljs-number >0.5</span>],label=<span class=hljs-string >&quot;&quot;</span>)</code></pre> <div id=fdpcbq  style=""></div> <script> graphDiv = document.getElementById("fdpcbq"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/activity/project_euler/problem_190/code/output/m3_plot.json'); </script> <pre><code class="julia hljs">println(<span class=hljs-string >&quot;Max value (<span class=hljs-subst >$(maximum(vals)</span>)) reached at <span class=hljs-variable >$max_idx</span>, ie for&quot;</span>)
+plot3d!(repeat([x1_max],<span class=hljs-number >2</span>),repeat([x2_max],<span class=hljs-number >2</span>),[<span class=hljs-number >0</span>,maximum(vals)+<span class=hljs-number >0.5</span>],label=<span class=hljs-string >&quot;&quot;</span>)</code></pre> <div id=fdpawm  style=""></div> <script> graphDiv = document.getElementById("fdpawm"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/activity/project_euler/problem_190/code/output/m3_plot.json'); </script> <pre><code class="julia hljs">println(<span class=hljs-string >&quot;Max value (<span class=hljs-subst >$(maximum(vals)</span>)) reached at <span class=hljs-variable >$max_idx</span>, ie for&quot;</span>)
 println(<span class=hljs-string >&quot;x1 = &quot;</span>, x1_max)
 println(<span class=hljs-string >&quot;x2 = &quot;</span>, x2_max)
 println(<span class=hljs-string >&quot;x3 = &quot;</span>, <span class=hljs-number >3</span>-x1_max-x2_max)</code></pre><pre><code class="plaintext hljs">Max value (1.6873721655472487) reached at CartesianIndex(34, 67), ie for
@@ -83,7 +83,7 @@ x3 = 1.507537688442211
 </p>
 <div class=page-foot >
     
-    Last modified: April 12, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: May 01, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div>
     </div>  

@@ -111,14 +111,15 @@ Total moves: 10
 <h3 id=finalmente_un_po_di_codice ><a href="#finalmente_un_po_di_codice" class=header-anchor >Finalmente un po&#39; di codice</a></h3>
 <p>Le funzioni qui di seguito si occupano di generare le variabili finora introdotte. Di ogni funzione propongo anche alcuni esempietti di esecuzione, con l&#39;opzione <code>verbose</code> attiva, in modo da facilitarne la comprensione.</p>
 <pre><code class=language-julia ># generate all possible states of where balls can be located in the bowls
-function get_all_states&#40;m::Int, n::Int; verbose&#61;false&#41;
-	if m &#61;&#61; 1
-		return &#91;&#91;n&#93;&#93;
+function get_all_states&#40;n::Int, m::Int; verbose&#61;false&#41;
+	if n &#61;&#61; 1
+		return &#91;&#91;m&#93;&#93;
 	end
 	ret &#61; &#91;&#93;
-	for i in 0:n
+	for i in 0:m # loop balls&#39; assignments from 0 to m
 		if verbose @show i end
-		tmp &#61; get_all_states&#40;m - 1, n - i, verbose&#61;false&#41;
+		# fill the n-1 left spots with the remaining m-i balls
+		tmp &#61; get_all_states&#40;n-1, m-i, verbose&#61;false&#41;
 		for t in tmp
 			if verbose println&#40;&quot;\tt&#61;&#36;t&quot;&#41; end
 			push&#33;&#40;t, i&#41;
@@ -474,40 +475,40 @@ done!
 end
 
 G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-output">(n,m)=(2,2)
-  0.000070 seconds (244 allocations: 10.453 KiB)
+  0.000055 seconds (250 allocations: 10.547 KiB)
 
 (n,m)=(2,3)
-  0.000035 seconds (273 allocations: 11.531 KiB)
+  0.000045 seconds (281 allocations: 11.656 KiB)
 
 (n,m)=(2,4)
-  0.000052 seconds (478 allocations: 34.625 KiB)
+  0.000057 seconds (488 allocations: 34.094 KiB)
 
 (n,m)=(2,5)
-  0.000025 seconds (505 allocations: 35.641 KiB)
+  0.000027 seconds (517 allocations: 35.141 KiB)
 
 (n,m)=(3,2)
-  0.000018 seconds (383 allocations: 15.688 KiB)
+  0.000020 seconds (395 allocations: 15.875 KiB)
 
 (n,m)=(3,3)
-  0.000031 seconds (770 allocations: 45.953 KiB)
+  0.000034 seconds (790 allocations: 45.578 KiB)
 
 (n,m)=(3,4)
-  0.000047 seconds (1.04 k allocations: 58.336 KiB)
+  0.000048 seconds (1.07 k allocations: 58.266 KiB)
 
 (n,m)=(3,5)
-  0.000091 seconds (1.39 k allocations: 74.461 KiB)
+  0.000092 seconds (1.43 k allocations: 74.406 KiB)
 
 (n,m)=(4,2)
-  0.000042 seconds (816 allocations: 51.422 KiB)
+  0.000049 seconds (836 allocations: 51.047 KiB)
 
 (n,m)=(4,3)
-  0.000063 seconds (1.39 k allocations: 79.086 KiB)
+  0.000060 seconds (1.43 k allocations: 79.172 KiB)
 
 (n,m)=(4,4)
-  0.000112 seconds (2.66 k allocations: 145.102 KiB)
+  0.000114 seconds (2.73 k allocations: 145.609 KiB)
 
 (n,m)=(4,5)
-  0.000190 seconds (3.83 k allocations: 210.320 KiB)
+  0.000217 seconds (3.94 k allocations: 211.531 KiB)
 
 done!
 523.083333333338</code></pre>
@@ -531,7 +532,7 @@ done!
 
 <div class=page-foot >
     
-    Last modified: April 12, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: May 01, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div>
     </div>  
