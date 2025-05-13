@@ -31,11 +31,9 @@ Risolti un po' di problemi del progetto Eulero
 
 # Home
 
-Ciao! sono Federico, un Ingegnere Matematico (magistrale, al Politecnico di Milano), e qui online un Divulgatore Matematico (o perlomeno vediamo come va). In questo sito <!-- alle pagine [Activity](/activity/) e [Uni](/uni/),  -->
-troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare comodamente su [Youtube](https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ) (e forse in futuro anche su Instagram).
+Ciao! sono Federico, un Ingegnere Matematico (tecnicamente solo un "dottore magistrale in Ingegneria Matematica", al Politecnico di Milano), e qui online un Divulgatore Matematico (o perlomeno vediamo come va). In questo sito, in particolare alle pagine raccolte nella sezione [Activity](/activity/), troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare principalmente su [Instagram](https://www.instagram.com/divergentissimo/), forse anche su Tiktok (tanto potrei riciclare il materiale che assemblo per instagram; in tal caso aggiornerò qui il link), e a volte anche su [Youtube](https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ).
 
 Ad oggi, prima la tesi e poi il lavoro mi stanno togliendo tempo e spazio a questo "hobby", ma quando la situazione si ristabilizzerà dovrei e vorrei ritornare, magari anche con contenuti non solo di matematica ma di università in generale, della mia esperienza, consigli, ecc.
-
 
 <!-- ## 📌 Ultimi aggiornamenti
 - iniziata la serie dei problemi del progetto eulero: [/activity/project_euler/](/activity/project_euler/) -->
