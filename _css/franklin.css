@@ -18,33 +18,6 @@
 	/* margin-bottom: 10px; */
 }
 
-/* ==================================================================
-    UPDATE BOX
-================================================================== */
-.update-box {
-/*    background-color: #fec6e0;*/
-    background-color: #e0f7fa;
-/*    border-left: 5px solid #ae96b0;*/
-    border-left: 5px solid #00796b;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.update-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #004d40;
-    margin-bottom: 10px;
-}
-
-.update-content {
-    font-size: 1em;
-    color: #004d40;
-    line-height: 20px;
-}
-
 
 /* ==================================================================
     CARDS
@@ -430,7 +403,7 @@ html {
 
 /* Spacing between bullet points. */
 .franklin-content li p {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .franklin-content a {
@@ -637,8 +610,8 @@ iframe {
     color: dec6e0;
     border: 3px solid #dec6e0;
     padding: 15px;
-    text-align: center;
-    font-size: 1.2em;
+    /* text-align: center; */
+    /* font-size: 1.2em; */
     position: relative;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
