@@ -41,6 +41,7 @@ Qui raccolgo i link alle versioni estese dei post pubblicati in giro sui social.
 
 _più recenti in cima_
 - 05/2025 [Problema delle palline che girano a caso dentro alle ciotole](/activity/project_euler/problem_930/)
+- 05/2025 [Di quanti motori dotare una barca](/activity/motori_e_barca/)
 
 
 <!-- (molto consigliati, con tutto raccontato con calma e in dettaglio) ma anche su Instagram (no, lì non più per ora) e [TikTok](https://tiktok.com/@divmat_tt) (anche qui).  -->
