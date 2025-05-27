@@ -1,37 +1,37 @@
 (n,m)=(2,2)
-  0.000078 seconds (250 allocations: 10.547 KiB)
+  0.000084 seconds (250 allocations: 10.547 KiB)
 
 (n,m)=(2,3)
-  0.000060 seconds (281 allocations: 11.656 KiB)
+  0.000061 seconds (281 allocations: 11.656 KiB)
 
 (n,m)=(2,4)
-  0.000061 seconds (488 allocations: 34.094 KiB)
+  0.000062 seconds (488 allocations: 34.094 KiB)
 
 (n,m)=(2,5)
-  0.000029 seconds (517 allocations: 35.141 KiB)
+  0.000027 seconds (517 allocations: 35.141 KiB)
 
 (n,m)=(3,2)
-  0.000021 seconds (395 allocations: 15.875 KiB)
+  0.000020 seconds (395 allocations: 15.875 KiB)
 
 (n,m)=(3,3)
-  0.000036 seconds (790 allocations: 45.578 KiB)
+  0.000035 seconds (790 allocations: 45.578 KiB)
 
 (n,m)=(3,4)
-  0.000050 seconds (1.07 k allocations: 58.266 KiB)
+  0.000049 seconds (1.07 k allocations: 58.266 KiB)
 
 (n,m)=(3,5)
-  0.000103 seconds (1.43 k allocations: 74.391 KiB)
+  0.000092 seconds (1.43 k allocations: 74.391 KiB)
 
 (n,m)=(4,2)
-  0.000049 seconds (836 allocations: 51.047 KiB)
+  0.000070 seconds (836 allocations: 51.047 KiB)
 
 (n,m)=(4,3)
-  0.000085 seconds (1.43 k allocations: 79.172 KiB)
+  0.000070 seconds (1.43 k allocations: 79.172 KiB)
 
 (n,m)=(4,4)
-  0.000140 seconds (2.73 k allocations: 145.609 KiB)
+  0.000122 seconds (2.73 k allocations: 145.609 KiB)
 
 (n,m)=(4,5)
-  0.000210 seconds (3.94 k allocations: 211.531 KiB)
+  0.000172 seconds (3.94 k allocations: 211.547 KiB)
 
 done!
