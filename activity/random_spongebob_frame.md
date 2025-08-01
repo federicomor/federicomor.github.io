@@ -62,7 +62,9 @@
 		const episode = Math.floor(Math.random() * 40) + 1;
 		const frame = Math.floor(Math.random() * 3000);
 
-		const url = `https://frames.everyfra.me/spongebob/S${pad(season,2)}E${pad(episode,2)}/${pad(frame,4)}.png`;
+		// const url = `https://frames.everyfra.me/spongebob/S${pad(season,2)}E${pad(episode,2)}/${pad(frame,4)}.png`;
+		const url = `https://backend.everyfra.me/spongebob/s${season}e${episode}/${frame}.png`;
+		console.log(url)
 
 		if (await testImage(url)) {
 		updateFrame(season, episode, frame);
@@ -88,8 +90,10 @@
 	currentEpisode = episode;
 	currentFrame = frame;
 
-	const url = `https://frames.everyfra.me/spongebob/S${pad(season,2)}E${pad(episode,2)}/${pad(frame,4)}.png`;
-	console.log(url);
+		// const url = `https://frames.everyfra.me/spongebob/S${pad(season,2)}E${pad(episode,2)}/${pad(frame,4)}.png`;
+		const url = `https://backend.everyfra.me/spongebob/s${season}e${episode}/${frame}.png`;
+		console.log(url)
+	
 	const imgEl = document.getElementById('frame');
 	imgEl.src = url;
 	imgEl.style.display = 'block';
