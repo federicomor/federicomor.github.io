@@ -27,7 +27,7 @@ da cui notiamo come per $p\leq 1/3$ la barca con 4 motori ha maggiori probabilit
 Questa è quindi la formulazione più comoda per il contesto informatico; altrimenti a mano converrebbe sommare i vari valori puntuali (cioè $\mathbb{P}(X=k)$) e lavorare da quelli la disequazione. Procedendo in questo modo infatti otterremo
 $$ \mathbb{P}(\text{si rompono 0, 1, o 2 motori su 4})\geq \mathbb{P}(\text{si rompe 0 o 1 motore su 2}) \\ 1-\mathbb{P}(\text{si rompono 3 o 4 motori}) \geq 1-\mathbb{P}(\text{si rompono entrambi i motori}) \\ 1-{4\choose 3}p^3 (1-p)^1-p^4 \geq 1 - p^2 \\ -4p^3+4p^4-p^4 +p^2 \geq 0 \\ p^2(3p^2-4p+1)\geq 0 \\ 3p^2-4p +1 \geq 0 \implies p\in\left[0,\frac{1}{3}\right]$$
 
-Si potrebbero infine anche confrontare più motori ma l'idea è sempre la stessa: per $p$ basse (i motori sono affidabili) sono avvantaggiate le barche con molti motori, dato che se anche se ne rompe qualcuno ce ne saranno spesso più della metà funzionanti. Al contrario, per $p$ alte (un motore si guasta facilmente) diventa conveniente passare ad un modello con 2 soli motori, in modo da fornire in questo modo "meno occasioni" ai motori di manifestare un guasto.
+Si potrebbero infine anche confrontare più motori ma l'idea è sempre la stessa: per $p$ basse (i motori sono affidabili) sono avvantaggiate le barche con molti motori, dato che se anche se ne rompe qualcuno ce ne saranno spesso più della metà funzionanti. Al contrario, per $p$ alte (un motore si guasta facilmente) diventa conveniente passare ad un modello con pochi motori, in modo da fornire in questo modo "meno occasioni" ai motori di manifestare un guasto.
 
 ````julia:ex2
 ps = range(0,1,length=3000) # hide
