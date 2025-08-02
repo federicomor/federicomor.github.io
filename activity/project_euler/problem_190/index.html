@@ -10,7 +10,7 @@ end
 plot&#40;x1s,vals,label&#61;&quot;&quot;&#41;
 max_idx &#61; argmax&#40;vals&#41;
 x1_max &#61; x1s&#91;max_idx&#93;
-vline&#33;&#40;&#91;x1_max&#93;,label&#61;&quot;&quot;&#41;</code></pre> <div id=fdptnc  style=""></div> <script> graphDiv = document.getElementById("fdptnc"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/activity/project_euler/problem_190/code/output/m2_plot.json'); </script> <pre><code class=language-julia >println&#40;&quot;Max value &#40;&#36;&#40;maximum&#40;vals&#41;&#41;&#41; reached at index &#36;max_idx, ie for&quot;&#41;
+vline&#33;&#40;&#91;x1_max&#93;,label&#61;&quot;&quot;&#41;</code></pre> <div id=fdpfda  style=""></div> <script> graphDiv = document.getElementById("fdpfda"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/activity/project_euler/problem_190/code/output/m2_plot.json'); </script> <pre><code class=language-julia >println&#40;&quot;Max value &#40;&#36;&#40;maximum&#40;vals&#41;&#41;&#41; reached at index &#36;max_idx, ie for&quot;&#41;
 println&#40;&quot;x1 &#61; &quot;, x1_max&#41;
 println&#40;&quot;x2 &#61; &quot;, 2-x1_max&#41;</code></pre><pre><code class="plaintext code-output">Max value (1.1851851851851853) reached at index 34, ie for
 x1 = 0.6666666666666666
@@ -35,7 +35,7 @@ max_idx &#61; argmax&#40;vals&#41;
 x1_max &#61; x1s&#91;max_idx&#91;1&#93;&#93;
 x2_max &#61; x1s&#91;max_idx&#91;2&#93;&#93;
 plot3d&#40;x1s,x2s,vals&#39;,st&#61;:surface, label&#61;&quot;&quot;&#41;
-plot3d&#33;&#40;repeat&#40;&#91;x1_max&#93;,2&#41;,repeat&#40;&#91;x2_max&#93;,2&#41;,&#91;0,maximum&#40;vals&#41;&#43;0.5&#93;,label&#61;&quot;&quot;&#41;</code></pre> <div id=fdpyte  style=""></div> <script> graphDiv = document.getElementById("fdpyte"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/activity/project_euler/problem_190/code/output/m3_plot.json'); </script> <pre><code class=language-julia >println&#40;&quot;Max value &#40;&#36;&#40;maximum&#40;vals&#41;&#41;&#41; reached at &#36;max_idx, ie for&quot;&#41;
+plot3d&#33;&#40;repeat&#40;&#91;x1_max&#93;,2&#41;,repeat&#40;&#91;x2_max&#93;,2&#41;,&#91;0,maximum&#40;vals&#41;&#43;0.5&#93;,label&#61;&quot;&quot;&#41;</code></pre> <div id=fdprah  style=""></div> <script> graphDiv = document.getElementById("fdprah"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/activity/project_euler/problem_190/code/output/m3_plot.json'); </script> <pre><code class=language-julia >println&#40;&quot;Max value &#40;&#36;&#40;maximum&#40;vals&#41;&#41;&#41; reached at &#36;max_idx, ie for&quot;&#41;
 println&#40;&quot;x1 &#61; &quot;, x1_max&#41;
 println&#40;&quot;x2 &#61; &quot;, x2_max&#41;
 println&#40;&quot;x3 &#61; &quot;, 3-x1_max-x2_max&#41;</code></pre><pre><code class="plaintext code-output">Max value (1.6873721655472487) reached at CartesianIndex(34, 67), ie for

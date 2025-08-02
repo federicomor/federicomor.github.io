@@ -344,6 +344,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://federicomor.github.io/activity/random_spongebob_frame_v2/index.html</loc>
+    <lastmod>2025-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://federicomor.github.io/activity/project_euler/problem_137/index.html</loc>
     <lastmod>2025-08-02</lastmod>
     <changefreq>monthly</changefreq>
