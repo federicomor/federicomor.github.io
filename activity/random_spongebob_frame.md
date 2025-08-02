@@ -1,6 +1,7 @@
 # Random Spongebob Frame
 _thanks to [https://new.everyfra.me/gallery/spongebob/](https://new.everyfra.me/gallery/spongebob/)_
 ~~~
+<div style="display: flex; align-items: flex-start; gap: 1em;">
 <!-- <div style="display: flex; flex-direction: column; align-items: center; gap: 0.4em;"> -->
 <!-- <div style="display: flex; align-items: center; gap: 0.5em; flex-wrap: wrap; margin: 0 0;">
 	<button onclick="loadRandomFrame()">I'm ready!</button>
@@ -27,14 +28,9 @@ _thanks to [https://new.everyfra.me/gallery/spongebob/](https://new.everyfra.me/
 	
 		<p id="status" style="margin-top: 0.5em; font-style: italic;"></p>
 	</div>
-	
 	<img id="frame" alt="Frame not found :/" style="display:none; max-width: 100%; height: auto;" /> -->
-
-<div style="display: flex; align-items: flex-start; gap: 1em;">
-
 <!-- Left side: controls -->
 <div style="display: flex; flex-direction: column; gap: 0.5em;">
-
 	<!-- A: Button row -->
 	<div style="display: flex; flex-wrap: wrap; gap: 0.5em;">
 	<button onclick="loadRandomFrame()">I'm ready!</button>
@@ -45,7 +41,6 @@ _thanks to [https://new.everyfra.me/gallery/spongebob/](https://new.everyfra.me/
 	<button onclick="shiftFrame(3)">+3</button>
 	<button onclick="shiftFrame(10)">+10</button>
 	</div>
-
 	<!-- B: Input controls row -->
 	<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.5em;">
 	<label>
@@ -65,18 +60,14 @@ _thanks to [https://new.everyfra.me/gallery/spongebob/](https://new.everyfra.me/
 	</div><div>
 	<button onclick="loadManualFrame()">Load manually</button>
 	</div>
-
 	<!-- Status message -->
 	<p id="status" style="margin: 0.5em 0 0; font-style: italic;"></p>
 </div>
-
 <!-- Right side: image -->
 <div>
 	<img id="frame" alt="Frame not found :/" style="display:none; max-width: 100%; height: auto;" />
 </div>
-
-</div>
-	  
+</div>  
 <script>
 	let currentSeason = null;
 	let currentEpisode = null;
