@@ -1,6 +1,6 @@
 +++
 title = "Portfolio"
-hasmath = true
+hascode = true
 +++
 
 \toc
