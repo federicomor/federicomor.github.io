@@ -2,9 +2,9 @@
 _thanks to [https://new.everyfra.me/gallery/spongebob/](https://new.everyfra.me/gallery/spongebob/)_
 
 ~~~
-<!-- <div style="display: flex; align-items: flex-start; gap: 1em;"> -->
-	<!-- <div style="display: flex; flex-direction: column; align-items: center; gap: 0.4em;"> -->
-<div style="display: flex; align-items: center; gap: 0.5em; flex-wrap: wrap; margin: 0 0;">
+<div style="display: flex; align-items: flex-start; gap: 1em;">
+<!-- <div style="display: flex; flex-direction: column; align-items: center; gap: 0.4em;"> -->
+<!-- <div style="display: flex; align-items: center; gap: 0.5em; flex-wrap: wrap; margin: 0 0;">
 	<button onclick="loadRandomFrame()">I'm ready!</button>
 	<button onclick="shiftFrame(-5)">-5</button>
 	<button onclick="shiftFrame(-1)">-1</button>
@@ -28,9 +28,48 @@ _thanks to [https://new.everyfra.me/gallery/spongebob/](https://new.everyfra.me/
 		</div>
 	
 		<p id="status" style="margin-top: 0.5em; font-style: italic;"></p>
-		<img id="frame" alt="Frame not found :/" style="display:none; max-width: 100%; height: auto;" /> 
 	</div>
-		
+	<img id="frame" alt="Frame not found :/" style="display:none; max-width: 100%; height: auto;" /> -->
+<!-- Left side: controls -->
+<div style="display: flex; flex-direction: column; gap: 0.5em;">
+	<!-- A: Button row -->
+	<div style="display: flex; flex-wrap: wrap; gap: 0.5em;">
+	<button onclick="loadRandomFrame()">I'm ready!</button>
+	</div><div>
+	<button onclick="shiftFrame(-5)">-5</button>
+	<button onclick="shiftFrame(-1)">-1</button>
+	</div><div>
+	<button onclick="shiftFrame(3)">+3</button>
+	<button onclick="shiftFrame(10)">+10</button>
+	</div>
+	<!-- B: Input controls row -->
+	<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.5em;">
+	<label>
+		<span>S:</span>
+		<input id="manualSeason" type="number" min="1" max="99" style="width: 4em;" />
+	</label>
+	</div><div>
+	<label>
+		<span>E:</span>
+		<input id="manualEpisode" type="number" min="1" max="6" style="width: 4em;" />
+	</label>
+	</div><div>
+	<label>
+		<span>F:</span>
+		<input id="manualFrame" type="number" min="0" max="9999" style="width: 5em;" />
+	</label>
+	</div><div>
+	<button onclick="loadManualFrame()">Load manually</button>
+	</div>
+	<!-- Status message -->
+	<p id="status" style="margin: 0.5em 0 0; font-style: italic;"></p>
+</div>
+<!-- Right side: image -->
+<div>
+	<img id="frame" alt="Frame not found :/" style="display:none; max-width: 100%; height: auto;" />
+</div>
+</div>  
+
 <script>
 	let currentSeason = null;
 	let currentEpisode = null;
