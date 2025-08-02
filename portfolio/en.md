@@ -1,6 +1,8 @@
 +++
 title = "Portfolio"
 hascode = true
+hasmath = true
+hasplotly = true
 +++
 
 \toc
@@ -112,23 +114,14 @@ The original code was written in C ([here](/assets/scripts/gioco_15.c) is the co
 
 About the game design, it is worth noting that the initial board cannot be simply initialized with random numbers, as otherwise one could get unsolvable configurations as this one
 
-$
-\begin{bmatrix}
-1 & 2 & 3\\
-4 & 5 & 6\\
-\bf{8} & \bf{7} & \square
- % 8 & 7 & \square
-\end{bmatrix}
-$
+$$ \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ \bf{8} & \bf{7} & \square \end{bmatrix} $$
 
+
+$$ 
+\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ \bf{8} & \bf{7} & \square \end{bmatrix} 
 $$
-\begin{bmatrix}
-1 & 2 & 3\\
-4 & 5 & 6\\
-\bf{8} & \bf{7} & \square
- % 8 & 7 & \square
-\end{bmatrix}
-$$
+
+
 <!-- $\{1\,2\,3;\,4\,5\,6;\,8\,7\;\square \}$,  -->
 where numbers 8 and 7 cannot be exchanged. Therefore for the initialization of the board, as well as to adjust the difficulty of the game, the code starts from a solved board and applies to it random moves for some time, so that we shuffle the sequence of numbers while preserving the possibility of solving the game.
 
