@@ -1,5 +1,7 @@
 +++
 title = "Home"
+hasmath = true
+hascode = true
 +++
 
 ~~~

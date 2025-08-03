@@ -1,8 +1,5 @@
 +++
 title = "Random Spongebob Frame"
-hascode = true
-hasmath = true
-hasplotly = true
 +++
 
 # Random Spongebob Frame
@@ -72,7 +69,6 @@ _thanks to [https://new.everyfra.me/gallery/spongebob/](https://new.everyfra.me/
 
 		// const url = `https://frames.everyfra.me/spongebob/S${pad(season,2)}E${pad(episode,2)}/${pad(frame,4)}.png`;
 		const url = `https://backend.everyfra.me/spongebob/s${season}e${episode}/${frame}.png`;
-		// console.log(url)
 
 		if (await testImage(url)) {
 		updateFrame(season, episode, frame);
