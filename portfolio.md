@@ -10,7 +10,7 @@ title = "Portfolio"
 \card{
     /portfolio/it/}{
         In italiano}{
-            Una piccola esposizione dei miei progetti.}{
+            Una piccola presentazione dei miei progetti.}{
                 /assets/img/flag_ita.png}{}
 \card{
     /portfolio/en/}{
