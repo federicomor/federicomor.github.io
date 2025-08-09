@@ -19,7 +19,7 @@ S(n) = S(n-1) + S(n-2)
 $$
 perché moralmente come primo passo dobbiamo sempre fare un passo lungo 1 o lungo 2, indipendentemente da quanto la scala sia alta, e da quei passi poi possiamo osservare di fronte a noi una scala o alta $n-1$ o alta $n-2$ scalini, rispettivamente, e quindi riciclare i calcoli già fatti prima per le altre scale. Quindi è una formula ricorsiva, in cui i calcoli per $n$ più alti si appoggiano ai calcoli fatti per gli $n$ più bassi, dove come casi base abbiamo che una scala alta uno la possiamo salire in un solo modo, e quindi $S(1)=1$, mentre una scala alta due la possiamo salire in due soli modi, e quindi $S(2)=2$.
 
-Mentre generalizzando il calcolo, supponendo cioè di avere un altro parametro $k$ che regola quanti scalini risuciamo a salire al massimo con un solo passo, la soluzione diventa
+Mentre generalizzando il calcolo, supponendo cioè di avere un altro parametro $k$ che regola quanti scalini riusciamo a salire al massimo con un solo passo, la soluzione diventa
 $$
 S(n) = S(n-1) + S(n-2) + \ldots + S(n-k)
 $$
