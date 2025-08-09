@@ -64,6 +64,11 @@
     margin-top: 20px;
   }
 
+  input[type="range"] {
+  	width: 200px;      /* make the slider longer horizontally */
+  	/* height: 10px;      */
+  }
+  
   .status label {
     margin-right: 10px;
   }
@@ -96,9 +101,9 @@
 </div>
 <table id="gameBoard"></table>
 <div class="status">
-  <label for="moveCounter">Moves: </label>
-  <output id="moveCounter">0</output>
-</div>
+	<label for="moveCounter">Moves:</label><output id="moveCounter">0</output>
+	<!-- <br><label for="shuffleCounter">There is a solution which takes at most</label><output id="shuffleCounter">10</output> moves -->
+  </div>
 <script>
   let N = document.getElementById('sizeSlider').value;
   let shuffleIterations = document.getElementById('shuffleSlider').value;
@@ -222,6 +227,7 @@
     shuffleIterations = parseInt(document.getElementById("shuffleSlider").value);
     moves = 0; // Reset moves counter
     document.getElementById("moveCounter").textContent = moves; // Reset moves display
+	// document.getElementById("shuffleCounter").textContent = shuffleIterations;
     initializeBoard();
     shuffleBoard();
     renderBoard();
@@ -234,6 +240,7 @@
     renderBoard();
     document.getElementById("sizeSlider").addEventListener("input", updateSettings);
     document.getElementById("shuffleSlider").addEventListener("input", updateSettings);
+	// document.getElementById("shuffleSlider").addEventListener("input", updateSettings);
   };
 </script>
 </body>
