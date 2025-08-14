@@ -1,1 +1,147 @@
-<!doctype html> <html lang=en > <a id=top ></a> <link rel=icon  href="/assets/favicon.png"> <link rel=icon  type="image/x-icon" href="/assets/favicon.png"> <link rel=icon  type="image/png" href="/assets/favicon.png"/> <link rel=icon  href="/assets/main img.jpg"> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <link rel=stylesheet  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <link rel=icon  href="/assets/favicon.png"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <title>P119</title> <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { console.log("url: ",url); console.log("div: ",div); response = await fetch(url); fig = await response.json(); if (typeof fig.config === 'undefined') { fig["config"]={} } delete fig.layout.width delete fig.layout.height fig["layout"]["autosize"] = true fig["config"]["autosizable"] = true fig["config"]["responsive"] = true fig.config["scrollZoom"] = false delete fig.config.staticPlot delete fig.config.displayModeBar delete fig.config.doubleClick delete fig.config.showTips Plotly.newPlot(div, fig); }; </script> --> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { response = await fetch(url); fig = await response.json(); Plotly.newPlot(div, fig); }; </script> <!-- <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >^</span> </a> --> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto; margin-bottom: 20px"; width=170 ; src="/assets/main img.jpg" alt="main img"/></a></h1> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/activity/">Attività</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item " href="/portfolio/">Portfolio</a> </nav> <a href="https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ" target=_blank rel=noopener> <i class="fab fa-youtube big-icon"></i></a> <a href="https://www.instagram.com/divergentissimo/" target=_blank rel=noopener> <i class="fab fa-instagram big-icon"></i></a> <a href="https://www.linkedin.com/in/federico-angelo-mor/" target=_blank rel=noopener> <i class="fab fa-linkedin big-icon"></i></a> <a href="https://github.com/federicomor" target=_blank rel=noopener> <i class="fab fa-github big-icon"></i></a> </div> </div> <div class="content container"> <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >∧</span> </a> <div class=franklin-content > <div class=navigation_symbols > <form action="" method=get  onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;"> <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;"> </form> <a href="/activity/project_euler/problem_118/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a> <a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a> <script> function getRandomProblem() { fetch('/activity/project_euler/data.txt') .then(response => response.text()) .then(data => { const maxProblems = parseInt(data.trim(), 10); const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1; window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/'; }) .catch(err => console.error('Error fetching max problems:', err)); } </script> <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a> <a href="/activity/project_euler/problem_120/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a> </div> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_main.1735430422.css"> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_default.1627113674.css"> <script src="https://projecteuler.net/js/mathjax_config.js"></script> <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script> <script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script> <div id=content > <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt=projecteuler.net ></div> <h2>Digit Power Sum</h2><div id=problem_icons  class=noprint ><span class=tooltip >ℹ️<span class=tooltiptext_right >Published on Friday, 7th April 2006, 06:00 pm; Solved by 13666;<br>Difficulty rating: 30%</span></span></div><div id=problem_info ><h3><a href="https://projecteuler.net/problem=119">Problem 119</a></h3></div> <div class=problem_content  role=problem > <p>The number $512$ is interesting because it is equal to the sum of its digits raised to some power: $5 + 1 + 2 = 8$, and $8^3 = 512$. Another example of a number with this property is $614656 = 28^4$.</p> <p>We shall define $a_n$ to be the $n$th term of this sequence and insist that a number must contain at least two digits to have a sum.</p> <p>You are given that $a_2 = 512$ and $a_{10} = 614656$.</p> <p>Find $a_{30}$.</p> </div><br> <br> </div> <!--end_content--> <h2 id=soluzione ><a href="#soluzione" class=header-anchor >Soluzione</a></h2> <script src="https://giscus.app/client.js" data-repo="federicomor/federicomor.github.io" data-repo-id=R_kgDOLBdBYA  data-category=Announcements  data-category-id=DIC_kwDOLBdBYM4Clm0M  data-mapping=url  data-strict=0  data-reactions-enabled=1  data-emit-metadata=0  data-input-position=bottom  data-theme=preferred_color_scheme  data-lang=it  // data-loading=lazy  crossorigin=anonymous  async> </script> <div class=page-foot > Last modified: August 09, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>
+<!doctype html> <html lang=en > <a id=top ></a> <link rel=icon  href="/assets/favicon.png"> <link rel=icon  type="image/x-icon" href="/assets/favicon.png"> <link rel=icon  type="image/png" href="/assets/favicon.png"/> <link rel=icon  href="/assets/main img.jpg"> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <link rel=stylesheet  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/katex/katex.min.css"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <link rel=icon  href="/assets/favicon.png"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <title>P119</title> <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { console.log("url: ",url); console.log("div: ",div); response = await fetch(url); fig = await response.json(); if (typeof fig.config === 'undefined') { fig["config"]={} } delete fig.layout.width delete fig.layout.height fig["layout"]["autosize"] = true fig["config"]["autosizable"] = true fig["config"]["responsive"] = true fig.config["scrollZoom"] = false delete fig.config.staticPlot delete fig.config.displayModeBar delete fig.config.doubleClick delete fig.config.showTips Plotly.newPlot(div, fig); }; </script> --> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { response = await fetch(url); fig = await response.json(); Plotly.newPlot(div, fig); }; </script> <!-- <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >^</span> </a> --> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto; margin-bottom: 20px"; width=170 ; src="/assets/main img.jpg" alt="main img"/></a></h1> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/activity/">Attività</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item " href="/portfolio/">Portfolio</a> </nav> <a href="https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ" target=_blank rel=noopener> <i class="fab fa-youtube big-icon"></i></a> <a href="https://www.instagram.com/divergentissimo/" target=_blank rel=noopener> <i class="fab fa-instagram big-icon"></i></a> <a href="https://www.linkedin.com/in/federico-angelo-mor/" target=_blank rel=noopener> <i class="fab fa-linkedin big-icon"></i></a> <a href="https://github.com/federicomor" target=_blank rel=noopener> <i class="fab fa-github big-icon"></i></a> </div> </div> <div class="content container"> <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >∧</span> </a> <div class=franklin-content > <div class=navigation_symbols > <form action="" method=get  onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;"> <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;"> </form> <a href="/activity/project_euler/problem_118/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a> <a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a> <script> function getRandomProblem() { fetch('/activity/project_euler/data.txt') .then(response => response.text()) .then(data => { const maxProblems = parseInt(data.trim(), 10); const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1; window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/'; }) .catch(err => console.error('Error fetching max problems:', err)); } </script> <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a> <a href="/activity/project_euler/problem_120/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a> </div> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_main.1735430422.css"> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_default.1627113674.css"> <script src="https://projecteuler.net/js/mathjax_config.js"></script> <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script> <script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script> <div id=content > <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt=projecteuler.net ></div> <h2>Digit Power Sum</h2><div id=problem_icons  class=noprint ><span class=tooltip >ℹ️<span class=tooltiptext_right >Published on Friday, 7th April 2006, 06:00 pm; Solved by 13666;<br>Difficulty rating: 30%</span></span></div><div id=problem_info ><h3><a href="https://projecteuler.net/problem=119">Problem 119</a></h3></div> <div class=problem_content  role=problem > <p>The number $512$ is interesting because it is equal to the sum of its digits raised to some power: $5 + 1 + 2 = 8$, and $8^3 = 512$. Another example of a number with this property is $614656 = 28^4$.</p> <p>We shall define $a_n$ to be the $n$th term of this sequence and insist that a number must contain at least two digits to have a sum.</p> <p>You are given that $a_2 = 512$ and $a_{10} = 614656$.</p> <p>Find $a_{30}$.</p> </div><br> <br> </div> <!--end_content--> <h2 id=soluzione ><a href="#soluzione" class=header-anchor >Soluzione</a></h2> <p><strong>Prima idea:</strong> fare un loop per \(n\) da 1 in poi e vedere quali numeri verificano la condizione richiesta. Il controllo può essere effettuato guardando se la candidata base &#40;somma delle cifre di \(n\)&#41; elevata ad un opportuno esponente &#40;ricavabile tramite dei logaritmi&#41; risulta pari al numero \(n\). Il loop si ferma quando incontriamo il 30esimo valore che soddisfa il criterio. Questo metodo funzionerebbe ma risulta in realtà molto lento, dato che effettuiamo i controlli su ogni numero che incontriamo, e se il numero target è molto grande &#40;sarà in effetti nell&#39;ordine di \(10^{14}\)&#41; ciò vuol dire fare molti controlli, che sono anche costosi perché ciascuno richiede calcoli di potenze e logaritmi.</p> <p>Questo piccolo esempio mostra quanto ci mette anche solo per arrivare al 13esimo numero.</p> <pre><code class=language-julia >i &#61; 0
+n &#61; 11
+@time while i&lt;13
+	global i, n # questione di scope
+	sum_digits &#61; sum&#40;digits&#40;n&#41;&#41;
+	if sum_digits &#33;&#61; 1
+		x &#61; round&#40;log10&#40;n&#41;/log10&#40;sum_digits&#41;&#41;
+		if n &#61;&#61; sum_digits^Int&#40;x&#41; # rifacciamo il controllo per evitare errori dovuti ad approssimazioni
+			i &#43;&#61; 1
+			println&#40;&quot;&#36;i&#41; &#36;n &#61; &#36;sum_digits^&#36;&#40;Int&#40;x&#41;&#41;&quot;&#41;
+		end
+	end
+	n &#43;&#61; 1
+end</code></pre><pre><code class="plaintext code-output">1) 81 = 9^2
+2) 512 = 8^3
+3) 2401 = 7^4
+4) 4913 = 17^3
+5) 5832 = 18^3
+6) 17576 = 26^3
+7) 19683 = 27^3
+8) 234256 = 22^4
+9) 390625 = 25^4
+10) 614656 = 28^4
+11) 1679616 = 36^4
+12) 17210368 = 28^5
+13) 34012224 = 18^6
+ 16.486847 seconds (272.21 M allocations: 6.950 GiB, 5.33% gc time, 0.63% compilation time)
+</code></pre> <p><strong>Seconda idea:</strong> precalcolare un insieme di valori base^esponente &#61; valore, e scorrere su questi valori per vedere se soddisfano la condizione che la base sia pari alla somma delle loro cifre. Questo metodo diventa veloce perché filtriamo via il ricavare l&#39;esponente opportuno a cui elevare la base, e perché non scorriamo più su tutti i numeri da 1 in poi, ma solo su quelli effettivamente ottenibili come una qualche base elevate ad un qualche esponente.</p> <pre><code class=language-julia ># creiamo il dizionario che contiene la chiave &#40;base, esponente&#41; e il valore corrispondente &#40;base^esponente&#41;
+d &#61; Dict&#123;Tuple&#123;Int, Int&#125;, Int&#125;&#40;&#41;
+# lo popoliamo, come precalcolo per lo step successivo
+println&#40;&quot;precomputation step&quot;&#41;
+@time for base in 2:70
+	for exp in 2:30
+		d&#91;&#40;base, exp&#41;&#93; &#61; base^exp
+	end
+end</code></pre><pre><code class="plaintext code-output">precomputation step
+  0.076050 seconds (115.57 k allocations: 5.486 MiB, 99.65% compilation time)
+</code></pre> <pre><code class=language-julia ># lo ordiniamo per scorrere sui numeri in ordine crescente
+sorted_pairs &#61; sort&#40;collect&#40;d&#41;, by &#61; x -&gt; x&#91;2&#93;&#41;
+i &#61; 0
+@time for &#40;k,v&#41; in sorted_pairs
+	if sum&#40;digits&#40;v&#41;&#41; &#61;&#61; k&#91;1&#93;
+		global i &#43;&#61; 1
+		println&#40;&quot;&#36;i&#41; &#36;v &#61; &#36;&#40;k&#91;1&#93;&#41;^&#36;&#40;k&#91;2&#93;&#41;&quot;&#41;
+	end
+end</code></pre><pre><code class="plaintext code-output">1) 81 = 9^2
+2) 512 = 8^3
+3) 2401 = 7^4
+4) 4913 = 17^3
+5) 5832 = 18^3
+6) 17576 = 26^3
+7) 19683 = 27^3
+8) 234256 = 22^4
+9) 390625 = 25^4
+10) 614656 = 28^4
+11) 1679616 = 36^4
+12) 17210368 = 28^5
+13) 34012224 = 18^6
+14) 52521875 = 35^5
+15) 60466176 = 36^5
+16) 205962976 = 46^5
+17) 612220032 = 18^7
+18) 8303765625 = 45^6
+19) 10460353203 = 27^7
+20) 24794911296 = 54^6
+21) 27512614111 = 31^7
+22) 52523350144 = 34^7
+23) 68719476736 = 64^6
+24) 271818611107 = 43^7
+25) 1174711139837 = 53^7
+26) 2207984167552 = 58^7
+27) 6722988818432 = 68^7
+28) 20047612231936 = 46^8
+29) 72301961339136 = 54^8
+30) 248155780267521 = 63^8
+31) 3904305912313344 = 54^9
+32) 81920000000000000 = 20^13
+33) 5430070304767207435 = 67^23
+  0.024342 seconds (31.07 k allocations: 1.209 MiB, 92.29% compilation time)
+</code></pre> <p>e quindi il 30esimo numero risulta essere \(248155780267521 = 63^8\). Possiamo infine wrappare tutto in una funzione e trovare anche numeri più alti che soddisfano il criterio:</p> <pre><code class=language-julia >function test&#40;ub_base, ub_exp&#41;
+	d &#61; Dict&#123;Tuple&#123;Int, Int&#125;, Int&#125;&#40;&#41;
+	for base in 2:ub_base
+		for exp in 2:ub_exp
+			d&#91;&#40;base, exp&#41;&#93; &#61; base^exp
+		end
+	end
+	sorted_pairs &#61; sort&#40;collect&#40;d&#41;, by &#61; x -&gt; x&#91;2&#93;&#41;
+	i &#61; 0
+	for &#40;k,v&#41; in sorted_pairs
+		if sum&#40;digits&#40;v&#41;&#41; &#61;&#61; k&#91;1&#93;
+			global i &#43;&#61; 1
+			println&#40;&quot;&#36;i&#41; &#36;v &#61; &#36;&#40;k&#91;1&#93;&#41;^&#36;&#40;k&#91;2&#93;&#41;&quot;&#41;
+		end
+	end
+end
+@time test&#40;200,50&#41;</code></pre><pre><code class="plaintext code-output">34) 81 = 9^2
+35) 512 = 8^3
+36) 2401 = 7^4
+37) 4913 = 17^3
+38) 5832 = 18^3
+39) 17576 = 26^3
+40) 19683 = 27^3
+41) 234256 = 22^4
+42) 390625 = 25^4
+43) 614656 = 28^4
+44) 1679616 = 36^4
+45) 17210368 = 28^5
+46) 34012224 = 18^6
+47) 52521875 = 35^5
+48) 60466176 = 36^5
+49) 205962976 = 46^5
+50) 612220032 = 18^7
+51) 8303765625 = 45^6
+52) 10460353203 = 27^7
+53) 24794911296 = 54^6
+54) 27512614111 = 31^7
+55) 52523350144 = 34^7
+56) 68719476736 = 64^6
+57) 271818611107 = 43^7
+58) 1174711139837 = 53^7
+59) 2207984167552 = 58^7
+60) 6722988818432 = 68^7
+61) 20047612231936 = 46^8
+62) 72301961339136 = 54^8
+63) 248155780267521 = 63^8
+64) 3904305912313344 = 54^9
+65) 45848500718449031 = 71^9
+66) 81920000000000000 = 20^13
+67) 150094635296999121 = 81^9
+68) 482588847570419712 = 90^47
+69) 2115623928490622976 = 84^16
+70) 2898445797488066560 = 106^29
+71) 3801307666181388929 = 89^48
+72) 4253386649145364745 = 89^27
+73) 5266842490596878897 = 113^37
+74) 5430070304767207435 = 67^23
+75) 6741888642173632512 = 84^26
+76) 7547538632788678489 = 115^46
+77) 8360004421918365753 = 75^50
+78) 8515050955175941287 = 87^23
+79) 8542692758539446587 = 107^21
+80) 8672565855425977839 = 111^41
+81) 8885003930476478464 = 94^45
+82) 8896571298341923257 = 99^46
+83) 9016706489401468385 = 89^36
+  0.001799 seconds (20.14 k allocations: 2.860 MiB)
+</code></pre> <script src="https://giscus.app/client.js" data-repo="federicomor/federicomor.github.io" data-repo-id=R_kgDOLBdBYA  data-category=Announcements  data-category-id=DIC_kwDOLBdBYM4Clm0M  data-mapping=url  data-strict=0  data-reactions-enabled=1  data-emit-metadata=0  data-input-position=bottom  data-theme=preferred_color_scheme  data-lang=it  // data-loading=lazy  crossorigin=anonymous  async> </script> <div class=page-foot > Last modified: August 14, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> <script src="/libs/katex/katex.min.js"></script> <script src="/libs/katex/contrib/auto-render.min.js"></script> <script>renderMathInElement(document.body)</script> <!-- <script> MathJax = { tex: { inlineMath: [['\\(', '\\)']], tags: 'all' }, svg: {fontCache: 'global'} }; </script> <script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script> --> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>
