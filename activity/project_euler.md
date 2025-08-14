@@ -44,7 +44,7 @@ _Clicca su un problema per aprire la sua pagina dedicata_
    table.data tr:hover           { background: #FFFFDD; transition: background-color 0.8s ease-out; }
    table.data th, table.data td  { border: 1px solid #333333; padding: 0.1em 0.5em; }
 
-   td.wow {         background-color: #90005D; color: #DDFFDD; padding: 0 0.2em; }
+   td.wow {         background-color: #90005D; color: #DDFFDD; padding: 0 0.2em; font-weight: bold;}
    td.blank {        background-color: #F9F9F9; color: #333333; padding: 0 0.2em; }
    td.solved {        background-color: #315D00; color: #DDFFDD; padding: 0 0.2em; font-weight: bold; }
 
@@ -233,7 +233,7 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 <td class="blank"><a href="/activity/project_euler/problem_116">116</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_117">117</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_118">118</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_119">119</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_119">119</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_120">120</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_121">121</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_122">122</a></td>

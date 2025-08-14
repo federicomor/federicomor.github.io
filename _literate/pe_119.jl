@@ -1,0 +1,62 @@
+# **Prima idea:** fare un loop per $n$ da 1 in poi e vedere quali numeri verificano la condizione richiesta. Il controllo può essere effettuato guardando se la candidata base (somma delle cifre di $n$) elevata ad un opportuno esponente (ricavabile tramite dei logaritmi) risulta pari al numero $n$. Il loop si ferma quando incontriamo il 30esimo valore che soddisfa il criterio. 
+# Questo metodo funzionerebbe ma risulta in realtà molto lento, dato che effettuiamo i controlli su ogni numero che incontriamo, e se il numero target è molto grande (sarà in effetti nell'ordine di $10^{14}$) ciò vuol dire fare molti controlli, che sono anche costosi perché ciascuno richiede calcoli di potenze e logaritmi.
+
+# Questo piccolo esempio mostra quanto ci mette anche solo per arrivare al 13esimo numero.
+
+i = 0
+n = 11
+@time while i<13
+	global i, n # questione di scope
+	sum_digits = sum(digits(n))
+	if sum_digits != 1
+		x = round(log10(n)/log10(sum_digits))
+		if n == sum_digits^Int(x) # rifacciamo il controllo per evitare errori dovuti ad approssimazioni
+			i += 1
+			println("$i) $n = $sum_digits^$(Int(x))")
+		end
+	end
+	n += 1
+end
+
+
+# **Seconda idea:** precalcolare un insieme di valori base^esponente = valore, e scorrere su questi valori per vedere se soddisfano la condizione che la base sia pari alla somma delle loro cifre. Questo metodo diventa veloce perché filtriamo via il ricavare l'esponente opportuno a cui elevare la base, e perché non scorriamo più su tutti i numeri da 1 in poi, ma solo su quelli effettivamente ottenibili come una qualche base elevate ad un qualche esponente.
+
+## creiamo il dizionario che contiene la chiave (base, esponente) e il valore corrispondente (base^esponente)
+d = Dict{Tuple{Int, Int}, Int}()
+## lo popoliamo, come precalcolo per lo step successivo
+println("precomputation step")
+@time for base in 2:70
+	for exp in 2:30
+		d[(base, exp)] = base^exp
+	end
+end
+#-
+## lo ordiniamo per scorrere sui numeri in ordine crescente
+sorted_pairs = sort(collect(d), by = x -> x[2])
+i = 0
+@time for (k,v) in sorted_pairs
+	if sum(digits(v)) == k[1]
+		global i += 1
+		println("$i) $v = $(k[1])^$(k[2])")
+	end
+end
+
+# e quindi il 30esimo numero risulta essere $248155780267521 = 63^8$.
+# Possiamo infine wrappare tutto in una funzione e trovare anche numeri più alti che soddisfano il criterio:
+function test(ub_base, ub_exp)
+	d = Dict{Tuple{Int, Int}, Int}()
+	for base in 2:ub_base
+		for exp in 2:ub_exp
+			d[(base, exp)] = base^exp
+		end
+	end
+	sorted_pairs = sort(collect(d), by = x -> x[2])
+	i = 0
+	for (k,v) in sorted_pairs
+		if sum(digits(v)) == k[1]
+			global i += 1
+			println("$i) $v = $(k[1])^$(k[2])")
+		end
+	end
+end
+@time test(200,50)
