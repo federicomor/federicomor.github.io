@@ -10,9 +10,9 @@ function test(ub_base, ub_exp)
 	i = 0
 	for (k,v) in sorted_pairs
 		if sum(digits(v)) == k[1]
-			global i += 1
+			i += 1
 			println("$i) $v = $(k[1])^$(k[2])")
 		end
 	end
 end
-@time test(200,50)
+@time test(500,70)

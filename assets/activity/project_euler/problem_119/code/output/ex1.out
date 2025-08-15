@@ -11,4 +11,4 @@
 11) 1679616 = 36^4
 12) 17210368 = 28^5
 13) 34012224 = 18^6
- 16.486847 seconds (272.21 M allocations: 6.950 GiB, 5.33% gc time, 0.63% compilation time)
+ 15.694756 seconds (272.21 M allocations: 6.950 GiB, 3.58% gc time, 0.56% compilation time)
