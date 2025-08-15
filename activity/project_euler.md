@@ -46,7 +46,7 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 
    td.wow {         background-color: #90005D; color: #DDFFDD; padding: 0 0.2em; font-weight: bold;}
    td.blank {        background-color: #F9F9F9; color: #333333; padding: 0 0.2em; }
-   td.solved {        background-color: #315D00; color: #DDFFDD; padding: 0 0.2em; font-weight: bold; }
+   td.solved {        background-color: #315D00; color: #DDFFDD; padding: 0 0.2em; }
 
    table.progress      { margin: 1em; }
    table.progress td   { text-align: center; border: 1px solid #000000; padding: 0; width: 2.2em; 
@@ -93,7 +93,7 @@ _Clicca su un problema per aprire la sua pagina dedicata_
     </style>
 	<div class="legend">
         <div class="legend-item"><div class="legend-color blank"></div> (tag blank) ancora da affrontare</div>
-        <div class="legend-item"><div class="legend-color solved"></div> (tag solved) risolto, commentato, e forse c'è/ci sarà il video</div>
+        <div class="legend-item"><div class="legend-color solved"></div> (tag solved) risolto, commentato</div>
 		<div class="legend-item"><div class="legend-color wow"></div> (tag wow) risolto e problema super interessante!</div>
     </div>
     <br>
@@ -105,10 +105,10 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 
 <table class="progress">
 <tr>
-<td class="blank"><a href="/activity/project_euler/problem_1">1</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_2">2</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_3">3</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_4">4</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_1">1</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_2">2</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_3">3</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_4">4</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_5">5</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_6">6</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_7">7</a></td>
