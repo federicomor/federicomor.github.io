@@ -50,21 +50,6 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </div> <!--end_content-->
 ~~~
 ## Soluzione
-Qui basta convertire la richiesta in sintassi di Julia: ci interessa il più alto numero palindromo $n$ ottenuto come il prodotto di due numeri $i$ e $j$ da tre cifre? facciamo un loop con $i$ e $j$ sul range dei numeri da 3 cifre, e controlliamo se il loro prodotto è palindromo e se è maggiore del candidato trovato finora (perché ci interessa trovare il massimo numero che ha questa caratteristica). Il controllo sulla palindromia lo si fa confrontando la stringa del numero con sè stessa invertita (tipo 121 è uguale a 121, mentre 123 è diverso da 321).
+\literate{/_literate/pe_4.jl}
 
-```julia
-max_n = 1 # n=i*j
-max_i = 1; max_j = 1
-
-for i in 100:998
-	for j in (i+1):999
-		n = i*j
-		if string(n) == reverse(string(n)) && n>max_n
-			max_n = n
-			max_i = i; max_j = j
-		end
-	end
-end
-@show max_n, max_i, max_j
-```
 {{ addcomments }}

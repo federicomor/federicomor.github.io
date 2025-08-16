@@ -51,60 +51,6 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </div> <!--end_content-->
 ~~~
 ## Soluzione
-Qui propongo tre metodi: il primo _one-liner_ sfruttando le potenzialità offerte da Julia (moralmente, la libreria Primes); il secondo usando il primo metodo che (credo) verrebbe in mente, ma risulta molto costoso, inefficiente; il terzo una versione sempre a mano ma più ottimizzato e ragionato.
-
-```julia
-# metodo one-liner (usando le potenzialità di Julia)
-using Primes
-maximum(keys(factor(n)))
-
-# metodo naive (il primo che verrebbe in mente)
-function find_max_pfactor_naive(n)
-	lim_initial = div(n,2)
-	for i in lim_initial:-1:1
-		if isprime(i) && n%i == 0
-			@show i
-			break
-		end
-	end
-end
-find_max_pfactor_naive(n)
-
-# metodo efficiente
-function find_max_pfactor_fast(n)
-	i = 1
-	while n != 1
-		i += 1
-		if n % i == 0
-			println("n=$(rpad(n,20)) -> $i è un fattore primo di n")
-			while n % i == 0
-				n = n/i
-			end
-		end
-	end
-	println("n=$(rpad(n,20)) -> finito!")
-	println("$i è il più alto fattore primo di n")
-end
-find_max_pfactor_fast(n)
-```
-
-```julia
-# test performance
-@time find_max_pfactor_naive(131956268)
-@time find_max_pfactor_fast(131956268)
-```
-```julia-repl
-julia> @time find_max_pfactor_naive(131956268)       
-i = 82267
- 13.582945 seconds (15 allocations: 456 bytes)
-
-julia> @time find_max_pfactor_fast(131956268)        
-n=131956268            -> 2 è un fattore primo di n
-n=3.2989067e7          -> 401 è un fattore primo di n
-n=82267.0              -> 82267 è un fattore primo di n
-n=1.0                  -> finito!
-82267 è il più alto fattore primo di n
-  0.003454 seconds (71 allocations: 3.422 KiB)
-```
+\literate{/_literate/pe_3.jl}
 
 {{ addcomments }}
