@@ -1,0 +1,7 @@
+n=600851475143         -> 71 è un fattore primo di n
+n=8.462696833e9        -> 839 è un fattore primo di n
+n=1.0086647e7          -> 1471 è un fattore primo di n
+n=6857.0               -> 6857 è un fattore primo di n
+n = 1                    -> finito!
+6857 è il più alto fattore primo di n
+  0.000073 seconds (58 allocations: 3.047 KiB)

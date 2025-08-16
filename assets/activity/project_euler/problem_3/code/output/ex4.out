@@ -1,0 +1,6 @@
+n=131956268            -> 2 è un fattore primo di n
+n=3.2989067e7          -> 401 è un fattore primo di n
+n=82267.0              -> 82267 è un fattore primo di n
+n = 1                    -> finito!
+82267 è il più alto fattore primo di n
+  0.041309 seconds (60.46 k allocations: 3.012 MiB, 98.48% compilation time)
