@@ -53,4 +53,5 @@ $$d_1 \times d_{10} \times d_{100} \times d_{1000} \times d_{10000} \times d_{10
 ~~~
 ## Soluzione
 
+\literate{/_literate/pe_40.jl}
 {{ addcomments }}

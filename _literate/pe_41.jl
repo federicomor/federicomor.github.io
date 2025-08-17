@@ -1,0 +1,94 @@
+# Lavoriamo con i numeri primi quindi intanto carichiamo la libreria per avere la comoda funzione `isprime(n)`
+using Primes
+
+# Fatto ciò, l'idea credo sia semplice: dato che ci interessa il massimo numero che soddisfa il criterio (essere primo e pandigitale) possiamo scorrere sui numeri dall'alto verso il basso, in modo da fermarci subito quando incontriamo il primo che funziona. Per ottimizzare il calcolo però ci accorgiamo che ci sono vari modi per verificare se un numero è pandigitale:
+
+# 1. Ordiniamo le cifre del numero e controlliamo se corrispondono a quelle da 1 a $n$, dove $n$ è la lunghezza del numero stesso
+function ispandigital_v1(n)
+	return sort(digits(n)) == collect(1:length(string(n)))
+end
+@show ispandigital_v1(1234)
+@show ispandigital_v1(1235)
+#- 
+
+# 2. Ordiniamo ancora il numero ma espandiamo con un loop il controllo sulla singola cifra uguale a quella attesa (prima cifra uguale a 1, seconda uguale a 2, ecc). Dovrebbe essere un po' più efficiente della precedente versione perché qui non allochiamo un altro vettore, quello creato con `collect(1:length(string(n)))`
+function ispandigital_v2(n)
+	v = sort(digits(n))
+	for i in 1:length(v)
+		if v[i] != i
+			return false
+		end
+	end
+	return true
+end
+@show ispandigital_v2(1234)
+@show ispandigital_v2(1235)
+#-
+
+# 3. In queste versioni successive eliminiamo il fatto di dover ordinare le cifre del numero, dato che la funzione `sort` potrebbe essere un po' costosa, ed effettuiamo il controllo salvandoci, nelle celle $i$-esime del vettore `seen`, quante volte incontriamo la cifra $i$-esima. Se la cifra è uguale a zero o l'abbiamo già incontrata, allora il numero non sarà pandigitale.  
+function ispandigital_v3(n; verbose=false)
+    len = 0
+    seen = falses(9)
+    while n > 0
+        digit = n % 10
+        n ÷= 10
+        if digit == 0 || seen[digit]
+            return false
+        end
+        seen[digit] = true
+        len += 1
+		if verbose 
+			println("digit = $digit, seen = ", join(Int.(seen)))
+		end
+    end
+	return len+1 == findfirst(x -> x==0, seen)
+end
+@show ispandigital_v3(123467, verbose=true)
+@show ispandigital_v3(123444, verbose=true) 
+@show ispandigital_v3(123654, verbose=true)
+#-
+
+# 4. Quest'ultima versione ha la stessa logica della precedente ma anziché salvarsi il controllo "visto/non visto" in una cella di un vettore (il `seen` di prima), stavolta usiamo un numero, `digits_mask`, le cui singole cifre 0/1 si salvano l'esito di tale controllo, e questo dovrebbe ottimizzare tutto dato che non allochiamo della memoria aggiuntiva. Per farlo, quando incontriamo la cifra $i$ possiamo salvare l'averla incontrata tramite un OR tra la maschera corrente il numero ottenuto shiftando 1 a sinistra $i$ volte. E come prima, se la cifra $i$ è uguale a zero o l'abbiamo già incontrata allora il numero non sarà pandigitale.
+function ispandigital_v4(n; verbose=false)
+    len = 0
+    digits_mask = 0
+    while n > 0
+        digit = n % 10
+        n ÷= 10
+        if digit == 0 || (digits_mask & (1 << digit)) != 0
+            return false
+        end
+        digits_mask |= (1 << digit)
+        len += 1
+		if verbose 
+			println("digit = $digit, mask = ", bitstring(digits_mask)[end-8:end])
+		end
+    end
+    return digits_mask == (1 << (len + 1)) - 2
+end
+@show ispandigital_v4(123467, verbose=true)
+@show ispandigital_v4(123444, verbose=true) 
+@show ispandigital_v4(123654, verbose=true)
+#- 
+
+# Facciamo ora un piccolo test di performance
+using BenchmarkTools
+pan_no = 123947076
+@btime ispandigital_v1(pan_no)
+@btime ispandigital_v2(pan_no)
+@btime ispandigital_v3(pan_no)
+@btime ispandigital_v4(pan_no)
+#-
+pan_yes = 123467895
+@btime ispandigital_v1(pan_yes)
+@btime ispandigital_v2(pan_yes)
+@btime ispandigital_v3(pan_yes)
+@btime ispandigital_v4(pan_yes)
+
+# e arriviamo quindi con la quarta versione alla soluzione del problema.
+@time for i in 987654321:-2:2
+	if ispandigital_v4(i) && isprime(i)
+		@show i
+		break
+	end
+end

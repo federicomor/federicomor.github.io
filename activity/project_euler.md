@@ -146,8 +146,8 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 <td class="blank"><a href="/activity/project_euler/problem_37">37</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_38">38</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_39">39</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_40">40</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_41">41</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_40">40</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_41">41</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_42">42</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_43">43</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_44">44</a></td>
