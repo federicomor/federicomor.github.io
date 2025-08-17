@@ -1,0 +1,16 @@
+digit = 7, seen = 000000100
+digit = 6, seen = 000001100
+digit = 4, seen = 000101100
+digit = 3, seen = 001101100
+digit = 2, seen = 011101100
+digit = 1, seen = 111101100
+ispandigital_v3(123467, verbose = true) = false
+digit = 4, seen = 000100000
+ispandigital_v3(123444, verbose = true) = false
+digit = 4, seen = 000100000
+digit = 5, seen = 000110000
+digit = 6, seen = 000111000
+digit = 3, seen = 001111000
+digit = 2, seen = 011111000
+digit = 1, seen = 111111000
+ispandigital_v3(123654, verbose = true) = true

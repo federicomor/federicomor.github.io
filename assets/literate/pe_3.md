@@ -27,7 +27,7 @@ end
 @time find_max_pfactor_naive(n_test)
 ````
 
-**Metodo efficiente:** scorriamo sui numeri $i$ da 2 a salire, e se questi dividono il numero target $n$ allora trasformiamo $n$ come $n/i$ per tutte le volte possibili, ovvero finché non esauriamo l'esponente di quel fattore primo $i$. Quando $n$ sarà diventato uguale a 1 vorrà dire che avremo trovato il fattore primo più grande, dato che sarà l'ultimo per cui potremo dividere $n$.
+**Metodo efficiente:** scorriamo sui numeri $i$ da 2 a salire, e se questi dividono il numero target $n$ allora trasformiamo $n$ come $n/i$ per tutte le volte possibili, ovvero finché non esauriamo l'esponente di quel fattore primo $i$. Quando $n$ sarà diventato uguale a 1 vorrà dire che avremo trovato il fattore primo più grande, dato che sarà l'ultimo per cui potremo dividere $n$. Questo metodo è efficiente perché, a differenza del precedente, si evita il controllo sulla primalità del fattore $i$ (in questa funzione infatti manca il controllo `isprime(i)` che invece c'era prima) grazie al fatto di eseguire il loop sui numeri stavolta in ordine crescente.
 
 ````julia:ex4
 function find_max_pfactor_fast(n)
@@ -35,14 +35,14 @@ function find_max_pfactor_fast(n)
 	while n != 1
 		i += 1
 		if n % i == 0
-			println("n=$(rpad(n,20)) -> $i è un fattore primo di n")
+			println("n = $(rpad(Int64(n),20)) -> $i è un fattore primo di n")
 			while n % i == 0
 				n = n/i
 			end
 		end
 	end
 	println("n = $(rpad(Int64(n),20)) -> finito!")
-	println("$i è il più alto fattore primo di n")
+	println("=> $i è il più alto fattore primo di n")
 end
 @time find_max_pfactor_fast(n_test)
 ````
