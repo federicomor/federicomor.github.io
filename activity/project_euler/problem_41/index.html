@@ -84,28 +84,28 @@ ispandigital_v3(123654, verbose = true) = true
         digits_mask |&#61; &#40;1 &lt;&lt; digit&#41;
         len &#43;&#61; 1
 		if verbose
-			println&#40;&quot;digit &#61; &#36;digit, mask &#61; &quot;, bitstring&#40;digits_mask&#41;&#91;end-8:end&#93;&#41;
+			println&#40;&quot;digit &#61; &#36;digit, mask &#61; &quot;, bitstring&#40;digits_mask&#41;&#91;end-9:end-1&#93;&#41;
 		end
     end
     return digits_mask &#61;&#61; &#40;1 &lt;&lt; &#40;len &#43; 1&#41;&#41; - 2
 end
 @show ispandigital_v4&#40;123467, verbose&#61;true&#41;
 @show ispandigital_v4&#40;123444, verbose&#61;true&#41;
-@show ispandigital_v4&#40;123654, verbose&#61;true&#41;</code></pre><pre><code class="plaintext code-output">digit = 7, mask = 010000000
-digit = 6, mask = 011000000
-digit = 4, mask = 011010000
-digit = 3, mask = 011011000
-digit = 2, mask = 011011100
-digit = 1, mask = 011011110
+@show ispandigital_v4&#40;123654, verbose&#61;true&#41;</code></pre><pre><code class="plaintext code-output">digit = 7, mask = 001000000
+digit = 6, mask = 001100000
+digit = 4, mask = 001101000
+digit = 3, mask = 001101100
+digit = 2, mask = 001101110
+digit = 1, mask = 001101111
 ispandigital_v4(123467, verbose = true) = false
-digit = 4, mask = 000010000
+digit = 4, mask = 000001000
 ispandigital_v4(123444, verbose = true) = false
-digit = 4, mask = 000010000
-digit = 5, mask = 000110000
-digit = 6, mask = 001110000
-digit = 3, mask = 001111000
-digit = 2, mask = 001111100
-digit = 1, mask = 001111110
+digit = 4, mask = 000001000
+digit = 5, mask = 000011000
+digit = 6, mask = 000111000
+digit = 3, mask = 000111100
+digit = 2, mask = 000111110
+digit = 1, mask = 000111111
 ispandigital_v4(123654, verbose = true) = true
 </code></pre>
 <p>Facciamo ora un piccolo test di performance</p>
@@ -114,19 +114,19 @@ pan_no &#61; 123947076
 @btime ispandigital_v1&#40;pan_no&#41;
 @btime ispandigital_v2&#40;pan_no&#41;
 @btime ispandigital_v3&#40;pan_no&#41;
-@btime ispandigital_v4&#40;pan_no&#41;</code></pre><pre><code class="plaintext code-output">  163.278 ns (7 allocations: 416 bytes)
-  98.093 ns (4 allocations: 256 bytes)
-  44.275 ns (3 allocations: 96 bytes)
-  19.123 ns (0 allocations: 0 bytes)
+@btime ispandigital_v4&#40;pan_no&#41;</code></pre><pre><code class="plaintext code-output">  156.079 ns (7 allocations: 416 bytes)
+  99.126 ns (4 allocations: 256 bytes)
+  42.807 ns (3 allocations: 96 bytes)
+  18.811 ns (0 allocations: 0 bytes)
 false</code></pre>
 <pre><code class=language-julia >pan_yes &#61; 123467895
 @btime ispandigital_v1&#40;pan_yes&#41;
 @btime ispandigital_v2&#40;pan_yes&#41;
 @btime ispandigital_v3&#40;pan_yes&#41;
-@btime ispandigital_v4&#40;pan_yes&#41;</code></pre><pre><code class="plaintext code-output">  166.676 ns (7 allocations: 416 bytes)
-  107.095 ns (4 allocations: 256 bytes)
-  59.807 ns (3 allocations: 96 bytes)
-  26.652 ns (0 allocations: 0 bytes)
+@btime ispandigital_v4&#40;pan_yes&#41;</code></pre><pre><code class="plaintext code-output">  160.528 ns (7 allocations: 416 bytes)
+  105.448 ns (4 allocations: 256 bytes)
+  58.430 ns (3 allocations: 96 bytes)
+  27.005 ns (0 allocations: 0 bytes)
 true</code></pre>
 <p>e arriviamo quindi con la quarta versione alla soluzione del problema.</p>
 <pre><code class=language-julia >@time for i in 987654321:-2:2
@@ -135,7 +135,7 @@ true</code></pre>
 		break
 	end
 end</code></pre><pre><code class="plaintext code-output">i = 7652413
-  4.567080 seconds (9 allocations: 264 bytes)
+  4.593506 seconds (9 allocations: 264 bytes)
 </code></pre>
  <script src="https://giscus.app/client.js"
 		data-repo="federicomor/federicomor.github.io"
@@ -155,7 +155,7 @@ end</code></pre><pre><code class="plaintext code-output">i = 7652413
 </p>
 <div class=page-foot >
     
-    Last modified: August 17, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: August 18, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div>
     </div>  
