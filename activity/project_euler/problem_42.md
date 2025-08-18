@@ -52,4 +52,5 @@ $$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots$$</p>
 ~~~
 ## Soluzione
 
+\literate{/_literate/pe_42.jl}
 {{ addcomments }}

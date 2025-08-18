@@ -1,0 +1,22 @@
+# Partiamo creando un insieme di numeri triangolari, per effettuare il futuro controllo sulla somma delle lettere delle parole.
+triangles = [1/2*n*(n+1) for n in 1:20]
+
+# L'idea è poi di processare il file, pulendolo per estrarre le singole parole, e fare un loop su ognuna costruendo la somma richiesta, ovvero mappando A come 1, B come 2, ecc. Questo lo si può anche ottenere shiftando in modo opportuno il codice ascii della singola lettera. Fatta la somma verifichiamo se è un numero triangolare e in tal caso incrementiamo la variabile del conteggio, che darà la risposta finale.
+text = readlines(download("https://projecteuler.net/resources/documents/0042_words.txt"))[1]
+clean_text = replace.(split(text,","),"\"" => "")
+clean_text[1:10] # giusto un'occhiata
+#-
+conteggio = 0
+println("Triangular words:")
+for w in clean_text
+	tot = 0
+	for c in w
+		tot += Int(c)-64 # for upper case c
+	end
+	if tot in triangles
+		println(w)
+		global conteggio += 1
+	end
+end
+#-
+@show conteggio

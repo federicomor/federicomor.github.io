@@ -61,7 +61,7 @@ function ispandigital_v4(n; verbose=false)
         digits_mask |= (1 << digit)
         len += 1
 		if verbose 
-			println("digit = $digit, mask = ", bitstring(digits_mask)[end-8:end])
+			println("digit = $digit, mask = ", bitstring(digits_mask)[end-9:end-1])
 		end
     end
     return digits_mask == (1 << (len + 1)) - 2
