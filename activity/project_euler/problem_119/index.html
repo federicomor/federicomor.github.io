@@ -24,7 +24,7 @@ end</code></pre><pre><code class="plaintext code-output">1) 81 = 9^2
 11) 1679616 = 36^4
 12) 17210368 = 28^5
 13) 34012224 = 18^6
- 15.631573 seconds (272.21 M allocations: 6.950 GiB, 3.93% gc time, 0.60% compilation time)
+ 15.597283 seconds (272.21 M allocations: 6.950 GiB, 4.16% gc time, 0.60% compilation time)
 </code></pre> <p><strong>Seconda idea:</strong> precalcolare un insieme di valori base^esponente &#61; valore, e scorrere su questi valori per vedere se soddisfano la condizione che la base sia pari alla somma delle loro cifre. Questo metodo diventa veloce perché filtriamo via il ricavare l&#39;esponente opportuno a cui elevare la base, e perché non scorriamo più su tutti i numeri da 1 in poi, ma solo su quelli effettivamente ottenibili come una qualche base elevate ad un qualche esponente.</p> <pre><code class=language-julia ># creiamo il dizionario che contiene la chiave &#40;base, esponente&#41; e il valore corrispondente &#40;base^esponente&#41;
 d &#61; Dict&#123;Tuple&#123;Int, Int&#125;, Int&#125;&#40;&#41;
 # lo popoliamo, come precalcolo per lo step successivo
@@ -34,7 +34,7 @@ println&#40;&quot;precomputation step&quot;&#41;
 		d&#91;&#40;base, exp&#41;&#93; &#61; base^exp
 	end
 end</code></pre><pre><code class="plaintext code-output">precomputation step
-  0.070654 seconds (115.57 k allocations: 5.486 MiB, 99.73% compilation time)
+  0.073853 seconds (115.57 k allocations: 5.486 MiB, 99.73% compilation time)
 </code></pre> <pre><code class=language-julia ># lo ordiniamo per scorrere sui numeri in ordine crescente
 sorted_pairs &#61; sort&#40;collect&#40;d&#41;, by &#61; x -&gt; x&#91;2&#93;&#41;
 i &#61; 0
@@ -76,7 +76,7 @@ end</code></pre><pre><code class="plaintext code-output">1) 81 = 9^2
 31) 3904305912313344 = 54^9
 32) 81920000000000000 = 20^13
 33) 5430070304767207435 = 67^23
-  0.021146 seconds (31.07 k allocations: 1.209 MiB, 92.36% compilation time)
+  0.022462 seconds (31.07 k allocations: 1.209 MiB, 92.45% compilation time)
 </code></pre> <p>e quindi il 30esimo numero risulta essere \(248155780267521 = 63^8\). Possiamo infine wrappare tutto in una funzione e trovare anche numeri più alti che soddisfano il criterio. Per quelli veramente alti serve anche passare dal tipo Int al tipo BigInt:</p> <pre><code class=language-julia >function big_test&#40;ub_base, ub_exp&#41;
 	d &#61; Dict&#123;Tuple&#123;Int, Int&#125;, BigInt&#125;&#40;&#41;
 	for base in 2:ub_base
@@ -300,5 +300,5 @@ end
 205) 126462243384781145263479730532454467979528658735288778476527493228704648184285544259174116391013379280490000000000000000000000000000000000000000000000000000000000000 = 490^61
 206) 3483222019150087290906367725765158038860604776315729218075578227857117741864010261964290002242715875008010000000000000000000000000000000000000000000000000000000000000000 = 430^64
 207) 5824228738434357322434036590082369091753194215438155001822259090811561080269775914075580658391118049621582031250000000000000000000000000000000000000000000000000000000000000000000 = 450^67
-  0.052579 seconds (417.40 k allocations: 41.641 MiB, 11.23% compilation time)
-</code></pre> <script src="https://giscus.app/client.js" data-repo="federicomor/federicomor.github.io" data-repo-id=R_kgDOLBdBYA  data-category=Announcements  data-category-id=DIC_kwDOLBdBYM4Clm0M  data-mapping=url  data-strict=0  data-reactions-enabled=1  data-emit-metadata=0  data-input-position=bottom  data-theme=preferred_color_scheme  data-lang=it  // data-loading=lazy  crossorigin=anonymous  async> </script> <div class=page-foot > Last modified: August 18, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> <script src="/libs/katex/katex.min.js"></script> <script src="/libs/katex/contrib/auto-render.min.js"></script> <script>renderMathInElement(document.body)</script> <!-- <script> MathJax = { tex: { inlineMath: [['\\(', '\\)']], tags: 'all' }, svg: {fontCache: 'global'} }; </script> <script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script> --> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>
+  0.056265 seconds (417.40 k allocations: 41.642 MiB, 10.68% compilation time)
+</code></pre> <script src="https://giscus.app/client.js" data-repo="federicomor/federicomor.github.io" data-repo-id=R_kgDOLBdBYA  data-category=Announcements  data-category-id=DIC_kwDOLBdBYM4Clm0M  data-mapping=url  data-strict=0  data-reactions-enabled=1  data-emit-metadata=0  data-input-position=bottom  data-theme=preferred_color_scheme  data-lang=it  // data-loading=lazy  crossorigin=anonymous  async> </script> <div class=page-foot > Last modified: August 19, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> <script src="/libs/katex/katex.min.js"></script> <script src="/libs/katex/contrib/auto-render.min.js"></script> <script>renderMathInElement(document.body)</script> <!-- <script> MathJax = { tex: { inlineMath: [['\\(', '\\)']], tags: 'all' }, svg: {fontCache: 'global'} }; </script> <script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script> --> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>
