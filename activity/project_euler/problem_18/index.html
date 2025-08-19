@@ -27,7 +27,7 @@ Msum &#61; copy&#40;M&#41;
 			Msum&#91;i,j&#93; &#61; max&#40;Msum&#91;i-1,j&#93; &#43; M&#91;i,j&#93;, Msum&#91;i-1,j-1&#93; &#43; M&#91;i,j&#93;&#41;
 		end
 	end
-end</code></pre><pre><code class="plaintext code-output">  0.005470 seconds (1.02 k allocations: 29.891 KiB, 97.95% compilation time)
+end</code></pre><pre><code class="plaintext code-output">  0.004967 seconds (1.02 k allocations: 29.891 KiB, 98.00% compilation time)
 </code></pre> <pre><code class=language-julia >for i in 1:R
 	for j in 1:C
 		print&#40;rpad&#40;Msum&#91;i,j&#93;,5, &quot; &quot;&#41;&#41;
@@ -81,7 +81,7 @@ end</code></pre><pre><code class="plaintext code-output">4      62     98     27
 17     47     [82]   0      0      0      0      0      0      0      0      0      0      0      0      
 95     [64]   0      0      0      0      0      0      0      0      0      0      0      0      0      
 [75]   0      0      0      0      0      0      0      0      0      0      0      0      0      0      
-</code></pre> <p>Divevo &quot;provare&quot; perché questo metodo a volte puà sbagliare, dato che opera su confronti aritmetici, che possono risultare ambigui in caso ci siano più numeri che soddisfano la condizione. Perciò occorre invece aggiornare la funzione sopra che assembla la soluzione per tenere anche traccia dei predecessori usati nel percorso ottimale.</p> <pre><code class=language-julia >parent &#61; zeros&#40;Int,R, C&#41;
+</code></pre> <p>Dicevo &quot;provare&quot; perché questo metodo a volte può sbagliare, dato che opera su confronti aritmetici, che possono risultare ambigui in caso ci siano più numeri che soddisfano la condizione. Perciò occorre invece aggiornare la funzione sopra che assembla la soluzione per tenere anche traccia dei predecessori usati nel percorso ottimale.</p> <pre><code class=language-julia >parent &#61; zeros&#40;Int,R, C&#41;
 for i in 2:R
     for j in 1:i
         if j &#61;&#61; 1

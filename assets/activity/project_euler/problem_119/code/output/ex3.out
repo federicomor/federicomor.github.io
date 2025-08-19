@@ -31,4 +31,4 @@
 31) 3904305912313344 = 54^9
 32) 81920000000000000 = 20^13
 33) 5430070304767207435 = 67^23
-  0.022462 seconds (31.07 k allocations: 1.209 MiB, 92.45% compilation time)
+  0.020479 seconds (31.07 k allocations: 1.209 MiB, 92.45% compilation time)
