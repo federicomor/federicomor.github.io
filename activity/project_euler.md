@@ -122,7 +122,7 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 <td class="solved"><a href="/activity/project_euler/problem_15">15</a></td>
 <td class="solved"><a href="/activity/project_euler/problem_16">16</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_17">17</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_18">18</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_18">18</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_19">19</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_20">20</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_21">21</a></td>
@@ -175,7 +175,7 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 <td class="blank"><a href="/activity/project_euler/problem_64">64</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_65">65</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_66">66</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_67">67</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_67">67</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_68">68</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_69">69</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_70">70</a></td>
