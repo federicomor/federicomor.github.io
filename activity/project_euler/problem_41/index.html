@@ -114,19 +114,19 @@ pan_no &#61; 123947076
 @btime ispandigital_v1&#40;pan_no&#41;
 @btime ispandigital_v2&#40;pan_no&#41;
 @btime ispandigital_v3&#40;pan_no&#41;
-@btime ispandigital_v4&#40;pan_no&#41;</code></pre><pre><code class="plaintext code-output">  158.720 ns (7 allocations: 416 bytes)
-  98.579 ns (4 allocations: 256 bytes)
-  44.305 ns (3 allocations: 96 bytes)
-  18.510 ns (0 allocations: 0 bytes)
+@btime ispandigital_v4&#40;pan_no&#41;</code></pre><pre><code class="plaintext code-output">  169.813 ns (7 allocations: 416 bytes)
+  99.775 ns (4 allocations: 256 bytes)
+  44.270 ns (3 allocations: 96 bytes)
+  18.209 ns (0 allocations: 0 bytes)
 false</code></pre>
 <pre><code class=language-julia >pan_yes &#61; 123467895
 @btime ispandigital_v1&#40;pan_yes&#41;
 @btime ispandigital_v2&#40;pan_yes&#41;
 @btime ispandigital_v3&#40;pan_yes&#41;
-@btime ispandigital_v4&#40;pan_yes&#41;</code></pre><pre><code class="plaintext code-output">  163.147 ns (7 allocations: 416 bytes)
-  106.927 ns (4 allocations: 256 bytes)
-  59.930 ns (3 allocations: 96 bytes)
-  25.605 ns (0 allocations: 0 bytes)
+@btime ispandigital_v4&#40;pan_yes&#41;</code></pre><pre><code class="plaintext code-output">  175.262 ns (7 allocations: 416 bytes)
+  106.917 ns (4 allocations: 256 bytes)
+  58.809 ns (3 allocations: 96 bytes)
+  25.949 ns (0 allocations: 0 bytes)
 true</code></pre>
 <p>e arriviamo quindi con la quarta versione alla soluzione del problema.</p>
 <pre><code class=language-julia >@time for i in 987654321:-2:2
@@ -135,7 +135,7 @@ true</code></pre>
 		break
 	end
 end</code></pre><pre><code class="plaintext code-output">i = 7652413
-  4.583656 seconds (9 allocations: 264 bytes)
+  4.568366 seconds (9 allocations: 264 bytes)
 </code></pre>
  <script src="https://giscus.app/client.js"
 		data-repo="federicomor/federicomor.github.io"
@@ -160,20 +160,21 @@ end</code></pre><pre><code class="plaintext code-output">i = 7652413
 </div>
     </div>  
     
-        <script src="/libs/katex/katex.min.js"></script>
+        <!-- <script src="/libs/katex/katex.min.js"></script>
 <script src="/libs/katex/contrib/auto-render.min.js"></script>
-<script>renderMathInElement(document.body)</script>
+<script>renderMathInElement(document.body)</script> -->
 
-<!-- <script>
+<script>
 MathJax = {
 	tex: {
-	inlineMath: [['\\(', '\\)']],
+	inlineMath: [['$', '$'], ['\\(', '\\)']],
+	displayMath: [['$$','$$'], ['\\[','\\]']],
 	tags: 'all'
 	},
 	svg: {fontCache: 'global'}
 };
 </script>
-<script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script> -->
+<script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     
     
         <script src="/libs/highlight/highlight.min.js"></script>

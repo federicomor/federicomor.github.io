@@ -26,7 +26,7 @@ Msum = copy(M)
 			Msum[i,j] = max(Msum[i-<span class=hljs-number >1</span>,j] + M[i,j], Msum[i-<span class=hljs-number >1</span>,j-<span class=hljs-number >1</span>] + M[i,j])
 		<span class=hljs-keyword >end</span>
 	<span class=hljs-keyword >end</span>
-<span class=hljs-keyword >end</span></code></pre><pre><code class="plaintext hljs">  0.002574 seconds (34.68 k allocations: 699.609 KiB)
+<span class=hljs-keyword >end</span></code></pre><pre><code class="plaintext hljs">  0.002659 seconds (34.68 k allocations: 699.609 KiB)
 </code></pre> <pre><code class="julia hljs"><span class=hljs-meta >@show</span> maximum(Msum[<span class=hljs-keyword >end</span>,:])</code></pre><pre><code class="plaintext hljs">maximum(Msum[end, :]) = 7273
 </code></pre> <p>Traceback:</p> <pre><code class="julia hljs">parent = zeros(<span class=hljs-built_in >Int</span>,R, C)
 <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >2</span>:R

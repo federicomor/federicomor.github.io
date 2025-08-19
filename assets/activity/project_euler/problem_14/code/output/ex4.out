@@ -1,0 +1,58 @@
+Incontriamo 2 per la prima volta, continuiamo con la ricorsione
+    lui ci conduce a 1 che sappiamo già produrre una sequenza lunga 1
+Incontriamo 3 per la prima volta, continuiamo con la ricorsione
+Incontriamo 10 per la prima volta, continuiamo con la ricorsione
+Incontriamo 5 per la prima volta, continuiamo con la ricorsione
+Incontriamo 16 per la prima volta, continuiamo con la ricorsione
+Incontriamo 8 per la prima volta, continuiamo con la ricorsione
+Incontriamo 4 per la prima volta, continuiamo con la ricorsione
+    lui ci conduce a 2 che sappiamo già produrre una sequenza lunga 2
+    lui ci conduce a 4 che sappiamo già produrre una sequenza lunga 3
+    lui ci conduce a 5 che sappiamo già produrre una sequenza lunga 6
+Incontriamo 6 per la prima volta, continuiamo con la ricorsione
+    lui ci conduce a 3 che sappiamo già produrre una sequenza lunga 8
+Incontriamo 7 per la prima volta, continuiamo con la ricorsione
+Incontriamo 22 per la prima volta, continuiamo con la ricorsione
+Incontriamo 11 per la prima volta, continuiamo con la ricorsione
+Incontriamo 34 per la prima volta, continuiamo con la ricorsione
+Incontriamo 17 per la prima volta, continuiamo con la ricorsione
+Incontriamo 52 per la prima volta, continuiamo con la ricorsione
+Incontriamo 26 per la prima volta, continuiamo con la ricorsione
+Incontriamo 13 per la prima volta, continuiamo con la ricorsione
+Incontriamo 40 per la prima volta, continuiamo con la ricorsione
+Incontriamo 20 per la prima volta, continuiamo con la ricorsione
+    lui ci conduce a 10 che sappiamo già produrre una sequenza lunga 7
+    lui ci conduce a 8 che sappiamo già produrre una sequenza lunga 4
+Incontriamo 9 per la prima volta, continuiamo con la ricorsione
+Incontriamo 28 per la prima volta, continuiamo con la ricorsione
+Incontriamo 14 per la prima volta, continuiamo con la ricorsione
+    lui ci conduce a 7 che sappiamo già produrre una sequenza lunga 17
+    lui ci conduce a 10 che sappiamo già produrre una sequenza lunga 7
+    lui ci conduce a 11 che sappiamo già produrre una sequenza lunga 15
+Incontriamo 12 per la prima volta, continuiamo con la ricorsione
+    lui ci conduce a 6 che sappiamo già produrre una sequenza lunga 9
+    lui ci conduce a 13 che sappiamo già produrre una sequenza lunga 10
+    lui ci conduce a 14 che sappiamo già produrre una sequenza lunga 18
+Incontriamo 15 per la prima volta, continuiamo con la ricorsione
+Incontriamo 46 per la prima volta, continuiamo con la ricorsione
+Incontriamo 23 per la prima volta, continuiamo con la ricorsione
+Incontriamo 70 per la prima volta, continuiamo con la ricorsione
+Incontriamo 35 per la prima volta, continuiamo con la ricorsione
+Incontriamo 106 per la prima volta, continuiamo con la ricorsione
+Incontriamo 53 per la prima volta, continuiamo con la ricorsione
+Incontriamo 160 per la prima volta, continuiamo con la ricorsione
+Incontriamo 80 per la prima volta, continuiamo con la ricorsione
+Incontriamo 40 per la prima volta, continuiamo con la ricorsione
+    lui ci conduce a 20 che sappiamo già produrre una sequenza lunga 8
+    lui ci conduce a 16 che sappiamo già produrre una sequenza lunga 5
+    lui ci conduce a 17 che sappiamo già produrre una sequenza lunga 13
+Incontriamo 18 per la prima volta, continuiamo con la ricorsione
+    lui ci conduce a 9 che sappiamo già produrre una sequenza lunga 20
+Incontriamo 19 per la prima volta, continuiamo con la ricorsione
+Incontriamo 58 per la prima volta, continuiamo con la ricorsione
+Incontriamo 29 per la prima volta, continuiamo con la ricorsione
+Incontriamo 88 per la prima volta, continuiamo con la ricorsione
+Incontriamo 44 per la prima volta, continuiamo con la ricorsione
+Incontriamo 22 per la prima volta, continuiamo con la ricorsione
+    lui ci conduce a 11 che sappiamo già produrre una sequenza lunga 15
+    lui ci conduce a 20 che sappiamo già produrre una sequenza lunga 8

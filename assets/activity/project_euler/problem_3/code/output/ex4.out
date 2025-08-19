@@ -3,4 +3,4 @@ n = 32989067             -> 401 è un fattore primo di n
 n = 82267                -> 82267 è un fattore primo di n
 n = 1                    -> finito!
 => 82267 è il più alto fattore primo di n
-  0.043749 seconds (55.62 k allocations: 2.785 MiB, 98.52% compilation time)
+  0.042575 seconds (55.62 k allocations: 2.785 MiB, 98.55% compilation time)
