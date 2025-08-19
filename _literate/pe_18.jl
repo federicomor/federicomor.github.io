@@ -61,7 +61,7 @@ for i in R:-1:1
 	end
 	println()
 end
-# Divevo "provare" perché questo metodo a volte puà sbagliare, dato che opera su confronti aritmetici, che possono risultare ambigui in caso ci siano più numeri che soddisfano la condizione. Perciò occorre invece aggiornare la funzione sopra che assembla la soluzione per tenere anche traccia dei predecessori usati nel percorso ottimale.
+# Dicevo "provare" perché questo metodo a volte può sbagliare, dato che opera su confronti aritmetici, che possono risultare ambigui in caso ci siano più numeri che soddisfano la condizione. Perciò occorre invece aggiornare la funzione sopra che assembla la soluzione per tenere anche traccia dei predecessori usati nel percorso ottimale.
 parent = zeros(Int,R, C)
 for i in 2:R
     for j in 1:i
