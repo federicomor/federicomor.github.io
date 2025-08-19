@@ -30,11 +30,8 @@ for i in 2:R
         if j == 1
             Msum[i,j] = Msum[i-1,j] + M[i,j]
             parent[i,j] = j
-		## sciogliamo il max tra i due casi per aggiornare correttamente parent 
-        elseif j == i
-            Msum[i,j] = Msum[i-1,j-1] + M[i,j]
-            parent[i,j] = j-1
         else
+			## sciogliamo il max tra i due casi per aggiornare correttamente parent 
             if Msum[i-1,j] > Msum[i-1,j-1]
                 Msum[i,j] = Msum[i-1,j] + M[i,j]
                 parent[i,j] = j
