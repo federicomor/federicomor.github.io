@@ -27,7 +27,7 @@ Msum &#61; copy&#40;M&#41;
 			Msum&#91;i,j&#93; &#61; max&#40;Msum&#91;i-1,j&#93; &#43; M&#91;i,j&#93;, Msum&#91;i-1,j-1&#93; &#43; M&#91;i,j&#93;&#41;
 		end
 	end
-end</code></pre><pre><code class="plaintext code-output">  0.004967 seconds (1.02 k allocations: 29.891 KiB, 98.00% compilation time)
+end</code></pre><pre><code class="plaintext code-output">  0.005554 seconds (1.02 k allocations: 29.891 KiB, 97.89% compilation time)
 </code></pre> <pre><code class=language-julia >for i in 1:R
 	for j in 1:C
 		print&#40;rpad&#40;Msum&#91;i,j&#93;,5, &quot; &quot;&#41;&#41;
@@ -87,11 +87,8 @@ for i in 2:R
         if j &#61;&#61; 1
             Msum&#91;i,j&#93; &#61; Msum&#91;i-1,j&#93; &#43; M&#91;i,j&#93;
             parent&#91;i,j&#93; &#61; j
-		# sciogliamo il max tra i due casi per aggiornare correttamente parent
-        elseif j &#61;&#61; i
-            Msum&#91;i,j&#93; &#61; Msum&#91;i-1,j-1&#93; &#43; M&#91;i,j&#93;
-            parent&#91;i,j&#93; &#61; j-1
         else
+			# sciogliamo il max tra i due casi per aggiornare correttamente parent
             if Msum&#91;i-1,j&#93; &gt; Msum&#91;i-1,j-1&#93;
                 Msum&#91;i,j&#93; &#61; Msum&#91;i-1,j&#93; &#43; M&#91;i,j&#93;
                 parent&#91;i,j&#93; &#61; j
