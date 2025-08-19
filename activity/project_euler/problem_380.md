@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Amazing Mazes!</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th April 2012, 02:00 pm; Solved by 572;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=380">Problem 380</a></h3></div>
+<h2>Amazing Mazes!</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th April 2012, 02:00 pm; Solved by 587;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=380">Problem 380</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 An $m \times n$ maze is an $m \times n$ rectangular grid with walls placed between grid cells such that there is exactly one path from the top-left square to any other square. <br>The following are examples of a $9 \times 12$ maze and a $15 \times 20$ maze:

@@ -40,20 +40,20 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Combined Volume of Cuboids</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th October 2008, 06:00 am; Solved by 1561;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=212">Problem 212</a></h3></div>
+<h2>Combined Volume of Cuboids</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th October 2008, 06:00 am; Solved by 1588;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=212">Problem 212</a></h3></div>
 <div class="problem_content" role="problem">
 <p>An <dfn>axis-aligned cuboid</dfn>, specified by parameters $\{(x_0, y_0, z_0), (dx, dy, dz)\}$, consists of all points $(X,Y,Z)$ such that $x_0 \le X \le x_0 + dx$, $y_0 \le Y \le y_0 + dy$ and $z_0 \le Z \le z_0 + dz$.  The volume of the cuboid is the product, $dx \times dy \times dz$.  The <dfn>combined volume</dfn> of a collection of cuboids is the volume of their union and will be less than the sum of the individual volumes if any cuboids overlap.</p>
 
 <p>Let $C_1, \dots, C_{50000}$ be a collection of $50000$ axis-aligned cuboids such that $C_n$ has parameters</p>
 
-\begin{align}
+$$\begin{align}
 x_0 &amp;= S_{6n - 5} \bmod 10000\\
 y_0 &amp;= S_{6n - 4} \bmod 10000\\
 z_0 &amp;= S_{6n - 3} \bmod 10000\\
 dx &amp;= 1 + (S_{6n - 2} \bmod 399)\\
 dy &amp;= 1 + (S_{6n - 1} \bmod 399)\\
 dz &amp;= 1 + (S_{6n} \bmod 399)
-\end{align}
+\end{align}$$
 
 <p>where $S_1,\dots,S_{300000}$ come from the "Lagged Fibonacci Generator":</p>
 

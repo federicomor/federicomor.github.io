@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sums of Power Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st November 2014, 10:00 pm; Solved by 731;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=487">Problem 487</a></h3></div>
+<h2>Sums of Power Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st November 2014, 10:00 pm; Solved by 759;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=487">Problem 487</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $f_k(n)$ be the sum of the $k$<sup>th</sup> powers of the first $n$ positive integers.</p>
 

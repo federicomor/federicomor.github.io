@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Colouring a Loop</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th May 2019, 01:00 am; Solved by 195;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=671">Problem 671</a></h3></div>
+<h2>Colouring a Loop</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th May 2019, 01:00 am; Solved by 207;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=671">Problem 671</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A certain type of flexible tile comes in three different sizes - $1 \times 1$, $1 \times 2$, and $1 \times 3$ - and in $k$ different colours. There is an unlimited number of tiles available in each combination of size and colour.</p>
 

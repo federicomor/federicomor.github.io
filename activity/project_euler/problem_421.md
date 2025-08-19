@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Prime Factors of $n^{15}+1$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 31st March 2013, 04:00 am; Solved by 747;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=421">Problem 421</a></h3></div>
+<h2>Prime Factors of $n^{15}+1$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 31st March 2013, 04:00 am; Solved by 772;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=421">Problem 421</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Numbers of the form $n^{15}+1$ are composite for every integer $n \gt 1$.<br>

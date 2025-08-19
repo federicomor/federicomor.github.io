@@ -40,14 +40,14 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>A Squared Recurrence Relation</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 12th June 2021, 11:00 pm; Solved by 599;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=759">Problem 759</a></h3></div>
+<h2>A Squared Recurrence Relation</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 12th June 2021, 11:00 pm; Solved by 619;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=759">Problem 759</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The function $f$ is defined for all positive integers as follows:</p>
-\begin{align*}
+$$\begin{align*}
 f(1) &amp;=  1\\
 f(2n) &amp;= 2f(n)\\
 f(2n+1) &amp;= 2n+1 + 2f(n)+\tfrac 1n f(n)
-\end{align*}
+\end{align*}$$
 <p>It can be proven that $f(n)$ is integer for all values of $n$.</p>
 
 <p>The function $S(n)$ is defined as $S(n) = \displaystyle \sum_{i=1}^n f(i) ^2$.</p>

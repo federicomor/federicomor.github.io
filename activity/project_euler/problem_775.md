@@ -40,12 +40,12 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Saving Paper</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 5th December 2021, 01:00 am; Solved by 260;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=775">Problem 775</a></h3></div>
+<h2>Saving Paper</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 5th December 2021, 01:00 am; Solved by 270;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=775">Problem 775</a></h3></div>
 <div class="problem_content" role="problem">
 <p>When wrapping several cubes in paper, it is more efficient to wrap them all together than to wrap each one individually. For example, with 10 cubes of unit edge length, it would take 30 units of paper to wrap them in the arrangement shown below, but 60 units to wrap them separately.</p>
 
 <div style="text-align:center;">
-<img src="https://projecteuler.net/project/images/p775_wrapping_cubes.png" class="dark_img" alt="" /></div>
+<img src="https://projecteuler.net/resources/images/0775_wrapping_cubes.png?1678992054" class="dark_img" alt=""></div>
 
 
 <p>Define $g(n)$ to be the maximum amount of paper that can be saved by wrapping $n$ identical $1\times 1\times 1$ cubes in a compact arrangement, compared with wrapping them individually. We insist that the wrapping paper is in contact with the cubes at all points, without leaving a void.</p>

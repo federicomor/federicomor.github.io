@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Reachable Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th October 2009, 01:00 pm; Solved by 1680;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=259">Problem 259</a></h3></div>
+<h2>Reachable Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th October 2009, 01:00 pm; Solved by 1714;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=259">Problem 259</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A positive integer will be called <dfn>reachable</dfn> if it can result from an arithmetic expression obeying the following rules:</p>
 

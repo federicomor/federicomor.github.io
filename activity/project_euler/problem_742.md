@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Minimum Area of a Convex Grid Polygon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 9th January 2021, 07:00 pm; Solved by 177;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=742">Problem 742</a></h3></div>
+<h2>Minimum Area of a Convex Grid Polygon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 9th January 2021, 07:00 pm; Solved by 184;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=742">Problem 742</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <dfn>symmetrical convex grid polygon</dfn> is a polygon such that:</p>
 <ul>

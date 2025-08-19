@@ -40,16 +40,16 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Concatenation Coincidence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th March 2021, 10:00 pm; Solved by 2547;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=751">Problem 751</a></h3></div>
+<h2>Concatenation Coincidence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th March 2021, 10:00 pm; Solved by 2645;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=751">Problem 751</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A non-decreasing sequence of integers $a_n$ can be generated from any positive real value $\theta$ by the following procedure:
-\begin{align}
+$$\begin{align}
 \begin{split}
 b_1 &amp;= \theta \\
 b_n &amp;= \left\lfloor b_{n-1} \right\rfloor \left(b_{n-1} - \left\lfloor b_{n-1} \right\rfloor + 1\right)\quad\forall ~ n \geq 2 \\
 a_n &amp;= \left\lfloor b_{n} \right\rfloor
 \end{split}
-\end{align}
+\end{align}$$
 Where $\left\lfloor \cdot \right\rfloor$ is the floor function.</p>
 
 <p>For example, $\theta=2.956938891377988...$ generates the Fibonacci sequence: $2, 3, 5, 8, 13, 21, 34, 55, 89, ...$</p>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Shortest Lattice Vector</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 15th March 2015, 07:00 am; Solved by 238;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=507">Problem 507</a></h3></div>
+<h2>Shortest Lattice Vector</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 15th March 2015, 07:00 am; Solved by 243;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=507">Problem 507</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $t_n$ be the <b>tribonacci numbers</b> defined as:<br>

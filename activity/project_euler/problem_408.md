@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Admissible Paths Through a Grid</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th December 2012, 01:00 pm; Solved by 641;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=408">Problem 408</a></h3></div>
+<h2>Admissible Paths Through a Grid</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th December 2012, 01:00 pm; Solved by 666;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=408">Problem 408</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let's call a lattice point $(x, y)$ <dfn>inadmissible</dfn> if $x, y$ and $x+y$ are all positive perfect squares.<br>
 For example, $(9, 16)$ is inadmissible, while $(0, 4)$, $(3, 1)$ and $(9, 4)$ are not.</p>

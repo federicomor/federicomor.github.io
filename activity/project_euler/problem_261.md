@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Pivotal Square Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 23rd October 2009, 05:00 pm; Solved by 784;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=261">Problem 261</a></h3></div>
+<h2>Pivotal Square Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 23rd October 2009, 05:00 pm; Solved by 803;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=261">Problem 261</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let us call a positive integer $k$ a <dfn>square-pivot</dfn>, if there is a pair of integers $m \gt 0$ and $n \ge k$, such that the sum of the $(m+1)$ consecutive squares up to $k$ equals the sum of the $m$ consecutive squares from $(n+1)$ on:</p>
 $$(k - m)^2 + \cdots + k^2 = (n + 1)^2 + \cdots + (n + m)^2.$$

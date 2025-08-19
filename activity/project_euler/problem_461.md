@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Almost Pi</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st March 2014, 04:00 pm; Solved by 1350;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=461">Problem 461</a></h3></div>
+<h2>Almost Pi</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st March 2014, 04:00 pm; Solved by 1381;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=461">Problem 461</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $f_n(k) = e^{k/n} - 1$, for all non-negative integers $k$.</p>
 <p>Remarkably, $f_{200}(6)+f_{200}(75)+f_{200}(89)+f_{200}(226)=\underline{3.1415926}44529\cdots\approx\pi$.</p>

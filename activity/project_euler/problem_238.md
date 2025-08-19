@@ -40,14 +40,14 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Infinite String Tour</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 29th March 2009, 03:00 pm; Solved by 1085;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=238">Problem 238</a></h3></div>
+<h2>Infinite String Tour</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 29th March 2009, 03:00 pm; Solved by 1110;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=238">Problem 238</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Create a sequence of numbers using the "Blum Blum Shub" pseudo-random number generator:</p>
 
-\begin{align}
+$$\begin{align}
 s_0 &amp;= 14025256\\
 s_{n + 1} &amp;= s_n^2 \bmod 20300713
-\end{align}
+\end{align}$$
 
 <p>Concatenate these numbers $s_0s_1s_2\cdots$ to create a string $w$ of infinite length.<br>
 Then, $w = {\color{blue}14025256741014958470038053646\cdots}$</p>

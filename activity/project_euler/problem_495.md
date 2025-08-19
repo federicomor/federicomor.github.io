@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Writing $n$ as the Product of $k$ Distinct Positive Integers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th December 2014, 10:00 pm; Solved by 357;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=495">Problem 495</a></h3></div>
+<h2>Writing $n$ as the Product of $k$ Distinct Positive Integers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th December 2014, 10:00 pm; Solved by 372;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=495">Problem 495</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $W(n,k)$ be the number of ways in which $n$ can be written as the product of $k$ distinct positive integers.</p>
 <p>For example, $W(144,4) = 7$. There are $7$ ways in which $144$ can be written as a product of $4$ distinct positive integers:</p>

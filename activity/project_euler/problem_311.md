@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Biclinic Integral Quadrilaterals</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 20th November 2010, 10:00 pm; Solved by 482;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=311">Problem 311</a></h3></div>
+<h2>Biclinic Integral Quadrilaterals</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 20th November 2010, 10:00 pm; Solved by 495;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=311">Problem 311</a></h3></div>
 <div class="problem_content" role="problem">
 <p>$ABCD$ is a convex, integer sided quadrilateral with $1 \le AB \lt BC \lt CD \lt AD$.<br>
 $BD$ has integer length. $O$ is the midpoint of $BD$. $AO$ has integer length.<br>

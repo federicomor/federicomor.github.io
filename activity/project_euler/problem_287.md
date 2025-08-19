@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Quadtree Encoding (a Simple Compression Algorithm)</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th April 2010, 09:00 am; Solved by 1605;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=287">Problem 287</a></h3></div>
+<h2>Quadtree Encoding (a Simple Compression Algorithm)</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th April 2010, 09:00 am; Solved by 1632;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=287">Problem 287</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The quadtree encoding allows us to describe a $2^N \times 2^N$  black and white image as a sequence of bits (0 and 1). Those sequences are to be read from left to right like this:
 </p><ul><li>the first bit deals with the complete $2^N \times 2^N$ region;</li>

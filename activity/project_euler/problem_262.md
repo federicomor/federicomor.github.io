@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Mountain Range</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 30th October 2009, 09:00 pm; Solved by 815;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=262">Problem 262</a></h3></div>
+<h2>Mountain Range</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 30th October 2009, 09:00 pm; Solved by 840;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=262">Problem 262</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The following equation represents the <i>continuous</i> topography of a mountainous region, giving the <strong class="tooltip">elevation<span class="tooltiptext">height above sea level</span></strong> $h$ at any point $(x, y)$:
 $$h = \left(5000 - \frac{x^2 + y^2 + xy}{200} + \frac{25(x + y)}2\right) \cdot e^{-\left|\frac{x^2 + y^2}{1000000} - \frac{3(x + y)}{2000} + \frac 7 {10}\right|}.$$

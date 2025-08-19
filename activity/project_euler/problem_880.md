@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Nested Radicals</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd March 2024, 07:00 pm; Solved by 114;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=880">Problem 880</a></h3></div>
+<h2>Nested Radicals</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd March 2024, 07:00 pm; Solved by 118;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=880">Problem 880</a></h3></div>
 <div class="problem_content" role="problem">
 <p>$(x,y)$ is called a <i>nested radical pair</i> if $x$ and $y$ are non-zero integers such that $\dfrac{x}{y}$ is not a cube of a rational number, and there exist integers $a$, $b$ and $c$ such that:</p>
 $$\sqrt{\sqrt[3]{x}+\sqrt[3]{y} }=\sqrt[3]{a}+\sqrt[3]{b}+\sqrt[3]{c}$$

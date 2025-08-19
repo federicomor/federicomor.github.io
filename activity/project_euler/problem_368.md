@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>A Kempner-like Series</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 22nd January 2012, 01:00 am; Solved by 604;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=368">Problem 368</a></h3></div>
+<h2>A Kempner-like Series</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 22nd January 2012, 01:00 am; Solved by 616;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=368">Problem 368</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The <strong>harmonic series</strong> $1 + \frac 1 2 + \frac 1 3 + \frac 1 4 + \cdots$ is well known to be divergent.</p>
 

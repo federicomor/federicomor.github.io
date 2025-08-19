@@ -40,10 +40,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Reciprocal Cycles II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd March 2013, 04:00 pm; Solved by 995;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=417">Problem 417</a></h3></div>
+<h2>Reciprocal Cycles II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd March 2013, 04:00 pm; Solved by 1018;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=417">Problem 417</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A unit fraction contains $1$ in the numerator. The decimal representation of the unit fractions with denominators $2$ to $10$ are given:</p>
-\begin{align}
+$$\begin{align}
 1/2 &amp;= 0.5\\
 1/3 &amp;=0.(3)\\
 1/4 &amp;=0.25\\
@@ -53,7 +53,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 1/8 &amp;= 0.125\\
 1/9 &amp;= 0.(1)\\
 1/10 &amp;= 0.1
-\end{align}
+\end{align}$$
 
 <p>Where $0.1(6)$ means $0.166666\cdots$, and has a $1$-digit recurring cycle. It can be seen that $1/7$ has a $6$-digit recurring cycle.</p>
 <p>

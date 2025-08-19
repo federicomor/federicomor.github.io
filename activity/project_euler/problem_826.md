@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Birds on a Wire</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 22nd January 2023, 10:00 am; Solved by 254;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=826">Problem 826</a></h3></div>
+<h2>Birds on a Wire</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 22nd January 2023, 10:00 am; Solved by 269;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=826">Problem 826</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider a wire of length 1 unit between two posts. Every morning $n$ birds land on it randomly with every point on the wire equally likely to host a bird. The interval from each bird to its closest neighbour is then painted.</p>
 

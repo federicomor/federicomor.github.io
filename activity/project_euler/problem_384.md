@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Rudin-Shapiro Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th May 2012, 02:00 am; Solved by 366;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=384">Problem 384</a></h3></div>
+<h2>Rudin-Shapiro Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th May 2012, 02:00 am; Solved by 378;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=384">Problem 384</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Define the sequence $a(n)$ as the number of adjacent pairs of ones in the binary expansion of $n$ (possibly overlapping).
 <br>E.g.: $a(5) = a(101_2) = 0$, $a(6) = a(110_2) = 1$, $a(7) = a(111_2) = 2$.</p>

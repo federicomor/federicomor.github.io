@@ -115,10 +115,10 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 <td class="blank"><a href="/activity/project_euler/problem_8">8</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_9">9</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_10">10</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_11">11</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_11">11</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_12">12</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_13">13</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_14">14</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_14">14</a></td>
 <td class="solved"><a href="/activity/project_euler/problem_15">15</a></td>
 <td class="solved"><a href="/activity/project_euler/problem_16">16</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_17">17</a></td>
@@ -153,8 +153,8 @@ _Clicca su un problema per aprire la sua pagina dedicata_
 <td class="blank"><a href="/activity/project_euler/problem_44">44</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_45">45</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_46">46</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_47">47</a></td>
-<td class="blank"><a href="/activity/project_euler/problem_48">48</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_47">47</a></td>
+<td class="solved"><a href="/activity/project_euler/problem_48">48</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_49">49</a></td>
 <td class="blank"><a href="/activity/project_euler/problem_50">50</a></td>
 </tr>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sum of Largest Prime Factors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th November 2018, 04:00 pm; Solved by 402;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=642">Problem 642</a></h3></div>
+<h2>Sum of Largest Prime Factors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th November 2018, 04:00 pm; Solved by 415;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=642">Problem 642</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $f(n)$ be the largest prime factor of $n$ and $\displaystyle F(n) = \sum_{i=2}^n f(i)$.<br>
 For example $F(10)=32$, $F(100)=1915$ and $F(10000)=10118280$.</p>

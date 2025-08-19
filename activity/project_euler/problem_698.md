@@ -40,20 +40,23 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>123 Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th January 2020, 07:00 am; Solved by 499;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=698">Problem 698</a></h3></div>
+<h2>123 Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th January 2020, 07:00 am; Solved by 522;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=698">Problem 698</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 We define <i>123-numbers</i> as follows:
 </p>
 
-<ul><li>1 is the smallest 123-number.</li>
+<ul>
+<li>1 is the smallest 123-number.</li>
 <li>When written in base 10 the only digits that can be present are "1", "2" and "3" and if present the number of times they each occur is also a 123-number.</li>
-</ul><p>
-So 2 is a 123-number, since it consists of one  digit "2" and 1 is a 123-number. Therefore, 33 is a 123-number as well since it consists of two digits "3" and 2 is a 123-number.<br />
+</ul>
+
+<p>
+So 2 is a 123-number, since it consists of one  digit "2" and 1 is a 123-number. Therefore, 33 is a 123-number as well since it consists of two digits "3" and 2 is a 123-number.<br>
 On the other hand, 1111 is not a 123-number, since it contains 4 digits "1" and 4 is not a 123-number.
 </p>
 <p>
-In ascending order, the first 123-numbers are:<br />
+In ascending order, the first 123-numbers are:<br>
 $1, 2, 3, 11, 12, 13, 21, 22, 23, 31, 32, 33, 111, 112, 113, 121, 122, 123, 131, \ldots$
 </p>
 <p>

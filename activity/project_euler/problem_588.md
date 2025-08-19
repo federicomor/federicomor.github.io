@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Quintinomial Coefficients</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 29th January 2017, 04:00 am; Solved by 494;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=588">Problem 588</a></h3></div>
+<h2>Quintinomial Coefficients</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 29th January 2017, 04:00 am; Solved by 508;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=588">Problem 588</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 The coefficients in the expansion of $(x+1)^k$ are called <strong>binomial coefficients</strong>.<br>

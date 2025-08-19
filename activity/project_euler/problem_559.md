@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Permuted Matrices</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th May 2016, 04:00 pm; Solved by 211;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=559">Problem 559</a></h3></div>
+<h2>Permuted Matrices</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th May 2016, 04:00 pm; Solved by 215;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=559">Problem 559</a></h3></div>
 <div class="problem_content" role="problem">
 <p>An <dfn>ascent</dfn> of a column $j$ in a matrix occurs if the value of column $j$ is smaller than the value of column $j + 1$ in all rows.
 </p><p>

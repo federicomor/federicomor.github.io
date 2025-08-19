@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>$\pi$ Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 9th September 2017, 04:00 pm; Solved by 1033;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=609">Problem 609</a></h3></div>
+<h2>$\pi$ Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 9th September 2017, 04:00 pm; Solved by 1053;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=609">Problem 609</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For every $n \ge 1$ the <strong>prime-counting</strong> function $\pi(n)$ is equal to the number of primes

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Cyclogenic Polynomials</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th May 2022, 08:00 pm; Solved by 201;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=797">Problem 797</a></h3></div>
+<h2>Cyclogenic Polynomials</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th May 2022, 08:00 pm; Solved by 221;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=797">Problem 797</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <strong>monic polynomial</strong> is a single-variable polynomial in which the coefficient of highest degree is equal to $1$.</p>
 

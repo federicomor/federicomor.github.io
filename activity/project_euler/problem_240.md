@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Top Dice</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 10th April 2009, 10:00 pm; Solved by 2408;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=240">Problem 240</a></h3></div>
+<h2>Top Dice</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 10th April 2009, 10:00 pm; Solved by 2450;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=240">Problem 240</a></h3></div>
 <div class="problem_content" role="problem">
 <p>There are $1111$ ways in which five $6$-sided dice (sides numbered $1$ to $6$) can be rolled so that the top three sum to $15$. Some examples are:
 

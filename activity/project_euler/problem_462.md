@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Permutation of 3-smooth Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 8th March 2014, 07:00 pm; Solved by 360;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=462">Problem 462</a></h3></div>
+<h2>Permutation of 3-smooth Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 8th March 2014, 07:00 pm; Solved by 374;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=462">Problem 462</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A <strong>$3$-smooth number</strong> is an integer which has no prime factor larger than $3$. For an integer $N$, we define $S(N)$ as the set of <span style="white-space:nowrap;">$3$-smooth</span> numbers less than or equal to $N$. For example, $S(20) = \{ 1, 2, 3, 4, 6, 8, 9, 12, 16, 18 \}$.

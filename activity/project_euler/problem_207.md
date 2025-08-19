@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Integer Partition Equations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th September 2008, 02:00 pm; Solved by 5155;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=207">Problem 207</a></h3></div>
+<h2>Integer Partition Equations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th September 2008, 02:00 pm; Solved by 5225;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=207">Problem 207</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For some positive integers $k$, there exists an integer partition of the form $4^t = 2^t + k$,<br>
 where $4^t$, $2^t$, and $k$ are all positive integers and $t$ is a real number.</p>
@@ -52,7 +52,7 @@ For any $m \ge 1$ let $P(m)$ be the proportion of such partitions that are perfe
 Thus $P(6) = 1/2$.</p>
 
 <p>In the following table are listed some values of $P(m)$.</p>
-\begin{align}
+$$\begin{align}
 P(5) &amp;= 1/1\\
 P(10) &amp;= 1/2\\
 P(15) &amp;= 2/3\\
@@ -62,7 +62,7 @@ P(30) &amp;= 2/5\\
 \cdots &amp;\\
 P(180) &amp;= 1/4\\
 P(185) &amp;= 3/13
-\end{align}
+\end{align}$$
 
 
 <p>Find the smallest $m$ for which $P(m) \lt 1/12345$.</p>

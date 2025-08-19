@@ -40,10 +40,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Gozinta Chains</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 21st February 2016, 07:00 am; Solved by 696;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=548">Problem 548</a></h3></div>
+<h2>Gozinta Chains</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 21st February 2016, 07:00 am; Solved by 712;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=548">Problem 548</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
-A <strong>gozinta chain</strong>for $n$ is a sequence $\{1,a,b,\dots,n\}$ where each element properly divides the next.<br>
+A <strong>gozinta chain</strong> for $n$ is a sequence $\{1,a,b,\dots,n\}$ where each element properly divides the next.<br>
 There are eight gozinta chains for $12$:<br>
 $\{1,12\}$, $\{1,2,12\}$, $\{1,2,4,12\}$, $\{1,2,6,12\}$, $\{1,3,12\}$, $\{1,3,6,12\}$, $\{1,4,12\}$ and $\{1,6,12\}$.<br> 
 Let $g(n)$ be the number of gozinta chains for $n$, so $g(12)=8$.<br>

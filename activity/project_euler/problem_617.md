@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Mirror Power Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th December 2017, 04:00 pm; Solved by 407;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=617">Problem 617</a></h3></div>
+<h2>Mirror Power Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th December 2017, 04:00 pm; Solved by 416;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=617">Problem 617</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For two integers $n,e \gt 1$, we define an <dfn>$(n,e)$-MPS (Mirror Power Sequence)</dfn> to be an infinite sequence of integers $(a_i)_{i\ge 0}$ such that for all $i\ge 0$, $a_{i+1} = \min(a_i^e,n-a_i^e)$ and $a_i \gt 1$.<br> Examples of such sequences are the two $(18,2)$-MPS sequences made of alternating $2$ and $4$.</p>
 

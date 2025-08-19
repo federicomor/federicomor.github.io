@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Spilling the Beans</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd April 2011, 04:00 pm; Solved by 527;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=334">Problem 334</a></h3></div>
+<h2>Spilling the Beans</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd April 2011, 04:00 pm; Solved by 542;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=334">Problem 334</a></h3></div>
 <div class="problem_content" role="problem">
 <p>In Plato's heaven, there exist an infinite number of bowls in a straight line.<br>
 Each bowl either contains some or none of a finite number of beans.<br>

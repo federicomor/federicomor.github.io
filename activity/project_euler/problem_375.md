@@ -40,13 +40,13 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Minimum of Subsequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th March 2012, 10:00 pm; Solved by 979;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=375">Problem 375</a></h3></div>
+<h2>Minimum of Subsequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th March 2012, 10:00 pm; Solved by 1001;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=375">Problem 375</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $S_n$ be an integer sequence produced with the following pseudo-random number generator:</p>
-\begin{align}
+$$\begin{align}
 S_0 &amp; = 290797 \\
 S_{n+1} &amp; = S_n^2 \bmod 50515093
-\end{align}
+\end{align}$$
 
 <p>
 Let $A(i, j)$ be the minimum of the numbers $S_i, S_{i+1}, \dots, S_j$ for $i\le j$.<br>

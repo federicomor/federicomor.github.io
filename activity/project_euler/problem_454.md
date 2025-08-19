@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Diophantine Reciprocals III</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th January 2014, 07:00 pm; Solved by 534;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=454">Problem 454</a></h3></div>
+<h2>Diophantine Reciprocals III</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th January 2014, 07:00 pm; Solved by 558;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=454">Problem 454</a></h3></div>
 <div class="problem_content" role="problem">
 <p>In the following equation $x$, $y$, and $n$ are positive integers.</p>
 $$\dfrac{1}{x} + \dfrac{1}{y} = \dfrac{1}{n}$$

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Divisor Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th June 2017, 04:00 pm; Solved by 339;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=608">Problem 608</a></h3></div>
+<h2>Divisor Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th June 2017, 04:00 pm; Solved by 352;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=608">Problem 608</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $D(m,n)=\displaystyle\sum_{d\mid m}\sum_{k=1}^n\sigma_0(kd)$ where $d$ runs through all divisors of $m$ and $\sigma_0(n)$ is the number of divisors of $n$.<br>
 You are given $D(3!,10^2)=3398$ and $D(4!,10^6)=268882292$.</p>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Prime Subset Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th June 2009, 05:00 am; Solved by 2812;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=249">Problem 249</a></h3></div>
+<h2>Prime Subset Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th June 2009, 05:00 am; Solved by 2862;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=249">Problem 249</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $S = \{2, 3, 5, \dots, 4999\}$ be the set of prime numbers less than $5000$.</p>
 <p>Find the number of subsets of $S$, the sum of whose elements is a prime number.<br>

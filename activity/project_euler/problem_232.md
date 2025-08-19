@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>The Race</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 13th February 2009, 05:00 pm; Solved by 1992;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=232">Problem 232</a></h3></div>
+<h2>The Race</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 13th February 2009, 05:00 pm; Solved by 2028;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=232">Problem 232</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Two players share an unbiased coin and take it in turns to play <dfn>The Race</dfn>.</p>
 

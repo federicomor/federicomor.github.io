@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Maximal Perimeter</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 29th May 2016, 01:00 am; Solved by 209;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=562">Problem 562</a></h3></div>
+<h2>Maximal Perimeter</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 29th May 2016, 01:00 am; Solved by 215;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=562">Problem 562</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Construct triangle $ABC$ such that:</p>
 <ul><li>Vertices $A$, $B$ and $C$ are lattice points inside or on the circle of radius $r$ centered at the origin;</li>

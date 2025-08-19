@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Matching Digit Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd June 2019, 04:00 pm; Solved by 257;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=676">Problem 676</a></h3></div>
+<h2>Matching Digit Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd June 2019, 04:00 pm; Solved by 264;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=676">Problem 676</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $d(i,b)$ be the <strong>digit sum</strong> of the number $i$ in base $b$. For example $d(9,2)=2$, since $9=1001_2$.

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Long Products</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 28th December 2013, 01:00 pm; Solved by 654;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=452">Problem 452</a></h3></div>
+<h2>Long Products</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 28th December 2013, 01:00 pm; Solved by 677;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=452">Problem 452</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Define $F(m,n)$ as the number of $n$-tuples of positive integers for which the product of the elements doesn't exceed $m$.</p>
 <p>$F(10, 10) = 571$.</p>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Prime Mountain Range</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th September 2016, 07:00 pm; Solved by 442;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=569">Problem 569</a></h3></div>
+<h2>Prime Mountain Range</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th September 2016, 07:00 pm; Solved by 450;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=569">Problem 569</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <dfn>mountain range</dfn> consists of a line of mountains with slopes of exactly $45^\circ$, and heights governed by the prime numbers, $p_n$. The up-slope of the $k$<sup>th</sup> mountain is of height $p_{2k - 1}$, and the downslope is $p_{2k}$. The first few foot-hills of this range are illustrated below.</p>
 

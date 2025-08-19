@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Super Pandigital Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th September 2016, 01:00 am; Solved by 1224;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=571">Problem 571</a></h3></div>
+<h2>Super Pandigital Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th September 2016, 01:00 am; Solved by 1249;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=571">Problem 571</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A positive number is <strong>pandigital</strong> in base $b$ if it contains all digits from $0$ to $b - 1$ at least once when written in base $b$.</p>
 

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Problem 500!!!</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 31st January 2015, 01:00 pm; Solved by 4495;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=500">Problem 500</a></h3></div>
+<h2>Problem 500!!!</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 31st January 2015, 01:00 pm; Solved by 4562;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=500">Problem 500</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The number of divisors of $120$ is $16$.<br>
 In fact $120$ is the smallest number having $16$ divisors.

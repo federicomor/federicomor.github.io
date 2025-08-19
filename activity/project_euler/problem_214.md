@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Totient Chains</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th October 2008, 02:00 pm; Solved by 5718;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=214">Problem 214</a></h3></div>
+<h2>Totient Chains</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th October 2008, 02:00 pm; Solved by 5791;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=214">Problem 214</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $\phi$ be Euler's totient function, i.e. for a natural number $n$,
 $\phi(n)$ is the number of $k$, $1 \le k \le n$, for which $\gcd(k, n) = 1$.</p>
@@ -49,7 +49,7 @@ $\phi(n)$ is the number of $k$, $1 \le k \le n$, for which $\gcd(k, n) = 1$.</p>
 E.g. if we start with $5$ the sequence $5,4,2,1$ is generated.<br>
 Here is a listing of all chains with length $4$:</p>
 
-\begin{align}
+$$\begin{align}
 5,4,2,1&amp;\\
 7,6,2,1&amp;\\
 8,4,2,1&amp;\\
@@ -58,7 +58,7 @@ Here is a listing of all chains with length $4$:</p>
 12,4,2,1&amp;\\
 14,6,2,1&amp;\\
 18,6,2,1
-\end{align}
+\end{align}$$
 
 <p>Only two of these chains start with a prime, their sum is $12$.</p>
 

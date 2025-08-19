@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Integer Sided Triangles with Integral Area/perimeter Ratio</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 19th March 2010, 09:00 pm; Solved by 711;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=283">Problem 283</a></h3></div>
+<h2>Integer Sided Triangles with Integral Area/perimeter Ratio</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 19th March 2010, 09:00 pm; Solved by 726;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=283">Problem 283</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Consider the triangle with sides $6$, $8$, and $10$. It can be seen that the perimeter and the area are both equal to $24$. 

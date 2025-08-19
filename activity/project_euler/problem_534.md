@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Weak Queens</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th November 2015, 01:00 pm; Solved by 344;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=534">Problem 534</a></h3></div>
+<h2>Weak Queens</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th November 2015, 01:00 pm; Solved by 357;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=534">Problem 534</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The classical <b>eight queens puzzle</b> is the well known problem of placing eight chess queens on an $8 \times 8$ chessboard so that no two queens threaten each other. Allowing configurations to reappear in rotated or mirrored form, a total of $92$ distinct configurations can be found for eight queens. The general case asks for the number of distinct ways of placing $n$ queens on an $n \times n$ board, e.g. you can find $2$ distinct configurations for $n=4$.</p>
 

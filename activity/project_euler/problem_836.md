@@ -25,11 +25,9 @@ showall = true
   }
 </script>
 <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a>
-<a href="/activity/project_euler/problem_837/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a>
+<a href="/activity/project_euler/problem_837/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"> </i> </a>
 </div>
-~~~
 
-~~~
 <link rel="stylesheet" type="text/css" href="/activity/project_euler/style_main.1735430422.css">
 <link rel="stylesheet" type="text/css" href="/activity/project_euler/style_default.1627113674.css">
 <script src="https://projecteuler.net/js/mathjax_config.js"></script>
@@ -40,7 +38,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>A Bold Proposition</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st April 2023, 05:00 pm; Solved by 4410;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=836">Problem 836</a></h3></div>
+<h2>A Bold Proposition</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st April 2023, 05:00 pm; Solved by 4824;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=836">Problem 836</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $A$ be an <b>affine plane</b> over a <b>radically integral local field</b> $F$ with residual characteristic $p$.</p>
 

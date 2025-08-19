@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Harshad Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 3rd June 2012, 11:00 am; Solved by 5096;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=387">Problem 387</a></h3></div>
+<h2>Harshad Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 3rd June 2012, 11:00 am; Solved by 5160;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=387">Problem 387</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <strong>Harshad or Niven number</strong> is a number that is divisible by the sum of its digits.
 <br>$201$ is a Harshad number because it is divisible by $3$ (the sum of its digits.)

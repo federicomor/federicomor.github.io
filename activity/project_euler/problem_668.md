@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Square Root Smooth Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th May 2019, 07:00 pm; Solved by 1173;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=668">Problem 668</a></h3></div>
+<h2>Square Root Smooth Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th May 2019, 07:00 pm; Solved by 1205;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=668">Problem 668</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A positive integer is called <dfn>square root smooth</dfn> if all of its prime factors are strictly less than its square root.<br>

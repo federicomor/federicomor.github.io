@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Odd Triplets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th April 2009, 06:00 am; Solved by 1171;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=242">Problem 242</a></h3></div>
+<h2>Odd Triplets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th April 2009, 06:00 am; Solved by 1199;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=242">Problem 242</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Given the set $\{1,2,\dots,n\}$, we define $f(n, k)$ as the number of its $k$-element subsets with an odd sum of elements. For example, $f(5,3) = 4$, since the set $\{1,2,3,4,5\}$ has four $3$-element subsets having an odd sum of elements, i.e.: $\{1,2,4\}$, $\{1,3,5\}$, $\{2,3,4\}$ and $\{2,4,5\}$.</p>
 

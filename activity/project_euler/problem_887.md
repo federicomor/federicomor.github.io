@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Bounded Binary Search</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 20th April 2024, 05:00 pm; Solved by 254;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=887">Problem 887</a></h3></div>
+<h2>Bounded Binary Search</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 20th April 2024, 05:00 pm; Solved by 272;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=887">Problem 887</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the problem of determining a secret number from a set $\{1, ..., N\}$ by repeatedly choosing a number $y$ and asking "Is the secret number greater than $y$?".</p>
 

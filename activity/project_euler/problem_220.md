@@ -40,23 +40,23 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Heighway Dragon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th December 2008, 09:00 am; Solved by 2380;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=220">Problem 220</a></h3></div>
+<h2>Heighway Dragon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th December 2008, 09:00 am; Solved by 2409;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=220">Problem 220</a></h3></div>
 <div class="problem_content" role="problem">
-<p>Let <b><i>D</i></b><sub>0</sub> be the two-letter string "Fa".  For n≥1, derive <b><i>D</i></b><sub>n</sub> from <b><i>D</i></b><sub>n-1</sub> by the string-rewriting rules:</p>
+<p>Let $D_0$ be the two-letter string "Fa".  For $n\ge 1$, derive $D_n$ from $D_{n-1}$ by the string-rewriting rules:</p>
 
-<p style="margin-left:40px;">"a" → "aRbFR"<br />
+<p style="margin-left:40px;">"a" → "aRbFR"<br>
 "b" → "LFaLb"</p>
 
-<p>Thus, <b><i>D</i></b><sub>0</sub> = "Fa", <b><i>D</i></b><sub>1</sub> = "FaRbFR", <b><i>D</i></b><sub>2</sub> = "FaRbFRRLFaLbFR", and so on.</p>
+<p>Thus, $D_0 = $ "Fa", $D_1 = $ "FaRbFR", $D_2 = $ "FaRbFRRLFaLbFR", and so on.</p>
 
-<p>These strings can be interpreted as instructions to a computer graphics program, with "F" meaning "draw forward one unit", "L" meaning "turn left 90 degrees", "R" meaning "turn right 90 degrees", and "a" and "b" being ignored.  The initial position of the computer cursor is (0,0), pointing up towards (0,1).</p>
+<p>These strings can be interpreted as instructions to a computer graphics program, with "F" meaning "draw forward one unit", "L" meaning "turn left $90$ degrees", "R" meaning "turn right $90$ degrees", and "a" and "b" being ignored.  The initial position of the computer cursor is $(0,0)$, pointing up towards $(0,1)$.</p>
 
-<p>Then <b><i>D</i></b><sub>n</sub> is an exotic drawing known as the <i>Heighway Dragon</i> of order <i>n</i>.  For example, <b><i>D</i></b><sub>10</sub> is shown below; counting each "F" as one step, the highlighted spot at (18,16) is the position reached after 500 steps.</p>
+<p>Then $D_n$ is an exotic drawing known as the <strong>Heighway Dragon</strong> of order $n$.  For example, $D_{10}$ is shown below; counting each "F" as one step, the highlighted spot at $(18,16)$ is the position reached after $500$ steps.</p>
 
 <div class="center">
-<img src="https://projecteuler.net/project/images/p220.gif" class="dark_img" alt="" /></div>
+<img src="https://projecteuler.net/resources/images/0220.gif?1678992055" class="dark_img" alt=""></div>
 
-<p>What is the position of the cursor after 10<sup>12</sup> steps in <b><i>D</i></b><sub>50</sub> ?<br />
+<p>What is the position of the cursor after $10^{12}$ steps in $D_{50}$?<br>
 Give your answer in the form <i>x</i>,<i>y</i> with no spaces.</p>
 
 </div><br>

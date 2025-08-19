@@ -40,12 +40,12 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Counting Ordered Factorisations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th December 2020, 07:00 am; Solved by 300;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=738">Problem 738</a></h3></div>
+<h2>Counting Ordered Factorisations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th December 2020, 07:00 am; Solved by 318;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=738">Problem 738</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Define $d(n,k)$ to be the number of ways to write $n$ as a product of $k$ ordered integers</p>
-\[
+$$
 n = x_1\times x_2\times x_3\times \ldots\times x_k\qquad 1\le x_1\le x_2\le\ldots\le x_k
-\]
+$$
 <p>Further define $D(N,K)$ to be the sum of $d(n,k)$ for $1\le n\le N$ and $1\le k\le K$.</p>
 
 <p>You are given that $D(10, 10) = 153$ and $D(100, 100) = 35384$.</p>

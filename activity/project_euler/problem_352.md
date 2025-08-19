@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Blood Tests</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 2nd October 2011, 01:00 am; Solved by 679;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=352">Problem 352</a></h3></div>
+<h2>Blood Tests</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 2nd October 2011, 01:00 am; Solved by 696;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=352">Problem 352</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Each one of the $25$ sheep in a flock must be tested for a rare virus, known to affect $2\%$ of the sheep population.

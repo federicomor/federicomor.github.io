@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Constrained Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 3rd October 2015, 07:00 pm; Solved by 327;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=528">Problem 528</a></h3></div>
+<h2>Constrained Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 3rd October 2015, 07:00 pm; Solved by 348;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=528">Problem 528</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $S(n, k, b)$ represent the number of valid solutions to $x_1 + x_2 + \cdots + x_k \le n$, where $0 \le x_m \le b^m$ for all $1 \le m \le k$.</p>
 

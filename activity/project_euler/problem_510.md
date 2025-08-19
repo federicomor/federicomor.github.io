@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Tangent Circles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th April 2015, 04:00 pm; Solved by 1129;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=510">Problem 510</a></h3></div>
+<h2>Tangent Circles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th April 2015, 04:00 pm; Solved by 1153;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=510">Problem 510</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Circles $A$ and $B$ are tangent to each other and to line $L$ at three distinct points.<br>
 Circle $C$ is inside the space between $A$, $B$ and $L$, and tangent to all three.<br>

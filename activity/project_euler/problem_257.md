@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Angular Bisectors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 26th September 2009, 05:00 am; Solved by 787;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=257">Problem 257</a></h3></div>
+<h2>Angular Bisectors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 26th September 2009, 05:00 am; Solved by 810;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=257">Problem 257</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Given is an integer sided triangle $ABC$ with sides $a \le b \le c$. 
 ($AB = c$, $BC = a$ and $AC = b$.)<br>

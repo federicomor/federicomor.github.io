@@ -40,10 +40,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Triffle Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 26th January 2020, 10:00 am; Solved by 209;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=699">Problem 699</a></h3></div>
+<h2>Triffle Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 26th January 2020, 10:00 am; Solved by 213;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=699">Problem 699</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
-Let $\sigma(n)$ be the sum of all the divisors of the positive integer $n$, for example:<br />
+Let $\sigma(n)$ be the sum of all the divisors of the positive integer $n$, for example:<br>
 $\sigma(10) = 1+2+5+10 = 18$.
 </p>
 <p>

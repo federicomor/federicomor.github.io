@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Polar Polygons</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 30th March 2014, 05:00 am; Solved by 242;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=465">Problem 465</a></h3></div>
+<h2>Polar Polygons</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 30th March 2014, 05:00 am; Solved by 259;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=465">Problem 465</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The <dfn>kernel</dfn> of a polygon is defined by the set of points from which the entire polygon's boundary is visible. We define a <dfn>polar polygon</dfn> as a polygon for which the origin is <u>strictly</u> contained inside its kernel.</p>
 

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Regular Star Polygons</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 30th April 2023, 05:00 am; Solved by 203;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=841">Problem 841</a></h3></div>
+<h2>Regular Star Polygons</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 30th April 2023, 05:00 am; Solved by 209;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=841">Problem 841</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The regular star polygon $\{p/q\}$, for coprime integers $p,q$ with $p \gt 2q \gt 0$, is a polygon formed from $p$ edges of equal length and equal internal angles, such that tracing the complete polygon wraps $q$ times around the centre. For example, $\{8/3\}$ is illustrated below:</p>
 <div align="center"><img src="https://projecteuler.net/resources/images/0841_star_polygon_8_3.png?1680515338" alt="{8/3}" height="250"></div>

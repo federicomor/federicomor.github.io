@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Balanced Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 14th November 2008, 09:00 pm; Solved by 1693;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=217">Problem 217</a></h3></div>
+<h2>Balanced Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 14th November 2008, 09:00 pm; Solved by 1720;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=217">Problem 217</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A positive integer with $k$ (decimal) digits is called balanced if its first $\lceil k/2 \rceil$ digits sum to the same value as its last $\lceil k/2 \rceil$ digits, where $\lceil x \rceil$, pronounced <i>ceiling</i> of $x$, is the smallest integer $\ge x$, thus $\lceil \pi \rceil = 4$ and $\lceil 5 \rceil = 5$.</p>

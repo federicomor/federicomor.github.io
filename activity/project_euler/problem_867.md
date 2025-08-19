@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Tiling Dodecagon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 10th December 2023, 07:00 am; Solved by 177;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=867">Problem 867</a></h3></div>
+<h2>Tiling Dodecagon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 10th December 2023, 07:00 am; Solved by 182;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=867">Problem 867</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 There are 5 ways to tile a regular dodecagon of side 1 with regular polygons of side 1.</p>

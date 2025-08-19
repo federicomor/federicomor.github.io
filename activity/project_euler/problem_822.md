@@ -40,10 +40,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Square the Smallest</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 24th December 2022, 10:00 pm; Solved by 878;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=822">Problem 822</a></h3></div>
+<h2>Square the Smallest</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 24th December 2022, 10:00 pm; Solved by 918;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=822">Problem 822</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
-A list initially contains the numbers $2, 3, \dots, n$.<br />
+A list initially contains the numbers $2, 3, \dots, n$.<br>
 At each round, the smallest number in the list is replaced by its square. If there is more than one such number, then only one of them is replaced.
 </p>
 <p>
@@ -51,7 +51,7 @@ For example, below are the first three rounds for $n = 5$:
 $$[2, 3, 4, 5] \xrightarrow{(1)} [4, 3, 4, 5] \xrightarrow{(2)} [4, 9, 4, 5] \xrightarrow{(3)} [16, 9, 4, 5].$$
 </p>
 <p>
-Let $S(n, m)$ be the sum of all numbers in the list after $m$ rounds.<br /><br />
+Let $S(n, m)$ be the sum of all numbers in the list after $m$ rounds.<br><br>
 For example, $S(5, 3) = 16 + 9 + 4 + 5 = 34$. Also $S(10, 100) \equiv 845339386 \pmod{1234567891}$.
 </p>
 <p>

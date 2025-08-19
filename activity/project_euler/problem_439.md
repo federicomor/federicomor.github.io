@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sum of Sum of Divisors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 6th October 2013, 04:00 am; Solved by 450;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=439">Problem 439</a></h3></div>
+<h2>Sum of Sum of Divisors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 6th October 2013, 04:00 am; Solved by 475;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=439">Problem 439</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $d(k)$ be the sum of all divisors of $k$.<br>
 We define the function $S(N) = \sum_{i=1}^N \sum_{j=1}^Nd(i \cdot j)$.<br>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Gnomon Numbering</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 27th January 2013, 01:00 am; Solved by 556;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=412">Problem 412</a></h3></div>
+<h2>Gnomon Numbering</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 27th January 2013, 01:00 am; Solved by 573;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=412">Problem 412</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For integers $m, n$ ($0 \leq n \lt m$), let $L(m, n)$ be an $m \times m$ grid with the top-right $n \times n$ grid removed.</p>
 

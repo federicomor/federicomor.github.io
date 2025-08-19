@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Guessing Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 16th December 2012, 07:00 am; Solved by 430;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=406">Problem 406</a></h3></div>
+<h2>Guessing Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 16th December 2012, 07:00 am; Solved by 446;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=406">Problem 406</a></h3></div>
 <div class="problem_content" role="problem">
 <p>We are trying to find a hidden number selected from the set of integers $\{1, 2, \dots, n\}$ by asking questions. 
 Each number (question) we ask, we get one of three possible answers:<br></p><ul><li> "Your guess is lower than the hidden number" (and you incur a cost of $a$), or</li>

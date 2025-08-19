@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Unbalanced Nim</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 9th November 2014, 01:00 am; Solved by 264;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=488">Problem 488</a></h3></div>
+<h2>Unbalanced Nim</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 9th November 2014, 01:00 am; Solved by 273;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=488">Problem 488</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Alice and Bob have enjoyed playing <strong>Nim</strong> every day. However, they finally got bored of playing ordinary three-heap Nim.<br>
 So, they added an extra rule:</p>

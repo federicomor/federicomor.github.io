@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>An Arithmetic Geometric Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th March 2009, 05:00 am; Solved by 5406;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=235">Problem 235</a></h3></div>
+<h2>An Arithmetic Geometric Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th March 2009, 05:00 am; Solved by 5472;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=235">Problem 235</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Given is the arithmetic-geometric sequence $u(k) = (900-3k)r^{k - 1}$.<br>

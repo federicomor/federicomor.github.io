@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Building a Tower</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th February 2011, 10:00 am; Solved by 792;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=324">Problem 324</a></h3></div>
+<h2>Building a Tower</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th February 2011, 10:00 am; Solved by 817;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=324">Problem 324</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $f(n)$ represent the number of ways one can fill a $3 \times 3 \times n$ tower with blocks of $2 \times 1 \times 1$.<br>You're allowed to rotate the blocks in any way you like; however, rotations, reflections etc of the tower itself are counted as distinct.</p>
 <p>For example (with $q = 100000007$):<br>$f(2) = 229$,<br>$f(4) = 117805$,<br>$f(10) \bmod q = 96149360$,<br>$f(10^3) \bmod q = 24806056$,<br>$f(10^6) \bmod q = 30808124$.</p>

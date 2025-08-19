@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>$n$-sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th May 2013, 10:00 pm; Solved by 352;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=427">Problem 427</a></h3></div>
+<h2>$n$-sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th May 2013, 10:00 pm; Solved by 366;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=427">Problem 427</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A sequence of integers $S = \{s_i\}$ is called an $n$-sequence if it has $n$ elements and each element $s_i$ satisfies $1 \leq s_i \leq n$. Thus there are $n^n$ distinct $n$-sequences in total.
 For example, the sequence $S = \{1, 5, 5, 10, 7, 7, 7, 2, 3, 7\}$ is a $10$-sequence.</p>

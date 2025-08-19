@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sequences with Nice Divisibility Properties</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th April 2015, 07:00 pm; Solved by 464;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=511">Problem 511</a></h3></div>
+<h2>Sequences with Nice Divisibility Properties</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th April 2015, 07:00 pm; Solved by 488;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=511">Problem 511</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $Seq(n,k)$ be the number of positive-integer sequences $\{a_i\}_{1 \le i \le n}$ of length $n$ such that:</p>
 <ul style="list-style-type:disc;"><li>$n$ is divisible by $a_i$ for $1 \le i \le n$, and</li>

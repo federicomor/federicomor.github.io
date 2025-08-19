@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Angular Bisector and Tangent</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 11th June 2010, 01:00 pm; Solved by 668;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=296">Problem 296</a></h3></div>
+<h2>Angular Bisector and Tangent</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 11th June 2010, 01:00 pm; Solved by 685;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=296">Problem 296</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Given is an integer sided triangle $ABC$ with $BC \le AC \le AB$.<br>$k$ is the angular bisector of angle $ACB$.<br>$m$ is the tangent at $C$ to the circumscribed circle of $ABC$.<br>$n$ is a line parallel to $m$ through $B$.<br>

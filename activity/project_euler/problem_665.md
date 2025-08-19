@@ -40,18 +40,20 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Proportionate Nim</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 14th April 2019, 10:00 am; Solved by 278;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=665">Problem 665</a></h3></div>
+<h2>Proportionate Nim</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 14th April 2019, 10:00 am; Solved by 279;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=665">Problem 665</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Two players play a game with two piles of stones, alternating turns.</p>
 <p>On each turn, the corresponding player chooses a positive integer $n$ and does one of the following:</p>
-<ul><li>removes $n$ stones from one pile;</li>
+<ul>
+<li>removes $n$ stones from one pile;</li>
 <li>removes $n$ stones from both piles; or</li>
 <li>removes $n$ stones from one pile and $2n$ stones from the other pile.</li>
-</ul><p>The player who removes the last stone wins.</p>
+</ul>
+<p>The player who removes the last stone wins.</p>
 
 <p>We denote by $(n,m)$ the position in which the piles have $n$ and $m$ stones remaining. Note that $(n,m)$ is considered to be the same position as $(m,n)$.</p>
 
-<p>Then, for example, if the position is $(2,6)$, the next player may reach the following positions:<br />
+<p>Then, for example, if the position is $(2,6)$, the next player may reach the following positions:<br>
 $(0,2)$, $(0,4)$, $(0,5)$, $(0,6)$, $(1,2)$, $(1,4)$, $(1,5)$, $(1,6)$, $(2,2)$, $(2,3)$, $(2,4)$, $(2,5)$</p>
 
 <p>A position is a losing position if the player to move next cannot force a win. For example, $(1,3)$, $(2,6)$, $(4,5)$ are the first few losing positions.</p>

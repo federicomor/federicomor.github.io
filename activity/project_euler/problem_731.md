@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>A Stoneham Number</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th October 2020, 10:00 am; Solved by 637;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=731">Problem 731</a></h3></div>
+<h2>A Stoneham Number</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th October 2020, 10:00 am; Solved by 657;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=731">Problem 731</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 $$A=\sum_{i=1}^{\infty} \frac{1}{3^i 10^{3^i} }$$

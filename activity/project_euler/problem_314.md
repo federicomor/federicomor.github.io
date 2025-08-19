@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>The Mouse on the Moon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 12th December 2010, 07:00 am; Solved by 579;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=314">Problem 314</a></h3></div>
+<h2>The Mouse on the Moon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 12th December 2010, 07:00 am; Solved by 593;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=314">Problem 314</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 The moon has been opened up, and land can be obtained for free, but there is a catch. You have to build a wall around the land that you stake out, and building a wall on the moon is expensive. Every country has been allotted a $\pu{500 m}$ by $\pu{500 m}$ square area, but they will possess only that area which they wall in. $251001$ posts have been placed in a rectangular grid with $1$ meter spacing. The wall must be a closed series of straight lines, each line running from post to post.

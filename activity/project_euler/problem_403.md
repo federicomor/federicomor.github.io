@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Lattice Points Enclosed by Parabola and Line</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 24th November 2012, 10:00 pm; Solved by 398;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=403">Problem 403</a></h3></div>
+<h2>Lattice Points Enclosed by Parabola and Line</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 24th November 2012, 10:00 pm; Solved by 405;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=403">Problem 403</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For integers $a$ and $b$, we define $D(a, b)$ as the domain enclosed by the parabola $y = x^2$ and the line $y = a\cdot x + b$:<br>$D(a, b) = \{(x, y) \mid x^2 \leq y \leq a\cdot x + b \}$.

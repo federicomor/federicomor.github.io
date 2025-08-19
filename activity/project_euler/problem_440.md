@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>GCD and Tiling</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th October 2013, 07:00 am; Solved by 429;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=440">Problem 440</a></h3></div>
+<h2>GCD and Tiling</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th October 2013, 07:00 am; Solved by 451;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=440">Problem 440</a></h3></div>
 <div class="problem_content" role="problem">
 <p>We want to tile a board of length $n$ and height $1$ completely, with either $1 \times 2$ blocks or $1 \times 1$ blocks with a single decimal digit on top:</p>
 <div class="center">

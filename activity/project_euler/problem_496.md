@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Incenter and Circumcenter of Triangle</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 4th January 2015, 01:00 am; Solved by 361;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=496">Problem 496</a></h3></div>
+<h2>Incenter and Circumcenter of Triangle</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 4th January 2015, 01:00 am; Solved by 375;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=496">Problem 496</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Given an integer sided triangle $ABC$:<br>
 Let $I$ be the incenter of $ABC$.<br>

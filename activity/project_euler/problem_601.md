@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Divisibility Streaks</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th April 2017, 07:00 pm; Solved by 2284;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=601">Problem 601</a></h3></div>
+<h2>Divisibility Streaks</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th April 2017, 07:00 pm; Solved by 2344;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=601">Problem 601</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For every positive number $n$ we define the function $\mathop{streak}(n)=k$ as the smallest positive integer $k$ such that $n+k$ is not divisible by $k+1$.<br>

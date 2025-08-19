@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Squarefree Gaussian Integers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 17th April 2016, 07:00 am; Solved by 278;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=556">Problem 556</a></h3></div>
+<h2>Squarefree Gaussian Integers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 17th April 2016, 07:00 am; Solved by 292;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=556">Problem 556</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <b>Gaussian integer</b> is a number $z = a + bi$ where $a$, $b$ are integers and $i^2 = -1$.<br>
 Gaussian integers are a subset of the complex numbers, and the integers are the subset of Gaussian integers for which $b = 0$.</p>

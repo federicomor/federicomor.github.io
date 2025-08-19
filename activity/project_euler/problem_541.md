@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Divisibility of Harmonic Number Denominators</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 3rd January 2016, 10:00 am; Solved by 233;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=541">Problem 541</a></h3></div>
+<h2>Divisibility of Harmonic Number Denominators</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 3rd January 2016, 10:00 am; Solved by 244;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=541">Problem 541</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The $n$<sup>th</sup> <strong>harmonic number</strong> $H_n$ is defined as the sum of the multiplicative inverses of the first $n$ positive integers, and can be written as a <strong>reduced fraction</strong> $a_n/b_n$.<br>
 $H_n = \displaystyle \sum_{k=1}^n \frac 1 k = \frac {a_n} {b_n}$, with $\gcd(a_n, b_n)=1$.</p>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Faulhaber's Formulas</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th January 2016, 10:00 pm; Solved by 599;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=545">Problem 545</a></h3></div>
+<h2>Faulhaber's Formulas</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th January 2016, 10:00 pm; Solved by 619;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=545">Problem 545</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The sum of the $k$<sup>th</sup> powers of the first $n$ positive integers can be expressed as a polynomial of degree $k+1$ with rational coefficients, the <strong>Faulhaber's Formulas</strong>:<br>
 $1^k + 2^k + ... + n^k = \sum_{i=1}^n i^k = \sum_{i=1}^{k+1} a_{i} n^i = a_{1} n + a_{2} n^2 + ... + a_{k} n^k + a_{k+1} n^{k + 1}$,<br>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Chinese Leftovers II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th March 2016, 07:00 pm; Solved by 492;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=552">Problem 552</a></h3></div>
+<h2>Chinese Leftovers II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th March 2016, 07:00 pm; Solved by 515;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=552">Problem 552</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $A_n$ be the smallest positive integer satisfying $A_n \bmod p_i = i$ for all $1 \le i \le n$, where $p_i$ is the

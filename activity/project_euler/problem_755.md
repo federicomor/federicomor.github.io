@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Not Zeckendorf</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 18th April 2021, 11:00 am; Solved by 974;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=755">Problem 755</a></h3></div>
+<h2>Not Zeckendorf</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 18th April 2021, 11:00 am; Solved by 1015;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=755">Problem 755</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Consider the Fibonacci sequence $\{1,2,3,5,8,13,21,\ldots\}$.

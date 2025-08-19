@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Euler's Totient Function Equals 13!</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th June 2009, 01:00 am; Solved by 1472;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=248">Problem 248</a></h3></div>
+<h2>Euler's Totient Function Equals 13!</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th June 2009, 01:00 am; Solved by 1498;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=248">Problem 248</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The first number $n$ for which $\phi(n)=13!$ is $6227180929$.</p>
 <p>Find the $150\,000$<sup>th</sup> such number.</p>

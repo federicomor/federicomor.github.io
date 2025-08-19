@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Enmeshed Unit Circle</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st September 2012, 02:00 pm; Solved by 878;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=392">Problem 392</a></h3></div>
+<h2>Enmeshed Unit Circle</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st September 2012, 02:00 pm; Solved by 900;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=392">Problem 392</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A rectilinear grid is an orthogonal grid where the spacing between the gridlines does not have to be equidistant.<br>

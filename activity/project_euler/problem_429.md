@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sum of Squares of Unitary Divisors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 26th May 2013, 04:00 am; Solved by 2796;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=429">Problem 429</a></h3></div>
+<h2>Sum of Squares of Unitary Divisors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 26th May 2013, 04:00 am; Solved by 2846;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=429">Problem 429</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A unitary divisor $d$ of a number $n$ is a divisor of $n$ that has the property $\gcd(d, n/d) = 1$.<br>

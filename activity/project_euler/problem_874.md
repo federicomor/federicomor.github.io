@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Maximal Prime Score</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 28th January 2024, 04:00 am; Solved by 538;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=874">Problem 874</a></h3></div>
+<h2>Maximal Prime Score</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 28th January 2024, 04:00 am; Solved by 571;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=874">Problem 874</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $p(t)$ denote the $(t+1)$th prime number. So that $p(0) = 2$, $p(1) = 3$, etc.<br>

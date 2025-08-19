@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>The Inverse Summation of Coprime Couples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 20th October 2013, 10:00 am; Solved by 396;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=441">Problem 441</a></h3></div>
+<h2>The Inverse Summation of Coprime Couples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 20th October 2013, 10:00 am; Solved by 408;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=441">Problem 441</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For an integer $M$, we define $R(M)$ as the sum of $1/(p \cdot q)$ for all the integer pairs $p$ and $q$ which satisfy all of these conditions:

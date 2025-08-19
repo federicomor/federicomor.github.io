@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Distinct Terms in a Multiplication Table</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 6th April 2014, 07:00 am; Solved by 360;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=466">Problem 466</a></h3></div>
+<h2>Distinct Terms in a Multiplication Table</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 6th April 2014, 07:00 am; Solved by 375;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=466">Problem 466</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $P(m,n)$ be the number of <i>distinct</i> terms in an $m\times n$ multiplication table.</p>
 

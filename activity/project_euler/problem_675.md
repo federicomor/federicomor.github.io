@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>$2^{\omega(n)}$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th June 2019, 01:00 pm; Solved by 844;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=675">Problem 675</a></h3></div>
+<h2>$2^{\omega(n)}$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th June 2019, 01:00 pm; Solved by 879;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=675">Problem 675</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $\omega(n)$ denote the number of distinct prime divisors of a positive integer $n$.<br>

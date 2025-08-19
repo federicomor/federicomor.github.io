@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Ellipses Inside Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 20th May 2012, 05:00 am; Solved by 318;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=385">Problem 385</a></h3></div>
+<h2>Ellipses Inside Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 20th May 2012, 05:00 am; Solved by 329;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=385">Problem 385</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For any triangle $T$ in the plane, it can be shown that there is a unique ellipse with largest area that is completely inside $T$.

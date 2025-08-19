@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Coins in a Box</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd September 2023, 02:00 pm; Solved by 244;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=852">Problem 852</a></h3></div>
+<h2>Coins in a Box</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd September 2023, 02:00 pm; Solved by 255;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=852">Problem 852</a></h3></div>
 <div class="problem_content" role="problem">
 <p>This game has a box of $N$ unfair coins and $N$ fair coins. Fair coins have probability 50% of landing heads while unfair coins have probability 75% of landing heads.</p>
 

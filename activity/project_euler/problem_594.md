@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Rhombus Tilings</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th March 2017, 10:00 pm; Solved by 208;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=594">Problem 594</a></h3></div>
+<h2>Rhombus Tilings</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th March 2017, 10:00 pm; Solved by 213;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=594">Problem 594</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For a polygon $P$, let $t(P)$ be the number of ways in which $P$ can be tiled using rhombi and squares with edge length 1. Distinct rotations and reflections are counted as separate tilings.
@@ -49,14 +49,16 @@ For a polygon $P$, let $t(P)$ be the number of ways in which $P$ can be tiled us
 For example, if $O$ is a regular octagon with edge length 1, then $t(O) = 8$. As it happens, all these 8 tilings are rotations of one another:
 </p>
 <div class="center">
-<img src="https://projecteuler.net/project/images/p594_octagon_tilings_1.png" alt="p594_octagon_tilings_1.png" /></div>
+<img src="https://projecteuler.net/resources/images/0594_octagon_tilings_1.png?1678992053" alt="0594_octagon_tilings_1.png">
+</div>
 <p>
 Let $O_{a,b}$ be the equal-angled convex octagon whose edges alternate in length between $a$ and $b$.
-<br />
+<br>
 For example, here is $O_{2,1}$, with one of its tilings:
 </p>
 <div class="center">
-<img src="https://projecteuler.net/project/images/p594_octagon_tilings_2.png" alt="p594_octagon_tilings_2.png" /></div>
+<img src="https://projecteuler.net/resources/images/0594_octagon_tilings_2.png?1678992053" alt="0594_octagon_tilings_2.png">
+</div>
 
 <p>
 You are given that $t(O_{1,1})=8$, $t(O_{2,1})=76$ and $t(O_{3,2})=456572$.

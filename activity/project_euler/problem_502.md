@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Counting Castles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th February 2015, 04:00 pm; Solved by 332;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=502">Problem 502</a></h3></div>
+<h2>Counting Castles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th February 2015, 04:00 pm; Solved by 345;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=502">Problem 502</a></h3></div>
 <div class="problem_content" role="problem">
 <p>We define a <dfn>block</dfn> to be a rectangle with a height of $1$ and an integer-valued length. Let a <dfn>castle</dfn> be a configuration of stacked blocks.</p>
 

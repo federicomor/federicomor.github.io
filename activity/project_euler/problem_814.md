@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Mezzo-forte</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th October 2022, 11:00 pm; Solved by 230;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=814">Problem 814</a></h3></div>
+<h2>Mezzo-forte</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th October 2022, 11:00 pm; Solved by 244;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=814">Problem 814</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 $4n$ people stand in a circle with their heads down. When the bell rings they all raise their heads and either look at the person immediately to their left, the person immediately to their right or the person diametrically opposite. If two people find themselves looking at each other they both scream.</p>

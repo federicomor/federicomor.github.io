@@ -40,17 +40,19 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Drone Delivery</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th September 2020, 02:00 pm; Solved by 438;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=724">Problem 724</a></h3></div>
+<h2>Drone Delivery</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th September 2020, 02:00 pm; Solved by 456;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=724">Problem 724</a></h3></div>
 <div class="problem_content" role="problem">
-<p>A depot uses $n$ drones to disperse packages containing essential supplies along a long straight road.<br />
-Initially all drones are stationary, loaded with a supply package.<br />
+<p>A depot uses $n$ drones to disperse packages containing essential supplies along a long straight road.<br>
+Initially all drones are stationary, loaded with a supply package.<br>
 Every second, the depot selects a drone at random and sends it this instruction:</p>
-<ul><li>If you are stationary, start moving at one centimetre per second along the road.</li>
+<ul>
+<li>If you are stationary, start moving at one centimetre per second along the road.</li>
 <li>If you are moving, increase your speed by one centimetre per second along the road without changing direction.</li>
-</ul><p>The road is wide enough that drones can overtake one another without risk of collision.</p>
+</ul>
+<p>The road is wide enough that drones can overtake one another without risk of collision.</p>
 <p>Eventually, there will only be one drone left at the depot waiting to receive its first instruction. As soon as that drone has flown one centimetre along the road, all drones drop their packages and return to the depot.</p>
 
-<p>Let $E(n)$ be the expected distance in centimetres from the depot that the supply packages land.<br />
+<p>Let $E(n)$ be the expected distance in centimetres from the depot that the supply packages land.<br>
 For example, $E(2) = \frac{7}{2}$, $E(5) = \frac{12019}{720}$, and $E(100) \approx 1427.193470$.</p>
 <p>Find $E(10^8)$. Give your answer rounded to the nearest integer.</p>
 

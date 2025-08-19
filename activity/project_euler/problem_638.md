@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Weighted Lattice Paths</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th October 2018, 04:00 am; Solved by 417;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=638">Problem 638</a></h3></div>
+<h2>Weighted Lattice Paths</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th October 2018, 04:00 am; Solved by 425;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=638">Problem 638</a></h3></div>
 <div class="problem_content" role="problem">
 Let $P_{a,b}$ denote a path in a $a\times b$ lattice grid with following properties:
 <ul>

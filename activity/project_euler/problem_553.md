@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Power Sets of Power Sets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 26th March 2016, 10:00 pm; Solved by 234;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=553">Problem 553</a></h3></div>
+<h2>Power Sets of Power Sets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 26th March 2016, 10:00 pm; Solved by 248;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=553">Problem 553</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $P(n)$ be the set of the first $n$ positive integers $\{1, 2, \dots, n\}$.<br>
 Let $Q(n)$ be the set of all the non-empty subsets of $P(n)$.<br>

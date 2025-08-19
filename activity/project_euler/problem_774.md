@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Conjunctive Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th November 2021, 10:00 pm; Solved by 154;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=774">Problem 774</a></h3></div>
+<h2>Conjunctive Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th November 2021, 10:00 pm; Solved by 160;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=774">Problem 774</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let '$\&amp;$' denote the bitwise AND operation.<br>
 For example, $10\,\&amp;\, 12 = 1010_2\,\&amp;\, 1100_2 = 1000_2 = 8$.</p>

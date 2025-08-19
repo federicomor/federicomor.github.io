@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Snowflakes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th September 2016, 10:00 pm; Solved by 296;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=570">Problem 570</a></h3></div>
+<h2>Snowflakes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th September 2016, 10:00 pm; Solved by 306;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=570">Problem 570</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A snowflake of order $n$ is formed by overlaying an equilateral triangle (rotated by $180$ degrees) onto each equilateral triangle of the same size in a snowflake of order $n-1$. A snowflake of order $1$ is a single equilateral triangle.</p>
 

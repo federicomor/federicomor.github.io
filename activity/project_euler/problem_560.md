@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Coprime Nim</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th May 2016, 07:00 pm; Solved by 371;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=560">Problem 560</a></h3></div>
+<h2>Coprime Nim</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th May 2016, 07:00 pm; Solved by 385;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=560">Problem 560</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Coprime Nim is just like ordinary normal play Nim, but the players may only remove a number of stones from a pile that is <strong>coprime</strong> with the current size of the pile. Two players remove stones in turn. The player who removes the last stone wins.</p>
 

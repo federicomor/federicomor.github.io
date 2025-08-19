@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Nearly Isosceles $120$ Degree Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 18th December 2016, 10:00 am; Solved by 363;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=582">Problem 582</a></h3></div>
+<h2>Nearly Isosceles $120$ Degree Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 18th December 2016, 10:00 am; Solved by 374;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=582">Problem 582</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $a, b$ and $c$ be the sides of an integer sided triangle with one angle of $120$ degrees, $a \le b \le c$ and $b-a \le 100$.<br>

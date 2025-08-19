@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Idempotents</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 23rd December 2012, 10:00 am; Solved by 2752;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=407">Problem 407</a></h3></div>
+<h2>Idempotents</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 23rd December 2012, 10:00 am; Solved by 2799;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=407">Problem 407</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 If we calculate $a^2 \bmod 6$ for $0 \leq a \leq 5$ we get: $0,1,4,3,4,1$.

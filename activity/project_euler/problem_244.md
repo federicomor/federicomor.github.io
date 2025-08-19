@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sliders</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 9th May 2009, 02:00 pm; Solved by 1470;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=244">Problem 244</a></h3></div>
+<h2>Sliders</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 9th May 2009, 02:00 pm; Solved by 1497;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=244">Problem 244</a></h3></div>
 <div class="problem_content" role="problem">
 <p>You probably know the game <strong>Fifteen Puzzle</strong>. Here, instead of numbered tiles, we have seven red tiles and eight blue tiles.</p>
 <p>A move is denoted by the uppercase initial of the direction (Left, Right, Up, Down) in which the tile is slid, e.g. starting from configuration (<b>S</b>), by the sequence <b>LULUR</b> we reach the configuration (<b>E</b>):</p>
@@ -50,13 +50,13 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
 <p>For each path, its checksum is calculated by (pseudocode):
 </p>
-\begin{align}
+$$\begin{align}
 \mathrm{checksum} &amp;= 0\\
 \mathrm{checksum} &amp;= (\mathrm{checksum} \times 243 + m_1) \bmod 100\,000\,007\\
 \mathrm{checksum} &amp;= (\mathrm{checksum} \times 243 + m_2) \bmod 100\,000\,007\\
 \cdots &amp;\\
 \mathrm{checksum} &amp;= (\mathrm{checksum} \times 243 + m_n) \bmod 100\,000\,007
-\end{align}
+\end{align}$$
 where $m_k$ is the ASCII value of the $k$<sup><var>th</var></sup> letter in the move sequence and the ASCII values for the moves are:
 
 <div class="center">

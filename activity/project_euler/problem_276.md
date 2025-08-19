@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Primitive Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 29th January 2010, 09:00 pm; Solved by 1209;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=276">Problem 276</a></h3></div>
+<h2>Primitive Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 29th January 2010, 09:00 pm; Solved by 1238;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=276">Problem 276</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the triangles with integer sides $a$, $b$ and $c$ with $a \le b \le c$.<br>
 An integer sided triangle $(a,b,c)$ is called primitive if <strong class="tooltip">$\gcd(a, b, c)$<span class="tooltiptext">$\gcd(a,b,c)=\gcd(a,\gcd(b,c))$</span></strong>$=1$. <br>

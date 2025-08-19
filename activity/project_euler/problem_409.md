@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Nim Extreme</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th January 2013, 04:00 pm; Solved by 499;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=409">Problem 409</a></h3></div>
+<h2>Nim Extreme</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th January 2013, 04:00 pm; Solved by 514;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=409">Problem 409</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $n$ be a positive integer. Consider <b>nim</b> positions where:</p><ul><li>There are $n$ non-empty piles.
 </li><li>Each pile has size less than $2^n$.

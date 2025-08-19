@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Lenticular Holes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th June 2010, 01:00 pm; Solved by 513;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=295">Problem 295</a></h3></div>
+<h2>Lenticular Holes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th June 2010, 01:00 pm; Solved by 534;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=295">Problem 295</a></h3></div>
 <div class="problem_content" role="problem">
 <p>We call the convex area enclosed by two circles a <dfn>lenticular hole</dfn> if:
 </p><ul><li>The centres of both circles are on lattice points.</li>

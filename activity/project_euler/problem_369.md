@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Badugi</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 29th January 2012, 04:00 am; Solved by 527;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=369">Problem 369</a></h3></div>
+<h2>Badugi</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 29th January 2012, 04:00 am; Solved by 541;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=369">Problem 369</a></h3></div>
 <div class="problem_content" role="problem">
 <p>In a standard $52$ card deck of playing cards, a set of $4$ cards is a <strong>Badugi</strong> if it contains $4$ cards with no pairs and no two cards of the same suit.</p>
 

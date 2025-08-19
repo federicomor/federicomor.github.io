@@ -40,12 +40,12 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Slowly Converging Series</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 28th June 2020, 05:00 am; Solved by 572;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=722">Problem 722</a></h3></div>
+<h2>Slowly Converging Series</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 28th June 2020, 05:00 am; Solved by 594;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=722">Problem 722</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For a non-negative integer $k$, define
-\[
+$$
 E_k(q) = \sum\limits_{n = 1}^\infty \sigma_k(n)q^n
-\]
+$$
 where $\sigma_k(n) = \sum_{d \mid n} d^k$ is the sum of the $k$-th powers of the positive divisors of $n$.</p>
 
 <p>It can be shown that, for every $k$, the series $E_k(q)$ converges for any $0 &lt; q &lt; 1$.</p>

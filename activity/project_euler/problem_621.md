@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Expressing an Integer as the Sum of Triangular Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th February 2018, 04:00 am; Solved by 613;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=621">Problem 621</a></h3></div>
+<h2>Expressing an Integer as the Sum of Triangular Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th February 2018, 04:00 am; Solved by 631;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=621">Problem 621</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Gauss famously proved that every positive integer can be expressed as the sum of three <strong>triangular numbers</strong> (including $0$ as the lowest triangular number). In fact most numbers can be expressed as a sum of three triangular numbers in several ways.</p>
 <p>

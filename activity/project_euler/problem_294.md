@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sum of Digits - Experience #23</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th May 2010, 09:00 am; Solved by 1044;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=294">Problem 294</a></h3></div>
+<h2>Sum of Digits - Experience #23</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th May 2010, 09:00 am; Solved by 1069;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=294">Problem 294</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For a positive integer $k$, define $d(k)$ as the sum of the digits of $k$ in its usual decimal representation.

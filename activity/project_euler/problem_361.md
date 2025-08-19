@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Subsequence of Thue-Morse Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 4th December 2011, 04:00 am; Solved by 350;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=361">Problem 361</a></h3></div>
+<h2>Subsequence of Thue-Morse Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 4th December 2011, 04:00 am; Solved by 361;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=361">Problem 361</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The <strong>Thue-Morse sequence</strong> $\{T_n\}$ is a binary sequence satisfying:</p>
 <ul><li>$T_0 = 0$</li>

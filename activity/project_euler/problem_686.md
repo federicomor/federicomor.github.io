@@ -40,12 +40,12 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Powers of Two</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 26th October 2019, 07:00 pm; Solved by 3915;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=686">Problem 686</a></h3></div>
+<h2>Powers of Two</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 26th October 2019, 07:00 pm; Solved by 4038;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=686">Problem 686</a></h3></div>
 <div class="problem_content" role="problem">
-<p>$2^7=128$ is the first power of two whose leading digits are "12".<br />
+<p>$2^7=128$ is the first power of two whose leading digits are "12".<br>
 The next power of two whose leading digits are "12" is $2^{80}$.</p>
 
-<p>Define $p(L, n)$ to be the $n$th-smallest value of $j$ such that the base 10 representation of $2^j$ begins with the digits of $L$.<br />
+<p>Define $p(L, n)$ to be the $n$th-smallest value of $j$ such that the base 10 representation of $2^j$ begins with the digits of $L$.<br>
 So $p(12, 1) = 7$ and $p(12, 2) = 80$.</p>
 
 <p>You are also given that $p(123, 45) = 12710$.</p>

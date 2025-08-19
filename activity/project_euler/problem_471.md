@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Triangle Inscribed in Ellipse</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th May 2014, 10:00 pm; Solved by 239;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=471">Problem 471</a></h3></div>
+<h2>Triangle Inscribed in Ellipse</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th May 2014, 10:00 pm; Solved by 250;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=471">Problem 471</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The triangle $\triangle ABC$ is inscribed in an ellipse with equation $\frac {x^2} {a^2} + \frac {y^2} {b^2} = 1$, $0 \lt 2b \lt a$, $a$ and $b$ integers.</p>
 <p>Let $r(a, b)$ be the radius of the incircle of $\triangle ABC$ when the incircle has center $(2b, 0)$ and $A$ has coordinates $\left( \frac a 2, \frac {\sqrt 3} 2 b\right)$.</p>

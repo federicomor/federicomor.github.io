@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Dynamical Polynomials</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th October 2022, 05:00 pm; Solved by 141;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=812">Problem 812</a></h3></div>
+<h2>Dynamical Polynomials</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th October 2022, 05:00 pm; Solved by 154;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=812">Problem 812</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <dfn>dynamical polynomial</dfn> is a <strong class="tooltip">monic<span class="tooltiptext">leading coefficient is $1$</span></strong> polynomial $f(x)$ with integer coefficients such that $f(x)$ divides $f(x^2-2)$.</p>
 

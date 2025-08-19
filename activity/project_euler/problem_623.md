@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Lambda Count</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th March 2018, 10:00 am; Solved by 358;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=623">Problem 623</a></h3></div>
+<h2>Lambda Count</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th March 2018, 10:00 am; Solved by 374;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=623">Problem 623</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The <strong>lambda-calculus</strong> is a universal model of computation at the core of functional programming languages. It is based on <strong>lambda-terms</strong>, a minimal programming language featuring only function definitions, function calls and variables. Lambda-terms are built according to the following rules:</p>
 <ul>
@@ -55,7 +55,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
 <p>The following table regroups the lambda-terms that can be written with at most $15$ symbols, symbols being parenthesis, $\lambda$, dot and variables.</p>
 
-\[\begin{array}{|c|c|c|c|}
+$$\begin{array}{|c|c|c|c|}
 \hline
 (\lambda x.x) &amp; (\lambda x.(x x)) &amp; (\lambda x.(\lambda y.x)) &amp; (\lambda x.(\lambda y.y)) \\
 \hline
@@ -67,7 +67,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 \hline
 (\lambda x.(x ((x x) x))) &amp; (\lambda x.((x x) (x x))) &amp; (\lambda x.((x (x x)) x)) &amp; (\lambda x.(((x x) x) x)) \\
 \hline
-\end{array}\]
+\end{array}$$
 
 <p>Let be $\Lambda(n)$ the number of distinct closed lambda-terms that can be written using at most $n$ symbols, where terms that are $\alpha$-equivalent to one another should be counted only once. You are given that $\Lambda(6) = 1$, $\Lambda(9) = 2$, $\Lambda(15) = 20$ and $\Lambda(35) = 3166438$.</p>
 <p>Find $\Lambda(2000)$. Give the answer modulo $1\,000\,000\,007$.</p>

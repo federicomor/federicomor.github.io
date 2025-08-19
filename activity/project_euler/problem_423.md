@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Consecutive Die Throws</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 14th April 2013, 10:00 am; Solved by 540;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=423">Problem 423</a></h3></div>
+<h2>Consecutive Die Throws</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 14th April 2013, 10:00 am; Solved by 561;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=423">Problem 423</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $n$ be a positive integer.<br>
 A 6-sided die is thrown $n$ times. Let $c$ be the number of pairs of consecutive throws that give the same value.</p>

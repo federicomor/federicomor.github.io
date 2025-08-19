@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>$2 \times 2$ Positive Integer Matrix</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 24th March 2013, 01:00 am; Solved by 495;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=420">Problem 420</a></h3></div>
+<h2>$2 \times 2$ Positive Integer Matrix</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 24th March 2013, 01:00 am; Solved by 509;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=420">Problem 420</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <dfn>positive integer matrix</dfn> is a matrix whose elements are all positive integers.<br>
 Some positive integer matrices can be expressed as a square of a positive integer matrix in two different ways. Here is an example:</p>

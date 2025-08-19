@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Mixtures</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th August 2014, 07:00 pm; Solved by 220;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=478">Problem 478</a></h3></div>
+<h2>Mixtures</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th August 2014, 07:00 pm; Solved by 232;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=478">Problem 478</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let us consider <b>mixtures</b> of three substances: <b>A</b>, <b>B</b> and <b>C</b>. A mixture can be described by a ratio of the amounts of <b>A</b>, <b>B</b>, and <b>C</b> in it, i.e., $(a : b : c)$. For example, a mixture described by the ratio $(2 : 3 : 5)$ contains $20\%$ <b>A</b>, $30\%$ <b>B</b> and $50\%$ <b>C</b>.</p>
 
@@ -56,12 +56,12 @@ $(10 \cdot \tfrac 3 5$ + $20 \cdot \tfrac 3 {20} + 30 \cdot \tfrac 3 {10} : 10 \
 <p>Let $n$ be a positive integer. Suppose that for every triple of integers $(a, b, c)$ with $0 \le a, b, c \le n$ and $\gcd(a, b, c) = 1$, we have a mixture with ratio $(a : b : c)$. Let $M(n)$ be the set of all such mixtures.</p>
 
 <p>For example, $M(2)$ contains the $19$ mixtures with the following ratios:</p>
-\begin{align}
+$$\begin{align}
 \{&amp;(0 : 0 : 1), (0 : 1 : 0), (0 : 1 : 1), (0 : 1 : 2), (0 : 2 : 1),\\
 &amp;(1 : 0 : 0), (1 : 0 : 1), (1 : 0 : 2), (1 : 1 : 0), (1 : 1 : 1),\\
 &amp;(1 : 1 : 2), (1 : 2 : 0), (1 : 2 : 1), (1 : 2 : 2), (2 : 0 : 1),\\
 &amp;(2 : 1 : 0), (2 : 1 : 1), (2 : 1 : 2), (2 : 2 : 1)\}.
-\end{align}
+\end{align}$$
 
 <p>Let $E(n)$ be the number of subsets of $M(n)$ which can produce the mixture with ratio $(1 : 1 : 1)$, i.e., the mixture with equal parts <b>A</b>, <b>B</b> and <b>C</b>.<br>
 We can verify that $E(1) = 103$, $E(2) = 520447$, $E(10) \bmod 11^8 = 82608406$ and $E(500) \bmod 11^8 = 13801403$.<br>

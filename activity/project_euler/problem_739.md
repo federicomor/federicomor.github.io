@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Summation of Summations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 20th December 2020, 10:00 am; Solved by 560;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=739">Problem 739</a></h3></div>
+<h2>Summation of Summations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 20th December 2020, 10:00 am; Solved by 585;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=739">Problem 739</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Take a sequence of length $n$. Discard the first term then make a sequence of the partial summations. Continue to do this over and over until we are left with a single term. We define this to be $f(n)$.
@@ -66,9 +66,9 @@ $
 Then the final number is $429$, so $f(8) = 429$.
 </p>
 <p>
-For this problem we start with the sequence $1,3,4,7,11,18,29,47,\ldots$<br />
-This is the Lucas sequence where two terms are added to get the next term.<br /> 
-Applying the same process as above we get $f(8) = 2663$.<br />
+For this problem we start with the sequence $1,3,4,7,11,18,29,47,\ldots$<br>
+This is the Lucas sequence where two terms are added to get the next term.<br> 
+Applying the same process as above we get $f(8) = 2663$.<br>
 You are also given $f(20) = 742296999 $ modulo $1\,000\,000\,007$
 </p>
 <p>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Palindrome-containing Strings</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th October 2014, 07:00 pm; Solved by 291;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=486">Problem 486</a></h3></div>
+<h2>Palindrome-containing Strings</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th October 2014, 07:00 pm; Solved by 303;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=486">Problem 486</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $F_5(n)$ be the number of strings $s$ such that:</p>
 <ul><li>$s$ consists only of '0's and '1's,

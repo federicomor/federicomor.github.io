@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Constraining the Least Greatest and the Greatest Least</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th September 2011, 07:00 pm; Solved by 531;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=350">Problem 350</a></h3></div>
+<h2>Constraining the Least Greatest and the Greatest Least</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 10th September 2011, 07:00 pm; Solved by 546;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=350">Problem 350</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <dfn>list of size $n$</dfn> is a sequence of $n$ natural numbers.<br> Examples are $(2,4,6)$, $(2,6,4)$, $(10,6,15,6)$, and $(11)$.
 </p><p>

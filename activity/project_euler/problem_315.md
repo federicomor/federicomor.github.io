@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Digital Root Clocks</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th December 2010, 10:00 am; Solved by 3692;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=315">Problem 315</a></h3></div>
+<h2>Digital Root Clocks</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th December 2010, 10:00 am; Solved by 3747;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=315">Problem 315</a></h3></div>
 <div class="problem_content" role="problem">
 <p></p><div align="center"><img src="https://projecteuler.net/resources/images/0315_clocks.gif?1678992056" alt="0315_clocks.gif"></div>
 

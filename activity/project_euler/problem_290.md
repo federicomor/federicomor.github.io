@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Digital Signature</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 30th April 2010, 05:00 pm; Solved by 1098;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=290">Problem 290</a></h3></div>
+<h2>Digital Signature</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 30th April 2010, 05:00 pm; Solved by 1121;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=290">Problem 290</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 How many integers $0 \le n \lt 10^{18}$ have the property that the sum of the digits of $n$ equals the sum of digits of $137n$?

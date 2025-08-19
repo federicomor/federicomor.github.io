@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Divisibility Multipliers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 15th January 2010, 01:00 pm; Solved by 1568;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=274">Problem 274</a></h3></div>
+<h2>Divisibility Multipliers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 15th January 2010, 01:00 pm; Solved by 1603;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=274">Problem 274</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For each integer $p \gt 1$ coprime to $10$ there is a positive <dfn>divisibility multiplier</dfn> $m \lt p$ which preserves divisibility by $p$ for the following function on any positive integer, $n$:</p>
 

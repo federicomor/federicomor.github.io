@@ -40,10 +40,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Stealthy Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th May 2021, 05:00 pm; Solved by 1362;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=757">Problem 757</a></h3></div>
+<h2>Stealthy Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th May 2021, 05:00 pm; Solved by 1413;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=757">Problem 757</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
-A positive integer $N$ is <dfn>stealthy</dfn>, if there exist positive integers $a$, $b$, $c$, $d$ such that $ab = cd = N$ and $a+b = c+d+1$.<br />
+A positive integer $N$ is <dfn>stealthy</dfn>, if there exist positive integers $a$, $b$, $c$, $d$ such that $ab = cd = N$ and $a+b = c+d+1$.<br>
 For example, $36 = 4\times 9 = 6\times 6$ is stealthy.
 </p>
 <p>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Square Subsets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th January 2018, 10:00 pm; Solved by 445;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=619">Problem 619</a></h3></div>
+<h2>Square Subsets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th January 2018, 10:00 pm; Solved by 467;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=619">Problem 619</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For a set of positive integers $\{a, a+1, a+2, \dots , b\}$, let $C(a,b)$ be the number of non-empty subsets in which the product of all elements is a perfect square.</p>
 <p>For example $C(5,10)=3$, since the products of all elements of $\{5, 8, 10\}$, $\{5, 8, 9, 10\}$ and $\{9\}$ are perfect squares, and no other subsets of $\{5, 6, 7, 8, 9, 10\}$ have this property.</p>

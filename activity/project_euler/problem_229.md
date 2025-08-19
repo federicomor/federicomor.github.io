@@ -40,26 +40,26 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Four Representations Using Squares</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 24th January 2009, 09:00 am; Solved by 1628;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=229">Problem 229</a></h3></div>
+<h2>Four Representations Using Squares</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 24th January 2009, 09:00 am; Solved by 1653;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=229">Problem 229</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the number $3600$. It is very special, because</p>
-\begin{alignat}{2}
+$$\begin{alignat}{2}
 3600 &amp;= 48^2 + &amp;&amp;36^2\\
 3600 &amp;= 20^2 + 2 \times &amp;&amp;40^2\\
 3600 &amp;= 30^2 + 3 \times &amp;&amp;30^2\\
 3600 &amp;= 45^2 + 7 \times &amp;&amp;15^2
-\end{alignat}
+\end{alignat}$$
 
 <p>Similarly, we find that $88201 = 99^2 + 280^2 = 287^2 + 2 \times 54^2 = 283^2 + 3 \times 52^2 = 197^2 + 7 \times 84^2$.</p>
 
 <p>In 1747, Euler proved which numbers are representable as a sum of two squares.
 We are interested in the numbers $n$ which admit representations of all of the following four types:</p>
-\begin{alignat}{2}
+$$\begin{alignat}{2}
 n &amp;= a_1^2 + &amp;&amp; b_1^2\\
 n &amp;= a_2^2 + 2 &amp;&amp; b_2^2\\
 n &amp;= a_3^2 + 3 &amp;&amp; b_3^2\\
 n &amp;= a_7^2 + 7 &amp;&amp; b_7^2,
-\end{alignat}
+\end{alignat}$$
 <p>where the $a_k$ and $b_k$ are positive integers.</p>
 
 <p>There are $75373$ such numbers that do not exceed $10^7$.<br>

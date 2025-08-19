@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Integral Fusion</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th February 2023, 07:00 pm; Solved by 220;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=829">Problem 829</a></h3></div>
+<h2>Integral Fusion</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th February 2023, 07:00 pm; Solved by 231;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=829">Problem 829</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Given any integer $n \gt 1$ a <dfn>binary factor tree</dfn> $T(n)$ is defined to be:</p>
 <ul>

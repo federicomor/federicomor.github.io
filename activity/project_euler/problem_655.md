@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Divisible Palindromes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 10th February 2019, 07:00 am; Solved by 610;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=655">Problem 655</a></h3></div>
+<h2>Divisible Palindromes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 10th February 2019, 07:00 am; Solved by 643;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=655">Problem 655</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The numbers $545$, $5\,995$ and $15\,151$ are the three smallest <b>palindromes</b> divisible by $109$. There are nine palindromes less than $100\,000$ which are divisible by $109$.</p>
 

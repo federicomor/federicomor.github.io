@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Reflexive Position</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 10th October 2010, 04:00 am; Solved by 688;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=305">Problem 305</a></h3></div>
+<h2>Reflexive Position</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 10th October 2010, 04:00 am; Solved by 713;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=305">Problem 305</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let's call $S$ the (infinite) string that is made by concatenating the consecutive positive integers (starting from $1$)  written down in base $10$.<br> 

@@ -40,18 +40,18 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Shifted Multiples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd July 2022, 08:00 pm; Solved by 193;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=805">Problem 805</a></h3></div>
+<h2>Shifted Multiples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd July 2022, 08:00 pm; Solved by 203;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=805">Problem 805</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
-For a positive integer $n$, let $s(n)$ be the integer obtained by shifting the leftmost digit of the decimal representation of $n$ to the rightmost position.<br />
+For a positive integer $n$, let $s(n)$ be the integer obtained by shifting the leftmost digit of the decimal representation of $n$ to the rightmost position.<br>
 For example, $s(142857)=428571$ and $s(10)=1$.</p>
 
 <p>
-For a positive rational number $r$, we define $N(r)$ as the smallest positive integer $n$ such that $s(n)=r\cdot n$.<br />
-If no such integer exists, then $N(r)$ is defined as zero.<br />
+For a positive rational number $r$, we define $N(r)$ as the smallest positive integer $n$ such that $s(n)=r\cdot n$.<br>
+If no such integer exists, then $N(r)$ is defined as zero.<br>
 For example, $N(3)=142857$, $N(\tfrac 1{10})=10$ and $N(2) = 0$.</p>
 <p>
-Let $T(M)$ be the sum of $N(u^3/v^3)$ where $(u,v)$ ranges over all ordered pairs of coprime positive integers not exceeding $M$.<br />
+Let $T(M)$ be the sum of $N(u^3/v^3)$ where $(u,v)$ ranges over all ordered pairs of coprime positive integers not exceeding $M$.<br>
 For example, $T(3)\equiv 262429173 \pmod {1\,000\,000\,007}$.</p>
 
 <p>

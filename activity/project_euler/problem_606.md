@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Gozinta Chains II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 4th June 2017, 10:00 am; Solved by 417;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=606">Problem 606</a></h3></div>
+<h2>Gozinta Chains II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 4th June 2017, 10:00 am; Solved by 429;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=606">Problem 606</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A <strong>gozinta chain</strong> for $n$ is a sequence $\{1,a,b,\dots,n\}$ where each element properly divides the next. <br>

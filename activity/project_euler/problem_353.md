@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Risky Moon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 9th October 2011, 04:00 am; Solved by 554;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=353">Problem 353</a></h3></div>
+<h2>Risky Moon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 9th October 2011, 04:00 am; Solved by 570;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=353">Problem 353</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A moon could be described by the sphere $C(r)$ with centre $(0,0,0)$ and radius $r$. 
@@ -56,9 +56,9 @@ All stations are connected with each other via the shortest road on the great ar
 
 <p>
 A direct journey from  the North Pole station to the South Pole station has the length $\pi r$ and risk $1$. The journey from the North Pole station to the South Pole station via $(0,r,0)$ has the same length, but a smaller risk:</p>
-\[
+$$
 \left(\frac{\frac{1}{2}\pi r}{\pi r}\right)^2+\left(\frac{\frac{1}{2}\pi r}{\pi r}\right)^2=0.5
-\]
+$$
 
 <p>
 The minimal risk of a journey from the North Pole station to the South Pole station on $C(r)$ is $M(r)$.

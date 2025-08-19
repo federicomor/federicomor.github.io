@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Average Least Common Multiple</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 24th November 2013, 01:00 am; Solved by 391;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=448">Problem 448</a></h3></div>
+<h2>Average Least Common Multiple</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 24th November 2013, 01:00 am; Solved by 404;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=448">Problem 448</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 The function $\operatorname{\mathbf{lcm} }(a,b)$ denotes the least common multiple of $a$ and $b$.<br>

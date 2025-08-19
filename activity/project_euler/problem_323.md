@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Bitwise-OR Operations on Random Integers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 6th February 2011, 07:00 am; Solved by 4272;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=323">Problem 323</a></h3></div>
+<h2>Bitwise-OR Operations on Random Integers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 6th February 2011, 07:00 am; Solved by 4338;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=323">Problem 323</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $y_0, y_1, y_2, \dots$ be a sequence of random unsigned $32$-bit integers<br>
 (i.e. $0 \le y_i \lt 2^{32}$, every value equally likely).</p>

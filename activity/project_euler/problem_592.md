@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Factorial Trailing Digits 2</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th February 2017, 04:00 pm; Solved by 321;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=592">Problem 592</a></h3></div>
+<h2>Factorial Trailing Digits 2</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th February 2017, 04:00 pm; Solved by 335;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=592">Problem 592</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For any $N$, let $f(N)$ be the last twelve hexadecimal digits before the trailing zeroes in $N!$.</p>
 

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Incomplete Words II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd February 2019, 01:00 pm; Solved by 265;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=658">Problem 658</a></h3></div>
+<h2>Incomplete Words II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd February 2019, 01:00 pm; Solved by 273;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=658">Problem 658</a></h3></div>
 <div class="problem_content" role="problem">
 <p>In the context of <strong>formal languages</strong>, any finite sequence of letters of a given <strong>alphabet</strong> $\Sigma$ is called a <strong>word</strong> over $\Sigma$. We call a word <dfn>incomplete</dfn> if it does not contain every letter of $\Sigma$.</p>
 <p>

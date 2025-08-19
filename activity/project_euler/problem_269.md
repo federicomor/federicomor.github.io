@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Polynomials with at Least One Integer Root</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th December 2009, 09:00 am; Solved by 790;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=269">Problem 269</a></h3></div>
+<h2>Polynomials with at Least One Integer Root</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th December 2009, 09:00 am; Solved by 811;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=269">Problem 269</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A root or zero of a polynomial $P(x)$ is a solution to the equation $P(x) = 0$. <br>
 Define $P_n$ as the polynomial whose coefficients are the digits of $n$.<br>

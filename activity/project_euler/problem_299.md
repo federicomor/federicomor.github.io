@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Three Similar Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 3rd July 2010, 01:00 am; Solved by 697;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=299">Problem 299</a></h3></div>
+<h2>Three Similar Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 3rd July 2010, 01:00 am; Solved by 712;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=299">Problem 299</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Four points with integer coordinates are selected:<br>$A(a, 0)$, $B(b, 0)$, $C(0, c)$ and $D(0, d)$, with $0 \lt a \lt b$ and $0 \lt c \lt d$.<br>
 Point $P$, also with integer coordinates, is chosen on the line $AC$ so that the three triangles $ABP$, $CDP$ and $BDP$ are all <dfn class="tooltip">similar<span class="tooltiptext">Have equal angles</span></dfn>.</p>

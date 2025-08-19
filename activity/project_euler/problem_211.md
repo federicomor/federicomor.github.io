@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Divisor Square Sum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th October 2008, 02:00 am; Solved by 4640;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=211">Problem 211</a></h3></div>
+<h2>Divisor Square Sum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th October 2008, 02:00 am; Solved by 4713;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=211">Problem 211</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For a positive integer $n$, let $\sigma_2(n)$ be the sum of the squares of its divisors. For example,
 $$\sigma_2(10) = 1 + 4 + 25 + 100 = 130.$$</p>

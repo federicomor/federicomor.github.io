@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Firecracker</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st January 2011, 04:00 pm; Solved by 2974;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=317">Problem 317</a></h3></div>
+<h2>Firecracker</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st January 2011, 04:00 pm; Solved by 3042;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=317">Problem 317</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A firecracker explodes at a height of $\pu{100 m}$ above level ground. It breaks into a large number of very small fragments, which move in every direction; all of them have the same initial velocity of $\pu{20 m/s}$.

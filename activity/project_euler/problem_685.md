@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Inverse Digit Sum II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th October 2019, 04:00 pm; Solved by 224;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=685">Problem 685</a></h3></div>
+<h2>Inverse Digit Sum II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th October 2019, 04:00 pm; Solved by 229;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=685">Problem 685</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Writing down the numbers which have a digit sum of 10 in ascending order, we get:
 $19, 28, 37, 46,55,64,73,82,91,109, 118,\dots$</p>

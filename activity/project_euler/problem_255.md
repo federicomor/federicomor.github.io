@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Rounded Square Roots</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 11th September 2009, 09:00 pm; Solved by 987;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=255">Problem 255</a></h3></div>
+<h2>Rounded Square Roots</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 11th September 2009, 09:00 pm; Solved by 1009;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=255">Problem 255</a></h3></div>
 <div class="problem_content" role="problem">
 <p>We define the <dfn>rounded-square-root</dfn> of a positive integer $n$ as the square root of $n$ rounded to the nearest integer.</p>
 

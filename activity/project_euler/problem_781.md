@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Feynman Diagrams</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th January 2022, 07:00 pm; Solved by 139;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=781">Problem 781</a></h3></div>
+<h2>Feynman Diagrams</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th January 2022, 07:00 pm; Solved by 149;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=781">Problem 781</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $F(n)$ be the number of connected graphs with blue edges (directed) and red edges (undirected) containing:</p>
 <ul>
@@ -49,7 +49,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </ul>
 <p>For example, $F(4)=5$ because there are 5 graphs with these properties:</p>
 <div style="text-align:center;">
-<img src="https://projecteuler.net/project/images/p781_feynman_diagrams.jpg" class="dark_img" alt="" height="320" />
+<img src="https://projecteuler.net/resources/images/0781_feynman_diagrams.jpg?1678992055" class="dark_img" alt="" height="320">
 </div>
 
 <p>You are also given $F(8)=319$.</p>

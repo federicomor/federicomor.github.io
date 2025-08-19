@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Robot Walks</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 12th September 2008, 02:00 pm; Solved by 1969;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=208">Problem 208</a></h3></div>
+<h2>Robot Walks</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 12th September 2008, 02:00 pm; Solved by 2005;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=208">Problem 208</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A robot moves in a series of one-fifth circular arcs ($72^\circ$), with a free choice of a clockwise or an anticlockwise arc for each step, but no turning on the spot.</p>
 

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Cyclic Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 12th November 2011, 07:00 pm; Solved by 1785;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=358">Problem 358</a></h3></div>
+<h2>Cyclic Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 12th November 2011, 07:00 pm; Solved by 1819;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=358">Problem 358</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <strong>cyclic number</strong> with $n$ digits has a very interesting property:<br>
 When it is multiplied by $1, 2, 3, 4, \dots, n$, all the products have exactly the same digits, in the same order, but rotated in a circular fashion!

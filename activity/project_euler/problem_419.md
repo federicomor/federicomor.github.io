@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Look and Say Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 16th March 2013, 10:00 pm; Solved by 543;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=419">Problem 419</a></h3></div>
+<h2>Look and Say Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 16th March 2013, 10:00 pm; Solved by 560;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=419">Problem 419</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 The <strong>look and say</strong> sequence goes 1, 11, 21, 1211, 111221, 312211, 13112221, 1113213211, ...<br>

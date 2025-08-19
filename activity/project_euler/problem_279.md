@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Triangles with Integral Sides and an Integral Angle </h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 20th February 2010, 09:00 am; Solved by 841;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=279">Problem 279</a></h3></div>
+<h2>Triangles with Integral Sides and an Integral Angle </h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 20th February 2010, 09:00 am; Solved by 863;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=279">Problem 279</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 How many triangles are there with integral sides, at least one integral angle (measured in degrees), and a perimeter that does not exceed $10^8$?

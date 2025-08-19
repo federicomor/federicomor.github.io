@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Silver Dollar Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th June 2011, 07:00 pm; Solved by 374;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=344">Problem 344</a></h3></div>
+<h2>Silver Dollar Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th June 2011, 07:00 pm; Solved by 385;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=344">Problem 344</a></h3></div>
 <div class="problem_content" role="problem">
 <p>One variant of N.G. de Bruijn's <strong>silver dollar</strong> game can be described as follows:</p>
 

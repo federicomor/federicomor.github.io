@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Shortest Distance Among Points</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th November 2022, 04:00 am; Solved by 2398;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=816">Problem 816</a></h3></div>
+<h2>Shortest Distance Among Points</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th November 2022, 04:00 am; Solved by 2555;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=816">Problem 816</a></h3></div>
 <div class="problem_content" role="problem">
 <p>We create an array of points  $P_n$ in a two dimensional plane using the following random number generator:<br>
 $s_0=290797$<br>

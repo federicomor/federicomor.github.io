@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Twenty-two Foolish Primes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 3rd April 2009, 05:00 pm; Solved by 2020;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=239">Problem 239</a></h3></div>
+<h2>Twenty-two Foolish Primes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 3rd April 2009, 05:00 pm; Solved by 2056;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=239">Problem 239</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A set of disks numbered $1$ through $100$ are placed in a line in random order.</p>
 

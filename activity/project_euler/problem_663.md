@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sums of Subarrays</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 31st March 2019, 04:00 am; Solved by 404;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=663">Problem 663</a></h3></div>
+<h2>Sums of Subarrays</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 31st March 2019, 04:00 am; Solved by 418;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=663">Problem 663</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $t_k$ be the <b>tribonacci numbers</b> defined as: <br>
 $\quad t_0 = t_1 = 0$;<br>

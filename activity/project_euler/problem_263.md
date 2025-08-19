@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>An Engineers' Dream Come True</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th November 2009, 01:00 am; Solved by 1179;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=263">Problem 263</a></h3></div>
+<h2>An Engineers' Dream Come True</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th November 2009, 01:00 am; Solved by 1203;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=263">Problem 263</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Consider the number $6$. The divisors of $6$ are: $1,2,3$ and $6$.<br>

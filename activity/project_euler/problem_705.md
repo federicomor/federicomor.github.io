@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Total Inversion Count of Divided Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 8th March 2020, 04:00 am; Solved by 491;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=705">Problem 705</a></h3></div>
+<h2>Total Inversion Count of Divided Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 8th March 2020, 04:00 am; Solved by 511;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=705">Problem 705</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 The <dfn>inversion count</dfn> of a sequence of digits is the smallest number of adjacent pairs that must be swapped to sort the sequence.<br>

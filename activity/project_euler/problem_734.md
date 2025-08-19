@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>A Bit of Prime</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th November 2020, 07:00 pm; Solved by 363;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=734">Problem 734</a></h3></div>
+<h2>A Bit of Prime</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th November 2020, 07:00 pm; Solved by 381;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=734">Problem 734</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 The <strong>logical-OR</strong> of two bits is $0$ if both bits are $0$, otherwise it is $1$.<br>

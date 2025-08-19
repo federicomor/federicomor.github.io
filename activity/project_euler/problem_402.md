@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Integer-valued Polynomials</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th November 2012, 07:00 pm; Solved by 467;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=402">Problem 402</a></h3></div>
+<h2>Integer-valued Polynomials</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th November 2012, 07:00 pm; Solved by 484;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=402">Problem 402</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 It can be shown that the polynomial $n^4 + 4n^3 + 2n^2 + 5n$ is a multiple of $6$ for every integer $n$. It can also be shown that $6$ is the largest integer satisfying this property.

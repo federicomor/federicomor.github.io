@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Approximating a Sum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st May 2021, 02:00 pm; Solved by 363;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=756">Problem 756</a></h3></div>
+<h2>Approximating a Sum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st May 2021, 02:00 pm; Solved by 381;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=756">Problem 756</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider a function $f(k)$ defined for all positive integers $k&gt;0$. Let $S$ be the sum of the first $n$ values of $f$. That is,
 $$S=f(1)+f(2)+f(3)+\cdots+f(n)=\sum_{k=1}^n f(k).$$</p>

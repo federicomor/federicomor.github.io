@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Perfect Right-angled Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd November 2008, 01:00 am; Solved by 3325;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=218">Problem 218</a></h3></div>
+<h2>Perfect Right-angled Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd November 2008, 01:00 am; Solved by 3359;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=218">Problem 218</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the right angled triangle with sides $a=7$, $b=24$ and $c=25$.
 The area of this triangle is $84$, which is divisible by the perfect numbers $6$ and $28$.<br>

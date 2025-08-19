@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Steps in Euclid's Algorithm</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd June 2013, 04:00 pm; Solved by 503;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=433">Problem 433</a></h3></div>
+<h2>Steps in Euclid's Algorithm</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd June 2013, 04:00 pm; Solved by 511;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=433">Problem 433</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $E(x_0, y_0)$ be the number of steps it takes to determine the greatest common divisor of $x_0$ and $y_0$ with <strong>Euclid's algorithm</strong>. More formally:<br>$x_1 = y_0$, $y_1 = x_0 \bmod y_0$<br>$x_n = y_{n-1}$, $y_n = x_{n-1} \bmod y_{n-1}$<br>

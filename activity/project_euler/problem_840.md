@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sum of Products</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 23rd April 2023, 02:00 am; Solved by 401;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=840">Problem 840</a></h3></div>
+<h2>Sum of Products</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 23rd April 2023, 02:00 am; Solved by 419;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=840">Problem 840</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <strong>partition</strong> of $n$ is a set of positive integers for which the sum equals $n$.<br>
 The partitions of 5 are:<br>

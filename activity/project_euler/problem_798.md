@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Card Stacking Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th May 2022, 11:00 pm; Solved by 138;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=798">Problem 798</a></h3></div>
+<h2>Card Stacking Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th May 2022, 11:00 pm; Solved by 143;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=798">Problem 798</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Two players play a game with a deck of cards which contains $s$ suits with each suit containing $n$ cards numbered from $1$ to $n$.</p>
@@ -49,14 +49,14 @@ Two players play a game with a deck of cards which contains $s$ suits with each 
 Before the game starts, a set of cards (which may be empty) is picked from the deck and placed face-up on the table, with no overlap. These are called the visible cards.</p>
 
 <p>
-The players then make moves in turn.<br />
+The players then make moves in turn.<br>
 A move consists of choosing a card X from the rest of the deck and placing it face-up on top of a visible card Y, subject to the following restrictions:</p>
 <ul>
 <li>X and Y must be the same suit;</li>
 <li>the value of X must be larger than the value of Y.</li>
 </ul>
 <p>
-The card X then covers the card Y and replaces Y as a visible card.<br />
+The card X then covers the card Y and replaces Y as a visible card.<br>
 The player unable to make a valid move loses and play stops.</p>
 
 <p>

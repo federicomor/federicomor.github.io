@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Chromatic Conundrum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd January 2016, 07:00 pm; Solved by 291;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=544">Problem 544</a></h3></div>
+<h2>Chromatic Conundrum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd January 2016, 07:00 pm; Solved by 301;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=544">Problem 544</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $F(r, c, n)$ be the number of ways to colour a rectangular grid with $r$ rows and $c$ columns using at most $n$ colours such that no two adjacent cells share the same colour. Cells that are diagonal to each other are not considered adjacent.</p>
 

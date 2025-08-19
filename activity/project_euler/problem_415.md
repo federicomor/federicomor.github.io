@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Titanic Sets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 17th February 2013, 10:00 am; Solved by 358;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=415">Problem 415</a></h3></div>
+<h2>Titanic Sets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 17th February 2013, 10:00 am; Solved by 379;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=415">Problem 415</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A set of lattice points $S$ is called a <dfn>titanic set</dfn> if there exists a line passing through exactly two points in $S$.</p>
 

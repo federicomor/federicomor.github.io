@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Distance of Random Points Within Hollow Square Laminae</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 14th February 2016, 04:00 am; Solved by 250;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=547">Problem 547</a></h3></div>
+<h2>Distance of Random Points Within Hollow Square Laminae</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 14th February 2016, 04:00 am; Solved by 255;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=547">Problem 547</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Assuming that two points are chosen randomly (with <strong>uniform distribution</strong>) within a rectangle, it is possible to determine the <strong>expected value</strong> of the distance between these two points.</p>
 

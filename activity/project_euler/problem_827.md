@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Pythagorean Triple Occurrence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 28th January 2023, 01:00 pm; Solved by 193;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=827">Problem 827</a></h3></div>
+<h2>Pythagorean Triple Occurrence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 28th January 2023, 01:00 pm; Solved by 202;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=827">Problem 827</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Define $Q(n)$ to be the smallest number that occurs in exactly $n$ <strong>Pythagorean triples</strong> $(a,b,c)$ where $a \lt b \lt c$.</p>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>$k$-Markov Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 20th May 2023, 02:00 pm; Solved by 219;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=844">Problem 844</a></h3></div>
+<h2>$k$-Markov Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 20th May 2023, 02:00 pm; Solved by 232;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=844">Problem 844</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider positive integer solutions to</p>
 <center>$a^2+b^2+c^2 = 3abc$</center>

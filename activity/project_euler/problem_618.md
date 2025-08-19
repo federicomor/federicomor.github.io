@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Numbers with a Given Prime Factor Sum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th January 2018, 07:00 pm; Solved by 1155;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=618">Problem 618</a></h3></div>
+<h2>Numbers with a Given Prime Factor Sum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th January 2018, 07:00 pm; Solved by 1193;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=618">Problem 618</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the numbers $15$, $16$ and $18$:<br>
 $15=3\times 5$ and $3+5=8$.<br>

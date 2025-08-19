@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>At Least Four Distinct Prime Factors Less Than 100</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 11th December 2009, 05:00 pm; Solved by 1628;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=268">Problem 268</a></h3></div>
+<h2>At Least Four Distinct Prime Factors Less Than 100</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 11th December 2009, 05:00 pm; Solved by 1664;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=268">Problem 268</a></h3></div>
 <div class="problem_content" role="problem">
 <p>It can be verified that there are $23$ positive integers less than $1000$ that are divisible by at least four distinct primes less than $100$.</p>
 

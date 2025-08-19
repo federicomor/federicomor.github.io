@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Unfair Wager</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th September 2013, 07:00 pm; Solved by 504;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=436">Problem 436</a></h3></div>
+<h2>Unfair Wager</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th September 2013, 07:00 pm; Solved by 518;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=436">Problem 436</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Julie proposes the following wager to her sister Louise.<br>
 She suggests they play a game of chance to determine who will wash the dishes.<br>

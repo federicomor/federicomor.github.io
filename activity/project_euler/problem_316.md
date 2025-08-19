@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Numbers in Decimal Expansions</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th December 2010, 01:00 pm; Solved by 745;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=316">Problem 316</a></h3></div>
+<h2>Numbers in Decimal Expansions</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 25th December 2010, 01:00 pm; Solved by 764;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=316">Problem 316</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $p = p_1 p_2 p_3 \cdots$ be an infinite sequence of random digits, selected from $\{0,1,2,3,4,5,6,7,8,9\}$ with equal probability.<br>
 It can be seen that $p$ corresponds to the real number $0.p_1 p_2 p_3 \cdots$ <br>

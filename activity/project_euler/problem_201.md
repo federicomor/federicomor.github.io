@@ -40,12 +40,12 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Subsets with a Unique Sum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th July 2008, 02:00 pm; Solved by 2638;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=201">Problem 201</a></h3></div>
+<h2>Subsets with a Unique Sum</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th July 2008, 02:00 pm; Solved by 2694;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=201">Problem 201</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For any set $A$ of numbers, let $\operatorname{sum}(A)$ be the sum of the elements of $A$.<br>
 Consider the set $B = \{1,3,6,8,10,11\}$.<br> There are $20$ subsets of $B$ containing three elements, and their sums are:</p>
 
-\begin{align}
+$$\begin{align}
 \operatorname{sum}(\{1,3,6\}) &amp;= 10,\\
 \operatorname{sum}(\{1,3,8\}) &amp;= 12,\\
 \operatorname{sum}(\{1,3,10\}) &amp;= 14,\\
@@ -66,7 +66,7 @@ Consider the set $B = \{1,3,6,8,10,11\}$.<br> There are $20$ subsets of $B$ cont
 \operatorname{sum}(\{6,8,11\}) &amp;= 25,\\
 \operatorname{sum}(\{6,10,11\}) &amp;= 27,\\
 \operatorname{sum}(\{8,10,11\}) &amp;= 29.
-\end{align}
+\end{align}$$
 
 <p>Some of these sums occur more than once, others are unique.<br>
 For a set $A$, let $U(A,k)$ be the set of unique sums of $k$-element subsets of $A$, in our example we find $U(B,3) = \{10,12,14,18,21,25,27,29\}$ and $\operatorname{sum}(U(B,3)) = 156$.</p>

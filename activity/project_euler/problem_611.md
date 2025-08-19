@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Hallway of Square Steps</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th October 2017, 10:00 pm; Solved by 361;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=611">Problem 611</a></h3></div>
+<h2>Hallway of Square Steps</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th October 2017, 10:00 pm; Solved by 375;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=611">Problem 611</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Peter moves in a hallway with $N + 1$ doors consecutively numbered from $0$ through $N$. All doors are initially closed. Peter starts in front of door $0$, and repeatedly performs the following steps:</p>
 <ul><li>First, he walks a positive square number of doors away from his position.</li>

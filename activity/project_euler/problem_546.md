@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>The Floor's Revenge</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th February 2016, 01:00 am; Solved by 269;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=546">Problem 546</a></h3></div>
+<h2>The Floor's Revenge</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th February 2016, 01:00 am; Solved by 275;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=546">Problem 546</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Define $f_k(n) = \sum_{i=0}^n f_k(\lfloor\frac i k \rfloor)$ where $f_k(0) = 1$ and $\lfloor x \rfloor$ denotes the floor function.</p>
 

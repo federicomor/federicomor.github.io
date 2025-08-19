@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Irregular Star Polygons</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th May 2023, 08:00 am; Solved by 135;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=842">Problem 842</a></h3></div>
+<h2>Irregular Star Polygons</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th May 2023, 08:00 am; Solved by 140;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=842">Problem 842</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Given $n$ equally spaced points on a circle, we define an <dfn>$n$-star polygon</dfn> as an $n$-gon having those $n$ points as vertices. Two $n$-star polygons differing by a rotation/reflection are considered <b>different</b>.</p>

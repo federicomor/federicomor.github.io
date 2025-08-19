@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>$(\text{prime}-k)$ Factorial</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 21st April 2012, 05:00 pm; Solved by 4770;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=381">Problem 381</a></h3></div>
+<h2>$(\text{prime}-k)$ Factorial</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 21st April 2012, 05:00 pm; Solved by 4826;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=381">Problem 381</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For a prime $p$ let $S(p) = (\sum (p-k)!) \bmod (p)$ for $1 \le k \le 5$.

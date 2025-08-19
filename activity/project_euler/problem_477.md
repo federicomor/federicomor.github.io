@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Number Sequence Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd August 2014, 04:00 pm; Solved by 287;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=477">Problem 477</a></h3></div>
+<h2>Number Sequence Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd August 2014, 04:00 pm; Solved by 293;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=477">Problem 477</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The number sequence game starts with a sequence $S$ of $N$ numbers written on a line.</p>
 <p>Two players alternate turns. The players on their respective turns must select and remove either the first or the last number remaining in the sequence.</p>

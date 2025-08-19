@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Counting Tuples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th December 2015, 10:00 pm; Solved by 709;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=537">Problem 537</a></h3></div>
+<h2>Counting Tuples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th December 2015, 10:00 pm; Solved by 737;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=537">Problem 537</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $\pi(x)$ be the prime counting function, i.e. the number of prime numbers less than or equal to $x$.<br>

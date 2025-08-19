@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Totient Stairstep Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th May 2011, 10:00 pm; Solved by 587;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=337">Problem 337</a></h3></div>
+<h2>Totient Stairstep Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 7th May 2011, 10:00 pm; Solved by 600;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=337">Problem 337</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $\{a_1, a_2, \dots, a_n\}$ be an integer sequence of length $n$ such that:</p>
 <ul><li>$a_1 = 6$</li>

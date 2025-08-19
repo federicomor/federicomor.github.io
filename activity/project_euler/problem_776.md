@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Digit Sum Division</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 12th December 2021, 04:00 am; Solved by 593;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=776">Problem 776</a></h3></div>
+<h2>Digit Sum Division</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 12th December 2021, 04:00 am; Solved by 615;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=776">Problem 776</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For a positive integer $n$, $d(n)$ is defined to be the sum of the digits of $n$. For example, $d(12345)=15$.

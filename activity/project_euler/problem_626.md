@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Counting Binary Matrices</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th May 2018, 07:00 pm; Solved by 253;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=626">Problem 626</a></h3></div>
+<h2>Counting Binary Matrices</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 5th May 2018, 07:00 pm; Solved by 264;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=626">Problem 626</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A binary matrix is a matrix consisting entirely of $0$s and $1$s. Consider the following transformations that can be performed on a binary matrix:</p>
 

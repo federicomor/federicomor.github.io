@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>What? Where? When?</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 24th January 2021, 01:00 am; Solved by 333;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=744">Problem 744</a></h3></div>
+<h2>What? Where? When?</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 24th January 2021, 01:00 am; Solved by 344;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=744">Problem 744</a></h3></div>
 <div class="problem_content" role="problem">
 <p>"What? Where? When?" is a TV game show in which a team of experts attempt to answer questions. The following is a simplified version of the game.</p>
 
@@ -50,9 +50,9 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
 <p>Assuming that the expert provides the correct answer with a fixed probability $p$, let $f(n,p)$ be the probability that the game ends normally (i.e. RED card never turns up).</p>
 
-<p>You are given (rounded to 10 decimal places) that<br />
-$f(6,\frac{1}{2})=0.2851562500$,<br />
-$f(10,\frac{3}{7})=0.2330040743$,<br />
+<p>You are given (rounded to 10 decimal places) that<br>
+$f(6,\frac{1}{2})=0.2851562500$,<br>
+$f(10,\frac{3}{7})=0.2330040743$,<br>
 $f(10^4,0.3)=0.2857499982$.
 </p>
 

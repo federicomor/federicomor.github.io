@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Words with Gaps</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 21st January 2024, 01:00 am; Solved by 329;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=873">Problem 873</a></h3></div>
+<h2>Words with Gaps</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 21st January 2024, 01:00 am; Solved by 355;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=873">Problem 873</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $W(p,q,r)$ be the number of words that can be formed using the letter A $p$ times, the letter B $q$ times and the letter C $r$ times with the condition that every A is separated from every B by at least two Cs. For example, CACACCBB is a valid word for $W(2,2,4)$ but ACBCACBC is not.</p>

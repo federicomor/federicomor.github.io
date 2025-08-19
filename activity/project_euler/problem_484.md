@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Arithmetic Derivative</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th October 2014, 01:00 pm; Solved by 442;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=484">Problem 484</a></h3></div>
+<h2>Arithmetic Derivative</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th October 2014, 01:00 pm; Solved by 470;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=484">Problem 484</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The <strong>arithmetic derivative</strong> is defined by</p>
 <ul><li>$p^\prime = 1$ for any prime $p$</li>

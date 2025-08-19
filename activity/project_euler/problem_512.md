@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sums of Totients of Powers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 18th April 2015, 10:00 pm; Solved by 1671;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=512">Problem 512</a></h3></div>
+<h2>Sums of Totients of Powers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 18th April 2015, 10:00 pm; Solved by 1706;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=512">Problem 512</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $\varphi(n)$ be Euler's totient function.</p><p>
 Let $f(n)=(\sum_{i=1}^{n}\varphi(n^i)) \bmod (n+1)$.</p><p>

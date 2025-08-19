@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Amidakuji</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st April 2023, 05:00 pm; Solved by 221;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=837">Problem 837</a></h3></div>
+<h2>Amidakuji</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 1st April 2023, 05:00 pm; Solved by 230;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=837">Problem 837</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 <a href="https://projecteuler.net/https://en.wikipedia.org/wiki/Amidakuji">Amidakuji</a> (Japanese: 阿弥陀籤) is a method for producing a random permutation of a set of objects.</p>

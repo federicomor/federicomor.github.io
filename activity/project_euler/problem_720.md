@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Unpredictable Permutations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th June 2020, 11:00 pm; Solved by 331;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=720">Problem 720</a></h3></div>
+<h2>Unpredictable Permutations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th June 2020, 11:00 pm; Solved by 348;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=720">Problem 720</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider all permutations of $\{1, 2, \ldots N\}$, listed in lexicographic order.<br>For example, for $N=4$, the list starts as follows:</p>
 <div>

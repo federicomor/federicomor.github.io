@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Billiard</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 20th February 2022, 10:00 am; Solved by 139;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=786">Problem 786</a></h3></div>
+<h2>Billiard</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 20th February 2022, 10:00 am; Solved by 142;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=786">Problem 786</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 The following diagram shows a billiard table of a special quadrilateral shape.
@@ -48,7 +48,7 @@ The four angles $A, B, C, D$ are $120^\circ, 90^\circ, 60^\circ, 90^\circ$ respe
 </p>
 
 <div style="text-align:center;">
-<img src="https://projecteuler.net/project/images/p786_billiard_shape.jpg" class="dark_img" alt="" height="160" />
+<img src="https://projecteuler.net/resources/images/0786_billiard_shape.jpg?1678992055" class="dark_img" alt="" height="160">
 </div>
 
 <p>
@@ -56,11 +56,11 @@ The diagram on the left shows the trace of an infinitesimally small billiard bal
 </p>
 
 <div style="text-align:center;">
-<img src="https://projecteuler.net/project/images/p786_billiard_traces.jpg" class="dark_img" alt="" height="160" />
+<img src="https://projecteuler.net/resources/images/0786_billiard_traces.jpg?1678992055" class="dark_img" alt="" height="160">
 </div>
 
 <p>
-The table has no friction and all bounces are perfect elastic collisions.<br />
+The table has no friction and all bounces are perfect elastic collisions.<br>
 Note that no bounce should happen on any of the corners, as the behaviour would be unpredictable.
 </p>
 

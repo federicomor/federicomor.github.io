@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Pizza Toppings</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 5th March 2010, 01:00 pm; Solved by 1110;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=281">Problem 281</a></h3></div>
+<h2>Pizza Toppings</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 5th March 2010, 01:00 pm; Solved by 1145;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=281">Problem 281</a></h3></div>
 <div class="problem_content" role="problem">
 <p>You are given a pizza (perfect circle) that has been cut into $m \cdot n$ equal pieces and you want to have exactly one topping on each slice.</p>
 

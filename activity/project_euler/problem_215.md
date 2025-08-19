@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Crack-free Walls</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 31st October 2008, 01:00 pm; Solved by 4037;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=215">Problem 215</a></h3></div>
+<h2>Crack-free Walls</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 31st October 2008, 01:00 pm; Solved by 4107;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=215">Problem 215</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the problem of building a wall out of $2 \times 1$ and $3 \times 1$ bricks ($\text{horizontal} \times \text{vertical}$ dimensions) such that, for extra strength, the gaps between horizontally-adjacent bricks never line up in consecutive layers, i.e. never form a "running crack".</p>
 

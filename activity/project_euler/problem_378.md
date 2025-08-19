@@ -40,17 +40,17 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Triangle Triples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 1st April 2012, 07:00 am; Solved by 982;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=378">Problem 378</a></h3></div>
+<h2>Triangle Triples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 1st April 2012, 07:00 am; Solved by 998;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=378">Problem 378</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $T(n)$ be the n<sup>th</sup> triangle number, so $T(n) = \dfrac{n(n + 1)}{2}$.</p>
 
-<p>Let $dT(n)$ be the number of divisors of $T(n)$.<br />
+<p>Let $dT(n)$ be the number of divisors of $T(n)$.<br>
 E.g.: $T(7) = 28$ and $dT(7) = 6$.</p>
 
-<p>Let $Tr(n)$ be the number of triples $(i, j, k)$ such that $1 \le i \lt j \lt k \le n$ and $dT(i) \gt dT(j) \gt dT(k)$.<br />
+<p>Let $Tr(n)$ be the number of triples $(i, j, k)$ such that $1 \le i \lt j \lt k \le n$ and $dT(i) \gt dT(j) \gt dT(k)$.<br>
 $Tr(20) = 14$, $Tr(100) = 5772$, and $Tr(1000) = 11174776$.</p>
 
-<p>Find $Tr(60 000 000)$. <br />
+<p>Find $Tr(60 000 000)$. <br>
 Give the last 18 digits of your answer.</p>
 
 </div><br>

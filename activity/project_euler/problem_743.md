@@ -40,13 +40,13 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Window into a Matrix</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 16th January 2021, 10:00 pm; Solved by 1321;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=743">Problem 743</a></h3></div>
+<h2>Window into a Matrix</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 16th January 2021, 10:00 pm; Solved by 1384;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=743">Problem 743</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A window into a matrix is a contiguous sub matrix.
 </p>
 <p>
-Consider a $2\times n$ matrix where every entry is either 0 or 1.<br />
+Consider a $2\times n$ matrix where every entry is either 0 or 1.<br>
 Let $A(k,n)$ be the total number of these matrices such that the sum of the entries in every $2\times k$ window is $k$.
 </p>
 <p>

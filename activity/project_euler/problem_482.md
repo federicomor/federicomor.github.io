@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>The Incenter of a Triangle</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 28th September 2014, 07:00 am; Solved by 248;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=482">Problem 482</a></h3></div>
+<h2>The Incenter of a Triangle</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 28th September 2014, 07:00 am; Solved by 258;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=482">Problem 482</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 $ABC$ is an integer sided triangle with incenter $I$ and perimeter $p$.<br>

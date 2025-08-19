@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Fractional Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 18th June 2011, 04:00 pm; Solved by 1552;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=343">Problem 343</a></h3></div>
+<h2>Fractional Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 18th June 2011, 04:00 pm; Solved by 1577;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=343">Problem 343</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For any positive integer $k$, a finite sequence $a_i$ of fractions $x_i/y_i$ is defined by:<br>
 $a_1 = 1/k$ and<br>

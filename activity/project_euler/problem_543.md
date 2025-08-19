@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Prime-Sum Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 16th January 2016, 04:00 pm; Solved by 766;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=543">Problem 543</a></h3></div>
+<h2>Prime-Sum Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 16th January 2016, 04:00 pm; Solved by 790;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=543">Problem 543</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Define function $P(n, k) = 1$ if $n$ can be written as the sum of $k$ prime numbers (with repetitions allowed), and $P(n, k) = 0$ otherwise.</p>
 

@@ -40,19 +40,19 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Bitwise Recursion</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 8th October 2022, 02:00 pm; Solved by 244;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=811">Problem 811</a></h3></div>
+<h2>Bitwise Recursion</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 8th October 2022, 02:00 pm; Solved by 257;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=811">Problem 811</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $b(n)$ be the largest power of 2 that divides $n$. For example $b(24) = 8$.</p>
 <p>
 Define the recursive function:
-\begin{align*}
+$$\begin{align*}
 \begin{split}
 A(0) &amp;= 1\\
 A(2n) &amp;= 3A(n) + 5A\big(2n - b(n)\big)  \qquad n \gt 0\\
 A(2n+1) &amp;= A(n)
 \end{split}
-\end{align*}
+\end{align*}$$
 and let $H(t,r) = A\big((2^t+1)^r\big)$.</p>
 <p>
 You are given $H(3,2) = A(81) = 636056$.</p>

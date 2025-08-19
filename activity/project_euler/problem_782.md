@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Distinct Rows and Columns</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd January 2022, 10:00 pm; Solved by 165;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=782">Problem 782</a></h3></div>
+<h2>Distinct Rows and Columns</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd January 2022, 10:00 pm; Solved by 173;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=782">Problem 782</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The <dfn>complexity</dfn> of an $n\times n$ binary matrix is the number of distinct rows and columns.</p>
 <p>

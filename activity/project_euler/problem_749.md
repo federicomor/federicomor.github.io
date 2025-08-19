@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Near Power Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th February 2021, 04:00 pm; Solved by 798;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=749">Problem 749</a></h3></div>
+<h2>Near Power Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th February 2021, 04:00 pm; Solved by 824;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=749">Problem 749</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A positive integer, $n$, is a <dfn>near power sum</dfn> if there exists a positive integer, $k$, such that the sum of the $k$th powers of the digits in its decimal representation is equal to either $n+1$ or $n-1$. For example $35$ is a near power sum number because $3^2+5^2 = 34$.

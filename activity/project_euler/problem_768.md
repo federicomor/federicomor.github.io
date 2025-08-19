@@ -40,9 +40,9 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Chandelier</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 17th October 2021, 05:00 am; Solved by 202;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=768">Problem 768</a></h3></div>
+<h2>Chandelier</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 17th October 2021, 05:00 am; Solved by 216;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=768">Problem 768</a></h3></div>
 <div class="problem_content" role="problem">
-<p>A certain type of chandelier contains a circular ring of $n$ evenly spaced candleholders.<br />
+<p>A certain type of chandelier contains a circular ring of $n$ evenly spaced candleholders.<br>
 If only one candle is fitted, then the chandelier will be imbalanced. However, if a second identical candle is placed in the opposite candleholder (assuming $n$ is even) then perfect balance will be achieved and the chandelier will hang level.</p>
 
 <p>Let $f(n,m)$ be the number of ways of arranging $m$ identical candles in distinct sockets of a chandelier with $n$ candleholders such that the chandelier is perfectly balanced.</p>

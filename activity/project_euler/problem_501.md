@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Eight Divisors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 31st January 2015, 01:00 pm; Solved by 1523;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=501">Problem 501</a></h3></div>
+<h2>Eight Divisors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 31st January 2015, 01:00 pm; Solved by 1568;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=501">Problem 501</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The eight divisors of $24$ are $1, 2, 3, 4, 6, 8, 12$ and $24$.
 The ten numbers not exceeding $100$ having exactly eight divisors are $24, 30, 40, 42, 54, 56, 66, 70, 78$ and $88$.

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Finite Sequence Generator</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th December 2019, 04:00 pm; Solved by 310;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=693">Problem 693</a></h3></div>
+<h2>Finite Sequence Generator</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th December 2019, 04:00 pm; Solved by 318;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=693">Problem 693</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Two positive integers $x$ and $y$ ($x &gt; y$) can generate a sequence in the following manner:</p>
 <ul>

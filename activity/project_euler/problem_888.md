@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>1249 Nim</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th April 2024, 08:00 pm; Solved by 189;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=888">Problem 888</a></h3></div>
+<h2>1249 Nim</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th April 2024, 08:00 pm; Solved by 204;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=888">Problem 888</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Two players play a game with a number of piles of stones, alternating turns. Each turn a player can choose to remove 1, 2, 4, or 9 stones from a single pile; or alternatively they can choose to split a pile containing two or more stones into two non-empty piles. The winner is the player who removes the last stone.</p>

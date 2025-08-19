@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Counting Products</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th May 2018, 10:00 pm; Solved by 260;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=627">Problem 627</a></h3></div>
+<h2>Counting Products</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th May 2018, 10:00 pm; Solved by 264;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=627">Problem 627</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the set $S$ of all possible products of $n$ positive integers not exceeding $m$, that is<br> 
 $S=\{ x_1x_2\cdots x_n \mid 1 \le x_1, x_2, \dots, x_n \le m \}$.<br>

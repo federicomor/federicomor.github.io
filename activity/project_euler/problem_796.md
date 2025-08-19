@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>A Grand Shuffle</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th April 2022, 05:00 pm; Solved by 219;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=796">Problem 796</a></h3></div>
+<h2>A Grand Shuffle</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th April 2022, 05:00 pm; Solved by 229;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=796">Problem 796</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A standard $52$ card deck comprises thirteen ranks in four suits. However, modern decks have two additional Jokers, which neither have a suit nor a rank, for a total of $54$ cards. If we shuffle such a deck and draw cards without replacement, then we would need, on average, approximately $29.05361725$ cards so that we have at least one card for each rank.</p>
 

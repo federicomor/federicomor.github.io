@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Smooth Divisors of Binomial Coefficients</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th April 2014, 01:00 pm; Solved by 311;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=468">Problem 468</a></h3></div>
+<h2>Smooth Divisors of Binomial Coefficients</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th April 2014, 01:00 pm; Solved by 325;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=468">Problem 468</a></h3></div>
 <div class="problem_content" role="problem">
 <p>An integer is called <strong><var>B</var>-smooth</strong> if none of its prime factors is greater than $B$.</p>
 

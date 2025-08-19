@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Irrational Jumps</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th October 2016, 04:00 pm; Solved by 255;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=576">Problem 576</a></h3></div>
+<h2>Irrational Jumps</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th October 2016, 04:00 pm; Solved by 259;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=576">Problem 576</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A bouncing point moves counterclockwise along a circle with circumference $1$ with jumps of constant length $l \lt 1$, until it hits a gap of length $g \lt 1$, that is placed in a distance $d$ counterclockwise from the starting point. The gap does not include the starting point, that is $g+d \lt 1$.</p>

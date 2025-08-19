@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Roots on the Rise</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th September 2014, 10:00 pm; Solved by 1444;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=479">Problem 479</a></h3></div>
+<h2>Roots on the Rise</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th September 2014, 10:00 pm; Solved by 1474;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=479">Problem 479</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $a_k$, $b_k$, and $c_k$ represent the three solutions (real or complex numbers) to the equation
 $\frac 1 x = (\frac k x)^2(k+x^2)-k x$.</p>

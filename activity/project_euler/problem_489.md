@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Common Factors Between Two Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 16th November 2014, 04:00 am; Solved by 281;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=489">Problem 489</a></h3></div>
+<h2>Common Factors Between Two Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 16th November 2014, 04:00 am; Solved by 291;<br>Difficulty rating: 100%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=489">Problem 489</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $G(a, b)$ be the smallest non-negative integer $n$ for which <strong class="tooltip">$\operatorname{\mathbf{gcd} }$<span class="tooltiptext">Greatest common divisor</span></strong>$(n^3 + b, (n + a)^3 + b)$ is maximized.<br>
 For example, $G(1, 1) = 5$ because $\gcd(n^3 + 1, (n + 1)^3 + 1)$ reaches its maximum value of $7$ for $n = 5$, and is smaller for $0 \le n \lt 5$.<br>

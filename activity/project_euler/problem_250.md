@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>$250250$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th June 2009, 05:00 am; Solved by 3326;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=250">Problem 250</a></h3></div>
+<h2>$250250$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th June 2009, 05:00 am; Solved by 3397;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=250">Problem 250</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Find the number of non-empty subsets of $\{1^1, 2^2, 3^3,\dots, 250250^{250250}\}$, the sum of whose elements is divisible by $250$. Enter the rightmost $16$ digits as your answer.</p>
 </div><br>

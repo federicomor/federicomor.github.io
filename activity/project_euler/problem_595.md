@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Incremental Random Sort</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th March 2017, 01:00 am; Solved by 697;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=595">Problem 595</a></h3></div>
+<h2>Incremental Random Sort</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th March 2017, 01:00 am; Solved by 717;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=595">Problem 595</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A deck of cards numbered from $1$ to $n$ is shuffled randomly such that each permutation is equally likely.

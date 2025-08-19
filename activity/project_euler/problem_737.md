@@ -40,22 +40,22 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Coin Loops</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 6th December 2020, 04:00 am; Solved by 405;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=737">Problem 737</a></h3></div>
+<h2>Coin Loops</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 6th December 2020, 04:00 am; Solved by 421;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=737">Problem 737</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A game is played with many identical, round coins on a flat table.
 </p>
 <p>
-Consider a line perpendicular to the table.<br />
-The first coin is placed on the table touching the line.<br />
-Then, one by one, the coins are placed horizontally on top of the previous coin and touching the line.<br />
+Consider a line perpendicular to the table.<br>
+The first coin is placed on the table touching the line.<br>
+Then, one by one, the coins are placed horizontally on top of the previous coin and touching the line.<br>
 The complete stack of coins must be balanced after every placement.
 </p>
 <p>
 The diagram below [not to scale] shows a possible placement of 8 coins where point $P$ represents the line.
 </p>
 <div style="text-align:center;">
-<img src="https://projecteuler.net/project/images/p737_coinloop.jpg" class="dark_img" alt="" /></div>
+<img src="https://projecteuler.net/resources/images/0737_coinloop.jpg?1678992055" class="dark_img" alt=""></div>
 <p>
 It is found that a minimum of $31$ coins are needed to form a <i>coin loop</i> around the line, i.e. if in the projection of the coins on the table the centre of the $n$th coin is rotated $\theta_n$, about the line, from the centre of the $(n-1)$th coin then the sum of $\displaystyle\sum_{k=2}^n \theta_k$ is first larger than $360^\circ$ when $n=31$. In general, to loop $k$ times, $n$ is the smallest number for which the sum is greater than $360^\circ k$.
 </p>

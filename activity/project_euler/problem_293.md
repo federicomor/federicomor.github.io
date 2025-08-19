@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Pseudo-Fortunate Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd May 2010, 05:00 am; Solved by 3264;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=293">Problem 293</a></h3></div>
+<h2>Pseudo-Fortunate Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd May 2010, 05:00 am; Solved by 3313;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=293">Problem 293</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 An even positive integer $N$ will be called admissible, if it is a power of $2$ or its distinct prime factors are consecutive primes.<br>

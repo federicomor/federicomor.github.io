@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Luxury Hampers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th March 2009, 09:00 am; Solved by 1054;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=236">Problem 236</a></h3></div>
+<h2>Luxury Hampers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 14th March 2009, 09:00 am; Solved by 1083;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=236">Problem 236</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Suppliers 'A' and 'B' provided the following numbers of products for the luxury hamper market:</p>
 
@@ -53,7 +53,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
 <p>There are thirty-five <var>m</var>&gt;1 for which this surprising result could have occurred, the smallest of which is 1476/1475.</p>
 
-<p>What's the largest possible value of <var>m</var>?<br />
+<p>What's the largest possible value of <var>m</var>?<br>
 Give your answer as a fraction reduced to its lowest terms, in the form <var>u</var>/<var>v</var>.</p>
 </div><br>
 <br>

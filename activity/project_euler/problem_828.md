@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Numbers Challenge</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th February 2023, 04:00 pm; Solved by 703;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=828">Problem 828</a></h3></div>
+<h2>Numbers Challenge</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th February 2023, 04:00 pm; Solved by 742;<br>Difficulty rating: 15%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=828">Problem 828</a></h3></div>
 <div class="problem_content" role="problem">
 <p>It is a common recreational problem to make a target number using a selection of other numbers. In this problem you will be given six numbers and a target number.</p>
 
@@ -58,7 +58,7 @@ $$211 = (25−2)\times (6+3) + 4$$
 <li>All intermediate values must be positive integers, so for example $(3\div 2)$ is never permitted as a subexpression (even if the final answer is an integer).</li>
 </ul>
 
-<p>The attached file <a href="https://projecteuler.net/project/resources/p828_number_challenges.txt">number-challenges.txt</a> contains 200 problems, one per line in the format:</p>
+<p>The attached file <a href="https://projecteuler.net/resources/documents/0828_number_challenges.txt">number-challenges.txt</a> contains 200 problems, one per line in the format:</p>
 <center><big><tt>211:2,3,4,6,7,25</tt></big></center>
 <p>where the number before the colon is the target and the remaining comma-separated numbers are those available to be used.</p>
 

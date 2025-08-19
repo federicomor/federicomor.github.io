@@ -40,10 +40,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sum of Squares II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 31st January 2021, 04:00 am; Solved by 1364;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=745">Problem 745</a></h3></div>
+<h2>Sum of Squares II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 31st January 2021, 04:00 am; Solved by 1430;<br>Difficulty rating: 10%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=745">Problem 745</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
-For a positive integer, $n$, define $g(n)$ to be the maximum perfect square that divides $n$.<br />
+For a positive integer, $n$, define $g(n)$ to be the maximum perfect square that divides $n$.<br>
 For example, $g(18) = 9$, $g(19) = 1$.
 </p>
 <p>

@@ -40,12 +40,13 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Jumping Flea</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th February 2020, 07:00 pm; Solved by 177;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=702">Problem 702</a></h3></div>
+<h2>Jumping Flea</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 15th February 2020, 07:00 pm; Solved by 181;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=702">Problem 702</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A regular hexagon table of side length $N$ is divided into equilateral triangles of side length $1$. The picture below is an illustration of the case $N = 3$.</p>
 
 <div class="center">
-<img src="https://projecteuler.net/project/images/p702_jumping_flea.png" alt="hexagonal table" /></div>
+<img src="https://projecteuler.net/resources/images/0702_jumping_flea.png?1678992054" alt="hexagonal table">
+</div>
 
 <p>An flea of negligible size is jumping on this table. The flea starts at the centre of the table. Thereafter, at each step, it chooses one of the six corners of the table, and jumps to the mid-point between its current position and the chosen corner.</p>
 

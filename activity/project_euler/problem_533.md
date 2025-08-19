@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Minimum Values of the Carmichael Function</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 8th November 2015, 10:00 am; Solved by 367;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=533">Problem 533</a></h3></div>
+<h2>Minimum Values of the Carmichael Function</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 8th November 2015, 10:00 am; Solved by 382;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=533">Problem 533</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The <strong>Carmichael function</strong> $\lambda(n)$ is defined as the smallest positive integer $m$ such that $a^m = 1$ modulo $n$ for all integers $a$ coprime with $n$.<br>
 For example $\lambda(8) = 2$ and $\lambda(240) = 4$.</p>

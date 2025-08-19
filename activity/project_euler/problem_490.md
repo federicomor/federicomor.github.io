@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Jumping Frog</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 23rd November 2014, 07:00 am; Solved by 352;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=490">Problem 490</a></h3></div>
+<h2>Jumping Frog</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 23rd November 2014, 07:00 am; Solved by 368;<br>Difficulty rating: 95%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=490">Problem 490</a></h3></div>
 <div class="problem_content" role="problem">
 <p>There are $n$ stones in a pond, numbered $1$ to $n$. Consecutive stones are spaced one unit apart.</p>
 

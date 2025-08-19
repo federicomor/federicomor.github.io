@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Sequence of Points on a Hyperbola</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th April 2013, 07:00 am; Solved by 312;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=422">Problem 422</a></h3></div>
+<h2>Sequence of Points on a Hyperbola</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th April 2013, 07:00 am; Solved by 323;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=422">Problem 422</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $H$ be the hyperbola defined by the equation $12x^2 + 7xy - 12y^2 = 625$.</p>
 

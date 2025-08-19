@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Maximal Coprime Subset</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 23rd October 2011, 10:00 am; Solved by 601;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=355">Problem 355</a></h3></div>
+<h2>Maximal Coprime Subset</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 23rd October 2011, 10:00 am; Solved by 620;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=355">Problem 355</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Define $\operatorname{Co}(n)$ to be the maximal possible sum of a set of mutually co-prime elements from $\{1,2,\dots,n\}$.<br> For example $\operatorname{Co}(10)$ is $30$ and hits that maximum on the subset $\{1,5,7,8,9\}$.

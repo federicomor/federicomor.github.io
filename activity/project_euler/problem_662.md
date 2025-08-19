@@ -40,17 +40,19 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Fibonacci Paths</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 24th March 2019, 01:00 am; Solved by 895;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=662">Problem 662</a></h3></div>
+<h2>Fibonacci Paths</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 24th March 2019, 01:00 am; Solved by 928;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=662">Problem 662</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Alice walks on a lattice grid. She can step from one lattice point $A (a,b)$ to another $B (a+x,b+y)$ providing distance $AB = \sqrt{x^2+y^2}$ is a Fibonacci number $\{1,2,3,5,8,13,\ldots\}$ and $x\ge 0,$  $y\ge 0$.
 </p>
 <p>
 
-In the lattice grid below Alice can step from the blue point to any of the red points.<br /></p>
-<p align="center"><img src="https://projecteuler.net/project/images/p662_fibonacciwalks.png" alt="p662_fibonacciwalks.png" /></p>
+In the lattice grid below Alice can step from the blue point to any of the red points.<br>
+
+</p>
+<p align="center"><img src="https://projecteuler.net/resources/images/0662_fibonacciwalks.png?1678992054" alt="0662_fibonacciwalks.png"></p>
 <p>
-Let $F(W,H)$ be the number of paths Alice can take from $(0,0)$ to $(W,H)$.<br />
+Let $F(W,H)$ be the number of paths Alice can take from $(0,0)$ to $(W,H)$.<br>
 You are given $F(3,4) = 278$ and $F(10,10) = 215846462$.
 </p>
 <p>

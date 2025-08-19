@@ -40,11 +40,11 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Special Partitions 2</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th November 2017, 07:00 am; Solved by 331;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=614">Problem 614</a></h3></div>
+<h2>Special Partitions 2</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th November 2017, 07:00 am; Solved by 339;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=614">Problem 614</a></h3></div>
 <div class="problem_content" role="problem">
 <p>An <strong>integer partition</strong> of a number $n$ is a way of writing $n$ as a sum of positive integers. Partitions that differ only by the order of their summands are considered the same.</p>
 
-<p>We call an integer partition <dfn>special</dfn> if 1) all its summands are distinct, and 2) all its even summands are also divisible by $4$.<br>For example, the special partitions of $10$ are: \[10 = 1+4+5=3+7=1+9\]
+<p>We call an integer partition <dfn>special</dfn> if 1) all its summands are distinct, and 2) all its even summands are also divisible by $4$.<br>For example, the special partitions of $10$ are: $$10 = 1+4+5=3+7=1+9$$
 The number $10$ admits many more integer partitions (a total of $42$), but only those three are special.</p>
 
 <p>Let be $P(n)$ the number of special integer partitions of $n$. You are given that $P(1) = 1$, $P(2) = 0$, $P(3) = 1$, $P(6) = 1$, $P(10)=3$, $P(100) = 37076$ and $P(1000)=3699177285485660336$.</p>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Licence Plates</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 12th February 2012, 10:00 am; Solved by 1819;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=371">Problem 371</a></h3></div>
+<h2>Licence Plates</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 12th February 2012, 10:00 am; Solved by 1863;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=371">Problem 371</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Oregon licence plates consist of three letters followed by a three digit number (each digit can be from [0..9]).<br>

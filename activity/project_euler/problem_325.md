@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Stone Game II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th February 2011, 01:00 pm; Solved by 686;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=325">Problem 325</a></h3></div>
+<h2>Stone Game II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th February 2011, 01:00 pm; Solved by 699;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=325">Problem 325</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A game is played with two piles of stones and two players.<br>
 On each player's turn, the player may remove a number of stones from the larger pile.<br>

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>High Powers of Irrational Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 21st June 2020, 02:00 am; Solved by 473;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=721">Problem 721</a></h3></div>
+<h2>High Powers of Irrational Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 21st June 2020, 02:00 am; Solved by 489;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=721">Problem 721</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Given is the function $f(a,n)=\lfloor (\lceil \sqrt a \rceil + \sqrt a)^n \rfloor$.<br>

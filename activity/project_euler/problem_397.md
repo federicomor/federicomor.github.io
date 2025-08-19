@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Triangle on Parabola</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th October 2012, 05:00 am; Solved by 301;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=397">Problem 397</a></h3></div>
+<h2>Triangle on Parabola</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 7th October 2012, 05:00 am; Solved by 307;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=397">Problem 397</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 On the parabola $y = x^2/k$, three points $A(a, a^2/k)$, $B(b, b^2/k)$ and $C(c, c^2/k)$ are chosen.

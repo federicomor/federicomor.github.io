@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Friend Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 22nd October 2017, 01:00 am; Solved by 759;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=612">Problem 612</a></h3></div>
+<h2>Friend Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 22nd October 2017, 01:00 am; Solved by 781;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=612">Problem 612</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let's call two numbers <dfn>friend numbers</dfn> if their representation in base $10$ has at least one common digit.<br> E.g. $1123$ and $3981$ are friend numbers. 

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Binomial Coefficients Divisible by 10</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 30th January 2011, 04:00 am; Solved by 523;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=322">Problem 322</a></h3></div>
+<h2>Binomial Coefficients Divisible by 10</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 30th January 2011, 04:00 am; Solved by 537;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=322">Problem 322</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $T(m, n)$ be the number of the binomial coefficients $^iC_n$ that are divisible by $10$ for $n \le i \lt m$ ($i$, $m$ and $n$ are positive integers).<br>

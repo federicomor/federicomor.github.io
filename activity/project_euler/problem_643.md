@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>$2$-Friendly</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th November 2018, 07:00 pm; Solved by 694;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=643">Problem 643</a></h3></div>
+<h2>$2$-Friendly</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th November 2018, 07:00 pm; Solved by 720;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=643">Problem 643</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Two positive integers $a$ and $b$ are <dfn>$2$-friendly</dfn> when $\gcd(a,b) = 2^t, t \gt 0$. For example, $24$ and $40$ are $2$-friendly because $\gcd(24,40) = 8 = 2^3$ while $24$ and $36$ are not because $\gcd(24,36) = 12 = 2^2\cdot 3$ not a power of $2$.</p>
 

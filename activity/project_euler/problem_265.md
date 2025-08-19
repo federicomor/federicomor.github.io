@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Binary Circles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 21st November 2009, 09:00 am; Solved by 4567;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=265">Problem 265</a></h3></div>
+<h2>Binary Circles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 21st November 2009, 09:00 am; Solved by 4623;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=265">Problem 265</a></h3></div>
 <div class="problem_content" role="problem">
 <p>$2^N$ binary digits can be placed in a circle so that all the $N$-digit clockwise subsequences are distinct.</p>
 
@@ -51,10 +51,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
 <p>Each circular arrangement can be encoded as a number by concatenating the binary digits starting with the subsequence of all zeros as the most significant bits and proceeding clockwise. The two arrangements for $N=3$ are thus represented as $23$ and $29$:
 </p>
-\begin{align}
+$$\begin{align}
 00010111_2 &amp;= 23\\
 00011101_2 &amp;= 29
-\end{align}
+\end{align}$$
 
 <p>Calling $S(N)$ the sum of the unique numeric representations, we can see that $S(3) = 23 + 29 = 52$.</p>
 

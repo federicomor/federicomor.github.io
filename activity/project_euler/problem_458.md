@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Permutations of Project</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 9th February 2014, 07:00 am; Solved by 1050;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=458">Problem 458</a></h3></div>
+<h2>Permutations of Project</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 9th February 2014, 07:00 am; Solved by 1070;<br>Difficulty rating: 30%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=458">Problem 458</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Consider the alphabet $A$ made out of the letters of the word "$\text{project}$": $A=\{\text c,\text e,\text j,\text o,\text p,\text r,\text t\}$.<br>

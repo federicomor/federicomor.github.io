@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Number of Lattice Points in a Hyperball</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 26th March 2017, 04:00 am; Solved by 404;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=596">Problem 596</a></h3></div>
+<h2>Number of Lattice Points in a Hyperball</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 26th March 2017, 04:00 am; Solved by 417;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=596">Problem 596</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $T(r)$ be the number of integer quadruplets $x, y, z, t$ such that $x^2 + y^2 + z^2 + t^2 \le r^2$. In other words, $T(r)$ is the number of lattice points in the four-dimensional hyperball of radius $r$.</p>
 

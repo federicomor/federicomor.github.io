@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Verifying Primes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 16th October 2016, 10:00 am; Solved by 293;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=574">Problem 574</a></h3></div>
+<h2>Verifying Primes</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 16th October 2016, 10:00 am; Solved by 302;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=574">Problem 574</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $q$ be a prime and $A \ge B &gt;0$ be two integers with the following properties:
 </p><ul><li> $A$ and $B$ have no prime factor in common, that is $\gcd(A,B)=1$.</li>

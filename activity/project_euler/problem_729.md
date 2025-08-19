@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Range of Periodic Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 11th October 2020, 05:00 am; Solved by 242;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=729">Problem 729</a></h3></div>
+<h2>Range of Periodic Sequence</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 11th October 2020, 05:00 am; Solved by 267;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=729">Problem 729</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the sequence of real numbers $a_n$ defined by the starting value $a_0$ and the recurrence
 $\displaystyle a_{n+1}=a_n-\frac 1 {a_n}$ for any $n  \ge 0$.</p>

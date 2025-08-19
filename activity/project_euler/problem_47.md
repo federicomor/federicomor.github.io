@@ -43,16 +43,19 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <h2>Distinct Primes Factors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 4th July 2003, 06:00 pm; Solved by 63743;<br>Difficulty rating: 5%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=47">Problem 47</a></h3></div>
 <div class="problem_content" role="problem">
 <p>The first two consecutive numbers to have two distinct prime factors are:</p>
+$$
 \begin{align}
-14 &amp;= 2 \times 7\\
-15 &amp;= 3 \times 5.
-\end{align}
+14 &= 2 \times 7\\
+15 &= 3 \times 5.
+\end{align}$$
 <p>The first three consecutive numbers to have three distinct prime factors are:</p>
+$$
 \begin{align}
-644 &amp;= 2^2 \times 7 \times 23\\
-645 &amp;= 3 \times 5 \times 43\\
-646 &amp;= 2 \times 17 \times 19.
+644 & = 2^2 \times 7 \times 23\\
+645 & = 3 \times 5 \times 43\\
+646 & = 2 \times 17 \times 19.
 \end{align}
+$$
 <p>Find the first four consecutive integers to have four distinct prime factors each. What is the first of these numbers?</p>
 
 </div><br>
@@ -61,4 +64,5 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 ~~~
 ## Soluzione
 
+\literate{/_literate/pe_47.jl}
 {{ addcomments }}

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Divisible Ranges</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd June 2024, 08:00 pm; Solved by 217;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=896">Problem 896</a></h3></div>
+<h2>Divisible Ranges</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 22nd June 2024, 08:00 pm; Solved by 225;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=896">Problem 896</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A contiguous range of positive integers is called a <dfn>divisible range</dfn> if all the integers in the range can be arranged in a row such that the $n$-th term is a multiple of $n$.<br>

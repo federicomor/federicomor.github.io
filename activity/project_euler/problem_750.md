@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Optimal Card Stacking</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th March 2021, 07:00 pm; Solved by 354;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=750">Problem 750</a></h3></div>
+<h2>Optimal Card Stacking</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th March 2021, 07:00 pm; Solved by 371;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=750">Problem 750</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Card Stacking is a game on a computer starting with an array of $N$ cards labelled $1,2,\ldots,N$.
@@ -48,7 +48,8 @@ A stack of cards can be moved by dragging horizontally with the mouse to another
 </p>
 
 <div style="text-align:center;">
-<img src="https://projecteuler.net/project/images/p750_optimal_card_stacking.png" class="dark_img" alt="" /></div>
+<img src="https://projecteuler.net/resources/images/0750_optimal_card_stacking.png?1678992054" class="dark_img" alt="">
+</div>
 
 <p>
 For the given arrangement of 6 cards the minimum total distance is $1 + 3 + 1 + 1 + 2 = 8$.
@@ -58,8 +59,8 @@ For the given arrangement of 6 cards the minimum total distance is $1 + 3 + 1 + 
 For $N$ cards, the cards are arranged so that the card at position $n$ is $3^n\bmod(N+1), 1\le n\le N$.
 </p>
 <p>
-We define $G(N)$ to be the minimal total drag distance to arrange these cards into a single sequence.<br />
-For example, when $N = 6$ we get the sequence $3,2,6,4,5,1$ and $G(6) = 8$.<br />
+We define $G(N)$ to be the minimal total drag distance to arrange these cards into a single sequence.<br>
+For example, when $N = 6$ we get the sequence $3,2,6,4,5,1$ and $G(6) = 8$.<br>
 You are given $G(16) = 47$.
 </p>
 

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Almost Right-angled Triangles II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 26th December 2008, 05:00 pm; Solved by 1405;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=224">Problem 224</a></h3></div>
+<h2>Almost Right-angled Triangles II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 26th December 2008, 05:00 pm; Solved by 1431;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=224">Problem 224</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let us call an integer sided triangle with sides $a \le b \le c$ <dfn>barely obtuse</dfn> if the sides satisfy <br>$a^2 + b^2 = c^2 - 1$.</p>
 

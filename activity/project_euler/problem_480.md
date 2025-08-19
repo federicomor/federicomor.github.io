@@ -40,11 +40,11 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>The Last Question</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 14th September 2014, 01:00 am; Solved by 643;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=480">Problem 480</a></h3></div>
+<h2>The Last Question</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 14th September 2014, 01:00 am; Solved by 669;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=480">Problem 480</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider all the words which can be formed by selecting letters, in any order, from the phrase:</p>
 <p></p><div class="center"><b>thereisasyetinsufficientdataforameaningfulanswer</b></div>
-<p>Suppose those with 15 letters or less are listed in <b>alphabetical order</b> and numbered sequentially starting at 1.<br />
+<p>Suppose those with 15 letters or less are listed in <b>alphabetical order</b> and numbered sequentially starting at 1.<br>
 The list would include:</p>
 <ul style="list-style-type:none;"><li>1 : a</li>
 <li>2 : aa</li>
@@ -72,14 +72,14 @@ The list would include:</p>
 <li>115246685191495243: euler</li>
 <li>115246685191495244: eulera</li>
 <li>...</li>
-<li>525069350231428029: ywuuttttssssrrr</li></ul><p>Define <var>P</var>(<var>w</var>) as the position of the word <var>w</var>.<br />
-Define <var>W</var>(<var>p</var>) as the word in position <var>p</var>.<br />
+<li>525069350231428029: ywuuttttssssrrr</li></ul><p>Define <var>P</var>(<var>w</var>) as the position of the word <var>w</var>.<br>
+Define <var>W</var>(<var>p</var>) as the word in position <var>p</var>.<br>
 We can see that <var>P</var>(<var>w</var>) and <var>W</var>(<var>p</var>) are inverses: <var>P</var>(<var>W</var>(<var>p</var>)) = <var>p</var> and <var>W</var>(<var>P</var>(<var>w</var>)) = <var>w</var>.</p>
 <p>Examples:</p>
 <ul style="list-style-type:none;"><li><var>W</var>(10) = aaaaaacdee</li>
 <li><var>P</var>(aaaaaacdee) = 10</li>
 <li><var>W</var>(115246685191495243) = euler</li>
-<li><var>P</var>(euler) = 115246685191495243</li></ul><p>Find <var>W</var>(<var>P</var>(legionary) + <var>P</var>(calorimeters) - <var>P</var>(annihilate) + <var>P</var>(orchestrated) - <var>P</var>(fluttering)).<br />
+<li><var>P</var>(euler) = 115246685191495243</li></ul><p>Find <var>W</var>(<var>P</var>(legionary) + <var>P</var>(calorimeters) - <var>P</var>(annihilate) + <var>P</var>(orchestrated) - <var>P</var>(fluttering)).<br>
 Give your answer using lowercase characters (no punctuation or space).</p>
 
 </div><br>

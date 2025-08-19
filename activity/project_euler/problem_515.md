@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Dissonant Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 10th May 2015, 07:00 am; Solved by 507;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=515">Problem 515</a></h3></div>
+<h2>Dissonant Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 10th May 2015, 07:00 am; Solved by 522;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=515">Problem 515</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $d(p, n, 0)$ be the multiplicative inverse of $n$ modulo prime $p$, defined as $n \times d(p, n, 0) = 1 \bmod p$.<br>
 Let $d(p, n, k) = \sum_{i = 1}^n d(p, i, k - 1)$ for $k \ge 1$.<br>

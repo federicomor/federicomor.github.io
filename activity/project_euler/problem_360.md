@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Scary Sphere</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 27th November 2011, 01:00 am; Solved by 651;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=360">Problem 360</a></h3></div>
+<h2>Scary Sphere</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 27th November 2011, 01:00 am; Solved by 660;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=360">Problem 360</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Given two points $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ in three dimensional space, the <strong>Manhattan distance</strong> between those points is defined as<br>$|x_1 - x_2| + |y_1 - y_2| + |z_1 - z_2|$.

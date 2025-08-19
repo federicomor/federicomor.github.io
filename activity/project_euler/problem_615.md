@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>The Millionth Number with at Least One Million Prime Factors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 3rd December 2017, 10:00 am; Solved by 652;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=615">Problem 615</a></h3></div>
+<h2>The Millionth Number with at Least One Million Prime Factors</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 3rd December 2017, 10:00 am; Solved by 672;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=615">Problem 615</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Consider the natural numbers having at least $5$ prime factors, which don't have to be distinct.<br> Sorting these numbers by size gives a list which starts with:

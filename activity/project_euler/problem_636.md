@@ -40,11 +40,11 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Restricted Factorisations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 8th September 2018, 10:00 pm; Solved by 217;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=636">Problem 636</a></h3></div>
+<h2>Restricted Factorisations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 8th September 2018, 10:00 pm; Solved by 225;<br>Difficulty rating: 90%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=636">Problem 636</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider writing a natural number as product of powers of natural numbers with given exponents, additionally requiring different base numbers for each power.</p>
 
-<p>For example, $256$ can be written as a product of a square and a fourth power in three ways such that the base numbers are different.<br />
+<p>For example, $256$ can be written as a product of a square and a fourth power in three ways such that the base numbers are different.<br>
 That is, $256=1^2\times 4^4=4^2\times 2^4=16^2\times 1^4$</p>
 
 <p>Though $4^2$ and $2^4$ are both equal, we are concerned only about the base numbers in this problem. Note that permutations are not considered distinct, for example $16^2\times 1^4$ and $1^4 \times 16^2$ are considered to be the same.</p>
@@ -53,7 +53,7 @@ That is, $256=1^2\times 4^4=4^2\times 2^4=16^2\times 1^4$</p>
 
 <p>Let $F(n)$ denote the number of ways in which $n$ can be written as a product of one natural number, two squares, three cubes and four fourth powers.</p>
 
-<p>You are given that $F(25!)=4933$, $F(100!) \bmod 1\,000\,000\,007=693\,952\,493$,<br />
+<p>You are given that $F(25!)=4933$, $F(100!) \bmod 1\,000\,000\,007=693\,952\,493$,<br>
 and $F(1\,000!) \bmod 1\,000\,000\,007=6\,364\,496$.</p>
 
 <p>Find $F(1\,000\,000!) \bmod 1\,000\,000\,007$.</p>

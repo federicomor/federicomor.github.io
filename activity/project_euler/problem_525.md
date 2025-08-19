@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Rolling Ellipse</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th September 2015, 10:00 am; Solved by 547;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=525">Problem 525</a></h3></div>
+<h2>Rolling Ellipse</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 13th September 2015, 10:00 am; Solved by 563;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=525">Problem 525</a></h3></div>
 <div class="problem_content" role="problem">
 <p>An ellipse $E(a, b)$ is given at its initial position by equation:<br>
 $\frac {x^2} {a^2} + \frac {(y - b)^2} {b^2} = 1$</p>

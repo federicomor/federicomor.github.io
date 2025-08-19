@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Modular Cubes, Part 2</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd January 2010, 05:00 am; Solved by 1104;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=272">Problem 272</a></h3></div>
+<h2>Modular Cubes, Part 2</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 2nd January 2010, 05:00 am; Solved by 1134;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=272">Problem 272</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 For a positive number $n$, define $C(n)$ as the number of the integers $x$, for which $1 \lt x \lt n$ and<br>$x^3 \equiv 1 \bmod n$.

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Balanced Sculptures</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 22nd January 2010, 05:00 pm; Solved by 684;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=275">Problem 275</a></h3></div>
+<h2>Balanced Sculptures</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Friday, 22nd January 2010, 05:00 pm; Solved by 705;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=275">Problem 275</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let us define a <dfn>balanced sculpture</dfn> of order $n$ as follows:
 </p><ul><li>A <strong class="tooltip">polyomino<span class="tooltiptext">An arrangement of identical squares connected through shared edges; holes are allowed.</span></strong> made up of $n + 1$ tiles known as the <dfn>blocks</dfn> ($n$ tiles)<br> and the <dfn>plinth</dfn> (remaining tile);</li>

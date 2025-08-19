@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Fibonacci Tree Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th October 2012, 02:00 pm; Solved by 531;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=400">Problem 400</a></h3></div>
+<h2>Fibonacci Tree Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th October 2012, 02:00 pm; Solved by 550;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=400">Problem 400</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A <b>Fibonacci tree</b> is a binary tree recursively defined as:</p><ul><li>$T(0)$ is the empty tree.

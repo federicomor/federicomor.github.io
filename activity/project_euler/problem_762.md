@@ -40,14 +40,16 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Amoebas in a 2D Grid</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th September 2021, 02:00 pm; Solved by 230;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=762">Problem 762</a></h3></div>
+<h2>Amoebas in a 2D Grid</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 4th September 2021, 02:00 pm; Solved by 244;<br>Difficulty rating: 50%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=762">Problem 762</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider a two dimensional grid of squares. The grid has 4 rows but infinitely many columns.</p>
 <p>An amoeba in square $(x, y)$ can divide itself into two amoebas to occupy the squares $(x+1,y)$ and $(x+1,(y+1) \bmod 4)$, provided these squares are empty.</p>
 
 <p>The following diagrams show two cases of an amoeba placed in square <b>A</b> of each grid. When it divides, it is replaced with two amoebas, one at each of the squares marked with <b>B</b>:</p>
 <div style="text-align:center;">
-<img src="https://projecteuler.net/project/images/p762_table_a.png" class="dark_img" alt="" /><img src="https://projecteuler.net/project/images/p762_table_b.png" class="dark_img" alt="" /></div>
+<img src="https://projecteuler.net/resources/images/0762_table_a.png?1678992054" class="dark_img" alt="">
+<img src="https://projecteuler.net/resources/images/0762_table_b.png?1678992054" class="dark_img" alt="">
+</div>
 
 <p>Originally there is only one amoeba in the square $(0, 0)$. After $N$ divisions there will be $N+1$ amoebas arranged in the grid. An arrangement may be reached in several different ways but it is only counted once. Let $C(N)$ be the number of different possible arrangements after $N$ divisions.</p>
 

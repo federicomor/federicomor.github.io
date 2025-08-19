@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Distinct Values of a Proto-logarithmic Function</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th January 2019, 10:00 pm; Solved by 183;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=652">Problem 652</a></h3></div>
+<h2>Distinct Values of a Proto-logarithmic Function</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th January 2019, 10:00 pm; Solved by 188;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=652">Problem 652</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the values of $\log_2(8)$, $\log_4(64)$ and $\log_3(27)$. All three are equal to $3$.</p>
 

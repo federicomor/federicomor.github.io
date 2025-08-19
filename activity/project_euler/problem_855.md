@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Delphi Paper</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 16th September 2023, 08:00 pm; Solved by 145;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=855">Problem 855</a></h3></div>
+<h2>Delphi Paper</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 16th September 2023, 08:00 pm; Solved by 153;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=855">Problem 855</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Given two positive integers $a,b$, Alex and Bianca play a game in $ab$ rounds. They begin with a square piece of paper of side length $1$.</p>
 

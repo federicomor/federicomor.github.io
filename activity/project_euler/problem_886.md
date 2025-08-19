@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Coprime Permutations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th April 2024, 02:00 pm; Solved by 269;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=886">Problem 886</a></h3></div>
+<h2>Coprime Permutations</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 13th April 2024, 02:00 pm; Solved by 284;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=886">Problem 886</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A permutation of $\{2,3,\ldots,n\}$ is a rearrangement of these numbers. A <i>coprime permutation</i> is a rearrangement such that all pairs of adjacent numbers are coprime.</p>
 

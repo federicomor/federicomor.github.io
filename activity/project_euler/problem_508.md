@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Integers in Base $i-1$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 22nd March 2015, 10:00 am; Solved by 261;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=508">Problem 508</a></h3></div>
+<h2>Integers in Base $i-1$</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 22nd March 2015, 10:00 am; Solved by 271;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=508">Problem 508</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider the Gaussian integer $i-1$. A <strong>base $i-1$ representation</strong> of a Gaussian integer $a+bi$ is a finite sequence of digits $d_{n - 1}d_{n - 2}\cdots d_1 d_0$ such that:</p>
 

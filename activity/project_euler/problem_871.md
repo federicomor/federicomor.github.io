@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Drifting Subsets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th January 2024, 07:00 pm; Solved by 348;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=871">Problem 871</a></h3></div>
+<h2>Drifting Subsets</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th January 2024, 07:00 pm; Solved by 370;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=871">Problem 871</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $f$ be a function from a finite set $S$ to itself. A <dfn>drifting subset</dfn> for $f$ is a subset $A$ of $S$ such that the number of elements in the union $A \cup f(A)$ is equal to twice the number of elements of $A$.<br>

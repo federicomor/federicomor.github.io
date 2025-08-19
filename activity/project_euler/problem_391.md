@@ -40,18 +40,18 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Hopping Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th June 2012, 11:00 pm; Solved by 310;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=391">Problem 391</a></h3></div>
+<h2>Hopping Game</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th June 2012, 11:00 pm; Solved by 318;<br>Difficulty rating: 75%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=391">Problem 391</a></h3></div>
 <div class="problem_content" role="problem">
-<p>Let $s_k$ be the number of 1’s when writing the numbers from 0 to $k$ in binary.<br />
-For example, writing 0 to 5 in binary, we have $0, 1, 10, 11, 100, 101$. There are seven 1’s, so $s_5 = 7$.<br />
+<p>Let $s_k$ be the number of 1’s when writing the numbers from 0 to $k$ in binary.<br>
+For example, writing 0 to 5 in binary, we have $0, 1, 10, 11, 100, 101$. There are seven 1’s, so $s_5 = 7$.<br>
 The sequence $S = \{s_k : k \ge 0\}$ starts $\{0, 1, 2, 4, 5, 7, 9, 12, ...\}$.</p>
 
 <p>A game is played by two players. Before the game starts, a number $n$ is chosen. A counter $c$ starts at 0. At each turn, the player chooses a number from 1 to $n$ (inclusive) and increases $c$ by that number. The resulting value of $c$ must be a member of $S$. If there are no more valid moves, then the player loses.</p>
 
 <p>For example, with $n = 5$ and starting with $c = 0$:</p>
-<p>Player 1 chooses 4, so $c$ becomes $0 + 4 = 4$.<br />
-Player 2 chooses 5, so $c$ becomes $4 + 5 = 9$.<br />
-Player 1 chooses 3, so $c$ becomes $9 + 3 = 12$.<br />
+<p>Player 1 chooses 4, so $c$ becomes $0 + 4 = 4$.<br>
+Player 2 chooses 5, so $c$ becomes $4 + 5 = 9$.<br>
+Player 1 chooses 3, so $c$ becomes $9 + 3 = 12$.<br>
 etc.</p>
 <p>Note that $c$ must always belong to $S$, and each player can increase $c$ by at most $n$.</p>
 

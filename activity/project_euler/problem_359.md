@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Hilbert's New Hotel</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th November 2011, 10:00 pm; Solved by 1694;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=359">Problem 359</a></h3></div>
+<h2>Hilbert's New Hotel</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th November 2011, 10:00 pm; Solved by 1711;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=359">Problem 359</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 An infinite number of people (numbered $1$, $2$, $3$, etc.) are lined up to get a room at Hilbert's newest infinite hotel. The hotel contains an infinite number of floors (numbered $1$, $2$, $3$, etc.), and each floor contains an infinite number of rooms (numbered $1$, $2$, $3$, etc.). 

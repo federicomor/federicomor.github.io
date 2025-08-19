@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Geometric Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 5th February 2012, 07:00 am; Solved by 592;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=370">Problem 370</a></h3></div>
+<h2>Geometric Triangles</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 5th February 2012, 07:00 am; Solved by 605;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=370">Problem 370</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let us define a <dfn>geometric triangle</dfn> as an integer sided triangle with sides $a \le b \le c$ so that its sides form a <strong>geometric progression</strong>, i.e. $b^2 = a \cdot c$</p> 
 

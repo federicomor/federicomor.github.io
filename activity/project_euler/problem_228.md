@@ -40,15 +40,15 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Minkowski Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th January 2009, 05:00 am; Solved by 1494;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=228">Problem 228</a></h3></div>
+<h2>Minkowski Sums</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th January 2009, 05:00 am; Solved by 1520;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=228">Problem 228</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $S_n$ be the regular $n$-sided polygon – or <dfn>shape</dfn> – whose vertices 
 
 $v_k$ ($k = 1, 2, \dots, n$) have coordinates:</p>
-\begin{align}
+$$\begin{align}
 x_k &amp;= \cos((2k - 1)/n \times 180^\circ)\\
 y_k &amp;= \sin((2k - 1)/n \times 180^\circ)
-\end{align}
+\end{align}$$
 
 <p>Each $S_n$ is to be interpreted as a filled shape consisting of all points on the perimeter and in the interior.</p>
 

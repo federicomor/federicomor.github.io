@@ -40,15 +40,15 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Frictionless Tube</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 27th January 2019, 01:00 am; Solved by 347;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=653">Problem 653</a></h3></div>
+<h2>Frictionless Tube</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 27th January 2019, 01:00 am; Solved by 358;<br>Difficulty rating: 45%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=653">Problem 653</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Consider a horizontal frictionless tube with length $L$ millimetres, and a diameter of 20 millimetres. The east end of the tube is open, while the west end is sealed. The tube contains $N$ marbles of diameter 20 millimetres at designated starting locations, each one initially moving either westward or eastward with common speed $v$.</p>
 
 <p>Since there are marbles moving in opposite directions, there are bound to be some collisions. We assume that the collisions are perfectly elastic, so both marbles involved instantly change direction and continue with speed $v$ away from the collision site. Similarly, if the west-most marble collides with the sealed end of the tube, it instantly changes direction and continues eastward at speed $v$. On the other hand, once a marble reaches the unsealed east end, it exits the tube and has no further interaction with the remaining marbles.</p>
 
-<p>To obtain the starting positions and initial directions, we use the pseudo-random sequence $r_j$ defined by:<br />
-$r_1 = 6\,563\,116$<br />
-$r_{j+1} = r_j^2 \bmod 32\,745\,673$<br />
+<p>To obtain the starting positions and initial directions, we use the pseudo-random sequence $r_j$ defined by:<br>
+$r_1 = 6\,563\,116$<br>
+$r_{j+1} = r_j^2 \bmod 32\,745\,673$<br>
 The west-most marble is initially positioned with a gap of $(r_1 \bmod 1000) + 1$ millimetres between it and the sealed end of the tube, measured from the west-most point of the surface of the marble. Then, for $2\le j\le N$, counting from the west, the gap between the $(j-1)$th and $j$th marbles, as measured from their closest points, is given by $(r_j \bmod 1000) + 1$ millimetres.
 Furthermore, the $j$th marble is initially moving eastward if $r_j \le 10\,000\,000$, and westward if $r_j &gt; 10\,000\,000$.</p>
 

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>A Huge Binomial Coefficient</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 31st December 2011, 04:00 pm; Solved by 1436;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=365">Problem 365</a></h3></div>
+<h2>A Huge Binomial Coefficient</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 31st December 2011, 04:00 pm; Solved by 1460;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=365">Problem 365</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 The binomial coefficient $\displaystyle{\binom{10^{18} }{10^9} }$ is a number with more than $9$ billion ($9\times 10^9$) digits.

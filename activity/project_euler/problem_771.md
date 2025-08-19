@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Pseudo Geometric Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th November 2021, 01:00 pm; Solved by 135;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=771">Problem 771</a></h3></div>
+<h2>Pseudo Geometric Sequences</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 6th November 2021, 01:00 pm; Solved by 142;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=771">Problem 771</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 We define a <dfn>pseudo-geometric sequence</dfn> to be a finite sequence $a_0, a_1, \dotsc, a_n$ of positive integers, satisfying the following conditions:

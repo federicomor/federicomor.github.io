@@ -40,11 +40,11 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Summing a Multiplicative Function</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 21st October 2018, 07:00 am; Solved by 304;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=639">Problem 639</a></h3></div>
+<h2>Summing a Multiplicative Function</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 21st October 2018, 07:00 am; Solved by 322;<br>Difficulty rating: 70%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=639">Problem 639</a></h3></div>
 <div class="problem_content" role="problem">
 <p>A <b>multiplicative function</b> $f(x)$ is a function over positive integers satisfying $f(1)=1$ and $f(a b)=f(a) f(b)$ for any two coprime positive integers $a$ and $b$.</p>
 
-<p>For integer $k$ let $f_k(n)$ be a multiplicative function additionally satisfying $f_k(p^e)=p^k$ for any prime $p$ and any integer $e&gt;0$.<br /> 
+<p>For integer $k$ let $f_k(n)$ be a multiplicative function additionally satisfying $f_k(p^e)=p^k$ for any prime $p$ and any integer $e&gt;0$.<br> 
 For example, $f_1(2)=2$, $f_1(4)=2$, $f_1(18)=6$ and $f_2(18)=36$.</p>
 
 <p>Let $\displaystyle S_k(n)=\sum_{i=1}^{n} f_k(i)$.

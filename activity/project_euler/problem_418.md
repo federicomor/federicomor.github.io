@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Factorisation Triples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 9th March 2013, 07:00 pm; Solved by 758;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=418">Problem 418</a></h3></div>
+<h2>Factorisation Triples</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 9th March 2013, 07:00 pm; Solved by 783;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=418">Problem 418</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $n$ be a positive integer. An integer triple $(a, b, c)$ is called a <dfn>factorisation triple</dfn> of $n$ if:</p><ul><li>$1 \leq a \leq b \leq c$</li><li>$a \cdot b \cdot c = n$.

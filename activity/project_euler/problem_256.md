@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Tatami-Free Rooms</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th September 2009, 01:00 am; Solved by 830;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=256">Problem 256</a></h3></div>
+<h2>Tatami-Free Rooms</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th September 2009, 01:00 am; Solved by 847;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=256">Problem 256</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Tatami are rectangular mats, used to completely cover the floor of a room, without overlap.</p>
 

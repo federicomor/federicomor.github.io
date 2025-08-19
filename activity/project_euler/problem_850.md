@@ -40,20 +40,20 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Fractions of Powers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 2nd July 2023, 08:00 am; Solved by 134;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=850">Problem 850</a></h3></div>
+<h2>Fractions of Powers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 2nd July 2023, 08:00 am; Solved by 140;<br>Difficulty rating: 85%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=850">Problem 850</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Any positive real number $x$ can be decomposed into integer and fractional parts $\lfloor x \rfloor + \{x\}$, where $\lfloor x \rfloor$ (the floor function) is an integer, and $0\le \{x\} &lt; 1$.</p>
 
 <p>For positive integers $k$ and $n$, define the function
-\begin{align}
+$$\begin{align}
 f_k(n) = \sum_{i=1}^{n}\left\{ \frac{i^k}{n} \right\}
-\end{align}
+\end{align}$$
 For example, $f_5(10)=4.5$ and $f_7(1234)=616.5$.</p>
 
 <p>Let
-\begin{align}
+$$\begin{align}
 S(N) = \sum_{\substack{k=1 \\ k\text{ odd} } }^{N} \sum_{n=1}^{N}  f_k(n)
-\end{align}
+\end{align}$$
 You are given that $S(10)=100.5$ and $S(10^3)=123687804$.</p>
 
 <p>Find $\lfloor S(33557799775533) \rfloor$. Give your answer modulo 977676779.</p>

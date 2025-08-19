@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Add and Divide</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th March 2023, 10:00 am; Solved by 440;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=834">Problem 834</a></h3></div>
+<h2>Add and Divide</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 19th March 2023, 10:00 am; Solved by 461;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=834">Problem 834</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 A sequence is created by starting with a positive integer $n$ and incrementing by $(n+m)$ at the $m^{th}$ step. 

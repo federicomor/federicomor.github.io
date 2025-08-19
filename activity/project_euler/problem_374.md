@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Maximum Integer Partition Product</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 3rd March 2012, 07:00 pm; Solved by 757;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=374">Problem 374</a></h3></div>
+<h2>Maximum Integer Partition Product</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 3rd March 2012, 07:00 pm; Solved by 769;<br>Difficulty rating: 40%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=374">Problem 374</a></h3></div>
 <div class="problem_content" role="problem">
 <p>An integer partition of a number $n$ is a way of writing $n$ as a sum of positive integers.</p>
 

@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Summation of a Modular Formula</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd May 2020, 02:00 pm; Solved by 551;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=717">Problem 717</a></h3></div>
+<h2>Summation of a Modular Formula</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 23rd May 2020, 02:00 pm; Solved by 572;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=717">Problem 717</a></h3></div>
 <div class="problem_content" role="problem">
 <p>For an odd prime $p$, define $f(p) = \left\lfloor\frac{2^{(2^p)} }{p}\right\rfloor\bmod{2^p}$<br>
 For example, when $p=3$, $\lfloor 2^8/3\rfloor = 85 \equiv 5 \pmod 8$ and so $f(3) = 5$.</p> 

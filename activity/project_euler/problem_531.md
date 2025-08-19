@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Chinese Leftovers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th October 2015, 04:00 am; Solved by 1292;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=531">Problem 531</a></h3></div>
+<h2>Chinese Leftovers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 25th October 2015, 04:00 am; Solved by 1321;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=531">Problem 531</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $g(a, n, b, m)$ be the smallest non-negative solution $x$ to the system:<br>

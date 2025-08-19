@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Different Dice</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th November 2023, 07:00 pm; Solved by 233;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=863">Problem 863</a></h3></div>
+<h2>Different Dice</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 11th November 2023, 07:00 pm; Solved by 247;<br>Difficulty rating: 35%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=863">Problem 863</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Using only a six-sided fair dice and a five-sided fair dice, we would like to emulate an $n$-sided fair dice.</p>
 <p>For example, one way to emulate a 28-sided dice is to follow this procedure:</p>

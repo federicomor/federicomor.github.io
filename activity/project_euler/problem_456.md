@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Triangles Containing the Origin II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 26th January 2014, 01:00 am; Solved by 448;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=456">Problem 456</a></h3></div>
+<h2>Triangles Containing the Origin II</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Sunday, 26th January 2014, 01:00 am; Solved by 468;<br>Difficulty rating: 55%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=456">Problem 456</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Define:<br>$x_n = (1248^n \bmod 32323) - 16161$<br>$y_n = (8421^n \bmod 30103) - 15051$<br>
 $P_n = \{(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)\}$

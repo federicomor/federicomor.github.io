@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Irrational Base</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th April 2016, 01:00 pm; Solved by 275;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=558">Problem 558</a></h3></div>
+<h2>Irrational Base</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 30th April 2016, 01:00 pm; Solved by 281;<br>Difficulty rating: 65%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=558">Problem 558</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $r$ be the real root of the equation $x^3 = x^2 + 1$.<br>
 Every positive integer can be written as the sum of distinct increasing powers of $r$.<br>

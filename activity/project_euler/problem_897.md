@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Maximal $n$-gon in a region</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th June 2024, 11:00 pm; Solved by 405;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=897">Problem 897</a></h3></div>
+<h2>Maximal $n$-gon in a region</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 29th June 2024, 11:00 pm; Solved by 438;<br>Difficulty rating: 25%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=897">Problem 897</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 Let $G(n)$ denote the largest possible area of an <strong class="tooltip">$n$-gon<span class="tooltiptext">a polygon with $n$ sides</span></strong> contained in the region $\{(x, y) \in \Bbb R^2: x^4 \leq y \leq 1\}$.<br>

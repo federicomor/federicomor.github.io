@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>XOR-Equation A</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th February 2024, 01:00 pm; Solved by 434;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=877">Problem 877</a></h3></div>
+<h2>XOR-Equation A</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 17th February 2024, 01:00 pm; Solved by 485;<br>Difficulty rating: 20%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=877">Problem 877</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
 We use $x\oplus y$ for the bitwise XOR of $x$ and $y$.<br>
@@ -49,7 +49,7 @@ Define the <dfn>XOR-product</dfn> of $x$ and $y$, denoted by $x \otimes y$, simi
 <p>
 For example, $7 \otimes 3 = 9$, or in base $2$, $111_2 \otimes 11_2 = 1001_2$:
 </p><center>
-\begin{align*}
+$$\begin{align*}
 \phantom{\otimes 111} 111_2 \\
 \otimes \phantom{1111} 11_2 \\
 \hline
@@ -57,13 +57,13 @@ For example, $7 \otimes 3 = 9$, or in base $2$, $111_2 \otimes 11_2 = 1001_2$:
 \oplus \phantom{11} 111_2  \phantom{9} \\
 \hline
 \phantom{\otimes 11} 1001_2 \\
-\end{align*}
+\end{align*}$$
 </center>
 We consider the equation:
 <center>
-\begin{align}
+$$\begin{align}
 (a \otimes a) \oplus (2 \otimes a \otimes b) \oplus (b \otimes b) = 5
-\end{align}
+\end{align}$$
 </center>
 
 For example, $(a, b) = (3, 6)$ is a solution.

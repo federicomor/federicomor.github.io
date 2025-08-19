@@ -40,7 +40,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Largest Prime Factors of Consecutive Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th September 2015, 01:00 pm; Solved by 348;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=526">Problem 526</a></h3></div>
+<h2>Largest Prime Factors of Consecutive Numbers</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 19th September 2015, 01:00 pm; Solved by 355;<br>Difficulty rating: 60%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=526">Problem 526</a></h3></div>
 <div class="problem_content" role="problem">
 <p>Let $f(n)$ be the largest prime factor of $n$.</p>
 <p>Let $g(n) = f(n) + f(n + 1) + f(n + 2) + f(n + 3) + f(n + 4) + f(n + 5) + f(n + 6) + f(n + 7) + f(n + 8)$, the sum of the largest prime factor of each of nine consecutive numbers starting with $n$.</p>

@@ -40,13 +40,14 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 <div id="content">
 
 <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt="projecteuler.net"></div>
-<h2>Moving Pentagon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th April 2019, 04:00 pm; Solved by 222;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=667">Problem 667</a></h3></div>
+<h2>Moving Pentagon</h2><div id="problem_icons" class="noprint"><span class="tooltip">ℹ️<span class="tooltiptext_right">Published on Saturday, 27th April 2019, 04:00 pm; Solved by 228;<br>Difficulty rating: 80%</span></span></div><div id="problem_info"><h3><a href="https://projecteuler.net/problem=667">Problem 667</a></h3></div>
 <div class="problem_content" role="problem">
 <p>
-After buying a <i>Gerver Sofa</i> from the <i>Moving Sofa Company</i>, Jack wants to buy a matching cocktail table from the same company. Most important for him is that the table can be pushed through his L-shaped corridor into the living room without having to be lifted from its table legs. <br />
-Unfortunately, the simple square model offered to him is too small for him, so he asks for a bigger model.<br />
+After buying a <i>Gerver Sofa</i> from the <i>Moving Sofa Company</i>, Jack wants to buy a matching cocktail table from the same company. Most important for him is that the table can be pushed through his L-shaped corridor into the living room without having to be lifted from its table legs. <br>
+Unfortunately, the simple square model offered to him is too small for him, so he asks for a bigger model.<br>
 He is offered the new pentagonal model illustrated below:</p>
-<img src="https://projecteuler.net/project/images/p667_MovingPentagon.png" alt="p667.png" /><p>
+<img src="https://projecteuler.net/resources/images/0667_MovingPentagon.png?1678992054" alt="p667.png">
+<p>
 Note, while the shape and size can be ordered individually, due to the production process,<b> all edges of the pentagonal table have to have the same length.</b></p>
 <p>
 Given optimal form and size, what is the biggest pentagonal cocktail table (in terms of area) that Jack can buy that still fits through his unit wide L-shaped corridor?</p>
