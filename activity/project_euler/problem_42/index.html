@@ -1,4 +1,4 @@
-<!doctype html> <html lang=en > <a id=top ></a> <link rel=icon  href="/assets/favicon.png"> <link rel=icon  type="image/x-icon" href="/assets/favicon.png"> <link rel=icon  type="image/png" href="/assets/favicon.png"/> <link rel=icon  href="/assets/main img.jpg"> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <link rel=stylesheet  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <link rel=icon  href="/assets/favicon.png"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <title>P42</title> <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { console.log("url: ",url); console.log("div: ",div); response = await fetch(url); fig = await response.json(); if (typeof fig.config === 'undefined') { fig["config"]={} } delete fig.layout.width delete fig.layout.height fig["layout"]["autosize"] = true fig["config"]["autosizable"] = true fig["config"]["responsive"] = true fig.config["scrollZoom"] = false delete fig.config.staticPlot delete fig.config.displayModeBar delete fig.config.doubleClick delete fig.config.showTips Plotly.newPlot(div, fig); }; </script> --> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { response = await fetch(url); fig = await response.json(); Plotly.newPlot(div, fig); }; </script> <!-- <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >^</span> </a> --> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto; margin-bottom: 20px"; width=170 ; src="/assets/main img.jpg" alt="main img"/></a></h1> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/activity/">Attività</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item " href="/portfolio/">Portfolio</a> </nav> <a href="https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ" target=_blank rel=noopener> <i class="fab fa-youtube big-icon"></i></a> <a href="https://www.instagram.com/divergentissimo/" target=_blank rel=noopener> <i class="fab fa-instagram big-icon"></i></a> <a href="https://www.linkedin.com/in/federico-angelo-mor/" target=_blank rel=noopener> <i class="fab fa-linkedin big-icon"></i></a> <a href="https://github.com/federicomor" target=_blank rel=noopener> <i class="fab fa-github big-icon"></i></a> </div> </div> <div class="content container"> <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >∧</span> </a> <div class=franklin-content > <div class=navigation_symbols > <form action="" method=get  onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;"> <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;"> </form> <a href="/activity/project_euler/problem_41/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a> <a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a> <script> function getRandomProblem() { fetch('/activity/project_euler/data.txt') .then(response => response.text()) .then(data => { const maxProblems = parseInt(data.trim(), 10); const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1; window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/'; }) .catch(err => console.error('Error fetching max problems:', err)); } </script> <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a> <a href="/activity/project_euler/problem_43/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a> </div> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_main.1735430422.css"> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_default.1627113674.css"> <script src="https://projecteuler.net/js/mathjax_config.js"></script> <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script> <script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script> <div id=content > <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt=projecteuler.net ></div> <h2>Coded Triangle Numbers</h2><div id=problem_icons  class=noprint ><span class=tooltip >ℹ️<span class=tooltiptext_right >Published on Friday, 25th April 2003, 06:00 pm; Solved by 80950;<br>Difficulty rating: 5%</span></span></div><div id=problem_info ><h3><a href="https://projecteuler.net/problem=42">Problem 42</a></h3></div> <div class=problem_content  role=problem > <p>The $n$<sup>th</sup> term of the sequence of triangle numbers is given by, $t_n = \frac12n(n+1)$; so the first ten triangle numbers are: $$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots$$</p> <p>By converting each letter in a word to a number corresponding to its alphabetical position and adding these values we form a word value. For example, the word value for SKY is $19 + 11 + 25 = 55 = t_{10}$. If the word value is a triangle number then we shall call the word a triangle word.</p> <p>Using <a href="https://projecteuler.net/resources/documents/0042_words.txt">words.txt</a> (right click and 'Save Link/Target As...'), a 16K text file containing nearly two-thousand common English words, how many are triangle words?</p> </div><br> <br> </div> <!--end_content--> <h2 id=soluzione ><a href="#soluzione" class=header-anchor >Soluzione</a></h2> <p><p>Partiamo creando un insieme di numeri triangolari, per effettuare il futuro controllo sulla somma delle lettere delle parole.</p> <pre><code class="julia hljs">triangles = [<span class=hljs-number >1</span>/<span class=hljs-number >2</span>*n*(n+<span class=hljs-number >1</span>) <span class=hljs-keyword >for</span> n <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:<span class=hljs-number >20</span>]</code></pre><pre><code class="plaintext hljs">20-element Vector{Float64}:
+<!doctype html> <html lang=en > <a id=top ></a> <link rel=icon  href="/assets/favicon.png"> <link rel=icon  type="image/x-icon" href="/assets/favicon.png"> <link rel=icon  type="image/png" href="/assets/favicon.png"/> <link rel=icon  href="/assets/main img.jpg"> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <link rel=stylesheet  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <link rel=icon  href="/assets/favicon.png"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <title>P42</title> <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { console.log("url: ",url); console.log("div: ",div); response = await fetch(url); fig = await response.json(); if (typeof fig.config === 'undefined') { fig["config"]={} } delete fig.layout.width delete fig.layout.height fig["layout"]["autosize"] = true fig["config"]["autosizable"] = true fig["config"]["responsive"] = true fig.config["scrollZoom"] = false delete fig.config.staticPlot delete fig.config.displayModeBar delete fig.config.doubleClick delete fig.config.showTips Plotly.newPlot(div, fig); }; </script> --> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { response = await fetch(url); fig = await response.json(); Plotly.newPlot(div, fig); }; </script> <!-- <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >^</span> </a> --> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto; margin-bottom: 20px"; width=170 ; src="/assets/main img.jpg" alt="main img"/></a></h1> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/activity/">Attività</a> <a class="sidebar-nav-item " href="/libri/">Libri</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item " href="/portfolio/">Portfolio</a> </nav> <a href="https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ" target=_blank rel=noopener> <i class="fab fa-youtube big-icon"></i></a> <a href="https://www.instagram.com/divergentissimo/" target=_blank rel=noopener> <i class="fab fa-instagram big-icon"></i></a> <a href="https://www.linkedin.com/in/federico-angelo-mor/" target=_blank rel=noopener> <i class="fab fa-linkedin big-icon"></i></a> <a href="https://github.com/federicomor" target=_blank rel=noopener> <i class="fab fa-github big-icon"></i></a> </div> </div> <div class="content container"> <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >∧</span> </a> <div class=franklin-content > <div class=navigation_symbols > <form action="" method=get  onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;"> <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;"> </form> <a href="/activity/project_euler/problem_41/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a> <a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a> <script> function getRandomProblem() { fetch('/activity/project_euler/data.txt') .then(response => response.text()) .then(data => { const maxProblems = parseInt(data.trim(), 10); const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1; window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/'; }) .catch(err => console.error('Error fetching max problems:', err)); } </script> <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a> <a href="/activity/project_euler/problem_43/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a> </div> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_main.1735430422.css"> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_default.1627113674.css"> <script src="https://projecteuler.net/js/mathjax_config.js"></script> <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script> <script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script> <div id=content > <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt=projecteuler.net ></div> <h2>Coded Triangle Numbers</h2><div id=problem_icons  class=noprint ><span class=tooltip >ℹ️<span class=tooltiptext_right >Published on Friday, 25th April 2003, 06:00 pm; Solved by 80950;<br>Difficulty rating: 5%</span></span></div><div id=problem_info ><h3><a href="https://projecteuler.net/problem=42">Problem 42</a></h3></div> <div class=problem_content  role=problem > <p>The $n$<sup>th</sup> term of the sequence of triangle numbers is given by, $t_n = \frac12n(n+1)$; so the first ten triangle numbers are: $$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots$$</p> <p>By converting each letter in a word to a number corresponding to its alphabetical position and adding these values we form a word value. For example, the word value for SKY is $19 + 11 + 25 = 55 = t_{10}$. If the word value is a triangle number then we shall call the word a triangle word.</p> <p>Using <a href="https://projecteuler.net/resources/documents/0042_words.txt">words.txt</a> (right click and 'Save Link/Target As...'), a 16K text file containing nearly two-thousand common English words, how many are triangle words?</p> </div><br> <br> </div> <!--end_content--> <h2 id=soluzione ><a href="#soluzione" class=header-anchor >Soluzione</a></h2> <p><p>Partiamo creando un insieme di numeri triangolari, per effettuare il futuro controllo sulla somma delle lettere delle parole.</p> <pre><code class="julia hljs">triangles = [<span class=hljs-number >1</span>/<span class=hljs-number >2</span>*n*(n+<span class=hljs-number >1</span>) <span class=hljs-keyword >for</span> n <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:<span class=hljs-number >20</span>]</code></pre><pre><code class="plaintext hljs">20-element Vector{Float64}:
    1.0
    3.0
    6.0
@@ -38,171 +38,171 @@ println(<span class=hljs-string >&quot;Triangular words:&quot;</span>)
 		tot += <span class=hljs-built_in >Int</span>(c)-<span class=hljs-number >64</span> <span class=hljs-comment ># for upper case c</span>
 	<span class=hljs-keyword >end</span>
 	<span class=hljs-keyword >if</span> tot <span class=hljs-keyword >in</span> triangles
-		println(w)
+		println(rpad(w,<span class=hljs-number >15</span>), <span class=hljs-string >&quot; value: <span class=hljs-variable >$tot</span>&quot;</span>)
 		<span class=hljs-keyword >global</span> conteggio += <span class=hljs-number >1</span>
 	<span class=hljs-keyword >end</span>
 <span class=hljs-keyword >end</span></code></pre><pre><code class="plaintext hljs">Triangular words:
-A
-ABILITY
-ABOVE
-ACCOMPANY
-ACHIEVEMENT
-AGENCY
-AGREE
-AIR
-ALREADY
-AN
-ANCIENT
-APPARENT
-APPOINT
-APPROACH
-ASSUME
-AT
-ATMOSPHERE
-BAG
-BAND
-BANK
-BAR
-BEAT
-BELONG
-BENEATH
-BONE
-BOTH
-BRIDGE
-BUILDING
-BURN
-CALL
-CAPACITY
-CAREFUL
-CASE
-CHILD
-CIVIL
-CLOSELY
-COME
-CONFIDENCE
-CONFIRM
-CONSERVATIVE
-CONSTRUCTION
-CONTENT
-COULD
-CURRENTLY
-DECISION
-DEFINITION
-DEMOCRATIC
-DEPUTY
-DESPITE
-DISTINCTION
-EAST
-EDGE
-EDUCATIONAL
-EFFECT
-EQUIPMENT
-EVENT
-FACE
-FAIL
-FAMILY
-FEEL
-FIELD
-FIGURE
-FLOOR
-FREEDOM
-FUND
-FUTURE
-GENTLEMAN
-GREY
-GROWTH
-HAIR
-HAPPY
-HAVE
-HERE
-HIS
-IF
-INCIDENT
-INCREASED
-INCREASINGLY
-INDIVIDUAL
-INSTRUMENT
-INTEND
-INTENTION
-IS
-LAW
-LEADER
-LEAVE
-LENGTH
-LESS
-LITTLE
-LOVELY
-MAN
-MATCH
-MERELY
-MILK
-MISTAKE
-MOVE
-MUCH
-NEED
-NOTICE
-OBJECT
-OBJECTIVE
-OF
-OIL
-ONLY
-OTHER
-OURSELVES
-PART
-PASS
-PATH
-PERFORM
-PRISON
-PRIVATE
-PROBABLY
-PROCEDURE
-QUALITY
-QUESTION
-RANGE
-READ
-REAL
-RELIEF
-REMOVE
-REPRESENT
-REQUEST
-RESPOND
-RIDE
-SAMPLE
-SAY
-SEAT
-SECURITY
-SINGLE
-SKY
-SOIL
-SOLICITOR
-SONG
-SOUTHERN
-SPIRIT
-START
-SUGGESTION
-TALL
-TAX
-THEORY
-THREATEN
-THROUGHOUT
-TITLE
-TOOTH
-TOTALLY
-TRAVEL
-TYPE
-UNABLE
-UNDERSTAND
-UPON
-USE
-VARIOUS
-VARY
-VIDEO
-WAGE
-WARM
-WATCH
-WE
-WHILST
-WIDELY
-WOMAN
+A               value: 1
+ABILITY         value: 78
+ABOVE           value: 45
+ACCOMPANY       value: 91
+ACHIEVEMENT     value: 105
+AGENCY          value: 55
+AGREE           value: 36
+AIR             value: 28
+ALREADY         value: 66
+AN              value: 15
+ANCIENT         value: 66
+APPARENT        value: 91
+APPOINT         value: 91
+APPROACH        value: 78
+ASSUME          value: 78
+AT              value: 21
+ATMOSPHERE      value: 120
+BAG             value: 10
+BAND            value: 21
+BANK            value: 28
+BAR             value: 21
+BEAT            value: 28
+BELONG          value: 55
+BENEATH         value: 55
+BONE            value: 36
+BOTH            value: 45
+BRIDGE          value: 45
+BUILDING        value: 78
+BURN            value: 55
+CALL            value: 28
+CAPACITY        value: 78
+CAREFUL         value: 66
+CASE            value: 28
+CHILD           value: 36
+CIVIL           value: 55
+CLOSELY         value: 91
+COME            value: 36
+CONFIDENCE      value: 78
+CONFIRM         value: 78
+CONSERVATIVE    value: 153
+CONSTRUCTION    value: 171
+CONTENT         value: 91
+COULD           value: 55
+CURRENTLY       value: 136
+DECISION        value: 78
+DEFINITION      value: 105
+DEMOCRATIC      value: 91
+DEPUTY          value: 91
+DESPITE         value: 78
+DISTINCTION     value: 136
+EAST            value: 45
+EDGE            value: 21
+EDUCATIONAL     value: 105
+EFFECT          value: 45
+EQUIPMENT       value: 120
+EVENT           value: 66
+FACE            value: 15
+FAIL            value: 28
+FAMILY          value: 66
+FEEL            value: 28
+FIELD           value: 36
+FIGURE          value: 66
+FLOOR           value: 66
+FREEDOM         value: 66
+FUND            value: 45
+FUTURE          value: 91
+GENTLEMAN       value: 91
+GREY            value: 55
+GROWTH          value: 91
+HAIR            value: 36
+HAPPY           value: 66
+HAVE            value: 36
+HERE            value: 36
+HIS             value: 36
+IF              value: 15
+INCIDENT        value: 78
+INCREASED       value: 78
+INCREASINGLY    value: 136
+INDIVIDUAL      value: 105
+INSTRUMENT      value: 153
+INTEND          value: 66
+INTENTION       value: 120
+IS              value: 28
+LAW             value: 36
+LEADER          value: 45
+LEAVE           value: 45
+LENGTH          value: 66
+LESS            value: 55
+LITTLE          value: 78
+LOVELY          value: 91
+MAN             value: 28
+MATCH           value: 45
+MERELY          value: 78
+MILK            value: 45
+MISTAKE         value: 78
+MOVE            value: 55
+MUCH            value: 45
+NEED            value: 28
+NOTICE          value: 66
+OBJECT          value: 55
+OBJECTIVE       value: 91
+OF              value: 21
+OIL             value: 36
+ONLY            value: 66
+OTHER           value: 66
+OURSELVES       value: 136
+PART            value: 55
+PASS            value: 55
+PATH            value: 45
+PERFORM         value: 91
+PRISON          value: 91
+PRIVATE         value: 91
+PROBABLY        value: 91
+PROCEDURE       value: 105
+QUALITY         value: 105
+QUESTION        value: 120
+RANGE           value: 45
+READ            value: 28
+REAL            value: 36
+RELIEF          value: 55
+REMOVE          value: 78
+REPRESENT       value: 120
+REQUEST         value: 105
+RESPOND         value: 91
+RIDE            value: 36
+SAMPLE          value: 66
+SAY             value: 45
+SEAT            value: 45
+SECURITY        value: 120
+SINGLE          value: 66
+SKY             value: 55
+SOIL            value: 55
+SOLICITOR       value: 120
+SONG            value: 55
+SOUTHERN        value: 120
+SPIRIT          value: 91
+START           value: 78
+SUGGESTION      value: 136
+TALL            value: 45
+TAX             value: 45
+THEORY          value: 91
+THREATEN        value: 91
+THROUGHOUT      value: 153
+TITLE           value: 66
+TOOTH           value: 78
+TOTALLY         value: 105
+TRAVEL          value: 78
+TYPE            value: 66
+UNABLE          value: 55
+UNDERSTAND      value: 120
+UPON            value: 66
+USE             value: 45
+VARIOUS         value: 105
+VARY            value: 66
+VIDEO           value: 55
+WAGE            value: 36
+WARM            value: 55
+WATCH           value: 55
+WE              value: 28
+WHILST          value: 91
+WIDELY          value: 78
+WOMAN           value: 66
 </code></pre> <pre><code class="julia hljs"><span class=hljs-meta >@show</span> conteggio</code></pre><pre><code class="plaintext hljs">conteggio = 162
-</code></pre> <script src="https://giscus.app/client.js" data-repo="federicomor/federicomor.github.io" data-repo-id=R_kgDOLBdBYA  data-category=Announcements  data-category-id=DIC_kwDOLBdBYM4Clm0M  data-mapping=url  data-strict=0  data-reactions-enabled=1  data-emit-metadata=0  data-input-position=bottom  data-theme=preferred_color_scheme  data-lang=it  // data-loading=lazy  crossorigin=anonymous  async> </script> </p> <div class=page-foot > Last modified: August 19, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>
+</code></pre> <script src="https://giscus.app/client.js" data-repo="federicomor/federicomor.github.io" data-repo-id=R_kgDOLBdBYA  data-category=Announcements  data-category-id=DIC_kwDOLBdBYM4Clm0M  data-mapping=url  data-strict=0  data-reactions-enabled=1  data-emit-metadata=0  data-input-position=bottom  data-theme=preferred_color_scheme  data-lang=it  // data-loading=lazy  crossorigin=anonymous  async> </script> </p> <div class=page-foot > Last modified: August 20, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>

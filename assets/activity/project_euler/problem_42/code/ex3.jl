@@ -7,7 +7,7 @@ for w in clean_text
 		tot += Int(c)-64 # for upper case c
 	end
 	if tot in triangles
-		println(w)
+		println(rpad(w,15), " value: $tot")
 		global conteggio += 1
 	end
 end

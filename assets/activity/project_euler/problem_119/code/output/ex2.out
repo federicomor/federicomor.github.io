@@ -1,2 +1,2 @@
 precomputation step
-  0.078037 seconds (115.57 k allocations: 5.486 MiB, 7.67% gc time, 99.77% compilation time)
+  0.070593 seconds (115.57 k allocations: 5.486 MiB, 99.74% compilation time)

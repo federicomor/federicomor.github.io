@@ -1,163 +1,163 @@
 Triangular words:
-A
-ABILITY
-ABOVE
-ACCOMPANY
-ACHIEVEMENT
-AGENCY
-AGREE
-AIR
-ALREADY
-AN
-ANCIENT
-APPARENT
-APPOINT
-APPROACH
-ASSUME
-AT
-ATMOSPHERE
-BAG
-BAND
-BANK
-BAR
-BEAT
-BELONG
-BENEATH
-BONE
-BOTH
-BRIDGE
-BUILDING
-BURN
-CALL
-CAPACITY
-CAREFUL
-CASE
-CHILD
-CIVIL
-CLOSELY
-COME
-CONFIDENCE
-CONFIRM
-CONSERVATIVE
-CONSTRUCTION
-CONTENT
-COULD
-CURRENTLY
-DECISION
-DEFINITION
-DEMOCRATIC
-DEPUTY
-DESPITE
-DISTINCTION
-EAST
-EDGE
-EDUCATIONAL
-EFFECT
-EQUIPMENT
-EVENT
-FACE
-FAIL
-FAMILY
-FEEL
-FIELD
-FIGURE
-FLOOR
-FREEDOM
-FUND
-FUTURE
-GENTLEMAN
-GREY
-GROWTH
-HAIR
-HAPPY
-HAVE
-HERE
-HIS
-IF
-INCIDENT
-INCREASED
-INCREASINGLY
-INDIVIDUAL
-INSTRUMENT
-INTEND
-INTENTION
-IS
-LAW
-LEADER
-LEAVE
-LENGTH
-LESS
-LITTLE
-LOVELY
-MAN
-MATCH
-MERELY
-MILK
-MISTAKE
-MOVE
-MUCH
-NEED
-NOTICE
-OBJECT
-OBJECTIVE
-OF
-OIL
-ONLY
-OTHER
-OURSELVES
-PART
-PASS
-PATH
-PERFORM
-PRISON
-PRIVATE
-PROBABLY
-PROCEDURE
-QUALITY
-QUESTION
-RANGE
-READ
-REAL
-RELIEF
-REMOVE
-REPRESENT
-REQUEST
-RESPOND
-RIDE
-SAMPLE
-SAY
-SEAT
-SECURITY
-SINGLE
-SKY
-SOIL
-SOLICITOR
-SONG
-SOUTHERN
-SPIRIT
-START
-SUGGESTION
-TALL
-TAX
-THEORY
-THREATEN
-THROUGHOUT
-TITLE
-TOOTH
-TOTALLY
-TRAVEL
-TYPE
-UNABLE
-UNDERSTAND
-UPON
-USE
-VARIOUS
-VARY
-VIDEO
-WAGE
-WARM
-WATCH
-WE
-WHILST
-WIDELY
-WOMAN
+A               value: 1
+ABILITY         value: 78
+ABOVE           value: 45
+ACCOMPANY       value: 91
+ACHIEVEMENT     value: 105
+AGENCY          value: 55
+AGREE           value: 36
+AIR             value: 28
+ALREADY         value: 66
+AN              value: 15
+ANCIENT         value: 66
+APPARENT        value: 91
+APPOINT         value: 91
+APPROACH        value: 78
+ASSUME          value: 78
+AT              value: 21
+ATMOSPHERE      value: 120
+BAG             value: 10
+BAND            value: 21
+BANK            value: 28
+BAR             value: 21
+BEAT            value: 28
+BELONG          value: 55
+BENEATH         value: 55
+BONE            value: 36
+BOTH            value: 45
+BRIDGE          value: 45
+BUILDING        value: 78
+BURN            value: 55
+CALL            value: 28
+CAPACITY        value: 78
+CAREFUL         value: 66
+CASE            value: 28
+CHILD           value: 36
+CIVIL           value: 55
+CLOSELY         value: 91
+COME            value: 36
+CONFIDENCE      value: 78
+CONFIRM         value: 78
+CONSERVATIVE    value: 153
+CONSTRUCTION    value: 171
+CONTENT         value: 91
+COULD           value: 55
+CURRENTLY       value: 136
+DECISION        value: 78
+DEFINITION      value: 105
+DEMOCRATIC      value: 91
+DEPUTY          value: 91
+DESPITE         value: 78
+DISTINCTION     value: 136
+EAST            value: 45
+EDGE            value: 21
+EDUCATIONAL     value: 105
+EFFECT          value: 45
+EQUIPMENT       value: 120
+EVENT           value: 66
+FACE            value: 15
+FAIL            value: 28
+FAMILY          value: 66
+FEEL            value: 28
+FIELD           value: 36
+FIGURE          value: 66
+FLOOR           value: 66
+FREEDOM         value: 66
+FUND            value: 45
+FUTURE          value: 91
+GENTLEMAN       value: 91
+GREY            value: 55
+GROWTH          value: 91
+HAIR            value: 36
+HAPPY           value: 66
+HAVE            value: 36
+HERE            value: 36
+HIS             value: 36
+IF              value: 15
+INCIDENT        value: 78
+INCREASED       value: 78
+INCREASINGLY    value: 136
+INDIVIDUAL      value: 105
+INSTRUMENT      value: 153
+INTEND          value: 66
+INTENTION       value: 120
+IS              value: 28
+LAW             value: 36
+LEADER          value: 45
+LEAVE           value: 45
+LENGTH          value: 66
+LESS            value: 55
+LITTLE          value: 78
+LOVELY          value: 91
+MAN             value: 28
+MATCH           value: 45
+MERELY          value: 78
+MILK            value: 45
+MISTAKE         value: 78
+MOVE            value: 55
+MUCH            value: 45
+NEED            value: 28
+NOTICE          value: 66
+OBJECT          value: 55
+OBJECTIVE       value: 91
+OF              value: 21
+OIL             value: 36
+ONLY            value: 66
+OTHER           value: 66
+OURSELVES       value: 136
+PART            value: 55
+PASS            value: 55
+PATH            value: 45
+PERFORM         value: 91
+PRISON          value: 91
+PRIVATE         value: 91
+PROBABLY        value: 91
+PROCEDURE       value: 105
+QUALITY         value: 105
+QUESTION        value: 120
+RANGE           value: 45
+READ            value: 28
+REAL            value: 36
+RELIEF          value: 55
+REMOVE          value: 78
+REPRESENT       value: 120
+REQUEST         value: 105
+RESPOND         value: 91
+RIDE            value: 36
+SAMPLE          value: 66
+SAY             value: 45
+SEAT            value: 45
+SECURITY        value: 120
+SINGLE          value: 66
+SKY             value: 55
+SOIL            value: 55
+SOLICITOR       value: 120
+SONG            value: 55
+SOUTHERN        value: 120
+SPIRIT          value: 91
+START           value: 78
+SUGGESTION      value: 136
+TALL            value: 45
+TAX             value: 45
+THEORY          value: 91
+THREATEN        value: 91
+THROUGHOUT      value: 153
+TITLE           value: 66
+TOOTH           value: 78
+TOTALLY         value: 105
+TRAVEL          value: 78
+TYPE            value: 66
+UNABLE          value: 55
+UNDERSTAND      value: 120
+UPON            value: 66
+USE             value: 45
+VARIOUS         value: 105
+VARY            value: 66
+VIDEO           value: 55
+WAGE            value: 36
+WARM            value: 55
+WATCH           value: 55
+WE              value: 28
+WHILST          value: 91
+WIDELY          value: 78
+WOMAN           value: 66
