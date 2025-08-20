@@ -15,6 +15,4 @@ _Se voi foste il signor A, quale strategia utilizzereste?_
 
 ## Soluzione
 
-
-
 {{ addcomments }}
