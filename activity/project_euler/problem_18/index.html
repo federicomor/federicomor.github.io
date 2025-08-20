@@ -27,7 +27,7 @@ Msum &#61; copy&#40;M&#41;
 			Msum&#91;i,j&#93; &#61; max&#40;Msum&#91;i-1,j&#93; &#43; M&#91;i,j&#93;, Msum&#91;i-1,j-1&#93; &#43; M&#91;i,j&#93;&#41;
 		end
 	end
-end</code></pre><pre><code class="plaintext code-output">  0.004956 seconds (1.02 k allocations: 29.891 KiB, 98.13% compilation time)
+end</code></pre><pre><code class="plaintext code-output">  0.006237 seconds (1.02 k allocations: 29.891 KiB, 97.57% compilation time)
 </code></pre> <pre><code class=language-julia >for i in 1:R
 	for j in 1:C
 		print&#40;rpad&#40;Msum&#91;i,j&#93;,5, &quot; &quot;&#41;&#41;

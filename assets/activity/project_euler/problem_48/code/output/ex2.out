@@ -1,2 +1,2 @@
-  0.000186 seconds (1.89 k allocations: 29.562 KiB)
+  0.000195 seconds (1.89 k allocations: 29.562 KiB)
 mod(sol, 10 ^ 10) = 9110846700

@@ -114,19 +114,19 @@ pan_no &#61; 123947076
 @btime ispandigital_v1&#40;pan_no&#41;
 @btime ispandigital_v2&#40;pan_no&#41;
 @btime ispandigital_v3&#40;pan_no&#41;
-@btime ispandigital_v4&#40;pan_no&#41;</code></pre><pre><code class="plaintext code-output">  152.936 ns (7 allocations: 416 bytes)
-  98.387 ns (4 allocations: 256 bytes)
-  44.547 ns (3 allocations: 96 bytes)
-  18.811 ns (0 allocations: 0 bytes)
+@btime ispandigital_v4&#40;pan_no&#41;</code></pre><pre><code class="plaintext code-output">  154.280 ns (7 allocations: 416 bytes)
+  98.494 ns (4 allocations: 256 bytes)
+  44.720 ns (3 allocations: 96 bytes)
+  18.820 ns (0 allocations: 0 bytes)
 false</code></pre>
 <pre><code class=language-julia >pan_yes &#61; 123467895
 @btime ispandigital_v1&#40;pan_yes&#41;
 @btime ispandigital_v2&#40;pan_yes&#41;
 @btime ispandigital_v3&#40;pan_yes&#41;
-@btime ispandigital_v4&#40;pan_yes&#41;</code></pre><pre><code class="plaintext code-output">  155.872 ns (7 allocations: 416 bytes)
-  103.787 ns (4 allocations: 256 bytes)
-  58.757 ns (3 allocations: 96 bytes)
-  26.542 ns (0 allocations: 0 bytes)
+@btime ispandigital_v4&#40;pan_yes&#41;</code></pre><pre><code class="plaintext code-output">  160.041 ns (7 allocations: 416 bytes)
+  107.225 ns (4 allocations: 256 bytes)
+  58.359 ns (3 allocations: 96 bytes)
+  25.308 ns (0 allocations: 0 bytes)
 true</code></pre>
 <p>e arriviamo quindi con la quarta versione alla soluzione del problema.</p>
 <pre><code class=language-julia >@time for i in 987654321:-2:2
@@ -135,7 +135,7 @@ true</code></pre>
 		break
 	end
 end</code></pre><pre><code class="plaintext code-output">i = 7652413
-  4.592854 seconds (9 allocations: 264 bytes)
+  4.619910 seconds (9 allocations: 264 bytes)
 </code></pre>
  <script src="https://giscus.app/client.js"
 		data-repo="federicomor/federicomor.github.io"
