@@ -1,2 +1,2 @@
-  0.223557 seconds (29 allocations: 464 bytes)
+  0.224890 seconds (29 allocations: 464 bytes)
 (max_len, max_idx) = (525, 837799)

@@ -12,7 +12,7 @@
     return result
 end</code></pre><pre><code class="plaintext code-output">my_powermod (generic function with 1 method)</code></pre>
 <p>che ovviamente funziona ma risulta più lenta di quella ufficiale presente in Julia, che infatti usa un metodo più efficace per calcolare le potenze &#40;l&#39;<a href="https://simple.wikipedia.org/wiki/Exponentiation_by_squaring">Exponentiation by squaring</a>&#41;.</p>
-<pre><code class=language-julia >@time my_powermod&#40;2,7830457,10^10&#41;</code></pre><pre><code class="plaintext code-output">  0.046546 seconds
+<pre><code class=language-julia >@time my_powermod&#40;2,7830457,10^10&#41;</code></pre><pre><code class="plaintext code-output">  0.046793 seconds
 9700303872</code></pre>
 <pre><code class=language-julia >@time powermod&#40;2,7830457,10^10&#41;</code></pre><pre><code class="plaintext code-output">  0.000002 seconds
 9700303872</code></pre>
@@ -34,7 +34,7 @@ end</code></pre><pre><code class="plaintext code-output">my_powermod (generic fu
 </p>
 <div class=page-foot >
     
-    Last modified: August 20, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: August 21, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div>
     </div>  
