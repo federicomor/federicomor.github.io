@@ -54,4 +54,5 @@ $$(1 + 2 + ... + 10)^2 = 55^2 = 3025.$$
 ~~~
 ## Soluzione
 
+\literate{/_literate/pe_6.jl}
 {{ addcomments }}
