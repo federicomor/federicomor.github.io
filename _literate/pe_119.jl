@@ -19,7 +19,7 @@ n = 11
 end
 
 
-# **Seconda idea:** precalcolare un insieme di valori base^esponente = valore, e scorrere su questi valori per vedere se soddisfano la condizione che la base sia pari alla somma delle loro cifre. Questo metodo diventa veloce perché filtriamo via il ricavare l'esponente opportuno a cui elevare la base, e perché non scorriamo più su tutti i numeri da 1 in poi, ma solo su quelli effettivamente ottenibili come una qualche base elevate ad un qualche esponente.
+# **Seconda idea:** precalcolare un insieme di valori base^esponente = valore, e scorrere su questi valori per vedere se soddisfano la condizione che la base sia pari alla somma delle loro cifre. Questo metodo diventa veloce perché filtriamo via il ricavare l'esponente opportuno a cui elevare la base, e perché non scorriamo più su tutti i numeri da 1 in poi, ma solo su quelli effettivamente ottenibili come una qualche base elevata ad un qualche esponente.
 
 ## creiamo il dizionario che contiene la chiave (base, esponente) e il valore corrispondente (base^esponente)
 d = Dict{Tuple{Int, Int}, Int}()
