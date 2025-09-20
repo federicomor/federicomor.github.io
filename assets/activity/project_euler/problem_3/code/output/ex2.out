@@ -1,1 +1,1 @@
-  0.375042 seconds (432.37 k allocations: 21.770 MiB, 99.98% compilation time)
+  0.411946 seconds (432.37 k allocations: 21.791 MiB, 3.88% gc time, 99.98% compilation time)

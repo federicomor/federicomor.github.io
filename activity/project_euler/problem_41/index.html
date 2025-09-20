@@ -114,19 +114,19 @@ pan_no &#61; 123947076
 @btime ispandigital_v1&#40;pan_no&#41;
 @btime ispandigital_v2&#40;pan_no&#41;
 @btime ispandigital_v3&#40;pan_no&#41;
-@btime ispandigital_v4&#40;pan_no&#41;</code></pre><pre><code class="plaintext code-output">  163.358 ns (7 allocations: 416 bytes)
-  98.552 ns (4 allocations: 256 bytes)
-  43.221 ns (3 allocations: 96 bytes)
-  18.199 ns (0 allocations: 0 bytes)
+@btime ispandigital_v4&#40;pan_no&#41;</code></pre><pre><code class="plaintext code-output">  156.745 ns (7 allocations: 416 bytes)
+  97.000 ns (4 allocations: 256 bytes)
+  44.214 ns (3 allocations: 96 bytes)
+  18.198 ns (0 allocations: 0 bytes)
 false</code></pre>
 <pre><code class=language-julia >pan_yes &#61; 123467895
 @btime ispandigital_v1&#40;pan_yes&#41;
 @btime ispandigital_v2&#40;pan_yes&#41;
 @btime ispandigital_v3&#40;pan_yes&#41;
-@btime ispandigital_v4&#40;pan_yes&#41;</code></pre><pre><code class="plaintext code-output">  166.577 ns (7 allocations: 416 bytes)
-  107.953 ns (4 allocations: 256 bytes)
-  59.165 ns (3 allocations: 96 bytes)
-  30.247 ns (0 allocations: 0 bytes)
+@btime ispandigital_v4&#40;pan_yes&#41;</code></pre><pre><code class="plaintext code-output">  163.876 ns (7 allocations: 416 bytes)
+  109.172 ns (4 allocations: 256 bytes)
+  58.941 ns (3 allocations: 96 bytes)
+  24.655 ns (0 allocations: 0 bytes)
 true</code></pre>
 <p>e arriviamo quindi con la quarta versione alla soluzione del problema.</p>
 <pre><code class=language-julia >@time for i in 987654321:-2:2
@@ -135,7 +135,7 @@ true</code></pre>
 		break
 	end
 end</code></pre><pre><code class="plaintext code-output">i = 7652413
-  4.599271 seconds (9 allocations: 264 bytes)
+  4.616713 seconds (9 allocations: 264 bytes)
 </code></pre>
  <script src="https://giscus.app/client.js"
 		data-repo="federicomor/federicomor.github.io"
@@ -155,7 +155,7 @@ end</code></pre><pre><code class="plaintext code-output">i = 7652413
 </p>
 <div class=page-foot >
     
-    Last modified: August 21, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: September 20, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div>
     </div>  
