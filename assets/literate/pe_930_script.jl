@@ -5,7 +5,7 @@ using SparseArrays
 using DataStructures
 using IterativeSolvers
 using Plots, GraphRecipes
-gr() # hide
+gr() # plots backend
 Random.seed!(31032025);
 
 # n bowls, m balls
