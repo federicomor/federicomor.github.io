@@ -1,2 +1,2 @@
-  0.327279 seconds (3.00 M allocations: 61.050 MiB, 5.44% gc time, 1.10% compilation time)
+  0.348958 seconds (3.00 M allocations: 61.050 MiB, 3.99% gc time, 0.93% compilation time)
 (max_len, max_idx) = (525, 837799)
