@@ -41,10 +41,7 @@ Ad oggi, prima la tesi e poi il lavoro mi stanno togliendo tempo e spazio a ques
 Qui raccolgo i link alle versioni estese dei post pubblicati in giro sui social. Tali post servono infatti solo ad intrigare il lettore, a fargli sollevare un sopracciglio e indurlo a pensare "beh, interessante: approfondiamo! andiamo a leggerci l'articoletto completo riguardo a questo simpatico argomento" e quindi, in ultima analisi, condurlo qui, dove potrà effettivamente affinare meglio la sua comprensione sul tema matematico.
 <!-- Infatti, a differenza di vari contenuti che trovo online di "divulgazione", la mia principale idea è di approfondire bene (a volte anche fin troppo nei dettagli) tutto ciò che propongo/proporrò. -->
 
-_più recenti in cima_
-- 05/2025 [Problema delle palline che girano a caso dentro alle ciotole](/activity/project_euler/problem_930/)
-- 05/2025 [Di quanti motori dotare una barca](/activity/motori_e_barca/)
-- il resto è self-contained su instagram per ora -->
+Comunque qui riporto l'ultima attività interessante e rilevante condivisa: [Problema delle palline che girano a caso dentro alle ciotole](/activity/project_euler/problem_930/).
 
 
 <!-- (molto consigliati, con tutto raccontato con calma e in dettaglio) ma anche su Instagram (no, lì non più per ora) e [TikTok](https://tiktok.com/@divmat_tt) (anche qui).  -->
