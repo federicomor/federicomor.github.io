@@ -1,3 +1,2 @@
-Max value (1.1851851851851853) reached at index 34, ie for
-x1 = 0.6666666666666666
-x2 = 1.3333333333333335
+UndefVarError: `max_idx` not defined in `Main.FD_SANDBOX_15002471842407003786`
+Suggestion: check for spelling errors or missing imports.

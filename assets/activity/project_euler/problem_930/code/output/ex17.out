@@ -1,5 +1,5 @@
 Deriving states and initial probabilities
 Assembling transition matrix
 Let's have a view of the sparsity of P
-Solving the linear system
-done!
+UndefVarError: `backend` not defined in `Plots`
+Suggestion: check for spelling errors or missing imports.
