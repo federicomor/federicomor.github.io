@@ -4,7 +4,7 @@ using SparseArrays
 using DataStructures
 using IterativeSolvers
 using Plots, GraphRecipes
-gr() # hide
+gr() # plots backend
 Random.seed!(31032025);
 
 # Per iniziare ad ambientarci nel contesto del problema (ovvero con il meccanismo di spostamento delle palline nelle ciotole, la condizione di terminazione del gioco, ecc) possiamo implementare una semplice simulazione del gioco stesso, osservando quali possibili scenari possono verificarsi.
