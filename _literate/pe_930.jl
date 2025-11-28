@@ -249,9 +249,9 @@ graphplot(P,
 	self_edge_size = 0.12,
 	method=:circular,
 	axis_buffer=0.2)
-savefig(joinpath(@OUTPUT, "mc_graph_real.svg")); # hide
+savefig(joinpath("_assets","literate_outputs", "LO_mc_graph_real.svg")); # hide
 
-# \fig{mc_graph_real.svg}
+# \fig{/assets/literate_outputs/LO_mc_graph_real.svg}
 
 #-
 # Una volta creata $P$, dobbiamo capire come usarla per risolvere il problema. Possiamo intanto osservare la struttura di $P$ (o in generale di una qualunque matrice di transizione per una catena di Markov che presenta stati assorbenti). La struttura di $P$ è infatti $$ P =\begin{pmatrix} I & O\\ R &  Q\end{pmatrix}$$
@@ -331,7 +331,7 @@ function F(nbowls, nballs; verbose=false, plot_graph=false)
 		## SparseArrays._show_with_braille_patterns(stdout, P)
 		## with a real plot:
 		spy(P)
-		savefig(joinpath(@OUTPUT, "P_sparsity.svg")); # hide
+		savefig(joinpath("_assets","literate_outputs", "LO_P_sparsity.svg")); # hide
 	end
 	if plot_graph
 		println("Plotting MC graph")
@@ -361,7 +361,7 @@ function F(nbowls, nballs; verbose=false, plot_graph=false)
 end
 F(12,6,verbose=true,plot_graph=false)
 #- 
-# \fig{P_sparsity.svg}
+# \fig{/assets/literate_outputs/LO_P_sparsity.svg}
 
 function G(N,M)
 	S = 0

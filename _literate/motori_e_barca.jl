@@ -12,10 +12,12 @@ ps = range(0,1,length=1000)
 p_navigare(k,p) = cdf(Binomial(k,p),div(k,2))
 
 plot(ps,p_navigare.(2,ps), label="2 motori")
-plot!(ps,p_navigare.(4,ps), label="4 motori")
-savefig(joinpath(@OUTPUT, "2v4_motori.json")); # hide
+plot!(ps,p_navigare.(4,ps), label="4 motoriiii")
+## savefig(joinpath(@OUTPUT, "2v4_motori.json")); # hide
+savefig("/_assets/literate_outputs/2v4_motori.json"); # hide
 
-# \fig{2v4_motori.json}
+# \fig{/assets/literate_outputs/2v4_motori.json}
+# ![](/assets/literate_outputs/2v4_motori.json)
 
 # da cui notiamo come per $p\leq 1/3$ la barca con 4 motori ha maggiori probabilità di navigare rispetto alla barca con 2 motori.
 
@@ -32,8 +34,9 @@ plot!(ps,p_navigare.(4,ps), label="4 motori")
 plot!(ps,p_navigare.(6,ps), label="6 motori")
 plot!(ps,p_navigare.(8,ps), label="8 motori")
 plot!(ps,p_navigare.(10,ps), label="10 motori")
-savefig(joinpath(@OUTPUT, "2vothers_motori.json")); # hide
+## savefig(joinpath(@OUTPUT, "2vothers_motori.json")); # hide
+savefig("/assets/literate_outputs/2vothers_motori.json"); # hide
 
-# \fig{2vothers_motori.json}
+# \fig{/assets/literate_outputs/2vothers_motori.json}
 
 

@@ -19,10 +19,10 @@ plot(x1s,vals,label="")
 max_idx = argmax(vals)
 x1_max = x1s[max_idx]
 vline!([x1_max],label="")
-savefig(joinpath(@OUTPUT, "m2_plot.json")); # hide
+savefig(joinpath("_assets","literate_outputs","M2P.json")); # hide
 
 #- 
-# \fig{m2_plot.json}
+# \fig{/assets/literate_outputs/M2P.json}
 
 println("Max value ($(maximum(vals))) reached at index $max_idx, ie for")
 println("x1 = ", x1_max)
@@ -51,9 +51,10 @@ x1_max = x1s[max_idx[1]]
 x2_max = x1s[max_idx[2]]
 plot3d(x1s,x2s,vals',st=:surface, label="")
 plot3d!(repeat([x1_max],2),repeat([x2_max],2),[0,maximum(vals)+0.5],label="")
-savefig(joinpath(@OUTPUT, "m3_plot.json")); # hide
+savefig(joinpath("_assets","literate_outputs","M3P.json")); # hide
+
 #- 
-# \fig{m3_plot.json}
+# \fig{/assets/literate_outputs/M3P.json}
 
 println("Max value ($(maximum(vals))) reached at $max_idx, ie for")
 println("x1 = ", x1_max)
