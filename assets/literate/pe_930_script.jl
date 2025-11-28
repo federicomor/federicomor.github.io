@@ -197,7 +197,7 @@ graphplot(P,
 	self_edge_size = 0.12,
 	method=:circular,
 	axis_buffer=0.2)
-savefig(joinpath(@OUTPUT, "mc_graph_real.svg")); # hide
+savefig(joinpath("_assets","literate_outputs", "LO_mc_graph_real.svg")); # hide
 
 # https://en.wikipedia.org/wiki/Absorbing_Markov_chain
 Q = P[2:end,2:end]
@@ -252,7 +252,7 @@ function F(nbowls, nballs; verbose=false, plot_graph=false)
 		# SparseArrays._show_with_braille_patterns(stdout, P)
 		# with a real plot:
 		spy(P)
-		savefig(joinpath(@OUTPUT, "P_sparsity.svg")); # hide
+		savefig(joinpath("_assets","literate_outputs", "LO_P_sparsity.svg")); # hide
 	end
 	if plot_graph
 		println("Plotting MC graph")

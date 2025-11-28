@@ -1,3 +1,3 @@
-LoadError: Failed to precompile FFMPEG [c87230d0-a227-11e9-1b43-d7ebe4e7570a] to "/home/runner/.julia/compiled/v1.12/FFMPEG/jl_DRfyCS".
+LoadError: Failed to precompile FFMPEG [c87230d0-a227-11e9-1b43-d7ebe4e7570a] to "/home/runner/.julia/compiled/v1.12/FFMPEG/jl_J66K9v".
 in expression starting at /home/runner/.julia/packages/Plots/8ZnR3/src/animation.jl:1
 in expression starting at /home/runner/.julia/packages/Plots/8ZnR3/src/Plots.jl:1

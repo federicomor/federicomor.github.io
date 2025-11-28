@@ -18,4 +18,4 @@ x1_max = x1s[max_idx[1]]
 x2_max = x1s[max_idx[2]]
 plot3d(x1s,x2s,vals',st=:surface, label="")
 plot3d!(repeat([x1_max],2),repeat([x2_max],2),[0,maximum(vals)+0.5],label="")
-savefig(joinpath(@OUTPUT, "m3_plot.json")); # hide
+savefig(joinpath("_assets","literate_outputs","M3P.json")); # hide

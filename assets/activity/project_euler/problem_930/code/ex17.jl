@@ -39,7 +39,7 @@ function F(nbowls, nballs; verbose=false, plot_graph=false)
 		# SparseArrays._show_with_braille_patterns(stdout, P)
 		# with a real plot:
 		spy(P)
-		savefig(joinpath(@OUTPUT, "P_sparsity.svg")); # hide
+		savefig(joinpath("_assets","literate_outputs", "LO_P_sparsity.svg")); # hide
 	end
 	if plot_graph
 		println("Plotting MC graph")

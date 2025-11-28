@@ -11,4 +11,4 @@ plot(x1s,vals,label="")
 max_idx = argmax(vals)
 x1_max = x1s[max_idx]
 vline!([x1_max],label="")
-savefig(joinpath(@OUTPUT, "m2_plot.json")); # hide
+savefig(joinpath("_assets","literate_outputs","M2P.json")); # hide

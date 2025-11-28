@@ -5,4 +5,5 @@ plot!(ps,p_navigare.(4,ps), label="4 motori")
 plot!(ps,p_navigare.(6,ps), label="6 motori")
 plot!(ps,p_navigare.(8,ps), label="8 motori")
 plot!(ps,p_navigare.(10,ps), label="10 motori")
-savefig(joinpath(@OUTPUT, "2vothers_motori.json")); # hide
+# savefig(joinpath(@OUTPUT, "2vothers_motori.json")); # hide
+savefig("/assets/literate_outputs/2vothers_motori.json"); # hide
