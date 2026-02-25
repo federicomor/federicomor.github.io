@@ -4,8 +4,202 @@ using DataStructures
 using IterativeSolvers
 using Plots, GraphRecipes
 gr&#40;&#41; # plots backend
-Random.seed&#33;&#40;31032025&#41;;</code></pre><pre><code class="plaintext code-output">UndefVarError: `gr` not defined in `Main.FD_SANDBOX_5647245269982265311`
-Suggestion: check for spelling errors or missing imports.
+Random.seed&#33;&#40;31032025&#41;;</code></pre><pre><code class="plaintext code-output">The following 2 direct dependencies failed to precompile:
+
+Plots → UnitfulExt 
+
+Failed to precompile UnitfulExt [0e51ec96-f580-5f12-a625-1297083d7970] to "/home/runner/.julia/compiled/v1.12/UnitfulExt/jl_eWIDi7".
+ERROR: LoadError: MethodError: no method matching tempname(::typeof(Scratch.scratch_dir))
+The function `tempname` exists, but no method is defined for this combination of argument types.
+
+Closest candidates are:
+  tempname(; ...)
+   @ Base file.jl:736
+  tempname(!Matched::AbstractString; max_tries, cleanup, suffix)
+   @ Base file.jl:736
+
+Stacktrace:
+  [1] var"##1#278"()
+    @ Plots ~/.julia/packages/Plots/Ec1L1/src/init.jl:128
+  [2] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:138
+  [3] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+  [4] EvalInto
+    @ ./boot.jl:494 [inlined]
+  [5] _broadcast_getindex_evalf
+    @ ./broadcast.jl:699 [inlined]
+  [6] _broadcast_getindex
+    @ ./broadcast.jl:672 [inlined]
+  [7] _getindex
+    @ ./broadcast.jl:620 [inlined]
+  [8] getindex
+    @ ./broadcast.jl:616 [inlined]
+  [9] copy
+    @ ./broadcast.jl:933 [inlined]
+ [10] materialize
+    @ ./broadcast.jl:894 [inlined]
+ [11] macro expansion
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:146 [inlined]
+ [12] macro expansion
+    @ ~/.julia/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+ [13] (::Plots.var"#484#485"{Vector{Expr}, Vector{Expr}})()
+    @ Plots ~/.julia/packages/Plots/Ec1L1/src/init.jl:143
+ [14] withenv(f::Plots.var"#484#485"{Vector{Expr}, Vector{Expr}}, keyvals::Pair{String, String})
+    @ Base ./env.jl:265
+ [15] macro expansion
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:142 [inlined]
+ [16] macro expansion
+    @ ~/.julia/packages/PrecompileTools/gn08A/src/workloads.jl:121 [inlined]
+ [17] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:118
+ [18] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [19] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/Plots.jl:176
+ [20] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [21] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:3024
+ [22] top-level scope
+    @ stdin:5
+ [23] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [24] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2870
+ [25] include_string
+    @ ./loading.jl:2880 [inlined]
+ [26] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [27] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/src/init.jl:112
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/src/Plots.jl:1
+in expression starting at stdin:5
+ERROR: LoadError: Failed to precompile Plots [91a5bcdd-55d7-5caf-9e0b-520d859cae80] to "/home/runner/.julia/compiled/v1.12/Plots/jl_PH3Ust".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3311
+  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+    @ Base ./loading.jl:2679
+  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /opt/hostedtoolcache/julia/1.12.5/x64/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+  [5] #mkpidlock#7
+    @ /opt/hostedtoolcache/julia/1.12.5/x64/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /opt/hostedtoolcache/julia/1.12.5/x64/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+  [7] #invokelatest_gr#232
+    @ ./reflection.jl:1297 [inlined]
+  [8] invokelatest_gr
+    @ ./reflection.jl:1289 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3882
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3879 [inlined]
+ [11] __require_prelocked(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2665
+ [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2493
+ [13] macro expansion
+    @ ./loading.jl:2421 [inlined]
+ [14] macro expansion
+    @ ./lock.jl:376 [inlined]
+ [15] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2386
+ [16] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2362
+ [17] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/ext/UnitfulExt.jl:6
+ [18] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:3024
+ [20] top-level scope
+    @ stdin:5
+ [21] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2870
+ [23] include_string
+    @ ./loading.jl:2880 [inlined]
+ [24] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [25] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/ext/UnitfulExt.jl:4
+in expression starting at stdin:5
+Plots 
+
+Failed to precompile Plots [91a5bcdd-55d7-5caf-9e0b-520d859cae80] to "/home/runner/.julia/compiled/v1.12/Plots/jl_XPXbg5".
+ERROR: LoadError: MethodError: no method matching tempname(::typeof(Scratch.scratch_dir))
+The function `tempname` exists, but no method is defined for this combination of argument types.
+
+Closest candidates are:
+  tempname(; ...)
+   @ Base file.jl:736
+  tempname(!Matched::AbstractString; max_tries, cleanup, suffix)
+   @ Base file.jl:736
+
+Stacktrace:
+  [1] var"##1#278"()
+    @ Plots ~/.julia/packages/Plots/Ec1L1/src/init.jl:128
+  [2] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:138
+  [3] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+  [4] EvalInto
+    @ ./boot.jl:494 [inlined]
+  [5] _broadcast_getindex_evalf
+    @ ./broadcast.jl:699 [inlined]
+  [6] _broadcast_getindex
+    @ ./broadcast.jl:672 [inlined]
+  [7] _getindex
+    @ ./broadcast.jl:620 [inlined]
+  [8] getindex
+    @ ./broadcast.jl:616 [inlined]
+  [9] copy
+    @ ./broadcast.jl:933 [inlined]
+ [10] materialize
+    @ ./broadcast.jl:894 [inlined]
+ [11] macro expansion
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:146 [inlined]
+ [12] macro expansion
+    @ ~/.julia/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+ [13] (::Plots.var"#484#485"{Vector{Expr}, Vector{Expr}})()
+    @ Plots ~/.julia/packages/Plots/Ec1L1/src/init.jl:143
+ [14] withenv(f::Plots.var"#484#485"{Vector{Expr}, Vector{Expr}}, keyvals::Pair{String, String})
+    @ Base ./env.jl:265
+ [15] macro expansion
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:142 [inlined]
+ [16] macro expansion
+    @ ~/.julia/packages/PrecompileTools/gn08A/src/workloads.jl:121 [inlined]
+ [17] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:118
+ [18] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [19] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/Plots.jl:176
+ [20] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [21] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:3024
+ [22] top-level scope
+    @ stdin:5
+ [23] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [24] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2870
+ [25] include_string
+    @ ./loading.jl:2880 [inlined]
+ [26] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [27] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/src/init.jl:112
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/src/Plots.jl:1
+in expression starting at stdin:5
 </code></pre> <p>Per iniziare ad ambientarci nel contesto del problema &#40;ovvero con il meccanismo di spostamento delle palline nelle ciotole, la condizione di terminazione del gioco, ecc&#41; possiamo implementare una semplice simulazione del gioco stesso, osservando quali possibili scenari possono verificarsi.</p> <pre><code class=language-julia ># n bowls, m balls
 function simulate_F&#40;n::Int, m::Int; num_trials::Int&#61;10000, verbose&#61;false&#41;
     total_moves &#61; 0
@@ -35,7 +229,7 @@ function simulate_F&#40;n::Int, m::Int; num_trials::Int&#61;10000, verbose&#61;f
     return total_moves / num_trials  # estimate of F&#40;n, m&#41;
 end</code></pre><pre><code class="plaintext code-output">simulate_F (generic function with 1 method)</code></pre>
 <p>Con questa funzione possiamo o simulare il problema per ottenere una stima più o meno accurata della soluzione:</p>
-<pre><code class=language-julia >simulate_F&#40;2, 3, num_trials &#61; 20_000&#41; # soluzione esatta: 9/4 &#61; 2.25</code></pre><pre><code class="plaintext code-output">2.28035</code></pre>
+<pre><code class=language-julia >simulate_F&#40;2, 3, num_trials &#61; 20_000&#41; # soluzione esatta: 9/4 &#61; 2.25</code></pre><pre><code class="plaintext code-output">2.24435</code></pre>
 <p>o altrimenti vedere in concreto cosa accade in un&#39;esempio di esecuzione:</p>
 <pre><code class=language-julia >simulate_F&#40;4, 3, verbose&#61;true&#41;</code></pre><pre><code class="plaintext code-output">Balls are in bowls: [1, 2, 3] (selected ball: 2, will move by: 1)
 Balls are in bowls: [1, 3, 3] (selected ball: 1, will move by: 1)
@@ -75,44 +269,38 @@ Total moves: 10
 <li><p>con la terza formulazione più complicata perché contiamo come una sola configurazione, per via delle simmetrie, configurazioni precedentemente diverse, il numero degli stati diminuisce ulteriormente. Per sapere di quanto diminuisce... beh, di certo esisterà una formula che, come nei casi precedenti, conti elegantemente gli stati in funzione di \(n\) ed \(m\). Tuttavia stavolta ricavarla è molto meno immediato, quindi non ci ho badato troppo: la mia natura ingegneristica ha preso il sopravvento e, contento di aver raggiunto il caso ottimale, ho beatamente proseguito col resto del problema senza stare ad indagare troppo questo calcolo</p>
 
 </ol>
-<p>Il punto è infatti che all&#39;aumentare del numero di ciotole e palline, il terzo metodo permette di limitare la numerosità degli stati, mantenendo quindi il problema più agilmente risolvibile per un computer. Per esempio, con 12 ciotole e 6 palline, il primo metodo prevederebbe \(12^6=2985984\) stati, il secondo \({17 \choose 6}=12376\), il terzo 561. E siccome in seguito vedremo che ci sarà da risolvere un sistema, meglio lavorare con sistemi da 561 variabili rispetto che 2985984&#33;<sup id="fnref:2"><a href="#fndef:2" class=fnref >[2]</a></sup>. La formulazione del secondo metodo è comunque utile a livello umano per raccontare cosa succede, quindi la riprenderò comunque, a volte, nel discorso.</p>
-<p><table class=fndef  id="fndef:1">
+<p>Il punto è infatti che all&#39;aumentare del numero di ciotole e palline, il terzo metodo permette di limitare la numerosità degli stati, mantenendo quindi il problema più agilmente risolvibile per un computer. Per esempio, con 12 ciotole e 6 palline, il primo metodo prevederebbe \(12^6=2985984\) stati, il secondo \({17 \choose 6}=12376\), il terzo 561. E siccome in seguito vedremo che ci sarà da risolvere un sistema, meglio lavorare con sistemi da 561 variabili rispetto che 2985984&#33;. La formulazione del secondo metodo è comunque utile a livello umano per raccontare cosa succede, quindi la riprenderò comunque, a volte, nel discorso.</p>
+<table class=fndef  id="fndef:1">
     <tr>
         <td class=fndef-backref ><a href="#fnref:1">[1]</a>
         <td class=fndef-content >Per la cronaca, è il &quot;classico&quot; problema delle stelline e sbarrette.
     
 </table>
-<table class=fndef  id="fndef:2">
-    <tr>
-        <td class=fndef-backref ><a href="#fnref:2">[2]</a>
-        <td class=fndef-content >Se avete letto il &quot;&#33;&quot; come fattoriale tranquilli, non siete i soli, ormai quando anche in giro leggo <em>&quot;buon compleanno&#33; &#43;20&#33;&quot;</em> lo interpreto istintivamente come un &quot;20 fattoriale&quot;.
-    
-</table>
-</p>
+
 <h3 id="probabilità_iniziali"><a href="#probabilità_iniziali" class=header-anchor >Probabilità iniziali</a></h3>
-<p>Una volta definito come modellare gli stati, il prossimo passo consiste nel calcolare le probabilità che la configurazione iniziale delle palline nelle ciotole sia esattamente un certo stato piuttosto che un altro. Questo servirà perché per trovare il tempo medio necessario ad entrare nella classe ricorrente \(R\), quella in cui tutte le palline sono riunite nella stessa ciotola e quindi il gioco terminerà, dovremmo espandere<sup id="fnref:3"><a href="#fndef:3" class=fnref >[3]</a></sup> il calcolo su tutti i possibili stati da cui possiamo partire. Moralmente dobbiamo cioè pesare i contributi portati da ciascuno stato per la probabilità di partire proprio da quello stato:</p>
+<p>Una volta definito come modellare gli stati, il prossimo passo consiste nel calcolare le probabilità che la configurazione iniziale delle palline nelle ciotole sia esattamente un certo stato piuttosto che un altro. Questo servirà perché per trovare il tempo medio necessario ad entrare nella classe ricorrente \(R\), quella in cui tutte le palline sono riunite nella stessa ciotola e quindi il gioco terminerà, dovremmo espandere<sup id="fnref:2"><a href="#fndef:2" class=fnref >[2]</a></sup> il calcolo su tutti i possibili stati da cui possiamo partire. Moralmente dobbiamo cioè pesare i contributi portati da ciascuno stato per la probabilità di partire proprio da quello stato:</p>
 \[ \mathbb{E}(\text{#passi per entrare in $R$}) =  \sum_{i \in S} \mathbb{E}(\text{#passi per entrare in $R$ partendo da $i$}) \cdot \mathbb{P}(\text{partiamo da $i$})\]
 <p>Intuitivamente ha senso: se da uno stato magari ci mettiamo pochi passi per entrare nella classe ricorrente \(R\), ma quella configurazione iniziale è molto rara da ottenere, allora è giusto che il suo contributo venga scalato rispetto agli altri.</p>
-<p>Comunque, tornando al discorso, per calcolare queste probabilità serve invocare la distribuzione Multinomiale, dove diciamo che \({\bf{X}}=(X_1,\ldots,X_n) \sim \text{Mult}(m,(p_1,\ldots,p_n))\) se \({\bf{X}}\) modella lo scenario in cui, ripetendo un certo esperimento aleatorio per \(m\) volte, sono risultate \(X_i\) occorrenze di ciascun evento \(i\), il quale aveva probabilità \(p_i\) di verificarsi<sup id="fnref:4"><a href="#fndef:4" class=fnref >[4]</a></sup>.</p>
+<p>Comunque, tornando al discorso, per calcolare queste probabilità serve invocare la distribuzione Multinomiale, dove diciamo che \({\bf{X}}=(X_1,\ldots,X_n) \sim \text{Mult}(m,(p_1,\ldots,p_n))\) se \({\bf{X}}\) modella lo scenario in cui, ripetendo un certo esperimento aleatorio per \(m\) volte, sono risultate \(X_i\) occorrenze di ciascun evento \(i\), il quale aveva probabilità \(p_i\) di verificarsi<sup id="fnref:3"><a href="#fndef:3" class=fnref >[3]</a></sup>.</p>
 <p>Questa distribuzione fa precisamente al caso nostro: come \(m\) esperimenti aleatori abbiamo le assegnazioni di ciascuna delle \(m\) palline a una qualunque delle \(n\) ciotole, scelta in modo casuale e con equiprobabilità. Quindi tutte le \(p_i\) per \(i=1,\ldots,n\) saranno uguali a \(\frac{1}{n}\). La probabilità di ottenere una certa configurazione \(\bf{X}=\bf{x}\) sarà quindi data dalla densità Multinomiale: </p>
 \[p_{\bf{X}}({\bf x}) = \mathbb{P}({\bf X}={\bf x}) = \frac{m!}{x_1!\cdots x_n!}\prod_{i=1}^n p_i^{x_i}\]
 <p>Questa probabilità va però poi aggiustata contando per le simmetrie. Nel nostro caso, infatti, uno stato del tipo \(00k0\) &#40;rappresentato con la seconda formulazione&#41; sarebbe equivalente a \(k000\), \(0k00\), e \(000k\), dato che sono tutti simmetrici rispetto alla disposizione circolare delle ciotole. L&#39;aggiustamento consiste quindi nel moltiplicare quella probabilità &quot;base&quot; per il numero di occorrenze che tale configurazione presenta. Consideriamo ad esempio lo stato \(0002\), dove abbiamo \(n=4\) ciotole e \(m=2\) palline. Questo stato può manifestarsi in 4 possibili casi &#40;come appena spiegato, sciogliendo la simmetria circolare&#41;, quindi la probabilità di ottenere tala configurazione è pari a </p>
 \[p(0002) = 4\cdot\frac{2!}{0!0!0!2!} \left(\frac{1}{4}\right)^0\left(\frac{1}{4}\right)^0\left(\frac{1}{4}\right)^0 \left(\frac{1}{4}\right)^2 = \frac{1}{4}\]
-<p><table class=fndef  id="fndef:3">
+<p><table class=fndef  id="fndef:2">
     <tr>
-        <td class=fndef-backref ><a href="#fnref:3">[3]</a>
+        <td class=fndef-backref ><a href="#fnref:2">[2]</a>
         <td class=fndef-content >Tecnicamente, si può dire anche esplodere o disintegrare&#33; molto più divertenti.
     
 </table>
-<table class=fndef  id="fndef:4">
+<table class=fndef  id="fndef:3">
     <tr>
-        <td class=fndef-backref ><a href="#fnref:4">[4]</a>
+        <td class=fndef-backref ><a href="#fnref:3">[3]</a>
         <td class=fndef-content >Come vincoli, abbiamo da chiedere che \(\sum p_i=1\) &#40;qualcosa deve sempre verificarsi&#41; e \(\sum X_i = m\) &#40;le occorrenze di ciascun evento devono ammontare al totale di esperimenti condotti&#41;.
     
 </table>
 </p>
 <h3 id=finalmente_un_po_di_codice ><a href="#finalmente_un_po_di_codice" class=header-anchor >Finalmente un po&#39; di codice</a></h3>
-<p>Le funzioni qui di seguito si occupano di generare le variabili finora introdotte. Di ogni funzione propongo anche alcuni esempietti di esecuzione, con l&#39;opzione <code>verbose</code> attiva, in modo da facilitarne la comprensione.</p>
+<p>Le funzioni qui di seguito si occupano di generare le variabili finora introdotte. Di ogni funzione propongo anche alcuni esempietti di esecuzione, con l&#39;opzione <code>verbose</code> attiva, in modo da facilitarne la comprensione. Possiamo inoltre usare il tipo <code>Rational</code> per questi calcoli in modo da ottenere una soluzione nello stesso formato proposto dal testo.</p>
 <pre><code class=language-julia ># generate all possible states of where balls can be located in the bowls
 function get_all_states&#40;n::Int, m::Int; verbose&#61;false&#41;
 	if n &#61;&#61; 1
@@ -190,17 +378,17 @@ function get_states&#40;bowls::Int, balls::Int; verbose&#61;false&#41;
 			println&#40;&quot;stato: &quot;, key, &quot; &#61;&gt; # ocorrenze: &quot;, val&#41;
 		end
 	end
-	prob &#61; factorial&#40;balls&#41; / &#40;bowls ^ balls&#41;
+	prob &#61; factorial&#40;balls&#41; // &#40;bowls ^ balls&#41;
 	if verbose
 		@show states
 		@show prob
 	end
-	init_probs &#61; Float64&#91;&#93;
+	init_probs &#61; Rational&#91;&#93;
 	for x in states
 		if verbose print&#40;x&#41; end
 		p &#61; multiStates&#91;x&#93; * prob
 		for y in x
-			p *&#61; 1 / factorial&#40;y&#41;
+			p *&#61; 1 // factorial&#40;y&#41;
 		end
 		if verbose print&#40;&quot; -&gt; p: &#36;p&quot;&#41; end
 		push&#33;&#40;init_probs, p&#41;
@@ -214,12 +402,12 @@ stato: Real[0, 0, 1, 0, 2] => # ocorrenze: 10
 stato: Real[0, 0, 1, 1, 1] => # ocorrenze: 5
 stato: Real[0, 1, 0, 1, 1] => # ocorrenze: 5
 states = [[0, 0, 0, 0, 3], [0, 0, 0, 1, 2], [0, 0, 1, 0, 2], [0, 0, 1, 1, 1], [0, 1, 0, 1, 1]]
-prob = 0.048
-[0, 0, 0, 0, 3] -> p: 0.039999999999999994
-[0, 0, 0, 1, 2] -> p: 0.24
-[0, 0, 1, 0, 2] -> p: 0.24
-[0, 0, 1, 1, 1] -> p: 0.24
-[0, 1, 0, 1, 1] -> p: 0.24
+prob = 6//125
+[0, 0, 0, 0, 3] -> p: 1//25
+[0, 0, 0, 1, 2] -> p: 6//25
+[0, 0, 1, 0, 2] -> p: 6//25
+[0, 0, 1, 1, 1] -> p: 6//25
+[0, 1, 0, 1, 1] -> p: 6//25
 </code></pre>
 <pre><code class=language-julia ># check if a state is absorbing
 function is_absorbing&#40;state::Vector&#41;
@@ -270,10 +458,10 @@ All states and minimal representations:
 [0, 0, 1, 2] => [0, 0, 1, 2]
 [0, 0, 0, 3] => [0, 0, 0, 3]
 Initial probabilities:
-[0, 0, 0, 3] => 0.0625
-[0, 0, 1, 2] => 0.375
-[0, 1, 0, 2] => 0.1875
-[0, 1, 1, 1] => 0.375
+[0, 0, 0, 3] => 1//16
+[0, 0, 1, 2] => 3//8
+[0, 1, 0, 2] => 3//16
+[0, 1, 1, 1] => 3//8
 </code></pre>
 <h3 id=assembliamo_la_soluzione ><a href="#assembliamo_la_soluzione" class=header-anchor >Assembliamo la soluzione</a></h3>
 <p>Ora che disponiamo di alcuni degli elementi fondamentali per modellare il problema, possiamo audacemente proseguire verso il sistema lineare che ci condurrà effettivamente alla sua soluzione. Dopo aver definito alcune variabili di supporto e di contesto, tra cui in particolare gli stati e il vettore delle probabilità iniziali,</p>
@@ -284,7 +472,7 @@ states, p₀ &#61; get_states&#40;nbowls, nballs&#41;
 states_dict &#61; Dict&#40;state &#61;&gt; i for &#40;i, state&#41; in enumerate&#40;states&#41;&#41;
 nstates &#61; length&#40;states&#41;;</code></pre>
 <p>occorre ora costruire la matrice \(P\). Per farlo, l&#39;idea è che possiamo iterare sugli stati e guardare in quali altri stati possiamo arrivare seguendo i possibili modi in cui le palline possono spostarsi.</p>
-<pre><code class=language-julia >P &#61; zeros&#40;nstates, nstates&#41;
+<pre><code class=language-julia >P &#61; zeros&#40;Rational&#123;Int&#125;, nstates, nstates&#41;
 for st in states
 	if &#33;is_absorbing&#40;st&#41;
 		for i in 1:nbowls
@@ -323,19 +511,19 @@ Int.&#40;P&#41; ## prima</code></pre><pre><code class="plaintext code-output">10
  0  0  0  0  0  4  0  2  0  4
  0  0  0  0  2  2  0  0  2  4</code></pre>
 <pre><code class=language-julia >for i in 1:size&#40;P&#41;&#91;1&#93;
-	P&#91;i,:&#93; &#61; P&#91;i,:&#93;/sum&#40;P&#91;i,:&#93;&#41;
+	P&#91;i,:&#93; &#61; P&#91;i,:&#93;//sum&#40;P&#91;i,:&#93;&#41;
 end
-P ## dopo</code></pre><pre><code class="plaintext code-output">10×10 Matrix{Float64}:
- 1.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
- 0.1  0.0  0.4  0.1  0.0  0.0  0.4  0.0  0.0  0.0
- 0.0  0.2  0.3  0.0  0.2  0.3  0.0  0.0  0.0  0.0
- 0.0  0.2  0.0  0.0  0.8  0.0  0.0  0.0  0.0  0.0
- 0.0  0.0  0.1  0.1  0.0  0.3  0.1  0.1  0.0  0.3
- 0.0  0.0  0.1  0.0  0.2  0.1  0.2  0.0  0.2  0.2
- 0.0  0.2  0.0  0.0  0.2  0.6  0.0  0.0  0.0  0.0
- 0.0  0.0  0.0  0.0  0.4  0.0  0.0  0.0  0.6  0.0
- 0.0  0.0  0.0  0.0  0.0  0.4  0.0  0.2  0.0  0.4
- 0.0  0.0  0.0  0.0  0.2  0.2  0.0  0.0  0.2  0.4</code></pre>
+P ## dopo</code></pre><pre><code class="plaintext code-output">10×10 Matrix{Rational{Int64}}:
+  1      0     0      0      0     0      0      0      0     0
+ 1//10   0    2//5   1//10   0     0     2//5    0      0     0
+  0     1//5  3//10   0     1//5  3//10   0      0      0     0
+  0     1//5   0      0     4//5   0      0      0      0     0
+  0      0    1//10  1//10   0    3//10  1//10  1//10   0    3//10
+  0      0    1//10   0     1//5  1//10  1//5    0     1//5  1//5
+  0     1//5   0      0     1//5  3//5    0      0      0     0
+  0      0     0      0     2//5   0      0      0     3//5   0
+  0      0     0      0      0    2//5    0     1//5    0    2//5
+  0      0     0      0     1//5  1//5    0      0     1//5  2//5</code></pre>
 <p>Diventa anche molto bello plottare il grafo che mostra le possibili transizioni tra gli stati della catena di Markov, dove giustamente osserviamo che esiste un solo stato assorbente &#40;l&#39;unico ad avere come unica freccia una freccia verso sé stesso&#41;.</p>
 <pre><code class=language-julia ># https://docs.juliaplots.org/stable/generated/graph_attributes/#graph_attributes
 graphplot&#40;P,
@@ -348,10 +536,10 @@ graphplot&#40;P,
 	fontsize &#61; 4,
 	self_edge_size &#61; 0.12,
 	method&#61;:circular,
-	axis_buffer&#61;0.2&#41;</code></pre><pre><code class="plaintext code-output">UndefVarError: `backend` not defined in `Plots`
+	axis_buffer&#61;0.2&#41;</code></pre><pre><code class="plaintext code-output">UndefVarError: `graphplot` not defined in `Main.FD_SANDBOX_5647245269982265311`
 Suggestion: check for spelling errors or missing imports.
 </code></pre>
-<img src="/assets/literate_outputs/LO_mc_graph_real.svg" alt="">
+<img src="/assets/literate_outputs/pe_930_1.svg" alt="">
 <p>Una volta creata \(P\), dobbiamo capire come usarla per risolvere il problema. Possiamo intanto osservare la struttura di \(P\) &#40;o in generale di una qualunque matrice di transizione per una catena di Markov che presenta stati assorbenti&#41;. La struttura di \(P\) è infatti </p>
 \[ P =\begin{pmatrix} I & O\\ R &  Q\end{pmatrix}\]
 <p>dove</p>
@@ -368,39 +556,40 @@ Suggestion: check for spelling errors or missing imports.
 <p>Noto solo ora che non ho mai chiarito cosa si intende precisamente con stati assorbenti o transienti. Forse perché supponevo che dal nome fosse tutto sommato intuibile, ma in effetti un po&#39; di teoria anche qui non guasta. Parliamo di stati ricorrenti quando la catena di Markov ci passerà di sicuro un numero infinito di volte, da cui il nome ricorrenti: continuiamo a visitarli, ne siamo proprio affezionati. Uno stato è invece transiente se non è ricorrente, cioè se quindi,  nel lungo termine, smetteremo di visitarlo. Uno stato assorbente è la massima espressione di uno stato ricorrente in quanto, una volta entrati in uno stato assorbente, non possiamo più abbandonarlo, ne veniamo infatti &quot;assorbiti&quot;.</p>
 <p>Tornando alla struttura di \(P\), con la logica del nostro codice esisterà un solo stato assorbente, e si troverà sempre in posizione 1. Di conseguenza, gli indici <code>2:end</code> definiranno la matrice \(Q\).</p>
 <p>Questa matrice \(Q\) serve, e siamo quasi arrivati alla fine, per risolvere il sistema dei &quot;mean hitting time&quot;. L&#39;obiettivo era infatti di trovare \(k_i^R=\mathbb{E}_i(H_R)\), ovvero il tempo &#40;o equivalentemente, il numero di passi&#41; medio necessario per entrare nella classe \(R\) degli stati ricorrenti, partendo da un qualunque stato \(i\). Nel nostro caso, in realtà, la classe \(R\) è formata dall&#39;unico stato assorbente, e quindi ricorrente, in cui le palline sono tutte riunite assieme nella stessa ciotola &#40;in simboli, la configurazione \(00\ldots 00m\)&#41;. Si può ricavare che</p>
-\[ \begin{cases} k_i^R = 0 & i\in R\\ k_i^R = 1+\sum_{j\notin R}p_{ij}k_j^R & i\notin R \end{cases} \]
-<p>Trascurando, in generale, gli stati ricorrenti &#40;nel nostro caso, di nuovo, sarebbe trascurare un solo stato&#41; che non danno contributo, essendo che per loro \(k_i^R=0\), possiamo considerare la sola seconda equazione e vederla in forma vettoriale \({\bf{k}} = {\bf{1}} + Q\bf{k}\), da cui si ricava il sistema \((I-Q)\bf{k} = \bf{1}\), che possiamo risolvere in julia in modo classico con l&#39;operatore backslash <code>\</code>, altrimenti usando metodi più sofisticati dal pacchetto <code>IterativeSolvers</code>.</p>
+\[ \begin{cases} k_i^R = 0 & i\in R\\ k_i^R = 1+\displaystyle\sum_{j\notin R}p_{ij}k_j^R & i\notin R \end{cases} \]
+<p>Trascurando, in generale, gli stati ricorrenti &#40;nel nostro caso, di nuovo, sarebbe trascurare un solo stato&#41; che non danno contributo, essendo che per loro \(k_i^R=0\), possiamo considerare la sola seconda equazione e vederla in forma vettoriale \({\bf{k}} = {\bf{1}} + Q\bf{k}\), da cui si ricava il sistema \((I-Q)\bf{k} = \bf{1}\), che possiamo risolvere in julia in modo classico con l&#39;operatore backslash <code>\</code> o usando metodi più sofisticati dal pacchetto <code>IterativeSolvers</code>.</p>
 <pre><code class=language-julia ># https://en.wikipedia.org/wiki/Absorbing_Markov_chain
 Q &#61; P&#91;2:end,2:end&#93;
 if size&#40;Q&#41;&#91;1&#93; &gt; 1 # c&#39;è davvero un sistema da risolvere
-	k &#61; &#40;I&#40;nstates-1&#41;-Q&#41;\ones&#40;nstates-1&#41; # metodo classico
+	k &#61; &#40;I&#40;nstates-1&#41;-Q&#41;\ones&#40;Rational,nstates-1&#41; # metodo classico
 	# k &#61; bicgstabl&#40;I&#40;nstates-1&#41;-Q, ones&#40;nstates-1&#41;&#41; # biconjugate gradient method, per esempio
 else
 	k &#61; &#91;1/&#40;I&#40;nstates-1&#41;-Q&#41;&#91;1&#93;&#93;
-end</code></pre><pre><code class="plaintext code-output">9-element Vector{Float64}:
- 255.0000000000024
- 280.833333333336
- 283.333333333336
- 289.16666666666936
- 289.1666666666694
- 283.33333333333593
- 291.6666666666694
- 291.6666666666694
- 291.6666666666694</code></pre>
+end</code></pre><pre><code class="plaintext code-output">9-element Vector{Rational{Int64}}:
+   255
+ 1685//6
+  850//3
+ 1735//6
+ 1735//6
+  850//3
+  875//3
+  875//3
+  875//3</code></pre>
 <p>Una volta trovato \(\bf{k}\) possiamo combinarlo con il vettore \(\bf{p_0}\) delle probabilità iniziali per trovare la soluzione finale. Data la formulazione del problema, infatti, possiamo dire che</p>
 \[\mathbb{E}(\text{#passi per entrare in $R$}) = \sum_{i\in S} k_i^R \cdot \mathbb{P}(\text{partire da $i$})={\bf{k}}^T{\bf{p_0}}\]
 <p>da cui ricaviamo</p>
-<pre><code class=language-julia >slz &#61; dot&#40;k,p₀&#91;2:end&#93;&#41;</code></pre><pre><code class="plaintext code-output">286.458333333336</code></pre>
-<p>che corrisponde alla soluzione esatta 6875/24:</p>
+<pre><code class=language-julia >slz &#61; dot&#40;k,p₀&#91;2:end&#93;&#41;</code></pre><pre><code class="plaintext code-output">6875//24</code></pre>
+<p>che corrisponde precisamente alla soluzione esatta, che numericamente sarebbe:</p>
 <pre><code class=language-julia >6875/24</code></pre><pre><code class="plaintext code-output">286.4583333333333</code></pre>
 <h3 id=tutto_insieme ><a href="#tutto_insieme" class=header-anchor >Tutto insieme</a></h3>
-<p>Infine, riuniamo qui all&#39;interno di un&#39;unica funzione ordinata tutti i passaggi finora esposti. Possiamo anche effettuare qualche piccola ottimizzazione, per esempio definendo la matrice \(P\) come sparsa, grazie alle strutture importate con <code>SparseArrays</code>, in modo da potenzialmente diminuire il consumo di memoria, dato che in effetti la matrice \(P\) di transizione sarà spesso vuota, essendo che non tutti gli stati conducono a tutti gli stati.</p>
-<pre><code class=language-julia >function F&#40;nbowls, nballs; verbose&#61;false, plot_graph&#61;false&#41;
+<p>Infine, riuniamo qui all&#39;interno di un&#39;unica funzione ordinata tutti i passaggi finora esposti. Possiamo anche effettuare qualche piccola ottimizzazione, per esempio definendo la matrice \(P\) come sparsa, grazie alle strutture importate con <code>SparseArrays</code>, in modo da potenzialmente diminuire il consumo di memoria, dato che in effetti la matrice \(P\) di transizione sarà spesso vuota, essendo che non tutti gli stati conducono a tutti gli stati. Parametrizziamo inoltre con <code>T</code> il tipo impiegato per la codifica dei numeri, ovvero in classica virgola mobile o col più sofisticato tipo razionale, per permettere di scegliere di favorire, rispettivamente, velocità di esecuzione o esattezza matematica.</p>
+<pre><code class=language-julia >function F&#40;::Type&#123;T&#125;, nbowls, nballs; verbose&#61;false, plot_graph&#61;false&#41; where &#123;T&lt;:Number&#125;
+	# T will be e.g. Float64 &#40;for speed&#41;, Rational&#123;Int&#125; or Rational&#123;BigInt&#125; &#40;for precision&#41;
 	if verbose println&#40;&quot;Deriving states and initial probabilities&quot;&#41; end
 	states, p₀ &#61; get_states&#40;nbowls, nballs&#41;
 	states_dict &#61; Dict&#40;state &#61;&gt; i for &#40;i, state&#41; in enumerate&#40;states&#41;&#41;
 	nstates &#61; length&#40;states&#41;
-	P &#61; spzeros&#40;nstates, nstates&#41;
+	P &#61; spzeros&#40;T, nstates, nstates&#41;
 	if verbose println&#40;&quot;Assembling transition matrix&quot;&#41; end
 	for st in states
 		if &#33;is_absorbing&#40;st&#41;
@@ -426,7 +615,8 @@ end</code></pre><pre><code class="plaintext code-output">9-element Vector{Float6
 	end
 	# normalize the matrix by dividing each value by the sum of its row values
 	for i in 1:size&#40;P&#41;&#91;1&#93;
-		P&#91;i,:&#93; &#61; P&#91;i,:&#93;/sum&#40;P&#91;i,:&#93;&#41;
+		row_sum &#61; sum&#40;P&#91;i,:&#93;&#41;
+		P&#91;i,:&#93; &#61; P&#91;i,:&#93; ./ row_sum
 	end
 	if verbose
 		println&#40;&quot;Let&#39;s have a view of the sparsity of P&quot;&#41;
@@ -452,72 +642,135 @@ end</code></pre><pre><code class="plaintext code-output">9-element Vector{Float6
 	end
 	Q &#61; P&#91;2:end,2:end&#93;
 	if verbose println&#40;&quot;Solving the linear system&quot;&#41; end
+	Id &#61; Matrix&#123;T&#125;&#40;I, nstates-1, nstates-1&#41;
 	if size&#40;Q&#41;&#91;1&#93; &gt; 1
-		k &#61; &#40;I&#40;nstates-1&#41;-Q&#41;\ones&#40;nstates-1&#41;
+		k &#61; &#40;Id-Q&#41;\ones&#40;T,nstates-1&#41;
 	else
-		k &#61; &#91;1/&#40;I&#40;nstates-1&#41;-Q&#41;&#91;1&#93;&#93;
+		k &#61; &#91;1/&#40;Id-Q&#41;&#91;1&#93;&#93;
 	end
 	slz &#61; dot&#40;k,p₀&#91;2:end&#93;&#41;
 	if verbose println&#40;&quot;done&#33;&quot;&#41; end
 	return slz
 end
-F&#40;12,6,verbose&#61;true,plot_graph&#61;false&#41;</code></pre><pre><code class="plaintext code-output">Deriving states and initial probabilities
+F&#40;Float64,12,6,verbose&#61;true,plot_graph&#61;false&#41;</code></pre><pre><code class="plaintext code-output">Deriving states and initial probabilities
 Assembling transition matrix
 Let's have a view of the sparsity of P
-UndefVarError: `backend` not defined in `Plots`
+UndefVarError: `spy` not defined in `Main.FD_SANDBOX_5647245269982265311`
 Suggestion: check for spelling errors or missing imports.
 </code></pre>
-<img src="/assets/literate_outputs/LO_P_sparsity.svg" alt="">
+<img src="/assets/literate_outputs/pe_930_2.svg" alt="">
 <pre><code class=language-julia >function G&#40;N,M&#41;
 	S &#61; 0
 	for n in 2:N, m in 2:M
-		println&#40;&quot;&#40;n,m&#41;&#61;&#40;&#36;n,&#36;m&#41;&quot;&#41;
-		@time S &#43;&#61; F&#40;n,m&#41;
+		@time out &#61; F&#40;Rational&#123;Int&#125;,n,m&#41;
+		println&#40;&quot;&#40;n,m&#41;&#61;&#40;&#36;n,&#36;m&#41; &#61;&gt; E&#91;#steps&#93; &#61; &#36;out &#61; &#36;&#40;Float64&#40;out&#41;&#41;&quot;&#41;
+		S &#43;&#61; out
 		println&#40;&quot;&quot;&#41;
 	end
 	println&#40;&quot;done&#33;&quot;&#41;
 	return S
 end
 
-G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-output">(n,m)=(2,2)
-  0.000073 seconds (246 allocations: 9.562 KiB)
+G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-output">  0.000064 seconds (243 allocations: 9.938 KiB)
+(n,m)=(2,2) => E[#steps] = 1//2 = 0.5
 
-(n,m)=(2,3)
-  0.000013 seconds (276 allocations: 10.703 KiB)
+  0.000057 seconds (273 allocations: 11.094 KiB)
+(n,m)=(2,3) => E[#steps] = 9//4 = 2.25
 
-(n,m)=(2,4)
-  0.000123 seconds (479 allocations: 32.109 KiB)
+  0.000024 seconds (399 allocations: 16.453 KiB)
+(n,m)=(2,4) => E[#steps] = 13//2 = 6.5
 
-(n,m)=(2,5)
-  0.000028 seconds (506 allocations: 33.094 KiB)
+  0.000020 seconds (426 allocations: 17.469 KiB)
+(n,m)=(2,5) => E[#steps] = 125//8 = 15.625
 
-(n,m)=(3,2)
-  0.000017 seconds (388 allocations: 14.719 KiB)
+  0.000019 seconds (383 allocations: 15.047 KiB)
+(n,m)=(3,2) => E[#steps] = 4//3 = 1.3333333333333333
 
-(n,m)=(3,3)
-  0.000034 seconds (776 allocations: 43.781 KiB)
+  0.000027 seconds (694 allocations: 28.391 KiB)
+(n,m)=(3,3) => E[#steps] = 22//3 = 7.333333333333333
 
-(n,m)=(3,4)
-  0.000052 seconds (1.06 k allocations: 56.984 KiB)
+  0.000045 seconds (976 allocations: 40.734 KiB)
+(n,m)=(3,4) => E[#steps] = 244//9 = 27.11111111111111
 
-(n,m)=(3,5)
-  0.000068 seconds (1.41 k allocations: 73.078 KiB)
+  0.000062 seconds (1.34 k allocations: 56.219 KiB)
+(n,m)=(3,5) => E[#steps] = 785//9 = 87.22222222222223
 
-(n,m)=(4,2)
-  0.000041 seconds (820 allocations: 48.422 KiB)
+  0.000032 seconds (738 allocations: 32.703 KiB)
+(n,m)=(4,2) => E[#steps] = 5//2 = 2.5
 
-(n,m)=(4,3)
-  0.000060 seconds (1.41 k allocations: 77.062 KiB)
+  0.000052 seconds (1.33 k allocations: 60.875 KiB)
+(n,m)=(4,3) => E[#steps] = 63//4 = 15.75
 
-(n,m)=(4,4)
-  0.000118 seconds (2.69 k allocations: 145.547 KiB)
+  0.000107 seconds (2.62 k allocations: 127.680 KiB)
+(n,m)=(4,4) => E[#steps] = 141//2 = 70.5
 
-(n,m)=(4,5)
-  0.000604 seconds (3.88 k allocations: 206.922 KiB)
+  0.000167 seconds (3.82 k allocations: 189.211 KiB)
+(n,m)=(4,5) => E[#steps] = 6875//24 = 286.4583333333333
 
 done!
-523.0833333333364</code></pre>
-<pre><code class=language-julia >6277/12 # la soluzione esatta per G&#40;4,5&#41;</code></pre><pre><code class="plaintext code-output">523.0833333333334</code></pre>
+6277//12</code></pre>
+<pre><code class=language-julia >6277/12 # la soluzione esatta, come da testo, per G&#40;4,5&#41;</code></pre><pre><code class="plaintext code-output">523.0833333333334</code></pre>
+<p>Di seguito i grafici relativi ai vari casi analizzati in G&#40;4,5&#41;:</p>
+<ul>
+<li><p>2 ciotole, 2 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/2bowls_2balls_graph.svg" alt="">
+<ul>
+<li><p>2 ciotole, 3 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/2bowls_3balls_graph.svg" alt="">
+<ul>
+<li><p>2 ciotole, 4 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/2bowls_4balls_graph.svg" alt="">
+<ul>
+<li><p>2 ciotole, 5 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/2bowls_5balls_graph.svg" alt="">
+<ul>
+<li><p>3 ciotole, 2 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/3bowls_2balls_graph.svg" alt="">
+<ul>
+<li><p>3 ciotole, 3 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/3bowls_3balls_graph.svg" alt="">
+<ul>
+<li><p>3 ciotole, 4 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/3bowls_4balls_graph.svg" alt="">
+<ul>
+<li><p>3 ciotole, 5 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/3bowls_5balls_graph.svg" alt="">
+<ul>
+<li><p>4 ciotole, 2 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/4bowls_2balls_graph.svg" alt="">
+<ul>
+<li><p>4 ciotole, 3 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/4bowls_3balls_graph.svg" alt="">
+<ul>
+<li><p>4 ciotole, 4 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/4bowls_4balls_graph.svg" alt="">
+<ul>
+<li><p>4 ciotole, 5 palline</p>
+
+</ul>
+<img src="/assets/literate_outputs/project_euler/4bowls_5balls_graph.svg" alt="">
 
 <script src="https://giscus.app/client.js"
 		data-repo="federicomor/federicomor.github.io"
@@ -537,7 +790,7 @@ done!
 
 <div class=page-foot >
     
-    Last modified: November 28, 2025. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: February 25, 2026. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div>
     </div>  

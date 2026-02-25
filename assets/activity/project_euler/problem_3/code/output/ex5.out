@@ -4,4 +4,4 @@ n = 10086647             -> 1471 è un fattore primo di n
 n = 6857                 -> 6857 è un fattore primo di n
 n = 1                    -> finito!
 => 6857 è il più alto fattore primo di n
-  0.000072 seconds (95 allocations: 3.859 KiB)
+  0.000068 seconds (95 allocations: 3.859 KiB)

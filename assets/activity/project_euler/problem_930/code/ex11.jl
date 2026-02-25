@@ -1,5 +1,5 @@
 # This file was generated, do not modify it. # hide
-P = zeros(nstates, nstates)
+P = zeros(Rational{Int}, nstates, nstates)
 for st in states
 	if !is_absorbing(st)
 		for i in 1:nbowls

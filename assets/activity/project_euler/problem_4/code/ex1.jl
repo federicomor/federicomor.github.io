@@ -2,7 +2,7 @@
 max_n = 1 # n=i*j
 max_i = 1; max_j = 1
 
-for i in 100:998
+@time for i in 100:998
 	for j in (i+1):999
 		n = i*j
 		if string(n) == reverse(string(n)) && n>max_n

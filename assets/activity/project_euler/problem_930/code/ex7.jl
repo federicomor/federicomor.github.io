@@ -16,17 +16,17 @@ function get_states(bowls::Int, balls::Int; verbose=false)
 			println("stato: ", key, " => # ocorrenze: ", val)
 		end
 	end
-	prob = factorial(balls) / (bowls ^ balls)
+	prob = factorial(balls) // (bowls ^ balls)
 	if verbose
 		@show states
 		@show prob
 	end
-	init_probs = Float64[]
+	init_probs = Rational[]
 	for x in states
 		if verbose print(x) end
 		p = multiStates[x] * prob
 		for y in x
-			p *= 1 / factorial(y)
+			p *= 1 // factorial(y)
 		end
 		if verbose print(" -> p: $p") end
 		push!(init_probs, p)

@@ -2,8 +2,9 @@
 function G(N,M)
 	S = 0
 	for n in 2:N, m in 2:M
-		println("(n,m)=($n,$m)")
-		@time S += F(n,m)
+		@time out = F(Rational{Int},n,m)
+		println("(n,m)=($n,$m) => E[#steps] = $out = $(Float64(out))")
+		S += out
 		println("")
 	end
 	println("done!")

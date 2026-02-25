@@ -1,8 +1,6 @@
 #!/bin/bash
-
 # Directory to save the extracted content
 output_dir="."
-
 # Loop over a range of problem numbers (e.g., from 1 to 10)
 if [[ $# -ne 2 ]]; then
     echo "Usage: $0 <start_problem_number> <end_problem_number>"
@@ -16,7 +14,6 @@ end_problem_number=$2
 # Loop over the range provided as arguments
 for problem_number in $(seq $start_problem_number $end_problem_number)
 do
-    # URL of the problem
     url="https://projecteuler.net/problem=$problem_number"
     
     # echo "Downloading Problem $problem_number..."

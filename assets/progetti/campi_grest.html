@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grest Optimization</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --success: #059669;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --border: #e2e8f0;
+            --line-color: #475569;
+        }
+
+        /* Palette colori squadre */
+        .color-rossi { background-color: #fee2e2 !important; color: #991b1b !important; border: 1px solid #fca5a5 !important; }
+        .color-gialli { background-color: #fef9c3 !important; color: #854d0e !important; border: 1px solid #fde047 !important; }
+        .color-verdi { background-color: #dcfce7 !important; color: #166534 !important; border: 1px solid #86efac !important; }
+        .color-blu { background-color: #dbeafe !important; color: #1e40af !important; border: 1px solid #93c5fd !important; }
+        .color-azzurri { background-color: #e0f2fe !important; color: #075985 !important; border: 1px solid #7dd3fc !important; }
+        .color-fucsia { background-color: #fce7f3 !important; color: #9d174d !important; border: 1px solid #f9a8d4 !important; }
+        .color-viola { background-color: #f3e8ff !important; color: #6b21a8 !important; border: 1px solid #d8b4fe !important; }
+        .color-arancio { background-color: #ffedd5 !important; color: #9a3412 !important; border: 1px solid #fdba74 !important; }
+
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg); color: var(--text); padding: 20px; margin: 0; position: relative; min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; position: relative; z-index: 2; }
+        header { text-align: center; margin-bottom: 30px; }
+        
+        .setup-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-bottom: 30px; }
+        .card { background: var(--card-bg); padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid var(--border); position: relative; margin-bottom: 20px; }
+
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; background: white; }
+        td, th { padding: 12px; border-bottom: 1px solid var(--border); position: relative; text-align: center; }
+
+        .draggable-cell { padding: 6px 10px; border-radius: 6px; cursor: grab; text-align: center; font-weight: 600; text-transform: capitalize; user-select: none; }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .solution-card { 
+            background: #ecfdf5; 
+            border: 2px solid transparent;
+            border-left: 5px solid var(--success); 
+            padding: 12px; 
+            border-radius: 8px; 
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+        .solution-card:hover { transform: translateY(-3px); background: #d1fae5; }
+        .solution-card.active { 
+            background: #d1fae5; 
+            border-color: var(--primary); 
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+        }
+        
+        .match-badge { display: inline-block; background: #dcfce7; color: #166534; padding: 1px 6px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; }
+
+        .debug-table th { background: #f1f5f9; font-size: 0.8rem; color: #64748b; }
+        /* .debug-table td.selected-cell { background: #dbeafe; color: var(--primary); font-weight: bold; outline: 2px solid var(--primary); z-index: 5; } */
+        .debug-table td.selected-cell { background: #f1f5f9; color: var(--primary); font-weight: bold; outline: 2px solid var(--primary); z-index: 5; }
+
+        #svg-canvas {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @media (max-width: 600px) {
+            .setup-grid { gap: 60px; }
+        }
+    </style>
+</head>
+<body>
+
+<svg id="svg-canvas"></svg>
+
+<div class="container">
+    <header>
+        <h1>Assegnazione non conflittuale di Arbitri e Partite</h1>
+        <p>
+            <b>Trascina le varie card</b> per cambiare arbitri/partite,<br>
+            <b>clicca su una soluzione</b> per visualizzarla tramite collegamenti e tabella di debug.
+        </p>
+    </header>
+
+    <div class="setup-grid">
+        <div class="card" id="card-arbitri">
+            <h2>1. Arbitri (campi)</h2>
+            <div id="arbitri"></div>
+        </div>
+
+        <div class="card" id="card-partite">
+            <h2>2. Partite</h2>
+            <div id="partite"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Tutte le soluzioni</h2>
+        <div id="disposizione" class="solutions-grid"></div>
+    </div>
+
+    <div class="card">
+        <h2>Tabella di validitià assegnazione</h2>
+        <p>Ovvero, come risolvere il problema a mano, su carta: compila questa tabella e trova un percorso di assegnazione in cui ogni partita sia assegnata ad un campo (e viceversa, ogni campo sia assegnato ad una partita), scelto tra quelli disponibili in base ai conflitti di squadre giocanti/squadre arbitranti.</p>
+        <div id="debug-container"></div>
+    </div>
+</div>
+
+<script>
+    let campo = [
+        {arbitro1: 'rossi', arbitro2: 'gialli'},
+        {arbitro1: 'verdi', arbitro2: 'blu'},
+        {arbitro1: 'azzurri', arbitro2: 'fucsia'},
+        {arbitro1: 'viola', arbitro2: 'arancio'}
+    ];
+
+    let partita = [
+        {squadra1: 'rossi', squadra2: 'fucsia', disp: [0, 0, 0, 0]},
+        {squadra1: 'azzurri', squadra2: 'blu', disp: [0, 0, 0, 0]},
+        {squadra1: 'arancio', squadra2: 'verdi', disp: [0, 0, 0, 0]},
+        {squadra1: 'viola', squadra2: 'gialli', disp: [0, 0, 0, 0]}
+    ];
+
+    let currentVisibleMapping = null;
+    let currentActiveIndex = 0;
+
+    function getColorClass(color) { return `color-${color.toLowerCase().trim()}`; }
+
+    function refreshUI() {
+        renderArbitri();
+        renderPartite();
+        calculateDisposizione();
+        displayResults();
+        renderDebugTable();
+    }
+
+    function renderArbitri() {
+        let html = '<table><tr><th>Campi</th><th>Arbitro 1</th><th>Arbitro 2</th></tr>';
+        campo.forEach((c, i) => {
+            html += `<tr id="row-campo-${i}">
+                <td><strong>#${i+1}</strong></td>
+                <td><div class="draggable-cell ${getColorClass(c.arbitro1)}" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)" data-table="campo" data-row="${i}" data-key="arbitro1">${c.arbitro1}</div></td>
+                <td><div class="draggable-cell ${getColorClass(c.arbitro2)}" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)" data-table="campo" data-row="${i}" data-key="arbitro2">${c.arbitro2}</div></td>
+            </tr>`;
+        });
+        document.getElementById('arbitri').innerHTML = html + '</table>';
+    }
+
+    function renderPartite() {
+        let html = '<table><tr><th>Partita</th><th>Squadra 1</th><th>Squadra 2</th></tr>';
+        partita.forEach((p, i) => {
+            html += `<tr id="row-gara-${i}">
+                <td><strong>P${i+1}</strong></td>
+                <td><div class="draggable-cell ${getColorClass(p.squadra1)}" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)" data-table="partita" data-row="${i}" data-key="squadra1">${p.squadra1}</div></td>
+                <td><div class="draggable-cell ${getColorClass(p.squadra2)}" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)" data-table="partita" data-row="${i}" data-key="squadra2">${p.squadra2}</div></td>
+            </tr>`;
+        });
+        document.getElementById('partite').innerHTML = html + '</table>';
+    }
+
+    function allowDrop(ev) { ev.preventDefault(); ev.currentTarget.style.opacity = "0.5"; }
+    function dragLeave(ev) { ev.currentTarget.style.opacity = "1"; }
+    function drag(ev) { ev.dataTransfer.setData("text", JSON.stringify(ev.target.dataset)); }
+
+    function drop(ev) {
+        ev.preventDefault();
+        let sourceData = JSON.parse(ev.dataTransfer.getData("text"));
+        let targetData = ev.currentTarget.dataset;
+        let sObj = (sourceData.table === 'campo') ? campo[sourceData.row] : partita[sourceData.row];
+        let tObj = (targetData.table === 'campo') ? campo[targetData.row] : partita[targetData.row];
+        let temp = sObj[sourceData.key];
+        sObj[sourceData.key] = tObj[targetData.key];
+        tObj[targetData.key] = temp;
+        refreshUI();
+    }
+
+    function calculateDisposizione() {
+        partita.forEach(p => {
+            campo.forEach((c, j) => {
+                p.disp[j] = (c.arbitro1 === p.squadra1 || c.arbitro1 === p.squadra2 || c.arbitro2 === p.squadra1 || c.arbitro2 === p.squadra2) ? 0 : 1;
+            });
+        });
+    }
+
+    function selectSolution(mapping, index) {
+        currentVisibleMapping = mapping;
+        currentActiveIndex = index;
+        document.querySelectorAll('.solution-card').forEach((card, i) => {
+            card.classList.toggle('active', i === index);
+        });
+        drawSolutionLines(mapping);
+        renderDebugTable();
+    }
+
+    function displayResults() {
+        let container = document.getElementById('disposizione');
+        let html = "";
+        let allSolutions = [];
+
+        for (let a=0; a<4; a++)
+        for (let b=0; b<4; b++)
+        for (let c=0; c<4; c++)
+        for (let d=0; d<4; d++) {
+            if (partita[0].disp[a] && partita[1].disp[b] && partita[2].disp[c] && partita[3].disp[d] && new Set([a,b,c,d]).size === 4) {
+                allSolutions.push([a, b, c, d]);
+            }
+        }
+
+        if (allSolutions.length > 0) {
+            if (currentActiveIndex >= allSolutions.length) currentActiveIndex = 0;
+            currentVisibleMapping = allSolutions[currentActiveIndex];
+            
+            allSolutions.forEach((sol, idx) => {
+                let isActive = idx === currentActiveIndex;
+                html += `
+                <div class="solution-card ${isActive ? 'active' : ''}" onclick='selectSolution([${sol}], ${idx})'>
+                    <strong>Soluzione #${idx + 1}</strong><br>
+                    P1 &rarr; <span class="match-badge">Campo ${sol[0]+1}</span><br> 
+                    P2 &rarr; <span class="match-badge">Campo ${sol[1]+1}</span><br> 
+                    P3 &rarr; <span class="match-badge">Campo ${sol[2]+1}</span><br> 
+                    P4 &rarr; <span class="match-badge">Campo ${sol[3]+1}</span>
+                </div>`;
+            });
+            setTimeout(() => drawSolutionLines(currentVisibleMapping), 50);
+        } else {
+            html = "<p style='grid-column: 1/-1; color:red; font-weight:bold;'>Nessuna soluzione valida trovata.</p>";
+            currentVisibleMapping = null;
+            clearLines();
+        }
+        container.innerHTML = html;
+    }
+
+    function renderDebugTable() {
+        let html = '<table class="debug-table"><tr><th></th><th>può giocare<br>nel Campo 1?</th><th>può giocare<br>nel Campo 2?</th><th>può giocare<br>nel Campo 3?</th><th>può giocare<br>nel Campo 4?</th></tr>';
+        partita.forEach((p, i) => {
+            html += `<tr><td><strong>P${i+1}</strong></td>`;
+            p.disp.forEach((d, j) => {
+                let isChosen = currentVisibleMapping && currentVisibleMapping[i] === j;
+                html += `<td class="${isChosen ? 'selected-cell' : ''}" style="color: ${d === 1 ? 'var(--success)' : '#ef4444'}">${d===1 ? 'sì' : 'no'}</td>`;
+            });
+            html += '</tr>';
+        });
+        document.getElementById('debug-container').innerHTML = html + '</table>';
+    }
+
+    function drawSolutionLines(mapping) {
+        clearLines();
+        const svg = document.getElementById('svg-canvas');
+        svg.setAttribute("height", document.documentElement.scrollHeight);
+        svg.setAttribute("width", document.documentElement.scrollWidth);
+
+        mapping.forEach((campoIdx, garaIdx) => {
+            const garaEl = document.getElementById(`row-gara-${garaIdx}`);
+            const campoEl = document.getElementById(`row-campo-${campoIdx}`);
+            const gRect = garaEl.getBoundingClientRect();
+            const cRect = campoEl.getBoundingClientRect();
+
+            let x1, y1, x2, y2, cp1x, cp2x, cp1y, cp2y;
+            const isStacked = Math.abs(gRect.left - cRect.left) < 100;
+
+            if (!isStacked) {
+                x1 = gRect.left + window.scrollX;
+                y1 = gRect.top + (gRect.height / 2) + window.scrollY;
+                x2 = cRect.right + window.scrollX;
+                y2 = cRect.top + (cRect.height / 2) + window.scrollY;
+                cp1x = x1 - 50; cp2x = x2 + 50;
+                cp1y = y1; cp2y = y2;
+            } else {
+                x1 = gRect.left + (gRect.width / 2) + window.scrollX;
+                y1 = gRect.top + window.scrollY;
+                x2 = cRect.left + (cRect.width / 2) + window.scrollX;
+                y2 = cRect.bottom + window.scrollY;
+                cp1y = y1 - 30; cp2y = y2 + 30;
+                cp1x = x1; cp2x = x2;
+            }
+
+            const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            const d = `M ${x1} ${y1} C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${x2} ${y2}`;
+            path.setAttribute("d", d);
+            path.setAttribute("stroke", "var(--line-color)");
+            path.setAttribute("stroke-width", "3");
+            path.setAttribute("fill", "none");
+            svg.appendChild(path);
+        });
+    }
+
+    function clearLines() { document.getElementById('svg-canvas').innerHTML = ""; }
+    window.addEventListener('resize', () => { if (currentVisibleMapping) drawSolutionLines(currentVisibleMapping); });
+    window.onload = refreshUI;
+</script>
+</body>
+</html>

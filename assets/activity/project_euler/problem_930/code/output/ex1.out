@@ -1,2 +1,196 @@
-UndefVarError: `gr` not defined in `Main.FD_SANDBOX_5647245269982265311`
-Suggestion: check for spelling errors or missing imports.
+The following 2 direct dependencies failed to precompile:
+
+Plots → UnitfulExt 
+
+Failed to precompile UnitfulExt [0e51ec96-f580-5f12-a625-1297083d7970] to "/home/runner/.julia/compiled/v1.12/UnitfulExt/jl_eWIDi7".
+ERROR: LoadError: MethodError: no method matching tempname(::typeof(Scratch.scratch_dir))
+The function `tempname` exists, but no method is defined for this combination of argument types.
+
+Closest candidates are:
+  tempname(; ...)
+   @ Base file.jl:736
+  tempname(!Matched::AbstractString; max_tries, cleanup, suffix)
+   @ Base file.jl:736
+
+Stacktrace:
+  [1] var"##1#278"()
+    @ Plots ~/.julia/packages/Plots/Ec1L1/src/init.jl:128
+  [2] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:138
+  [3] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+  [4] EvalInto
+    @ ./boot.jl:494 [inlined]
+  [5] _broadcast_getindex_evalf
+    @ ./broadcast.jl:699 [inlined]
+  [6] _broadcast_getindex
+    @ ./broadcast.jl:672 [inlined]
+  [7] _getindex
+    @ ./broadcast.jl:620 [inlined]
+  [8] getindex
+    @ ./broadcast.jl:616 [inlined]
+  [9] copy
+    @ ./broadcast.jl:933 [inlined]
+ [10] materialize
+    @ ./broadcast.jl:894 [inlined]
+ [11] macro expansion
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:146 [inlined]
+ [12] macro expansion
+    @ ~/.julia/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+ [13] (::Plots.var"#484#485"{Vector{Expr}, Vector{Expr}})()
+    @ Plots ~/.julia/packages/Plots/Ec1L1/src/init.jl:143
+ [14] withenv(f::Plots.var"#484#485"{Vector{Expr}, Vector{Expr}}, keyvals::Pair{String, String})
+    @ Base ./env.jl:265
+ [15] macro expansion
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:142 [inlined]
+ [16] macro expansion
+    @ ~/.julia/packages/PrecompileTools/gn08A/src/workloads.jl:121 [inlined]
+ [17] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:118
+ [18] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [19] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/Plots.jl:176
+ [20] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [21] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:3024
+ [22] top-level scope
+    @ stdin:5
+ [23] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [24] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2870
+ [25] include_string
+    @ ./loading.jl:2880 [inlined]
+ [26] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [27] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/src/init.jl:112
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/src/Plots.jl:1
+in expression starting at stdin:5
+ERROR: LoadError: Failed to precompile Plots [91a5bcdd-55d7-5caf-9e0b-520d859cae80] to "/home/runner/.julia/compiled/v1.12/Plots/jl_PH3Ust".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3311
+  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+    @ Base ./loading.jl:2679
+  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /opt/hostedtoolcache/julia/1.12.5/x64/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+  [5] #mkpidlock#7
+    @ /opt/hostedtoolcache/julia/1.12.5/x64/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /opt/hostedtoolcache/julia/1.12.5/x64/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+  [7] #invokelatest_gr#232
+    @ ./reflection.jl:1297 [inlined]
+  [8] invokelatest_gr
+    @ ./reflection.jl:1289 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3882
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3879 [inlined]
+ [11] __require_prelocked(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2665
+ [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2493
+ [13] macro expansion
+    @ ./loading.jl:2421 [inlined]
+ [14] macro expansion
+    @ ./lock.jl:376 [inlined]
+ [15] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2386
+ [16] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2362
+ [17] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/ext/UnitfulExt.jl:6
+ [18] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:3024
+ [20] top-level scope
+    @ stdin:5
+ [21] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2870
+ [23] include_string
+    @ ./loading.jl:2880 [inlined]
+ [24] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [25] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/ext/UnitfulExt.jl:4
+in expression starting at stdin:5
+Plots 
+
+Failed to precompile Plots [91a5bcdd-55d7-5caf-9e0b-520d859cae80] to "/home/runner/.julia/compiled/v1.12/Plots/jl_XPXbg5".
+ERROR: LoadError: MethodError: no method matching tempname(::typeof(Scratch.scratch_dir))
+The function `tempname` exists, but no method is defined for this combination of argument types.
+
+Closest candidates are:
+  tempname(; ...)
+   @ Base file.jl:736
+  tempname(!Matched::AbstractString; max_tries, cleanup, suffix)
+   @ Base file.jl:736
+
+Stacktrace:
+  [1] var"##1#278"()
+    @ Plots ~/.julia/packages/Plots/Ec1L1/src/init.jl:128
+  [2] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:138
+  [3] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+  [4] EvalInto
+    @ ./boot.jl:494 [inlined]
+  [5] _broadcast_getindex_evalf
+    @ ./broadcast.jl:699 [inlined]
+  [6] _broadcast_getindex
+    @ ./broadcast.jl:672 [inlined]
+  [7] _getindex
+    @ ./broadcast.jl:620 [inlined]
+  [8] getindex
+    @ ./broadcast.jl:616 [inlined]
+  [9] copy
+    @ ./broadcast.jl:933 [inlined]
+ [10] materialize
+    @ ./broadcast.jl:894 [inlined]
+ [11] macro expansion
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:146 [inlined]
+ [12] macro expansion
+    @ ~/.julia/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+ [13] (::Plots.var"#484#485"{Vector{Expr}, Vector{Expr}})()
+    @ Plots ~/.julia/packages/Plots/Ec1L1/src/init.jl:143
+ [14] withenv(f::Plots.var"#484#485"{Vector{Expr}, Vector{Expr}}, keyvals::Pair{String, String})
+    @ Base ./env.jl:265
+ [15] macro expansion
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:142 [inlined]
+ [16] macro expansion
+    @ ~/.julia/packages/PrecompileTools/gn08A/src/workloads.jl:121 [inlined]
+ [17] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/init.jl:118
+ [18] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [19] top-level scope
+    @ ~/.julia/packages/Plots/Ec1L1/src/Plots.jl:176
+ [20] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [21] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:3024
+ [22] top-level scope
+    @ stdin:5
+ [23] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [24] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2870
+ [25] include_string
+    @ ./loading.jl:2880 [inlined]
+ [26] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [27] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/src/init.jl:112
+in expression starting at /home/runner/.julia/packages/Plots/Ec1L1/src/Plots.jl:1
+in expression starting at stdin:5

@@ -3,7 +3,7 @@ file = download("https://projecteuler.net/resources/documents/0099_base_exp.txt"
 max_line = 1
 max_val = 1
 curr_line = 0
-for line in eachline(file)
+@time for line in eachline(file)
     global curr_line += 1
     numbers = split(line, ",")
     a = parse(Int, numbers[1])
