@@ -4,44 +4,18 @@ hasmath = true
 hascode = true
 +++
 
-~~~
-<!-- <div class="new-content-banner">  -->
-<!-- 🎉✨🎁🎇🎈🎫📣📢📡💡🔦📍📌⏰  -->
-<!-- <div style="font-size: 30px; margin-bottom:10px;">📌 Ultimi aggiornamenti 📌</div> -->
-<!-- 📌 Ultimi aggiornamenti 📌\ -->
-<!-- Risolti un po' di problemi del progetto Eulero
-</div>  -->
-~~~
-
-<!-- > \style{font-size:23px;}{📌 Ultimi aggiornamenti 📌}\
-> 
-> - Risolti un po' di problemi del progetto Eulero
-> - Risolti un po' di problemi del progetto Eulero\
-> ma la  -->
-
-<!-- ~~~
-<div class="update-box">
-    <div class="update-title">📌 Ultimi aggiornamenti 📌</div>
-    <div class="update-content">
-~~~ 
-Risolti un po' di problemi del progetto Eulero
-~~~
-    </div>
-</div>
-~~~ -->
-
-
 # Home
+_restyling in corso..._
 
-Ciao! sono Federico, un Ingegnere Matematico (tecnicamente solo un "dottore magistrale in Ingegneria Matematica", al Politecnico di Milano), e qui online un Divulgatore Matematico (o perlomeno vediamo come va). In questo sito, in particolare alle pagine raccolte nella sezione [Activity](/activity/), troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare principalmente su [Instagram](https://www.instagram.com/divergentissimo/), forse anche su Tiktok (tanto potrei riciclare il materiale che assemblo per instagram; in tal caso aggiornerò qui il link), e a volte anche su [Youtube](https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ).
+<!-- Ciao! sono Federico, un Ingegnere Matematico (tecnicamente solo un "dottore magistrale in Ingegneria Matematica", al Politecnico di Milano), e qui online un Divulgatore Matematico (o perlomeno vediamo come va). In questo sito, in particolare alle pagine raccolte nella sezione [Activity](/activity/), troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare principalmente su [Instagram](https://www.instagram.com/divergentissimo/), forse anche su Tiktok (tanto potrei riciclare il materiale che assemblo per instagram; in tal caso aggiornerò qui il link), e a volte anche su [Youtube](https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ).
 
-Ad oggi, prima la tesi e poi il lavoro mi stanno togliendo tempo e spazio a questo "hobby", ma quando la situazione si ristabilizzerà dovrei e vorrei ritornare, magari anche con contenuti non solo di matematica ma di università in generale, della mia esperienza, consigli, ecc.
+Ad oggi, prima la tesi e poi il lavoro mi stanno togliendo tempo e spazio a questo "hobby", ma quando la situazione si ristabilizzerà dovrei e vorrei ritornare, magari anche con contenuti non solo di matematica ma di università in generale, della mia esperienza, consigli, ecc. -->
 
 <!-- ## 📌 Ultimi aggiornamenti 📌
 Qui raccolgo i link alle versioni estese dei post pubblicati in giro sui social. Tali post servono infatti solo ad intrigare il lettore, a fargli sollevare un sopracciglio e indurlo a pensare "beh, interessante: approfondiamo! andiamo a leggerci l'articoletto completo riguardo a questo simpatico argomento" e quindi, in ultima analisi, condurlo qui, dove potrà effettivamente affinare meglio la sua comprensione sul tema matematico.
 <!-- Infatti, a differenza di vari contenuti che trovo online di "divulgazione", la mia principale idea è di approfondire bene (a volte anche fin troppo nei dettagli) tutto ciò che propongo/proporrò. -->
 
-Comunque qui riporto l'ultima attività interessante e rilevante condivisa: [Problema delle palline che girano a caso dentro alle ciotole](/activity/project_euler/problem_930/).
+<!-- Comunque qui riporto l'ultima attività interessante e rilevante condivisa: [Problema delle palline che girano a caso dentro alle ciotole](/activity/project_euler/problem_930/). -->
 
 
 <!-- (molto consigliati, con tutto raccontato con calma e in dettaglio) ma anche su Instagram (no, lì non più per ora) e [TikTok](https://tiktok.com/@divmat_tt) (anche qui).  -->

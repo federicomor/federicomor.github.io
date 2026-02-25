@@ -64,5 +64,5 @@ $$
 ~~~
 ## Soluzione
 
-\literate{/_literate/pe_47.jl}
+\literate{/_literate/project_euler/pe_47.jl}
 {{ addcomments }}

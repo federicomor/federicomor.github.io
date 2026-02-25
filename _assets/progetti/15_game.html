@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N^2-1 Puzzle Game</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: #f4f4f9;
+  }
+
+  h1 {
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .controls {
+    margin-bottom: 20px;
+  }
+
+  .controls > div {
+    margin-bottom: 5px;
+  }
+
+  label {
+    margin-right: 10px;
+  }
+
+  input[type="range"] {
+    margin-right: 10px;
+    width: 200px;
+  }
+
+  #boardContainer {
+    width: min(500px, 80vw); 
+    aspect-ratio: 1 / 1;      
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed; 
+    background-color: #ddd;
+  }
+
+  td {
+    border: 2px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    font-size: var(--font-size-cells);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: #fff;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 400; 
+    font-variant-numeric: tabular-nums;
+  }
+
+  td:hover {
+    background-color: #f1f1f1;
+  }
+
+  td:empty {
+    background-color: #e0e0e0;
+    cursor: default;
+  }
+
+  .status {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  output {
+    display: inline-block;
+    width: 30px; 
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .shuffle-info {
+    font-size: 0.75em;
+    font-style: italic;
+    color: #666;
+    margin-top: -3px;
+    min-height: 1.2em;
+  }
+
+  .solver-tools {
+    display: none; /* Hidden by default */
+    gap: 10px;
+  }
+
+  button {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+  }
+
+  button:hover {
+    background: #eef;
+  }
+</style>
+</head>
+<body>
+<h1 id="gameTitle"></h1>
+
+<div class="controls">
+  <div>
+    <div>
+      <label for="sizeSlider">Size of the board:</label>
+      <input type="range" id="sizeSlider" min="3" max="20" step="1" value="4" oninput="updateSettings(); this.nextElementSibling.value = this.value">
+      <output>4</output>
+    </div>
+    <div id="sizeWarning" class="shuffle-info"></div> 
+  </div>
+
+  <div>
+    <div>
+      <label for="shuffleSlider">Board complexity:</label>
+      <input type="range" id="shuffleSlider" min="1" max="100" value="10" step="1" 
+             oninput="updateSettings(); updateEmojiDisplay(this);">
+      <output id="emojiOutput">😊</output>
+    </div>
+    <div class="shuffle-info">
+      (determined by the total shuffling moves: <span id="shuffleDisplay">40</span>)
+    </div>
+  </div>
+</div>
+
+<div id="boardContainer">
+    <table id="gameBoard"></table>
+</div>
+
+<div class="status">
+  <div>
+    <label for="moveCounter">Moves:</label><output id="moveCounter" style="text-align: left;">0</output>
+  </div>
+  <div id="solverTools" class="solver-tools">
+      <button onclick="provideHint()">Hint</button>
+      <button onclick="solveAutomatically()">Show solution</button>
+  </div>
+</div>
+
+<script>
+  let N = parseInt(document.getElementById('sizeSlider').value);
+  let shuffleIterations = document.getElementById('shuffleSlider').value * N;
+  let moves = 0; 
+  let gameBoard = [];
+  let emptyRow, emptyCol;
+  let isSolving = false;
+
+  function updateTitle() {
+    const titleElement = document.getElementById("gameTitle");
+    const puzzleNum = N * N - 1;
+    const mathStr = `N^2 - 1 \\;(${puzzleNum})\\;\\text{Puzzle Game}`;
+    katex.render(mathStr, titleElement, { throwOnError: false });
+  }
+
+  function updateEmojiDisplay(slider) {
+    const percent = (slider.value / slider.max) * 100;
+    const output = document.getElementById('emojiOutput');
+    let emoji = "😁";
+    if (percent > 90) emoji = "😱";
+    else if (percent > 80) emoji = "😨";
+    else if (percent > 70) emoji = "😰";
+    else if (percent > 60) emoji = "😢";
+    else if (percent > 50) emoji = "😬";
+    else if (percent > 40) emoji = "😟";
+    else if (percent > 30) emoji = "🤨";
+    else if (percent > 20) emoji = "🙂";
+    else if (percent > 10) emoji = "😊";
+    output.textContent = emoji;
+  }
+
+  function initializeBoard() {
+    let num = 1;
+    gameBoard = [];
+    for (let i = 0; i < N; i++) {
+      gameBoard[i] = [];
+      for (let j = 0; j < N; j++) {
+        gameBoard[i][j] = num++;
+      }
+    }
+    emptyRow = N - 1;
+    emptyCol = N - 1;
+    gameBoard[N - 1][N - 1] = 0; 
+  }
+
+  function shuffleBoard() {
+    for (let i = 0; i < shuffleIterations; i++) {
+      let randDirection = Math.floor(Math.random() * 4); 
+      switch (randDirection) {
+        case 0: if (emptyRow > 0) { swap(emptyRow, emptyCol, emptyRow - 1, emptyCol); emptyRow--; } break;
+        case 1: if (emptyRow < N - 1) { swap(emptyRow, emptyCol, emptyRow + 1, emptyCol); emptyRow++; } break;
+        case 2: if (emptyCol > 0) { swap(emptyRow, emptyCol, emptyRow, emptyCol - 1); emptyCol--; } break;
+        case 3: if (emptyCol < N - 1) { swap(emptyRow, emptyCol, emptyRow, emptyCol + 1); emptyCol++; } break;
+      }
+    }
+    if (isSolved()) shuffleBoard();
+  }
+
+  function swap(row1, col1, row2, col2) {
+    let temp = gameBoard[row1][col1];
+    gameBoard[row1][col1] = gameBoard[row2][col2];
+    gameBoard[row2][col2] = temp;
+  }
+
+  function renderBoard() {
+    let table = document.getElementById("gameBoard");
+    table.innerHTML = "";
+    const fontSize = Math.max(8, 250 / N); 
+    document.documentElement.style.setProperty('--font-size-cells', fontSize + 'px');
+
+    for (let i = 0; i < N; i++) {
+      let row = document.createElement("tr");
+      for (let j = 0; j < N; j++) {
+        let cell = document.createElement("td");
+        cell.textContent = gameBoard[i][j] === 0 ? "" : gameBoard[i][j];
+        cell.addEventListener("click", () => cellClick(i, j));
+        row.appendChild(cell);
+      }
+      table.appendChild(row);
+    }
+    checkComplexityForSolver();
+  }
+
+  function cellClick(row, col) {
+    if (isSolving) return;
+    if (isValidMove(row, col) && !isSolved()) {
+      swap(row, col, emptyRow, emptyCol);
+      emptyRow = row;
+      emptyCol = col;
+      moves++; 
+      document.getElementById("moveCounter").textContent = moves;
+      renderBoard();
+      if (isSolved()) {
+        setTimeout(() => alert("Congratulations! You solved the puzzle! 🎉🥳"), 100);
+      }
+    }
+  }
+
+  function isValidMove(row, col) {
+    return (row === emptyRow && Math.abs(col - emptyCol) === 1) ||
+           (col === emptyCol && Math.abs(row - emptyRow) === 1);
+  }
+
+  function isSolved() {
+    let num = 1;
+    for (let i = 0; i < N; i++) {
+      for (let j = 0; j < N; j++) {
+        if (i === N - 1 && j === N - 1) return gameBoard[i][j] === 0;
+        if (gameBoard[i][j] !== num) return false;
+        num++;
+      }
+    }
+    return true;
+  }
+
+  function checkComplexityForSolver() {
+    let misplaced = 0;
+    let num = 1;
+    for (let i = 0; i < N; i++) {
+      for (let j = 0; j < N; j++) {
+        if (gameBoard[i][j] !== 0 && gameBoard[i][j] !== num) misplaced++;
+        num++;
+      }
+    }
+    // Only show solver if misplaced tiles are 5 or fewer
+    document.getElementById("solverTools").style.display = (misplaced > 0 && misplaced <= 5) ? "flex" : "none";
+  }
+
+  // --- A* SOLVER LOGIC ---
+  function getManhattanDistance(board) {
+    let distance = 0;
+    for (let i = 0; i < N; i++) {
+      for (let j = 0; j < N; j++) {
+        let val = board[i][j];
+        if (val !== 0) {
+          let targetRow = Math.floor((val - 1) / N);
+          let targetCol = (val - 1) % N;
+          distance += Math.abs(i - targetRow) + Math.abs(j - targetCol);
+        }
+      }
+    }
+    return distance;
+  }
+
+  function solveAStar() {
+    let startState = JSON.stringify(gameBoard);
+    let pq = [{ board: JSON.parse(startState), g: 0, h: getManhattanDistance(gameBoard), path: [], er: emptyRow, ec: emptyCol }];
+    let visited = new Set([startState]);
+
+    while (pq.length > 0) {
+      pq.sort((a, b) => (a.g + a.h) - (b.g + b.h));
+      let current = pq.shift();
+
+      if (current.h === 0) return current.path;
+
+      const dr = [-1, 1, 0, 0], dc = [0, 0, -1, 1];
+      for (let i = 0; i < 4; i++) {
+        let nr = current.er + dr[i], nc = current.ec + dc[i];
+        if (nr >= 0 && nr < N && nc >= 0 && nc < N) {
+          let nextBoard = current.board.map(row => [...row]);
+          [nextBoard[current.er][current.ec], nextBoard[nr][nc]] = [nextBoard[nr][nc], nextBoard[current.er][current.ec]];
+          let stateStr = JSON.stringify(nextBoard);
+          if (!visited.has(stateStr)) {
+            visited.add(stateStr);
+            pq.push({
+              board: nextBoard,
+              g: current.g + 1,
+              h: getManhattanDistance(nextBoard),
+              path: [...current.path, { r: nr, c: nc }],
+              er: nr, ec: nc
+            });
+          }
+        }
+      }
+    }
+    return null;
+  }
+
+  function provideHint() {
+    let path = solveAStar();
+    if (path && path.length > 0) {
+      cellClick(path[0].r, path[0].c);
+    }
+  }
+
+  async function solveAutomatically() {
+    isSolving = true;
+    let path = solveAStar();
+    if (path) {
+      for (let step of path) {
+        await new Promise(r => setTimeout(r, 600));
+        swap(step.r, step.c, emptyRow, emptyCol);
+        emptyRow = step.r;
+        emptyCol = step.c;
+        moves++;
+        document.getElementById("moveCounter").textContent = moves;
+        renderBoard();
+      }
+      setTimeout(() => alert("Solved!"), 100);
+    }
+    isSolving = false;
+  }
+
+  function updateSettings() {
+    N = parseInt(document.getElementById("sizeSlider").value);
+    shuffleIterations = parseInt(document.getElementById("shuffleSlider").value) * N;
+    const warningEl = document.getElementById("sizeWarning");
+    warningEl.textContent = N > 10 ? "u sure about that?" : "";
+    document.getElementById("shuffleDisplay").textContent = shuffleIterations;
+    moves = 0; 
+    document.getElementById("moveCounter").textContent = moves;
+    updateTitle();
+    initializeBoard();
+    shuffleBoard();
+    renderBoard();
+  }
+  
+  window.onload = () => {
+    updateSettings();
+    updateEmojiDisplay(document.getElementById("shuffleSlider"));
+  };
+</script>
+</body>
+</html>

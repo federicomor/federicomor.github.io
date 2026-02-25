@@ -14,7 +14,7 @@ Considerate un gruppo di $n$ persone. Qual è la probabilità che ce ne siamo al
 <!-- % $$
 \begin{align*}
 \mathbb{P}(\text{in un gruppo di $n$ persone almeno due hanno lo stesso compleanno}) &= 1-\frac{365!}{(365-n)!365^n}\\
-\mathbb{P}(\text{in un gruppo di $n$ persone almeno un'altra ha \textit{il tuo} stesso compleanno}) &= 1-\left(\frac{364}{365}\right)^n
+\mathbb{P}(\text{in un gruppo di $n$ persone almeno un'altra ha il tuo stesso compleanno}) &= 1-\left(\frac{364}{365}\right)^n
 \end{align*}
 $$
  -->
@@ -28,7 +28,7 @@ $$
 \text{in un gruppo di $n$ persone almeno }\\\text{due hanno lo stesso compleanno} 
 \end{pmatrix}&= 1-\frac{365!}{(365-n)!365^n}\\
 \mathbb{P}\begin{pmatrix}
-\text{in un gruppo di $n$ persone almeno}\\\text{un'altra ha \textit{il tuo} stesso compleanno}
+\text{in un gruppo di $n$ persone almeno}\\\text{un'altra ha }\textit{il tuo}\text{ stesso compleanno}
 \end{pmatrix}&= 1-\left(\frac{364}{365}\right)^n
 \end{align*}
 $$

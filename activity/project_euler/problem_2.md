@@ -51,6 +51,6 @@ $$1, 2, 3, 5, 8, 13, 21, 34, 55, 89, \dots$$</p>
 </div> <!--end_content-->
 ~~~
 ## Soluzione
-\literate{/_literate/pe_2.jl}
+\literate{/_literate/project_euler/pe_2.jl}
 
 {{ addcomments }}

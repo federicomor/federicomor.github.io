@@ -101,7 +101,8 @@ function hfun_pdf(param)
 		width="100%"
 		style="aspect-ratio:16/9;"
 	></embed>
-	<p style="font-size: 12px; color: grey; line-height: 1.2em">
+	<!-- <p style="font-size: 12px; color: grey; line-height: 1.2em"> -->
+	<p style="font-size: 14px; color: grey; line-height: 1.2em; font-style: italic;">
 		<!-- If the PDF does not display correctly, <a href="$path" target="_blank">click here to view it</a>.-->
 		<!-- Se non compare nulla <a href="$path" target="_blank">clicca qui</a> per scaricare il pdf. -->
 		Link diretto al pdf <a href="$path" target="_blank">qui</a>.

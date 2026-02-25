@@ -8,7 +8,7 @@ hasplotly = true
 # Attività
 
 Ecco la raccolta di contenuti di divulgazione matematica! 🤩\
-All'interno di ogni card che segue c'è una breve descrizione del problema, ma cliccandoci sopra si aprirà la pagina dedicata, con una presentazione del problema più dettagliata, la sua soluzione, e il video in cui racconto tutto. Se non c'è il video è perché devo ancora registrarlo 😊 mentre se proprio non c'è la soluzione è perché ho impostato l'articolo, un po' come un promemoria per me, ma devo ancora finire di scriverlo.
+All'interno di ogni card che segue c'è una breve descrizione del problema, ma cliccandoci sopra si aprirà una pagina dedicata con la presentazione più dettagliata del problema e, se ho finito di lavorarci, anche la sua soluzione.
 
 ~~~ 
 <div class="card-container">
@@ -44,7 +44,7 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
             _In quanti modi potete salirla facendo passi alti al massimo 2 scalini? e con passi alti al massimo $k$ scalini?_}{
                 /assets/img/scale.png}{}
 \card{
-    /activity/motori_e_barca}{
+    /activity/motori_e_barche}{
         Di quanti motori dotare una barca}{
             Una barca è in grado di navigare quando almeno la metà dei motori risulta funzionante. Supponiamo che ogni motore si possa guastare con probabilità $p$ in modo indipendente dagli altri.\
             _Per quali valori di $p$ una barca con quattro motori ha maggior probabilità di navigare di una barca con due motori?_}{
@@ -57,7 +57,7 @@ All'interno di ogni card che segue c'è una breve descrizione del problema, ma c
 \card{
     /activity/random_spongebob_frame}{
         Random Spongebob Frame}{
-            Mi serve per avere un accesso veloce a potenziali template. Assolutamente necessario.}{
+            Un accesso veloce a potenziali meme e template. Assolutamente necessario.}{
                 /assets/img/spongebob.png}{}
 \card{
     https://surveyheart.com/form/679f5660ea7bdb6850cacadc }{

@@ -58,5 +58,5 @@ $$13 \to 40 \to 20 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1.$$</p>
 ~~~
 ## Soluzione
 
-\literate{/_literate/pe_14.jl}
+\literate{/_literate/project_euler/pe_14.jl}
 {{ addcomments }}
