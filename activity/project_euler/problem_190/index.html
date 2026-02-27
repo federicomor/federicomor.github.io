@@ -1,83 +1,6 @@
-<!doctype html> <html lang=en > <a id=top ></a> <link rel=icon  href="/assets/favicon.png"> <link rel=icon  type="image/x-icon" href="/assets/favicon.png"> <link rel=icon  type="image/png" href="/assets/favicon.png"/> <link rel=icon  href="/assets/main img.jpg"> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <link rel=stylesheet  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/katex/katex.min.css"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <link rel=icon  href="/assets/favicon.png"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <title>P190</title> <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { console.log("url: ",url); console.log("div: ",div); response = await fetch(url); fig = await response.json(); if (typeof fig.config === 'undefined') { fig["config"]={} } delete fig.layout.width delete fig.layout.height fig["layout"]["autosize"] = true fig["config"]["autosizable"] = true fig["config"]["responsive"] = true fig.config["scrollZoom"] = false delete fig.config.staticPlot delete fig.config.displayModeBar delete fig.config.doubleClick delete fig.config.showTips Plotly.newPlot(div, fig); }; </script> --> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { response = await fetch(url); fig = await response.json(); Plotly.newPlot(div, fig); }; </script> <!-- <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >^</span> </a> --> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto; margin-bottom: 20px"; width=170 ; src="/assets/main img.jpg" alt="main img"/></a></h1> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/activity/">Attività</a> <a class="sidebar-nav-item " href="/libri/">Libri</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item " href="/portfolio/">Portfolio</a> </nav> <a href="https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ" target=_blank rel=noopener> <i class="fab fa-youtube big-icon"></i></a> <a href="https://www.instagram.com/divergentissimo/" target=_blank rel=noopener> <i class="fab fa-instagram big-icon"></i></a> <a href="https://www.linkedin.com/in/federico-angelo-mor/" target=_blank rel=noopener> <i class="fab fa-linkedin big-icon"></i></a> <a href="https://github.com/federicomor" target=_blank rel=noopener> <i class="fab fa-github big-icon"></i></a> </div> </div> <div class="content container"> <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >∧</span> </a> <div class=franklin-content > <div class=navigation_symbols > <form action="" method=get  onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;"> <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;"> </form> <a href="/activity/project_euler/problem_189/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a> <a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a> <script> function getRandomProblem() { fetch('/activity/project_euler/data.txt') .then(response => response.text()) .then(data => { const maxProblems = parseInt(data.trim(), 10); const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1; window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/'; }) .catch(err => console.error('Error fetching max problems:', err)); } </script> <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a> <a href="/activity/project_euler/problem_191/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a> </div> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_main.1735430422.css"> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_default.1627113674.css"> <script src="https://projecteuler.net/js/mathjax_config.js"></script> <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script> <script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script> <div id=content > <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt=projecteuler.net ></div> <h2>Maximising a Weighted Product</h2><div id=problem_icons  class=noprint ><span class=tooltip >ℹ️<span class=tooltiptext_right >Published on Friday, 18th April 2008, 10:00 pm; Solved by 4586;<br>Difficulty rating: 50%</span></span></div><div id=problem_info ><h3><a href="https://projecteuler.net/problem=190">Problem 190</a></h3></div> <div class=problem_content  role=problem > <p>Let $S_m = (x_1, x_2, \dots , x_m)$ be the $m$-tuple of positive real numbers with $x_1 + x_2 + \cdots + x_m = m$ for which $P_m = x_1 \cdot x_2^2 \cdot \cdots \cdot x_m^m$ is maximised.</p> <p>For example, it can be verified that $\lfloor P_{10}\rfloor = 4112$ ($\lfloor \, \rfloor$ is the integer part function).</p> <p>Find $\sum\limits_{m = 2}^{15} \lfloor P_m \rfloor$.</p> </div><br> <br> </div> <!--end_content--> <h2 id=soluzione ><a href="#soluzione" class=header-anchor >Soluzione</a></h2> <p><h3 id=esplorazione_del_problema ><a href="#esplorazione_del_problema" class=header-anchor >Esplorazione del problema</a></h3> <p>Come sempre, per approcciare un problema complicato, possiamo partire in piccolo e osservare cosa accade in casi più semplici; quindi qui per esempio analizzando i casi \(m=2\) e \(m=3\). Giusto perché è carino, e perché Julia permette di farlo molto facilmente, possiamo anche raccontare graficamente questa prima esplorazione.</p> <pre><code class=language-julia >using Plots
-using JSON</code></pre><pre><code class="plaintext code-output">The following 1 direct dependency failed to precompile:
-
-PlotlyJS 
-
-Failed to precompile PlotlyJS [f0f68f2c-4968-5e81-91da-67840de0976a] to "/home/runner/.julia/compiled/v1.11/PlotlyJS/jl_Mi3PHw".
-ERROR: LoadError: UndefVarError: `Writer` not defined in `JSON`
-Stacktrace:
- [1] getproperty(x::Module, f::Symbol)
-   @ Base ./Base.jl:42
- [2] top-level scope
-   @ ~/.julia/packages/WebIO/8Xm9p/src/syntax.jl:229
- [3] include(mod::Module, _path::String)
-   @ Base ./Base.jl:562
- [4] include(x::String)
-   @ WebIO ~/.julia/packages/WebIO/8Xm9p/src/WebIO.jl:1
- [5] top-level scope
-   @ ~/.julia/packages/WebIO/8Xm9p/src/WebIO.jl:40
- [6] include
-   @ ./Base.jl:562 [inlined]
- [7] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
-   @ Base ./loading.jl:2881
- [8] top-level scope
-   @ stdin:6
-in expression starting at /home/runner/.julia/packages/WebIO/8Xm9p/src/syntax.jl:229
-in expression starting at /home/runner/.julia/packages/WebIO/8Xm9p/src/WebIO.jl:1
-in expression starting at stdin:6
-ERROR: LoadError: Failed to precompile WebIO [0f1e0344-ec1d-5b48-a673-e5cf874b6c29] to "/home/runner/.julia/compiled/v1.11/WebIO/jl_QVC51G".
-Stacktrace:
-  [1] error(s::String)
-    @ Base ./error.jl:35
-  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
-    @ Base ./loading.jl:3174
-  [3] (::Base.var"#1110#1111"{Base.PkgId})()
-    @ Base ./loading.jl:2579
-  [4] mkpidlock(f::Base.var"#1110#1111"{Base.PkgId}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
-    @ FileWatching.Pidfile /opt/hostedtoolcache/julia/1.11.7/x64/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:95
-  [5] #mkpidlock#6
-    @ /opt/hostedtoolcache/julia/1.11.7/x64/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:90 [inlined]
-  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
-    @ FileWatching.Pidfile /opt/hostedtoolcache/julia/1.11.7/x64/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:116
-  [7] #invokelatest#2
-    @ ./essentials.jl:1057 [inlined]
-  [8] invokelatest
-    @ ./essentials.jl:1052 [inlined]
-  [9] maybe_cachefile_lock(f::Base.var"#1110#1111"{Base.PkgId}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
-    @ Base ./loading.jl:3698
- [10] maybe_cachefile_lock
-    @ ./loading.jl:3695 [inlined]
- [11] _require(pkg::Base.PkgId, env::String)
-    @ Base ./loading.jl:2565
- [12] __require_prelocked(uuidkey::Base.PkgId, env::String)
-    @ Base ./loading.jl:2388
- [13] #invoke_in_world#3
-    @ ./essentials.jl:1089 [inlined]
- [14] invoke_in_world
-    @ ./essentials.jl:1086 [inlined]
- [15] _require_prelocked(uuidkey::Base.PkgId, env::String)
-    @ Base ./loading.jl:2375
- [16] macro expansion
-    @ ./loading.jl:2314 [inlined]
- [17] macro expansion
-    @ ./lock.jl:273 [inlined]
- [18] __require(into::Module, mod::Symbol)
-    @ Base ./loading.jl:2271
- [19] #invoke_in_world#3
-    @ ./essentials.jl:1089 [inlined]
- [20] invoke_in_world
-    @ ./essentials.jl:1086 [inlined]
- [21] require(into::Module, mod::Symbol)
-    @ Base ./loading.jl:2260
- [22] include
-    @ ./Base.jl:562 [inlined]
- [23] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
-    @ Base ./loading.jl:2881
- [24] top-level scope
-    @ stdin:6
-in expression starting at /home/runner/.julia/packages/PlotlyJS/60kan/src/PlotlyJS.jl:1
-in expression starting at stdin:
-</code></pre> <p>Questo è quello che si osserva nel caso di \(m=2\):</p> <pre><code class=language-julia >nout &#61; 100
+<!doctype html> <html lang=en > <a id=top ></a> <link rel=icon  href="/assets/favicon.png"> <link rel=icon  type="image/x-icon" href="/assets/favicon.png"> <link rel=icon  type="image/png" href="/assets/favicon.png"/> <link rel=icon  href="/assets/main img.jpg"> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <link rel=stylesheet  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/katex/katex.min.css"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_hyde.css"> <link rel=icon  href="/assets/favicon.png"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <title>P190</title> <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { console.log("url: ",url); console.log("div: ",div); response = await fetch(url); fig = await response.json(); if (typeof fig.config === 'undefined') { fig["config"]={} } delete fig.layout.width delete fig.layout.height fig["layout"]["autosize"] = true fig["config"]["autosizable"] = true fig["config"]["responsive"] = true fig.config["scrollZoom"] = false delete fig.config.staticPlot delete fig.config.displayModeBar delete fig.config.doubleClick delete fig.config.showTips Plotly.newPlot(div, fig); }; </script> --> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <script> const PlotlyJS_json = async (div, url) => { response = await fetch(url); fig = await response.json(); Plotly.newPlot(div, fig); }; </script> <!-- <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >^</span> </a> --> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <!-- <h1><a href="/">Hyde</a></h1> <p class=lead >A two-column theme.</p> --> <h1><a href="/">Eccoci.<img style="display: block; margin: 0 auto; margin-bottom: 20px"; width=170 ; src="/assets/main img.jpg" alt="main img"/></a></h1> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/activity/">Attività</a> <a class="sidebar-nav-item " href="/libri/">Libri</a> <a class="sidebar-nav-item " href="/uni/">Uni</a> <a class="sidebar-nav-item " href="/portfolio/">Portfolio</a> </nav> <a href="https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ" target=_blank rel=noopener> <i class="fab fa-youtube big-icon"></i></a> <a href="https://www.instagram.com/divergentissimo/" target=_blank rel=noopener> <i class="fab fa-instagram big-icon"></i></a> <a href="https://www.linkedin.com/in/federico-angelo-mor/" target=_blank rel=noopener> <i class="fab fa-linkedin big-icon"></i></a> <a href="https://github.com/federicomor" target=_blank rel=noopener> <i class="fab fa-github big-icon"></i></a> </div> </div> <div class="content container"> <a class=backToTopBtn  title="back to top // torna in cima" href="#top"> <span class=backToTopBtn-icon >∧</span> </a> <div class=franklin-content > <div class=navigation_symbols > <form action="" method=get  onsubmit="location.href='/activity/project_euler/problem_' + this.elements[0].value; return false;" style="display:inline;"> <input title="go to problem" type="" placeholder=" " required style="margin-right: 5px; width: 40px; padding: 3px; text-align: center; border: 1px solid #666666; border-radius: 4px;"> </form> <a href="/activity/project_euler/problem_189/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a> <a href="javascript:void(0)" onclick="getRandomProblem()" style="color: black; text-decoration: none;" title="random problem">🎲 </a> <script> function getRandomProblem() { fetch('/activity/project_euler/data.txt') .then(response => response.text()) .then(data => { const maxProblems = parseInt(data.trim(), 10); const randomProblemNumber = Math.floor(Math.random() * maxProblems) + 1; window.location = '/activity/project_euler/problem_' + randomProblemNumber + '/'; }) .catch(err => console.error('Error fetching max problems:', err)); } </script> <a href="/activity/project_euler" style="color: black; text-decoration: none;">🏠 </a> <a href="/activity/project_euler/problem_191/" style="color: black; text-decoration: none;"><i class="fa-solid fa-arrow-right"></i></a> </div> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_main.1735430422.css"> <link rel=stylesheet  type="text/css" href="/activity/project_euler/style_default.1627113674.css"> <script src="https://projecteuler.net/js/mathjax_config.js"></script> <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=es6"></script> <script id=MathJax-script  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script> <div id=content > <div class="center print"><img src="https://projecteuler.net/images/clipart/print_page_logo.png" alt=projecteuler.net ></div> <h2>Maximising a Weighted Product</h2><div id=problem_icons  class=noprint ><span class=tooltip >ℹ️<span class=tooltiptext_right >Published on Friday, 18th April 2008, 10:00 pm; Solved by 4586;<br>Difficulty rating: 50%</span></span></div><div id=problem_info ><h3><a href="https://projecteuler.net/problem=190">Problem 190</a></h3></div> <div class=problem_content  role=problem > <p>Let $S_m = (x_1, x_2, \dots , x_m)$ be the $m$-tuple of positive real numbers with $x_1 + x_2 + \cdots + x_m = m$ for which $P_m = x_1 \cdot x_2^2 \cdot \cdots \cdot x_m^m$ is maximised.</p> <p>For example, it can be verified that $\lfloor P_{10}\rfloor = 4112$ ($\lfloor \, \rfloor$ is the integer part function).</p> <p>Find $\sum\limits_{m = 2}^{15} \lfloor P_m \rfloor$.</p> </div><br> <br> </div> <!--end_content--> <h2 id=soluzione ><a href="#soluzione" class=header-anchor >Soluzione</a></h2> <p><h3 id=esplorazione_del_problema ><a href="#esplorazione_del_problema" class=header-anchor >Esplorazione del problema</a></h3> <p>Come sempre, per approcciare un problema complicato, possiamo partire in piccolo e osservare cosa accade in casi più semplici; quindi qui per esempio analizzando i casi \(m=2\) e \(m=3\). Giusto perché è carino, e perché Julia permette di farlo molto facilmente, possiamo anche raccontare graficamente questa prima esplorazione.</p> <pre><code class=language-julia >using Plots</code></pre>
+<p>Questo è quello che si osserva nel caso di \(m=2\):</p>
+<pre><code class=language-julia >nout &#61; 100
 x1s &#61; range&#40;0,2,length&#61;nout&#41;
 vals &#61; zeros&#40;nout&#41;
 for i in 1:nout
@@ -88,26 +11,25 @@ end
 plot&#40;x1s,vals,label&#61;&quot;&quot;&#41;
 max_idx &#61; argmax&#40;vals&#41;
 x1_max &#61; x1s&#91;max_idx&#93;
-vline&#33;&#40;&#91;x1_max&#93;,label&#61;&quot;&quot;&#41;</code></pre><pre><code class="plaintext code-output">MethodError: no method matching _show(::IOStream, ::MIME{Symbol("application/vnd.plotly.v1+json")}, ::Plots.Plot{Plots.GRBackend})
-The function `_show` exists, but no method is defined for this combination of argument types.
+vline&#33;&#40;&#91;x1_max&#93;,label&#61;&quot;&quot;&#41;</code></pre>
+<div id=fdpzxw  style=""></div>
+<script>
+graphDiv = document.getElementById("fdpzxw");
+plotlyPromise = PlotlyJS_json(graphDiv, '/assets/literate_outputs/project_euler/pe_190_1.json');
+</script>
 
-Closest candidates are:
-  _show(::IO, !Matched::MIME{Symbol("image/svg+xml")}, ::Plots.Plot{Plots.GRBackend})
-   @ Plots ~/.julia/packages/Plots/GIume/src/backends/gr.jl:2091
-  _show(::IO, !Matched::MIME{Symbol("application/postscript")}, ::Plots.Plot{Plots.GRBackend})
-   @ Plots ~/.julia/packages/Plots/GIume/src/backends/gr.jl:2091
-  _show(::IO, !Matched::MIME{Symbol("image/png")}, ::Plots.Plot{Plots.GRBackend})
-   @ Plots ~/.julia/packages/Plots/GIume/src/backends/gr.jl:2091
-  ...
-
-</code></pre> <div id=fdpmpm  style=""></div> <script> graphDiv = document.getElementById("fdpmpm"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/literate_outputs/M2P.json'); </script> <pre><code class=language-julia >println&#40;&quot;Max value &#40;&#36;&#40;maximum&#40;vals&#41;&#41;&#41; reached at index &#36;max_idx, ie for&quot;&#41;
+<pre><code class=language-julia >println&#40;&quot;Max value &#40;&#36;&#40;maximum&#40;vals&#41;&#41;&#41; reached at index &#36;max_idx, ie for&quot;&#41;
 println&#40;&quot;x1 &#61; &quot;, x1_max&#41;
 println&#40;&quot;x2 &#61; &quot;, 2-x1_max&#41;</code></pre><pre><code class="plaintext code-output">Max value (1.1851851851851853) reached at index 34, ie for
 x1 = 0.6666666666666666
 x2 = 1.3333333333333335
-</code></pre> <p>vera soluzione:</p> <pre><code class="plaintext code-output">UndefVarError: `xs` not defined in `Main.FD_SANDBOX_15002471842407003786`
-Suggestion: check for spelling errors or missing imports.
-</code></pre> <p>mentre questo per \(m=3\):</p> <pre><code class=language-julia >nout &#61; 200
+</code></pre>
+<p>vera soluzione:</p>
+<pre><code class="plaintext code-output">2-element Vector{Float64}:
+ 0.6666666666666666
+ 1.3333333333333333</code></pre>
+<p>mentre questo per \(m=3\):</p>
+<pre><code class=language-julia >nout &#61; 200
 x1s &#61; range&#40;0,3,length&#61;nout&#41;
 x2s &#61; range&#40;0,3,length&#61;nout&#41;
 vals &#61; zeros&#40;nout,nout&#41;
@@ -125,28 +47,47 @@ max_idx &#61; argmax&#40;vals&#41;
 x1_max &#61; x1s&#91;max_idx&#91;1&#93;&#93;
 x2_max &#61; x1s&#91;max_idx&#91;2&#93;&#93;
 plot3d&#40;x1s,x2s,vals&#39;,st&#61;:surface, label&#61;&quot;&quot;&#41;
-plot3d&#33;&#40;repeat&#40;&#91;x1_max&#93;,2&#41;,repeat&#40;&#91;x2_max&#93;,2&#41;,&#91;0,maximum&#40;vals&#41;&#43;0.5&#93;,label&#61;&quot;&quot;&#41;</code></pre><pre><code class="plaintext code-output">MethodError: no method matching _show(::IOStream, ::MIME{Symbol("application/vnd.plotly.v1+json")}, ::Plots.Plot{Plots.GRBackend})
-The function `_show` exists, but no method is defined for this combination of argument types.
+plot3d&#33;&#40;repeat&#40;&#91;x1_max&#93;,2&#41;,repeat&#40;&#91;x2_max&#93;,2&#41;,&#91;0,maximum&#40;vals&#41;&#43;0.5&#93;,label&#61;&quot;&quot;&#41;</code></pre>
+<div id=fdpfpn  style=""></div>
+<script>
+graphDiv = document.getElementById("fdpfpn");
+plotlyPromise = PlotlyJS_json(graphDiv, '/assets/literate_outputs/project_euler/pe_190_2.json');
+</script>
 
-Closest candidates are:
-  _show(::IO, !Matched::MIME{Symbol("image/svg+xml")}, ::Plots.Plot{Plots.GRBackend})
-   @ Plots ~/.julia/packages/Plots/GIume/src/backends/gr.jl:2091
-  _show(::IO, !Matched::MIME{Symbol("application/postscript")}, ::Plots.Plot{Plots.GRBackend})
-   @ Plots ~/.julia/packages/Plots/GIume/src/backends/gr.jl:2091
-  _show(::IO, !Matched::MIME{Symbol("image/png")}, ::Plots.Plot{Plots.GRBackend})
-   @ Plots ~/.julia/packages/Plots/GIume/src/backends/gr.jl:2091
-  ...
-
-</code></pre> <div id=fdpslb  style=""></div> <script> graphDiv = document.getElementById("fdpslb"); plotlyPromise = PlotlyJS_json(graphDiv, '/assets/literate_outputs/M3P.json'); </script> <pre><code class=language-julia >println&#40;&quot;Max value &#40;&#36;&#40;maximum&#40;vals&#41;&#41;&#41; reached at &#36;max_idx, ie for&quot;&#41;
+<pre><code class=language-julia >println&#40;&quot;Max value &#40;&#36;&#40;maximum&#40;vals&#41;&#41;&#41; reached at &#36;max_idx, ie for&quot;&#41;
 println&#40;&quot;x1 &#61; &quot;, x1_max&#41;
 println&#40;&quot;x2 &#61; &quot;, x2_max&#41;
 println&#40;&quot;x3 &#61; &quot;, 3-x1_max-x2_max&#41;</code></pre><pre><code class="plaintext code-output">Max value (1.6873721655472487) reached at CartesianIndex(34, 67), ie for
 x1 = 0.49748743718592964
 x2 = 0.9949748743718593
 x3 = 1.507537688442211
-</code></pre> <p>vera soluzione:</p> <pre><code class="plaintext code-output">UndefVarError: `xs` not defined in `Main.FD_SANDBOX_15002471842407003786`
-Suggestion: check for spelling errors or missing imports.
-</code></pre> <p>Questo approccio, come detto, può servire per ambientarci nel problema, e sarebbe ad esempio utile se potessimo già da questi esempi derivare o intuire un qualche pattern rilevante. Tuttavia, non sembra molto il caso dai numeri derivati qui sopra, quindi possiamo passare direttamente alla trattazione matematica e rigorosa del problema.</p> <h3 id=soluzione_effettiva ><a href="#soluzione_effettiva" class=header-anchor >Soluzione effettiva</a></h3> <p>L&#39;idea è che stiamo affrontando un problema di ottimizzazione per una funzione multivariata \(f({\bf x}) : \mathbb R^n\to \mathbb R\), soggetta al vincolo \(g({\bf x})=0\), dove anche \(g({\bf x}): \mathbb R^n\to \mathbb R\): un contesto che sembra proprio chiamare in causa i moltiplicatori di Lagrange&#33; Quando ci ho pensato non volevo crederci, e soprattutto non volevo rimestare nel torbido per recuperare i miei appunti di Analisi 2. A malincuore ho dovuto però farlo, e in effetti con quelli si arriva tranquillamente &#40;e anche molto velocemente&#41; alla soluzione.</p> <p>I moltiplicatori di Lagrange permettono infatti di convertire un problema di ottimizzazione &#40;inteso come ricerca di punti di massimo/minimo&#41; di una funzione \(f\) soggetta a un vincolo<sup id="fnref:1"><a href="#fndef:1" class=fnref >[1]</a></sup> \(g\) in un altro problema di ottimizzazione, stavolta <em>libero</em>, quindi non soggetto a vincoli, di un&#39;altra funzione \(\mathcal{L}\), al costo di aggiungere una variabile \(\lambda\). Questa nuova funzione sarebbe </p> \[\mathcal{L}({\bf x},\lambda) = f({\bf x}) + \lambda g({\bf x})\] <p>i cui punti di massimo/minimo sono ora molto facili da individuare: basta infatti usare il classico metodo dell&#39;imporre la &quot;derivata uguale a zero&quot;, che in questo contesto multivariato si traduce nel chiedere che il gradiente della funzione sia uguale a zero, ovvero \(\nabla \mathcal{L}({\bf x},\lambda) = {\bf 0}\), per trovare i candidati punti di massimo/minimo. Questa richiesta, vista la definizione di \(\mathcal{L}\), equivale in realtà a </p> <a id=system  class=anchor ></a>\[\begin{cases}\nabla f({\bf x}) = -\lambda g({\bf x}) \\ g({\bf x}) = 0\end{cases}\] <p><table class=fndef  id="fndef:1"> <tr> <td class=fndef-backref ><a href="#fnref:1">[1]</a> <td class=fndef-content >Questo metodo permette anche di gestire più vincoli ovviamente, e in tal caso si introdurrebbe una nuova variabile per vincolo, ma per non appesantire la spiegazione mi sono concentrato sul caso del problema dove c&#39;è un vincolo solo. </table> Nel nostro caso, il problema è </p> \[ \max \, f({\bf x}) = \prod_{i=1}^m {x_i}^i \quad \text{s.t.}\quad g({\bf x}) = \sum_{i=1}^m x_i -m = 0\] <p>&#40;\(\text{s.t.}\) sta per &quot;subject to&quot;, cioè &quot;soggetto al vincolo&quot;&#41;. Però, pensando di dover derivare \(f\) per calcolare \(\nabla f({\bf x})\), questa formulazione non sembra molto comoda, dato che derivando rispetto ad \(x_i\) rimarrebbe comunque un termine che comprende tutte le altre variabili \(x_j\). Un&#39;idea è quindi di riformulare il problema applicando a \(f\) un logaritmo: dopotutto, massimizzare \(f({\bf x})\) è equivalente a massimizzare \(\ln f({\bf x})\), dato che il logaritmo è una funzione crescente. Passando quindi a trattare il problema</p> \[ \max \, h({\bf x}):= \ln f({\bf x}) = \sum_{i=1}^m i\cdot{x_i} \quad \text{s.t.}\quad g({\bf x}) = \sum_{i=1}^m x_i -m = 0\] <p>e impostando il sistema <span class=eqref >(<a href="#system">2</a>)</span> si ricava</p> \[\begin{cases}\frac{i}{x_i} = -\lambda \\ \sum x_i = m \end{cases} \implies \begin{cases}x_i = -\frac{i}{\lambda} \\ \sum x_i = m \end{cases} \implies \lambda = -\frac{m+1}{2} \implies \boxed{x_i = \frac{2i}{m+1}} \] <p>da cui segue in poche righe, o con un minimo di impegno anche una sola, la soluzione del problema:</p> <pre><code class=language-julia >Int.&#40;sum&#40;floor&#40;prod&#40;&#40;2i/&#40;m&#43;1&#41;&#41;^i for i in 1:m&#41;&#41; for m in 2:15&#41;&#41;</code></pre><pre><code class="plaintext code-output">371048281</code></pre>
+</code></pre>
+<p>vera soluzione:</p>
+<pre><code class="plaintext code-output">3-element Vector{Float64}:
+ 0.5
+ 1.0
+ 1.5</code></pre>
+<p>Questo approccio, come detto, può servire per ambientarci nel problema, e sarebbe ad esempio utile se potessimo già da questi esempi derivare o intuire un qualche pattern rilevante. Tuttavia, non sembra molto il caso dai numeri derivati qui sopra, quindi possiamo passare direttamente alla trattazione matematica e rigorosa del problema.</p>
+<h3 id=soluzione_effettiva ><a href="#soluzione_effettiva" class=header-anchor >Soluzione effettiva</a></h3>
+<p>L&#39;idea è che stiamo affrontando un problema di ottimizzazione per una funzione multivariata \(f({\bf x}) : \mathbb R^n\to \mathbb R\), soggetta al vincolo \(g({\bf x})=0\), dove anche \(g({\bf x}): \mathbb R^n\to \mathbb R\): un contesto che sembra proprio chiamare in causa i moltiplicatori di Lagrange&#33; Quando ci ho pensato non volevo crederci, e soprattutto non volevo rimestare nel torbido per recuperare i miei appunti di Analisi 2. A malincuore ho dovuto però farlo, e in effetti con quelli si arriva tranquillamente &#40;e anche molto velocemente&#41; alla soluzione.</p>
+<p>I moltiplicatori di Lagrange permettono infatti di convertire un problema di ottimizzazione &#40;inteso come ricerca di punti di massimo/minimo&#41; di una funzione \(f\) soggetta a un vincolo<sup id="fnref:1"><a href="#fndef:1" class=fnref >[1]</a></sup> \(g\) in un altro problema di ottimizzazione, stavolta <em>libero</em>, quindi non soggetto a vincoli, di un&#39;altra funzione \(\mathcal{L}\), al costo di aggiungere una variabile \(\lambda\). Questa nuova funzione sarebbe </p>
+\[\mathcal{L}({\bf x},\lambda) = f({\bf x}) + \lambda g({\bf x})\]
+<p>i cui punti di massimo/minimo sono ora molto facili da individuare: basta infatti usare il classico metodo dell&#39;imporre la &quot;derivata uguale a zero&quot;, che in questo contesto multivariato si traduce nel chiedere che il gradiente della funzione sia uguale a zero, ovvero \(\nabla \mathcal{L}({\bf x},\lambda) = {\bf 0}\), per trovare i candidati punti di massimo/minimo. Questa richiesta, vista la definizione di \(\mathcal{L}\), equivale in realtà a </p>
+<a id=system  class=anchor ></a>\[\begin{cases}\nabla f({\bf x}) = -\lambda g({\bf x}) \\ g({\bf x}) = 0\end{cases}\]
+<p><table class=fndef  id="fndef:1">
+    <tr>
+        <td class=fndef-backref ><a href="#fnref:1">[1]</a>
+        <td class=fndef-content >Questo metodo permette anche di gestire più vincoli ovviamente, e in tal caso si introdurrebbe una nuova variabile per vincolo, ma per non appesantire la spiegazione mi sono concentrato sul caso del problema dove c&#39;è un vincolo solo.
+    
+</table>
+ Nel nostro caso, il problema è </p>
+\[ \max \, f({\bf x}) = \prod_{i=1}^m {x_i}^i \quad \text{s.t.}\quad g({\bf x}) = \sum_{i=1}^m x_i -m = 0\]
+<p>&#40;\(\text{s.t.}\) sta per &quot;subject to&quot;, cioè &quot;soggetto al vincolo&quot;&#41;. Però, pensando di dover derivare \(f\) per calcolare \(\nabla f({\bf x})\), questa formulazione non sembra molto comoda, dato che derivando rispetto ad \(x_i\) rimarrebbe comunque un termine che comprende tutte le altre variabili \(x_j\). Un&#39;idea è quindi di riformulare il problema applicando a \(f\) un logaritmo: dopotutto, massimizzare \(f({\bf x})\) è equivalente a massimizzare \(\ln f({\bf x})\), dato che il logaritmo è una funzione crescente. Passando quindi a trattare il problema</p>
+\[ \max \, h({\bf x}):= \ln f({\bf x}) = \sum_{i=1}^m i\cdot{x_i} \quad \text{s.t.}\quad g({\bf x}) = \sum_{i=1}^m x_i -m = 0\]
+<p>e impostando il sistema <span class=eqref >(<a href="#system">2</a>)</span> si ricava</p>
+\[\begin{cases}\frac{i}{x_i} = -\lambda \\ \sum x_i = m \end{cases} \implies \begin{cases}x_i = -\frac{i}{\lambda} \\ \sum x_i = m \end{cases} \implies \lambda = -\frac{m+1}{2} \implies \boxed{x_i = \frac{2i}{m+1}} \]
+<p>da cui segue in poche righe, o con un minimo di impegno anche una sola, la soluzione del problema:</p>
+<pre><code class=language-julia >Int.&#40;sum&#40;floor&#40;prod&#40;&#40;2i/&#40;m&#43;1&#41;&#41;^i for i in 1:m&#41;&#41; for m in 2:15&#41;&#41;</code></pre><pre><code class="plaintext code-output">371048281</code></pre>
 <p>Questi sarebbero i valori di \(x_i\) generati per ogni caso:</p>
 <pre><code class=language-julia >xs&#40;m&#41; &#61; &#91;&#40;2i/&#40;m&#43;1&#41;&#41; for i in 1:m&#93;
 for m in 2:15
