@@ -1,2 +1,2 @@
-  0.029221 seconds (10.85 k allocations: 443.867 KiB, 96.84% compilation time)
+  0.031991 seconds (10.85 k allocations: 443.867 KiB, 96.88% compilation time)
 max line = 709 with value 6.919995552420337e6
