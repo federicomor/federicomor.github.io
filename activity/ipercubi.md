@@ -25,15 +25,8 @@ $$
 $$
 
 Per le facce _piane_, ovvero quelle classiche, si procede in modo simile, pensando a come caratterizzarle. In questo caso, risulta che una faccia piana è univocamente determinabile dalla scelta di un vertice e di due direzioni da esso uscenti. Riguardo alle facce generiche di dimensione $k$ (perché per esempio uno può chiedersi da quante facce 5-cubiche è formato un 7-cubo, o domande ancora peggiori), queste si possono caratterizzare come la scelta di un vertice e di $k$ direzioni da esso uscenti. Correggendo sempre per il numero di volte in cui si sta contando più volte ogni faccia, si arriva alle seguenti formule
-$$
-\begin{align*}
-\#\text{(facce piane)} &= \dfrac{2^N \binom{N}{2}}{2^2} = 2^{N-2} \binom{N}{2}\\
-% \#\text{(facce di dimensione $k$)} &= \dfrac{2^N \binom{N}{k}}{2^k}=2^{N-k} \binom{N}{k} \quad k\in\{3,\ldots,N-1\}\\
-\#\begin{pmatrix}
-\text{facce di dimensione $k$}\\\text{per $k\in\{3,\ldots,N-1\}$} 
-\end{pmatrix} &= \dfrac{2^N \binom{N}{k}}{2^k}=2^{N-k} \binom{N}{k}
-\end{align*}
-$$
+$$ \#\text{(facce piane)} = \dfrac{2^N \binom{N}{2}}{2^2} = 2^{N-2} \binom{N}{2} $$
+$$ \#\text{(facce di dimensione $k$)} = \dfrac{2^N \binom{N}{k}}{2^k}=2^{N-k} \binom{N}{k} \quad\text{per $k\in\{3,\ldots,N-1\}$} $$
 dove $\binom{N}{k}=\frac{N!}{k!(N-k)!}$ è il coefficiente binomiale di $N$ su $k$, che indica in quanti modi possiamo scegliere $k$ elementi distinti da un gruppo di $N$ elementi.
 
 \input{julia}{/assets/scripts/ipercubi.jl}

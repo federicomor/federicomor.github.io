@@ -10,7 +10,7 @@ Github repository: [https://github.com/federicomor/merge-pdf-with-toc](https://g
 
 ~~~
 <a href="https://github.com/federicomor/merge-pdf-with-toc" style="display: block; text-decoration: none; color: inherit;">
-<img src="/progetti/merge_pdf_with_toc.png" alt="Card Image" style="
+<img src="/assets/progetti/merge_pdf_with_toc.png" alt="Card Image" style="
 border: solid 1px;
 margin-bottom: -10px;"> 
 </a>

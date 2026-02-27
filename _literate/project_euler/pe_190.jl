@@ -3,7 +3,7 @@
 # Giusto perché è carino, e perché Julia permette di farlo molto facilmente, possiamo anche raccontare graficamente questa prima esplorazione.
 using Plots 
 using JSON
-plotlyjs() # hide
+plotlyjs(); # hide
 xs(m) = [(2i/(m+1)) for i in 1:m]; #hide
 #-
 # Questo è quello che si osserva nel caso di $m=2$:

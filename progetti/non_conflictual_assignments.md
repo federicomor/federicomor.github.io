@@ -18,7 +18,7 @@ After some experiments I found a working algorithm which I could execute on the 
 
 ~~~
 <a href="/assets/progetti/campi_grest.html" style="display: block; text-decoration: none; color: inherit;">
-<img src="/assets/img/grest.jpg" alt="Card Image" style="
+<img src="/assets/progetti/grest.jpg" alt="Card Image" style="
 border: solid 1px;
 margin-bottom: -10px;"> 
 </a>

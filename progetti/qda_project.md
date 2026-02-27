@@ -10,4 +10,4 @@ In the end, our algorithm achieved an accuracy of 95%, correctly classifying, as
 
 Github repository: [https://github.com/abylai11/qda-project](https://github.com/abylai11/qda-project).
 
-{{pdf /assets/uni/qda_report.pdf }}
+{{pdf /assets/progetti/qda_project_report.pdf }}
