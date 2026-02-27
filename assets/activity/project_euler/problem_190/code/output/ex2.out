@@ -1,2 +1,12 @@
-UndefVarError: `plot` not defined in `Main.FD_SANDBOX_15002471842407003786`
-Suggestion: check for spelling errors or missing imports.
+MethodError: no method matching _show(::IOStream, ::MIME{Symbol("application/vnd.plotly.v1+json")}, ::Plots.Plot{Plots.GRBackend})
+The function `_show` exists, but no method is defined for this combination of argument types.
+
+Closest candidates are:
+  _show(::IO, !Matched::MIME{Symbol("image/svg+xml")}, ::Plots.Plot{Plots.GRBackend})
+   @ Plots ~/.julia/packages/Plots/GIume/src/backends/gr.jl:2091
+  _show(::IO, !Matched::MIME{Symbol("application/postscript")}, ::Plots.Plot{Plots.GRBackend})
+   @ Plots ~/.julia/packages/Plots/GIume/src/backends/gr.jl:2091
+  _show(::IO, !Matched::MIME{Symbol("image/png")}, ::Plots.Plot{Plots.GRBackend})
+   @ Plots ~/.julia/packages/Plots/GIume/src/backends/gr.jl:2091
+  ...
+

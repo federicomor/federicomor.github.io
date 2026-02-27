@@ -3,52 +3,7 @@ using SparseArrays
 using DataStructures
 using IterativeSolvers
 using Plots, GraphRecipes
-Random.seed&#33;&#40;31032025&#41;;</code></pre><pre><code class="plaintext code-output">The following 1 direct dependency failed to precompile:
-
-MbedTLS_jll 
-
-Failed to precompile MbedTLS_jll [c8ffd9c3-330d-5841-b78e-0817d7145fa1] to "/home/runner/.julia/compiled/v1.12/MbedTLS_jll/jl_5YUBtr".
-ERROR: LoadError: ArgumentError: Package MbedTLS_jll does not have JLLWrappers in its dependencies:
-- Note that the following manifests in the load path were resolved with a different
-  julia version, which may be the cause of the error. Try to re-resolve them in the
-  current version, or consider deleting them if that fails:
-    /home/runner/work/federicomor.github.io/federicomor.github.io/Manifest.toml (v1.11.7)
-- You may have a partially installed environment. Try `Pkg.instantiate()`
-  to ensure all packages in the environment are installed.
-- Or, if you have MbedTLS_jll checked out for development and have
-  added JLLWrappers as a dependency but haven't updated your primary
-  environment's manifest file, try `Pkg.resolve()`.
-- Otherwise you may need to report an issue with MbedTLS_jll
-Stacktrace:
-  [1] macro expansion
-    @ ./loading.jl:2406 [inlined]
-  [2] macro expansion
-    @ ./lock.jl:376 [inlined]
-  [3] __require(into::Module, mod::Symbol)
-    @ Base ./loading.jl:2386
-  [4] require(into::Module, mod::Symbol)
-    @ Base ./loading.jl:2362
-  [5] top-level scope
-    @ ~/.julia/packages/MbedTLS_jll/GYTVP/src/MbedTLS_jll.jl:5
-  [6] include(mod::Module, _path::String)
-    @ Base ./Base.jl:306
-  [7] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
-    @ Base ./loading.jl:3024
-  [8] top-level scope
-    @ stdin:5
-  [9] eval(m::Module, e::Any)
-    @ Core ./boot.jl:489
- [10] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
-    @ Base ./loading.jl:2870
- [11] include_string
-    @ ./loading.jl:2880 [inlined]
- [12] exec_options(opts::Base.JLOptions)
-    @ Base ./client.jl:315
- [13] _start()
-    @ Base ./client.jl:550
-in expression starting at /home/runner/.julia/packages/MbedTLS_jll/GYTVP/src/MbedTLS_jll.jl:2
-in expression starting at stdin:
-</code></pre> <p>Per iniziare ad ambientarci nel contesto del problema &#40;ovvero con il meccanismo di spostamento delle palline nelle ciotole, la condizione di terminazione del gioco, ecc&#41; possiamo implementare una semplice simulazione del gioco stesso, osservando quali possibili scenari possono verificarsi.</p> <pre><code class=language-julia ># n bowls, m balls
+Random.seed&#33;&#40;31032025&#41;;</code></pre> <p>Per iniziare ad ambientarci nel contesto del problema &#40;ovvero con il meccanismo di spostamento delle palline nelle ciotole, la condizione di terminazione del gioco, ecc&#41; possiamo implementare una semplice simulazione del gioco stesso, osservando quali possibili scenari possono verificarsi.</p> <pre><code class=language-julia ># n bowls, m balls
 function simulate_F&#40;n::Int, m::Int; num_trials::Int&#61;10000, verbose&#61;false&#41;
     total_moves &#61; 0
 	if verbose num_trials &#61; 1 end
@@ -77,7 +32,7 @@ function simulate_F&#40;n::Int, m::Int; num_trials::Int&#61;10000, verbose&#61;f
     return total_moves / num_trials  # estimate of F&#40;n, m&#41;
 end</code></pre><pre><code class="plaintext code-output">simulate_F (generic function with 1 method)</code></pre>
 <p>Con questa funzione possiamo o simulare il problema per ottenere una stima più o meno accurata della soluzione:</p>
-<pre><code class=language-julia >simulate_F&#40;2, 3, num_trials &#61; 20_000&#41; # soluzione esatta: 9/4 &#61; 2.25</code></pre><pre><code class="plaintext code-output">2.27045</code></pre>
+<pre><code class=language-julia >simulate_F&#40;2, 3, num_trials &#61; 20_000&#41; # soluzione esatta: 9/4 &#61; 2.25</code></pre><pre><code class="plaintext code-output">2.2518</code></pre>
 <p>o altrimenti vedere in concreto cosa accade in un&#39;esempio di esecuzione:</p>
 <pre><code class=language-julia >simulate_F&#40;4, 3, verbose&#61;true&#41;</code></pre><pre><code class="plaintext code-output">Balls are in bowls: [1, 2, 3] (selected ball: 2, will move by: 1)
 Balls are in bowls: [1, 3, 3] (selected ball: 1, will move by: 1)
@@ -384,9 +339,7 @@ graphplot&#40;P,
 	fontsize &#61; 4,
 	self_edge_size &#61; 0.12,
 	method&#61;:circular,
-	axis_buffer&#61;0.2&#41;</code></pre><pre><code class="plaintext code-output">UndefVarError: `graphplot` not defined in `Main.FD_SANDBOX_5647245269982265311`
-Suggestion: check for spelling errors or missing imports.
-</code></pre>
+	axis_buffer&#61;0.2&#41;</code></pre>
 <img src="/assets/literate_outputs/pe_930_1.svg" alt="">
 <p>Una volta creata \(P\), dobbiamo capire come usarla per risolvere il problema. Possiamo intanto osservare la struttura di \(P\) &#40;o in generale di una qualunque matrice di transizione per una catena di Markov che presenta stati assorbenti&#41;. La struttura di \(P\) è infatti </p>
 \[ P =\begin{pmatrix} I & O\\ R &  Q\end{pmatrix}\]
@@ -505,7 +458,7 @@ Assembling transition matrix
 Let's have a view of the sparsity of P
 Solving the linear system
 done!
-278898.18162640353</code></pre>
+278898.1816261663</code></pre>
 <img src="/assets/literate_outputs/pe_930_2.svg" alt="">
 <pre><code class=language-julia >function G&#40;N,M&#41;
 	S &#61; 0
@@ -519,40 +472,40 @@ done!
 	return S
 end
 
-G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-output">  0.000059 seconds (243 allocations: 9.938 KiB)
+G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-output">  0.000069 seconds (247 allocations: 11.219 KiB)
 (n,m)=(2,2) => E[#steps] = 1//2 = 0.5
 
-  0.000056 seconds (273 allocations: 11.094 KiB)
+  0.000061 seconds (278 allocations: 12.344 KiB)
 (n,m)=(2,3) => E[#steps] = 9//4 = 2.25
 
-  0.000026 seconds (399 allocations: 16.453 KiB)
+  0.000022 seconds (408 allocations: 19.344 KiB)
 (n,m)=(2,4) => E[#steps] = 13//2 = 6.5
 
-  0.000021 seconds (426 allocations: 17.469 KiB)
+  0.000018 seconds (437 allocations: 20.422 KiB)
 (n,m)=(2,5) => E[#steps] = 125//8 = 15.625
 
-  0.000021 seconds (383 allocations: 15.047 KiB)
+  0.000020 seconds (392 allocations: 16.562 KiB)
 (n,m)=(3,2) => E[#steps] = 4//3 = 1.3333333333333333
 
-  0.000031 seconds (694 allocations: 28.391 KiB)
+  0.000026 seconds (710 allocations: 30.891 KiB)
 (n,m)=(3,3) => E[#steps] = 22//3 = 7.333333333333333
 
-  0.000047 seconds (976 allocations: 40.734 KiB)
+  0.000038 seconds (991 allocations: 42.797 KiB)
 (n,m)=(3,4) => E[#steps] = 244//9 = 27.11111111111111
 
-  0.000062 seconds (1.34 k allocations: 56.219 KiB)
+  0.000052 seconds (1.36 k allocations: 58.281 KiB)
 (n,m)=(3,5) => E[#steps] = 785//9 = 87.22222222222223
 
-  0.000035 seconds (738 allocations: 32.703 KiB)
+  0.000030 seconds (756 allocations: 36.297 KiB)
 (n,m)=(4,2) => E[#steps] = 5//2 = 2.5
 
-  0.000059 seconds (1.33 k allocations: 60.875 KiB)
+  0.000054 seconds (1.36 k allocations: 63.703 KiB)
 (n,m)=(4,3) => E[#steps] = 63//4 = 15.75
 
-  0.000161 seconds (2.62 k allocations: 127.680 KiB)
+  0.000127 seconds (2.67 k allocations: 128.219 KiB)
 (n,m)=(4,4) => E[#steps] = 141//2 = 70.5
 
-  0.000200 seconds (3.82 k allocations: 189.211 KiB)
+  0.000213 seconds (3.89 k allocations: 195.461 KiB)
 (n,m)=(4,5) => E[#steps] = 6875//24 = 286.4583333333333
 
 done!
