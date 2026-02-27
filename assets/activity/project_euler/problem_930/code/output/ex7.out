@@ -1,8 +1,8 @@
-stato: Real[0, 0, 0, 0, 3] => # ocorrenze: 5
-stato: Real[0, 0, 0, 1, 2] => # ocorrenze: 10
-stato: Real[0, 0, 1, 0, 2] => # ocorrenze: 10
-stato: Real[0, 0, 1, 1, 1] => # ocorrenze: 5
-stato: Real[0, 1, 0, 1, 1] => # ocorrenze: 5
+stato: Real[0, 0, 0, 0, 3] => # occorrenze: 5
+stato: Real[0, 0, 0, 1, 2] => # occorrenze: 10
+stato: Real[0, 0, 1, 0, 2] => # occorrenze: 10
+stato: Real[0, 0, 1, 1, 1] => # occorrenze: 5
+stato: Real[0, 1, 0, 1, 1] => # occorrenze: 5
 states = [[0, 0, 0, 0, 3], [0, 0, 0, 1, 2], [0, 0, 1, 0, 2], [0, 0, 1, 1, 1], [0, 1, 0, 1, 1]]
 prob = 6//125
 [0, 0, 0, 0, 3] -> p: 1//25

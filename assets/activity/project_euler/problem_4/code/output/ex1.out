@@ -1,2 +1,2 @@
-  0.172397 seconds (3.47 M allocations: 90.090 MiB, 2.02% compilation time)
+  0.152730 seconds (3.47 M allocations: 90.090 MiB, 2.34% compilation time)
 (max_n, max_i, max_j) = (906609, 913, 993)

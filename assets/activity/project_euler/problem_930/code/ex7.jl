@@ -13,7 +13,7 @@ function get_states(bowls::Int, balls::Int; verbose=false)
 	end
 	if verbose
 		for (key, val) in multiStates
-			println("stato: ", key, " => # ocorrenze: ", val)
+			println("stato: ", key, " => # occorrenze: ", val)
 		end
 	end
 	prob = factorial(balls) // (bowls ^ balls)
