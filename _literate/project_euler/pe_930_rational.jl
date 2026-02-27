@@ -250,7 +250,7 @@ graphplot(P,
 	axis_buffer=0.2)
 ## savefig(joinpath("_assets","literate_outputs", "pe_930_1.svg")); # hide
 
-# \fig{/assets/literate_outputs/pe_930_1.svg}
+# \fig{/assets/literate_outputs/project_euler/pe_930_1.svg}
 
 #-
 # Una volta creata $P$, dobbiamo capire come usarla per risolvere il problema. Possiamo intanto osservare la struttura di $P$ (o in generale di una qualunque matrice di transizione per una catena di Markov che presenta stati assorbenti). La struttura di $P$ è infatti $$ P =\begin{pmatrix} I & O\\ R &  Q\end{pmatrix}$$
@@ -363,7 +363,7 @@ function F(::Type{T}, nbowls, nballs; verbose=false, plot_graph=false) where {T<
 end
 F(Float64,12,6,verbose=true,plot_graph=false)
 #- 
-# \fig{/assets/literate_outputs/pe_930_2.svg}
+# \fig{/assets/literate_outputs/project_euler/pe_930_2.svg}
 
 function G(N,M)
 	S = 0

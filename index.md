@@ -2,10 +2,12 @@
 title = "Home"
 hasmath = true
 hascode = true
+date_format = "U dd, yyyy (HH.mm)"
 +++
 
 # Home
 _restyling in corso..._
+
 
 <!-- Ciao! sono Federico, un Ingegnere Matematico (tecnicamente solo un "dottore magistrale in Ingegneria Matematica", al Politecnico di Milano), e qui online un Divulgatore Matematico (o perlomeno vediamo come va). In questo sito, in particolare alle pagine raccolte nella sezione [Activity](/activity/), troverete tutti i materiali inerenti ai contenuti prodotti; contenuti che potete trovare principalmente su [Instagram](https://www.instagram.com/divergentissimo/), forse anche su Tiktok (tanto potrei riciclare il materiale che assemblo per instagram; in tal caso aggiornerò qui il link), e a volte anche su [Youtube](https://www.youtube.com/channel/UC1_68R2Kv1htcZ1It5il7CQ).
 

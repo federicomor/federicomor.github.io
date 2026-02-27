@@ -2,8 +2,8 @@
 # Come sempre, per approcciare un problema complicato, possiamo partire in piccolo e osservare cosa accade in casi più semplici; quindi qui per esempio analizzando i casi $m=2$ e $m=3$.
 # Giusto perché è carino, e perché Julia permette di farlo molto facilmente, possiamo anche raccontare graficamente questa prima esplorazione.
 using Plots 
-using JSON
-plotlyjs(); # hide
+## using JSON; # hide
+## plotlyjs(); # hide
 xs(m) = [(2i/(m+1)) for i in 1:m]; #hide
 #-
 # Questo è quello che si osserva nel caso di $m=2$:
@@ -19,10 +19,10 @@ plot(x1s,vals,label="")
 max_idx = argmax(vals)
 x1_max = x1s[max_idx]
 vline!([x1_max],label="")
-savefig(joinpath("_assets","literate_outputs","M2P.json")); # hide
+## savefig(joinpath("_assets","literate_outputs","M2P.json")); # hide
 
 #- 
-# \fig{/assets/literate_outputs/M2P.json}
+# \fig{/assets/literate_outputs/project_euler/pe_190_1.json}
 
 println("Max value ($(maximum(vals))) reached at index $max_idx, ie for")
 println("x1 = ", x1_max)
@@ -51,10 +51,10 @@ x1_max = x1s[max_idx[1]]
 x2_max = x1s[max_idx[2]]
 plot3d(x1s,x2s,vals',st=:surface, label="")
 plot3d!(repeat([x1_max],2),repeat([x2_max],2),[0,maximum(vals)+0.5],label="")
-savefig(joinpath("_assets","literate_outputs","M3P.json")); # hide
+## savefig(joinpath("_assets","literate_outputs","M3P.json")); # hide
 
 #- 
-# \fig{/assets/literate_outputs/M3P.json}
+# \fig{/assets/literate_outputs/project_euler/pe_190_2.json}
 
 println("Max value ($(maximum(vals))) reached at $max_idx, ie for")
 println("x1 = ", x1_max)
