@@ -69,35 +69,43 @@ Total moves: 10
 </ol>
 \[\frac{(m+n-1)!}{m!(n-1)!}={ m+n-1 \choose m}\]
 <ol start=3 >
-<li><p>con la terza formulazione più complicata perché contiamo come una sola configurazione, per via delle simmetrie, configurazioni precedentemente diverse, il numero degli stati diminuisce ulteriormente. Per sapere di quanto diminuisce... beh, di certo esisterà una formula che, come nei casi precedenti, conti elegantemente gli stati in funzione di \(n\) ed \(m\). Tuttavia stavolta ricavarla è molto meno immediato, quindi non ci ho badato troppo: la mia natura ingegneristica ha preso il sopravvento e, contento di aver raggiunto il caso ottimale, ho beatamente proseguito col resto del problema senza stare ad indagare troppo questo calcolo</p>
+<li><p>con la terza formulazione più complicata perché contiamo come una sola configurazione, per via delle simmetrie, configurazioni precedentemente diverse, il numero degli stati diminuisce ulteriormente. Per sapere di quanto diminuisce... beh, di certo esisterà una formula che, come nei casi precedenti, conti elegantemente gli stati in funzione di \(n\) ed \(m\). Tuttavia stavolta ricavarla è molto meno immediato, quindi non ci ho badato troppo: la mia natura ingegneristica ha preso il sopravvento e, contento di aver raggiunto il caso ottimale, ho beatamente proseguito col resto del problema senza stare ad indagare troppo questo calcolo<sup id="fnref:2"><a href="#fndef:2" class=fnref >[2]</a></sup></p>
 
 </ol>
 <p>Il punto è infatti che all&#39;aumentare del numero di ciotole e palline, il terzo metodo permette di limitare la numerosità degli stati, mantenendo quindi il problema più agilmente risolvibile per un computer. Per esempio, con 12 ciotole e 6 palline, il primo metodo prevederebbe \(12^6=2985984\) stati, il secondo \({17 \choose 6}=12376\), il terzo 561. E siccome in seguito vedremo che ci sarà da risolvere un sistema, meglio lavorare con sistemi da 561 variabili rispetto che 2985984&#33;. La formulazione del secondo metodo è comunque utile a livello umano per raccontare cosa succede, quindi la riprenderò comunque, a volte, nel discorso.</p>
-<table class=fndef  id="fndef:1">
+<p><table class=fndef  id="fndef:1">
     <tr>
         <td class=fndef-backref ><a href="#fnref:1">[1]</a>
         <td class=fndef-content >Per la cronaca, è il &quot;classico&quot; problema delle stelline e sbarrette.
     
 </table>
-
+<table class=fndef  id="fndef:2">
+    <tr>
+        <td class=fndef-backref ><a href="#fnref:2">[2]</a>
+        <td class=fndef-content >Dopo maggiori ricerche, il numero degli stati derivati da \(n\) ciotole ed \(m\) palline secondo la terza formulazione segue <a href="https://oeis.org/A052307">questa sequenza</a>, che descrive il numero di braccialetti, o collane, che possono essere composte con \(n\) perline delle quali \(m\) sono nere ed \(n - m\) sono bianche. La definizione matematica è un po&#39; contorta: </p>
+\[T(n,m) = \frac{1}{2} \binom{\lfloor n/2 \rfloor - (m \bmod 2)(1 - (n \bmod 2))}{\lfloor m/2 \rfloor}+ \frac{1}{2n} \sum_{\substack{d \mid n \\ d \mid m}}\varphi(d) \binom{n/d}{m/d} \]
+<p>dove \(\phi(n) = \{ 1\leq m \leq n \; : \;  \gcd(m,n)=1\}\) è la <a href="https://it.wikipedia.org/wiki/Funzione_&#37;CF&#37;86_di_Eulero">funzione di Eulero, o toziente</a>, che conta i numeri interi compresi tra \(1\) ed \(n\) che sono coprimi con \(n\), ovvero che non hanno nessun fattore primo in comune con \(n\).
+    
+</table>
+</p>
 <h3 id="probabilità_iniziali"><a href="#probabilità_iniziali" class=header-anchor >Probabilità iniziali</a></h3>
-<p>Una volta definito come modellare gli stati, il prossimo passo consiste nel calcolare le probabilità che la configurazione iniziale delle palline nelle ciotole sia esattamente un certo stato piuttosto che un altro. Questo servirà perché per trovare il tempo medio necessario ad entrare nella classe ricorrente \(R\), quella in cui tutte le palline sono riunite nella stessa ciotola e quindi il gioco terminerà, dovremmo espandere<sup id="fnref:2"><a href="#fndef:2" class=fnref >[2]</a></sup> il calcolo su tutti i possibili stati da cui possiamo partire. Moralmente dobbiamo cioè pesare i contributi portati da ciascuno stato per la probabilità di partire proprio da quello stato:</p>
+<p>Una volta definito come modellare gli stati, il prossimo passo consiste nel calcolare le probabilità che la configurazione iniziale delle palline nelle ciotole sia esattamente un certo stato piuttosto che un altro. Questo servirà perché per trovare il tempo medio necessario ad entrare nella classe ricorrente \(R\), quella in cui tutte le palline sono riunite nella stessa ciotola e quindi il gioco terminerà, dovremmo espandere<sup id="fnref:3"><a href="#fndef:3" class=fnref >[3]</a></sup> il calcolo su tutti i possibili stati da cui possiamo partire. Moralmente dobbiamo cioè pesare i contributi portati da ciascuno stato per la probabilità di partire proprio da quello stato:</p>
 \[ \mathbb{E}(\text{#passi per entrare in $R$}) =  \sum_{i \in S} \mathbb{E}(\text{#passi per entrare in $R$ partendo da $i$}) \cdot \mathbb{P}(\text{partiamo da $i$})\]
 <p>Intuitivamente ha senso: se da uno stato magari ci mettiamo pochi passi per entrare nella classe ricorrente \(R\), ma quella configurazione iniziale è molto rara da ottenere, allora è giusto che il suo contributo venga scalato rispetto agli altri.</p>
-<p>Comunque, tornando al discorso, per calcolare queste probabilità serve invocare la distribuzione Multinomiale, dove diciamo che \({\bf{X}}=(X_1,\ldots,X_n) \sim \text{Mult}(m,(p_1,\ldots,p_n))\) se \({\bf{X}}\) modella lo scenario in cui, ripetendo un certo esperimento aleatorio per \(m\) volte, sono risultate \(X_i\) occorrenze di ciascun evento \(i\), il quale aveva probabilità \(p_i\) di verificarsi<sup id="fnref:3"><a href="#fndef:3" class=fnref >[3]</a></sup>.</p>
+<p>Comunque, tornando al discorso, per calcolare queste probabilità serve invocare la distribuzione Multinomiale, dove diciamo che \({\bf{X}}=(X_1,\ldots,X_n) \sim \text{Mult}(m,(p_1,\ldots,p_n))\) se \({\bf{X}}\) modella lo scenario in cui, ripetendo un certo esperimento aleatorio per \(m\) volte, sono risultate \(X_i\) occorrenze di ciascun evento \(i\), il quale aveva probabilità \(p_i\) di verificarsi<sup id="fnref:4"><a href="#fndef:4" class=fnref >[4]</a></sup>.</p>
 <p>Questa distribuzione fa precisamente al caso nostro: come \(m\) esperimenti aleatori abbiamo le assegnazioni di ciascuna delle \(m\) palline a una qualunque delle \(n\) ciotole, scelta in modo casuale e con equiprobabilità. Quindi tutte le \(p_i\) per \(i=1,\ldots,n\) saranno uguali a \(\frac{1}{n}\). La probabilità di ottenere una certa configurazione \(\bf{X}=\bf{x}\) sarà quindi data dalla densità Multinomiale: </p>
 \[p_{\bf{X}}({\bf x}) = \mathbb{P}({\bf X}={\bf x}) = \frac{m!}{x_1!\cdots x_n!}\prod_{i=1}^n p_i^{x_i}\]
 <p>Questa probabilità va però poi aggiustata contando per le simmetrie. Nel nostro caso, infatti, uno stato del tipo \(00k0\) &#40;rappresentato con la seconda formulazione&#41; sarebbe equivalente a \(k000\), \(0k00\), e \(000k\), dato che sono tutti simmetrici rispetto alla disposizione circolare delle ciotole. L&#39;aggiustamento consiste quindi nel moltiplicare quella probabilità &quot;base&quot; per il numero di occorrenze che tale configurazione presenta. Consideriamo ad esempio lo stato \(0002\), dove abbiamo \(n=4\) ciotole e \(m=2\) palline. Questo stato può manifestarsi in 4 possibili casi &#40;come appena spiegato, sciogliendo la simmetria circolare&#41;, quindi la probabilità di ottenere tala configurazione è pari a </p>
 \[p(0002) = 4\cdot\frac{2!}{0!0!0!2!} \left(\frac{1}{4}\right)^0\left(\frac{1}{4}\right)^0\left(\frac{1}{4}\right)^0 \left(\frac{1}{4}\right)^2 = \frac{1}{4}\]
-<p><table class=fndef  id="fndef:2">
+<p><table class=fndef  id="fndef:3">
     <tr>
-        <td class=fndef-backref ><a href="#fnref:2">[2]</a>
+        <td class=fndef-backref ><a href="#fnref:3">[3]</a>
         <td class=fndef-content >Tecnicamente, si può dire anche esplodere o disintegrare&#33; molto più divertenti.
     
 </table>
-<table class=fndef  id="fndef:3">
+<table class=fndef  id="fndef:4">
     <tr>
-        <td class=fndef-backref ><a href="#fnref:3">[3]</a>
+        <td class=fndef-backref ><a href="#fnref:4">[4]</a>
         <td class=fndef-content >Come vincoli, abbiamo da chiedere che \(\sum p_i=1\) &#40;qualcosa deve sempre verificarsi&#41; e \(\sum X_i = m\) &#40;le occorrenze di ciascun evento devono ammontare al totale di esperimenti condotti&#41;.
     
 </table>
@@ -472,40 +480,40 @@ done!
 	return S
 end
 
-G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-output">  0.000068 seconds (241 allocations: 11.125 KiB)
+G&#40;4,5&#41; # giusto un esempio</code></pre><pre><code class="plaintext code-output">  0.000072 seconds (247 allocations: 11.219 KiB)
 (n,m)=(2,2) => E[#steps] = 1//2 = 0.5
 
-  0.000043 seconds (270 allocations: 12.219 KiB)
+  0.000032 seconds (278 allocations: 12.344 KiB)
 (n,m)=(2,3) => E[#steps] = 9//4 = 2.25
 
-  0.000021 seconds (398 allocations: 19.188 KiB)
+  0.000024 seconds (408 allocations: 19.344 KiB)
 (n,m)=(2,4) => E[#steps] = 13//2 = 6.5
 
-  0.000017 seconds (425 allocations: 20.234 KiB)
+  0.000017 seconds (437 allocations: 20.422 KiB)
 (n,m)=(2,5) => E[#steps] = 125//8 = 15.625
 
-  0.000017 seconds (380 allocations: 16.375 KiB)
+  0.000018 seconds (392 allocations: 16.562 KiB)
 (n,m)=(3,2) => E[#steps] = 4//3 = 1.3333333333333333
 
-  0.000026 seconds (690 allocations: 30.578 KiB)
+  0.000025 seconds (710 allocations: 30.891 KiB)
 (n,m)=(3,3) => E[#steps] = 22//3 = 7.333333333333333
 
-  0.000036 seconds (961 allocations: 42.328 KiB)
+  0.000036 seconds (991 allocations: 42.797 KiB)
 (n,m)=(3,4) => E[#steps] = 244//9 = 27.11111111111111
 
-  0.000051 seconds (1.31 k allocations: 57.625 KiB)
+  0.000050 seconds (1.36 k allocations: 58.281 KiB)
 (n,m)=(3,5) => E[#steps] = 785//9 = 87.22222222222223
 
-  0.000029 seconds (736 allocations: 35.984 KiB)
+  0.000029 seconds (756 allocations: 36.297 KiB)
 (n,m)=(4,2) => E[#steps] = 5//2 = 2.5
 
-  0.000048 seconds (1.32 k allocations: 63.078 KiB)
+  0.000049 seconds (1.36 k allocations: 63.703 KiB)
 (n,m)=(4,3) => E[#steps] = 63//4 = 15.75
 
-  0.000122 seconds (2.60 k allocations: 127.125 KiB)
+  0.000104 seconds (2.67 k allocations: 128.219 KiB)
 (n,m)=(4,4) => E[#steps] = 141//2 = 70.5
 
-  0.000167 seconds (3.78 k allocations: 193.711 KiB)
+  0.000194 seconds (3.89 k allocations: 195.461 KiB)
 (n,m)=(4,5) => E[#steps] = 6875//24 = 286.4583333333333
 
 done!
@@ -591,7 +599,7 @@ done!
 
 <div class=page-foot >
     
-    Last modified: February 27, 2026. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: March 04, 2026. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the lovely <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div>
     </div>  

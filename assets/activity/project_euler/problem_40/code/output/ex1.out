@@ -5,5 +5,5 @@ La cifra 1000-esima era 3
 La cifra 10000-esima era 7
 La cifra 100000-esima era 2
 La cifra 1000000-esima era 1
-  0.182816 seconds (2.93 M allocations: 82.259 MiB, 7.01% gc time, 6.82% compilation time)
+  0.190568 seconds (2.93 M allocations: 82.259 MiB, 8.66% gc time, 6.63% compilation time)
 P = 210
