@@ -29,11 +29,11 @@
         .container { max-width: 1000px; margin: 0 auto; position: relative; z-index: 2; }
         header { text-align: center; margin-bottom: 30px; }
         
-        .setup-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-bottom: 30px; }
+        .setup-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-bottom: 5px; }
         .card { background: var(--card-bg); padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid var(--border); position: relative; margin-bottom: 20px; }
 
         table { width: 100%; border-collapse: collapse; margin: 10px 0; background: white; }
-        td, th { padding: 12px; border-bottom: 1px solid var(--border); position: relative; text-align: center; }
+        td, th { padding: 8px; border-bottom: 1px solid var(--border); position: relative; text-align: center; }
 
         .draggable-cell { padding: 6px 10px; border-radius: 6px; cursor: grab; text-align: center; font-weight: 600; text-transform: capitalize; user-select: none; }
 
@@ -112,7 +112,7 @@
     </div>
 
     <div class="card">
-        <h2>Tabella di validitià assegnazione</h2>
+        <h2>Tabella di validità assegnazione</h2>
         <p>Ovvero, come risolvere il problema a mano, su carta: compila questa tabella e trova un percorso di assegnazione in cui ogni partita sia assegnata ad un campo (e viceversa, ogni campo sia assegnato ad una partita), scelto tra quelli disponibili in base ai conflitti di squadre giocanti/squadre arbitranti.</p>
         <div id="debug-container"></div>
     </div>
