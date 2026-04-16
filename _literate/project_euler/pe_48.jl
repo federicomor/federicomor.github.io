@@ -1,0 +1,10 @@
+# Ancora un semplice esercizio che si appoggia alla comoda funzione `powermod(a,b,m)`, che calcola $a^b \mod m$.
+# Volendo ce la si fa anche in una sola linea:
+@time mod(sum([powermod(i,i,10^10) for i in 1:1000]),10^10)
+
+# che però è più dispendiosa perché alloca materialmente il vettore delle potenze $i^i$. Altrimenti qui segue la sua  forma estesa, più classica, che calcola una valore per volta e quindi non alloca memoria inutile:
+sol = 0
+@time for i in 1:1000
+	global sol += powermod(i,i,10^10)
+end
+@show mod(sol,10^10)
