@@ -1,0 +1,4 @@
+  159.456 ns (7 allocations: 416 bytes)
+  107.761 ns (4 allocations: 256 bytes)
+  55.814 ns (3 allocations: 96 bytes)
+  25.238 ns (0 allocations: 0 bytes)

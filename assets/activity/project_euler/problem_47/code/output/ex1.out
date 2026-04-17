@@ -1,0 +1,5 @@
+factor_terms(14) = [2, 7]
+factor_terms(15) = [3, 5]
+factor_terms(644) = [4, 7, 23]
+factor_terms(645) = [3, 5, 43]
+factor_terms(646) = [2, 17, 19]

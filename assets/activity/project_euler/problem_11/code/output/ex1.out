@@ -1,0 +1,31 @@
+Lungo le righe: i=1, j=1, cur_max=34144
+Lungo le righe: i=1, j=2, cur_max=162184
+Lungo le righe: i=1, j=3, cur_max=1216380
+Lungo le righe: i=1, j=14, cur_max=2433600
+Lungo le righe: i=1, j=16, cur_max=4204200
+Lungo le righe: i=2, j=1, cur_max=9507960
+Lungo le righe: i=2, j=12, cur_max=11630640
+Lungo le righe: i=2, j=13, cur_max=13956768
+Lungo le righe: i=3, j=9, cur_max=17696040
+Lungo le righe: i=5, j=5, cur_max=19159119
+Lungo le righe: i=5, j=7, cur_max=21149604
+Lungo le righe: i=8, j=9, cur_max=21941010
+Lungo le righe: i=8, j=16, cur_max=27663636
+Lungo le righe: i=9, j=11, cur_max=48477312
+Lungo le colonne: i=1, j=1, cur_max=1651104
+Lungo le colonne: i=2, j=1, cur_max=4540536
+Lungo le colonne: i=2, j=2, cur_max=5210170
+Lungo le colonne: i=4, j=2, cur_max=9995020
+Lungo le colonne: i=17, j=2, cur_max=14808780
+Lungo le colonne: i=13, j=4, cur_max=23569344
+Lungo le colonne: i=14, j=4, cur_max=35845044
+Lungo le colonne: i=7, j=16, cur_max=51267216
+Lungo le diagonali ↘: i=1, j=1, cur_max=279496
+Lungo le diagonali ↘: i=1, j=3, cur_max=2904000
+Lungo le diagonali ↘: i=1, j=8, cur_max=11587200
+Lungo le diagonali ↘: i=2, j=1, cur_max=16194745
+Lungo le diagonali ↘: i=3, j=2, cur_max=32719995
+Lungo le diagonali ↘: i=17, j=10, cur_max=40304286
+Lungo le diagonali ↙: i=2, j=13, cur_max=41076896
+Lungo le diagonali ↙: i=13, j=7, cur_max=70600674
+maximum([maxp4_over_rows(M), maxp4_over_cols(M), maxp4_over_diag(M)]) = 70600674

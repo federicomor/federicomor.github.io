@@ -1,0 +1,16 @@
+digit = 7, mask = 001000000
+digit = 6, mask = 001100000
+digit = 4, mask = 001101000
+digit = 3, mask = 001101100
+digit = 2, mask = 001101110
+digit = 1, mask = 001101111
+ispandigital_v4(123467, verbose = true) = false
+digit = 4, mask = 000001000
+ispandigital_v4(123444, verbose = true) = false
+digit = 4, mask = 000001000
+digit = 5, mask = 000011000
+digit = 6, mask = 000111000
+digit = 3, mask = 000111100
+digit = 2, mask = 000111110
+digit = 1, mask = 000111111
+ispandigital_v4(123654, verbose = true) = true

@@ -1,0 +1,14 @@
+calcolo F(7)
+| calcolo F(6)
+| | calcolo F(5)
+| | | calcolo F(4)
+| | | | calcolo F(3)
+| | | | | calcolo F(2)
+| | | | | calcolo F(1)
+| | | | calcolo F(2)
+| | | calcolo F(3)
+| | | ce l'avevo già salvato!
+| | calcolo F(4)
+| | ce l'avevo già salvato!
+| calcolo F(5)
+| ce l'avevo già salvato!

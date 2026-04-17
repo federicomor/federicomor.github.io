@@ -1,0 +1,7 @@
+name,industry,employees,lat,lng,website,logo,content
+Tech Innovations HQ,Software & AI,250,45.4642,9.1900,https://example.com/careers,https://upload.wikimedia.org/wikipedia/it/3/38/Generali_logo.svg,this company bla bla bla
+Tech Innovations Branch,Software & AI,250,45.4400,9.1200,https://example.com/careers,logo link if we can find it,this company bla bla bla
+Green Energy Co,Energy,120,45.4850,9.2100,https://example.com/jobs,logo link if we can find it,this company bla bla bla
+Global Finance Group,Banking,1500,45.4700,9.1800,https://example.com/work-with-us,logo link if we can find it,this company bla bla bla
+Global Finance Group,Banking,1500,45.5000,9.1000,https://example.com/work-with-us,logo link if we can find it,this company bla bla bla
+HealthPlus global,Biotech,85,45.4500,9.1500,https://example.com/apply,logo link if we can find it,this company bla bla bla
