@@ -1,4 +1,0 @@
-Sitemap: https://federicomor.github.io/sitemap.xml
-
-User-agent: *
-Disallow:

@@ -1,1 +1,0 @@
-my_powermod (generic function with 1 method)
