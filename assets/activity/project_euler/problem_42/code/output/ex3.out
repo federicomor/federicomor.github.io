@@ -161,4 +161,4 @@ WE              value: 28
 WHILST          value: 91
 WIDELY          value: 78
 WOMAN           value: 66
-  0.017394 seconds (17.06 k allocations: 525.148 KiB, 86.22% compilation time)
+  0.017762 seconds (17.06 k allocations: 525.148 KiB, 86.19% compilation time)
