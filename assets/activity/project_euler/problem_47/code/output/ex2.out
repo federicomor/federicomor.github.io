@@ -1,3 +1,3 @@
 Soluzione: [134043, 134044, 134045, 134046]
 I loro fattori sono: Any[[3, 7, 13, 491], [4, 23, 31, 47], [5, 17, 19, 83], [2, 9, 11, 677]]
-  0.434486 seconds (3.10 M allocations: 125.899 MiB, 7.32% gc time, 51.46% compilation time)
+  0.491396 seconds (3.17 M allocations: 128.987 MiB, 6.44% gc time, 53.29% compilation time)

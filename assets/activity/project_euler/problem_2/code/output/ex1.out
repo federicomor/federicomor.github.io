@@ -1,2 +1,2 @@
-  0.036594 seconds (59.67 k allocations: 3.031 MiB, 99.77% compilation time)
+  0.036449 seconds (59.67 k allocations: 3.048 MiB, 99.83% compilation time)
 S = 4613732
